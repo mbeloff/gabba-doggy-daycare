@@ -1,8 +1,8 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap p-6 shadow-lg bg-white">
+  <nav class="flex items-center justify-between flex-wrap p-6 shadow-lg bg-white relative">
     <div class="flex items-center flex-shrink-0 text-blue-500 mr-6">
-      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-      <span class="font-semibold text-xl tracking-tight">Gabba Doggy Daycare</span>
+      <i class="fas fa-paw"></i>
+      <span class="font-semibold text-xl tracking-tight ml-2">Gabba Doggy Daycare</span>
     </div>
     <div class="block lg:hidden">
       <button v-on:click="show = !show" class="flex items-center px-3 py-2 border rounded text-blue-600 border-blue-400 hover:text-blue-400 hover:border-blue-400">
@@ -10,7 +10,7 @@
       </button>
     </div>
     <transition name="slide">
-      <div v-show="show" class="w-full block flex-grow lg:flex  absolute pl-4 pb-4 droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto bg-white left-0">
+      <div v-show="show" class="w-full block flex-grow lg:flex  absolute pl-4 pb-4 shadow-lg lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto bg-white left-0">
       <div class="text-sm lg:flex-grow font-bold mt-1">
         <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 mr-4">
           Home
@@ -61,18 +61,19 @@ BeforeDestroy() {
 <style>
 .droppy {
   top: 100%;
-
   z-index: -1;
 }
 
 .slide-leave-active,
 .slide-enter-active {
-  transition: all .75s ease;
+  transition: top .75s ease, opacity 1s;
 }
 .slide-enter {
-  top: -130%;
+  top: -138%;
+  opacity: 0;
 }
 .slide-leave-to {
-  top: -130%;
+  top: -138%;
+  opacity: 0;
 }
 </style>

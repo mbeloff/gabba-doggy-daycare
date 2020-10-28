@@ -1,26 +1,25 @@
 <template>
   <div id="app">
-    <div class="nav-wrapper fixed w-full" >
+    <div class="nav-wrapper fixed w-full" style="z-index: 100">
       <Nav />
     </div>
-    <div class="content pt-20 py-6 bg-gray-100">
-      <HelloWorld msg="A little holiday for your pupper"/>
-      <p>rest of content</p>
+    <div class="content-wrapper pt-19" style="margin-top: 78px">
+      <router-view />
+      <!-- <HelloWorld msg="A little holiday for your pupper"/> -->
     </div>
-    <div class="footer bg-gray-800 py-6 text-gray-500">
+    <div class="footer-wrapper bg-gray-800 py-6 text-gray-500">
       <p>footer content</p>
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import Nav from './components/Nav.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Nav
   }
 }
@@ -30,11 +29,12 @@ export default {
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #353640;
 }
 
 #app {
   display: grid;
   grid-template-rows: 1fr auto;
-  min-height: 100vh;
+  min-height: calc(100vh - 78px);
 }
 </style>
