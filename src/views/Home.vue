@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HelloWorld msg="A little holiday for your pupper"></HelloWorld>
+    <HelloWorld></HelloWorld>
     <div class="section">
       <div class="container mx-auto  py-20 text-center">
         <h1 class="font-bold text-blue-600 mb-10">Your best friend's new favourite place</h1>

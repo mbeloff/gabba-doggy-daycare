@@ -1,12 +1,12 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap p-6 shadow-lg bg-white relative">
+  <nav class="flex items-center justify-between flex-wrap py-6 px-2 shadow-lg bg-white relative">
     <div class="flex items-center flex-shrink-0 text-blue-500 mr-6">
       <i class="fas fa-paw"></i>
       <span class="font-semibold text-xl tracking-tight ml-2">Gabba Doggy Daycare</span>
     </div>
     <div class="block lg:hidden">
-      <button v-on:click="show = !show" class="flex items-center px-3 py-2 border rounded text-blue-600 border-blue-400 hover:text-blue-400 hover:border-blue-400">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      <button v-on:click="show = !show" class="flex items-center px-3 py-3 rounded text-blue-600 hover:text-blue-400 hover:border-blue-400">
+        <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
     <transition name="slide">
