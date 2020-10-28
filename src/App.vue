@@ -5,22 +5,20 @@
     </div>
     <div class="content-wrapper pt-19" style="margin-top: 78px">
       <router-view />
-      <!-- <HelloWorld msg="A little holiday for your pupper"/> -->
     </div>
-    <div class="footer-wrapper bg-gray-800 py-6 text-gray-500">
-      <p>footer content</p>
+    <div class="footer-wrapper">
+      <Footer></Footer>
     </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Nav from './components/Nav.vue'
-
+import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    Nav
+    Nav, Footer
   }
 }
 </script>
