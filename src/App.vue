@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div class="nav-wrapper fixed w-full" >
-      <Nav class="mb-6 flex-1" />
+      <Nav />
     </div>
-    <div class="content pt-20 p-6 bg-gray-100">
-      <HelloWorld msg="HelloWorld Component MSG" class="text-center text-lg p-6"/>
-      <p>content</p>
+    <div class="content pt-20 py-6 bg-gray-100">
+      <HelloWorld msg="A little holiday for your pupper"/>
+      <p>rest of content</p>
     </div>
-    <div class="footer bg-gray-800 p-6 text-gray-500">
+    <div class="footer bg-gray-800 py-6 text-gray-500">
       <p>footer content</p>
     </div>
   </div>

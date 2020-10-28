@@ -10,8 +10,8 @@
       </button>
     </div>
     <transition name="slide">
-      <div v-show="show" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
+      <div v-show="show" class="w-full block flex-grow lg:flex  absolute pl-4 pb-4 droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto bg-white left-0">
+      <div class="text-sm lg:flex-grow font-bold mt-1">
         <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 mr-4">
           Home
         </a>
@@ -23,7 +23,7 @@
         </a>
       </div>
       <div>
-        <a href="#" class="inline-block text-md px-6 py-2 leading-none rounded bg-blue-500 text-white hover:border-transparent hover:text-white hover:bg-blue-700 mt-4 lg:mt-0">Register</a>
+        <a href="#" class="inline-block text-lg px-5 py-2 rounded bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:text-white hover:bg-blue-700 mt-4 lg:mt-0">Register</a>
       </div>
     </div>
     </transition>
@@ -59,14 +59,20 @@ BeforeDestroy() {
 }
 </script>
 <style>
-/* .slide-leave-active,
+.droppy {
+  top: 100%;
+
+  z-index: -1;
+}
+
+.slide-leave-active,
 .slide-enter-active {
-  transition: 1s;
+  transition: all .75s ease;
 }
 .slide-enter {
-  transform: translate(-100%, 0);
+  top: -130%;
 }
 .slide-leave-to {
-  transform: translate(-100%, 0);
-} */
+  top: -130%;
+}
 </style>
