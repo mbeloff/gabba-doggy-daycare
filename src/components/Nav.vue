@@ -26,7 +26,7 @@
         </a>
       </div>
       <div>
-        <a href="#" class="inline-block text-lg px-5 py-2 rounded bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:text-white hover:bg-blue-700 mt-4 lg:mt-0 focus:outline-blue">Register</a>
+        <open-modal class="inline-block text-lg px-5 py-2 rounded bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:text-white hover:bg-blue-700 mt-4 lg:mt-0 focus:outline-blue"><i class="far fa-comment-alt-lines fa-fw mr-2"></i>Register</open-modal>
       </div>
     </div>
     </transition>

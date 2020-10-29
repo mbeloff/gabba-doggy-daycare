@@ -9,18 +9,29 @@
     <div class="footer-wrapper">
       <Footer></Footer>
     </div>
+    <modal
+      name="contact-modal"
+      height="auto"
+      :scrollable="true"
+      :adaptive="true"
+      :clickToClose="false"
+      :focusTrap="true"
+    >
+      <modal-inner></modal-inner>
+    </modal>
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
+import ModalInner from './components/ModalInner.vue'
 
 export default {
   name: 'App',
   components: {
-    Nav, Footer
-  }
+    Nav, Footer, ModalInner
+  },
 }
 </script>
 <style>

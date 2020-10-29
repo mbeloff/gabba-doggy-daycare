@@ -46,8 +46,8 @@
         <div class="col sad-pup bg-cover bg-bottom rounded-sm">
         </div>
         <div class="col y-5 md:my-20">
-          <h2 class="font-bold leading-tight text-5xl mb-10">Bored at home?</h2>
-          <p class="mb-10">Does your dog get into mischief while you're at work? Give them a day out to play and meet new friends instead.</p>
+          <h2 class="font-bold leading-tight text-5xl mb-10 ">Bored at home?</h2>
+          <p class="mb-10 font-light">Does your dog get into mischief while you're at work? Give them a day out to play and meet new friends instead of getting restless at home.</p>
         </div>
 
       </div>
