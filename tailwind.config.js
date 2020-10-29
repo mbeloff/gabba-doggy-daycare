@@ -5,7 +5,13 @@ module.exports = {
     './src/**/*.vue',
     './src/**/*.jsx',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      outline: {
+        blue: ['2px dotted #3182ce', '2px']
+      }
+    }
+  },
   variants: {},
   plugins: [],
   

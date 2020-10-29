@@ -15,6 +15,7 @@
 <script>
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
+
 export default {
   name: 'App',
   components: {
@@ -34,5 +35,8 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: calc(100vh - 78px);
+}
+.overflow-hidden {
+  overflow: hidden;
 }
 </style>
