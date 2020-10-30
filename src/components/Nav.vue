@@ -15,7 +15,7 @@
         <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
           Home
         </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
+        <!-- <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
           Menu#2
         </a>
         <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
@@ -23,7 +23,7 @@
         </a>
         <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue">
           Menu#4
-        </a>
+        </a> -->
       </div>
       <div>
         <open-modal class="inline-block text-lg px-5 py-2 rounded bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:text-white hover:bg-blue-700 mt-4 lg:mt-0 focus:outline-blue"><i class="far fa-comment-alt-lines fa-fw mr-2"></i>Register</open-modal>

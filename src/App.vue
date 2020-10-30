@@ -1,17 +1,15 @@
 <template>
   <div id="app">
+    
     <div class="nav-wrapper fixed w-full" style="z-index: 100">
       <Nav />
     </div>
     <div class="content-wrapper pt-19" style="margin-top: 91px">
       <router-view />
-    </div>
-    <div class="footer-wrapper">
-      <Footer></Footer>
-    </div>
-    <modal
+      <modal
       name="contact-modal"
       height="auto"
+      :classes="['h-auto', 'bg-transparent']"
       :scrollable="true"
       :adaptive="true"
       :clickToClose="false"
@@ -19,6 +17,11 @@
     >
       <modal-inner></modal-inner>
     </modal>
+    </div>
+    <div class="footer-wrapper">
+      <Footer></Footer>
+    </div>
+    
   </div>
 </template>
 
@@ -40,6 +43,7 @@ export default {
 body {
   font-family: 'Roboto', sans-serif;
   color: #353640;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -47,7 +51,8 @@ body {
   grid-template-rows: 1fr auto;
   min-height: calc(100vh - 78px);
 }
-.overflow-hidden {
-  overflow: hidden;
+
+.vm--modal {
+  height: auto!important;
 }
 </style>

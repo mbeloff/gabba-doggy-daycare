@@ -9,13 +9,13 @@
       <div class="flex flex-col sm:flex-row">
         <div class="flex mb-4 divide-x divide-gray-700">
           
-          <ul class="list-none mr-10 pr-10 font-bold">
+          <!-- <ul class="list-none mr-10 pr-10 font-bold">
             <p class="text-xl text-gray-400">Quick Links</p>
         <li><a href="#" class="focus:outline-white">Home</a></li>
         <li><a href="#" class="focus:outline-white">Menu#2</a></li>
           <li><a href="#" class="focus:outline-white">Menu#3</a></li>
           <li><a href="#" class="focus:outline-white">Menu#4</a></li>
-        </ul>
+        </ul> -->
         </div>
         
         <div class="ml-0 sm:ml-auto">
