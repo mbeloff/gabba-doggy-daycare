@@ -7,7 +7,7 @@
       <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
         <div class="col y-5 md:my-20">
           <p class="font-bold text-blue-600 mb-10">Brisbane Dogs Love it Here</p>
-          <h2 class="font-bold leading-tight text-5xl mb-10">More than just a day care</h2>
+          <h2 class="font-bold tracking-tight leading-tight text-5xl mb-10">More than just a day care</h2>
           <p class="mb-10">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
           <ul class="list-none list-inside font-bold">
             <li class="flex mb-2">
@@ -46,10 +46,10 @@
         <div class="col sad-pup bg-cover bg-bottom rounded-sm">
         </div>
         <div class="col y-5 md:my-20">
-          <h2 class="font-bold leading-tight text-5xl mb-10 ">Bored at home?</h2>
+          <h2 class="font-bold leading-tight tracking-tight text-5xl mb-10 ">Bored at home?</h2>
           <p class="mb-10 font-light">Does your dog get into mischief while you're at work? Give them a day out to play and meet new friends instead of getting restless at home.</p>
+          <div class="grid place-items-center w-full"><i class="fas fa-bone"></i></div>         
         </div>
-
       </div>
     </div>
   </div>

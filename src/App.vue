@@ -54,5 +54,6 @@ body {
 
 .vm--modal {
   height: auto!important;
+  background-color: transparent
 }
 </style>
