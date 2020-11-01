@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Hero',
   }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

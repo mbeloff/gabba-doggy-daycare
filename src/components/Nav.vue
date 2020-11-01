@@ -12,9 +12,9 @@
     <transition name="slide">
       <div v-show="show" class="w-full block flex-grow lg:flex  absolute pl-4 pb-4 shadow-lg lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto bg-white left-0">
       <div class="text-sm lg:flex-grow font-bold mt-1">
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
+        <!-- <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
           Home
-        </a>
+        </a> -->
         <!-- <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
           Menu#2
         </a>

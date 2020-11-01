@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HelloWorld></HelloWorld>
+    <Hero></Hero>
     <Cards></Cards>
 
     <div class="section bg-gray-200">
@@ -56,11 +56,11 @@
 </template>
 
 <script>
-  import HelloWorld from "@/components/HelloWorld.vue"
+  import Hero from "@/components/Hero.vue"
   import Cards from "@/components/Cards.vue"
   export default {
     components: {
-      HelloWorld,
+      Hero,
       Cards
     }
   }
