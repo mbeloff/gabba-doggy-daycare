@@ -8,6 +8,7 @@ module.exports = {
       //   changefreq: "monthly",
       //   priority: "0.5"
       // })
+      // new BundleAnalyzerPlugin()
     ]
   },
   pages: {
@@ -23,14 +24,4 @@ module.exports = {
       title: "Gabba Doggy Day Care"
     }
   }
-  // chainWebpack: config => {
-  //   // ...your other webpack config overrides here
-
-  //   if (process.env.NODE_ENV === "production")
-  //     config.plugin("webpack-report").use(BundleAnalyzerPlugin, [
-  //       {
-  //         // ...webpack-bundle-analyzer options here
-  //       }
-  //     ]);
-  // }
 };

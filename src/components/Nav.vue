@@ -14,8 +14,8 @@
       <div class="text-sm lg:flex-grow font-bold mt-1">
         <!-- <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
           Home
-        </a> -->
-        <!-- <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
+        </a> 
+         <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
           Menu#2
         </a>
         <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
@@ -46,6 +46,8 @@ export default {
   onResize() {
     if (window.innerWidth > 1023) {
       this.show = true
+    } else {
+      this.show = false
     }
   }
 },
@@ -72,11 +74,11 @@ BeforeDestroy() {
   transition: top .75s ease, opacity 1s;
 }
 .slide-enter {
-  top: -138%;
+  top: 0%;
   opacity: 0;
 }
 .slide-leave-to {
-  top: -138%;
+  top: 0%;
   opacity: 0;
 }
 </style>
