@@ -62,7 +62,23 @@
     components: {
       Hero,
       Cards
+    },
+    metaInfo: {
+    title: 'Home',
+    meta: [
+      {
+        name: 'description',
+        content:
+          "Your best friends' new favourite place",
+        vmid: 'description'
+      }
+    ]
+  },
+  mounted() {
+    if (this.$route.name === "Register") {
+      this.$modal.show("contact-modal");
     }
+  }
   }
 </script>
 

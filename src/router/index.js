@@ -12,6 +12,11 @@ const routes = [
     component: Home
   },
   {
+    path: "/Register",
+    name: "Register",
+    component: Home
+  },
+  {
     path:"/*",
     name: "NotFound",
     component: Home
