@@ -6,7 +6,7 @@
     <div class="section bg-gray-200">
       <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
         <div class="col y-5 md:my-20">
-          <p class="font-bold text-blue-600 mb-10">Brisbane Dogs Love it Here</p>
+          <p class="font-bold text-blue-700 mb-10">Brisbane Dogs Love it Here</p>
           <h2 class="font-bold tracking-tight leading-tight text-5xl mb-10">More than just a day care</h2>
           <p class="mb-10">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
           <ul class="list-none list-inside font-bold">

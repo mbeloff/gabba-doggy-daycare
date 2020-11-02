@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="container mx-auto  py-20 text-center">
-      <p class="font-bold text-blue-600 mb-10">Your best friend's new favourite place</p>
+      <p class="font-bold text-blue-700 mb-10">Your best friend's new favourite place</p>
       <p class="font-bold text-5xl mb-20">Gabba Doggy Day Care</p>
       <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-4"> -->
       <div class="flex flex-wrap px-4 justify-center">
@@ -13,7 +13,7 @@
               <i class="fas fa-stack-1x fa-inverse" :class="card.icon"></i>
             </span>
             <p class="font-bold my-3">{{card.heading}}</p>
-            <p class="text-gray-600">{{card.desc}}</p>
+            <p class="text-gray-700">{{card.desc}}</p>
           </div>
             
           </div>

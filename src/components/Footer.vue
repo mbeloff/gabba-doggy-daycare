@@ -20,7 +20,7 @@
         
         <div class="ml-0 sm:ml-auto">
           <p class="text-xl text-gray-400 font-bold">Get in touch</p>
-          <p>
+          <p class="text-gray-500">
             <a class="text-gray-300 hover:taxt-gray-100 focus:outline-white" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a><br>
             46 Deshon st,<br>Woolloongabba 4102</p>
         </div>

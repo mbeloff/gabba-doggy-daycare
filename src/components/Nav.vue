@@ -1,6 +1,6 @@
 <template>
   <nav class="mx-auto flex items-center justify-between flex-wrap py-6 px-2 lg:px-10 shadow-lg bg-white relative">
-    <div class="flex items-center flex-shrink-0 text-blue-500 mr-2 lg:mr-6">
+    <div class="flex items-center flex-shrink-0 text-blue-600 mr-2 lg:mr-6">
       <i class="fas fa-paw"></i>
       <span class="font-semibold text-xl tracking-tight ml-2">Gabba Doggy Day Care</span>
     </div>
