@@ -66,6 +66,6 @@ body {
 
 .vm--modal {
   height: auto!important;
-  background-color: transparent
+  background-color: transparent!important
 }
 </style>
