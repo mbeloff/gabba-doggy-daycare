@@ -6,8 +6,10 @@ import VModal from 'vue-js-modal';
 import upperFirst from 'lodash/upperFirst';
 import camelCase from 'lodash/camelCase';
 import vueGtm from 'vue-gtm'
+import vueMeta from 'vue-meta'
 
 import './assets/styles/index.css';
+Vue.use(vueMeta)
 Vue.use(VModal)
 Vue.config.productionTip = false
 const requireComponent = require.context(

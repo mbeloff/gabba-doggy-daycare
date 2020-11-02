@@ -35,6 +35,18 @@ export default {
   components: {
     Nav, Footer, ModalInner
   },
+  metaInfo: {
+    title: 'Gabba Doggy Day Care',
+    titleTemplate: 'Gabba Doggy Day Care | %s',
+    meta: [
+      {
+        name: 'description',
+        content:
+          "Your best friends' new favourite place",
+        vmid: 'description'
+      }
+    ]
+  }
 }
 </script>
 <style>
