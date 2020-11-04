@@ -23,9 +23,9 @@
   }
 
   .hero-pup {
-    background-image: url(../assets/img/hero-pup-sm.webp);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-sm.jpg);
     @media only screen and (min-width: 768px) {
-      background-image: url(../assets/img/hero-pup-full.webp);
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-full.jpg);
     }
   }
 

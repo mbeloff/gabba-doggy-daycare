@@ -148,7 +148,7 @@
 
 <style lang="scss">
   .bg-pug {
-    background-image: url(../assets/img/pug-sm.webp);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/pug-sm.png);
     background-size: 60% auto;
   }
 
