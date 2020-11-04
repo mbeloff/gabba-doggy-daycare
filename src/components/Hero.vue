@@ -1,5 +1,5 @@
 <template>
-  <div class="hero bg-fixed hero-pup h-screen bg-cover bg-center text-white relative">
+  <div class="hero hero-pup h-screen bg-cover text-white relative">
     <div class="container p-4 flex flex-col justify-center h-full mx-auto">
       <div class="xs:w-full sm:w-2/3 md:w-1/2 lg:w-1/3">
         <p class="text-6xl font-bold leading-tight tracking-tight mb-3">A great day out for your pup</p>
@@ -24,8 +24,12 @@
 
   .hero-pup {
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-sm.jpg);
+    background-attachment: scroll;
+    background-position: 65% 50%;
     @media only screen and (min-width: 768px) {
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-full.jpg);
+      background-attachment: fixed;
+      background-position: center;
     }
   }
 
