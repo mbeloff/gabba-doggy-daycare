@@ -5,7 +5,7 @@
       <h1 class="text-3xl tracking-tight font-bold text-blue-100"><i class="fal fa-paw"></i>
         Register your interest
       </h1>
-      <button class="float-right focus:outline-blue" @click="hide()"><i class="fa fa-times fa-2x text-blue-200 mx-3 hover:text-blue-600"></i>
+      <button class="float-right focus:outline-blue" @click="hide()"><i class="fa fa-times fa-2x text-blue-200 mx-3 hover:text-blue-900"></i>
       </button>
     </div>
     <div class="p-3">
@@ -70,7 +70,7 @@
       title: 'Register',
       meta: [{
         name: 'description',
-        content: "Opening Soon! Register your interest",
+        content: "Opening Soon! Register your interest and we'll keep you posted.",
         vmid: 'description'
       }]
     },

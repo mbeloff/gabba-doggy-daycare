@@ -13,6 +13,9 @@
 <script>
   export default {
     name: 'Hero',
+    metaInfo: {
+      title: 'Home'
+  },
   }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

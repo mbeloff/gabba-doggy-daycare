@@ -42,7 +42,7 @@ export default {
       {
         name: 'description',
         content:
-          "Your best friends' new favourite place",
+          "Your best friends' new favourite place. Don't leave your dog at home alone, come to Gabba Doggy Day Care instead.",
         vmid: 'description'
       }
     ]
