@@ -15,7 +15,22 @@
       :clickToClose="false"
       :focusTrap="true"
     >
-      <modal-inner></modal-inner>
+      <modal-inner>
+        <template v-slot:title>Register Your Interest</template>
+        <template v-slot:body><RegisterInterest></RegisterInterest></template>        
+      </modal-inner>
+    </modal>
+    <modal name="login-modal"
+      height="auto"
+      :classes="['h-auto', 'bg-transparent']"
+      :scrollable="true"
+      :adaptive="true"
+      :clickToClose="false"
+      :focusTrap="true">
+      <modal-inner>
+        <template v-slot:title>Login</template>
+        <template v-slot:body><Login></Login></template>
+      </modal-inner>
     </modal>
     </div>
     <div class="footer-wrapper">
@@ -29,11 +44,13 @@
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
 import ModalInner from './components/ModalInner.vue'
+import RegisterInterest from '@/components/RegisterInterest.vue'
+import Login from '@/components/Login.vue'
 
 export default {
   name: 'App',
   components: {
-    Nav, Footer, ModalInner
+    Nav, Footer, ModalInner, RegisterInterest, Login
   },
   metaInfo: {
     title: 'Gabba Doggy Day Care',

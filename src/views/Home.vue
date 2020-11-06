@@ -3,20 +3,25 @@
     <Hero></Hero>
     <Cards></Cards>
 
-    <div class="section bg-gray-200">
+    <div class="section">
       <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
         <div class="col y-5 md:my-20">
           <p class="font-bold text-blue-700 mb-10">Brisbane Dogs Love it Here</p>
           <h2 class="font-bold tracking-tight leading-tight text-5xl mb-10">More than just a day care</h2>
           <p class="mb-10">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
           <ul class="list-none list-inside font-bold">
+            
             <li class="flex mb-2">
               <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">Pet Taxi Service - <span class="font-normal">pickup and dropoff within 5km</span></p>
+              <p class="">Easy Online Bookings</p>
             </li>
             <li class="flex mb-2">
               <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
               <p class="">After Hours Kennels</p>
+            </li>
+            <li class="flex mb-2">
+              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
+              <p class="">Pet Taxi Service - <span class="font-normal">pickup and dropoff within 5km</span></p>
             </li>
             <li class="flex mb-2">
               <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>

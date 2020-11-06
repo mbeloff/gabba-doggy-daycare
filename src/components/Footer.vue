@@ -25,14 +25,8 @@
             46 Deshon st,<br>Woolloongabba 4102</p>
           </div>
           <div class="">
-            <a target="_blank" href="https://www.facebook.com/Gabba-Doggy-Daycare-109069914279965/" class="fa-stack text-xl text-blue-500 hover:text-yellow-500 social-icon">
-              <i class="fas fa-circle fa-stack-2x "></i>
-              <i class="fa-stack-1x text-blue-200 fab fa-facebook"></i>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/gabbadoggydaycare/" class="fa-stack text-xl text-blue-500 hover:text-yellow-500 social-icon">
-              <i class="fas fa-circle fa-stack-2x "></i>
-              <i class="fa-stack-1x text-blue-200 fab fa-instagram"></i>
-            </a>
+            <SocialIcon site="facebook"></SocialIcon>
+            <SocialIcon site="instagram"></SocialIcon>
           </div>
           
         </div>

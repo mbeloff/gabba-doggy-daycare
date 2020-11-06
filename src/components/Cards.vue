@@ -1,5 +1,5 @@
 <template>
-  <div class="section bg-gray-100">
+  <div class="section bg-gray-200">
     <div class="container mx-auto  py-20 text-center">
       <p class="font-bold text-blue-700 mb-10">Your best friend's new favourite place</p>
       <p class="font-bold text-5xl mb-20">Gabba Doggy Day Care</p>

@@ -3,6 +3,7 @@
     <div class="flex items-center flex-shrink-0 text-blue-600 mr-2 lg:mr-6">
       <i class="fas fa-paw"></i>
       <span class="font-semibold text-xl tracking-tight ml-2">Gabba Doggy Day Care</span>
+      
     </div>
     <div class="block lg:hidden">
       <button v-on:click="show = !show" class="flex items-center px-3 py-3 rounded text-blue-600 hover:text-blue-400 hover:border-blue-400 focus:outline-blue">
@@ -10,7 +11,7 @@
       </button>
     </div>
     <transition name="slide">
-      <div v-show="show" class="w-full block flex-grow lg:flex  absolute pl-4 pb-4 shadow-lg lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto bg-white left-0">
+      <div v-show="show" class="w-full block flex-grow lg:flex absolute px-4 pb-4 shadow-lg lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto bg-white left-0">
       <div class="text-sm lg:flex-grow font-bold mt-1">
         <!-- <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-blue-600 focus:outline-blue mr-4">
           Home
@@ -25,8 +26,17 @@
           Menu#4
         </a> -->
       </div>
-      <div>
-        <open-modal class="inline-block text-lg px-5 py-2 rounded bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:text-white hover:bg-blue-700 mt-4 lg:mt-0 focus:outline-blue"><i class="far fa-comment-alt-lines fa-fw mr-2"></i>Register</open-modal>
+      <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
+        <div class="self-center align-center w-full lg:w-auto text-center divide-pink-500 divide-x text-pink-500 mb-3 lg:mb-0 hidden">
+          <button class="px-4" @click="showLogin()">Login</button>
+          <a href="	https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="px-4">Create Account</a>
+      </div>
+        <div class="h-full flex self-center">
+          <SocialIcon site="facebook"></SocialIcon>
+          <SocialIcon site="instagram"></SocialIcon>
+        </div>
+                 
+        <open-modal class="inline-block  px-5 py-2 rounded bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500  focus:outline-blue ml-2">Let me Know!</open-modal>
       </div>
     </div>
     </transition>
@@ -49,7 +59,10 @@ export default {
     } else {
       this.show = false
     }
-  }
+  },
+    showLogin() {
+      this.$modal.show('login-modal')
+    }    
 },
 
 created() {
