@@ -26,7 +26,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .hero {    
-  height: calc(100vh - 91px);
+  height: calc(100vh - 68px);
   min-height: 700px;
 }
 

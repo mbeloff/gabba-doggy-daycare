@@ -1,12 +1,14 @@
 <template>
-  <nav class="mx-auto flex items-center justify-between flex-wrap py-6 px-2 lg:px-10 shadow-lg bg-white relative">
-    <div class="flex items-center flex-shrink-0 text-blue-600 mr-2 lg:mr-6">
-      <i class="fas fa-paw"></i>
-      <span class="font-semibold text-xl tracking-tight ml-2">Gabba Doggy Day Care</span>
+  <nav class="mx-auto flex items-center justify-between flex-wrap py-4 px-2 lg:px-10 shadow-lg bg-white relative">
+    <router-link to="Home" class="flex items-center flex-shrink-0 text-blue-600 mr-2 lg:mr-6">
       
-    </div>
+      <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="">
+      <!-- <span class="font-semibold text-xl tracking-tight ml-2">Gabba Doggy Day Care</span> -->
+      <img class="h-5 md:h-6" src="../assets/img/gddc-text.svg" alt="">
+      
+    </router-link>
     <div class="block lg:hidden">
-      <button v-on:click="show = !show" class="flex items-center px-3 py-3 rounded text-blue-600 hover:text-blue-400 hover:border-blue-400 focus:outline-blue">
+      <button v-on:click="show = !show" class="flex items-center px-2 py-2 rounded text-blue-600 hover:text-blue-400 hover:border-blue-400 focus:outline-blue">
         <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
@@ -26,8 +28,13 @@
           Menu#4
         </a> -->
       </div>
+      <!-- 
+        
+        unhide login/sign-up below
+      
+       -->
       <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
-        <div class="self-center align-center w-full lg:w-auto text-center divide-pink-500 divide-x text-pink-500 mb-3 lg:mb-0 hidden">
+        <div class="self-center align-center w-full lg:w-auto text-center divide-pink-500 divide-x text-pink-500 mb-3 lg:mb-0">
           <button class="px-4" @click="showLogin()">Login</button>
           <a href="	https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="px-4">Create Account</a>
       </div>

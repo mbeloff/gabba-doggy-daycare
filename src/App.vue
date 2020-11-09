@@ -4,7 +4,7 @@
     <div class="nav-wrapper fixed w-full" style="z-index: 100">
       <Nav />
     </div>
-    <div class="content-wrapper pt-19" style="margin-top: 91px">
+    <div class="content-wrapper pt-19" style="margin-top: 68px">
       <router-view />
       <modal
       name="contact-modal"
