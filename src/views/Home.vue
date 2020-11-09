@@ -41,7 +41,7 @@
             </li>
           </ul>
         </div>
-        <div class="col champ-pup bg-cover bg-bottom rounded-sm">
+        <div class="col champ-pup bg-cover rounded-sm">
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
       <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
         <div class="col sad-pup bg-cover rounded-sm">
         </div>
-        <div class="col md:my-20 bg-blue-400 bg-opacity-25 p-6 rounded shadow-xl text-white">
+        <div class="col md:my-20 bg-blue-500 bg-opacity-25 p-6 rounded shadow-xl text-white">
           <h2 class="font-bold leading-tight tracking-tight text-5xl mb-10">Bored at home?</h2>
           <p class="mb-10">Does your dog get into mischief while you're at work? Give them a day out to play and meet new friends instead of getting restless at home.</p>
           <div class="grid place-items-center w-full"><i class="fas fa-bone"></i></div>         
@@ -91,7 +91,7 @@
   .champ-pup {
     background-image: url(../assets/img/champ.jpg);
     min-height: 300px;
-    background-position: 50% 80%;
+    background-position: 45% 80%;
   }
 
   .sad-pup {

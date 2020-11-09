@@ -8,13 +8,11 @@
 
             <div class="flex-1 bg-contain bg-no-repeat bg-center sm:bg-left logo my-10 sm:my-0" alt=""></div>
 
-          <!-- <ul class="list-none mr-10 pr-10 font-bold">
-            <p class="text-xl text-gray-400">Quick Links</p>
-        <li><a href="#" class="focus:outline-white">Home</a></li>
-        <li><a href="#" class="focus:outline-white">Menu#2</a></li>
-          <li><a href="#" class="focus:outline-white">Menu#3</a></li>
-          <li><a href="#" class="focus:outline-white">Menu#4</a></li>
-        </ul> -->
+          <ul class="list-none mr-10 pr-10">
+            <p class="text-lg text-gray-400">Quick Links</p>
+        <li><router-link to="Home" class="focus:outline-white">Home</router-link></li>
+        <li><router-link to="Privacy" class="focus:outline-white">Privacy Policy</router-link></li>
+        </ul>
 
         
         <div class="ml-0 sm:ml-auto text-center sm:text-left">
