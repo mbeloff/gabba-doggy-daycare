@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-// const Home = () => import("../views/Home.vue")
+const Privacy = () => import("../views/Privacy.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -15,6 +15,11 @@ const routes = [
     path: "/Register",
     name: "Register",
     component: Home
+  },
+  {
+    path: "/privacy",
+    name: "Privacy",
+    component: Privacy
   },
   {
     path:"/*",
