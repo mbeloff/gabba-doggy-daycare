@@ -34,7 +34,7 @@
       
        -->
       <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
-        <div class="self-center align-center w-full lg:w-auto text-center divide-pink-500 divide-x text-pink-500 mb-3 lg:mb-0">
+        <div class="hidden self-center align-center w-full lg:w-auto text-center divide-pink-500 divide-x text-pink-500 mb-3 lg:mb-0">
           <button class="px-4" @click="showLogin()">Login</button>
           <a href="	https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="px-4">Create Account</a>
       </div>
