@@ -430,9 +430,11 @@
 </template>
 
 <script>
-  export default {
-
+export default {
+metaInfo: {
+    title: 'Privacy Policy',
   }
+}
 </script>
 
 <style scoped lang="scss">

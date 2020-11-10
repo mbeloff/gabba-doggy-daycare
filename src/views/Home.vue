@@ -2,7 +2,6 @@
   <div>
     <Hero></Hero>
     <Cards></Cards>
-
     <div class="section">
       <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
         <div class="col y-5 md:my-20">
@@ -74,7 +73,7 @@
       {
         name: 'description',
         content:
-          "Your best friends' new favourite place",
+          "Your best friends' new favourite place. Don't leave your dogs home alone, bring them to Gabba Doggy Day Care for a great day out.",
         vmid: 'description'
       }
     ]
