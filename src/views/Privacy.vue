@@ -1,5 +1,6 @@
 <template>
-  <div class="mx-auto px-3 my-10 text-justify lg:text-left w-full sm:w-2/3 md:w-1/2 lg:w-2/5">
+<div class="container mx-auto">
+   <div class="mx-auto px-3 my-10 text-justify leading-7 lg:text-left lg:px-20 text-gray-700">
     <h1>Privacy Policy</h1>
     <p>Last updated: November 09, 2020</p>
     <p>
@@ -74,7 +75,7 @@
       <li>
         <strong>Website</strong> refers to Gabba Doggy Day Care, accessible
         from
-        <a href="https://www.gabbadoggydaycare.com" rel="external nofollow noopener" target="_blank">https://www.gabbadoggydaycare.com</a>
+        <router-link to="/" class="text-pink-500 hover:underline">https://www.gabbadoggydaycare.com</router-link>
       </li>
       <li>
         <strong>You</strong> means the individual accessing or using the
@@ -423,10 +424,12 @@
         By email: woof@gabbadoggydaycare.com
       </li>
       <li>
-        By mail: 46 Deshon St, Woolloongabba QLD 4102
+        By mail: Gabba Doggy Day Care <br>46 Deshon St, Woolloongabba QLD 4102
       </li>
     </ul>
   </div>
+</div>
+ 
 </template>
 
 <script>
@@ -439,7 +442,7 @@ metaInfo: {
 
 <style scoped lang="scss">
 p {
-  // margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 h2,

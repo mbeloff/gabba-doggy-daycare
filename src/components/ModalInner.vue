@@ -6,7 +6,7 @@
           Default Title
         </slot>
       </h1>
-      <button class="float-right focus:outline-blue" @click="hide()"><i class="fa fa-times fa-2x text-blue-200 mx-3 hover:text-blue-900"></i>
+      <button class="float-right focus:outline-white" @click="hide()"><i class="fa fa-times fa-2x text-blue-200 mx-3 hover:text-blue-900"></i>
       </button>
     </div>
     <slot name="body"></slot>

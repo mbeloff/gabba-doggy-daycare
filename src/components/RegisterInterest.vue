@@ -51,7 +51,7 @@
 
 
       </form>
-      <p class="leading-snug tracking-tight text-gray-500 text-sm">We respect your privacy. We will only ever use your info to contact you about Gabba Doggy Day Care. We will never sell your info, or use it for any other purpose.</p>
+      <p class="leading-snug tracking-tight text-gray-500 text-sm">We respect your privacy. We will only ever use your info to contact you about Gabba Doggy Day Care. We will never sell your info, or use it for any other purpose. Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
     </div>
 </template>
 
@@ -124,6 +124,12 @@ export default {
             this.isLoading = false;
             this.hasSubmitted = true;
           })
+      },
+      close() {
+          this.$router.push({
+          name: 'Privacy'
+        })
+        this.$modal.hide('contact-modal')
       }
     },
     mounted() {

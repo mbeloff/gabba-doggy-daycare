@@ -1,6 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 const Privacy = () => import("../views/Privacy.vue")
+const Daycare = () => import("../views/Daycare.vue")
+const SignUp = () => import("../views/SignUp.vue")
+const NotFound = () => import("../views/NotFound.vue")
+const Contact = () => import("../views/Contact.vue")
+const Vax = () => import("../views/Vax.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -12,9 +17,29 @@ const routes = [
     component: Home
   },
   {
-    path: "/Register",
+    path: "/contact",
+    name: "Contact",
+    component: Contact
+  },
+  {
+    path: "/register",
     name: "Register",
     component: Home
+  },
+  {
+    path: "/vaccinations",
+    name: "Vaccinations",
+    component: Vax
+  },
+  {
+    path: "/sign-up",
+    name: "Sign-up",
+    component: SignUp
+  },
+  {
+    path: "/daycare",
+    name: "Daycare",
+    component: Daycare
   },
   {
     path: "/privacy",
@@ -24,7 +49,7 @@ const routes = [
   {
     path:"/*",
     name: "NotFound",
-    component: Home
+    component: NotFound
   }
 ]
 

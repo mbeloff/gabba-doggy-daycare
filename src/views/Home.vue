@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-lg">
     <Hero></Hero>
     <Cards></Cards>
     <div class="section">
@@ -7,45 +7,38 @@
         <div class="col y-5 md:my-20">
           <p class="font-bold text-blue-700 mb-10">Brisbane Dogs Love it Here</p>
           <h2 class="font-bold tracking-tight leading-tight text-5xl mb-10">More than just a day care</h2>
-          <p class="mb-10">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
-          <ul class="list-none list-inside font-bold">
+          <p class="mb-10 leading-8">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
+          <ul class="list-none list-inside font-bold text-left">
             
-            <li class="flex mb-2">
-              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">Easy Online Bookings</p>
-            </li>
-            <li class="flex mb-2">
-              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">After Hours Kennels</p>
-            </li>
-            <li class="flex mb-2">
-              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">Pet Taxi Service - <span class="font-normal">pickup and dropoff within 5km</span></p>
-            </li>
-            <li class="flex mb-2">
-              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">Daily Walks</p>
-            </li>
-            <li class="flex mb-2">
-              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">Trip to the bay, or along the river</p>
-            </li>
-            <li class="flex mb-2">
-              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">Grooming</p>
-            </li>
-            <li class="flex mb-2">
-              <i class="fas fa-paw text-blue-600 mr-3 mt-1"></i>
-              <p class="">Dog Wash</p>
-            </li>
+            <ListItem>Easy Online Bookings <br>
+            <span class="text-sm text-gray-700">Conveniently manage your own bookings or purchase our daycare packages</span>
+            </ListItem>
+            <ListItem>After Hours Kennels <br>
+            <span class="text-sm text-gray-700">After hours pickups can be made available if you're running late.</span>
+            </ListItem>
+            <ListItem>Pet Taxi Service <br>
+            <span class="text-sm text-gray-700">local pickup and dropoff within 3km</span>
+            </ListItem>
+            <ListItem>Daily Walks <br>
+            <span class="text-sm text-gray-700">Fresh air and exercise with a dog park close by</span>
+            </ListItem>
+            <ListItem>Trips to the bay, or along the river <br>
+            <span class="text-sm text-gray-700">Give your dog a little bit of an adventure. Small group outings to take in the scenery.</span>
+            </ListItem>
+            <ListItem>Grooming <br>
+             <span class="text-sm text-gray-700">Warm hydrobath and grooming services available</span>
+             </ListItem>
           </ul>
+          <div class="text-center mt-10">
+            <router-link :to="{ name: 'Daycare' }" class="inline-block px-5 py-2 rounded text-xl bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500  focus:outline-blue">Find Out More</router-link>
+          </div>
         </div>
         <div class="col champ-pup bg-cover rounded-sm">
         </div>
       </div>
     </div>
 
-    <div class="section bg-blue-700">
+    <!-- <div class="section bg-blue-700">
       <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
         <div class="col sad-pup bg-cover rounded-sm">
         </div>
@@ -55,7 +48,9 @@
           <div class="grid place-items-center w-full"><i class="fas fa-bone"></i></div>         
         </div>
       </div>
-    </div>
+    </div> -->
+
+    
   </div>
 </template>
 
@@ -97,5 +92,11 @@
     background-image: url(../assets/img/sadpup.jpg);
     min-height: 300px;
     background-position: 50% 80%;
+  }
+
+  .flower-pup {
+    background-image: url(../assets/img/flower-pup.jpg);
+    min-height: 300px;
+    background-position: 50% 30%
   }
 </style>

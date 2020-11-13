@@ -1,8 +1,12 @@
 <template>
-  <a target="_blank" :href="this[site].link" class="my-auto fa-stack text-xl text-blue-500 hover:text-yellow-500 social-icon">
+<a target="_blank" rel="noopener" :href="this[site].link" class="flex text-blue-500 hover:text-yellow-500">
+  <div class="my-auto fa-stack text-xl  social-icon">
               <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fa-stack-1x text-blue-100 " :class="this[site].icon"></i>
-            </a>
+              <i class="fa-stack-1x text-blue-100" :class="this[site].icon"></i>
+            </div>
+            <span class="place-self-center font-normal"><slot></slot></span>
+</a>
+  
 </template>
 
 <script>

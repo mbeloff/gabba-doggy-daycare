@@ -1,9 +1,11 @@
 <template>
   <div class="section bg-gray-200">
     <div class="container mx-auto  py-20 text-center">
-      <p class="font-bold text-blue-700 mb-10">Your best friend's new favourite place</p>
-      <p class="font-bold text-5xl mb-20">Gabba Doggy Day Care</p>
-      <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-4"> -->
+      <Title>
+        <template v-slot:small>Your best friend's new favourite place</template>
+        <template v-slot:big>Gabba Doggy Day Care</template>
+      </Title>
+
       <div class="flex flex-wrap px-4 justify-center">
         <template>
           <div v-for="(card, i) in cards" :key="i" class="p-3 w-1/1 flex-grow sm:flex-grow-0 sm:w-1/2 md:w-1/3">
@@ -40,12 +42,12 @@
           {
             icon: "fas fa-dog-leashed",
             heading: "Walks",
-            desc: "Take a daily walk through the nearby park, or if you like, your doggo can go for a trip to the bay or walk along the river."
+            desc: "Take a daily walk through the nearby park, or if you like, doggos can take a group trip to the bay or walk along the river."
           },
           {
             icon: "fas fa-taxi",
             heading: "Pet Taxi",
-            desc: "Save yourself a bit of rushing around. Our pet taxi is available for local pickups and dropoffs."
+            desc: "Save yourself a bit of rushing around. Our pet taxi will be available for local pickups and dropoffs."
           },
           {
             icon: "fas fa-user-unlock",

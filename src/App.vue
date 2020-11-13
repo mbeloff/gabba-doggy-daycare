@@ -4,7 +4,7 @@
     <div class="nav-wrapper fixed w-full" style="z-index: 100">
       <Nav />
     </div>
-    <div class="content-wrapper pt-19" style="margin-top: 68px">
+    <div class="content-wrapper pt-19" style="margin-top: 72px">
       <router-view />
       <modal
       name="contact-modal"
@@ -78,7 +78,7 @@ body {
 #app {
   display: grid;
   grid-template-rows: 1fr auto;
-  min-height: calc(100vh - 78px);
+  min-height: 100vh;
 }
 
 .vm--modal {
