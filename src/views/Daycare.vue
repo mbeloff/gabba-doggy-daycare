@@ -62,7 +62,7 @@
               <ListItem>Friendly with people and other dogs</ListItem>
             </ul>
             <p class="mb-3">If that sounds good to you, please <a href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" target="_blank" class="text-pink-500 hover:underline">click here</a> to register an account with us. This will allow you to enter your (and your dog's) information, purchase day care packages and schedule day care sessions at Gabba Doggy Day Care.</p>
-            <p class="">If have any questions or concerns regarding the above criteria, or about anything else, shoot us a quick email at <a class="text-blue-800" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a> to discuss.</p>
+            <p class="">If have any questions or concerns regarding the above criteria, you can view our <router-link class="text-pink-500 hover:underline" to="vaccinations">vaccination policy</router-link>, or shoot us a quick email at <a class="text-pink-500 hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a> to discuss.</p>
 
 
 

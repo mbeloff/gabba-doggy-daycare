@@ -1,14 +1,14 @@
 <template>
   <div class="bg-gray-900 py-6 text-gray-600 ">
     <div class="container mx-auto px-3">
-      <!-- <div class="w-full py-10 text-gray-400">
-      </div> -->
-      <div class="flex flex-col sm:flex-row">
+      <div class="flex flex-col sm:flex-row space-y-5 sm:space-x-5">
+
+        <div class="flex-grow bg-contain bg-no-repeat bg-center sm:bg-left logo " alt="">
+        </div>
 
 
-        <div class="flex-1 bg-contain bg-no-repeat bg-center sm:bg-left logo my-10 sm:my-0" alt=""></div>
 
-        <ul class="list-none sm:mr-10 sm:pr-10 sm:text-left text-center mb-4">
+        <ul class="list-none sm:text-left text-center">
           <p class="text-lg text-gray-400">Quick Links</p>
           <li>
             <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
@@ -17,21 +17,29 @@
             <router-link :to="{ name: 'Daycare' }" class="focus:outline-white hover:text-white">Daycare</router-link>
           </li>
           <li>
+            <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Register</router-link>
+          </li>
+          <li>
             <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
           </li>
           <li>
             <router-link :to="{ name: 'Privacy' }" class="focus:outline-white hover:text-white">Privacy Policy</router-link>
           </li>
         </ul>
 
-        <div class="ml-0 sm:ml-auto text-center sm:text-left">
-          <div class="mb-3">
+
+
+        <div class="text-center sm:text-left">
+          <div class="">
             <p class="text-xl text-gray-400 font-bold">Get in touch</p>
             <p class="text-gray-500">
               <a class="text-gray-300 hover:taxt-gray-100 focus:outline-white hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a><br>
               46 Deshon st,<br>Woolloongabba 4102</p>
           </div>
-          <div class="flex flex-row">
+          <div class="flex flex-row mt-2">
             <SocialIcon site="facebook"></SocialIcon>
             <SocialIcon site="instagram"></SocialIcon>
           </div>

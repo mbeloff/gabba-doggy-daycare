@@ -5,8 +5,7 @@
         <template v-slot:small>Your best friend's new favourite place</template>
         <template v-slot:big>Gabba Doggy Day Care</template>
       </Title>
-
-      <div class="flex flex-wrap px-4 justify-center">
+      <div class="flex flex-wrap justify-center">
         <template>
           <div v-for="(card, i) in cards" :key="i" class="p-3 w-1/1 flex-grow sm:flex-grow-0 sm:w-1/2 md:w-1/3">
           <div class="card bg-white rounded-lg shadow-lg hover:shadow-2xl px-6 h-full py-10">
@@ -16,8 +15,7 @@
             </span>
             <p class="font-bold my-3">{{card.heading}}</p>
             <p class="text-gray-700">{{card.desc}}</p>
-          </div>
-            
+          </div>            
           </div>
         </template>
       </div>
