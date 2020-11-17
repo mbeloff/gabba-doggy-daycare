@@ -3,7 +3,7 @@
 module.exports = {
   configureWebpack: {
     plugins: [
-      // new SitemapPlugin("https://verifiedautoshop.com", paths, {
+      // new SitemapPlugin("https://gabbadoggydaycare.com", paths, {
       //   lastmod: true,
       //   changefreq: "monthly",
       //   priority: "0.5"

@@ -1,14 +1,14 @@
 <template>
   <div class="bg-gray-900 py-6 text-gray-600 ">
     <div class="container mx-auto px-3">
-      <div class="flex flex-col sm:flex-row space-y-5 sm:space-x-5">
+      <div class="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5">
 
         <div class="flex-grow bg-contain bg-no-repeat bg-center sm:bg-left logo " alt="">
         </div>
 
 
 
-        <ul class="list-none sm:text-left text-center">
+        <ul class="flex-grow list-none sm:text-left text-center">
           <p class="text-lg text-gray-400">Quick Links</p>
           <li>
             <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
@@ -17,7 +17,7 @@
             <router-link :to="{ name: 'Daycare' }" class="focus:outline-white hover:text-white">Daycare</router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Register</router-link>
+            <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Create Account</router-link>
           </li>
           <li>
             <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>

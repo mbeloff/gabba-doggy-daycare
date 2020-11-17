@@ -5,7 +5,11 @@
       <Nav />
     </div>
     <div class="content-wrapper pt-19" style="margin-top: 72px">
-      <router-view />
+      <transition name="pagefade"
+         mode="out-in">
+        <router-view />
+      </transition>
+      
       <modal
       name="contact-modal"
       height="auto"
@@ -63,10 +67,30 @@ export default {
         vmid: 'description'
       }
     ]
-  }
+  },
 }
 </script>
 <style>
+ .pagefade-enter-active,
+ .pagefade-leave-active {
+   transition-duration: 0.3s;
+   transition-property:  opacity;
+   transition-timing-function: ease;
+   overflow: hidden;
+ }
+
+ .pagefade-enter-active,
+.pagefade-leave-active {
+  transition-duration: 0.3s;
+  transition-property:  opacity;
+  transition-timing-function: ease;
+}
+
+.pagefade-enter,
+.pagefade-leave-active {
+  opacity: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {

@@ -16,7 +16,7 @@
            <ListItem>Bordetella and Parainfluenza (Kennel/Canine Cough)</ListItem>
           </ul>
         <p class="mb-4">All these are covered by a <em>C5</em> Vaccination, or a combination of <em>C3</em> and <em>KC</em> vaccination. We recommend speaking with your regular vet if you're unsure whether your dog's vaccinations are up-to-date, as we will request evidence of their vaccinations before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
-        <p class="font-bold ">If you have any questions about our vaccination policy, just send a quick email to  <a class="text-pink-500 hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a> we'll get back to you.</p>
+        <p class="font-bold">If you have any questions about our vaccination policy, just send a quick email to  <Email class="break-all">woof@gabbadoggydaycare.com</Email> and we'll get back to you.</p>
       </div>
       </div>
       
