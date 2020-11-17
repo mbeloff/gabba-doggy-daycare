@@ -13,6 +13,9 @@
             <ListItem>Easy Online Bookings <br>
             <span class="text-sm text-gray-700">Conveniently manage your own bookings or purchase our daycare packages</span>
             </ListItem>
+            <ListItem>Large facility <br>
+            <span class="text-sm text-gray-700">Multiple big, open play areas with access to grass. </span>
+            </ListItem>
             <ListItem>After Hours Kennels <br>
             <span class="text-sm text-gray-700">After hours pickups can be made available if you're running late.</span>
             </ListItem>

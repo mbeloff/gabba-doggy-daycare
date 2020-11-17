@@ -1,6 +1,6 @@
 <template>
   <nav @mouseleave="hide" v-touch:swipe.down="hide" class="mx-auto flex items-center justify-between flex-wrap py-4 px-2 lg:px-10 shadow-lg bg-white relative">
-    <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 text-blue-600 mr-2 lg:mr-6">
+    <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 text-blue-600 mr-2 lg:mr-6 focus:outline-blue">
 
       <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="">
       <!-- <span class="font-semibold text-xl tracking-tight ml-2">Gabba Doggy Day Care</span> -->
@@ -27,12 +27,12 @@
        -->
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
           <div class=" self-center align-center w-full lg:w-auto text-center divide-pink-500 divide-x text-pink-500 mb-3 lg:mb-0">
-            <button class="px-4" @click="showLogin()">Login</button>
-            <router-link :to="{name: 'Sign-up'}" class="px-4">Create Account</router-link>
+            <button class="px-4 focus:outline-blue" @click="showLogin()">Login</button>
+            <router-link :to="{name: 'Sign-up'}" class="px-4 focus:outline-blue">Create Account</router-link>
           </div>
           <div class="h-full flex self-center">
-            <SocialIcon site="facebook"></SocialIcon>
-            <SocialIcon site="instagram"></SocialIcon>
+            <SocialIcon site="facebook" class="focus:outline-blue"></SocialIcon>
+            <SocialIcon site="instagram" class="focus:outline-blue"></SocialIcon>
           </div>
 
           <open-modal class="inline-block  px-5 py-2 rounded bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500  focus:outline-blue ml-2">Let me Know!</open-modal>
