@@ -31,7 +31,9 @@
           </div>
           <!-- <div class="w-10/12 pt-3 text-sm text-gray-600 p-2 z-10">{{service.desc}}</div> -->
         </div>
+        
       </div>
+      <p class="text-center mt-2 text-blue-600">more pricing options available soon</p>
       <h2 class="font-bold tracking-tight leading-tight text-5xl my-10 text-center">Extras</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 pt-5">
         <div v-for="(extra, i) in prices.extras" :key="i" class="mb-2 bg-white">
