@@ -22,11 +22,21 @@
           <li>
             <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
           </li>
+        </ul>
+        <ul class="flex-grow list-none sm:text-left text-center">
+          <p class="text-lg text-gray-400">Info</p>
           <li>
             <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
           </li>
           <li>
             <router-link :to="{ name: 'Privacy' }" class="focus:outline-white hover:text-white">Privacy Policy</router-link>
+          </li>
+          <p class="text-lg text-gray-400">Agreements</p>
+          <li>
+            <a href="/docs/GDDC-general-agreement.pdf" class="focus:outline-white hover:text-white">Daycare Contract</a>
+          </li>
+          <li>
+            <a href="/docs/GDDC-medical-agreement.pdf" class="focus:outline-white hover:text-white">Medical Release</a>
           </li>
         </ul>
 
