@@ -1,33 +1,65 @@
 <template>
   <div class="section">
     <div class="container px-3 mx-auto py-20">
-      <div class=" w-full md:w-3/4 lg:w-2/3 mx-auto"><Title>
-        <template v-slot:small>Vaccinations</template>
-        <template v-slot:big>What do I need to know?</template>
-      </Title>
-      <div class="content">
+      <div class="w-full mx-auto">
+        <Title>
+          <template v-slot:small>Vaccinations</template>
+          <template v-slot:big>What do I need to know?</template>
+        </Title>
+        <div class="content">
           <p class="mb-4">Vaccinations are important to protect your dog and stop the spread of contagious illnesses and diseases. This is especially important in a doggy daycare and other spaces where many dogs are interacting.</p>
-        <p class="mb-4">As we love to see all our guests happy, safe and healthy, we require everyone to be up to date with their vaccinations before they can book in for daycare.</p>
-        <p class="mb-4">We ask that dogs are protected against the following:</p>
-        <ul class="list-none list-inside ml-4 font-bold text-left mb-4">           
-           <ListItem>Distemper</ListItem>
-           <ListItem>Hepatitus</ListItem>
-           <ListItem>Parvovirus</ListItem>
-           <ListItem>Bordetella and Parainfluenza (Kennel/Canine Cough)</ListItem>
+          <p class="mb-4">As we love to see all our guests happy, safe and healthy, we require everyone to be up to date with their vaccinations before they can book in for daycare.</p>
+          <p class="mb-4">We ask that dogs are protected against the following:</p>
+          <ul class="list-none list-inside ml-4 font-bold text-left mb-4">
+            <ListItem>Distemper</ListItem>
+            <ListItem>Hepatitus</ListItem>
+            <ListItem>Parvovirus</ListItem>
+            <ListItem>Bordetella and Parainfluenza (Kennel/Canine Cough)</ListItem>
           </ul>
-        <p class="mb-4">All these are covered by a <em>C5</em> Vaccination, or a combination of <em>C3</em> and <em>KC</em> vaccination. We recommend speaking with your regular vet if you're unsure whether your dog's vaccinations are up-to-date, as we will request evidence of their vaccinations before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
-        <p class="font-bold">If you have any questions about our vaccination policy, just send a quick email to  <Email class="break-all">woof@gabbadoggydaycare.com</Email> and we'll get back to you.</p>
+          <p class="mb-4">All these are covered by a <em>C5</em> Vaccination, or a combination of <em>C3</em> and <em>KC</em> vaccination. We recommend speaking with your regular vet if you're unsure whether your dog's vaccinations are up-to-date, as we'll need to know before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
+          <div class="section py-5">
+            <h2 class="text-2xl font-bold">Typical Puppy Vaccination Schedule*</h2>
+          <p class="text-blue-700 font-bold mb-3">*may vary depending on vaccine brands used</p>
+          <table class="pl-2 w-full my-5">
+            <tbody class="space-y-5">
+              <tr>
+                <td class="w-1/5 py-3">6-8 weeks</td>
+                <td class="w-1/5 py-3"><strong>First vaccination</strong></td>
+                <td class="w-3/5 py-3">Distemper, hepatitis, and parvovirus</td>
+              </tr>
+              <tr>
+                <td class="w-1/5 py-3">10-12 weeks</td>
+                <td class="w-1/5 py-3"><strong>Booster vaccination</strong></td>
+                <td class="w-3/5 py-3">Distemper, hepatitis, parvovirus, parainfluenza, and bordetella.</td>
+              </tr>
+              <tr>
+                <td class="w-1/5 py-3">14-16 weeks</td>
+                <td class="w-1/5 py-3"><strong>Final puppy vaccination</strong></td>
+                <td class="w-3/5 py-3">Distemper, hepatitis, parvovirus, parainfluenza, and bordetella. Depending on the brand used, puppies may not require parainfluenza and bordetella at this age</td>
+              </tr>
+              <tr>
+                <td class="w-1/5 py-3">Every year after</td>
+                <td class="w-1/5 py-3"><strong>Annual boosters</strong></td>
+                <td class="w-3/5 py-3">Your adult dog will require yearly vaccination boosters for the rest of their life to remain immune from these diseases</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          
+
+          
+          <p >If you have any questions about our vaccination policy, just send a quick email to <Email class="break-all">woof@gabbadoggydaycare.com</Email> and we'll get back to you.</p>
+        </div>
       </div>
-      </div>
-      
+
     </div>
   </div>
 </template>
 
 <script>
-export default {
+  export default {
 
-}
+  }
 </script>
 
 <style>

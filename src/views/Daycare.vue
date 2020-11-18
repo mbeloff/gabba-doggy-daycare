@@ -38,7 +38,7 @@
             <div class="px-2 flex-grow">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
             <div class="px-2"><span class="text-pink-500">{{extra.price}}</span></div>
           </div>
-          <div class="w-10/12 pt-3 text-sm text-gray-600 p-2 z-10">{{extra.desc}}</div>
+          <!-- <div class="w-10/12 pt-3 text-sm text-gray-600 p-2 z-10">{{extra.desc}}</div> -->
         </div>
       </div>
     </div>
@@ -134,6 +134,7 @@
             Excursion: {
               name: "A Little Outing",
               desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
+              soon: "- available soon",
               price: "$20"
             },
             Lunch: {

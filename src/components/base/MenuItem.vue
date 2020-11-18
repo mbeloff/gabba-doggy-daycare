@@ -3,7 +3,7 @@
     <button tabindex="0" class="font-bold block lg:inline-block focus:outline-none focus:text-blue-600 hover:text-blue-600  p-3">{{item.label}} <i v-if="item.sub" class="fal ml-2 fa-chevron-right fa-rotate-90"></i></button>
     <transition-expand v-if="item.sub" class="mt-1">
       <div class="lg:absolute grid items-center origin-top bg-white dropdown lg:shadow-lg px-3 py-2" v-show="open">
-      <button tabindex="0" class="text-left font-bold px-5 py-3 hover:text-blue-600 focus:outline-none focus:text-blue-600" v-for="(item, i) in item.sub" :key="i" @click.stop="clickSub({name: item.link, hash: item.hash})">{{item.label}}</button>
+      <button tabindex="0" class="text-left font-bold px-5 py-3 hover:text-blue-600 focus:outline-none focus:text-blue-600" v-for="(item, i) in item.sub" :key="i" @click.stop="clickSub(item)">{{item.label}}</button>
     </div>
     </transition-expand>
   </div>

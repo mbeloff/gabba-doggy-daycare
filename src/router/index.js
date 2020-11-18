@@ -59,11 +59,16 @@ const router = new VueRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      return new Promise((resolve) => {
+      if (to.name == from.name) {
+        return { selector: to.hash, behavior: 'smooth', offset: {x: 0, y: 25} }
+      } else {
+        return new Promise((resolve) => {
         setTimeout(() => {
           resolve({ selector: to.hash, behavior: 'smooth', offset: {x: 0, y: 25} })
-        }, 300)
+        }, 350)
       })
+      }
+     
     }
     if (savedPosition) {
       return new Promise((resolve) => {

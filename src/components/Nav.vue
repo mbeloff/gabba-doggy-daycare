@@ -60,17 +60,17 @@
           sub: [
             {
               label: "About",
-              link: "Daycare",
+              name: "Daycare",
               hash: "#about"
             },
             {
               label: "Prices",
-              link: "Daycare",
+              name: "Daycare",
               hash: "#prices"
             },
             {
               label: "Joining",
-              link: "Daycare",
+              name: "Daycare",
               hash: "#enrol"
             }
           ]
