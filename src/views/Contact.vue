@@ -11,7 +11,7 @@
         <div class="my-auto">
           <ul class="list-none list-inside font-bold text-xl">
             <ListItem class="flex flex-col items-center md:items-start text-center md:flex-row md:text-left mb-4">Address: <br> <span>Gabba Doggy Day Care <br> 46 Deshon Street, <br>Woolloongabba 4102</span></ListItem>
-            <ListItem class="flex flex-col items-center text-center md:flex-row md:text-left mb-4 md:items-start">Email: <br> <span><a class="text-pink-500 hover:underline break-all" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a></span></ListItem>
+            <ListItem class="flex flex-col items-center text-center md:flex-row md:text-left mb-4 md:items-start">Email: <br> <span><Email class="break-all">woof@gabbadoggydaycare.com</Email></span></ListItem>
             <ListItem class="flex flex-col items-center text-center md:flex-row md:text-left mb-4 md:items-start">Follow us on: <br>
               <div class="flex flex-wrap">
                 <div class="">
