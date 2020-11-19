@@ -1,11 +1,11 @@
 <template>
   <div class="p-3">
-      <p class="text-blue-800">Thanks for checking out Gabba Doggy Day Care. Leave your info with us and we'll let you know when we're opening.</p>
+      <p class="text-blue-900">Thanks for checking out Gabba Doggy Day Care. Leave your info with us and we'll let you know when we're opening.</p>
       <br />
       <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
           <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
-            <p class="px-4 py-2 mx-2 text-2xl text-center text-white bg-blue-800 rounded-full shadow-xl place-self-center">Thanks, we'll keep you posted</p>
+            <p class="px-4 py-2 mx-2 text-2xl text-center text-white bg-blue-500 rounded-full shadow-xl place-self-center">Thanks, we'll keep you posted</p>
           </div>
         </transition>
 
@@ -17,25 +17,25 @@
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="name">
               name
             </label>
-            <input v-model="form.name" ref="name" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="name" type="text" placeholder="">
+            <input v-model="form.name" ref="name" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="name" type="text" placeholder="">
           </div>
           <div class="mb-2">
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="email">
               email
             </label>
-            <input v-model="form.email" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+            <input v-model="form.email" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
               phone
             </label>
-            <input v-model="form.phone" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+            <input v-model="form.phone" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
               message
             </label>
-            <textarea v-model="form.message" rows="4" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
+            <textarea v-model="form.message" rows="4" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
           </div>
           <transition name="grow">
             <div v-if="this.missingContact">
@@ -43,7 +43,7 @@
             </div>
           </transition>
           <div class="flex items-center justify-between">
-            <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline" type="submit">
+            <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:ring" type="submit">
               Submit
             </button>
           </div>

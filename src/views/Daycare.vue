@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="bg-gray-200 section" id="about">
+    <div class="bg-gray-100 section" id="about">
       <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-20">
           <Title>
@@ -18,13 +18,14 @@
 
     </div>
     <div class="container px-2 py-20 mx-auto section" id="prices">
-      <p class="mb-10 font-bold text-center text-blue-700" >Price List</p>
-      <h2 class="my-10 text-5xl font-bold leading-tight tracking-tight text-center">Day Care <br><span class="text-base tracking-normal">Open from 7am - 6pm</span></h2>
-
+        <Title class="text-center">
+            <template v-slot:small>Price List</template>
+            <template v-slot:big>Day Care <br><span class="text-base tracking-normal">Open from 7am - 6pm</span></template>
+        </Title>
 
       <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
         <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white">
-          <div class="flex bg-gray-200 rounded-lg">
+          <div class="flex bg-gray-100 rounded-lg">
             <div class="flex-grow px-2">{{service.name}}</div>
             <div class="px-2"><span class="text-pink-500">{{service.price}}</span></div>
           </div>
@@ -32,11 +33,13 @@
         </div>
         
       </div>
-      <p class="mt-2 text-center text-blue-600">more pricing options available soon</p>
-      <h2 class="my-10 text-5xl font-bold leading-tight tracking-tight text-center">Extras</h2>
+      <p class="mt-2 text-center text-blue-500">more pricing options available soon</p>
+      <Title class="text-center">
+            <template v-slot:big>Extras</template>
+        </Title>
       <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
         <div v-for="(extra, i) in prices.extras" :key="i" class="mb-2 bg-white">
-          <div class="flex bg-gray-200 rounded-lg">
+          <div class="flex bg-gray-100 rounded-lg">
             <div class="flex-grow px-2">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
             <div class="px-2"><span class="text-pink-500">{{extra.price}}</span></div>
           </div>
@@ -44,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-200 section"  id="enrol">
+    <div class="bg-gray-100 section"  id="enrol">
       <div class="container py-20 mx-auto">
         <div class="text-center">
           <Title>

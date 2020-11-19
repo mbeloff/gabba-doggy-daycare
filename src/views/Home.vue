@@ -5,8 +5,8 @@
     <div class="section">
       <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-20">
-          <p class="mb-10 font-bold text-blue-700">Brisbane Dogs Love it Here</p>
-          <h2 class="mb-10 text-5xl font-bold leading-tight tracking-tight">More than just a day care</h2>
+          <Title><template v-slot:small>Brisbane Dogs Love it Here</template>
+          <template v-slot:big>More than just a day care</template></Title>
           <p class="mb-10 leading-8">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
           <ul class="font-bold text-left list-none list-inside">
             
@@ -30,7 +30,7 @@
              </ListItem>
           </ul>
           <div class="mt-10 text-center">
-            <router-link :to="{ name: 'Daycare' }" class="inline-block px-5 py-2 text-xl text-white bg-blue-600 rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500 focus:outline-blue">Find Out More</router-link>
+            <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Find Out More</router-link>
           </div>
         </div>
         <div class="bg-cover rounded-sm col champ-pup">

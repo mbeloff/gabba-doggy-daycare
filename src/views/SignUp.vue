@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-200 section">
+    <div class="bg-gray-100 section">
       <div class="container py-20 mx-auto">
         <div class="text-center">
           <p class="mb-10 font-bold text-blue-700">Already have an account?</p>

@@ -96,7 +96,7 @@ export default {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #353640;
+  color: #474b57;
   scroll-behavior: smooth;
 }
 
@@ -113,10 +113,10 @@ body {
 
 @layer components {
   .btn-blue {
-    @apply px-5 py-2 bg-blue-600 text-white rounded-full
+    @apply px-5 py-2 bg-blue-500 text-white rounded-full text-lg
   }
   .btn-blue:hover {
-    @apply bg-yellow-500 border-transparent
+    @apply bg-yellow-400 border-transparent
   }
   .btn-blue:focus {
     @apply outline-blue

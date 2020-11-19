@@ -7,9 +7,9 @@
         <img class="w-full" src="../assets/img/gddc-logo.svg" alt="">
       </div>     
         <p class="mb-3 text-4xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-teal-300 to-yellow-300">A great day out for your pup</p>
-        <p class="mb-5 text-lg"><span class="font-bold text-orange-400">OPENING SOON!</span> Register your details early for <nobr>3-day</nobr> trial at Gabba Doggy Day Care. We'll let you know when we're ready to take bookings.</p>
+        <p class="mb-5 text-lg"><span class="font-bold text-yellow-400">OPENING SOON!</span> Register your details early for <nobr>3-day</nobr> trial at Gabba Doggy Day Care. We'll let you know when we're ready to take bookings.</p>
           <open-modal class="w-full btn-blue">Let me know!</open-modal>  
-        <p class="mt-4 text-sm text-center text-gray-400">Website under construction. Some information may change :)</p>
+        <p class="mt-4 text-sm text-gray-300">Website under construction. Some information may change :)</p>
       </div>
     </div> 
      

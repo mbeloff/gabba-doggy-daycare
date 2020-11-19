@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 section">
+  <div class="bg-gray-100 section">
     <div class="container py-20 mx-auto text-center">
       <Title>
         <template v-slot:small>Your best friend's new favourite place</template>

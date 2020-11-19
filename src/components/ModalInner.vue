@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-200 rounded-lg shadow-xl">
-    <div class="flex justify-between p-3 bg-blue-600 rounded-t-lg">
+  <div class="bg-gray-100 rounded-lg shadow-xl">
+    <div class="flex justify-between p-3 bg-blue-500 rounded-t-lg">
       <h1 class="text-3xl font-bold tracking-tight text-blue-100"><i class="mr-2 fal fa-paw"></i>
         <slot name="title">
           Default Title
