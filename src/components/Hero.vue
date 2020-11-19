@@ -8,7 +8,7 @@
       </div>     
         <p class="mb-3 text-4xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-teal-300 to-yellow-300">A great day out for your pup</p>
         <p class="mb-5 text-lg"><span class="font-bold text-orange-400">OPENING SOON!</span> Register your details early for <nobr>3-day</nobr> trial at Gabba Doggy Day Care. We'll let you know when we're ready to take bookings.</p>
-          <open-modal class="w-full px-5 py-2 text-lg text-white bg-blue-600 rounded-full hover:border-transparent hover:bg-yellow-500 focus:outline-blue">Let me know!</open-modal>        
+          <open-modal class="w-full btn-blue">Let me know!</open-modal>  
         <p class="mt-4 text-sm text-center text-gray-400">Website under construction. Some information may change :)</p>
       </div>
     </div> 

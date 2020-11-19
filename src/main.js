@@ -10,7 +10,6 @@ import vueMeta from 'vue-meta'
 import VueTippy, { TippyComponent } from "vue-tippy";
 import './assets/styles/index.css';
 import Vue2TouchEvents from 'vue2-touch-events'
-import('@/assets/styles/index.css');
 Vue.use(Vue2TouchEvents)
 Vue.use(vueMeta)
 Vue.use(VModal)

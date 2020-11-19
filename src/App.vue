@@ -111,5 +111,15 @@ body {
   background-color: transparent!important
 }
 
-
+@layer components {
+  .btn-blue {
+    @apply px-5 py-2 bg-blue-600 text-white rounded-full
+  }
+  .btn-blue:hover {
+    @apply bg-yellow-500 border-transparent
+  }
+  .btn-blue:focus {
+    @apply outline-blue
+  }
+}
 </style>

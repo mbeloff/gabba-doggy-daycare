@@ -35,7 +35,7 @@
             <SocialIcon site="instagram" class="focus:outline-blue"></SocialIcon>
           </div>
 
-          <open-modal class="inline-block px-5 py-2 ml-2 text-white bg-blue-600 rounded-full hover:border-transparent hover:bg-yellow-500 focus:outline-blue">Let me Know!</open-modal>
+          <open-modal class="inline-block btn-blue">Let me Know!</open-modal>
         </div>
       </div>
     </transition>

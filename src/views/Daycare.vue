@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="grid grid-cols-1 gap-5 my-10 divide-pink-500 sm:grid-cols-2 sm:divide-x">
-          <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="inline-block px-5 py-2 text-xl text-center text-white bg-blue-600 rounded rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500 focus:outline-blue">Create an Account</a></div>
+          <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="inline-block btn-blue">Create an Account</a></div>
           <div class="flex items-center text-left col"><button @click="showLogin" class="mx-auto text-center text-pink-500 align-center sm:text-left hover:underline sm:ml-5">I already have an account</button></div>
         </div>
       </div>

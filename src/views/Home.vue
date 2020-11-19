@@ -1,5 +1,5 @@
 <template>
-  <div class="text-lg">
+  <div>
     <Hero></Hero>
     <Cards></Cards>
     <div class="section">
