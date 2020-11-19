@@ -1,12 +1,12 @@
 <template>
-  <div class="shadow-xl bg-gray-200 rounded-lg">
+  <div class="bg-gray-200 rounded-lg shadow-xl">
     <div class="flex justify-between p-3 bg-blue-600 rounded-t-lg">
-      <h1 class="text-3xl tracking-tight font-bold text-blue-100"><i class="fal fa-paw mr-2"></i>
+      <h1 class="text-3xl font-bold tracking-tight text-blue-100"><i class="mr-2 fal fa-paw"></i>
         <slot name="title">
           Default Title
         </slot>
       </h1>
-      <button class="float-right focus:outline-white" @click="hide()"><i class="fa fa-times fa-2x text-blue-200 mx-3 hover:text-blue-900"></i>
+      <button class="float-right focus:outline-white" @click="hide()"><i class="mx-3 text-blue-200 fa fa-times fa-2x hover:text-blue-900"></i>
       </button>
     </div>
     <slot name="body"></slot>

@@ -1,19 +1,19 @@
 <template>
-  <div class="section bg-gray-200">
-    <div class="container mx-auto  py-20 text-center">
+  <div class="bg-gray-200 section">
+    <div class="container py-20 mx-auto text-center">
       <Title>
         <template v-slot:small>Your best friend's new favourite place</template>
         <template v-slot:big>Gabba Doggy Day Care</template>
       </Title>
       <div class="flex flex-wrap justify-center">
         <template>
-          <div v-for="(card, i) in cards" :key="i" class="p-3 w-1/1 flex-grow sm:flex-grow-0 sm:w-1/2 md:w-1/3">
-          <div class="card bg-white rounded-lg shadow-lg hover:shadow-2xl px-6 h-full py-10">
+          <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3">
+          <div class="h-full px-6 py-10 bg-white rounded-lg shadow-lg card hover:shadow-2xl">
             <span class="fa-stack fa-3x">
-              <i class="fas fa-circle fa-stack-2x text-blue-500"></i>
+              <i class="text-blue-500 fas fa-circle fa-stack-2x"></i>
               <i class="fa-stack-1x fa-inverse" :class="card.icon"></i>
             </span>
-            <p class="font-bold my-3">{{card.heading}}</p>
+            <p class="my-3 font-bold">{{card.heading}}</p>
             <p class="text-gray-700">{{card.desc}}</p>
           </div>            
           </div>

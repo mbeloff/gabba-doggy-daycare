@@ -2,48 +2,48 @@
   <div class="p-3">
       <p class="text-blue-800">Thanks for checking out Gabba Doggy Day Care. Leave your info with us and we'll let you know when we're opening.</p>
       <br />
-      <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="bg-white shadow-md rounded px-3 pt-6 pb-8 mb-4 bg-pug bg-no-repeat bg-right-bottom relative" :class="{ 'opacity-50' : isLoading}">
+      <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
-          <div v-if="hasSubmitted" class="grid absolute h-full w-full top-0 left-0">
-            <p class="text-2xl text-center text-white place-self-center rounded-full px-4 py-2 shadow-xl mx-2 bg-blue-800">Thanks, we'll keep you posted</p>
+          <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
+            <p class="px-4 py-2 mx-2 text-2xl text-center text-white bg-blue-800 rounded-full shadow-xl place-self-center">Thanks, we'll keep you posted</p>
           </div>
         </transition>
 
-        <div v-if="isLoading" class="absolute h-full w-full left-0 top-0 grid">
-          <i class="fad fa-spinner place-self-center fa-4x animate-spin-slow animate-pulse text-blue-500"></i>
+        <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
+          <i class="text-blue-500 fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
         </div>
         <div :class="{ 'opacity-0' : hasSubmitted}">
           <div class="mb-2">
-            <label class="uppercase block text-blue-500 text-sm font-bold mb-2 mt-3" for="name">
+            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="name">
               name
             </label>
-            <input v-model="form.name" ref="name" class="text-xl shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white bg-opacity-50 focus:bg-opacity-75" id="name" type="text" placeholder="">
+            <input v-model="form.name" ref="name" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="name" type="text" placeholder="">
           </div>
           <div class="mb-2">
-            <label class="uppercase block text-blue-500 text-sm font-bold mb-2 mt-3" for="email">
+            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="email">
               email
             </label>
-            <input v-model="form.email" class="text-xl shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white bg-opacity-50 focus:bg-opacity-75" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+            <input v-model="form.email" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
-            <label class="uppercase block text-blue-500 text-sm font-bold mb-2 mt-3" for="phone">
+            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
               phone
             </label>
-            <input v-model="form.phone" class="text-xl shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white bg-opacity-50 focus:bg-opacity-75" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+            <input v-model="form.phone" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
-            <label class="uppercase block text-blue-500 text-sm font-bold mb-2 mt-3" for="phone">
+            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
               message
             </label>
-            <textarea v-model="form.message" rows="4" class="text-xl shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white bg-opacity-50 focus:bg-opacity-75" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
+            <textarea v-model="form.message" rows="4" class="w-full px-4 py-2 text-xl leading-tight text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:bg-opacity-75" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
           </div>
           <transition name="grow">
             <div v-if="this.missingContact">
-              <p class="rounded-lg bg-blue-300 bg-opacity-75 p-3 mb-4"><strong>Whoops!</strong> Please provide a phone number or email address so that we can get back to you.</p>
+              <p class="p-3 mb-4 bg-blue-300 bg-opacity-75 rounded-lg"><strong>Whoops!</strong> Please provide a phone number or email address so that we can get back to you.</p>
             </div>
           </transition>
           <div class="flex items-center justify-between">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline" type="submit">
               Submit
             </button>
           </div>
@@ -51,7 +51,7 @@
 
 
       </form>
-      <p class="leading-snug tracking-tight text-gray-500 text-sm">We respect your privacy. We will only ever use your info to contact you about Gabba Doggy Day Care. We will never sell your info, or use it for any other purpose. Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
+      <p class="text-sm leading-snug tracking-tight text-gray-500">We respect your privacy. We will only ever use your info to contact you about Gabba Doggy Day Care. We will never sell your info, or use it for any other purpose. Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
     </div>
 </template>
 

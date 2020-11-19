@@ -1,6 +1,6 @@
 <template>
-  <li class="flex mb-2 gap-2">
-              <i class="fas fa-paw text-blue-600 mt-1 text-sm"></i>
+  <li class="flex gap-2 mb-2">
+              <i class="mt-1 text-sm text-blue-600 fas fa-paw"></i>
               <p class="leading-tight"><slot></slot></p>
             </li>
 </template>

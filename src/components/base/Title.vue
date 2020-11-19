@@ -1,9 +1,9 @@
 <template>
   <div>
-    <p class="font-bold text-blue-700 mb-10">
+    <p class="mb-10 font-bold text-blue-700">
       <slot name="small">Default Small</slot>
       </p>
-      <h2 class="font-bold tracking-tight leading-tight text-5xl mb-10"><slot name="big">Default Big</slot></h2>
+      <h2 class="mb-10 text-5xl font-bold leading-tight tracking-tight"><slot name="big">Default Big</slot></h2>
   </div>
 </template>
 

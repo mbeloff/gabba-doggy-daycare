@@ -1,6 +1,6 @@
 <template>
 <div class="container mx-auto">
-   <div class="mx-auto px-3 my-10 text-justify leading-7 lg:text-left lg:px-20 text-gray-700">
+   <div class="px-3 mx-auto my-10 leading-7 text-justify text-gray-700 lg:text-left lg:px-20">
     <h1>Privacy Policy</h1>
     <p>Last updated: November 09, 2020</p>
     <p>
@@ -23,7 +23,7 @@
     </p>
     <h2>Definitions</h2>
     <p>For the purposes of this Privacy Policy:</p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>
         <strong>Account</strong> means a unique account created for You to
         access our Service or parts of our Service.
@@ -92,7 +92,7 @@
       identify You. Personally identifiable information may include, but is not
       limited to:
     </p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>
         <p>Email address</p>
       </li>
@@ -136,7 +136,7 @@
       beacons, tags, and scripts to collect and track information and to improve
       and analyze Our Service. The technologies We use may include:
     </p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>
         <strong>Cookies or Browser Cookies.</strong> A cookie is a small file
         placed on Your Device. You can instruct Your browser to refuse all
@@ -171,7 +171,7 @@
     <p>
       We use both Session and Persistent Cookies for the purposes set out below:
     </p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>
         <p><strong>Necessary / Essential Cookies</strong></p>
         <p>Type: Session Cookies</p>
@@ -209,7 +209,7 @@
     </ul>
     <h2>Use of Your Personal Data</h2>
     <p>The Company may use Personal Data for the following purposes:</p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>
         <p>
           <strong>To provide and maintain our Service</strong>, including to
@@ -276,7 +276,7 @@
       </li>
     </ul>
     <p>We may share Your personal information in the following situations:</p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>
         <strong>With Service Providers:</strong> We may share Your personal
         information with Service Providers to monitor and analyze the use of our
@@ -371,7 +371,7 @@
       The Company may disclose Your Personal Data in the good faith belief that
       such action is necessary to:
     </p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>Comply with a legal obligation</li>
       <li>Protect and defend the rights or property of the Company</li>
       <li>
@@ -419,7 +419,7 @@
     <p>
       If you have any questions about this Privacy Policy, You can contact us:
     </p>
-    <ul class="list-disc list-outside pl-6">
+    <ul class="pl-6 list-disc list-outside">
       <li>
         By email: woof@gabbadoggydaycare.com
       </li>

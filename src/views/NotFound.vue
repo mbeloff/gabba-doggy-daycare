@@ -1,7 +1,7 @@
 <template>
-  <div class="flex notfound bg-no-repeat bg-cover bg-bottom w-full h-full">
-    <div class="w-full md:w-1/2 mx-auto px-10 pt-10">
-      <p class="font-bold text-5xl">Sorry :(</p>
+  <div class="flex w-full h-full bg-bottom bg-no-repeat bg-cover notfound">
+    <div class="w-full px-10 pt-10 mx-auto md:w-1/2">
+      <p class="text-5xl font-bold">Sorry :(</p>
       <p class="text-xl">I couldn't find the page you were looking for</p>
     </div>
   </div>

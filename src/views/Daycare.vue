@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
-    <div class="section bg-gray-200" id="about">
-      <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
+    <div class="bg-gray-200 section" id="about">
+      <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-20">
           <Title>
             <template v-slot:small>Check out what's available</template>
@@ -10,58 +10,58 @@
           <p class="mb-4">Gabba Doggy Day Care offers special care for your dog while you're not able to - whether that's for a couple of hours or a whole day. We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Everyone has a place at Gabba Doggy Day Care.</p>
           <p>See below for more information about our day care prices, and additional services to make your pup's day a little bit special.</p>
         </div>
-        <div class="col toy-pup bg-cover rounded-sm">
+        <div class="bg-cover rounded-sm col toy-pup">
         </div>
       </div>
     </div>
     <div class="section">
 
     </div>
-    <div class="section px-2 container mx-auto py-20" id="prices">
-      <p class="font-bold text-blue-700 mb-10 text-center" >Price List</p>
-      <h2 class="font-bold tracking-tight leading-tight text-5xl my-10 text-center">Day Care <br><span class="text-base tracking-normal">Open from 7am - 6pm</span></h2>
+    <div class="container px-2 py-20 mx-auto section" id="prices">
+      <p class="mb-10 font-bold text-center text-blue-700" >Price List</p>
+      <h2 class="my-10 text-5xl font-bold leading-tight tracking-tight text-center">Day Care <br><span class="text-base tracking-normal">Open from 7am - 6pm</span></h2>
 
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 pt-5">
+      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
         <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white">
-          <div class="flex rounded-lg bg-gray-200">
-            <div class="px-2 flex-grow">{{service.name}}</div>
+          <div class="flex bg-gray-200 rounded-lg">
+            <div class="flex-grow px-2">{{service.name}}</div>
             <div class="px-2"><span class="text-pink-500">{{service.price}}</span></div>
           </div>
-          <!-- <div class="w-10/12 pt-3 text-sm text-gray-600 p-2 z-10">{{service.desc}}</div> -->
+          <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{service.desc}}</div> -->
         </div>
         
       </div>
-      <p class="text-center mt-2 text-blue-600">more pricing options available soon</p>
-      <h2 class="font-bold tracking-tight leading-tight text-5xl my-10 text-center">Extras</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 pt-5">
+      <p class="mt-2 text-center text-blue-600">more pricing options available soon</p>
+      <h2 class="my-10 text-5xl font-bold leading-tight tracking-tight text-center">Extras</h2>
+      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
         <div v-for="(extra, i) in prices.extras" :key="i" class="mb-2 bg-white">
-          <div class="flex rounded-lg bg-gray-200">
-            <div class="px-2 flex-grow">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
+          <div class="flex bg-gray-200 rounded-lg">
+            <div class="flex-grow px-2">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
             <div class="px-2"><span class="text-pink-500">{{extra.price}}</span></div>
           </div>
-          <!-- <div class="w-10/12 pt-3 text-sm text-gray-600 p-2 z-10">{{extra.desc}}</div> -->
+          <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{extra.desc}}</div> -->
         </div>
       </div>
     </div>
-    <div class="section bg-gray-200"  id="enrol">
-      <div class="container mx-auto py-20">
+    <div class="bg-gray-200 section"  id="enrol">
+      <div class="container py-20 mx-auto">
         <div class="text-center">
           <Title>
             <template v-slot:small>Ready to join us?</template>
             <template v-slot:big>Before You Enroll</template>
           </Title>
         </div>
-        <div class="px-4 grid grid-cols-1 md:grid-cols-3 gap-20 lg:px-20">
+        <div class="grid grid-cols-1 gap-20 px-4 md:grid-cols-3 lg:px-20">
           <div class="text-left md:col-span-2">
             <sign-up-info></sign-up-info>
           </div>
-          <div class="md:col-span-1 bg-cover flower-pup">
+          <div class="bg-cover md:col-span-1 flower-pup">
           </div>
         </div>
-        <div class="my-10 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:divide-x divide-pink-500">
-          <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="inline-block px-5 py-2 rounded text-xl bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500  focus:outline-blue text-center">Create an Account</a></div>
-          <div class="text-left col flex items-center"><button @click="showLogin" class="text-pink-500 align-center text-center sm:text-left hover:underline mx-auto sm:ml-5">I already have an account</button></div>
+        <div class="grid grid-cols-1 gap-5 my-10 divide-pink-500 sm:grid-cols-2 sm:divide-x">
+          <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="inline-block px-5 py-2 text-xl text-center text-white bg-blue-600 rounded rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500 focus:outline-blue">Create an Account</a></div>
+          <div class="flex items-center text-left col"><button @click="showLogin" class="mx-auto text-center text-pink-500 align-center sm:text-left hover:underline sm:ml-5">I already have an account</button></div>
         </div>
       </div>
     </div>

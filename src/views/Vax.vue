@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="container px-3 mx-auto py-20">
+    <div class="container px-3 py-20 mx-auto">
       <div class="w-full mx-auto">
         <Title>
           <template v-slot:small>Vaccinations</template>
@@ -10,17 +10,17 @@
           <p class="mb-4">Vaccinations are important to protect your dog and stop the spread of contagious illnesses and diseases. This is especially important in a doggy daycare and other spaces where many dogs are interacting.</p>
           <p class="mb-4">As we love to see all our guests happy, safe and healthy, we require everyone to be up to date with their vaccinations before they can book in for daycare.</p>
           <p class="mb-4">We ask that dogs are protected against the following:</p>
-          <ul class="list-none list-inside ml-4 font-bold text-left mb-4">
+          <ul class="mb-4 ml-4 font-bold text-left list-none list-inside">
             <ListItem>Distemper</ListItem>
             <ListItem>Hepatitus</ListItem>
             <ListItem>Parvovirus</ListItem>
             <ListItem>Bordetella and Parainfluenza (Kennel/Canine Cough)</ListItem>
           </ul>
           <p class="mb-4">All these are covered by a <em>C5</em> Vaccination, or a combination of <em>C3</em> and <em>KC</em> vaccination. We recommend speaking with your regular vet if you're unsure whether your dog's vaccinations are up-to-date, as we'll need to know before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
-          <div class="section py-5">
+          <div class="py-5 section">
             <h2 class="text-2xl font-bold">Typical Puppy Vaccination Schedule*</h2>
-          <p class="text-blue-700 font-bold mb-3">*may vary depending on vaccine brands used</p>
-          <table class="pl-2 w-full my-5">
+          <p class="mb-3 font-bold text-blue-700">*may vary depending on vaccine brands used</p>
+          <table class="w-full pl-2 my-5">
             <tbody class="space-y-5">
               <tr>
                 <td class="w-1/5 py-3">6-8 weeks</td>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <div class="nav-wrapper fixed w-full" style="z-index: 100">
+    <div class="fixed w-full nav-wrapper" style="z-index: 100">
       <Nav />
     </div>
     <div class="content-wrapper pt-19" style="margin-top: 72px">
@@ -70,7 +70,7 @@ export default {
   },
 }
 </script>
-<style>
+<style lang="postcss">
  .pagefade-enter-active,
  .pagefade-leave-active {
    transition-duration: 0.3s;
@@ -110,4 +110,6 @@ body {
   height: auto!important;
   background-color: transparent!important
 }
+
+
 </style>

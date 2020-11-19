@@ -3,12 +3,12 @@
     <Hero></Hero>
     <Cards></Cards>
     <div class="section">
-      <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
+      <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-20">
-          <p class="font-bold text-blue-700 mb-10">Brisbane Dogs Love it Here</p>
-          <h2 class="font-bold tracking-tight leading-tight text-5xl mb-10">More than just a day care</h2>
+          <p class="mb-10 font-bold text-blue-700">Brisbane Dogs Love it Here</p>
+          <h2 class="mb-10 text-5xl font-bold leading-tight tracking-tight">More than just a day care</h2>
           <p class="mb-10 leading-8">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
-          <ul class="list-none list-inside font-bold text-left">
+          <ul class="font-bold text-left list-none list-inside">
             
             <ListItem>Easy Online Bookings <br>
             <span class="text-sm text-gray-700">Signup online to conveniently manage your own bookings, update your information or purchase daycare packages</span>
@@ -29,23 +29,23 @@
              <span class="text-sm text-gray-700">Warm hydrobath and grooming services available</span>
              </ListItem>
           </ul>
-          <div class="text-center mt-10">
-            <router-link :to="{ name: 'Daycare' }" class="inline-block px-5 py-2 rounded text-xl bg-blue-600 text-white rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500  focus:outline-blue">Find Out More</router-link>
+          <div class="mt-10 text-center">
+            <router-link :to="{ name: 'Daycare' }" class="inline-block px-5 py-2 text-xl text-white bg-blue-600 rounded-full font-semi-bold hover:border-transparent hover:bg-yellow-500 focus:outline-blue">Find Out More</router-link>
           </div>
         </div>
-        <div class="col champ-pup bg-cover rounded-sm">
+        <div class="bg-cover rounded-sm col champ-pup">
         </div>
       </div>
     </div>
 
-    <!-- <div class="section bg-blue-700">
-      <div class="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-20 lg:px-20">
-        <div class="col sad-pup bg-cover rounded-sm">
+    <!-- <div class="bg-blue-700 section">
+      <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
+        <div class="bg-cover rounded-sm col sad-pup">
         </div>
-        <div class="col md:my-20 bg-blue-500 bg-opacity-25 p-6 rounded shadow-xl text-white">
-          <h2 class="font-bold leading-tight tracking-tight text-5xl mb-10">Bored at home?</h2>
+        <div class="p-6 text-white bg-blue-500 bg-opacity-25 rounded shadow-xl col md:my-20">
+          <h2 class="mb-10 text-5xl font-bold leading-tight tracking-tight">Bored at home?</h2>
           <p class="mb-10">Does your dog get into mischief while you're at work? Give them a day out to play and meet new friends instead of getting restless at home.</p>
-          <div class="grid place-items-center w-full"><i class="fas fa-bone"></i></div>         
+          <div class="grid w-full place-items-center"><i class="fas fa-bone"></i></div>         
         </div>
       </div>
     </div> -->

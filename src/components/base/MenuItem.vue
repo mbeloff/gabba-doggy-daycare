@@ -1,9 +1,9 @@
 <template>
-  <div @focus="openSub" @blur="mouseLeave" @mouseleave="mouseLeave" @click="clickMenu(item, item.link)" class="block lg:inline-block relative menu-item focus:outline-blue" tabindex="0">
-    <button tabindex="0" class="font-bold block lg:inline-block focus:outline-none focus:text-blue-600 hover:text-blue-600  p-3">{{item.label}} <i v-if="item.sub" class="fal ml-2 fa-chevron-right fa-rotate-90"></i></button>
+  <div @focus="openSub" @blur="mouseLeave" @mouseleave="mouseLeave" @click="clickMenu(item, item.link)" class="relative block lg:inline-block menu-item focus:outline-blue" tabindex="0">
+    <button tabindex="0" class="block p-3 font-bold lg:inline-block focus:outline-none focus:text-blue-600 hover:text-blue-600">{{item.label}} <i v-if="item.sub" class="ml-2 fal fa-chevron-right fa-rotate-90"></i></button>
     <transition-expand v-if="item.sub" class="mt-1">
-      <div class="lg:absolute grid items-center origin-top bg-white dropdown lg:shadow-lg px-3 py-2" v-show="open">
-      <button tabindex="0" class="text-left font-bold px-5 py-3 hover:text-blue-600 focus:outline-none focus:text-blue-600" v-for="(item, i) in item.sub" :key="i" @click.stop="clickSub(item)">{{item.label}}</button>
+      <div class="grid items-center px-3 py-2 origin-top bg-white lg:absolute dropdown lg:shadow-lg" v-show="open">
+      <button tabindex="0" class="px-5 py-3 font-bold text-left hover:text-blue-600 focus:outline-none focus:text-blue-600" v-for="(item, i) in item.sub" :key="i" @click.stop="clickSub(item)">{{item.label}}</button>
     </div>
     </transition-expand>
   </div>
