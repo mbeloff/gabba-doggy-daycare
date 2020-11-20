@@ -32,7 +32,17 @@
 
 <script>
   export default {
-
+metaInfo: {
+    title: 'Contact Us',
+    meta: [
+      {
+        name: 'description',
+        content:
+          "Got a question about Gabba Doggy Day Care? Get in touch today.",
+        vmid: 'description'
+      }
+    ]
+  }
   }
 </script>
 

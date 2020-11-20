@@ -74,6 +74,17 @@
 <script>
   import SignUpInfo from '@/components/SignUpInfo.vue'
   export default {
+    metaInfo: {
+    title: 'About Day Care',
+    meta: [
+      {
+        name: 'description',
+        content:
+          "All you need to know about our day care, including prices and how to sign up.",
+        vmid: 'description'
+      }
+    ]
+  },
     components: {
       SignUpInfo
     },

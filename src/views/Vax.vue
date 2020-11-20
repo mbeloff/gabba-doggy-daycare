@@ -18,8 +18,8 @@
           </ul>
           <p class="mb-4">All these are covered by a <em>C5</em> Vaccination, or a combination of <em>C3</em> and <em>KC</em> vaccination. We recommend speaking with your regular vet if you're unsure whether your dog's vaccinations are up-to-date, as we'll need to know before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
           <div class="py-5 section">
-            <h2 class="text-2xl font-bold">Typical Puppy Vaccination Schedule*</h2>
-          <p class="mb-3 font-bold text-blue-600">*may vary depending on vaccine brands used</p>
+            <h2 class="text-2xl font-bold text-blue-900">Typical Puppy Vaccination Schedule*</h2>
+          <p class="mb-3 font-bold text-blue-500">*may vary depending on vaccine brands used</p>
           <table class="w-full pl-2 my-5">
             <tbody class="space-y-5">
               <tr>
@@ -58,7 +58,17 @@
 
 <script>
   export default {
-
+metaInfo: {
+    title: 'Vaccination Policy',
+    meta: [
+      {
+        name: 'description',
+        content:
+          "Keeping everyone happy and safe is our #1 priority. Keeping your dogs' vaccinations up-to-date is important to ensuring they stay healthy while making new friends at day care.",
+        vmid: 'description'
+      }
+    ]
+  },
   }
 </script>
 

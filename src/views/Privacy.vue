@@ -434,8 +434,16 @@
 
 <script>
 export default {
-metaInfo: {
+  metaInfo: {
     title: 'Privacy Policy',
+    meta: [
+      {
+        name: 'description',
+        content:
+          "We take your privacy seriously. Read our policy regarding the use and storage of personal information collected by Gabba Doggy Day Care.",
+        vmid: 'description'
+      }
+    ]
   }
 }
 </script>

@@ -58,7 +58,7 @@
 <script>
 export default {
     metaInfo: {
-      title: 'Register',
+      title: 'Register Your Interest',
       meta: [{
         name: 'description',
         content: "Opening Soon! Register your interest and we'll keep you posted.",
@@ -121,7 +121,7 @@ export default {
             })
           })
           .then(() => {
-            this.isLoading = false;
+            this.isLoading = false; 
             this.hasSubmitted = true;
           })
       },

@@ -57,7 +57,7 @@ export default {
     Nav, Footer, ModalInner, RegisterInterest, Login
   },
   metaInfo: {
-    title: 'Gabba Doggy Day Care',
+    title: 'Home',
     titleTemplate: 'Gabba Doggy Day Care | %s',
     meta: [
       {

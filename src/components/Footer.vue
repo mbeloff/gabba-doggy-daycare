@@ -6,7 +6,7 @@
         <div class="flex-grow bg-center bg-no-repeat bg-contain sm:bg-left logo " alt="">
         </div>
         
-        <ul class="flex-grow text-center list-none sm:text-left">
+        <ul class="flex-grow space-y-2 md:space-y-0 text-center list-none sm:text-left">
           <p class="text-lg text-gray-400">Quick Links</p>
           <li>
             <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
@@ -21,7 +21,7 @@
             <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
           </li>
         </ul>
-        <ul class="flex-grow text-center list-none sm:text-left">
+        <ul class="flex-grow space-y-2 md:space-y-0 text-center list-none sm:text-left">
           <p class="text-lg text-gray-400">Info</p>
           <li>
             <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
