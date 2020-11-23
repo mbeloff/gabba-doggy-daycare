@@ -6,16 +6,16 @@
       </Title>
 
       <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
-        <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white">
-          <div class="flex bg-gray-100 rounded-lg">
-            <div class="flex-grow px-2">{{service.name}}</div>
+        <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight, 'col-start-2' : service.highlight}">
+          <div class="flex bg-gray-100 rounded-lg ring-pink-500" :class="{ 'ring-1' : service.highlight}">
+            <div class="flex-grow px-2">{{service.name}}<span class="text-pink-500">{{ service.soon }}</span></div>
             <div class="px-2"><span class="text-pink-500">{{service.price}}</span></div>
           </div>
           <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{service.desc}}</div> -->
         </div>
         
       </div>
-      <p class="mt-2 text-center text-blue-500">more pricing options available soon</p>
+      <!-- <p class="mt-2 text-center text-blue-500">more pricing options available soon</p> -->
       <Title class="text-center">
         <template v-slot:big>Extras</template>
       </Title>
@@ -40,32 +40,38 @@ data() {
             HalfDay: {
               name: "Half Day",
               desc: "Up to 4 Hours of Day Care",
-              price: "$35"
+              price: "$40"
             },
             FullDay: {
               name: 'Full Day',
               desc: "More than 4 hour of Day Care during regular opening hours.",
               price: "$50"
             },
-            PuppyCrecheHalf: {
-              name: "Puppy Creche - Half Day",
-              desc: "Up to 4 hours of extra care for your little one",
-              price: "$35"
-            },
-            PuppyCrecheFull: {
-              name: "Puppy Creche - Full Day",
-              desc: "Full Day of extra care for your little one",
-              price: "$50"
-            },
             HalfDayPack: {
               name: "Half Day 10-pack",
               desc: "Save $50 when you buy a half day package",
+              soon: "- valid for 3 months",
               price: "$300"
             },
             FullDayPack: {
               name: "Full Day 10-pack",
-              desc: "Save $100 when you buy a full day package",
+              // desc: "Save $100 when you buy a full day package",
+              soon: "- valid for 3 months",
               price: "$400"
+            },
+            // HalfDayWeek: {
+            //   name: "Half Day Full Week",
+            //   // desc: "Save $50 when you buy a half day package",
+            //   soon: " - mon-fri",
+            //   price: "$??",
+            //   highlight: true,
+            // },
+            FullDayWeek: {
+              name: "Full Day Full Week",
+              // desc: "Save $50 when you buy a half day package",
+              soon: " - mon-fri",
+              price: "$150",
+              highlight: true,
             },
           },
           extras: {
@@ -92,11 +98,6 @@ data() {
               desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
               soon: "- available soon",
               price: "$20"
-            },
-            Lunch: {
-              name: "Lunch Supplied",
-              desc: "",
-              price: "$5"
             },
             PigsEar: {
               name: "Pig's Ear",

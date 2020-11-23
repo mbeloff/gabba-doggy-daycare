@@ -9,25 +9,15 @@
           <Title><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template></Title>
           <p class="mb-10 leading-8">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
-          <ul class="font-bold text-left list-none list-inside">            
-            <ListItem>Easy Online Bookings <br>
-            <span class="text-sm text-gray-700">Signup online to conveniently manage your own bookings, update your information or purchase daycare packages</span>
-            </ListItem>
-            <ListItem>Large facility <br>
-            <span class="text-sm text-gray-700">Spacious play areas with access to grass.</span>
-            </ListItem>
-            <ListItem>Pet Taxi Service <br>
-            <span class="text-sm text-gray-700">local pickup and dropoff within 3km</span>
-            </ListItem>
-            <ListItem>Daily Walks <br>
-            <span class="text-sm text-gray-700">Fresh air and exercise with a dog park close by</span>
-            </ListItem>
-            <ListItem>Trips to the bay, or along the river <br>
-            <span class="text-sm text-gray-700">Give your dog a little bit of an adventure. Small group outings to take in the scenery.</span>
-            </ListItem>
-            <ListItem>Grooming <br>
-             <span class="text-sm text-gray-700">Warm hydrobath and grooming services available</span>
-             </ListItem>
+          <ul class="text-left list-none list-inside">   
+            <li class="grid w-full mb-3 shadow-xl" v-for="(item, i) in features" :key="i">
+              <div class="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-500 text-white font-bold rounded-t-lg px-4 py-1">
+                <p><i class="fas fa-paw mr-2 opacity-50"></i>{{item.title}}</p>
+              </div>
+              <div class="flex-grow rounded-b-lg text-base px-4 py-1 font-medium">
+                <p>{{item.desc}}</p>
+              </div>
+            </li>         
           </ul>
           <div class="mt-10 text-center">
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Find Out More</router-link>
@@ -74,6 +64,36 @@
         vmid: 'description'
       }
     ]
+  },
+  data() {
+    return {
+      features: [
+        {
+          title: "Easy Online Bookings",
+          desc: "Signup online to conveniently manage your own bookings, update your information or purchase daycare packages"
+        },
+        {
+          title: "Large Facility",
+          desc: "Spacious play areas with access to grass."
+        },
+        {
+          title: "Pet Taxi Service",
+          desc: "local pickup and dropoff within 3km"
+        },
+        {
+          title: "Daily Walks",
+          desc: "Fresh air and exercise with a dog park close by"
+        },
+        {
+          title: "Trip to the bay or river",
+          desc: "Give your dog a little bit of an adventure. Small group outings to take in the scenery."
+        },
+        {
+          title: "Grooming",
+          desc: "Warm hydrobath and grooming services available"
+        },
+      ]
+    }
   },
   mounted() {
     if (this.$route.name === "Register") {
