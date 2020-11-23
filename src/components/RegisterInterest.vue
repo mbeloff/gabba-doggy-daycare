@@ -51,7 +51,7 @@
 
 
       </form>
-      <p class="text-sm leading-snug tracking-tight text-gray-500">We respect your privacy. We will only ever use your info to contact you about Gabba Doggy Day Care. We will never sell your info, or use it for any other purpose. Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
+      <p class="text-sm leading-snug tracking-tight text-gray-500">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
     </div>
 </template>
 

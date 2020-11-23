@@ -8,13 +8,13 @@
         <div class="col">
           <Title><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template></Title>
-          <p class="mb-10 leading-8">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
+          <p class="mb-10 leading-8"></p>
           <ul class="text-left list-none list-inside">   
-            <li class="grid w-full mb-3 shadow-xl" v-for="(item, i) in features" :key="i">
-              <div class="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-500 text-white font-bold rounded-t-lg px-4 py-1">
+            <li class="grid w-full mb-5 shadow-xl" v-for="(item, i) in features" :key="i">
+              <div class="bg-gradient-to-r from-blue-100 via-blue-100 to-indigo-200 text-blue-800 f rounded-t-lg px-4 py-1">
                 <p><i class="fas fa-paw mr-2 opacity-50"></i>{{item.title}}</p>
               </div>
-              <div class="flex-grow rounded-b-lg text-base px-4 py-1 font-medium">
+              <div class="flex-grow rounded-b-lg text-base px-4 py-1 font-medium text-gray-500">
                 <p>{{item.desc}}</p>
               </div>
             </li>         

@@ -94,7 +94,7 @@ data() {
               price: "$20"
             },
             Excursion: {
-              name: "Group Excursion & Walk",
+              name: "Group Excursion",
               desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
               soon: "- available soon",
               price: "$20"
