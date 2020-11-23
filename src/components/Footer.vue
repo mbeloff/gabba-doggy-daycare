@@ -29,7 +29,6 @@
           <li>
             <router-link :to="{ name: 'Privacy' }" class="focus:outline-white hover:text-white">Privacy Policy</router-link>
           </li>
-          <p class="text-lg text-gray-400">Agreements</p>
           <li>
             <a href="/docs/GDDC-general-agreement.pdf" class="focus:outline-white hover:text-white">Daycare Contract</a>
           </li>

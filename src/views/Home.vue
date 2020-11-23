@@ -1,9 +1,10 @@
 <template>
   <div>
-    <Hero></Hero>
+    <Hero2></Hero2>
+    <!-- <Hero></Hero> -->
     <Cards></Cards>
     <div class="section">
-      <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
+      <div class="container grid grid-cols-1 gap-20 lg:gap-40 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-20">
           <Title><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template></Title>
@@ -55,11 +56,13 @@
 </template>
 
 <script>
-  import Hero from "@/components/Hero.vue"
+  // import Hero from "@/components/Hero.vue"
+  import Hero2 from "@/components/Hero2.vue"
   import Cards from "@/components/Cards.vue"
   export default {
     components: {
-      Hero,
+      // Hero,
+      Hero2,
       Cards
     },
     metaInfo: {

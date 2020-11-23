@@ -30,15 +30,15 @@
   min-height: 700px;
 }
 
-.hero-pup {
-  background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-sm.jpg);
-  background-attachment: scroll;
-  background-position: 65% 50%;
-  @media only screen and (min-width: 768px) {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-full.jpg);
-    background-position: center;
-  }
-}
+// .hero-pup {
+//   background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-sm.jpg);
+//   background-attachment: scroll;
+//   background-position: 65% 50%;
+//   @media only screen and (min-width: 768px) {
+//     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/hero-pup-full.jpg);
+//     background-position: center;
+//   }
+// }
 
 .hero-pattern {
   background-color: #00000000;
