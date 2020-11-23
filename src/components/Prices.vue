@@ -2,7 +2,7 @@
   <div class="container px-2 py-20 mx-auto section" id="prices">
       <Title class="text-center">
           <template v-slot:small>Price List</template>
-          <template v-slot:big>Day Care <br><span class="text-base tracking-normal">Open from 7am - 6pm</span></template>
+          <template v-slot:big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm</span></template>
       </Title>
 
       <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
