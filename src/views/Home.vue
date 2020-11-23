@@ -9,8 +9,7 @@
           <Title><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template></Title>
           <p class="mb-10 leading-8">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
-          <ul class="font-bold text-left list-none list-inside">
-            
+          <ul class="font-bold text-left list-none list-inside">            
             <ListItem>Easy Online Bookings <br>
             <span class="text-sm text-gray-700">Signup online to conveniently manage your own bookings, update your information or purchase daycare packages</span>
             </ListItem>
