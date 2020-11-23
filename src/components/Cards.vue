@@ -10,8 +10,8 @@
           <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3">
           <div class="h-full px-6 py-10 bg-white rounded-lg shadow-lg card hover:shadow-2xl">
             <span class="fa-stack fa-3x">
-              <i class="text-blue-400 fas fa-circle fa-stack-2x"></i>
-              <i class="fa-stack-1x fa-inverse" :class="card.icon"></i>
+              <i class="text-yellow-300 fas fa-circle fa-stack-2x"></i>
+              <i class="fa-stack-1x text-yellow-100" :class="card.icon"></i>
             </span>
             <p class="my-3 font-bold">{{card.heading}}</p>
             <p class="text-gray-700">{{card.desc}}</p>

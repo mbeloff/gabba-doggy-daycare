@@ -5,7 +5,7 @@
     <Cards></Cards>
     <div class="section">
       <div class="container grid grid-cols-1 gap-20 lg:gap-40 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
-        <div class="col y-5 md:my-20">
+        <div class="col">
           <Title><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template></Title>
           <p class="mb-10 leading-8">Gabba Doggy Day Care offers a range of additional services to make each day a little better. For you AND your furry pal.</p>
@@ -15,7 +15,7 @@
             <span class="text-sm text-gray-700">Signup online to conveniently manage your own bookings, update your information or purchase daycare packages</span>
             </ListItem>
             <ListItem>Large facility <br>
-            <span class="text-sm text-gray-700">Multiple big, open play areas with access to grass.</span>
+            <span class="text-sm text-gray-700">Spacious play areas with access to grass.</span>
             </ListItem>
             <ListItem>Pet Taxi Service <br>
             <span class="text-sm text-gray-700">local pickup and dropoff within 3km</span>
