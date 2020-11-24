@@ -23,7 +23,7 @@
         <div class="text-center">
           <Title>
             <template v-slot:small>Ready to join us?</template>
-            <template v-slot:big>Before You Enroll</template>
+            <template v-slot:big>Before You Enrol</template>
           </Title>
         </div>
         <div class="grid grid-cols-1 gap-20 px-4 md:grid-cols-3 lg:px-20">
