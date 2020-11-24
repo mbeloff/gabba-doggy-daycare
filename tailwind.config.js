@@ -8,14 +8,14 @@ module.exports = {
   ],
   theme: {
     colors: {
-      // Build your palette here
       gray: colors.coolGray,
       red: colors.red,
       blue: colors.lightBlue,
       yellow: colors.amber,
       pink: colors.pink,
       white: "white",
-      transparent: "transparent"
+      transparent: "transparent",
+      black: "black"
     },
     extend: {
       outline: {

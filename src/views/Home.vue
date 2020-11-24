@@ -11,8 +11,8 @@
           <p class="mb-10 leading-8"></p>
           <ul class="text-left list-none list-inside">   
             <li class="grid w-full mb-5 shadow-xl" v-for="(item, i) in features" :key="i">
-              <div class="bg-gradient-to-r from-blue-600 via-blue-600 to-blue-500 text-white rounded-t-lg px-4 py-1 font-bold">
-                <p><i class="fas fa-paw mr-2 opacity-50"></i>{{item.title}}</p>
+              <div class="bg-gradient-to-r from-blue-500 via-blue-500 to-blue-400 text-white rounded-t-lg px-4 py-1 font-bold">
+                <p class="flex justify-items-between"><span>{{item.title}}</span><i class="fas fa-paw ml-auto opacity-50 place-self-center"></i></p>
               </div>
               <div class="flex-grow rounded-b-lg text-base px-4 py-1 font-medium text-gray-500">
                 <p>{{item.desc}}</p>
@@ -73,6 +73,10 @@
           desc: "Signup online to conveniently manage your own bookings, update your information or purchase daycare packages"
         },
         {
+          title: "Yound and Old",
+          desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable."
+        },
+        {
           title: "Large Facility",
           desc: "Spacious play areas with access to grass."
         },
@@ -88,10 +92,7 @@
           title: "Grooming",
           desc: "Warm hydrobath and grooming services available"
         },
-        {
-          title: "Yound and Old",
-          desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable."
-        },
+        
       ]
     }
   },
