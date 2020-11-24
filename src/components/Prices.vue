@@ -74,7 +74,7 @@ data() {
             FullDayWeek: {
               name: "Full Day Full Week",
               // desc: "Save $50 when you buy a half day package",
-              soon: " - mon-fri",
+              soon: " - every day mon-fri",
               price: "$150",
               highlight: true,
             },
