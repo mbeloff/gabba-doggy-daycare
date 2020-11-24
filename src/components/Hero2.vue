@@ -5,6 +5,7 @@
       <div class="place-self-center space-y-3">
         <p class="mb-5 text-xl md:text-2xl"><span class="font-bold text-yellow-500">OPENING SOON!</span> Times almost out for a free <nobr>3-day</nobr> trial at Gabba Doggy Day Care. Leave your details and we'll let you know how to book in.</p>
         <open-modal class="w-full btn-blue text-xl">Let me know!</open-modal>
+        <p class="text-sm text-gray-500">Trial days to be used by December 31<sup>st</sup>, public holidays excluded</p>
       </div>
     </div>
     <div class="order-1 lg:order-2 col hero-pup bg-cover bg-center col-span-2">

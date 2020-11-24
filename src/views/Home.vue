@@ -78,7 +78,7 @@
         },
         {
           title: "Large Facility",
-          desc: "Spacious play areas with access to grass."
+          desc: "Spacious play areas and access to grass."
         },
         {
           title: "Pet Taxi Service",
@@ -90,9 +90,8 @@
         },
         {
           title: "Grooming",
-          desc: "Warm hydrobath and grooming services available"
-        },
-        
+          desc: "Hydrobath and grooming services available soon"
+        },        
       ]
     }
   },
