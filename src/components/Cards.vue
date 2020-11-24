@@ -8,7 +8,7 @@
       <div class="flex flex-wrap justify-center">
         <template>
           <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3">
-          <div class="h-full px-6 py-10 bg-white rounded-lg shadow-lg card hover:shadow-2xl">
+          <div class="h-full px-6 py-10 bg-white rounded-lg shadow-lg card hover:shadow-2xl transition-shadow duration-500">
             <span class="fa-stack fa-3x">
               <i class="text-gray-200 fas fa-circle fa-stack-2x"></i>
               <i class="fa-stack-1x text-blue-500" :class="card.icon"></i>
@@ -30,17 +30,17 @@
         cards: [{
             icon: "fas fa-tennis-ball",
             heading: "Play",
-            desc: "Hype it up, sit back and watch, or have a snooze. There are toys and friends to play with, or beds if your dog is the quiet type."
+            desc: "Hype it up or sit back and watch. We keep play areas with dogs matched by size and energy level, including separate area for the old-timers."
           },
           {
             icon: "fas fa-paw",
             heading: "Socialise",
-            desc: "Meet new human and fur-friends in a safe and supervised environment. We keep play areas with dogs matched by size and energy level so no-one is out of place."
+            desc: "Meet new human and fur-friends in a safe and supervised environment."
           },
           {
             icon: "fas fa-dog-leashed",
             heading: "Walks",
-            desc: "Take a daily walk through the nearby park, or if you like, doggos can take a group trip to the bay or walk along the river."
+            desc: "Take a daily walk through the nearby park, or doggos can take a group trip to the bay or walk along the river."
           },
           {
             icon: "fas fa-taxi",
@@ -74,7 +74,7 @@ background-size: 70% 70%;
   background-position: center;
 }
 
-.card{
-  transition: box-shadow .5s ease;
-}
+// .card{
+//   transition: box-shadow .5s ease;
+// }
 </style>

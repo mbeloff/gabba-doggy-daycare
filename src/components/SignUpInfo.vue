@@ -8,9 +8,9 @@
               <list-item>Desexed (if over than 6 months)</list-item>
               <list-item>Friendly with people and other dogs</list-item>
             </ul>
-            <p class="mb-3">If have any concerns regarding the above criteria, you can view our <router-link class="text-pink-500 hover:underline" to="vaccinations">vaccination policy</router-link>, or <Email>email us</Email> to discuss any further questions.</p>
+            <p class="mb-3">If have any concerns regarding the above criteria, you can view our <router-link class="text-pink-500 hover:underline focus:text-yellow-400 focus:outline-none" to="vaccinations">vaccination policy</router-link>, or <Email>email us</Email> to discuss any further questions.</p>
             <p class="mb-3">Otherwise, simply click the button below to create an account.</p>
-            <p class="mb-3"><span class="font-bold">Please note:</span> you will need to bring your dog in for a temperament test before you'll be able to book your first day care appointment with us. This is to ensure that your your dog will fit in ok, and also gives you an opportunity to check the place out. Send us an email at <a class="text-pink-500 hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a> after you've made an account to arrange an time.</p>
+            <p class="mb-3"><span class="font-bold">Please note:</span> you will need to bring your dog in for a temperament test before you'll be able to book your first day care appointment with us. This is to ensure that your your dog will fit in ok, and also gives you an opportunity to check the place out. Send us an email at <a class="text-pink-500 hover:underline focus:text-yellow-400 focus:outline-none" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a> after you've made an account to arrange an time.</p>
     </div>
 </template>
 

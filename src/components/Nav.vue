@@ -27,8 +27,8 @@
        -->
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
           <div class="self-center w-full mb-3 text-center text-pink-500 divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
-            <button class="px-4 focus:outline-blue hover:underline" @click="showLogin()">Login</button>
-            <router-link :to="{name: 'Sign-up'}" class="px-4 focus:outline-blue hover:underline">Create Account</router-link>
+            <button class="px-4 focus:outline-none focus:text-yellow-400 hover:underline" @click="showLogin()">Login</button>
+            <router-link :to="{name: 'Sign-up'}" class="px-4 focus:outline-none focus:text-yellow-400 hover:underline">Create Account</router-link>
           </div>
           <div class="flex self-center h-full">
             <SocialIcon site="facebook" class="focus:outline-blue"></SocialIcon>

@@ -17,7 +17,7 @@
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="name">
               name
             </label>
-            <input v-model="form.name" ref="name" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="name" type="text" placeholder="">
+            <input v-model="form.name" ref="name" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="name" type="text" placeholder="" required>
           </div>
           <div class="mb-2">
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="email">

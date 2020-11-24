@@ -11,7 +11,7 @@
           <p class="mb-10 leading-8"></p>
           <ul class="text-left list-none list-inside">   
             <li class="grid w-full mb-5 shadow-xl" v-for="(item, i) in features" :key="i">
-              <div class="bg-gradient-to-r from-blue-100 via-blue-100 to-indigo-200 text-blue-800 f rounded-t-lg px-4 py-1">
+              <div class="bg-gradient-to-r from-blue-600 via-blue-600 to-blue-500 text-white rounded-t-lg px-4 py-1 font-bold">
                 <p><i class="fas fa-paw mr-2 opacity-50"></i>{{item.title}}</p>
               </div>
               <div class="flex-grow rounded-b-lg text-base px-4 py-1 font-medium text-gray-500">
@@ -85,12 +85,12 @@
           desc: "Fresh air and exercise with a dog park close by"
         },
         {
-          title: "Trip to the bay or river",
-          desc: "Give your dog a little bit of an adventure. Small group outings to take in the scenery."
-        },
-        {
           title: "Grooming",
           desc: "Warm hydrobath and grooming services available"
+        },
+        {
+          title: "Yound and Old",
+          desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable."
         },
       ]
     }

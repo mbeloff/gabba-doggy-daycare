@@ -50,13 +50,13 @@ data() {
             HalfDayPack: {
               name: "Half Day 10-pack",
               desc: "Save $50 when you buy a half day package",
-              soon: "- valid for 3 months",
+              soon: " - valid for 3 months",
               price: "$300"
             },
             FullDayPack: {
               name: "Full Day 10-pack",
               // desc: "Save $100 when you buy a full day package",
-              soon: "- valid for 3 months",
+              soon: " - valid for 3 months",
               price: "$400"
             },
             // HalfDayWeek: {
