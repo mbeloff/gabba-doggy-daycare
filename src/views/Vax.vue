@@ -21,24 +21,24 @@
             <h2 class="text-2xl font-bold text-blue-900">Typical Puppy Vaccination Schedule*</h2>
           <p class="mb-3 font-bold text-blue-500">*may vary depending on vaccine brands used</p>
           <table class="w-full pl-2 my-5">
-            <tbody class="space-y-5">
-              <tr>
-                <td class="w-1/5 py-3">6-8 weeks</td>
+            <tbody class="space-y-5 text-sm">
+              <tr class="bg-gray-100">
+                <td class="w-1/5 py-3 pl-1">6-8 weeks</td>
                 <td class="w-1/5 py-3"><strong>First vaccination</strong></td>
                 <td class="w-3/5 py-3">Distemper, hepatitis, and parvovirus</td>
               </tr>
               <tr>
-                <td class="w-1/5 py-3">10-12 weeks</td>
+                <td class="w-1/5 py-3 pl-1">10-12 weeks</td>
                 <td class="w-1/5 py-3"><strong>Booster vaccination</strong></td>
                 <td class="w-3/5 py-3">Distemper, hepatitis, parvovirus, parainfluenza, and bordetella.</td>
               </tr>
-              <tr>
-                <td class="w-1/5 py-3">14-16 weeks</td>
+              <tr class="bg-gray-100">
+                <td class="w-1/5 py-3 pl-1">14-16 weeks</td>
                 <td class="w-1/5 py-3"><strong>Final puppy vaccination</strong></td>
                 <td class="w-3/5 py-3">Distemper, hepatitis, parvovirus, parainfluenza, and bordetella. Depending on the brand used, puppies may not require parainfluenza and bordetella at this age</td>
               </tr>
               <tr>
-                <td class="w-1/5 py-3">Every year after</td>
+                <td class="w-1/5 py-3 pl-1">Every year after</td>
                 <td class="w-1/5 py-3"><strong>Annual boosters</strong></td>
                 <td class="w-3/5 py-3">Your adult dog will require yearly vaccination boosters for the rest of their life to remain immune from these diseases</td>
               </tr>

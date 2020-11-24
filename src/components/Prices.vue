@@ -9,7 +9,7 @@
         <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight, 'md:col-start-2' : service.highlight}">
           <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
             <div v-if="service.highlight">
-              <div  class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping"></div>
+              <div  class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
             <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
             </div>
             
@@ -17,10 +17,8 @@
             <div class="px-2"><span class="text-pink-500">{{service.price}}</span></div>
           </div>
           <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{service.desc}}</div> -->
-        </div>
-        
+        </div>       
       </div>
-      <!-- <p class="mt-2 text-center text-blue-500">more pricing options available soon</p> -->
       <Title class="text-center">
         <template v-slot:big>Extras</template>
       </Title>

@@ -45,7 +45,7 @@
               <a class="text-gray-300 hover:taxt-gray-100 focus:outline-white hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a><br>
               46 Deshon st,<br>Woolloongabba 4102</p>
           </div>
-          <div class="flex flex-row mt-2">
+          <div class="flex flex-row mt-2 justify-center sm:justify-start">
             <SocialIcon site="facebook"></SocialIcon>
             <SocialIcon site="instagram"></SocialIcon>
           </div>
