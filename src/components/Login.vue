@@ -8,13 +8,13 @@
           <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="username">
             username
           </label>
-          <input v-model="form.username" ref="name" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" name="username" id="username" type="text" placeholder="">
+          <input v-model="form.username" ref="name" class="my-input" name="username" id="username" type="text" placeholder="">
         </div>
         <div class="mb-2">
           <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="password">
             password
           </label>
-          <input v-model="form.password" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" name="password" id="password" type="password" placeholder="">
+          <input v-model="form.password" class="my-input" name="password" id="password" type="password" placeholder="">
         </div>
       </div>
 

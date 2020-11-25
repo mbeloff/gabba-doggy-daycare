@@ -7,25 +7,11 @@ import upperFirst from 'lodash/upperFirst';
 import camelCase from 'lodash/camelCase';
 import vueGtm from 'vue-gtm'
 import vueMeta from 'vue-meta'
-import VueTippy, { TippyComponent } from "vue-tippy";
 import './assets/styles/index.css';
 import Vue2TouchEvents from 'vue2-touch-events'
 Vue.use(Vue2TouchEvents)
 Vue.use(vueMeta)
 Vue.use(VModal)
-Vue.use(VueTippy, {
-  directive: "tippy", // => v-tippy
-  flipDuration: 0,
-  popperOptions: {
-    modifiers: {
-      preventOverflow: {
-        enabled: false
-      }
-    }
-  }
-});
-
-Vue.component("tippy", TippyComponent);
 
 
 Vue.config.productionTip = false

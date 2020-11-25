@@ -17,25 +17,25 @@
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="name">
               name
             </label>
-            <input v-model="form.name" ref="name" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="name" type="text" placeholder="" required>
+            <input v-model="form.name" ref="name" class="my-input" id="name" type="text" placeholder="" required>
           </div>
           <div class="mb-2">
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="email">
               email
             </label>
-            <input v-model="form.email" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+            <input v-model="form.email" class="my-input" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
               phone
             </label>
-            <input v-model="form.phone" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+            <input v-model="form.phone" class="my-input" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
             <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
               message
             </label>
-            <textarea v-model="form.message" rows="4" class="w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
+            <textarea v-model="form.message" rows="4" class="my-input" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
           </div>
           <transition name="grow">
             <div v-if="this.missingContact">

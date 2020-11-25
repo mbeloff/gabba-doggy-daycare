@@ -131,5 +131,11 @@ body {
   .link-pink:focus {
     @apply underline outline-blue
   }
+  .my-input {
+    @apply w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none 
+  }
+  .my-input:focus {
+    @apply outline-none ring bg-opacity-75
+  }
 }
 </style>
