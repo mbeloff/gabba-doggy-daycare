@@ -1,6 +1,6 @@
 <template>
   <div class="p-3">
-    <p class="text-blue-900">If you already have an account with us, you can login to PetExec here to manage your account. <span v-if="!isSignUp()">If you don't have an account yet, you can create one <a href="javascript:void(0)" @click="close" class="text-pink-500 cursor-pointer focus:text-yellow-400 focus:outline-none">here.</a></span> </p>
+    <p class="text-blue-900">If you already have an account with us, you can login to PetExec here to manage your account. <span v-if="!isSignUp()">If you don't have an account yet, you can create one <a href="javascript:void(0)" @click="close" class="link-pink">here.</a></span> </p>
     <br />
     <form action="https://secure.petexec.net/remoteLogin.php" method="POST" class="flex flex-col px-3 pb-3 bg-white bg-right-bottom bg-no-repeat rounded shadow-md" id="petExecLogin">
       <div class="grid grid-cols-1 grid-rows-2 gap-0 sm:grid-cols-2 sm:grid-rows-1 sm:gap-4">
@@ -23,7 +23,7 @@
           Login
         </button>
         <a target="_blank" rel="noopener" href="https://
-secure.petexec.net/lostPassword.php" class="mr-3 text-sm text-pink-500 focus:outline-none focus:text-yellow-400" tabindex="0">forgot password?</a>
+secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0">forgot password?</a>
       </div>
 
     </form>

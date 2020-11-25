@@ -75,7 +75,7 @@
       <li>
         <strong>Website</strong> refers to Gabba Doggy Day Care, accessible
         from
-        <router-link to="/" class="text-pink-500 hover:underline">https://www.gabbadoggydaycare.com</router-link>
+        <router-link to="/" class="link-pink">https://www.gabbadoggydaycare.com</router-link>
       </li>
       <li>
         <strong>You</strong> means the individual accessing or using the

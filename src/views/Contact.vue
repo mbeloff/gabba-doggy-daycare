@@ -6,11 +6,12 @@
         <template v-slot:big>Contact Us</template>
       </Title>
       <div class="grid grid-cols-1 px-4 md:grid-cols-2">
-        <div class="flex-grow bg-center bg-no-repeat bg-contain md:bg-right phone-pup">
+        <div class="flex-grow ml-auto mr-auto bg-no-repeat bg-contain md:ml-auto md:mr-0 phone-pup" style="height: 350px; width: 350px">
         </div>
         <div class="my-auto">
           <ul class="text-xl font-bold list-none list-inside">
             <ListItem class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left">Address: <br> <span>Gabba Doggy Day Care <br> 46 Deshon Street, <br>Woolloongabba 4102</span></ListItem>
+            <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" href="tel:0423487302">0423 487 302</a></ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Email: <br> <span><Email class="break-all">woof@gabbadoggydaycare.com</Email></span></ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Follow us on: <br>
               <div class="flex flex-wrap">

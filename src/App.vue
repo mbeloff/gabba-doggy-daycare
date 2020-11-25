@@ -121,5 +121,15 @@ body {
   .btn-blue:focus {
     @apply outline-blue
   }
+
+  .link-pink {
+    @apply text-pink-500
+  }
+  .link-pink:hover {
+    @apply underline
+  }
+  .link-pink:focus {
+    @apply underline outline-blue
+  }
 }
 </style>

@@ -18,10 +18,12 @@ data() {
   return{
     facebook: {
       link:"https://www.facebook.com/gabbadoggydaycare",
+      alt: "Follow us on Facebook",
       icon:"fab fa-facebook-square",
     },
     instagram: {
       link: "https://www.instagram.com/gabbadoggydaycare/",
+      alt: "Follow us on Instagram",
       icon: "fab fa-instagram"
     }
   }

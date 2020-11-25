@@ -3,7 +3,7 @@
     <div class="container px-3 mx-auto">
       <div class="flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
 
-        <div class="flex-grow bg-center bg-no-repeat bg-contain sm:bg-left logo " alt="">
+        <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy day care logo" style="height: 150px; width: 150px">
         </div>
         
         <ul class="flex-grow space-y-2 md:space-y-0 text-center list-none sm:text-left">
@@ -42,14 +42,14 @@
           <div class="">
             <p class="text-xl font-bold text-gray-400">Get in touch</p>
             <p class="text-gray-500">
-              <a class="text-gray-300 hover:taxt-gray-100 focus:outline-white hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a><br>
+              <a class="focus:outline-white hover:underline font-semibold text-yellow-300" href="tel:0423487302"><i class="fas fa-phone-rotary mr-2"></i>0423 487 302</a><br>
+              <a class="text-gray-300 hover:text-gray-100 focus:outline-white hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a><br>
               46 Deshon st,<br>Woolloongabba 4102</p>
           </div>
           <div class="flex flex-row mt-2 justify-center sm:justify-start">
             <SocialIcon site="facebook"></SocialIcon>
             <SocialIcon site="instagram"></SocialIcon>
           </div>
-
         </div>
       </div>
     </div>

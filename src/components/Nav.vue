@@ -2,9 +2,9 @@
   <nav @mouseleave="hide" v-touch:swipe.down="hide" class="relative flex flex-wrap items-center justify-between px-2 py-4 mx-auto bg-white shadow-lg lg:px-10">
     <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 mr-2 text-blue-600 lg:mr-6 focus:outline-blue">
 
-      <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="">
+      <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Icon of a circle with a paw in the middle">
       <!-- <span class="ml-2 text-xl font-semibold tracking-tight">Gabba Doggy Day Care</span> -->
-      <img class="h-5 md:h-6" src="../assets/img/gddc-text.svg" alt="">
+      <img class="h-5 md:h-6" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare, yellow text with blue outline">
 
     </router-link>
     <div class="block lg:hidden">
@@ -17,7 +17,7 @@
     </div>
     <transition name="slide">
       <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-4 bg-white shadow-lg lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto ">
-        <div class="mt-1 text-sm font-bold lg:flex-grow lg:space-y-0 lg:space-x-4">
+        <div class="mt-1 divide-x-0 lg:divide-x font-bold lg:flex-grow lg:space-y-0 divide-blue-200">
           <menu-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1"></menu-item>
         </div>
         <!-- 
@@ -26,9 +26,9 @@
       
        -->
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
-          <div class="self-center w-full mb-3 text-center text-pink-500 divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
-            <button class="px-4 focus:outline-none focus:text-yellow-400 hover:underline" @click="showLogin()">Login</button>
-            <router-link :to="{name: 'Sign-up'}" class="px-4 focus:outline-none focus:text-yellow-400 hover:underline">Create Account</router-link>
+          <div class="self-center w-full mb-3 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
+            <button class="link-pink px-3" @click="showLogin()">Login</button>
+            <router-link :to="{name: 'Sign-up'}" class="link-pink px-3">Create Account</router-link>
           </div>
           <div class="flex self-center h-full">
             <SocialIcon site="facebook" class="focus:outline-blue"></SocialIcon>

@@ -30,7 +30,7 @@
         cards: [{
             icon: "fas fa-tennis-ball",
             heading: "Play",
-            desc: "Hype it up or sit back and watch. We keep play areas with dogs matched by size and energy level, including separate area for the old-timers :)"
+            desc: "Hype it up or sit back and watch. We keep play areas with dogs matched by size and energy level, including a separate relaxed area for the old-timers :)"
           },
           {
             icon: "fas fa-paw",
@@ -40,7 +40,7 @@
           {
             icon: "fas fa-dog-leashed",
             heading: "Exercise",
-            desc: "Get some exercise and fresh air with a daily walk through the nearby park, or doggos can take a group trip to the bay or walk along the river."
+            desc: "Get some exercise and fresh air with a daily walks through the nearby park, or doggos can take a group trip to the bay or walk along the river."
           },
           {
             icon: "fas fa-taxi",
@@ -50,7 +50,7 @@
           {
             icon: "fas fa-user-unlock",
             heading: "After Hours",
-            desc: "Working late? We can arrange after hours pickups"
+            desc: "Working late? We can arrange after hours pickups. Or overnight care for daycare customers (by request)"
           },
           {
             icon: "fa-custom puppy",
@@ -73,8 +73,4 @@ background-size: 70% 70%;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-// .card{
-//   transition: box-shadow .5s ease;
-// }
 </style>
