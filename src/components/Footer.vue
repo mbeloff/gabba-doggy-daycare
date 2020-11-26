@@ -5,38 +5,43 @@
 
         <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy day care logo" style="height: 150px; width: 150px">
         </div>
-        
-        <ul class="flex-grow space-y-2 md:space-y-0 text-center list-none sm:text-left">
+        <div class="flex-grow">
           <p class="text-lg text-gray-400">Quick Links</p>
-          <li>
-            <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'Daycare' }" class="focus:outline-white hover:text-white">Daycare</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Create Account</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
-          </li>
-        </ul>
-        <ul class="flex-grow space-y-2 md:space-y-0 text-center list-none sm:text-left">
+          <ul class="space-y-2 md:space-y-0 text-center list-none sm:text-left">
+
+            <li>
+              <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'Daycare' }" class="focus:outline-white hover:text-white">Daycare</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Create Account</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex-grow">
           <p class="text-lg text-gray-400">Info</p>
-          <li>
-            <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
-          </li>
-          <li>
-            <router-link :to="{ name: 'Privacy' }" class="focus:outline-white hover:text-white">Privacy Policy</router-link>
-          </li>
-          <li>
-            <a href="/docs/GDDC-general-agreement.pdf" download class="focus:outline-white hover:text-white">Daycare Contract</a>
-          </li>
-          <li>
-            <a href="/docs/GDDC-medical-agreement.pdf" download class="focus:outline-white hover:text-white">Medical Release</a>
-          </li>
-        
-        </ul>
+          <ul class="space-y-2 md:space-y-0 text-center list-none sm:text-left">
+            <li>
+              <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'Privacy' }" class="focus:outline-white hover:text-white">Privacy Policy</router-link>
+            </li>
+            <li>
+              <a href="/docs/GDDC-general-agreement.pdf" download class="focus:outline-white hover:text-white">Daycare Contract</a>
+            </li>
+            <li>
+              <a href="/docs/GDDC-medical-agreement.pdf" download class="focus:outline-white hover:text-white">Medical Release</a>
+            </li>
+          </ul>
+        </div>
+
 
         <div class="text-center sm:text-left">
           <div class="">
