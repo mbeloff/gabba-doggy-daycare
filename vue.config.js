@@ -1,5 +1,38 @@
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 //   .BundleAnalyzerPlugin;
+const SitemapPlugin = require("sitemap-webpack-plugin").default;
+// const routes = require('./src/router/index.js');
+const paths = [
+  {
+    path: "/",
+    priority: 0.8
+  },
+  {
+    path: "/contact",
+    priority: 0.5
+  },
+  {
+    path: "/register",
+    priority: 0.5
+  },
+  {
+    path: "/vaccinations",
+    priority: 0.5
+  },
+  {
+    path: "/sign-up",
+    priority: 0.7
+  },
+  {
+    path: "/daycare",
+    priority: 0.7
+  },
+  {
+    path: "/privacy",
+    priority: 0.5
+  },
+]
+
 module.exports = {
   configureWebpack: {
     module: {
@@ -18,11 +51,14 @@ module.exports = {
       ]
     },
     plugins: [
-      // new SitemapPlugin("https://gabbadoggydaycare.com", paths, {
-      //   lastmod: true,
-      //   changefreq: "monthly",
-      //   priority: "0.5"
-      // })
+      new SitemapPlugin({
+        base: "https://gabbadoggydaycare.com", 
+        paths, 
+        options: {
+        lastmod: true,
+        changefreq: "monthly",
+        priority: 0.5
+      }}),
       // new BundleAnalyzerPlugin()
     ]
   },
