@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero2></Hero2>
+    <Hero></Hero>
     <!-- <Hero></Hero> -->
     <Cards></Cards>
     <div class="section">
@@ -45,13 +45,12 @@
 </template>
 
 <script>
-  // import Hero from "@/components/Hero.vue"
-  import Hero2 from "@/components/Hero2.vue"
+  import Hero from "@/components/Hero.vue"
   import Cards from "@/components/Cards.vue"
   export default {
     components: {
       // Hero,
-      Hero2,
+      Hero,
       Cards
     },
     metaInfo: {

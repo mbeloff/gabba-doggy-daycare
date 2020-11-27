@@ -29,7 +29,6 @@
         <div class="mt-10 text-center">
             <button @click="showLogin()" class="inline-block text-xl btn-blue">Click Me</button>
           </div>
-        <!-- <Login class="w-full mx-auto md:w-3/4 lg:w-2/3"></Login> -->
       </div>
     </div>
   </div>
@@ -37,7 +36,6 @@
 
 <script>
 import SignUpInfo from '@/components/SignUpInfo.vue'
-  // import Login from "@/components/Login.vue"
   export default {
     metaInfo: {
     title: 'Create an Account',
@@ -51,7 +49,6 @@ import SignUpInfo from '@/components/SignUpInfo.vue'
     ]
   },
     components: {
-      // Login
       SignUpInfo
     },
     methods: {

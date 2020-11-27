@@ -17,14 +17,9 @@
     </div>
     <transition name="slide">
       <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-4 bg-white shadow-lg lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto ">
-        <div class="mt-1 divide-x-0 lg:divide-x font-bold lg:flex-grow lg:space-y-0 divide-blue-200">
-          <menu-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1"></menu-item>
+        <div class="divide-x-0 lg:divide-x lg:flex-grow lg:space-y-0 divide-blue-200">
+          <nav-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1"></nav-item>
         </div>
-        <!-- 
-        
-        unhide login/sign-up below
-      
-       -->
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
           <div class="self-center w-full mb-3 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
             <button class="link-pink px-3" @click="showLogin()">Login</button>
@@ -44,7 +39,9 @@
 </template>
 
 <script>
+import NavItem from '@/components/NavItem.vue'
   export default {
+    components: { NavItem },
     name: 'Nav',
     data() {
       return {

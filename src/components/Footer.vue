@@ -5,9 +5,9 @@
 
         <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy day care logo" style="height: 150px; width: 150px">
         </div>
-        <div class="flex-grow">
+        <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400">Quick Links</p>
-          <ul class="space-y-2 md:space-y-0 text-center list-none sm:text-left">
+          <ul class="space-y-2 md:space-y-0 list-none">
 
             <li>
               <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
@@ -24,9 +24,9 @@
           </ul>
         </div>
 
-        <div class="flex-grow">
+        <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400">Info</p>
-          <ul class="space-y-2 md:space-y-0 text-center list-none sm:text-left">
+          <ul class="space-y-2 md:space-y-0 list-none">
             <li>
               <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
             </li>
