@@ -5,8 +5,8 @@
           <template v-slot:big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm</span></template>
       </Title>
 
-      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
-        <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight, 'md:col-start-2' : service.highlight}">
+      <div class="grid grid-cols-1 pt-5 gap-x-10">
+        <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
           <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
             <div v-if="service.highlight">
               <div  class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
@@ -22,7 +22,7 @@
       <Title class="text-center">
         <template v-slot:big>Extras</template>
       </Title>
-      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
+      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10 opacity-50">
         <div v-for="(extra, i) in prices.extras" :key="i" class="mb-2 bg-white">
           <div class="flex bg-gray-100 rounded-lg">
             <div class="flex-grow px-2">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
@@ -40,22 +40,22 @@ data() {
       return {
         prices: {
           daycare: {
-            HalfDay: {
-              name: "Half Day",
-              desc: "Up to 4 Hours of Day Care",
-              price: "$40"
-            },
+            // HalfDay: {
+            //   name: "Half Day",
+            //   desc: "Up to 4 Hours of Day Care",
+            //   price: "$40"
+            // },
             FullDay: {
               name: 'Full Day',
               desc: "More than 4 hour of Day Care during regular opening hours.",
               price: "$50"
             },
-            HalfDayPack: {
-              name: "Half Day 10-pack",
-              desc: "Save $50 when you buy a half day package",
-              soon: " - valid for 3 months",
-              price: "$300"
-            },
+            // HalfDayPack: {
+            //   name: "Half Day 10-pack",
+            //   desc: "Save $50 when you buy a half day package",
+            //   soon: " - valid for 3 months",
+            //   price: "$300"
+            // },
             FullDayPack: {
               name: "Full Day 10-pack",
               // desc: "Save $100 when you buy a full day package",

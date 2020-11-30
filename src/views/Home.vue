@@ -26,21 +26,7 @@
         <div class="bg-cover rounded-sm col champ-pup">
         </div>
       </div>
-    </div>
-
-    <!-- <div class="bg-blue-700 section">
-      <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
-        <div class="bg-cover rounded-sm col sad-pup">
-        </div>
-        <div class="p-6 text-white bg-blue-500 bg-opacity-25 rounded shadow-xl col md:my-20">
-          <h2 class="mb-10 text-5xl font-bold leading-tight tracking-tight">Bored at home?</h2>
-          <p class="mb-10">Does your dog get into mischief while you're at work? Give them a day out to play and meet new friends instead of getting restless at home.</p>
-          <div class="grid w-full place-items-center"><i class="fas fa-bone"></i></div>         
-        </div>
-      </div>
-    </div> -->
-
-    
+    </div>    
   </div>
 </template>
 
@@ -102,7 +88,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .champ-pup {
     background-image: url(../assets/img/champ.jpg);
     min-height: 300px;
