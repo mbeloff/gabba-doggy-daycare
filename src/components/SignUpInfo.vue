@@ -10,7 +10,6 @@
             </ul>
             <p class="mb-3">If have any concerns regarding the above criteria, you can view our <router-link class="link-pink" to="vaccinations">vaccination policy</router-link>, or <Email>email us</Email> to discuss any further questions.</p>
             <p class="mb-3">Otherwise, simply click the button below to create an account.</p>
-            <p class="mb-3"><span class="font-bold">Please note:</span> Your first session will include a brief assessment to see how your dog will fit in here. Send us an email at <a class="link-pink" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a> to arrange this first appointment, after which you will be able to book online :)</p>
     </div>
 </template>
 
