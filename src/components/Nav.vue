@@ -21,7 +21,7 @@
           <nav-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1"></nav-item>
         </div>
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
-          <div class="self-center w-full mb-3 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
+          <div class="self-center w-full mb-5 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
             <button class="link-pink px-3" @click="showLogin()">Login</button>
             <router-link :to="{name: 'Sign-up'}" class="link-pink px-3">Create Account</router-link>
           </div>
@@ -30,7 +30,7 @@
             <SocialIcon site="instagram" class="focus:outline-blue"></SocialIcon>
           </div>
 
-          <open-modal class="inline-block btn-blue">Let me Know!</open-modal>
+          <open-modal class="inline-block btn-blue ml-2">Got a Question?</open-modal>
         </div>
       </div>
     </transition>

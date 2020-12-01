@@ -5,10 +5,10 @@
             <ul class="mb-3 list-disc list-inside">
               <list-item>Up to date with all of their vaccinations (Distemper, Hepatitis, Parvovirus, Parainfluenza and Bordetella)</list-item>
               <list-item>Have adequate protection against fleas, worms and ticks</list-item>
-              <list-item>Desexed (if over than 6 months)</list-item>
+              <list-item>Desexed (if over 6 months)</list-item>
               <list-item>Friendly with people and other dogs</list-item>
             </ul>
-            <p class="mb-3">If have any concerns regarding the above criteria, you can view our <router-link class="link-pink" to="vaccinations">vaccination policy</router-link>, or <Email>email us</Email> to discuss any further questions.</p>
+            <p class="mb-3">If you have any concerns about the above criteria, you can view our <router-link class="link-pink" to="vaccinations">vaccination policy</router-link>, or <open-modal class="link-pink">message us</open-modal> to discuss any further questions.</p>
             <p class="mb-3">Otherwise, simply click the button below to create an account.</p>
     </div>
 </template>

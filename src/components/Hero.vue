@@ -3,8 +3,9 @@
   <div class="hero-grid grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-1 bg-gray-200">
     <div class="grid p-10 lg:py-40 sm:px-40 2xl:px-60 order-2 lg:order-1 col-span-2">
       <div class="place-self-center space-y-3">
-        <p class="mb-5 text-xl md:text-2xl"><span class="font-bold text-yellow-500">OPENING SOON!</span> Time's almost out for a <nobr>3-day</nobr> free trial at Gabba Doggy Day Care. Leave your details and we'll let you know how to book in.</p>
-        <open-modal class="w-full btn-blue text-xl">Let me know!</open-modal>
+        <p class="mb-5 text-xl md:text-2xl"><span class="font-bold text-yellow-500">NOW OPEN FOR BOOKINGS!</span> For a limited time, all new accounts get  <span class="font-bold">3-days FREE</span> at Gabba Doggy Day Care. Create an account by clicking the button below.</p>
+        <!-- <open-modal class="w-full btn-blue text-xl">Let me know!</open-modal> -->
+       <router-link to="Sign-up"> <button class="btn-blue text-xl w-full">Sign me up!</button></router-link>
         <p class="text-sm text-gray-500">Trial days to be used by December 31<sup>st</sup>, public holidays excluded</p>
       </div>
     </div>

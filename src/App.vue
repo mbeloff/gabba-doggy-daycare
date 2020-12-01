@@ -20,7 +20,7 @@
       :focusTrap="true"
     >
       <modal-inner>
-        <template v-slot:title>Register Your Interest</template>
+        <template v-slot:title>Got a Question?</template>
         <template v-slot:body><RegisterInterest></RegisterInterest></template>        
       </modal-inner>
     </modal>
