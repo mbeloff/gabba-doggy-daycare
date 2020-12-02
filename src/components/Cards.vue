@@ -45,12 +45,12 @@
           {
             icon: "fas fa-taxi",
             heading: "Pet Taxi",
-            desc: "Save yourself a bit of rushing around. Our pet taxi will be available for local pickups and dropoffs."
+            desc: "Save yourself a bit of rushing around. Our pet taxi will be available for local pickups and dropoffs. Available in 2021."
           },
           {
             icon: "fas fa-user-unlock",
             heading: "After Hours",
-            desc: "Working late? We can arrange after hours pickups. Or overnight care for daycare customers (by request)"
+            desc: "Working late? We can arrange after hours pickups. Or overnight care for daycare customers (by request). Available in 2021."
           },
           {
             icon: "fa-custom puppy",
