@@ -41,6 +41,14 @@ const routes = [
     name: "Daycare",
     component: Daycare
   },
+  // {
+  //   path: "/shop",
+  //   name: "Shop",
+  //   beforeEnter() {location.href = "https://www.gabbadoggydaycareshop.com/"}
+
+  // haven't tested -> window.open("https://www.gabbadoggydaycareshop.com/", "_blank")
+
+  // },
   {
     path: "/privacy",
     name: "Privacy",

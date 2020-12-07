@@ -104,6 +104,6 @@
   .flower-pup {
     background-image: url(../assets/img/flower-pup.jpg);
     min-height: 300px;
-    background-position: 50% 30%
+    background-position: 50% 30%;
   }
 </style>

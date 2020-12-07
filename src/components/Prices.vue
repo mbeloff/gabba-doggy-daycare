@@ -17,9 +17,15 @@
             <div class="px-2"><span class="text-pink-500">{{service.price}}</span></div>
           </div>
           <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{service.desc}}</div> -->
-        </div>       
+        </div> 
+            
       </div>
-      <Title class="text-center">
+      <div class="text-center mt-4">
+        <p class="mb-8">Head over to <a class="link-pink" href="https://www.gabbadoggydaycareshop.com">gabbadoggydaycareshop.com</a> to pre-pay individual daycare sessions or purchase daycare packages.</p>
+        <a class="btn-blue" href="https://www.gabbadoggydaycareshop.com/s/shop">SHOP NOW</a> 
+      </div>
+       
+      <Title class="text-center opacity-50">
         <template v-slot:big>Extras</template>
       </Title>
       <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10 opacity-50">

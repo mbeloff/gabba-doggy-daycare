@@ -17,10 +17,11 @@
     </div>
     <transition name="slide">
       <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-4 bg-white shadow-lg lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto ">
-        <div class="divide-x-0 lg:divide-x lg:flex-grow lg:space-y-0 divide-blue-200">
-          <nav-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1"></nav-item>
+        <div class="flex flex-col lg:flex-row divide-x-0 lg:divide-x lg:flex-grow lg:space-y-0 divide-blue-200">
+          <nav-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1" :style="{ order: item.order }"></nav-item>
+          <a href="https://www.gabbadoggydaycareshop.com/" class="block px-3 py-3 lg:py-0 lg:inline-block focus:outline-none focus:text-blue-500 hover:text-blue-500" style="order: 3">Daycare Shop</a>
         </div>
-        <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0 ">
+        <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0">
           <div class="self-center w-full mb-5 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
             <button class="link-pink px-3" @click="showLogin()">Login</button>
             <router-link :to="{name: 'Sign-up'}" class="link-pink px-3" exact-active-class="text-pink-300 focus:outline-none">Create Account</router-link>
@@ -50,10 +51,12 @@ import NavItem from '@/components/NavItem.vue'
           {
           label: "Home",
           link: "Home",
+          order: "1"
         },
         {
           label: "Daycare",
           link: "Daycare",
+          order: "2",
           sub: [
             {
               label: "About",
@@ -69,12 +72,17 @@ import NavItem from '@/components/NavItem.vue'
               label: "Joining",
               name: "Daycare",
               hash: "#enrol"
-            }
+            },
+            // {
+            //   label: "Shop",
+            //   name: "Shop",
+            // }
           ]
         },
         {
           label: "Contact",
           link: "Contact",
+          order: "4"
         }
         ]
       }
