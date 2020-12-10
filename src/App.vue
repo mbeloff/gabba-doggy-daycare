@@ -68,6 +68,11 @@ export default {
       }
     ]
   },
+  mounted() {
+    if (this.$route.path == '/login') {
+      this.$modal.show('login-modal')
+    }
+  }
 }
 </script>
 <style lang="postcss">

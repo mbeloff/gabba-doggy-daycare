@@ -126,8 +126,8 @@ export default {
           })
       },
       close() {
-          this.$router.push({
-          name: 'Privacy'
+        this.$router.push({
+        name: 'Privacy'
         })
         this.$modal.hide('contact-modal')
       }
