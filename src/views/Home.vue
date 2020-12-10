@@ -26,18 +26,21 @@
         <div class="bg-cover rounded-sm col champ-pup">
         </div>
       </div>
-    </div>    
+    </div>  
+    <Slider></Slider>  
   </div>
 </template>
 
 <script>
   import Hero from "@/components/Hero.vue"
   import Cards from "@/components/Cards.vue"
+  import Slider from "@/components/Slider.vue"
   export default {
     components: {
       // Hero,
       Hero,
-      Cards
+      Cards,
+      Slider
     },
     metaInfo: {
     title: 'Home',
