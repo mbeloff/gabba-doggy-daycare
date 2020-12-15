@@ -9,6 +9,14 @@ import vueGtm from 'vue-gtm'
 import vueMeta from 'vue-meta'
 import './assets/styles/index.css';
 import Vue2TouchEvents from 'vue2-touch-events'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import { Swiper as SwiperClass, Pagination, Mousewheel, Autoplay } from 'swiper/swiper.esm'
+import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
+SwiperClass.use([Pagination, Mousewheel, Autoplay])
+Vue.use(getAwesomeSwiper(SwiperClass))
+
+import 'swiper/swiper-bundle.css'
+Vue.use(VueAwesomeSwiper)
 Vue.use(Vue2TouchEvents)
 Vue.use(vueMeta)
 Vue.use(VModal)

@@ -1,16 +1,18 @@
 <template>
   <div class="bg-blue-900">
     <div class="container mx-auto" style="overflow: hidden; max-width: 100vw">
-      <div class=" mx-auto p-0">
-        <swiper ref="mySwiperRef" class="swiper" :options="swiperOption">
-          <swiper-slide class="w-auto" v-for="slide in slides" :key="slide">
-            <img class="swiper-lazy" :src="slide.url" alt="">
-            <!-- <div class="swiper-lazy-preloader"></div> -->
+      <div class=" mx-auto p-0 relative">
+        <swiper ref="mySwiperRef" class="swiper" :options="swiperOption" :class="{ 'opacity-0' : !this.pageLoaded }">
+          <swiper-slide class="w-auto" v-for="(slide, i) in slides" :key="i">
+            <img :src="slide" alt="">
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
           <div tabindex="0" @keypress.enter="prev()" role="button" class="swiper-button-prev" slot="button-prev" @click="prev()"></div>
           <div tabindex="0" @keypress.enter="next()" role="button" class="swiper-button-next" slot="button-next" @click="next()"></div>
         </swiper>
+        <div v-if="!pageLoaded" class="absolute top-0 left-0 grid w-full h-full">
+          <i class="text-white fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -18,13 +20,19 @@
 
 <script>
   import {
+    Swiper as SwiperClass,
+    Pagination,
+    Mousewheel,
+    Autoplay
+  } from 'swiper/swiper.esm'
+  import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
+  SwiperClass.use([Pagination, Mousewheel, Autoplay])
+
+  const {
     Swiper,
-    SwiperSlide,
-    directive
-  } from "vue-awesome-swiper";
-
-  import "swiper/swiper-bundle.css";
-
+    SwiperSlide
+  } = getAwesomeSwiper(SwiperClass)
+  import 'swiper/swiper-bundle.css'
   export default {
     name: "Slider",
     title: "Slider",
@@ -32,99 +40,44 @@
       Swiper,
       SwiperSlide
     },
-    directives: {
-      swiper: directive
-    },
     data() {
       return {
+        pageLoaded: false,
         swiperOption: {
           slidesPerView: 'auto',
-          spaceBetween: 10,
+          spaceBetween: 0,
           slidesPerGroup: 1,
-          centeredSlides: true, 
-          autoplay: true,
-          grabCursor: true,
-          // lazy: true,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          breakpoints: {
-            1024: {
-              slidesPerView: 'auto',
-              spaceBetween: 10
-            },
-            768: {
-              slidesPerView: 'auto',
-              spaceBetween: 0
-            },
-            640: {
-              slidesPerView: 'auto',
-              spaceBetween: 0
-            },
-            320: {
-              slidesPerView: 'auto',
-              spaceBetween: 0
-            }
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
           },
+          speed: 2000,
+          grabCursor: true,
+          loop: true,
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
           },
-
         },
-        slides: [{
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/01.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/02.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/03.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/04.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/08.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/10.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/11.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/15.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/16.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/17.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/18.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/19.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/20.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/21.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/22.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/23.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/24.jpg"
-          },
-          {
-            url: "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/25.jpg"
-          }
+        slides: ["https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/01.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/02.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/03.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/04.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/08.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/10.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/11.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/15.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/16.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/17.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/18.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/19.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/20.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/21.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/22.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/23.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/24.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_280/v1/gddc/photos/25.jpg"
+
         ]
       };
     },
@@ -134,8 +87,18 @@
       },
       prev() {
         this.$refs.mySwiperRef.$swiper.slidePrev();
+      },
+    },
+    mounted() {
+      document.onreadystatechange = () => {
+        if (document.readyState == "complete") {         
+          this.$refs.mySwiperRef.$swiper.slideTo(5, 0, false);
+          this.$refs.mySwiperRef.$swiper.autoplay.start();
+          this.pageLoaded = true;
+        }
       }
-    }
+
+    },
   };
 </script>
 
@@ -148,11 +111,5 @@
   .swiper-container {
     min-height: 280px;
     padding: 10px 0
-  }
-
-  .swiper-slide {
-    // width: 100%;
-    // height: 280px;
-    // box-shadow: 1px 1px 5px black
   }
 </style>
