@@ -105,7 +105,7 @@
 <style lang="scss" scoped>
   .swiper {
     min-height: 280px;
-    // width: 100%;
+    transition: opacity 1s ease-in-out
   }
 
   .swiper-container {
