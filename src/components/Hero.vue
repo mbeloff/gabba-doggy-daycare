@@ -6,7 +6,7 @@
         <p class="mb-5 text-xl md:text-2xl"><span class="font-bold text-yellow-500">NOW OPEN FOR BOOKINGS!</span> For a limited time, all new accounts now get <span class="font-bold"><nobr>3-days</nobr> FREE</span> to be used before Christmas. Create an account by clicking the button below.</p>
         <!-- <open-modal class="w-full btn-blue text-xl">Let me know!</open-modal> -->
        <router-link to="Sign-up"> <button class="btn-blue text-xl w-full">Sign me up!</button></router-link>
-       <p class="text-sm text-gray-500">Please note: We will be closed from 24 Dec until 5 Jan <i class="fal fa-candy-cane"></i></p>
+       <p class="text-sm text-gray-500">Please note: We will be closed from <span class="font-bold">24 Dec until 5 Jan</span> <i class="fal fa-candy-cane"></i></p>
       </div>
     </div>
     <div class="order-1 lg:order-2 col hero-pup bg-cover bg-center col-span-2">
