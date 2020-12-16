@@ -21,11 +21,10 @@
 <script>
   import {
     Swiper as SwiperClass,
-    Mousewheel,
     Autoplay
   } from 'swiper/swiper.esm'
   import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
-  SwiperClass.use([Mousewheel, Autoplay])
+  SwiperClass.use([Autoplay])
   const {
     Swiper,
     SwiperSlide
