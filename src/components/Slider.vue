@@ -21,13 +21,11 @@
 <script>
   import {
     Swiper as SwiperClass,
-    Pagination,
     Mousewheel,
     Autoplay
   } from 'swiper/swiper.esm'
   import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
-  SwiperClass.use([Pagination, Mousewheel, Autoplay])
-
+  SwiperClass.use([Mousewheel, Autoplay])
   const {
     Swiper,
     SwiperSlide
@@ -79,7 +77,6 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_320/v1/gddc/photos/23.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_320/v1/gddc/photos/24.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_320/v1/gddc/photos/25.jpg"
-
         ]
       };
     },

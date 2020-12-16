@@ -20,7 +20,6 @@
 
 <script>
   export default {
-
   }
 </script>
 
@@ -31,11 +30,15 @@
 
   .hero-pup {
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1/gddc/hero-pup-full.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_1300/v1/gddc/hero-pup-full.jpg);
     @media only screen and (max-width: 1023px) {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_1023/v1/gddc/hero-pup-full.jpg);
       height: 250px;  
       max-height: 250px;
+    }
+    @media only screen and (max-width: 575px) {
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/v1/gddc/hero-pup-full.jpg);
     }
   }
 </style>
