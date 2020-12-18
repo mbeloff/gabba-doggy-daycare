@@ -1,7 +1,7 @@
 <template>
 
     <div >
-      <p class="mb-3"><span class="font-bold">We can't wait to meet you</span>, but there are a few things to get out of the way first. In order to make sure everyone is safe and has a great time at Gabba Doggy Day Care, we ask that all of our canine guests are:</p>
+      <p class="mb-3"><span class="font-bold">We can't wait to meet you</span>, but there are a few things to get out of the way first. In order to make sure everyone is safe and has a great time at Gabba Doggy Daycare, we ask that all of our canine guests are:</p>
             <ul class="mb-3 list-disc list-inside">
               <list-item>Up to date with all of their vaccinations (Distemper, Hepatitis, Parvovirus, Parainfluenza and Bordetella)</list-item>
               <list-item>Have adequate protection against fleas, worms and ticks</list-item>

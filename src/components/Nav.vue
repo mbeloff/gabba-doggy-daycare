@@ -3,7 +3,6 @@
     <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 mr-2 text-blue-600 lg:mr-6 focus:outline-blue">
 
       <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Icon of a circle with a paw in the middle">
-      <!-- <span class="ml-2 text-xl font-semibold tracking-tight">Gabba Doggy Day Care</span> -->
       <img class="h-5 md:h-6" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare, yellow text with blue outline">
 
     </router-link>

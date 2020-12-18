@@ -3,7 +3,7 @@
     <div class="container px-3 mx-auto">
       <div class="flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
 
-        <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy day care logo" style="height: 150px; width: 150px">
+        <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
         </div>
         <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400">Quick Links</p>
@@ -19,7 +19,7 @@
               <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Create Account</router-link>
             </li>
             <li>
-              <a href="https://www.gabbadoggydaycareshop.com" class="focus:outline-white hover:text-white">Shop Daycare</a>
+              <a href="https://www.gabbadoggydaycareshop.com" class="focus:outline-white hover:text-white">Daycare Shop</a>
             </li>
             <li>
               <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>

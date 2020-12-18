@@ -60,12 +60,12 @@ export default {
   },
   metaInfo: {
     title: 'Home',
-    titleTemplate: 'Gabba Doggy Day Care | %s',
+    titleTemplate: 'Gabba Doggy Daycare | %s',
     meta: [
       {
         name: 'description',
         content:
-          "Your best friends' new favourite place. Don't leave your dogs home alone, bring them to Gabba Doggy Day Care for a great day out.",
+          "Your best friends' new favourite place. Don't leave your dogs home alone, taken them to Gabba Doggy Daycare for a great day out.",
         vmid: 'description'
       }
     ]
@@ -98,7 +98,6 @@ export default {
   opacity: 0;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
@@ -116,6 +115,11 @@ body {
 .vm--modal {
   height: auto!important;
   background-color: transparent!important
+}
+
+.vm--overlay {
+  background: #0005;
+  backdrop-filter: blur(2px)
 }
 
 @layer components {

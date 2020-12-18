@@ -7,7 +7,7 @@
             <template v-slot:small>Check out what's available</template>
             <template v-slot:big>Play, Relax, Socialise</template>
           </Title>
-          <p class="mb-4">Gabba Doggy Day Care offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day. We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Everyone has their place at Gabba Doggy Day Care.</p>
+          <p class="mb-4">Gabba Doggy Daycare offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day. We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Everyone has their place at Gabba Doggy Daycare.</p>
           <p>See below for more information about our day care prices, and additional services to make your pup's day a little bit special.</p>
         </div>
         <div class="bg-cover rounded-sm col toy-pup">

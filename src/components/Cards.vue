@@ -3,7 +3,7 @@
     <div class="container py-20 mx-auto text-center">
       <Title>
         <template v-slot:small>Your best friend's new favourite place</template>
-        <template v-slot:big>Gabba Doggy Day Care</template>
+        <template v-slot:big>Gabba Doggy Daycare</template>
       </Title>
       <div class="flex flex-wrap justify-center">
         <template>
@@ -30,17 +30,17 @@
         cards: [{
             icon: "fas fa-tennis-ball",
             heading: "Play",
-            desc: "Hype it up or sit back and watch. We keep play areas with dogs matched by size and energy level, including a separate relaxed area for the old-timers :)"
+            desc: "Everyone plays differntly. We keep play areas with dogs matched by size and energy level, including a separate relaxed area for the old-timers :)"
           },
           {
             icon: "fas fa-paw",
             heading: "Socialise",
-            desc: "Meet new human and fur-friends in a safe and supervised environment. We make sure everyone gets along at Gabba Doggy Day Care."
+            desc: "Meet new human and fur-friends in a safe and supervised environment. We do our best to make sure everyone gets along at Gabba Doggy Daycare."
           },
           {
             icon: "fas fa-dog-leashed",
             heading: "Exercise",
-            desc: "Get some exercise and fresh air with a daily walks through the nearby park, or doggos can take a group trip to the bay or walk along the river."
+            desc: "Get some exercise and fresh air with a daily walks through the nearby park, or dogs can take a pet taxi group trip to the bay or walk along the river to take in the scenery. Pet taxi available in 2021."
           },
           {
             icon: "fas fa-taxi",

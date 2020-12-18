@@ -31,7 +31,7 @@
       <li>
         <strong>Company</strong> (referred to as either &quot;the
         Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
-        this Agreement) refers to Gabba Doggy Day Care, 46 Deshon St,
+        this Agreement) refers to Gabba Doggy Daycare, 46 Deshon St,
         Woolloongabba QLD 4102.
       </li>
       <li>
@@ -73,7 +73,7 @@
         infrastructure itself (for example, the duration of a page visit).
       </li>
       <li>
-        <strong>Website</strong> refers to Gabba Doggy Day Care, accessible
+        <strong>Website</strong> refers to Gabba Doggy Daycare, accessible
         from
         <router-link to="/" class="link-pink">https://www.gabbadoggydaycare.com</router-link>
       </li>
@@ -424,7 +424,7 @@
         By email: woof@gabbadoggydaycare.com
       </li>
       <li>
-        By mail: Gabba Doggy Day Care <br>46 Deshon St, Woolloongabba QLD 4102
+        By mail: Gabba Doggy Daycare <br>46 Deshon St, Woolloongabba QLD 4102
       </li>
     </ul>
   </div>
@@ -440,7 +440,7 @@ export default {
       {
         name: 'description',
         content:
-          "We take your privacy seriously. Read our policy regarding the use and storage of personal information collected by Gabba Doggy Day Care.",
+          "We take your privacy seriously. Read our policy regarding the use and storage of personal information collected by Gabba Doggy Daycare.",
         vmid: 'description'
       }
     ]

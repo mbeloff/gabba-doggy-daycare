@@ -4,10 +4,12 @@
     <!-- <Hero></Hero> -->
     <Cards></Cards>
     <div class="section">
-      <div class="container grid grid-cols-1 gap-20 lg:gap-40 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
-        <div class="col">
-          <Title><template v-slot:small>Brisbane Dogs Love it Here</template>
+      
+      <div class="container grid grid-cols-1 gap-10 lg:gap-20 px-4 py-20 mx-auto lg:grid-cols-2 lg:px-10 lg:gap-y-0">
+        <Title class="text-center lg:col-span-2"><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template></Title>
+        <div class="col order-2 lg:order-1">
+          
           <p class="mb-10 leading-8"></p>
           <ul class="text-left list-none list-inside">   
             <li class="grid w-full mb-5 shadow-xl" v-for="(item, i) in features" :key="i">
@@ -23,7 +25,7 @@
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Find Out More</router-link>
           </div>
         </div>
-        <div class="bg-cover rounded-sm col champ-pup">
+        <div class="bg-cover rounded-sm col champ-pup order-1 lg:order-2 my-auto">
         </div>
       </div>
     </div>    
@@ -44,7 +46,7 @@
       {
         name: 'description',
         content:
-          "Your best friends' new favourite place. Don't leave your dogs home alone, bring them to Gabba Doggy Day Care for a great day out.",
+          "Your best friends' new favourite place. Don't leave your dogs home alone, bring them to Gabba Doggy Daycare for a great day out.",
         vmid: 'description'
       }
     ]
@@ -62,19 +64,15 @@
         },
         {
           title: "Large Facility",
-          desc: "Spacious play areas and access to grass."
-        },
-        {
-          title: "Pet Taxi Service",
-          desc: "local pickup and dropoff within 3km"
+          desc: "Spacious play areas with balls, toys and access to grass."
         },
         {
           title: "Daily Walks",
-          desc: "Fresh air and exercise with a dog park close by"
+          desc: "Fresh air and exercise with a little group walks through nearby parks"
         },
         {
           title: "Grooming",
-          desc: "Hydrobath and grooming services available soon"
+          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services coming in 2021"
         },        
       ]
     }
@@ -90,8 +88,16 @@
 <style lang="scss">
   .champ-pup {
     background-image: url(../assets/img/champ.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1607553601/gddc/photos/03.jpg);
     min-height: 300px;
-    background-position: 45% 80%;
+    height: 100%;
+    max-height: 500px;
+    @media only screen and (max-width: 1023px) {
+      min-height: 500px;
+    }
+    @media only screen and (max-width: 450px) {
+      min-height: 300px;
+    }
   }
 
   .sad-pup {

@@ -1,6 +1,6 @@
 <template>
   <div class="p-3">
-      <p class="text-blue-900">Thanks for checking out Gabba Doggy Day Care. If you have any questions, or problems creating your account, please let us know here.</p>
+      <p class="text-blue-900">Thanks for checking out Gabba Doggy Daycare. If you have any questions, or problems creating your account, please let us know here.</p>
       <br />
       <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">

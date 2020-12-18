@@ -53,7 +53,7 @@ data() {
             // },
             FullDay: {
               name: 'Full Day',
-              desc: "More than 4 hour of Day Care during regular opening hours.",
+              desc: "More than 4 hours of Day Care during regular opening hours.",
               price: "$50"
             },
             // HalfDayPack: {

@@ -44,7 +44,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
       title: 'Login',
       meta: [{
         name: 'description',
-        content: "Login to your Gabba Doggy Day Care account to schedule day care appointments, or manage your account.",
+        content: "Login to your Gabba Doggy Daycare account to schedule day care appointments, or manage your account.",
         vmid: 'description'
       }]
     },

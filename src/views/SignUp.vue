@@ -43,7 +43,7 @@ import SignUpInfo from '@/components/SignUpInfo.vue'
       {
         name: 'description',
         content:
-          "Create and account with Gabba Doggy Day Care to easily schedule day care appointments, manage payments and keep your info up to date.",
+          "Create and account with Gabba Doggy Daycare to easily schedule day care appointments, manage payments and keep your info up to date.",
         vmid: 'description'
       }
     ]
