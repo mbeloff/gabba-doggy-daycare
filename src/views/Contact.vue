@@ -13,6 +13,8 @@
             <ListItem class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left">Address: <br> <span>Gabba Doggy Daycare <br> 46 Deshon Street, <br>Woolloongabba 4102</span></ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" href="tel:0423487302">0423 487 302</a></ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Email: <br> <span><Email class="break-all">woof@gabbadoggydaycare.com</Email></span></ListItem>
+            <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Message: <br> <span><open-modal class="link-pink">leave a message</open-modal></span>  
+            </ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Follow us on: <br>
               <div class="flex flex-wrap">
                 <div class="">

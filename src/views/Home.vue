@@ -8,9 +8,7 @@
       <div class="container grid grid-cols-1 gap-10 lg:gap-20 px-4 py-20 mx-auto lg:grid-cols-2 lg:px-10 lg:gap-y-0">
         <Title class="text-center lg:col-span-2"><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template></Title>
-        <div class="col order-2 lg:order-1">
-          
-          <p class="mb-10 leading-8"></p>
+        <div class="col order-2 lg:order-1 lg:mt-10">
           <ul class="text-left list-none list-inside">   
             <li class="grid w-full mb-5 shadow-xl" v-for="(item, i) in features" :key="i">
               <div class="bg-gradient-to-r from-blue-500 via-blue-500 to-blue-400 text-white rounded-t-lg px-4 py-1 font-bold">

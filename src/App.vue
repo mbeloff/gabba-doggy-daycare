@@ -118,8 +118,7 @@ body {
 }
 
 .vm--overlay {
-  background: #0005;
-  backdrop-filter: blur(2px)
+  background: #0006;
 }
 
 @layer components {
