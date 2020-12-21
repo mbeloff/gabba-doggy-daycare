@@ -27,7 +27,7 @@
       </Title>
         </div>
         <div class="mt-10 text-center">
-            <button @click="showLogin()" class="inline-block text-xl btn-blue">Click Me</button>
+            <button @click="showLogin()" class="inline-block text-xl btn-blue">Sign In</button>
           </div>
       </div>
     </div>
