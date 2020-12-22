@@ -19,7 +19,7 @@
               <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Create Account</router-link>
             </li>
             <li>
-              <a href="https://www.gabbadoggydaycareshop.com/s/shop" class="focus:outline-white hover:text-white">Daycare Shop</a>
+              <a href="https://www.gabbadoggydaycareshop.com" class="focus:outline-white hover:text-white">Daycare Shop</a>
             </li>
             <li>
               <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>

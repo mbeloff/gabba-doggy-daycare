@@ -101,7 +101,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', Arial, sans-serif !important;
   color: #474b57;
   scroll-behavior: smooth;
 }
