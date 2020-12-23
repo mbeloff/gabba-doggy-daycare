@@ -33,7 +33,7 @@
         cards: [{
             icon: "fas fa-tennis-ball",
             heading: "Play",
-            desc: "Everyone plays differntly. We keep play areas with dogs matched by size and energy level, including a separate relaxed area for the old-timers :)"
+            desc: "Everyone plays differently. We have play areas with dogs matched by size and energy level, including a separate relaxed area for the old-timers :)"
           },
           {
             icon: "fas fa-paw",
@@ -58,7 +58,7 @@
           {
             icon: "fas fa-user-unlock",
             type: 'image',
-            img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/v1607553600/gddc/photos/21.jpg)"
+            img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600,f_auto/v1607553600/gddc/photos/21.webp)"
           },
           {
             icon: "fa-custom puppy",
