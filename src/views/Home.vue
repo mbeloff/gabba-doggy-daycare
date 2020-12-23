@@ -87,7 +87,7 @@
 <style lang="scss">
   .champ-pup {
     background-image: url(../assets/img/champ.jpg);
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1607553601/gddc/photos/03.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/v1607553601/gddc/photos/03.jpg);
     min-height: 300px;
     height: 100%;
     // max-height: 500px;

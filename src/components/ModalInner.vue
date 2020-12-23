@@ -25,7 +25,7 @@
 
 <style lang="scss">
   .bg-pug {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604466493/gddc/pug-sm.png);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/v1604466493/gddc/pug-sm.png);
     background-size: 60% auto;
   }
 
