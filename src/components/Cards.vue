@@ -58,7 +58,7 @@
           {
             icon: "fas fa-user-unlock",
             type: 'image',
-            img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/f_auto/v1607553600/gddc/photos/21.webp)"
+            img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/f_auto,q_auto/v1607553600/gddc/photos/21.jpg)"
           },
           {
             icon: "fa-custom puppy",
