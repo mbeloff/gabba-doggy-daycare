@@ -14,9 +14,6 @@
         </div>
       </div>
     </div>
-    <div class="section">
-
-    </div>
     <Prices></Prices>
     <div class="bg-gray-100 section"  id="enrol">
       <div class="container py-20 mx-auto">
@@ -30,7 +27,7 @@
           <div class="text-left md:col-span-2">
             <sign-up-info></sign-up-info>
           </div>
-          <div class="bg-cover md:col-span-1 flower-pup">
+          <div class="bg-cover md:col-span-1 flower-pup rounded-xl">
           </div>
         </div>
         <div class="grid grid-cols-1 gap-5 my-10 divide-pink-500 sm:grid-cols-2 sm:divide-x">
