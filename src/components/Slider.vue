@@ -92,7 +92,6 @@
           this.pageLoaded = true;
         }
       }
-
     },
   };
 </script>

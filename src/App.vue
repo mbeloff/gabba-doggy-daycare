@@ -104,6 +104,7 @@ body {
   font-family: 'Open Sans', Arial, sans-serif !important;
   color: #474b57;
   scroll-behavior: smooth;
+  font-display: swap;
 }
 
 #app {
