@@ -98,7 +98,7 @@ export default {
   opacity: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 
 body {
   font-family: 'Open Sans', Arial, sans-serif !important;
