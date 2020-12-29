@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /success
 Disallow: /thanks
-Disallow: /404

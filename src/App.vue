@@ -51,6 +51,7 @@
       "logo": "https://www.gabbadoggydaycare.com/img/gddc-logo.02c7187e.svg",
       "telephone": "0423 487 302",
       "email": "woof@gabbadoggydaycare.com",
+      "url": "https://www.gabbadoggydaycare.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "46 Deshon st",
