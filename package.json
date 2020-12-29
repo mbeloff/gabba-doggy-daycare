@@ -19,6 +19,7 @@
     "vue-awesome-swiper": "^4.1.1",
     "vue-gtm": "3.0.0-vue2",
     "vue-js-modal": "^2.0.0-rc.6",
+    "vue-jsonld": "^1.0.1",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.4.8",
     "vue-slick-carousel": "^1.0.6",
