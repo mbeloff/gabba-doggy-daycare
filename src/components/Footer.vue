@@ -1,6 +1,6 @@
 <template>
-  <div class="py-6 text-gray-500 bg-gray-900 ">
-    <div class="container px-3 mx-auto">
+  <div class="text-gray-500 bg-gray-900 ">
+    <div class="container px-3 mx-auto py-4">
       <div class="flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
 
         <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
@@ -52,7 +52,7 @@
             <p class="text-gray-500">
               <a class="focus:outline-white hover:underline font-semibold text-yellow-300" href="tel:0423487302"><i class="fas fa-phone-rotary mr-2"></i>0423 487 302</a><br>
               <a class="text-gray-300 hover:text-gray-100 focus:outline-white hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a><br>
-              46 Deshon st,<br>Woolloongabba 4102</p>
+              46 Deshon st, Woolloongabba, QLD Australia 4102</p>
           </div>
           <div class="flex flex-row mt-2 justify-center sm:justify-start">
             <SocialIcon site="facebook"></SocialIcon>
@@ -61,7 +61,9 @@
         </div>
       </div>
     </div>
-
+    <div class="col text-center bg-black">
+      <p>© <a href="https://www.gabbadoggydaycare.com">gabbadoggydaycare.com</a></p>
+    </div>
   </div>
 </template>
 

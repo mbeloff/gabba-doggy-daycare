@@ -21,7 +21,7 @@
             </li>         
           </ul>
           <div class="mt-10 text-center">
-            <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Find Out More</router-link>
+            <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
           </div>
         </div>
         <div class="bg-cover rounded-lg h-full col champ-pup order-1 lg:order-2 my-auto">
