@@ -21,8 +21,8 @@
             
       </div>
       <div class="text-center mt-4">
-        <p class="mb-8">Head over to <a class="link-pink" href="https://www.gabbadoggydaycareshop.com">gabbadoggydaycareshop.com</a> to pre-pay individual daycare sessions or purchase daycare packages.</p>
-        <a class="btn-blue" href="https://www.gabbadoggydaycareshop.com">SHOP NOW</a> 
+        <p class="mb-8">Head over to <a class="link-pink" target="_blank" href="https://www.gabbadoggydaycareshop.com">gabbadoggydaycareshop.com</a> to pre-pay individual daycare sessions or purchase daycare packages.</p>
+        <a class="btn-blue" target="_blank" href="https://www.gabbadoggydaycareshop.com">SHOP NOW</a> 
       </div>
        
       <Title class="text-center opacity-50">
