@@ -14,14 +14,16 @@
             </div>
             
             <div class="flex-grow px-2">{{service.name}}<span class="text-pink-500">{{ service.soon }}</span></div>
-            <div class="px-2"><span class="text-pink-500">{{service.price}}</span></div>
+            <div class="px-2 relative"><span class="text-pink-500">{{service.price}}</span>
+            </div>
           </div>
           <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{service.desc}}</div> -->
         </div> 
             
       </div>
       <div class="text-center mt-4">
-        <p class="mb-8">Head over to <a class="link-pink" target="_blank" href="https://www.gabbadoggydaycareshop.com">gabbadoggydaycareshop.com</a> to pre-pay individual daycare sessions or purchase daycare packages.</p>
+        <p class="mb-2">Head over to our <a class="link-pink" target="_blank" href="https://www.gabbadoggydaycareshop.com">Daycare Shop</a> to pay for individual daycare sessions or purchase daycare packages.</p>
+        <p class="mb-8 text-sm">Please note: Buying a package does not booking you in for any services - to make a booking, login to your account and click 'request daycare'</p>
         <a class="btn-blue" target="_blank" href="https://www.gabbadoggydaycareshop.com">SHOP NOW</a> 
       </div>
        
@@ -42,6 +44,11 @@
 
 <script>
 export default {
+  methods: {
+    showLogin() {
+        this.$modal.show('login-modal')
+      },
+  },
 data() {
       return {
         prices: {
@@ -63,7 +70,7 @@ data() {
             //   price: "$300"
             // },
             FullDayPack: {
-              name: "Full Day 10-pack",
+              name: "Daycare 10-pack",
               // desc: "Save $100 when you buy a full day package",
               soon: " - valid for 3 months",
               price: "$400"
@@ -76,9 +83,9 @@ data() {
             //   highlight: true,
             // },
             FullDayWeek: {
-              name: "Full Day Full Week",
+              name: "Daycare Full Week",
               // desc: "Save $50 when you buy a half day package",
-              soon: " - every day mon-fri",
+              soon: " - unlimited daycare for one week",
               price: "$150",
               highlight: true,
             },

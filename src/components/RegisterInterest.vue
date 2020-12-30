@@ -52,6 +52,7 @@
 
       </form>
       <p class="text-sm leading-snug tracking-tight text-gray-500">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
+      
     </div>
 </template>
 
