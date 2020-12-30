@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="col text-center bg-black">
+    <div class="col text-center bg-super-dark">
       <p>© <a href="https://www.gabbadoggydaycare.com">gabbadoggydaycare.com</a></p>
     </div>
   </div>
@@ -83,5 +83,9 @@
     .fa-stack-1x {
       color: white;
     }
+  }
+
+  .bg-super-dark {
+    background: rgb(12, 18, 26)
   }
 </style>
