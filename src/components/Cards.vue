@@ -6,7 +6,7 @@
         <template v-slot:big>Gabba Doggy Daycare</template>
       </Title>
       <div class="flex flex-wrap justify-center">
-        <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day out. Play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with 2 large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're away</p>
+        <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day out. Play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're away.</p>
         <template>
           <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3">
             <div v-if="card.type !== 'image'" class="h-full px-6 py-10 bg-white rounded-lg shadow-lg card hover:shadow-2xl transition-shadow duration-500">
