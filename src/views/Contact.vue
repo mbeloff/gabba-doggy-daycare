@@ -60,7 +60,7 @@ metaInfo: {
 
 <style lang="scss">
   .phone-pup {
-    background-image: url(../assets/img/phone-pup.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_350/q_auto,f_auto/v1609809728/gddc/phone-pup.jpg);
     min-height: 300px;
     // background-position: 45% 50%;
   }

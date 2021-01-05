@@ -2,7 +2,7 @@
   <div @focus="openSub" @blur="mouseLeave" @mouseleave="mouseLeave" @click="clickMenu(item, item.link)" class="relative block lg:inline-block menu-item focus:outline-blue" tabindex="0">
     <button tabindex="0" class="block px-3 py-3 lg:py-0 lg:inline-block focus:outline-none focus:text-blue-500 hover:text-blue-500">{{item.label}} <i v-if="item.sub" class="ml-2 fal fa-chevron-right fa-rotate-90"></i></button>
     <transition-expand v-if="item.sub" class="mt-1">
-      <div class="grid items-center px-3 py-2 origin-top bg-white lg:absolute dropdown lg:shadow-lg" v-show="open">
+      <div class="grid items-center px-3 origin-top bg-white lg:absolute dropdown lg:shadow-lg" v-show="open">
       <button tabindex="0" class="px-5 py-3 font-bold text-left hover:text-blue-500 focus:outline-none focus:text-blue-500" v-for="(item, i) in item.sub" :key="i" @click.stop="clickSub(item)">{{item.label}}</button>
     </div>
     </transition-expand>
@@ -59,9 +59,5 @@
 .dropdown {
   width: max-content;
   overflow: hidden;
-  // max-height: 300px;
-  @media only screen and (min-width: 1024px) {
-  // left: 50%;
-  }
 }
 </style>

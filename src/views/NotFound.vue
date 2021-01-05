@@ -17,7 +17,7 @@ export default {
 <style>
 .notfound {
   min-height: 350px;
-  background-image: url(../assets/img/error-pup.jpg);
+  background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/v1609809720/gddc/error-pup.jpg);
   /* background-size: contain */
 }
 </style>

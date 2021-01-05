@@ -23,7 +23,7 @@
       </div>
       <div class="text-center mt-4">
         <p class="mb-2">Head over to our <a class="link-pink" target="_blank" href="https://www.gabbadoggydaycareshop.com">Daycare Shop</a> to pay for individual daycare sessions or purchase daycare packages.</p>
-        <p class="mb-8 text-sm">Please note: Buying a package does not booking you in for any services - to make a booking, login to your account and click 'request daycare'</p>
+        <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, login to your account and click 'request daycare'</p>
         <a class="btn-blue" target="_blank" href="https://www.gabbadoggydaycareshop.com">SHOP NOW</a> 
       </div>
        

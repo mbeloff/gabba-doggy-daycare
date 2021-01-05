@@ -10,7 +10,7 @@
           <p class="mb-4">Gabba Doggy Daycare offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day. We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Everyone has their place at Gabba Doggy Daycare.</p>
           <p>See below for more information about our day care prices, and additional services to make your pup's day a little bit special.</p>
         </div>
-        <div class="bg-cover rounded-sm col toy-pup">
+        <div class="bg-cover rounded-xl col toy-pup">
         </div>
       </div>
     </div>
@@ -61,15 +61,18 @@
       showLogin() {
         this.$modal.show('login-modal')
       }
-    },
-    
+    }, 
   }
 </script>
 
 <style lang="scss">
   .toy-pup {
-    background-image: url(../assets/img/toypup.jpg);
-    min-height: 300px;
+    min-height: 400px;
     background-position: 45% 50%;
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_450,h_600/q_auto,f_auto/v1609809738/gddc/toypup.jpg);
+    @media only screen and (max-width: 767px) {
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_600/q_auto,f_auto/v1609809738/gddc/toypup.jpg);
+    }
   }
+
 </style>

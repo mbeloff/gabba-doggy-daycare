@@ -27,17 +27,20 @@
         <div class="bg-cover rounded-lg h-full col champ-pup order-1 lg:order-2 my-auto">
         </div>
       </div>
-    </div>    
+    </div> 
+    <Slider></Slider>   
   </div>
 </template>
 
 <script>
   import Hero from "@/components/Hero.vue"
   import Cards from "@/components/Cards.vue"
+  import Slider from "@/components/Slider.vue"
   export default {
     components: {
       Hero,
       Cards,
+      Slider
     },
     metaInfo: {
     title: 'Home',
@@ -90,7 +93,6 @@
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/v1607553601/gddc/photos/03.jpg);
     min-height: 300px;
     height: 100%;
-    // max-height: 500px;
     @media only screen and (max-width: 1023px) {
       min-height: 500px;
     }
@@ -106,8 +108,14 @@
   }
 
   .flower-pup {
-    background-image: url(../assets/img/flower-pup.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_350,h_600/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
     min-height: 300px;
     background-position: 50% 30%;
+    @media only screen and (max-width: 1024px) {
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_250,h_400/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
+    }
+    @media only screen and (max-width: 767px) {
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_400,h_600/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
+    }
   }
 </style>

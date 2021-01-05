@@ -26,7 +26,7 @@
         </modal-inner>
       </modal>
     </div>
-    <Slider></Slider>
+    
     <div class="footer-wrapper">
       <Footer></Footer>
     </div>
@@ -39,7 +39,7 @@
   import Footer from './components/Footer.vue'
   import ModalInner from './components/ModalInner.vue'
   import RegisterInterest from '@/components/RegisterInterest.vue'
-  import Slider from "@/components/Slider.vue"
+  // import Slider from "@/components/Slider.vue"
   import Login from '@/components/Login.vue'
 
   export default {
@@ -74,7 +74,7 @@
       ModalInner,
       RegisterInterest,
       Login,
-      Slider
+      // Slider
     },
     metaInfo: {
       title: 'Home',
