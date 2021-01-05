@@ -3,14 +3,13 @@
   <div class="hero-grid grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-1 bg-gray-200">
     <div class="grid p-10 lg:py-40 sm:px-40 2xl:px-60 order-2 lg:order-1 col-span-2">
       <div class="place-self-center space-y-3">
-        <p class="text-xl md:text-2xl"><span class="font-bold text-yellow-500 uppercase">3 Days Free</span> All new accounts get their first 3 days of daycare completely free.</p><span class="text-sm tracking-tight leading-">Free trial for dogs over 6 months only</span>
-       <router-link to="Sign-up" class="btn-blue text-xl w-full block text-center"> Sign me up!</router-link>
-       <p class="text-gray-500">We re-open <span class="font-bold"><nobr>Jan 5, 2021 📅</nobr></span></p>
+        <p class="text-xl md:text-2xl"><span class="font-bold text-yellow-500 uppercase">3 Days Free</span> New accounts get their first 3 days of daycare completely free.</p><span class="text-sm tracking-tight leading-">Free trial for dogs over 6 months only</span>
+       <router-link to="Sign-up" class="btn-blue text-xl w-full block text-center">Sign me up!</router-link>
       </div>
     </div>
     <div class="order-1 lg:order-2 col hero-pup bg-cover bg-center col-span-2">
     </div>
-    
+
   </div>
 </div>
   
@@ -19,6 +18,9 @@
 
 <script>
   export default {
+    beforeMount() {
+      setTimeout(function(){console.log('test')}, 3000)
+    }
   }
 </script>
 
