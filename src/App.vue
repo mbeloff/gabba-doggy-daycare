@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+<transition name="fade">
+  <div id="app" v-if="show">
 
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
       <Nav />
@@ -32,6 +33,8 @@
     </div>
 
   </div>
+</transition>
+  
 </template>
 
 <script>
@@ -119,7 +122,13 @@
         vmid: 'description'
       }]
     },
+    data() {
+      return {
+        show: false
+      }
+    },
     mounted() {
+      this.show = true;
       if (this.$route.path == '/login') {
         this.$modal.show('login-modal')
       }
@@ -203,5 +212,13 @@
     .my-input:focus {
       @apply outline-none ring bg-opacity-75
     }
+  }
+
+  .fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
   }
 </style>
