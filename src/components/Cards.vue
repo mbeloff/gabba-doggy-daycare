@@ -8,11 +8,11 @@
       <div class="flex flex-wrap justify-center">
         <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day out. Play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're away.</p>
         <template>
-          <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3">
-            <div v-if="card.type !== 'image'" class="h-full px-6 py-10 bg-white rounded-lg shadow-lg card hover:shadow-2xl transition-shadow duration-500">
+          <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container">
+            <div v-if="card.type !== 'image'" class="h-full px-6 py-10 bg-white rounded-lg shadow-sm card transition-shadow duration-500">
               <span class="fa-stack fa-2x">
                 <i class="text-blue-100 fas fa-circle fa-stack-2x"></i>
-                <i class="fa-stack-1x text-blue-500" :class="card.icon"></i>
+                <i class="fa-stack-1x text-blue-500 swiggle" :class="card.icon"></i>
               </span>
               <p class="my-3 font-bold text-blue-700">{{card.heading}}</p>
               <p class="text-gray-700">{{card.desc}}</p>
@@ -71,7 +71,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .puppy {
     background-image: url(../assets/img/puppy.svg);
   }
@@ -85,4 +85,5 @@
   .card {
     min-height: 200px;
   }
+
 </style>
