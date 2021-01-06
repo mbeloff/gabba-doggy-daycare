@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-900">
+  <div class="bg-gray-900">
     <div class="container mx-auto" style="overflow: hidden; max-width: 100vw">
       <div class="container mx-auto p-0 relative">
         <swiper ref="mySwiperRef" class="swiper" :options="swiperOption" :class="{ 'opacity-0' : !this.pageLoaded }">
@@ -60,6 +60,10 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/02.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/03.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/04.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/402.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/403.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/404.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/405.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/206.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/11.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/15.jpg",
@@ -68,11 +72,11 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/18.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/20.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/21.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/22.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/205.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/23.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/24.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/25.jpg"
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/303b.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/306.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/314.jpg"
         ]
       };
     },
