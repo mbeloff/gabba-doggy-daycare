@@ -17,7 +17,7 @@
               <p class="my-3 font-bold text-blue-700">{{card.heading}}</p>
               <p class="text-gray-700">{{card.desc}}</p>
             </div>
-            <div v-else class="h-full bg-white rounded-lg shadow-lg card hover:shadow-2xl transition-shadow duration-500 bg-cover bg-center" :style="{backgroundImage: card.img}">
+            <div v-else class="h-full img-card bg-white rounded-lg shadow-lg card hover:shadow-2xl transition-shadow duration-500 bg-cover bg-top" :style="{backgroundImage: card.img}">
             </div>
           </div>
         </template>
@@ -58,7 +58,7 @@
           {
             icon: "fas fa-user-unlock",
             type: 'image',
-            img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_500/f_auto,q_auto/v1607553600/gddc/photos/21.jpg)"
+            img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_500/f_auto,q_auto/v1607553600/gddc/photos/03.jpg)"
           },
           {
             icon: "fa-custom puppy",
@@ -84,6 +84,10 @@
 
   .card {
     min-height: 200px;
+  }
+
+  .img-card {
+    min-height: 300px;
   }
 
 </style>
