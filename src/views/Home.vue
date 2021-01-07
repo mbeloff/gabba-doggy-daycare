@@ -11,7 +11,7 @@
        
         <div class="col order-2 lg:order-1">
           <ul class="text-left list-none list-inside">   
-            <li class="grid w-full mb-5 shadow floatup"  v-for="(item, i) in features" :key="i" :style="{animationDelay: (i/3) + 's', animationDuration: Math.random()*5}">
+            <li class="grid w-full mb-5 shadow floatup"  v-for="(item, i) in features" :key="i">
               <div class="bg-gradient-to-r from-blue-500 via-blue-500 to-blue-400 text-white rounded-t-lg px-4 py-1 font-bold">
                 <p class="flex justify-items-between"><span>{{item.title}}</span><i class="fas fa-paw ml-auto opacity-50 place-self-center"></i></p>
               </div>
@@ -62,7 +62,7 @@
         },
         {
           title: "Yound and Old",
-          desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable."
+          desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable, relaxed and safe."
         },
         {
           title: "Large Facility",
@@ -116,16 +116,6 @@
     }
     @media only screen and (max-width: 767px) {
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_400,h_600/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
-    }
-  }
-
-  .floatup {
-    animation-name: float
-  }
-
-  @keyframes float {
-    0% {
-      transform: translateY(0)
     }
   }
 </style>
