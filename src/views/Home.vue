@@ -24,7 +24,8 @@
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
           </div>
         </div>
-        <div class="bg-cover rounded-lg h-full col champ-pup order-1 lg:order-2 my-auto">
+        <div class="bg-cover rounded-lg h-full col champ-pup order-1 lg:order-2 my-auto shadow">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14157.078780074915!2d153.0441013!3d-27.4919868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cbf7d0ff474ef0e!2sGabba%20Doggy%20Daycare!5e0!3m2!1sen!2sau!4v1608508120256!5m2!1sen!2sau" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="lg:rounded-xl map"></iframe>
         </div>
       </div>
     </div> 
@@ -89,22 +90,8 @@
 
 <style lang="scss">
   .champ-pup {
-    background-image: url(../assets/img/champ.jpg);
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/v1607553601/gddc/photos/03.jpg);
     min-height: 300px;
     height: 100%;
-    @media only screen and (max-width: 1023px) {
-      min-height: 500px;
-    }
-    @media only screen and (max-width: 450px) {
-      min-height: 300px;
-    }
-  }
-
-  .sad-pup {
-    background-image: url(../assets/img/sadpup.jpg);
-    min-height: 300px;
-    background-position: 50% 80%;
   }
 
   .flower-pup {
