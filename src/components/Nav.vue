@@ -2,8 +2,8 @@
   <nav @mouseleave="hide" v-touch:swipe.down="hide" class="relative flex flex-wrap items-center justify-between px-2 py-4 mx-auto bg-white shadow-lg lg:px-10">
     <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 mr-2 text-blue-600 lg:mr-6 focus:outline-blue">
 
-      <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Icon of a circle with a paw in the middle">
-      <img class="h-5 md:h-6" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare, yellow text with blue outline">
+      <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon">
+      <img class="h-5 md:h-6" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
 
     </router-link>
     <div class="block lg:hidden">
@@ -26,11 +26,11 @@
             <router-link :to="{name: 'Sign-up'}" class="link-pink px-3" exact-active-class="text-pink-300 focus:outline-none">Create Account</router-link>
           </div>
           <div class="flex self-center h-full">
-            <SocialIcon site="facebook" class="focus:outline-blue"></SocialIcon>
-            <SocialIcon site="instagram" class="focus:outline-blue"></SocialIcon>
+            <SocialIcon site="facebook" class="focus:outline-blue" ></SocialIcon>
+            <SocialIcon site="instagram" class="focus:outline-blue" ></SocialIcon>
           </div>
 
-          <open-modal class="inline-block btn-blue ml-2">Got a Question?</open-modal>
+          <open-modal class="inline-block btn-blue ml-2" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal>
         </div>
       </div>
     </transition>
