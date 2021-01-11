@@ -27,7 +27,7 @@
       </Title>
         </div>
         <div class="mt-10 text-center">
-            <button @click="showLogin()" class="inline-block text-xl btn-blue">Sign In</button>
+            <open-login class="inline-block text-xl btn-blue">Sign In</open-login>
           </div>
       </div>
     </div>
@@ -51,11 +51,6 @@ import SignUpInfo from '@/components/SignUpInfo.vue'
     components: {
       SignUpInfo
     },
-    methods: {
-      showLogin() {
-        this.$modal.show('login-modal')
-      },
-    }
     
   }
 </script>
