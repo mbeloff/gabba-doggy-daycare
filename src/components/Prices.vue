@@ -22,7 +22,7 @@
             
       </div>
       <div class="text-center mt-4">
-        <p class="mb-2">We are now able to accept purchases directly from your account. You can now get all packages previously only available at our Daycare Shop. Just <router-link :to="login">log in</router-link> and click <strong>Purchase a Package</strong>.</p>
+        <p class="mb-2">We are now able to accept purchases directly from your account. You can now get all packages previously only available at our Daycare Shop. Just <open-login class="link-pink">log in</open-login> and click <strong>Purchase a Package</strong>.</p>
         <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, login to your account and click 'request daycare'</p>
         <a class="btn-blue" target="_blank" href="https://www.gabbadoggydaycareshop.com">SHOP NOW</a> 
       </div>
