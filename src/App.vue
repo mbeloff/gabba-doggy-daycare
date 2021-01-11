@@ -1,6 +1,6 @@
 <template>
-<transition name="fade">
-  <div id="app" v-if="show">
+<!-- <transition name="fade"> -->
+  <div id="app">
 
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
       <Nav />
@@ -33,7 +33,7 @@
     </div>
 
   </div>
-</transition>
+<!-- </transition> -->
   
 </template>
 
@@ -124,15 +124,28 @@
     },
     data() {
       return {
-        show: true
+        // show: true
       }
     },
     mounted() {
-      // this.show = true
+      // this.show = true;
       if (this.$route.path == '/login') {
-        this.$modal.show('login-modal')
+        this.$modal.show('login-modal');
+        
       }
+      
+    },
+    watch: {
+    "$route.params.path": {
+      handler: function() {
+        if (this.$route.path == '/login') {
+        this.$modal.show('login-modal');        
+      }
+      },
+      deep: true,
+      immediate: true
     }
+  }
   }
 </script>
 <style lang="postcss">
