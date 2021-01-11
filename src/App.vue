@@ -124,11 +124,11 @@
     },
     data() {
       return {
-        show: false
+        show: true
       }
     },
     mounted() {
-      this.show = true;
+      // this.show = true
       if (this.$route.path == '/login') {
         this.$modal.show('login-modal')
       }
