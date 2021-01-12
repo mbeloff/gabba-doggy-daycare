@@ -12,7 +12,7 @@
             <div v-if="card.type !== 'image'" class="h-full px-6 py-10 bg-white rounded-lg shadow-sm card transition-shadow duration-500">
               <span class="fa-stack fa-2x">
                 <i class="text-blue-100 fas fa-circle fa-stack-2x"></i>
-                <i class="fa-stack-1x text-blue-500 swiggle" :class="card.icon"></i>
+                <span class="fa-stack-1x text-blue-500" :class="card.icon"></span>
               </span>
               <p class="my-3 font-bold text-blue-700">{{card.heading}}</p>
               <p class="text-gray-700">{{card.desc}}</p>
