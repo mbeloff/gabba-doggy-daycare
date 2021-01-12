@@ -22,17 +22,17 @@
             
       </div>
       <div class="text-center mt-4">
-        <p class="mb-2">You are now able to make purchases directly from your account. You can now get all packages previously only available via our Daycare Shop. Just <open-login class="link-pink">log in</open-login> and click 'Purchase a Package'.</p>
+        <p class="mb-2">You are now able to make purchases directly from your account. You can now get all packages previously available via our Daycare Shop. Just <open-login class="link-pink">log in</open-login> and click 'Purchase a Package'.</p>
         <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, login to your account and click 'request daycare'</p>
       </div>
        
-      <Title class="text-center opacity-50">
+      <Title class="text-center">
         <template v-slot:big>Extras</template>
       </Title>
-      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10 opacity-50">
+      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
         <div v-for="(extra, i) in prices.extras" :key="i" class="mb-2 bg-white">
-          <div class="flex bg-gray-100 rounded-lg">
-            <div class="flex-grow px-2">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
+          <div class="flex bg-gray-100 rounded-lg" >
+            <div class="flex-grow px-2" :class="{ 'opacity-50' : extra.soon == '- available soon'}">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
             <div class="px-2"><span class="text-pink-500">{{extra.price}}</span></div>
           </div>
           <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{extra.desc}}</div> -->
@@ -99,9 +99,9 @@ data() {
               price: "$10"
             },
             PetTaxi: {
-              name: "Pet Taxi",
+              name: "Pet Taxi (Local Pickup and Dropoff)",
               desc: "Local pickup & dropoff in our Pet Taxi (within 3km)",
-              soon: "- available soon",
+              soon: "- limited availability",
               price: "$20"
             },
             Excursion: {
@@ -110,16 +110,16 @@ data() {
               soon: "- available soon",
               price: "$20"
             },
-            PigsEar: {
-              name: "Pig's Ear",
-              desc: "",
-              price: "$5"
-            },
-            Cake: {
-              name: "Peanut Butter Birthday Cake",
-              desc: "A special treat on your pooch's special day",
-              price: "$60"
-            }
+            // PigsEar: {
+            //   name: "Pig's Ear",
+            //   desc: "",
+            //   price: "$5"
+            // },
+            // Cake: {
+            //   name: "Peanut Butter Birthday Cake",
+            //   desc: "A special treat on your pooch's special day",
+            //   price: "$60"
+            // }
           }
         }
       }
