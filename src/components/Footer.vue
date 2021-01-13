@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="col text-center bg-super-dark">
-      <p>© <a href="https://www.gabbadoggydaycare.com">gabbadoggydaycare.com</a></p>
+      <p class="text-xs">© <a href="https://www.gabbadoggydaycare.com">gabbadoggydaycare.com</a></p>
     </div>
   </div>
 </template>
