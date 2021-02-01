@@ -22,8 +22,8 @@
             
       </div>
       <div class="text-center mt-4">
-        <p class="mb-2">You are now able to make purchases directly from your account. You can now get all packages previously available via our Daycare Shop. Just <open-login class="link-pink">log in</open-login> and click 'Purchase a Package'.</p>
-        <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, login to your account and click 'request daycare'</p>
+        <p class="mb-2">To make a purchase, just <open-login class="link-pink">log in</open-login> to your account and click 'Purchase a Package'.</p>
+        <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, first login to your account and click 'request daycare'</p>
       </div>
        
       <Title class="text-center">
@@ -43,87 +43,86 @@
 
 <script>
 export default {
-
-data() {
-      return {
-        prices: {
-          daycare: {
-            // HalfDay: {
-            //   name: "Half Day",
-            //   desc: "Up to 4 Hours of Day Care",
-            //   price: "$40"
-            // },
-            FullDay: {
-              name: 'Full Day',
-              desc: "More than 4 hours of Day Care during regular opening hours.",
-              price: "$50"
-            },
-            // HalfDayPack: {
-            //   name: "Half Day 10-pack",
-            //   desc: "Save $50 when you buy a half day package",
-            //   soon: " - valid for 3 months",
-            //   price: "$300"
-            // },
-            FullDayPack: {
-              name: "Daycare 10-pack",
-              // desc: "Save $100 when you buy a full day package",
-              soon: " - valid for 3 months",
-              price: "$400"
-            },
-            // HalfDayWeek: {
-            //   name: "Half Day Full Week",
-            //   // desc: "Save $50 when you buy a half day package",
-            //   soon: " - mon-fri",
-            //   price: "$??",
-            //   highlight: true,
-            // },
-            FullDayWeek: {
-              name: "Daycare Full Week",
-              // desc: "Save $50 when you buy a half day package",
-              soon: " - unlimited daycare for one week",
-              price: "$150",
-              highlight: true,
-            },
+  data() {
+    return {
+      prices: {
+        daycare: {
+          // HalfDay: {
+          //   name: "Half Day",
+          //   desc: "Up to 4 Hours of Day Care",
+          //   price: "$40"
+          // },
+          FullDay: {
+            name: 'Full Day',
+            desc: "More than 4 hours of Day Care during regular opening hours.",
+            price: "$50"
           },
-          extras: {
-            Hydrobath: {
-              name: "Hydrobath",
-              desc: "Warm hydrobath followed by a towel dry to keep your pooch fresh and clean",
-              soon: "- available soon",
-              price: "$20"
-            },
-            Pictures: {
-              name: "Photo Updates",
-              desc: "Wondering how much fun your dog is having while they're away? Get photo updates sent to you",
-              soon: "- available soon",
-              price: "$10"
-            },
-            PetTaxi: {
-              name: "Pet Taxi (Local Pickup and Dropoff)",
-              desc: "Local pickup & dropoff in our Pet Taxi (within 3km)",
-              soon: "- limited availability",
-              price: "$20"
-            },
-            Excursion: {
-              name: "Group Excursion",
-              desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
-              soon: "- available soon",
-              price: "$20"
-            },
-            // PigsEar: {
-            //   name: "Pig's Ear",
-            //   desc: "",
-            //   price: "$5"
-            // },
-            // Cake: {
-            //   name: "Peanut Butter Birthday Cake",
-            //   desc: "A special treat on your pooch's special day",
-            //   price: "$60"
-            // }
-          }
+          // HalfDayPack: {
+          //   name: "Half Day 10-pack",
+          //   desc: "Save $50 when you buy a half day package",
+          //   soon: " - valid for 3 months",
+          //   price: "$300"
+          // },
+          FullDayPack: {
+            name: "Daycare 10-pack",
+            // desc: "Save $100 when you buy a full day package",
+            soon: " - valid for 3 months",
+            price: "$400"
+          },
+          // HalfDayWeek: {
+          //   name: "Half Day Full Week",
+          //   // desc: "Save $50 when you buy a half day package",
+          //   soon: " - mon-fri",
+          //   price: "$??",
+          //   highlight: true,
+          // },
+          FullDayWeek: {
+            name: "Daycare Full Week",
+            // desc: "Save $50 when you buy a half day package",
+            soon: " - unlimited daycare for one week",
+            price: "$150",
+            highlight: true,
+          },
+        },
+        extras: {
+          Hydrobath: {
+            name: "Hydrobath",
+            desc: "Warm hydrobath followed by a towel dry to keep your pooch fresh and clean",
+            soon: "- available soon",
+            price: "$20"
+          },
+          Pictures: {
+            name: "Photo Updates",
+            desc: "Wondering how much fun your dog is having while they're away? Get photo updates sent to you",
+            soon: "- available soon",
+            price: "$10"
+          },
+          PetTaxi: {
+            name: "Pet Taxi (Local Pickup and Dropoff)",
+            desc: "Local pickup & dropoff in our Pet Taxi (within 3km)",
+            soon: "- limited availability",
+            price: "$20"
+          },
+          Excursion: {
+            name: "Group Excursion",
+            desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
+            soon: "- available soon",
+            price: "$20"
+          },
+          // PigsEar: {
+          //   name: "Pig's Ear",
+          //   desc: "",
+          //   price: "$5"
+          // },
+          // Cake: {
+          //   name: "Peanut Butter Birthday Cake",
+          //   desc: "A special treat on your pooch's special day",
+          //   price: "$60"
+          // }
         }
       }
     }
+  }
 }
 </script>
 

@@ -18,7 +18,8 @@
       <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-4 bg-white shadow-lg lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto ">
         <div class="flex flex-col lg:flex-row divide-x-0 lg:divide-x-2 lg:flex-grow lg:space-y-0 divide-blue-200">
           <nav-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1" :style="{ order: item.order }"></nav-item>
-          <a href="https://www.gabbadoggydaycareshop.com" target="_blank" class="block px-3 py-3 lg:py-0 lg:inline-block focus:outline-none focus:text-blue-500 hover:text-blue-500 font-bold" style="order: 3">Daycare Shop</a>
+          <!-- <a href="https://www.gabbadoggydaycareshop.com" target="_blank" class="block px-3 py-3 lg:py-0 lg:inline-block focus:outline-none focus:text-blue-500 hover:text-blue-500 font-bold" style="order: 3">Daycare Shop</a> -->
+          <open-login class="text-left block px-3 py-3 lg:py-0 text-gray-400 lg:inline-block focus:outline-none focus:text-blue-500 hover:text-blue-500 font-bold" style="order: 3">Daycare Shop</open-login>
         </div>
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0">
           <div class="self-center w-full mb-5 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
