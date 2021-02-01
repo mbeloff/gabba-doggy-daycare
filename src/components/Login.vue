@@ -55,9 +55,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
     },
     methods: {
       isSignUp() {
-        if (this.$route.path == "/sign-up") {
-          return true
-        }
+          return (this.$route.path == "/sign-up")        
       },
       close() {
           this.$router.push({
