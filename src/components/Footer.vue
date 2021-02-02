@@ -7,7 +7,7 @@
         </div>
         <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400">Quick Links</p>
-          <ul class="space-y-2 md:space-y-0 list-none">
+          <ul class="space-y-2 md:space-y-1 list-none text-sm">
 
             <li>
               <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
@@ -29,7 +29,7 @@
 
         <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400">Info</p>
-          <ul class="space-y-2 md:space-y-0 list-none">
+          <ul class="space-y-2 md:space-y-1 list-none text-sm">
             <li>
               <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
             </li>
@@ -47,12 +47,21 @@
 
 
         <div class="text-center sm:text-left">
-          <div class="">
-            <p class="text-xl font-bold text-gray-400">Get in touch</p>
-            <p class="text-gray-500">
-              <a class="focus:outline-white hover:underline font-semibold text-yellow-300" href="tel:0423487302"><i class="fas fa-phone-rotary mr-2"></i>0423 487 302</a><br>
-              <a class="text-gray-300 hover:text-gray-100 focus:outline-white hover:underline" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a><br>
-              46 Deshon st, Woolloongabba, QLD Australia 4102</p>
+          <div class="text-sm">
+            <p class="text-lg text-gray-400">Get in touch</p>
+            <!-- <p class="text-gray-500"> -->
+              <ul class="space-y-2 md:space-y-1 list-none text-sm">
+                <li>
+                   <a class="focus:outline-white hover:underline  text-yellow-300" href="tel:0423487302"><i class="fas fa-phone-rotary mr-2"></i>0423 487 302</a>
+                </li>
+             <li>
+               <a class="text-gray-300 hover:text-gray-100 focus:outline-white hover:underline break-all" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a>
+             </li>
+              <li>
+                46 Deshon st, Woolloongabba, QLD Australia 4102
+              </li>
+              
+              </ul>
           </div>
           <div class="flex flex-row mt-2 justify-center sm:justify-start">
             <SocialIcon site="facebook"></SocialIcon>
@@ -62,7 +71,7 @@
       </div>
     </div>
     <div class="col text-center bg-super-dark">
-      <p class="text-xs">© <a href="https://www.gabbadoggydaycare.com">gabbadoggydaycare.com</a></p>
+      <p class="text-xs tracking-wide">© <a href="https://www.gabbadoggydaycare.com">gabbadoggydaycare.com</a></p>
     </div>
   </div>
 </template>
