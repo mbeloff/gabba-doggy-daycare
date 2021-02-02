@@ -3,6 +3,7 @@
     <Hero></Hero>
     <!-- <Hero></Hero> -->
     <Cards></Cards>
+    <Slider></Slider> 
     <div class="section py-20">
        <Title class="text-center"><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template>
@@ -20,6 +21,7 @@
               </div>
             </li>         
           </ul>
+            
           <div class="mt-10 text-center">
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
           </div>
@@ -29,7 +31,7 @@
         </div>
       </div>
     </div> 
-    <Slider></Slider>   
+    
   </div>
 </template>
 
