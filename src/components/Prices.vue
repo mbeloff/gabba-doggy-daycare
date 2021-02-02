@@ -77,7 +77,7 @@ export default {
           //   highlight: true,
           // },
           FullDayWeek: {
-            name: "Daycare Full Week",
+            name: "Daycare Monday to Friday",
             // desc: "Save $50 when you buy a half day package",
             soon: " - unlimited daycare for one week",
             price: "$150",
