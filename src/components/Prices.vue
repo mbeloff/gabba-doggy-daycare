@@ -2,12 +2,12 @@
   <div class="container px-2 py-20 mx-auto section" id="prices">
       <Title class="text-center">
           <template v-slot:small>Price List</template>
-          <template v-slot:big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm</span></template>
+          <template v-slot:big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm <br> Half Day from 6:30am - 12:00pm</span></template>
       </Title>
 
       <div class="grid grid-cols-1 pt-5 gap-x-10">
         <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
-          <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
+          <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 mt-4' : service.highlight}">
             <div v-if="service.highlight">
               <div  class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
             <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
@@ -47,38 +47,27 @@ export default {
     return {
       prices: {
         daycare: {
-          // HalfDay: {
-          //   name: "Half Day",
-          //   desc: "Up to 4 Hours of Day Care",
-          //   price: "$40"
-          // },
+          HalfDay: {
+            name: 'Half Day',
+            price: "$40"
+          },
+          HalfDayPack: {
+            name: "Half Day 10-pack",
+            // soon: " - valid for 3 months",
+            price: "$300"
+          },
           FullDay: {
             name: 'Full Day',
-            desc: "More than 4 hours of Day Care during regular opening hours.",
             price: "$50"
           },
-          // HalfDayPack: {
-          //   name: "Half Day 10-pack",
-          //   desc: "Save $50 when you buy a half day package",
-          //   soon: " - valid for 3 months",
-          //   price: "$300"
-          // },
+          
           FullDayPack: {
-            name: "Daycare 10-pack",
-            // desc: "Save $100 when you buy a full day package",
-            soon: " - valid for 3 months",
+            name: "Full Day 10-pack",
+            // soon: " - valid for 3 months",
             price: "$400"
           },
-          // HalfDayWeek: {
-          //   name: "Half Day Full Week",
-          //   // desc: "Save $50 when you buy a half day package",
-          //   soon: " - mon-fri",
-          //   price: "$??",
-          //   highlight: true,
-          // },
           FullDayWeek: {
             name: "Daycare Monday to Friday",
-            // desc: "Save $50 when you buy a half day package",
             soon: " - unlimited daycare for one week",
             price: "$150",
             highlight: true,
