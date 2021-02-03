@@ -17,7 +17,7 @@ const paths = [
   },
   {
     path: "/vaccinations",
-    priority: 0.5
+    priority: 0.4
   },
   {
     path: "/sign-up",
@@ -29,7 +29,7 @@ const paths = [
   },
   {
     path: "/privacy",
-    priority: 0.5
+    priority: 0.2
   },
 ]
 
