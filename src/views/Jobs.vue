@@ -22,7 +22,7 @@
   height: calc(100vh - 76px)
 }
 .jobs-outter {
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 .jobs {
   display: inline-block;
@@ -30,15 +30,16 @@
   &:before, &:after {
     position: absolute;
     content: "";
-    width: 95%;
+    width: 100%;
     height: 1px;
     background: linear-gradient(to right, transparent, rgb(253, 156, 172), transparent);
   }
   &:before {
-    top: -1rem
+    top: -.75rem;
+    left: 0;
   }
   &:after {
-    bottom: -1rem;
+    bottom: -.75rem;
     left: 0;
   }
 }
