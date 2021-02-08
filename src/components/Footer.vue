@@ -42,6 +42,9 @@
             <li>
               <a href="/docs/GDDC-medical-agreement.pdf" download class="focus:outline-white hover:text-white">Medical Release</a>
             </li>
+            <li>
+              <router-link :to="{ name: 'Jobs' }" class="focus:outline-white hover:text-white">Jobs / Volunteer</router-link>
+            </li>
           </ul>
         </div>
 

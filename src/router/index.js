@@ -6,6 +6,7 @@ const SignUp = () => import("../views/SignUp.vue")
 const NotFound = () => import("../views/NotFound.vue")
 const Contact = () => import("../views/Contact.vue")
 const Vax = () => import("../views/Vax.vue")
+const Jobs = () => import("../views/Jobs.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -45,6 +46,11 @@ const routes = [
     path: "/daycare",
     name: "Daycare",
     component: Daycare
+  },
+  {
+    path: "/jobs",
+    name: "Jobs",
+    component: Jobs
   },
   // {
   //   path: "/shop",
