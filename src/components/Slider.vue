@@ -6,13 +6,8 @@
           <swiper-slide class="w-auto" v-for="(slide, i) in this.slideList" :key="i">
             <img :src="slide" alt="">
           </swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
-          <div tabindex="0" @keypress.enter="prev()" role="button" aria-label="previous slide" class="swiper-button-prev text-yellow-400" slot="button-prev" @click="prev()"></div>
-          <div tabindex="0" @keypress.enter="next()" role="button" aria-label="next slide" class="swiper-button-next text-yellow-400" slot="button-next" @click="next()"></div>
         </swiper>
-        <div v-if="!pageLoaded" class="absolute top-0 left-0 grid w-full h-full">
-          <i class="text-white fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
-        </div>
+
       </div>
     </div>
   </div>
@@ -51,10 +46,6 @@
           speed: 3000,
           grabCursor: true,
           loop: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-          },
         },
         slides: [
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/01.jpg",
@@ -123,14 +114,6 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/833.jpg",
         ]
       };
-    },
-    methods: {
-      next() {
-        this.$refs.mySwiperRef.$swiper.slideNext();
-      },
-      prev() {
-        this.$refs.mySwiperRef.$swiper.slidePrev();
-      },
     },
     computed: {
       slideList: function () {
