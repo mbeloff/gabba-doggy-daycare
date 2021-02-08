@@ -6,10 +6,10 @@
         <template v-slot:big>Gabba Doggy Daycare</template>
       </Title>
       <div class="flex flex-wrap justify-center">
-        <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day out. Play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're away.</p>
+        <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're at work.</p>
         <template>
           <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container">
-            <div v-if="card.type !== 'image'" class="h-full px-6 py-10 bg-white rounded-lg shadow-sm card transition-shadow duration-500">
+            <div v-if="card.type !== 'image'" class="h-full px-6 py-10 bg-white rounded-lg shadow-sm card">
               <span class="fa-stack fa-2x">
                 <i class="text-blue-100 fas fa-circle fa-stack-2x"></i>
                 <span class="fa-stack-1x text-blue-500" :class="card.icon"></span>
@@ -17,7 +17,7 @@
               <p class="my-3 font-bold text-blue-700">{{card.heading}}</p>
               <p class="text-gray-700">{{card.desc}}</p>
             </div>
-            <div v-else class="h-full img-card bg-white rounded-lg shadow-lg card hover:shadow-2xl transition-shadow duration-500 bg-cover bg-top" :style="{backgroundImage: card.img}">
+            <div v-else class="h-full img-card bg-white rounded-lg shadow-lg card bg-cover bg-top" :style="{backgroundImage: card.img}">
             </div>
           </div>
         </template>
@@ -43,18 +43,13 @@
           {
             icon: "fas fa-dog-leashed",
             heading: "Exercise",
-            desc: "Your pets can get plenty of exercise with heaps of room to run around, agility areas, ball pits and more."
+            desc: "Your pets get plenty of exercise with heaps of room to run around, ramps and obstacles, ball pits and more."
           },
           {
             icon: "fas fa-taxi",
             heading: "Pet Taxi",
             desc: "Save yourself a bit of rushing around. Our pet taxi is available for local pickups and dropoffs. Get in touch to check availability."
           },
-          // {
-          //   icon: "fas fa-user-unlock",
-          //   heading: "After Hours",
-          //   desc: "Working late? We can arrange after hours pickups. Or overnight care for daycare customers (by request). Available in 2021."
-          // },
           {
             icon: "fas fa-user-unlock",
             type: 'image',
