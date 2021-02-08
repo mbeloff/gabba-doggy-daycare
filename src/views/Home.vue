@@ -61,7 +61,7 @@
       features: [
         {
           title: "Easy Online Bookings",
-          desc: "Signup online to conveniently manage your own bookings, update your information or purchase daycare packages"
+          desc: "Signup online to conveniently manage your own bookings, update your information or purchase daycare packages."
         },
         {
           title: "Yound and Old",
@@ -69,15 +69,15 @@
         },
         {
           title: "Large Facility",
-          desc: "Spacious play areas with balls, toys and access to grass."
+          desc: "Spacious play areas with balls, toys, agility areas and access to grass."
         },
         {
-          title: "Daily Walks",
-          desc: "Fresh air and exercise with a little group walks through nearby parks"
+          title: "Flexible Options",
+          desc: "We offer full- and half-day daycare pricing, as well as discounted packages."
         },
         {
           title: "Grooming",
-          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services coming in 2021"
+          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services coming soon."
         },        
       ]
     }

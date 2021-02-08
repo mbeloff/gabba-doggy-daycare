@@ -43,12 +43,12 @@
           {
             icon: "fas fa-dog-leashed",
             heading: "Exercise",
-            desc: "Get some exercise and fresh air with a daily walks through the nearby park, or dogs can take a pet taxi group trip to the bay or walk along the river to take in the scenery. Pet taxi available in 2021."
+            desc: "Your pets can get plenty of exercise with heaps of room to run around, agility areas, ball pits and more."
           },
           {
             icon: "fas fa-taxi",
             heading: "Pet Taxi",
-            desc: "Save yourself a bit of rushing around. Our pet taxi will be available for local pickups and dropoffs. Available in 2021."
+            desc: "Save yourself a bit of rushing around. Our pet taxi is available for local pickups and dropoffs. Get in touch to check availability."
           },
           // {
           //   icon: "fas fa-user-unlock",
