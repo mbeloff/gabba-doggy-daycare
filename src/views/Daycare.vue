@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="bg-gray-100 section" id="about">
+    <div class="tile section" id="about">
       <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-20">
           <Title>
