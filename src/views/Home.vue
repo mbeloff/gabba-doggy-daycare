@@ -4,7 +4,7 @@
     <!-- <Hero></Hero> -->
     <Cards></Cards>
     <Slider></Slider> 
-    <div class="section py-20">
+    <div class="section py-20 tile bg-gray-100 bg-opacity-30">
        <Title class="text-center"><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template>
           </Title>
@@ -12,11 +12,11 @@
        
         <div class="col order-2 lg:order-1">
           <ul class="text-left list-none list-inside">   
-            <li class="grid w-full mb-5 shadow floatup"  v-for="(item, i) in features" :key="i">
+            <li class="grid w-full mb-5 shadow rounded-lg"  v-for="(item, i) in features" :key="i">
               <div class="bg-gradient-to-r from-blue-500 via-blue-500 to-blue-400 text-white rounded-t-lg px-4 py-1 font-bold">
                 <p class="flex justify-items-between"><span>{{item.title}}</span><i class="fas fa-paw ml-auto opacity-50 place-self-center"></i></p>
               </div>
-              <div class="flex-grow rounded-b-lg text-base px-4 py-1 font-medium text-gray-500">
+              <div class="flex-grow rounded-b-lg text-base px-4 py-1 font-medium text-gray-500 bg-white">
                 <p>{{item.desc}}</p>
               </div>
             </li>         
@@ -107,4 +107,27 @@
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_400,h_600/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
     }
   }
+
+  .tile, .tile-alt {
+    position: relative;
+    &:before, &:after {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      content: "";
+      position:absolute;
+    }
+    &:before {
+      z-index: -2;
+      background: url(../assets/img/gddc_tile.svg);
+      background-color: rgb(243, 244, 246);
+      background-size: 300px;
+    }
+    &:after {      
+      z-index: -1;
+      background-image: linear-gradient(to bottom, rgb(243, 244, 246),rgb(243, 244, 246), rgba(243, 244, 246, .5))
+    }
+  }
+  
 </style>
