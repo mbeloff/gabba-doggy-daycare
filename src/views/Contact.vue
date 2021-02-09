@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="container py-10 mx-auto">
+    <div class="container py-20 mx-auto">
       <Title class="text-center">
         <template v-slot:small>Get in Touch</template>
         <template v-slot:big>Contact Us</template>
@@ -9,7 +9,7 @@
         <div class="flex-grow ml-auto mr-auto bg-no-repeat bg-contain md:ml-auto md:mr-0 phone-pup max-w-full" style="height: 350px; width: 350px">
         </div>
         <div class="my-auto">
-          <ul class="text-xl font-bold list-none list-inside">
+          <ul class="text font-bold list-none list-inside">
             <ListItem class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left">Address: <br> <span>Gabba Doggy Daycare <br> 46 Deshon Street, <br>Woolloongabba 4102</span> <br> </ListItem>
             <li class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left "><span class=" bg-blue-100 text-blue-800 font-normal py-1 px-4 text-sm">First entrance to the right as you come in through the main gate</span></li>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" href="tel:0423487302">0423 487 302</a></ListItem>
