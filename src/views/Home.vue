@@ -4,7 +4,7 @@
     <!-- <Hero></Hero> -->
     <Cards></Cards>
     <Slider></Slider> 
-    <div class="section py-20 tile bg-gray-100 bg-opacity-30">
+    <div class="section py-32 tile bg-gray-100 bg-opacity-30">
        <Title class="text-center"><template v-slot:small>Brisbane Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template>
           </Title>

@@ -1,6 +1,6 @@
 <template>
   <div class="section tile">
-    <div class="container py-20 mx-auto text-center">
+    <div class="container py-32 mx-auto text-center">
       <Title>
         <template v-slot:small>Your best friend's new favourite place</template>
         <template v-slot:big>Gabba Doggy Daycare</template>
