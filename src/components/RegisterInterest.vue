@@ -62,7 +62,7 @@ export default {
       title: 'Register Your Interest',
       meta: [{
         name: 'description',
-        content: "Opening Soon! Register your interest and we'll keep you posted.",
+        content: "Got questions? Ask away, we'll get back to you as soon as we can.",
         vmid: 'description'
       }]
     },

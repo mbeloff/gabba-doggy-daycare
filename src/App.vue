@@ -10,22 +10,30 @@
         <router-view />
       </transition>
 
-      <modal name="contact-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+      <Modal name="contact-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
           <template v-slot:title>Got a Question?</template>
           <template v-slot:body>
             <RegisterInterest></RegisterInterest>
           </template>
         </modal-inner>
-      </modal>
-      <modal name="login-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+      </Modal>
+      <Modal name="login-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
           <template v-slot:title>Login</template>
           <template v-slot:body>
             <Login></Login>
           </template>
         </modal-inner>
-      </modal>
+      </Modal>
+      <Modal name="grooming-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+        <modal-inner>
+          <template v-slot:title>Grooming Request</template>
+          <template v-slot:body>
+            <GroomingForm></GroomingForm>
+          </template>
+        </modal-inner>
+      </Modal>
     </div>
 
     <div class="footer-wrapper">
@@ -42,6 +50,7 @@
   import Footer from './components/Footer.vue'
   import ModalInner from './components/ModalInner.vue'
   import RegisterInterest from '@/components/RegisterInterest.vue'
+  import GroomingForm from '@/components/GroomingForm.vue'
   // import Slider from "@/components/Slider.vue"
   import Login from '@/components/Login.vue'
 
@@ -111,6 +120,7 @@
       ModalInner,
       RegisterInterest,
       Login,
+      GroomingForm
       // Slider
     },
     metaInfo: {
@@ -224,6 +234,10 @@
 
     .my-input:focus {
       @apply outline-none ring bg-opacity-75
+    }
+
+    .my-label {
+      @apply block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase
     }
   }
 

@@ -1,0 +1,216 @@
+<template>
+  <div class="p-3">
+    <p class="text-blue-900">Please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
+    <br />
+    <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
+      <transition name="fade">
+        <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
+          <p class="px-4 py-2 mx-2 text-2xl text-center text-white bg-blue-500 rounded-full shadow-xl place-self-center">Thanks, we'll be in contact to confirm your booking</p>
+        </div>
+      </transition>
+
+      <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
+        <i class="text-blue-500 fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
+      </div>
+      <div :class="{ 'opacity-0' : hasSubmitted}">
+        <div class="mb-2">
+          <label class="my-label" for="name">
+            name
+          </label>
+          <input v-model="form.name" ref="name" class="my-input" id="name" type="text" placeholder="" required>
+        </div>
+        <div class="mb-2">
+          <label class="my-label" for="email">
+            email
+          </label>
+          <input v-model="form.email" class="my-input" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+        </div>
+        <div class="mb-4">
+          <label class="my-label" for="phone">
+            phone
+          </label>
+          <input v-model="form.phone" class="my-input" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
+        </div>
+        <div class="mb-2">
+          <label class="my-label" for="name">
+            pet's name
+          </label>
+          <input v-model="form.petname" class="my-input" id="petname" type="text" placeholder="">
+        </div>
+        <div class="mb-2">
+          <label class="my-label" for="name">
+            breed
+          </label>
+          <input v-model="form.petbreed" class="my-input" id="petbreed" type="text" placeholder="">
+        </div>
+        <div class="mb-2">
+          <label class="my-label" for="name">
+            date
+          </label>
+           <date-pick class="w-full text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format"
+        :parseDate="parseDate"
+        :formatDate="formatDate"
+        :isDateDisabled="isPastDate"
+        ></date-pick>
+        </div>
+        <div class="mb-2">
+          <label class="my-label">Service</label>
+          <div class="space-y-2 md:space-y-0">
+            <div v-for="(service, i) in this.services" :key="i" class="flex items-center border-b">
+              <input type="checkbox" class="form-checkbox" v-model="form.service" :id="service[0]" :value="service[0]">
+              <p class="ml-2 flex flex-grow justify-between">
+                <span class="">{{service[0]}}</span>
+                <span class="">{{service[1]}}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="my-label" for="notes">
+            notes
+          </label>
+          <textarea v-model="form.notes" rows="4" class="my-input" id="notes" type="text" placeholder="Any additional comments or questions..."></textarea>
+        </div>
+        <transition name="grow">
+          <div v-if="this.missingContact">
+            <p class="p-3 mb-4 bg-blue-300 rounded-lg"><strong>Whoops!</strong> Please provide a phone number or email address so that we can get back to you.</p>
+          </div>
+        </transition>
+        <div class="flex items-center justify-between">
+          <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:ring" type="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+
+
+    </form>
+    <p class="text-sm leading-snug tracking-tight text-gray-500">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
+
+  </div>
+</template>
+
+<script>
+import DatePick from 'vue-date-pick';
+import fecha from 'fecha';
+import 'vue-date-pick/dist/vueDatePick.css';
+  export default {
+    metaInfo: {
+      title: 'Request A Grooming Service',
+      meta: [{
+        name: 'description',
+        content: "Opening Soon! Register your interest and we'll keep you posted.",
+        vmid: 'description'
+      }]
+    },
+    components: {DatePick},
+    data() {
+      return {
+        form: {
+          name: "",
+          phone: "",
+          email: "",
+          petname: "",
+          petbreed: "",
+          service: [],
+          notes: "",
+          date: fecha.format(new Date(), 'ddd MMM Do')
+        },
+        format: 'ddd MMM Do',
+        hasSubmitted: false,
+        isLoading: false,
+        missingContact: false,
+        services: [
+          ["Nail Clip", "$10"],
+          ["Ear Clean", "$10"],
+          ["Bath", "$20"],
+          ["Bath, Nails & Ears", "$30"],
+          ["Hygiene Tidy Groom", "$60-$90"]
+        ]
+      }
+    },
+    watch: {
+      'form.phone': function () {
+        this.missingContact = false
+      },
+      'form.email': function () {
+        this.missingContact = false
+      }
+    },
+    methods: {
+      isPastDate(date) {
+          const currentDate = new Date();
+          return date < currentDate;
+      },
+      parseDate(dateString, format) {
+          return fecha.parse(dateString, format);
+      },
+      formatDate(dateObj, format) {
+          return fecha.format(dateObj, format);
+      },
+      emailIsValid(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+
+      },
+      validateForm() {
+        if (!this.form.phone && !this.form.email) {
+          this.missingContact = true
+          return
+        }
+        if (this.form.email) {
+          this.emailIsValid(this.form.email)
+        }
+        this.handleSubmit()
+      },
+      encode(data) {
+        return Object.keys(data)
+          .map(
+            key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          )
+          .join("&");
+      },
+      handleSubmit() {
+        this.isLoading = true
+        fetch("/", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: this.encode({
+              "form-name": "grooming",
+              ...this.form
+            })
+          })
+          .then(() => {
+            this.isLoading = false;
+            this.hasSubmitted = true;
+          })
+      },
+      close() {
+        this.$router.push({
+          name: 'Privacy'
+        })
+        this.$modal.hide('grooming-modal')
+      }
+    },
+    mounted() {
+      setTimeout(() => {
+        this.$refs.name.focus();
+      }, 500);
+    }
+  }
+</script>
+
+<style lang="scss">
+$vdpColor: #1595df;
+@import 'vue-date-pick/src/vueDatePick.scss';
+.vdpComponent {
+  width: 100%;
+}
+.vdpComponent input {
+  font-size: 1.25rem;
+  width: 100%;
+  color:#1595d1;
+  padding: 0.4rem 0.75rem;
+}
+</style>

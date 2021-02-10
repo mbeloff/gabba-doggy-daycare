@@ -75,7 +75,7 @@
       <li>
         <strong>Website</strong> refers to Gabba Doggy Daycare, accessible
         from
-        <router-link to="/" class="link-pink">https://www.gabbadoggydaycare.com</router-link>
+        <router-link to="/" class="link-pink break-all">https://www.gabbadoggydaycare.com</router-link>
       </li>
       <li>
         <strong>You</strong> means the individual accessing or using the
@@ -420,7 +420,7 @@
       If you have any questions about this Privacy Policy, You can contact us:
     </p>
     <ul class="pl-6 list-disc list-outside">
-      <li>
+      <li class="break-all">
         By email: woof@gabbadoggydaycare.com
       </li>
       <li>

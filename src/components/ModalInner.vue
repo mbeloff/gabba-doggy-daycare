@@ -17,7 +17,8 @@
     methods: {
       hide() {
         this.$modal.hide('contact-modal');
-        this.$modal.hide('login-modal')
+        this.$modal.hide('login-modal');
+        this.$modal.hide('grooming-modal')
       },
     }
   }
