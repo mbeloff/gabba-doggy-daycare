@@ -8,8 +8,7 @@
               <list-item>Desexed (if over 6 months)</list-item>
               <list-item>Friendly with people and other dogs</list-item>
             </ul>
-            <p class="mb-3">If you have any concerns about any of the above, you can view our <router-link class="link-pink" to="vaccinations">vaccination policy</router-link>, or <open-modal class="link-pink">message us</open-modal> to discuss any further questions.</p>
-            <p class="mb-3">Otherwise, simply click the button below to create an account.</p>
+            <p class="mb-3">Just <a class="link-pink">give us a call</a> or <open-modal class="link-pink">message us</open-modal> if you have any questions.</p>
     </div>
 </template>
 

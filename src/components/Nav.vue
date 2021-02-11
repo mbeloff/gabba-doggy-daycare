@@ -31,7 +31,7 @@
             <SocialIcon site="instagram" class="focus:outline-blue" ></SocialIcon>
           </div>
 
-          <open-modal class="inline-block btn-blue ml-2" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal>
+          <!-- <open-modal class="inline-block btn-blue ml-2" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal> -->
         </div>
       </div>
     </transition>

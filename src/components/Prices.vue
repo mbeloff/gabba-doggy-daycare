@@ -31,7 +31,7 @@
       <Title class="text-center">
         <template v-slot:big>Extras</template>
       </Title>
-      <div class="grid grid-cols-1 pt-5 md:grid-cols-2 gap-x-10">
+      <div class="grid grid-cols-1 pt-5 gap-x-10">
         <div v-for="(extra, i) in prices.extras" :key="i" class="mb-2 bg-white">
           <div class="flex bg-gray-100 rounded-lg">
             <div class="flex-grow px-2" :class="{ 'opacity-50' : extra.soon == '- available soon'}">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
@@ -78,17 +78,17 @@
             },
           },
           extras: {
-            Hydrobath: {
-              name: "Hydrobath",
-              desc: "Warm hydrobath followed by a towel dry to keep your pooch fresh and clean",
-              soon: "- available soon",
-              price: "$20"
-            },
             Pictures: {
               name: "Photo Updates",
               desc: "Wondering how much fun your dog is having while they're away? Get photo updates sent to you",
               soon: "- available soon",
               price: "$10"
+            },            
+            Excursion: {
+              name: "Group Excursion",
+              desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
+              soon: "- available soon",
+              price: "$20"
             },
             PetTaxi: {
               name: "Pet Taxi (Local Pickup and Dropoff)",
@@ -96,22 +96,6 @@
               soon: "- limited availability",
               price: "$20"
             },
-            Excursion: {
-              name: "Group Excursion",
-              desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
-              soon: "- available soon",
-              price: "$20"
-            },
-            // PigsEar: {
-            //   name: "Pig's Ear",
-            //   desc: "",
-            //   price: "$5"
-            // },
-            // Cake: {
-            //   name: "Peanut Butter Birthday Cake",
-            //   desc: "A special treat on your pooch's special day",
-            //   price: "$60"
-            // }
           }
         }
       }

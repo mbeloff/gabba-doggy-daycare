@@ -1,7 +1,6 @@
 <template>
   <div>
     <Hero></Hero>
-    <!-- <Hero></Hero> -->
     <Cards></Cards>
     <Slider></Slider> 
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
@@ -64,20 +63,20 @@
           desc: "Signup online to conveniently manage your own bookings, update your information or purchase daycare packages."
         },
         {
-          title: "Yound and Old",
+          title: "Yound, Old and In Between",
           desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable, relaxed and safe."
         },
         {
-          title: "Large Facility",
-          desc: "Spacious play areas with balls, toys, agility areas and access to grass."
+          title: "Exciting Facility",
+          desc: "Spacious play areas with balls, toys, ramps and obstacles."
         },
         {
           title: "Flexible Options",
-          desc: "We offer full- and half-day daycare pricing, as well as discounted packages."
+          desc: "We offer half day and full day daycare pricing, as well as discounted packages."
         },
         {
           title: "Grooming",
-          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services coming soon."
+          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services now available, with discounts for daycare guests."
         },        
       ]
     }
