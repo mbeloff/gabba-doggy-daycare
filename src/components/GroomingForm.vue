@@ -1,18 +1,17 @@
 <template>
-  <div class="p-3">
-    <p class="text-blue-900">Please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
+  <div class="p-3 mx-auto" style="max-width: 600px">
+    <p class="text-blue-900" v-if="!hasSubmitted">Please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
     <br />
-    <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
+    <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative mb-4 " :class="{ 'opacity-50' : isLoading, 'shadow-none bg-opacity-0' : hasSubmitted}" style="min-height: 150px">
       <transition name="fade">
         <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
-          <p class="px-4 py-2 mx-2 text-2xl text-center text-white bg-blue-500 rounded-full shadow-xl place-self-center">Thanks, we'll be in contact to confirm your booking</p>
+          <p class="px-4 py-2 mx-2 text-2xl text-center rounded-full shadow-xl place-self-center">Thanks, we'll be in contact to confirm your booking </p>          
         </div>
       </transition>
-
       <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
         <i class="text-blue-500 fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
       </div>
-      <div :class="{ 'opacity-0' : hasSubmitted}">
+      <div v-show="!hasSubmitted" :class="{ 'opacity-0' : hasSubmitted}">
         <div class="mb-2">
           <label class="my-label" for="name">
             name
@@ -32,7 +31,7 @@
           <input v-model="form.phone" class="my-input" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
         </div>
         <div class="mb-2">
-          <label class="my-label" for="name">
+          <label class="my-label" for="petname">
             pet's name
           </label>
           <input v-model="form.petname" class="my-input" id="petname" type="text" placeholder="">
@@ -50,7 +49,7 @@
            <date-pick class="w-full text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format"
         :parseDate="parseDate"
         :formatDate="formatDate"
-        :isDateDisabled="isPastDate"
+        :isDateDisabled="isDisabledDate"
         ></date-pick>
         </div>
         <div class="mb-2">
@@ -82,10 +81,8 @@
           </button>
         </div>
       </div>
-
-
     </form>
-    <p class="text-sm leading-snug tracking-tight text-gray-500">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>
+    <!-- <p class="text-sm leading-snug tracking-tight text-gray-500">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p> -->
 
   </div>
 </template>
@@ -114,7 +111,8 @@ import 'vue-date-pick/dist/vueDatePick.css';
           petbreed: "",
           service: [],
           notes: "",
-          date: fecha.format(new Date(), 'ddd MMM Do')
+          // date: fecha.format(new Date(), 'ddd MMM Do')
+          date: fecha.format(new Date((new Date()).valueOf() + 1000*3600*24), 'ddd MMM Do')
         },
         format: 'ddd MMM Do',
         hasSubmitted: false,
@@ -138,9 +136,9 @@ import 'vue-date-pick/dist/vueDatePick.css';
       }
     },
     methods: {
-      isPastDate(date) {
+      isDisabledDate(date) {
           const currentDate = new Date();
-          return date < currentDate;
+          return (date < currentDate) || !(date.getDay() % 6);
       },
       parseDate(dateString, format) {
           return fecha.parse(dateString, format);
@@ -191,6 +189,9 @@ import 'vue-date-pick/dist/vueDatePick.css';
           name: 'Privacy'
         })
         this.$modal.hide('grooming-modal')
+      },
+      closeModal() {
+        this.$modal.hide('grooming-modal')
       }
     },
     mounted() {
@@ -211,6 +212,6 @@ $vdpColor: #1595df;
   font-size: 1.25rem;
   width: 100%;
   color:#1595d1;
-  padding: 0.4rem 0.75rem;
+  padding: 0.2rem 0.75rem;
 }
 </style>

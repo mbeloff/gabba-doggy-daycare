@@ -5,7 +5,7 @@
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
       <Nav />
     </div>
-    <div class="content-wrapper pt-19" style="margin-top: 72px">
+    <div class="content-wrapper pt-19" style="margin-top: 56px">
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
@@ -26,14 +26,14 @@
           </template>
         </modal-inner>
       </Modal>
-      <Modal name="grooming-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+      <!-- <Modal name="grooming-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
           <template v-slot:title>Grooming Request</template>
           <template v-slot:body>
             <GroomingForm></GroomingForm>
           </template>
         </modal-inner>
-      </Modal>
+      </Modal> -->
     </div>
 
     <div class="footer-wrapper">
@@ -50,7 +50,7 @@
   import Footer from './components/Footer.vue'
   import ModalInner from './components/ModalInner.vue'
   import RegisterInterest from '@/components/RegisterInterest.vue'
-  import GroomingForm from '@/components/GroomingForm.vue'
+  // import GroomingForm from '@/components/GroomingForm.vue'
   // import Slider from "@/components/Slider.vue"
   import Login from '@/components/Login.vue'
 
@@ -120,7 +120,7 @@
       ModalInner,
       RegisterInterest,
       Login,
-      GroomingForm
+      // GroomingForm
       // Slider
     },
     metaInfo: {
@@ -229,7 +229,7 @@
     }
 
     .my-input {
-      @apply w-full px-4 py-2 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none
+      @apply w-full px-3 py-1 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none
     }
 
     .my-input:focus {
@@ -237,7 +237,7 @@
     }
 
     .my-label {
-      @apply block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase
+      @apply block mt-2 mb-0 text-sm font-bold text-blue-500 uppercase
     }
   }
 

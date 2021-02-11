@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-2 py-20 mx-auto section" id="prices">
+  <div class="container px-2 py-20 mx-auto section lg:px-20 xl:px-40" id="prices">
     <div id="daycare-pricing">
       <Title class="text-center">
         <template v-slot:small>Price List</template>
@@ -22,11 +22,6 @@
         </div>
       </div>
     </div>
-
-    <div class="text-center mt-4">
-      <p class="mb-2">Fill out the form below to request a booking.</p>
-    </div>
-
   </div>
 </template>
 
@@ -35,17 +30,13 @@
     data() {
       return {
         prices: {
-          daycare: {
-            Bath: {
-              name: 'Bath & Towel Dry',
-              price: "$20"
-            },
-            BathDaycare: {
-              name: "Bath & Towel Dry",
-              soon: " - half price when combined with a daycare booking (Not valid during Free Trial)",
-              price: "$10",
-              highlight: true
-            },
+          daycare: {            
+            // BathDaycare: {
+            //   name: "Bath & Towel Dry",
+            //   soon: " - half price with a daycare booking (Not valid during Free Trial)",
+            //   price: "$10",
+            //   highlight: true
+            // },
             Ears: {
               name: 'Ear Clean',
               price: "$10"
@@ -53,7 +44,11 @@
             Nails: {
               name: 'Nail Clip',
               price: "$10"
-            },            
+            },
+            Bath: {
+              name: 'Bath & Towel Dry',
+              price: "$20"
+            },          
             BathNailsEars: {
               name: 'Bath, Towel Dry, Nails & Ears',
               price: "$30"
