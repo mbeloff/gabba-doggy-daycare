@@ -229,7 +229,7 @@
     }
 
     .my-input {
-      @apply w-full px-3 py-1 text-xl text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none
+      @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none
     }
 
     .my-input:focus {

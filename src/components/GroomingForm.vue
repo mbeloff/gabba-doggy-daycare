@@ -42,15 +42,30 @@
           </label>
           <input v-model="form.petbreed" class="my-input" id="petbreed" type="text" placeholder="">
         </div>
-        <div class="mb-2">
-          <label class="my-label" for="name">
-            date
+        <div class="mb-2 grid grid-cols-5 gap-x-2">
+          <label class="my-label col-start-1 col-span-3" for="name">
+            when
           </label>
-           <date-pick class="w-full text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format"
+           <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format"
         :parseDate="parseDate"
         :formatDate="formatDate"
         :isDateDisabled="isDisabledDate"
         ></date-pick>
+        <div class="col-start-4 col-span-2">
+          <select class="my-input my-select" type="select" v-model="form.time" placeholder="time">
+          <option disabled value="Time">Time</option>
+          <option value="7:30">7:30am</option>
+          <option value="8:00">8:00am</option>
+          <option value="8:30">8:30am</option>
+          <option value="9:00">9:00am</option>
+          <option value="9:30">9:30am</option>
+          <option value="10:00">10:00am</option>
+          <option value="10:30">10:30am</option>
+          <option value="11:00">11:00am</option>
+          <option value="11:30">11:30am</option>
+          <option value="12:00">12:00pm</option>
+          </select>
+        </div>
         </div>
         <div class="mb-2">
           <label class="my-label">Service</label>
@@ -112,7 +127,8 @@ import 'vue-date-pick/dist/vueDatePick.css';
           service: [],
           notes: "",
           // date: fecha.format(new Date(), 'ddd MMM Do')
-          date: fecha.format(new Date((new Date()).valueOf() + 1000*3600*24), 'ddd MMM Do')
+          date: "Date",
+          time: "Time",
         },
         format: 'ddd MMM Do',
         hasSubmitted: false,
@@ -202,16 +218,17 @@ import 'vue-date-pick/dist/vueDatePick.css';
   }
 </script>
 
-<style lang="scss">
-$vdpColor: #1595df;
-@import 'vue-date-pick/src/vueDatePick.scss';
+<style lang="postcss">
+/* $vdpColor: #1595df; */
+/* @import 'vue-date-pick/src/vueDatePick.scss'; */
 .vdpComponent {
   width: 100%;
 }
 .vdpComponent input {
-  font-size: 1.25rem;
-  width: 100%;
-  color:#1595d1;
-  padding: 0.2rem 0.75rem;
+  @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50  appearance-none rounded
+}
+
+.vdpComponent input:focus {
+  @apply outline-none ring bg-opacity-75
 }
 </style>
