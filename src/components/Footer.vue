@@ -19,8 +19,11 @@
               <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Create Account</router-link>
             </li>
             <li>
-              <a href="https://www.gabbadoggydaycareshop.com" target="_blank" class="focus:outline-white hover:text-white">Daycare Shop</a>
+              <router-link :to="{ name: 'Grooming' }" class="focus:outline-white hover:text-white">Grooming</router-link>
             </li>
+            <!-- <li>
+              <a href="https://www.gabbadoggydaycareshop.com" target="_blank" class="focus:outline-white hover:text-white">Daycare Shop</a>
+            </li> -->
             <li>
               <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
             </li>
