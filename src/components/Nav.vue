@@ -1,5 +1,7 @@
 <template>
-  <nav @mouseleave="hide" v-touch:swipe.down="hide" class="relative flex flex-wrap items-center justify-between px-2 py-4 mx-auto bg-white shadow-lg lg:px-10">
+  <nav @mouseleave="hide" 
+
+  class="relative flex flex-wrap items-center justify-between px-2 py-2 mx-auto bg-white shadow-lg lg:px-10">
     <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 mr-2 text-blue-600 lg:mr-6 focus:outline-blue">
 
       <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon">
@@ -117,9 +119,8 @@ import NavItem from '@/components/NavItem.vue'
       hide() {
         if (window.innerWidth < 1024) {
           this.show = false
-        }
-        
-      }
+        }        
+      },
     },
     created() {
       window.addEventListener('resize', this.onResize)
@@ -130,6 +131,9 @@ import NavItem from '@/components/NavItem.vue'
     BeforeDestroy() {
       window.removeEventListener('resize', this.onResize)
     },
+    mounted() {
+      document.addEventListener('scroll', this.hide)
+    }
   }
 </script>
 <style>
