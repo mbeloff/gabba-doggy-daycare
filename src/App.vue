@@ -1,5 +1,4 @@
 <template>
-<!-- <transition name="fade"> -->
   <div id="app">
 
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
@@ -26,23 +25,12 @@
           </template>
         </modal-inner>
       </Modal>
-      <!-- <Modal name="grooming-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
-        <modal-inner>
-          <template v-slot:title>Grooming Request</template>
-          <template v-slot:body>
-            <GroomingForm></GroomingForm>
-          </template>
-        </modal-inner>
-      </Modal> -->
     </div>
 
     <div class="footer-wrapper">
       <Footer></Footer>
     </div>
-
-  </div>
-<!-- </transition> -->
-  
+  </div>  
 </template>
 
 <script>
