@@ -50,7 +50,8 @@
         :parseDate="parseDate"
         :formatDate="formatDate"
         :isDateDisabled="isDisabledDate"
-        ></date-pick>
+        >
+        </date-pick>
         <div class="col-start-4 col-span-2">
           <select class="my-input my-select" type="select" v-model="form.time" placeholder="time">
           <option disabled value="Time">Time</option>
@@ -85,6 +86,14 @@
           </label>
           <textarea v-model="form.notes" rows="4" class="my-input" id="notes" type="text" placeholder="Any additional comments or questions..."></textarea>
         </div>
+        <!-- <div class="mb-4">
+          <label class="my-label" for="daycare">
+            Already have a daycare booking on this day?
+          </label>
+          <div class="flex items-center">
+            <input type="checkbox" name="daycare" v-model="form.daycare" ><span class="ml-2">Yes, I've made a daycare booking already</span>
+          </div>         
+        </div> -->
         <transition name="grow">
           <div v-if="this.missingContact">
             <p class="p-3 mb-4 bg-blue-300 rounded-lg"><strong>Whoops!</strong> Please provide a phone number or email address so that we can get back to you.</p>
@@ -97,8 +106,6 @@
         </div>
       </div>
     </form>
-    <!-- <p class="text-sm leading-snug tracking-tight text-gray-500">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p> -->
-
   </div>
 </template>
 
@@ -129,6 +136,7 @@ import 'vue-date-pick/dist/vueDatePick.css';
           // date: fecha.format(new Date(), 'ddd MMM Do')
           date: "Date",
           time: "Time",
+          // daycare: false
         },
         format: 'ddd MMM Do',
         hasSubmitted: false,
@@ -211,11 +219,11 @@ import 'vue-date-pick/dist/vueDatePick.css';
         this.$modal.hide('grooming-modal')
       }
     },
-    mounted() {
-      setTimeout(() => {
-        this.$refs.name.focus();
-      }, 500);
-    }
+    // mounted() {
+    //   setTimeout(() => {
+    //     this.$refs.name.focus();
+    //   }, 500);
+    // }
   }
 </script>
 
