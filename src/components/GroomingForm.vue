@@ -154,7 +154,8 @@ import 'vue-date-pick/dist/vueDatePick.css';
     methods: {
       isDisabledDate(date) {
           const currentDate = new Date();
-          return (date < currentDate) || !(date.getDay() % 6);
+          const startDate = new Date('February 16, 2021 23:15:30');
+          return (date < currentDate) || !(date.getDay() % 6) || (date < startDate);
       },
       parseDate(dateString, format) {
           return fecha.parse(dateString, format);
