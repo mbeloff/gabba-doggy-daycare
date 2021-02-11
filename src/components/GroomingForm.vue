@@ -24,7 +24,7 @@
           </label>
           <input v-model="form.email" class="my-input" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
         </div>
-        <div class="mb-4">
+        <div class="mb-2">
           <label class="my-label" for="phone">
             phone
           </label>
@@ -42,9 +42,9 @@
           </label>
           <input v-model="form.petbreed" class="my-input" id="petbreed" type="text" placeholder="">
         </div>
-        <div class="mb-2 grid grid-cols-5 gap-x-2">
+        <div class="mb-4 grid grid-cols-5 gap-x-2">
           <label class="my-label col-start-1 col-span-3" for="name">
-            when
+            preferred time
           </label>
            <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format"
         :parseDate="parseDate"
@@ -67,7 +67,7 @@
           </select>
         </div>
         </div>
-        <div class="mb-2">
+        <div class="mb-4">
           <label class="my-label">Service</label>
           <div class="space-y-2 md:space-y-0">
             <div v-for="(service, i) in this.services" :key="i" class="flex items-center border-b">
