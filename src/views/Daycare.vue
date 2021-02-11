@@ -28,7 +28,7 @@
           <div class="text-left md:col-span-2">
             <sign-up-info></sign-up-info>
           </div>
-          <div class="bg-cover md:col-span-1 flower-pup rounded-xl">
+          <div class="bg-cover md:col-span-1 grass-pup rounded-xl">
           </div>
         </div>
         <div class="grid grid-cols-1 gap-5 my-10 divide-pink-500 sm:grid-cols-2 sm:divide-x">
@@ -68,6 +68,20 @@
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_450,h_600/q_auto,f_auto/v1609809738/gddc/toypup.jpg);
     @media only screen and (max-width: 767px) {
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_600/q_auto,f_auto/v1609809738/gddc/toypup.jpg);
+    }
+  }
+
+    .grass-pup {
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_350,h_600/q_auto,f_auto/v1/gddc/photos/712.jpg);
+    min-height: 400px;
+    background-position: 50% 30%;
+    @media only screen and (max-width: 1024px) {
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_250,h_400/q_auto,f_auto/v1/gddc/photos/712.jpg);
+      background-position: 0% 20%;
+    }
+    @media only screen and (max-width: 767px) {
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_400,h_600/q_auto,f_auto/v1/gddc/photos/712.jpg);
+      background-position: 0% 20%;
     }
   }
 

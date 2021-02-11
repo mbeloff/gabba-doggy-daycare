@@ -95,18 +95,6 @@
     height: 100%;
   }
 
-  .flower-pup {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_350,h_600/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
-    min-height: 300px;
-    background-position: 50% 30%;
-    @media only screen and (max-width: 1024px) {
-      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_250,h_400/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
-    }
-    @media only screen and (max-width: 767px) {
-      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_400,h_600/q_auto,f_auto/v1609809724/gddc/flower-pup.jpg);
-    }
-  }
-
   .tile, .tile-alt {
     position: relative;
     &:before, &:after {
