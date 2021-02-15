@@ -92,9 +92,9 @@
             },
             PetTaxi: {
               name: "Pet Taxi (Local Pickup and Dropoff)",
-              desc: "Local pickup & dropoff in our Pet Taxi (within 3km)",
+              desc: "Local pickup & dropoff in our Pet Taxi (within 5km)",
               soon: "- limited availability",
-              price: "$20"
+              price: "$40"
             },
           }
         }

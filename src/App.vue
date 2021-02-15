@@ -52,7 +52,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
-        "reviewCount": "2"
+        "reviewCount": "3"
       },
       "review": [{
           "@type": "Review",
@@ -74,6 +74,19 @@
           "description": `I took advantage of the new business promotion on the 3 free days to see whether the doggy daycare would be a fit for my 2 small dogs.
           They had to much fun on the days they were there and we will definitely be booking in again.
           The ladies there were very professional and were very quick to answer any questions that i had.`,
+          "name": "Google Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": "Hannah Roberts",
+          "datePublished": "2021-02-11",
+          "description": `Wonderful place! Our lab and golden retriever have been coming weekly and always have the best time. The staff are lovely and it's a fun environment. Couldn't recommend more`,
           "name": "Google Review",
           "reviewRating": {
             "@type": "Rating",
