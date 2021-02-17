@@ -10,6 +10,7 @@ export default new Vuex.Store({
       email: "woof@gabbadoggydaycare.com",
     },
     brisbane: {
+      hasGrooming: true,
       contact: {
         openTime: "6:30am",
         closeTIme: "6:30pm",
@@ -23,6 +24,7 @@ export default new Vuex.Store({
       }
     },
     adelaide: {
+      hasGrooming: false,
       contact: {
         email: "adelaide@gabbadoggydaycare.com",
         openTime: "6:30am",

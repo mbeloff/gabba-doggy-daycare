@@ -19,7 +19,7 @@
     <transition name="slide">
       <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-4 bg-white shadow-lg lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto ">
         <div class="flex flex-col lg:flex-row  lg:flex-grow lg:space-y-0 ">
-          <nav-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1" :style="{ order: item.order }"></nav-item>
+          <nav-item v-for="(item, i) in regionMenu" v-bind:item="item" :key="i" tabindex="-1" :style="{ order: item.order }"></nav-item>
         </div>
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0">
           <div class="self-center w-full mb-5 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
@@ -47,8 +47,9 @@ import NavItem from '@/components/NavItem.vue'
     data() {
       return {
         show: true,
-        items: [
-          {
+        menus: {
+          brisbane: [
+             {
           label: "Home",
           link: "Home",
           order: "1"
@@ -57,52 +58,41 @@ import NavItem from '@/components/NavItem.vue'
           label: "Daycare",
           link: "Daycare",
           order: "2",
-          // sub: [
-          //   {
-          //     label: "About",
-          //     name: "Daycare",
-          //     hash: "#about"
-          //   },
-          //   {
-          //     label: "Prices",
-          //     name: "Daycare",
-          //     hash: "#prices"
-          //   },
-          //   {
-          //     label: "Joining",
-          //     name: "Daycare",
-          //     hash: "#enrol"
-          //   },
-          // ]
         },
         {
           label: "Grooming",
           link: "Grooming",
           order: "3",
-          // sub: [
-          //   {
-          //     label: "About",
-          //     name: "Grooming",
-          //     hash: "#about"
-          //   },
-          //   {
-          //     label: "Prices",
-          //     name: "Grooming",
-          //     hash: "#prices"
-          //   },
-          //   {
-          //     label: "Book",
-          //     name: "Grooming",
-          //     hash: "#book"
-          //   },
-          // ]
         },
         {
           label: "Contact",
           link: "Contact",
           order: "4"
         }
-        ]
+          ],
+          adelaide: [
+            {
+          label: "Home",
+          link: "Home",
+          order: "1"
+        },
+        {
+          label: "Daycare",
+          link: "Daycare",
+          order: "2",
+        },
+        {
+          label: "Contact",
+          link: "Contact",
+          order: "4"
+        }
+          ]
+        },
+      }
+    },
+    computed: {
+      regionMenu() {
+        return this.menus[this.$store.state.global.region]
       }
     },
     methods: {

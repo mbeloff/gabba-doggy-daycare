@@ -2,13 +2,13 @@
   <div id="app">
 
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
-      <div class="bg-blue-500 lg:px-10">
-        <button :class="{'rounded-full bg-white' : isRegion('brisbane')}" class="px-3 mx-2 my-1" @click="regionSelect('brisbane')">brisbane</button>
-        <button :class="{'rounded-full bg-white' : isRegion('adelaide')}" class="px-3 mx-2 my-1" @click="regionSelect('adelaide')">adelaide</button>
+      <div class="bg-blue-500 lg:px-10 text-white">
+        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="px-3 focus:outline-none" @click="regionSelect('brisbane')">brisbane</button>
+        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="px-3 focus:outline-none" @click="regionSelect('adelaide')">adelaide</button>
       </div>
       <Nav />
     </div>
-    <div class="content-wrapper pt-19" style="margin-top: 48px">
+    <div class="pt-19" style="margin-top: 72px; min-height: 50vh">
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
@@ -48,13 +48,65 @@
   export default {
     methods: {
       regionSelect(region) {
-        this.$store.dispatch('setRegion', region)
+        this.$store.dispatch('setRegion', region);
+        this.$router.push({
+          name: this.$route.name,
+          params: {
+            region: region
+          }
+        })
       },
       isRegion(region) {
         return region == this.$store.state.global.region
+        // return region == this.$route.params.region
       }
     },
-
+    // created() {
+    //   if (this.$route.name == 'Home') {
+    //     console.log('before created function beginning')
+    //     if (this.$route.params.region) {
+    //       console.log('found region param')
+    //       this.$store.dispatch('setRegion', this.$route.params.region)
+    //       this.$router.push({
+    //         name: this.$route.name,
+    //         params: {
+    //           region: this.$route.params.region
+    //         }
+    //       })
+    //     } else {
+    //       console.log('found region from state')
+    //       this.$store.dispatch('setRegion', this.$store.state.global.region)
+    //       this.$router.push({
+    //         name: this.$route.name,
+    //         params: {
+    //           region: this.$store.state.global.region
+    //         }
+    //       })
+    //     }
+    //   }
+    // },
+    beforeUpdate() {
+      console.log('before beforeUpdate');
+      if (this.$route.params.region) {
+        console.log('found region param')
+        this.$store.dispatch('setRegion', this.$route.params.region)
+        this.$router.push({
+          name: this.$route.name,
+          params: {
+            region: this.$route.params.region
+          }
+        })
+      } else {
+        console.log('found region from state')
+        this.$store.dispatch('setRegion', this.$store.state.global.region)
+        this.$router.push({
+          name: this.$route.name,
+          params: {
+            region: this.$store.state.global.region
+          }
+        })
+      }
+    },
     name: 'App',
     components: {
       Nav,
@@ -62,8 +114,6 @@
       ModalInner,
       RegisterInterest,
       Login,
-      // GroomingForm
-      // Slider
     },
     metaInfo: {
       title: 'Home',
@@ -171,6 +221,30 @@
   }
 </script>
 <style lang="postcss">
+  .loc-active {
+    background: white;
+    position: relative;
+  }
+
+  /* .loc-active::after {
+    position: absolute;
+    left: 99.50%;
+    background: white;
+    content: "";
+    width: .75rem;
+    height: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+  }
+  .loc-active::before {
+    position: absolute;
+    right: 100%;
+    background: white;
+    content: "";
+    width: .75rem;
+    height: 100%;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  } */
+
   .pagefade-enter-active,
   .pagefade-leave-active {
     transition-duration: 0.3s;

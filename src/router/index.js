@@ -16,7 +16,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
   },
   {
     path: "/login",
@@ -24,9 +24,10 @@ const routes = [
     component: Home
   },
   {
-    path: "/contact",
+    path: "/contact/:region?",
     name: "Contact",
-    component: Contact
+    component: Contact,
+    props: true
   },
   {
     path: "/register",
@@ -44,14 +45,16 @@ const routes = [
     component: SignUp
   },
   {
-    path: "/daycare",
+    path: "/daycare/:region?",
     name: "Daycare",
     component: Daycare,
+    props: true
   },
   {
-    path: "/grooming",
+    path: "/grooming/:region?",
     name: "Grooming",
-    component: Grooming
+    component: Grooming,
+    props: true
   },
   {
     path: "/jobs",
