@@ -46,7 +46,7 @@ const routes = [
   {
     path: "/daycare",
     name: "Daycare",
-    component: Daycare
+    component: Daycare,
   },
   {
     path: "/grooming",

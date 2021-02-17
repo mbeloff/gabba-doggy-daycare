@@ -18,7 +18,7 @@
     </div>
     <transition name="slide">
       <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-4 bg-white shadow-lg lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto ">
-        <div class="flex flex-col lg:flex-row divide-x-0 lg:divide-x-2 lg:flex-grow lg:space-y-0 divide-blue-200">
+        <div class="flex flex-col lg:flex-row  lg:flex-grow lg:space-y-0 ">
           <nav-item v-for="(item, i) in items" v-bind:item="item" :key="i" tabindex="-1" :style="{ order: item.order }"></nav-item>
         </div>
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0">
@@ -57,45 +57,45 @@ import NavItem from '@/components/NavItem.vue'
           label: "Daycare",
           link: "Daycare",
           order: "2",
-          sub: [
-            {
-              label: "About",
-              name: "Daycare",
-              hash: "#about"
-            },
-            {
-              label: "Prices",
-              name: "Daycare",
-              hash: "#prices"
-            },
-            {
-              label: "Joining",
-              name: "Daycare",
-              hash: "#enrol"
-            },
-          ]
+          // sub: [
+          //   {
+          //     label: "About",
+          //     name: "Daycare",
+          //     hash: "#about"
+          //   },
+          //   {
+          //     label: "Prices",
+          //     name: "Daycare",
+          //     hash: "#prices"
+          //   },
+          //   {
+          //     label: "Joining",
+          //     name: "Daycare",
+          //     hash: "#enrol"
+          //   },
+          // ]
         },
         {
           label: "Grooming",
           link: "Grooming",
           order: "3",
-          sub: [
-            {
-              label: "About",
-              name: "Grooming",
-              hash: "#about"
-            },
-            {
-              label: "Prices",
-              name: "Grooming",
-              hash: "#prices"
-            },
-            {
-              label: "Book",
-              name: "Grooming",
-              hash: "#book"
-            },
-          ]
+          // sub: [
+          //   {
+          //     label: "About",
+          //     name: "Grooming",
+          //     hash: "#about"
+          //   },
+          //   {
+          //     label: "Prices",
+          //     name: "Grooming",
+          //     hash: "#prices"
+          //   },
+          //   {
+          //     label: "Book",
+          //     name: "Grooming",
+          //     hash: "#book"
+          //   },
+          // ]
         },
         {
           label: "Contact",

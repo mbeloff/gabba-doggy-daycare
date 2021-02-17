@@ -2,9 +2,13 @@
   <div id="app">
 
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
+      <div class="bg-blue-500 lg:px-10">
+        <button :class="{'rounded-full bg-white' : isRegion('brisbane')}" class="px-3 mx-2 my-1" @click="regionSelect('brisbane')">brisbane</button>
+        <button :class="{'rounded-full bg-white' : isRegion('adelaide')}" class="px-3 mx-2 my-1" @click="regionSelect('adelaide')">adelaide</button>
+      </div>
       <Nav />
     </div>
-    <div class="content-wrapper pt-19" style="margin-top: 56px">
+    <div class="content-wrapper pt-19" style="margin-top: 48px">
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
@@ -30,7 +34,7 @@
     <div class="footer-wrapper">
       <Footer></Footer>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script>
@@ -41,79 +45,16 @@
   // import GroomingForm from '@/components/GroomingForm.vue'
   // import Slider from "@/components/Slider.vue"
   import Login from '@/components/Login.vue'
-
   export default {
-    jsonld: {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Gabba Doggy Daycare",
-      "image": "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1607553601/gddc/photos/03.jpg",
-      "logo": "https://www.gabbadoggydaycare.com/img/gddc-logo.02c7187e.svg",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "3"
+    methods: {
+      regionSelect(region) {
+        this.$store.dispatch('setRegion', region)
       },
-      "review": [{
-          "@type": "Review",
-          "author": "Melka Ruby",
-          "datePublished": "2020-12-15",
-          "description": "My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙",
-          "name": "Facebook Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "bestRating": "5",
-            "ratingValue": "5",
-            "worstRating": "1"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": "Jennie S",
-          "datePublished": "2020-12-12",
-          "description": `I took advantage of the new business promotion on the 3 free days to see whether the doggy daycare would be a fit for my 2 small dogs.
-          They had to much fun on the days they were there and we will definitely be booking in again.
-          The ladies there were very professional and were very quick to answer any questions that i had.`,
-          "name": "Google Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "bestRating": "5",
-            "ratingValue": "5",
-            "worstRating": "1"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": "Hannah Roberts",
-          "datePublished": "2021-02-11",
-          "description": `Wonderful place! Our lab and golden retriever have been coming weekly and always have the best time. The staff are lovely and it's a fun environment. Couldn't recommend more`,
-          "name": "Google Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "bestRating": "5",
-            "ratingValue": "5",
-            "worstRating": "1"
-          }
-        }
-      ],
-      "telephone": "0423 487 302",
-      "email": "woof@gabbadoggydaycare.com",
-      "url": "https://www.gabbadoggydaycare.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "46 Deshon st",
-        "addressLocality": "Woolloongabba",
-        "addressRegion": "QLD",
-        "postalCode": "4102"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": {
-          "@type": "DayOfWeek",
-          "name": "Mo-Fr 06:30-18:30"
-        }
+      isRegion(region) {
+        return region == this.$store.state.global.region
       }
     },
+
     name: 'App',
     components: {
       Nav,
@@ -142,21 +83,91 @@
       // this.show = true;
       if (this.$route.path == '/login') {
         this.$modal.show('login-modal');
-        
+
       }
-      
     },
     watch: {
-    "$route.params.path": {
-      handler: function() {
-        if (this.$route.path == '/login') {
-        this.$modal.show('login-modal');        
-      }
+      "$route.params.path": {
+        handler: function () {
+          if (this.$route.path == '/login') {
+            this.$modal.show('login-modal');
+          }
+        },
+        deep: true,
+        immediate: true
       },
-      deep: true,
-      immediate: true
+      jsonld: {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Gabba Doggy Daycare",
+        "image": "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1607553601/gddc/photos/03.jpg",
+        "logo": "https://www.gabbadoggydaycare.com/img/gddc-logo.02c7187e.svg",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3"
+        },
+        "review": [{
+            "@type": "Review",
+            "author": "Melka Ruby",
+            "datePublished": "2020-12-15",
+            "description": "My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙",
+            "name": "Facebook Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "bestRating": "5",
+              "ratingValue": "5",
+              "worstRating": "1"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": "Jennie S",
+            "datePublished": "2020-12-12",
+            "description": `I took advantage of the new business promotion on the 3 free days to see whether the doggy daycare would be a fit for my 2 small dogs.
+          They had to much fun on the days they were there and we will definitely be booking in again.
+          The ladies there were very professional and were very quick to answer any questions that i had.`,
+            "name": "Google Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "bestRating": "5",
+              "ratingValue": "5",
+              "worstRating": "1"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": "Hannah Roberts",
+            "datePublished": "2021-02-11",
+            "description": `Wonderful place! Our lab and golden retriever have been coming weekly and always have the best time. The staff are lovely and it's a fun environment. Couldn't recommend more`,
+            "name": "Google Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "bestRating": "5",
+              "ratingValue": "5",
+              "worstRating": "1"
+            }
+          }
+        ],
+        "telephone": "0423 487 302",
+        "email": "woof@gabbadoggydaycare.com",
+        "url": "https://www.gabbadoggydaycare.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "46 Deshon st",
+          "addressLocality": "Woolloongabba",
+          "addressRegion": "QLD",
+          "postalCode": "4102"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": {
+            "@type": "DayOfWeek",
+            "name": "Mo-Fr 06:30-18:30"
+          }
+        }
+      },
     }
-  }
   }
 </script>
 <style lang="postcss">
@@ -242,11 +253,14 @@
     }
   }
 
-  .fade-enter-active, .fade-leave-active {
-  transition: opacity 1s;
-  -webkit-transition: opacity 1s;
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
   }
-  .fade-enter, .fade-leave-to {
+
+  .fade-enter,
+  .fade-leave-to {
     opacity: 0;
   }
 </style>

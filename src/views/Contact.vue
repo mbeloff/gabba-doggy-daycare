@@ -8,13 +8,12 @@
       <div class="grid grid-cols-1 px-4 md:grid-cols-2">
         <div class="flex-grow ml-auto mr-auto bg-no-repeat bg-contain md:ml-auto md:mr-0 phone-pup max-w-full" style="height: 350px; width: 350px">
         </div>
-        <div class="my-auto">
+        <div class="mb-auto">
           <ul class="text font-bold list-none list-inside">
-            <ListItem class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left">Address: <br> <span>Gabba Doggy Daycare <br> 46 Deshon Street, <br>Woolloongabba 4102</span> <br> </ListItem>
-            <li class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left "><span class=" bg-blue-100 text-blue-800 font-normal py-1 px-4 text-sm">First entrance to the right as you come in through the main gate</span></li>
-            <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" href="tel:0423487302">0423 487 302</a></ListItem>
+            <ListItem class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left">Address: <br> <span>{{data.name}} <br> {{data.street}}, <br>{{data.suburb}} <br>{{data.postcode}}</span> <br> </ListItem>
+            <ListItem v-if="data.phone" class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" :href="`tel:` + data.phone">{{data.phone}}</a></ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Email: <br> <span>
-                <Email class="break-all">woof@gabbadoggydaycare.com</Email>
+                <Email class="break-all">{{data.email}}</Email>
               </span></ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Message: <br> <span>
                 <open-modal class="link-pink">leave a message</open-modal>
@@ -37,7 +36,7 @@
     </div>
 
         <div class="w-full mx-auto py-1 bg-blue-500">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14157.078780074915!2d153.0441013!3d-27.4919868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cbf7d0ff474ef0e!2sGabba%20Doggy%20Daycare!5e0!3m2!1sen!2sau!4v1608508120256!5m2!1sen!2sau" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe :src="data.map" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
   </div>
@@ -45,6 +44,11 @@
 
 <script>
   export default {
+    computed: {
+      data() {
+        return this.$store.state[this.$store.state.global.region].contact         
+      }
+    },
     metaInfo: {
       title: 'Contact Us',
       meta: [{
