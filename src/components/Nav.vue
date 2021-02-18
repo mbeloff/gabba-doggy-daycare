@@ -51,7 +51,7 @@ import NavItem from '@/components/NavItem.vue'
           brisbane: [
              {
           label: "Home",
-          link: "Home",
+          link: "New Home",
           order: "1"
         },
         {
@@ -73,7 +73,7 @@ import NavItem from '@/components/NavItem.vue'
           adelaide: [
             {
           label: "Home",
-          link: "Home",
+          link: "New Home",
           order: "1"
         },
         {

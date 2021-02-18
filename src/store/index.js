@@ -21,7 +21,8 @@ export default new Vuex.Store({
         suburb: "Woollloongabba",
         postcode: "4102 QLD",
         phone: "0423 487 302"
-      }
+      },
+      
     },
     adelaide: {
       hasGrooming: false,
@@ -35,7 +36,7 @@ export default new Vuex.Store({
         suburb: "Bowden",
         postcode: "5007 SA",
         phone: ""
-      }
+      },
     }
   },
   mutations: {

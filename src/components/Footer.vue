@@ -5,7 +5,7 @@
 
         <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
         </div>
-        <div class="flex-grow text-center sm:text-left">
+        <!-- <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400">Quick Links</p>
           <ul class="space-y-2 md:space-y-1 list-none text-sm">
 
@@ -21,14 +21,11 @@
             <li>
               <router-link :to="{ name: 'Grooming' }" class="focus:outline-white hover:text-white">Grooming</router-link>
             </li>
-            <!-- <li>
-              <a href="https://www.gabbadoggydaycareshop.com" target="_blank" class="focus:outline-white hover:text-white">Daycare Shop</a>
-            </li> -->
             <li>
               <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
             </li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400">Info</p>
@@ -55,16 +52,15 @@
         <div class="text-center sm:text-left">
           <div class="text-sm">
             <p class="text-lg text-gray-400">Get in touch</p>
-            <!-- <p class="text-gray-500"> -->
               <ul class="space-y-2 md:space-y-1 list-none text-sm">
-                <li>
-                   <a class="focus:outline-white hover:underline  text-yellow-300" href="tel:0423487302"><i class="fas fa-phone-rotary mr-2"></i>0423 487 302</a>
+                <li v-if="data.phone">
+                   <a class="focus:outline-white hover:underline text-yellow-300" :href="`tel:` + data.phone"><i class="fas fa-phone-rotary mr-2"></i>{{data.phone}}</a>
                 </li>
              <li>
-               <a class="text-gray-300 hover:text-gray-100 focus:outline-white hover:underline break-all" href="mailto:woof@gabbadoggydaycare.com">woof@gabbadoggydaycare.com</a>
+               <a class="text-gray-300 hover:text-gray-100 focus:outline-white hover:underline break-all" :href="`mailto:` + data.email">{{data.email}}</a>
              </li>
               <li>
-                46 Deshon st, Woolloongabba, QLD Australia 4102
+                {{data.street}}, {{data.suburb}}, {{data.postcode}}
               </li>
               
               </ul>
@@ -77,14 +73,18 @@
       </div>
     </div>
     <div class="col text-center bg-super-dark">
-      <p class="text-xs tracking-wide">© <a href="https://www.gabbadoggydaycare.com">gabbadoggydaycare.com</a></p>
+      <p class="text-xs tracking-wide">© <router-link :to="{ name: 'New Home', params: {region: this.$store.state.global.region} }">gabbadoggydaycare.com</router-link></p>
     </div>
   </div>
 </template>
 
 <script>
   export default {
-
+    computed: {
+      data() {
+        return this.$store.state[this.$store.state.global.region].contact         
+      }
+    },
   }
 </script>
 
