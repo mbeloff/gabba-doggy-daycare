@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
-      <div class="bg-blue-500 lg:px-10 text-white">
-        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="px-3 focus:outline-none" @click="regionSelect('brisbane')">brisbane</button>
-        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="px-3 focus:outline-none" @click="regionSelect('adelaide')">adelaide</button>
+      <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
+        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
+        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
       </div>
-      <Nav />
+      <Nav class="z-20"/>
     </div>
     <div class="pt-19" style="margin-top: 72px; min-height: 50vh">
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
-
       <Modal name="contact-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
           <template v-slot:title>Got a Question?</template>
@@ -42,10 +40,28 @@
   import Footer from './components/Footer.vue'
   import ModalInner from './components/ModalInner.vue'
   import RegisterInterest from '@/components/RegisterInterest.vue'
-  // import GroomingForm from '@/components/GroomingForm.vue'
-  // import Slider from "@/components/Slider.vue"
   import Login from '@/components/Login.vue'
   export default {
+    data() {
+      return {
+      }
+    },
+    mounted() {
+      if (this.$route.name == 'Login') {
+        this.$modal.show('login-modal');
+      }
+    },
+    watch: {
+      "$route.params.path": {
+        handler: function () {
+          if (this.$route.path == '/login') {
+            this.$modal.show('login-modal');
+          }
+        },
+        deep: true,
+        immediate: true
+      },
+    },
     methods: {
       regionSelect(region) {
         this.$store.dispatch('setRegion', region);
@@ -61,44 +77,38 @@
         // return region == this.$route.params.region
       }
     },
-    // created() {
-    //   if (this.$route.name == 'Home') {
-    //     console.log('before created function beginning')
-    //     if (this.$route.params.region) {
-    //       console.log('found region param')
-    //       this.$store.dispatch('setRegion', this.$route.params.region)
-    //       this.$router.push({
-    //         name: this.$route.name,
-    //         params: {
-    //           region: this.$route.params.region
-    //         }
-    //       })
-    //     } else {
-    //       console.log('found region from state')
-    //       this.$store.dispatch('setRegion', this.$store.state.global.region)
-    //       this.$router.push({
-    //         name: this.$route.name,
-    //         params: {
-    //           region: this.$store.state.global.region
-    //         }
-    //       })
-    //     }
-    //   }
-    // },
-    beforeUpdate() {
-      console.log('before beforeUpdate');
-      if (this.$route.params.region) {
-        console.log('found region param')
-        this.$store.dispatch('setRegion', this.$route.params.region)
+    created() {
+      let path = this.$route.path
+      let param = this.$route.params.region
+      if (path !== '/' && !param) {
+        console.log('created, no param')
         this.$router.push({
           name: this.$route.name,
           params: {
-            region: this.$route.params.region
+            region: this.$store.state.global.region
           }
         })
       } else {
-        console.log('found region from state')
-        this.$store.dispatch('setRegion', this.$store.state.global.region)
+        if (path == '/home/adelaide') {
+          this.$store.dispatch('setRegion', param)
+        } else if (param == 'adelaide' || param == 'brisbane') {
+        this.$store.dispatch('setRegion', param)
+      } else if (param) {
+        this.$router.push({
+            name: 'NotFound',
+          })
+      }
+      }
+    },
+    beforeUpdate() {
+      let param = this.$route.params.region
+      if (param == 'adelaide' || param == 'brisbane') {
+        this.$store.dispatch('setRegion', param)
+      } else if (param) {
+        this.$router.push({
+            name: 'NotFound',
+          })
+      } else if (param == undefined) {
         this.$router.push({
           name: this.$route.name,
           params: {
@@ -124,99 +134,77 @@
         vmid: 'description'
       }]
     },
-    data() {
-      return {
-        // show: true
-      }
-    },
-    mounted() {
-      // this.show = true;
-      if (this.$route.path == '/login') {
-        this.$modal.show('login-modal');
-
-      }
-    },
-    watch: {
-      "$route.params.path": {
-        handler: function () {
-          if (this.$route.path == '/login') {
-            this.$modal.show('login-modal');
+    
+    jsonld: {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Gabba Doggy Daycare",
+      "image": "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1607553601/gddc/photos/03.jpg",
+      "logo": "https://www.gabbadoggydaycare.com/img/gddc-logo.02c7187e.svg",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3"
+      },
+      "review": [{
+          "@type": "Review",
+          "author": "Melka Ruby",
+          "datePublished": "2020-12-15",
+          "description": "My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙",
+          "name": "Facebook Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
           }
         },
-        deep: true,
-        immediate: true
-      },
-      jsonld: {
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Gabba Doggy Daycare",
-        "image": "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1607553601/gddc/photos/03.jpg",
-        "logo": "https://www.gabbadoggydaycare.com/img/gddc-logo.02c7187e.svg",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": "3"
-        },
-        "review": [{
-            "@type": "Review",
-            "author": "Melka Ruby",
-            "datePublished": "2020-12-15",
-            "description": "My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙",
-            "name": "Facebook Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "bestRating": "5",
-              "ratingValue": "5",
-              "worstRating": "1"
-            }
-          },
-          {
-            "@type": "Review",
-            "author": "Jennie S",
-            "datePublished": "2020-12-12",
-            "description": `I took advantage of the new business promotion on the 3 free days to see whether the doggy daycare would be a fit for my 2 small dogs.
+        {
+          "@type": "Review",
+          "author": "Jennie S",
+          "datePublished": "2020-12-12",
+          "description": `I took advantage of the new business promotion on the 3 free days to see whether the doggy daycare would be a fit for my 2 small dogs.
           They had to much fun on the days they were there and we will definitely be booking in again.
           The ladies there were very professional and were very quick to answer any questions that i had.`,
-            "name": "Google Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "bestRating": "5",
-              "ratingValue": "5",
-              "worstRating": "1"
-            }
-          },
-          {
-            "@type": "Review",
-            "author": "Hannah Roberts",
-            "datePublished": "2021-02-11",
-            "description": `Wonderful place! Our lab and golden retriever have been coming weekly and always have the best time. The staff are lovely and it's a fun environment. Couldn't recommend more`,
-            "name": "Google Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "bestRating": "5",
-              "ratingValue": "5",
-              "worstRating": "1"
-            }
+          "name": "Google Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
           }
-        ],
-        "telephone": "0423 487 302",
-        "email": "woof@gabbadoggydaycare.com",
-        "url": "https://www.gabbadoggydaycare.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "46 Deshon st",
-          "addressLocality": "Woolloongabba",
-          "addressRegion": "QLD",
-          "postalCode": "4102"
         },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": {
-            "@type": "DayOfWeek",
-            "name": "Mo-Fr 06:30-18:30"
+        {
+          "@type": "Review",
+          "author": "Hannah Roberts",
+          "datePublished": "2021-02-11",
+          "description": `Wonderful place! Our lab and golden retriever have been coming weekly and always have the best time. The staff are lovely and it's a fun environment. Couldn't recommend more`,
+          "name": "Google Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
           }
         }
+      ],
+      "telephone": "0423 487 302",
+      "email": "woof@gabbadoggydaycare.com",
+      "url": "https://www.gabbadoggydaycare.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "46 Deshon st",
+        "addressLocality": "Woolloongabba",
+        "addressRegion": "QLD",
+        "postalCode": "4102"
       },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": {
+          "@type": "DayOfWeek",
+          "name": "Mo-Fr 06:30-18:30"
+        }
+      }
     }
   }
 </script>
@@ -224,26 +212,8 @@
   .loc-active {
     background: white;
     position: relative;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.223), 0px 30px 30px rgba(0, 0, 0, 0.123)
   }
-
-  /* .loc-active::after {
-    position: absolute;
-    left: 99.50%;
-    background: white;
-    content: "";
-    width: .75rem;
-    height: 100%;
-    clip-path: polygon(0 0, 0 100%, 100% 0);
-  }
-  .loc-active::before {
-    position: absolute;
-    right: 100%;
-    background: white;
-    content: "";
-    width: .75rem;
-    height: 100%;
-    clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  } */
 
   .pagefade-enter-active,
   .pagefade-leave-active {
@@ -265,13 +235,15 @@
     opacity: 0;
   }
 
-
+  @font-face {
+    font-display: swap;
+  }
 
   body {
     font-family: 'Open Sans', Arial, sans-serif !important;
     color: #474b57;
     scroll-behavior: smooth;
-    font-display: swap;
+    
   }
 
   #app {

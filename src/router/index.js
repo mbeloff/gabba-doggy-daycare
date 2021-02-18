@@ -17,11 +17,31 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    redirect: "/home"
   },
   {
-    path: "/login",
+    path: '/adelaide',
+    props: true,
+    redirect: {
+      path:'/home/adelaide',
+      props: {region: 'adelaide'}}
+
+  },
+  {
+    path: '/brisbane',
+    redirect: '/home/brisbane'
+  },
+  {
+    path: "/home/:region?",
+    name: "New Home",
+    component: Home,
+    props: true,  
+  },
+  {
+    path: "/login/:region?",
     name: "Login",
-    component: Home
+    component: Home,
+    props: true
   },
   {
     path: "/contact/:region?",
@@ -30,9 +50,10 @@ const routes = [
     props: true
   },
   {
-    path: "/register",
+    path: "/register/:region?",
     name: "Register",
-    component: Home
+    component: Home,
+    props: true
   },
   {
     path: "/vaccinations",
@@ -40,9 +61,10 @@ const routes = [
     component: Vax
   },
   {
-    path: "/sign-up",
+    path: "/sign-up/:region?",
     name: "Sign-up",
-    component: SignUp
+    component: SignUp,
+    props: true
   },
   {
     path: "/daycare/:region?",
@@ -57,9 +79,10 @@ const routes = [
     props: true
   },
   {
-    path: "/jobs",
+    path: "/jobs/:region?",
     name: "Jobs",
-    component: Jobs
+    component: Jobs,
+    props: true
   },
   // {
   //   path: "/shop",
@@ -86,18 +109,18 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      if (to.name == from.name) {
-        return { selector: to.hash, behavior: 'smooth', offset: {x: 0, y: 25} }
-      } else {
-        return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve({ selector: to.hash, behavior: 'smooth', offset: {x: 0, y: 25} })
-        }, 350)
-      })
-      }
+    // if (to.hash) {
+    //   if (to.name == from.name) {
+    //     return { selector: to.hash, behavior: 'smooth', offset: {x: 0, y: 25} }
+    //   } else {
+    //     return new Promise((resolve) => {
+    //     setTimeout(() => {
+    //       resolve({ selector: to.hash, behavior: 'smooth', offset: {x: 0, y: 25} })
+    //     }, 350)
+    //   })
+    //   }
      
-    }
+    // }
     if (savedPosition) {
       return new Promise((resolve) => {
         setTimeout(() => {
