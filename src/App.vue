@@ -2,8 +2,8 @@
   <div id="app">
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
       <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
-        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
-        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
+        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-blue" @click="regionSelect('brisbane')">Brisbane</button>
+        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold focus:outline-blue" @click="regionSelect('adelaide')">Adelaide</button>
       </div>
       <Nav class="z-20"/>
     </div>
@@ -130,7 +130,7 @@
       titleTemplate: 'Gabba Doggy Daycare | %s',
       meta: [{
         name: 'description',
-        content: "Your best friends' new favourite place. Don't leave your dogs home alone, taken them to Gabba Doggy Daycare for a great day out.",
+        content: "Your pup's home away from home. Don't leave your dogs home alone, taken them to Gabba Doggy Daycare to have fun with new friends.",
         vmid: 'description'
       }]
     },

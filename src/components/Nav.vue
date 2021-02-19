@@ -4,22 +4,22 @@
   class="relative flex flex-wrap items-center justify-between px-2 py-2 mx-auto bg-white shadow-lg lg:px-10">
     <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 mr-2 text-blue-600 lg:mr-6 focus:outline-blue">
 
-      <img class="h-8 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon">
-      <img class="h-5 md:h-6" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
+      <!-- <img class="h-6 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon"> -->
+      <img class="w-64 py-1" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
 
     </router-link>
-    <div class="block lg:hidden">
-      <button v-on:click="show = !show" class="flex items-center py-2 text-blue-600 rounded hover:text-blue-400 hover:border-blue-400 focus:outline-blue">
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <div class="block lg:hidden" >
+      <button v-on:click="show = !show" class="flex items-center text-white focus:outline-none bg-blue-500 p-1 rounded m-1 focus:bg-blue-700">
+        <svg class="w-6 h-6 fill-current"  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          <path :class="{ 'rotate-180' : show}" class="transform origin-center transition" d="M16.003 18.626l7.081-7.081L25 13.46l-8.997 8.998-9.003-9 1.917-1.916z" />
         </svg>
       </button>
     </div>
     <transition name="slide">
       <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-4 bg-white shadow-lg lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto ">
         <div class="flex flex-col lg:flex-row  lg:flex-grow lg:space-y-0 ">
-          <nav-item v-for="(item, i) in regionMenu" v-bind:item="item" :key="i" tabindex="-1" :style="{ order: item.order }"></nav-item>
+          <nav-item v-for="(item, i) in regionMenu" v-bind:item="item" :key="i" :style="{ order: item.order }"></nav-item>
         </div>
         <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0">
           <div class="self-center w-full mb-5 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
