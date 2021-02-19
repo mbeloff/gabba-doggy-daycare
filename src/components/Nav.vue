@@ -5,11 +5,11 @@
     <router-link :to="{ name: 'Home'}" class="flex items-center flex-shrink-0 mr-2 text-blue-600 lg:mr-6 focus:outline-blue">
 
       <!-- <img class="h-6 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon"> -->
-      <img class="w-60 py-1" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
+      <img class="w-60" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
 
     </router-link>
     <div class="block lg:hidden" >
-      <button v-on:click="show = !show" class="flex items-center text-white focus:outline-none bg-pink-500 p-1 rounded m-1 focus:bg-pink-600 animate-ping-sm">
+      <button v-on:click="show = !show" class="flex items-center text-white focus:outline-none bg-pink-500 p-1 rounded focus:bg-pink-600 animate-ping-sm">
         <svg class="w-6 h-6 fill-current"  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
           <path :class="{ 'rotate-180' : show}" class="transform origin-center transition" d="M16.003 18.626l7.081-7.081L25 13.46l-8.997 8.998-9.003-9 1.917-1.916z" />
