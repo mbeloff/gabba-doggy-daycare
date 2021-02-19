@@ -1,6 +1,6 @@
 <template>
   <div class="p-3">
-      <p class="text-blue-900">Thanks for checking out Gabba Doggy Daycare. If you have any questions, or problems creating your account, please let us know here.</p>
+      <p class="text-blue-900">Thanks for checking out Gabba Doggy Daycare. If you have any questions, or problems with your account, please let us know.</p>
       <br />
       <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
@@ -14,25 +14,25 @@
         </div>
         <div :class="{ 'opacity-0' : hasSubmitted}">
           <div class="mb-2">
-            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="name">
+            <label class="my-label" for="name">
               name
             </label>
             <input v-model="form.name" ref="name" class="my-input" id="name" type="text" placeholder="" required>
           </div>
           <div class="mb-2">
-            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="email">
+            <label class="my-label" for="email">
               email
             </label>
             <input v-model="form.email" class="my-input" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
-            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
+            <label class="my-label" for="phone">
               phone
             </label>
             <input v-model="form.phone" class="my-input" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
-            <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="phone">
+            <label class="my-label" for="phone">
               message
             </label>
             <textarea v-model="form.message" rows="4" class="my-input" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
@@ -141,6 +141,6 @@ export default {
   }
 </script>
 
-<style> 
+<style > 
 
 </style>
