@@ -20,11 +20,11 @@
               </span>
             </ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Follow us on: <br>
-              <div class="flex flex-wrap">
-                <div class="">
+              <div class="flex flex-wrap flex-col">
+                <div class="mt-2">
                   <SocialIcon site="facebook">facebook</SocialIcon>
                 </div>
-                <div class="flex">
+                <div class="mt-2">
                   <SocialIcon site="instagram">instagram</SocialIcon>
                 </div>
               </div>

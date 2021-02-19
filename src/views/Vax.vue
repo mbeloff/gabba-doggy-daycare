@@ -48,7 +48,7 @@
           
 
           
-          <p >If you have any questions about our vaccination policy, just send a quick email to <Email class="break-all">woof@gabbadoggydaycare.com</Email> and we'll get back to you.</p>
+          <p >If you have any questions about our vaccination policy, just send a quick email to <Email class="break-all">{{email}}</Email> and we'll get back to you.</p>
         </div>
       </div>
 
@@ -58,7 +58,12 @@
 
 <script>
   export default {
-metaInfo: {
+    computed: {
+      email() {
+        return this.$store.state[this.$store.state.global.region].contact.email
+      }
+    },
+    metaInfo: {
     title: 'Vaccination Policy',
     meta: [
       {

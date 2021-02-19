@@ -75,7 +75,7 @@
       <li>
         <strong>Website</strong> refers to Gabba Doggy Daycare, accessible
         from
-        <router-link to="/" class="link-pink break-all">https://www.gabbadoggydaycare.com</router-link>
+        <router-link :to="{name: 'New Home', params: {region: this.$store.state.global.region}}" class="link-pink break-all">https://www.gabbadoggydaycare.com</router-link>
       </li>
       <li>
         <strong>You</strong> means the individual accessing or using the
@@ -120,7 +120,7 @@
     <p>
       When You access the Service by or through a mobile device, We may collect
       certain information automatically, including, but not limited to, the type
-      of mobile device You use, Your mobile device unique ID, the IP address of
+      of mobile device You use, the IP address of
       Your mobile device, Your mobile operating system, the type of mobile
       Internet browser You use, unique device identifiers and other diagnostic
       data.
@@ -421,10 +421,10 @@
     </p>
     <ul class="pl-6 list-disc list-outside">
       <li class="break-all">
-        By email: woof@gabbadoggydaycare.com
+        By email: {{ data.email }}
       </li>
       <li>
-        By mail: Gabba Doggy Daycare <br>46 Deshon St, Woolloongabba QLD 4102
+        By mail: {{data.name}} <br>{{data.street}}, {{data.suburb}} {{data.postcode}}
       </li>
     </ul>
   </div>
@@ -434,6 +434,11 @@
 
 <script>
 export default {
+  computed: {
+    data() {
+      return this.$store.state[this.$store.state.global.region].contact
+    }
+  },
   metaInfo: {
     title: 'Privacy Policy',
     meta: [
