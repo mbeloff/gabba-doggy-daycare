@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="bg-cover rounded-lg h-full col champ-pup order-1 lg:order-2 my-auto shadow">
-          <iframe :src="data.map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="lg:rounded-xl map"></iframe>
+          <iframe :src="data.map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="lg:rounded-xl map" title="Doggy daycare location map"></iframe>
         </div>
       </div>
     </div> 
