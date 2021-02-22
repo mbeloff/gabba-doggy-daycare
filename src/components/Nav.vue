@@ -17,7 +17,7 @@
         </svg>
       </button> -->
 
-      <button class="menu bg-pink-500 rounded focus:outline-pink" v-on:click="show = !show" :class="{ 'opened' : show}" onclick="this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+      <button id="menu-button" class="flex bg-pink-500 rounded focus:outline-pink" v-on:click="show = !show" :class="{ 'opened' : show}" onclick="this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
       <svg width="38" height="38" viewBox="0 0 100 100" class="transform transition " :class="{ 'rotate-90' : show}">
         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
         <path class="line line2" d="M 20,50 H 80" />
@@ -32,7 +32,7 @@
           <nav-item v-for="(item, i) in regionMenu" v-bind:item="item" :key="i" :style="{ order: item.order }"></nav-item>
         </div>
         <div class="flex flex-row flex-wrap justify-between my-3 sm:my-0">
-          <div class="self-center w-full text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
+          <div class="self-center w-full text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0 my-3">
             <button class="link-pink px-3" @click="showLogin()">Login</button>
             <router-link :to="{name: 'Sign-up'}" class="link-pink px-3" exact-active-class="text-pink-300 focus:outline-none">Create Account</router-link>
           </div>
@@ -182,13 +182,6 @@ import NavItem from '@/components/NavItem.vue'
     -webkit-transform-origin: 50% 100%;
   }
 
-.menu {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  padding: 0;
-}
 .line {
   fill: none;
   stroke: white;
