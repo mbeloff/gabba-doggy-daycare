@@ -8,7 +8,7 @@
       <div class="flex flex-wrap text-left">
         <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're at work.</p>
         <template>
-          <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container">
+          <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container order-1" :class="{ 'md:order-1 order-last' : card.type}">
             <div v-if="card.type !== 'image'" class="h-full px-4 py-8 bg-white rounded-lg shadow-sm card text-center" >
               <span class="fa-stack fa-2x">
                 <i class="text-blue-100 fas fa-circle fa-stack-2x"></i>
