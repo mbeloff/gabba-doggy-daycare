@@ -5,7 +5,7 @@
         <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold" @click="regionSelect('brisbane')">Brisbane</button>
         <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold" @click="regionSelect('adelaide')">Adelaide</button>
       </div> -->
-      <Nav class="z-20"/>
+      <Nav/>
     </div>
     <div class="pt-19 app-content" style="min-height: 50vh">
       <transition name="pagefade" mode="out-in">
