@@ -11,7 +11,7 @@
         <div class="mb-auto">
           <ul class="text font-bold list-none list-inside">
             <ListItem class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left">Address: <br> <span>{{data.name}} <br> {{data.street}}, <br>{{data.suburb}} <br>{{data.postcode}}</span> <br> </ListItem>
-            <ListItem v-if="data.phone" class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" :href="`tel:` + data.phone">{{data.phone}}</a></ListItem>
+            <ListItem v-if="data.phone" class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" :href="`tel:` + data.phone.replace(/\s+/g, '')">{{data.phone}}</a></ListItem>
             <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Email: <br> <span>
                 <Email class="break-all">{{data.email}}</Email>
               </span></ListItem>
