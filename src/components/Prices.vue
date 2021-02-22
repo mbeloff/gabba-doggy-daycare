@@ -23,9 +23,9 @@
       </div>
     </div>
 
-    <div class="text-center mt-4">
+    <div class=" mt-4">
       <p class="mb-2">To make a purchase, just <open-login class="link-pink">log in</open-login> to your account and click 'Purchase a Package'.</p>
-      <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, first login to your account and click 'request daycare'</p>
+      <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, you will also need to login and click 'request daycare'.</p>
     </div>
     <div id="extras-pricing" v-if="Object.keys(prices[region].extras).length !== 0">
       <Title class="text-center">
