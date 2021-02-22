@@ -5,7 +5,7 @@
       <div class="place-self-center space-y-3">
         <img class="mb-2" src="https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/q_auto,f_auto/v1/gddc/3daytrial.png" alt="">
         <span class="text-sm tracking-tight leading-">Free trial for dogs over 6 months only</span>
-       <router-link to="Sign-up" class="btn-blue text-xl w-full block text-center">Sign me up!</router-link>
+       <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full block text-center">Sign me up!</router-link>
       </div>
     </div>
     <div class="order-1 lg:order-2 col hero-pup bg-cover bg-center md:bg-top col-span-2">
