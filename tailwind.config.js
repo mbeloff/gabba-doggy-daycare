@@ -20,7 +20,9 @@ module.exports = {
     },
     extend: {
       outline: {
-        blue: ['2px dotted #3182ce', '2px']
+        blue: ['2px dotted #3182ce', '2px'],
+        white: ['2px dotted white', '2px'],
+        pink: ['2px dotted #ec4899', '2px']
       },
       animation: {
         'spin-slow': 'spin 1.5s linear infinite',
