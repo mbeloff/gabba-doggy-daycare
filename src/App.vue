@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
-      <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
-        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-blue" @click="regionSelect('brisbane')">Brisbane</button>
-        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold focus:outline-blue" @click="regionSelect('adelaide')">Adelaide</button>
-      </div>
+      <!-- <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
+        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold" @click="regionSelect('brisbane')">Brisbane</button>
+        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold" @click="regionSelect('adelaide')">Adelaide</button>
+      </div> -->
       <Nav class="z-20"/>
     </div>
     <div class="pt-19" style="margin-top: 72px; min-height: 50vh">
@@ -287,7 +287,7 @@
     }
 
     .my-input {
-      @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none
+      @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none placeholder-blue-400
     }
 
     .my-input:focus {
