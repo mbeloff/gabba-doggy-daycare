@@ -1,5 +1,6 @@
 <template>
   <nav class="relative flex flex-wrap items-center justify-between px-2 py-2 mx-auto bg-white shadow-lg lg:px-10">
+    <div class="bg-white absolute top-0 left-0 w-full h-full depth-fix"></div>
     <div class="flex items-center flex-1 self-stretch mr-2 text-blue-600 lg:mr-6 nav-brand">
 
       <!-- <img class="h-6 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon"> -->
@@ -30,8 +31,8 @@
         <div class="flex flex-col lg:flex-row  lg:flex-grow lg:space-y-0 ">
           <nav-item v-for="(item, i) in regionMenu" v-bind:item="item" :key="i" :style="{ order: item.order }"></nav-item>
         </div>
-        <div class="flex flex-row flex-wrap justify-between mt-4 sm:mt-0">
-          <div class="self-center w-full mb-5 text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
+        <div class="flex flex-row flex-wrap justify-between my-3 sm:mt-0">
+          <div class="self-center w-full text-center divide-x divide-pink-500 align-center lg:w-auto lg:mb-0">
             <button class="link-pink px-3" @click="showLogin()">Login</button>
             <router-link :to="{name: 'Sign-up'}" class="link-pink px-3" exact-active-class="text-pink-300 focus:outline-none">Create Account</router-link>
           </div>
@@ -142,14 +143,19 @@ import NavItem from '@/components/NavItem.vue'
   }
 </script>
 <style>
+.depth-fix {
+  z-index: -1
+}
+
 .droppy {
   top: 100%;
-  z-index: -1;
+  z-index: -2;
+  will-change: top opacity
 }
 
 .slide-leave-active,
 .slide-enter-active {
-  transition: top .75s ease, opacity 1s;
+  transition: top .6s ease, opacity .8s;
 }
 
 .slide-enter {

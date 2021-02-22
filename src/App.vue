@@ -7,7 +7,7 @@
       </div> -->
       <Nav class="z-20"/>
     </div>
-    <div class="pt-19" style="margin-top: 72px; min-height: 50vh">
+    <div class="pt-19 app-content" style="min-height: 50vh">
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
@@ -208,6 +208,14 @@
     }
   }
 </script>
+<style lang="scss">
+.app-content{
+  margin-top: 99px;
+  @media only screen and (min-width: 1024px) {
+     margin-top: 85px
+  }
+}
+</style>
 <style lang="postcss">
   .loc-active {
     background: white;
