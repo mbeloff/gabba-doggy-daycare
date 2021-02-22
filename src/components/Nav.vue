@@ -143,6 +143,10 @@ import NavItem from '@/components/NavItem.vue'
   }
 </script>
 <style>
+#menu-button > * {
+  pointer-events: none
+}
+
 .depth-fix {
   z-index: -1
 }
