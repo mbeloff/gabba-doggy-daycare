@@ -1,5 +1,5 @@
 <template>
-  <router-link tabindex="0" :to="{ name: item.link, params: {region: this.$store.state.global.region}}"   class="relative block lg:inline-block menu-item focus:outline-blue px-3 py-2 lg:py-0 focus:text-blue-500 hover:text-blue-500 font-bold" active-class="text-blue-500">{{item.label}}
+  <router-link tabindex="0" :to="{ name: item.link, params: {region: this.$store.state.global.region}}"   class="relative lg:inline-block menu-item focus:outline-blue mx-3 my-2 lg:my-0 focus:text-blue-500 hover:text-blue-500 font-bold" active-class="text-blue-500">{{item.label}}
   </router-link>
 
 </template>
