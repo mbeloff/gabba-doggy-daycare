@@ -1,11 +1,11 @@
 <template>
   <nav class="relative flex flex-wrap items-center justify-between px-2 py-2 mx-auto bg-white shadow-lg lg:px-10">
-    <router-link :to="{ name: 'Home'}" class="flex items-center flex-1 self-stretch mr-2 text-blue-600 lg:mr-6 focus:outline-blue nav-brand">
+    <div class="flex items-center flex-1 self-stretch mr-2 text-blue-600 lg:mr-6 nav-brand">
 
       <!-- <img class="h-6 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon"> -->
       <img class="h-full pr-3" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
 
-    </router-link>
+    </div>
     
     <div class="block lg:hidden" >
      
@@ -142,39 +142,39 @@ import NavItem from '@/components/NavItem.vue'
   }
 </script>
 <style>
-  .droppy {
-    top: 100%;
-    z-index: -1;
-  }
+.droppy {
+  top: 100%;
+  z-index: -1;
+}
 
-  .slide-leave-active,
-  .slide-enter-active {
-    transition: top .75s ease, opacity 1s;
-  }
+.slide-leave-active,
+.slide-enter-active {
+  transition: top .75s ease, opacity 1s;
+}
 
-  .slide-enter {
-    top: 0%;
-    opacity: 0;
-  }
+.slide-enter {
+  top: 0%;
+  opacity: 0;
+}
 
-  .slide-leave-to {
-    top: 0%;
-    opacity: 0;
-  }
+.slide-leave-to {
+  top: 0%;
+  opacity: 0;
+}
 
-  .nav-brand {
-    min-width: 200px !important;
-    max-width: 300px !important;
-  }
+.nav-brand {
+  min-width: 200px !important;
+  max-width: 300px !important;
+}
 
-  .wiggle2 {
-      animation: wiggle infinite 8s;
-      -webkit-animation: wiggle infinite 8s;
-      animation-delay: -2s;
-      -webkit-animation-delay: -3s;
-      transform-origin: 50% 100%;
-      -webkit-transform-origin: 50% 100%;
-    }
+.wiggle2 {
+    animation: wiggle infinite 8s;
+    -webkit-animation: wiggle infinite 8s;
+    animation-delay: -2s;
+    -webkit-animation-delay: -3s;
+    transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+  }
 
 .menu {
   background-color: transparent;
