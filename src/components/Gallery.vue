@@ -1,16 +1,16 @@
 <template>
   <div class="bg-gray-900 text-center">
     
-      <div class="container mx-auto gal pl-4">
-      <div v-for="(image, i) in slideList" :key="i" class="border-none">
+      <div class="container mx-auto flex flex-wrap">
 
-        <GalleryImg :class="{ 'opacity-100 transition-opacity' : toggle }" :img="image" class="w-full h-full bg-cover bg-center border-none opacity-0 " />
 
-      </div>
+        <GalleryImg v-for="(image, i) in slideList" :key="i" :img="image" class="flex-1 img" />
+
+
     </div>
     
     
-    <button @click="doSomething" class="btn-blue my-2">show me more dogs <i class="fas fa-heart wiggle"></i></button>
+    <button @click="refresh++" class="btn-blue my-2">show me more dogs <i class="fas fa-heart wiggle"></i></button>
   </div>
 </template>
 
@@ -26,7 +26,7 @@
       slideList: function () {
         let loopy = this.refresh
         let arr = this.slides
-        let n = 10
+        let n = 12
         var result = new Array(n),
           len = arr.length,
           taken = new Array(len);
@@ -41,13 +41,13 @@
         return result;
       }
     },
-    methods: {
-      doSomething() {
-        this.toggle = !this.toggle
-        setTimeout(() => {this.toggle = !this.toggle}, 1000)  
-        this.refresh++
-      }
-    },
+    // methods: {
+    //   doSomething() {
+    //     this.toggle = !this.toggle
+    //     setTimeout(() => {this.toggle = !this.toggle}, 1000)  
+    //     this.refresh++
+    //   }
+    // },
     data() {
       return {
         toggle: true,
@@ -139,40 +139,48 @@
   }
 
   .gal {
-    display: flex;
-    flex-wrap: wrap;
-
-    div {
-      height: 250px;
-      line-height: 250px;
-      // background: #EC985A;
-      // color: white;
-      margin: 0 1rem 1rem 0;
-      text-align: center;
-      font-family: system-ui;
-      font-weight: 900;
-      font-size: 2rem;
-      flex: 1 0 auto;
-
-      @media only screen and (max-width: 768px) {
-        height: 100px;
-        line-height: 250px;
-      }
-    }
-
-    @for $i from 1 through 10 {
-      div:nth-child(#{$i}) {
-        $h: (random(150) + 100) + px;
-        width: $h;
-      }
-    }
-    @media only screen and (max-width: 768px) {
-      @for $i from 1 through 10 {
-      div:nth-child(#{$i}) {
-        $h: (random(100) + 70) + px;
-        width: $h;
-      }
-    }
-    }
+    
   }
+
+  .img {
+    object-fit: cover
+  }
+
+  // .gal {
+  //   display: flex;
+  //   flex-wrap: wrap;
+
+  //   div {
+  //     height: 250px;
+  //     line-height: 250px;
+  //     // background: #EC985A;
+  //     // color: white;
+  //     margin: 0 1rem 1rem 0;
+  //     text-align: center;
+  //     font-family: system-ui;
+  //     font-weight: 900;
+  //     font-size: 2rem;
+  //     flex: 1 0 auto;
+
+  //     @media only screen and (max-width: 768px) {
+  //       height: 100px;
+  //       line-height: 250px;
+  //     }
+  //   }
+
+  //   @for $i from 1 through 10 {
+  //     div:nth-child(#{$i}) {
+  //       $h: (random(150) + 100) + px;
+  //       width: $h;
+  //     }
+  //   }
+  //   @media only screen and (max-width: 768px) {
+  //     @for $i from 1 through 10 {
+  //     div:nth-child(#{$i}) {
+  //       $h: (random(100) + 70) + px;
+  //       width: $h;
+  //     }
+  //   }
+  //   }
+  // }
 </style>

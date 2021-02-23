@@ -1,5 +1,5 @@
 <template>
-  <img :style="{ backgroundImage: imgUrl}">
+  <img :src="imgUrl" alt="">
 </template>
 
 <script>
@@ -9,8 +9,8 @@ export default {
   },
   computed: {
     imgUrl() {
-      return 'url(' + this.img + ')'
-      // return this.img
+      // return 'url(' + this.img + ')'
+      return this.img
     }
   }
 }
