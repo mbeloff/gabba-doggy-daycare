@@ -1,13 +1,16 @@
 <template>
   <div class="bg-gray-900 text-center">
-    <div class="container grid grid-cols-5 mx-auto">
+    
+      <div class="container mx-auto gal pl-4">
+      <div v-for="(image, i) in slideList" :key="i" class="border-none">
 
+        <GalleryImg :class="{ 'opacity-100 transition-opacity' : toggle }" :img="image" class="w-full h-full bg-cover bg-center border-none opacity-0 " />
 
-<div v-for="(image, i) in slideList" :key="i">
-<GalleryImg :img="image" class="h-64 w-full bg-cover" />
-</div>
+      </div>
     </div>
-    <button @click="refresh++" class="btn-blue my-2">show me more dogs <i class="fas fa-heart wiggle"></i></button>
+    
+    
+    <button @click="doSomething" class="btn-blue my-2">show me more dogs <i class="fas fa-heart wiggle"></i></button>
   </div>
 </template>
 
@@ -38,8 +41,16 @@
         return result;
       }
     },
+    methods: {
+      doSomething() {
+        this.toggle = !this.toggle
+        setTimeout(() => {this.toggle = !this.toggle}, 1000)  
+        this.refresh++
+      }
+    },
     data() {
       return {
+        toggle: true,
         refresh: 0,
         slides: [
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/01.jpg",
@@ -124,6 +135,44 @@
 
     to {
       opacity: 1;
+    }
+  }
+
+  .gal {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      height: 250px;
+      line-height: 250px;
+      // background: #EC985A;
+      // color: white;
+      margin: 0 1rem 1rem 0;
+      text-align: center;
+      font-family: system-ui;
+      font-weight: 900;
+      font-size: 2rem;
+      flex: 1 0 auto;
+
+      @media only screen and (max-width: 768px) {
+        height: 100px;
+        line-height: 250px;
+      }
+    }
+
+    @for $i from 1 through 10 {
+      div:nth-child(#{$i}) {
+        $h: (random(150) + 100) + px;
+        width: $h;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      @for $i from 1 through 10 {
+      div:nth-child(#{$i}) {
+        $h: (random(100) + 70) + px;
+        width: $h;
+      }
+    }
     }
   }
 </style>
