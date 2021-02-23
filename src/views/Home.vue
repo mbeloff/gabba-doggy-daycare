@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import Gallery from '@/components/Gallery.vue'
   import Hero from "@/components/Hero.vue"
   import Cards from "@/components/Cards.vue"
   import Slider from "@/components/Slider.vue"
@@ -44,8 +43,7 @@ import Gallery from '@/components/Gallery.vue'
     components: {
       Hero,
       Cards,
-      Slider,
-      Gallery
+      Slider
     },
     metaInfo: {
     title: 'Home',
