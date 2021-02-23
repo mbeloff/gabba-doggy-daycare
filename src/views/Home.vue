@@ -3,6 +3,7 @@
     <Hero></Hero>
     <Cards></Cards>
     <Slider></Slider> 
+    <Gallery></Gallery>
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
        <Title class="text-center"><template v-slot:small>{{ data.city }} Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template>
@@ -35,6 +36,7 @@
 </template>
 
 <script>
+import Gallery from '@/components/Gallery.vue'
   import Hero from "@/components/Hero.vue"
   import Cards from "@/components/Cards.vue"
   import Slider from "@/components/Slider.vue"
@@ -42,7 +44,8 @@
     components: {
       Hero,
       Cards,
-      Slider
+      Slider,
+      Gallery
     },
     metaInfo: {
     title: 'Home',
