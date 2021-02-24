@@ -27,7 +27,7 @@
         <div class="grid grid-cols-1 gap-x-20 px-4 md:grid-cols-3 lg:px-20">
           <div class="text-left md:col-span-2">
             <sign-up-info></sign-up-info>
-            <div class="grid grid-cols-1 gap-5 my-10 divide-pink-500 sm:grid-cols-2 sm:divide-x">
+            <div class=" grid grid-cols-1 gap-5 my-20 divide-pink-500 sm:grid-cols-2 sm:divide-x">
           <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="inline-block btn-blue">Create an Account</a></div>
           <div class="flex items-center text-left col"><open-login class="mx-auto text-center text-pink-500 align-center sm:text-left hover:underline sm:ml-5">I already have an account</open-login></div>
         </div>
