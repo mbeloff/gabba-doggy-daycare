@@ -98,9 +98,13 @@ const routes = [
     component: Privacy
   },
   {
-    path:"/*",
+    path:"/404",
     name: "NotFound",
     component: NotFound
+  },
+  {
+    path:"*",
+    redirect: "/404"
   }
 ]
 

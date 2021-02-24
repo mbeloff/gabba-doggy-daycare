@@ -3,7 +3,6 @@
     <Hero></Hero>
     <Cards></Cards>
     <Slider></Slider> 
-    <Gallery></Gallery>
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
        <Title class="text-center"><template v-slot:small>{{ data.city }} Dogs Love it Here</template>
           <template v-slot:big>More than just a day care</template>

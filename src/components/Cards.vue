@@ -45,21 +45,21 @@
             heading: "Exercise",
             desc: "Your pets get plenty of exercise with heaps of room to run around, ramps and obstacles, ball pits and more."
           },
-          {
-            icon: "fas fa-taxi",
-            heading: "Pet Taxi",
-            desc: "Save yourself a bit of rushing around. Our pet taxi is available for local pickups and dropoffs. Get in touch to check availability."
-          },
-          {
-            icon: "fas fa-user-unlock",
-            type: 'image',
-            img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_500/f_auto,q_auto/v1607553600/gddc/photos/03.jpg)"
-          },
-          {
-            icon: "fa-custom puppy",
-            heading: "Puppy Crèche",
-            desc: "Have a new puppy and don't want to leave them home alone to fret? Bring them along to our creche for non-stop tender, loving care."
-          }
+          // {
+          //   icon: "fas fa-taxi",
+          //   heading: "Pet Taxi",
+          //   desc: "Save yourself a bit of rushing around. Our pet taxi is available for local pickups and dropoffs. Get in touch to check availability."
+          // },
+          // {
+          //   icon: "fas fa-user-unlock",
+          //   type: 'image',
+          //   img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_500/f_auto,q_auto/v1607553600/gddc/photos/03.jpg)"
+          // },
+          // {
+          //   icon: "fa-custom puppy",
+          //   heading: "Puppy Crèche",
+          //   desc: "Have a new puppy and don't want to leave them home alone to fret? Bring them along to our creche for non-stop tender, loving care."
+          // }
         ]
       }
     }
