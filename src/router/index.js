@@ -38,10 +38,13 @@ const routes = [
     props: true,  
   },
   {
-    path: "/login/:region?",
+    path: "/login",
     name: "Login",
     component: Home,
-    props: true
+  },
+  {
+    path: "/login/*",
+    redirect: "/login"
   },
   {
     path: "/contact/:region?",
