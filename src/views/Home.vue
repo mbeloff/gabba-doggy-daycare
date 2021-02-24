@@ -73,15 +73,15 @@
         },
         {
           title: "Stimulating Environment",
-          desc: "Spacious play areas with balls, toys, ramps and obstacles."
+          desc: "Spacious play areas with balls, toys, ramps, obstacles, lawn and more."
         },
         {
-          title: "Flexible Options",
-          desc: "We offer half day and full day daycare pricing, as well as discounted packages."
+          title: "Pet Taxi",
+          desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff. Call us to check availability."
         },
         {
           title: "Grooming",
-          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services now available, with discounts for daycare guests. (Brisbane only)"
+          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services now available, with discounts for daycare guests."
         },        
       ]
     }
