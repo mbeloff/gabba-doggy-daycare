@@ -12,7 +12,7 @@
             <div v-if="card.type !== 'image'" class="h-full px-4 py-8 bg-white rounded-lg shadow-sm card text-center" >
               <span class="fa-stack fa-2x">
                 <i class="text-blue-100 fas fa-circle fa-stack-2x"></i>
-                <span class="fa-stack-1x text-blue-500" :class="card.icon"></span>
+                <span class="fa-stack-1x z-10" :class="card.icon"></span>                
               </span>
               <p class="my-3 font-bold text-blue-700">{{card.heading}}</p>
               <p class="text-gray-700 text-left">{{card.desc}}</p>
@@ -31,35 +31,20 @@
     data() {
       return {
         cards: [{
-            icon: "fas fa-tennis-ball",
+            icon: "fa-custom play",
             heading: "Play",
             desc: "Everyone plays differently. We have play areas with dogs matched by size and energy level, including a separate relaxed area for the old-timers :)"
           },
           {
-            icon: "fas fa-paw",
+            icon: "fa-custom friends",
             heading: "Socialise",
             desc: "Meet new human and fur-friends in a safe and supervised environment. We do our best to make sure everyone gets along at Gabba Doggy Daycare."
           },
           {
-            icon: "fas fa-dog-leashed",
+            icon: "fa-custom exercise",
             heading: "Exercise",
             desc: "Your pets get plenty of exercise with heaps of room to run around, ramps and obstacles, ball pits and more."
           },
-          // {
-          //   icon: "fas fa-taxi",
-          //   heading: "Pet Taxi",
-          //   desc: "Save yourself a bit of rushing around. Our pet taxi is available for local pickups and dropoffs. Get in touch to check availability."
-          // },
-          // {
-          //   icon: "fas fa-user-unlock",
-          //   type: 'image',
-          //   img: "url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_500/f_auto,q_auto/v1607553600/gddc/photos/03.jpg)"
-          // },
-          // {
-          //   icon: "fa-custom puppy",
-          //   heading: "Puppy Crèche",
-          //   desc: "Have a new puppy and don't want to leave them home alone to fret? Bring them along to our creche for non-stop tender, loving care."
-          // }
         ]
       }
     }
@@ -69,10 +54,31 @@
 <style lang="scss" scoped>
   .puppy {
     background-image: url(../assets/img/puppy.svg);
+    width: 100%;
+    height: 100%;
+  }
+  .friends {
+    background-image: url(../assets/img/icon-friends.svg);
+    width: 90%;
+    height: 90%;
+  }
+  .play {
+    background-image: url(../assets/img/icon-play.svg);
+    width: 105%;
+    height: 105%;
+    bottom: 1.5rem;
+    transform: rotate(3deg)
+  }
+  .exercise {
+    background-image: url(../assets/img/icon-exercise.svg);
+    width: 85%;
+    height: 85%;
+    bottom: .25rem;
   }
 
+
   .fa-custom {
-    background-size: 70% 70%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
   }
