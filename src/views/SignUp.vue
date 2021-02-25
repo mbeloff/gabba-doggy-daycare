@@ -18,17 +18,17 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-100 section">
+    <div class="tile section">
       <div class="container py-20 mx-auto">
         <div class="text-center">
           <Title>
-        <template #small>Already have an account?</template>
-        <template #big>Sign In Here</template>
-      </Title>
+            <template #small>Already have an account?</template>
+            <template #big>Sign In Here</template>
+          </Title>
         </div>
         <div class="mt-10 text-center">
-            <open-login class="inline-block text-xl btn-blue">Sign In</open-login>
-          </div>
+          <open-login class="inline-block text-xl btn-blue">Sign In</open-login>
+        </div>
       </div>
     </div>
   </div>
