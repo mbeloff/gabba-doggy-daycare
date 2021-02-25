@@ -1,6 +1,5 @@
 <template>
   <div class="">
-    <div >
       <div class="tile section" id="about">
         <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
           <div class="col y-5 md:my-20">
@@ -10,7 +9,6 @@
             </Title>
             <p class="mb-3">Gabba Doggy Daycare is now offering grooming as a standalone service, or to be combined with your daycare booking. Check our services and prices below.</p>
             <p class="mb-3">Grooming services can be requested online without an account. Just complete the form below.</p>
-            <!-- <p class="text-sm">To get discounted grooming, <router-link class="link-pink" :to="{ name: 'Sign-up' }">Create a Daycare Account</router-link> and purchase a daycare package.</p> -->
           </div>
           <div class="bg-cover rounded-xl col bath-pup">
           </div>
@@ -36,9 +34,7 @@
         <div  class="container px-4 py-20 mx-auto lg:px-20 xl:px-40 text-white"><p>sorry, grooming is not available at this location ({{ this.$route.params.region }}) yet. 
           </p>
           <p class="text-sm ">If you're looking for a different location, use the menu at the top of the screen</p></div>
-      </div>     
-    </div>
-    
+      </div>    
   </div>
 </template>
 

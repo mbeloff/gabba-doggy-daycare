@@ -9,21 +9,15 @@
     </div>
     
     <div class="block lg:hidden" >
-     
-      <!-- <button v-on:click="show = !show" class="flex items-center text-white focus:outline-none bg-pink-500 p-1 rounded focus:bg-pink-600 animate-ping-sm">
-        <svg class="w-6 h-6 fill-current"  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path :class="{ 'rotate-180' : show}" class="transform origin-center transition" d="M16.003 18.626l7.081-7.081L25 13.46l-8.997 8.998-9.003-9 1.917-1.916z" />
-        </svg>
-      </button> -->
 
-      <button id="menu-button" class="flex bg-pink-500 rounded focus:outline-pink" v-on:click="show = !show" :class="{ 'opened' : show}" onclick="this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-      <svg width="38" height="38" viewBox="0 0 100 100" class="transform transition " :class="{ 'rotate-90' : show}">
+    <button id="menu-button" class="flex bg-pink-500 rounded focus:outline-pink" v-on:click="show = !show" :class="{ 'opened' : show}" onclick="this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+      <svg width="38" height="38" viewBox="0 0 100 100">
         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
         <path class="line line2" d="M 20,50 H 80" />
         <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
       </svg>
     </button>
+    
 
     </div>
     <transition name="slide">
@@ -195,29 +189,29 @@ import NavItem from '@/components/NavItem.vue'
 }
 .line1 {
   stroke-dasharray: 60 207;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 .line2 {
   stroke-dasharray: 60 60;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 .line3 {
   stroke-dasharray: 60 207;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 .opened .line1 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 .opened .line2 {
   stroke-dasharray: 1 60;
   stroke-dashoffset: -30;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 .opened .line3 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 </style>
