@@ -3,8 +3,8 @@
     <div class="container px-3 py-20 mx-auto">
       <div class="w-full mx-auto">
         <Title>
-          <template v-slot:small>Vaccinations</template>
-          <template v-slot:big>What do I need to know?</template>
+          <template #small>Vaccinations</template>
+          <template #big>What do I need to know?</template>
         </Title>
         <div class="content">
           <p class="mb-4">Vaccinations are important to protect your dog and stop the spread of contagious illnesses and diseases. This is especially important in a doggy daycare and other spaces where many dogs are interacting.</p>

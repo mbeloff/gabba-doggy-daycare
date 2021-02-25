@@ -2,15 +2,17 @@
   <div>
     <p class="mb-5 font-bold text-blue-500">
       <slot name="small"></slot>
-      </p>
-      <h2 class="mb-10 text-3xl sm:text-5xl font-bold leading-tight tracking-tight"><slot name="big">Default Big</slot></h2>
+    </p>
+    <p class="mb-10 text-3xl sm:text-5xl font-bold leading-tight tracking-tight">
+      <slot name="big"></slot>
+    </p>
   </div>
 </template>
 
 <script>
-export default {
+  export default {
 
-}
+  }
 </script>
 
 <style>

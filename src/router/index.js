@@ -8,6 +8,7 @@ const Contact = () => import("../views/Contact.vue")
 const Vax = () => import("../views/Vax.vue")
 const Jobs = () => import("../views/Jobs.vue")
 const Grooming = () => import("../views/Grooming.vue")
+const Training = () => import("../views/Training.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -56,6 +57,12 @@ const routes = [
     path: "/register/:region?",
     name: "Register",
     component: Home,
+    props: true
+  },
+  {
+    path: "/training/:region?",
+    name: "Training",
+    component: Training,
     props: true
   },
   {

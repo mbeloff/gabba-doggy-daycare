@@ -1,17 +1,17 @@
 <template>
   <div class="">
     <div class="tile section" id="about">
-      <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
-        <div class="col y-5 md:my-20">
+      <div class="container grid grid-cols-1 gap-x-20 gap-y-10 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
+        <div class="col y-5 md:my-10">
           <Title>
-            <template v-slot:small>Check out what's available</template>
-            <template v-slot:big>Play, Relax, Socialise</template>
+            <template #small>Daycare</template>
+            <template #big>Play, Relax, Socialise</template>
           </Title>
           <p class="mb-4">Gabba Doggy Daycare offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day - not to mention heaps of room to run around, ball pits, toys, ramps and obstacles.
           </p><p class="mb-4"> We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Gabba Doggy Daycare is your pup's home away from home.</p>
           <p>Check out our daycare packages below, and make an account for easy online bookings and payments.</p>
         </div>
-        <div class="bg-cover rounded-xl col toy-pup">
+        <div class="bg-cover rounded-xl col toy-pup shadow-lg">
         </div>
       </div>
     </div>
@@ -20,8 +20,8 @@
       <div class="container py-20 mx-auto">
         <div class="text-center">
           <Title>
-            <template v-slot:small>Ready to sign up?</template>
-            <template v-slot:big>Before You Join</template>
+            <template #small>Ready to sign up?</template>
+            <template #big>Before You Join</template>
           </Title>
         </div>
         <div class="grid grid-cols-1 gap-x-20 px-4 md:grid-cols-3 lg:px-20">

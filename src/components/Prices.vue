@@ -2,8 +2,8 @@
   <div class="container px-2 py-20 mx-auto section" id="prices">
     <div id="daycare-pricing">
       <Title class="text-center">
-        <template v-slot:small>Price List</template>
-        <template v-slot:big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm <br> (Half Day - 5 hours)</span></template>
+        <template #small>Price List</template>
+        <template #big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm <br> (Half Day - 5 hours)</span></template>
       </Title>
 
       <div class="grid grid-cols-1 pt-5 gap-x-10">
@@ -29,7 +29,7 @@
     </div>
     <div id="extras-pricing" v-if="Object.keys(prices[region].extras).length !== 0">
       <Title class="text-center">
-        <template v-slot:big>Extras</template>
+        <template #big>Extras</template>
       </Title>
       <div class="grid grid-cols-1 pt-5 gap-x-10">
         <div v-for="(extra, i) in prices[region].extras" :key="i" class="mb-2 bg-white">

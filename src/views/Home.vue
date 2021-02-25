@@ -4,8 +4,8 @@
     <Cards></Cards>
     <Slider></Slider> 
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
-       <Title class="text-center"><template v-slot:small>{{ data.city }} Dogs Love it Here</template>
-          <template v-slot:big>More than just a day care</template>
+       <Title class="text-center"><template #small>{{ data.city }} Dogs Love it Here</template>
+          <template #big>More than just a day care</template>
           </Title>
       <div class="container grid grid-cols-1 gap-10 lg:gap-20 px-4 mx-auto lg:grid-cols-2 lg:px-10 lg:gap-y-0">
        

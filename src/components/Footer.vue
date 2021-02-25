@@ -54,10 +54,10 @@
 
               <ul class="space-y-2 md:space-y-1 list-none text-sm">
                 <li v-if="data.phone">
-                   <a class="focus:outline-white hover:underline text-yellow-300 text-3xl" :href="`tel:` + data.phone.replace(/\s+/g, '')"><i class="fas fa-phone-rotary mr-2"></i>{{data.phone}}</a>
+                   <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-2xl font-bold" :href="`tel:` + data.phone.replace(/\s+/g, '')"><i class="fad fa-mobile-alt mr-2"></i>{{data.phone}}</a>
                 </li>
              <li>
-               <a class="text-gray-300 hover:text-gray-100 focus:outline-white hover:underline break-all" :href="`mailto:` + data.email">{{data.email}}</a>
+               <a class="text-gray-400 focus:outline-white hover:text-yellow-300 break-all" :href="`mailto:` + data.email">{{data.email}}</a>
              </li>
               <li>
                 {{data.street}}, {{data.suburb}}, {{data.postcode}}

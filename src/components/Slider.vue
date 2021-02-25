@@ -7,7 +7,6 @@
             <img :src="slide" alt="">
           </swiper-slide>
         </swiper>
-
       </div>
     </div>
   </div>
@@ -34,6 +33,7 @@
     },
     data() {
       return {
+        loop: 0,
         pageLoaded: true,
         swiperOption: {
           slidesPerView: 'auto',
@@ -112,11 +112,25 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/831.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/832.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/833.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/01.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/02.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/03.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/04.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/05.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/06.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/07.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/08.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/09.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/10.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/11.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/12.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/13.jpg",          
         ]
       };
     },
     computed: {
       slideList: function () {
+        let y = this.loop
         let arr = this.slides
         let n = 10
         var result = new Array(n),
@@ -129,6 +143,7 @@
           result[n] = arr[x in taken ? taken[x] : x];
           taken[x] = --len in taken ? taken[len] : len;
         }
+        console.log('batch ' + y)
         return result;
       }
     },

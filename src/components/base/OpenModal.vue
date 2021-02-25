@@ -1,6 +1,6 @@
 <template>
   <button href="javascript:void(0);" @click="show()"
-    ><slot></slot></button>
+    ><slot/></button>
 </template>
 
 <script>

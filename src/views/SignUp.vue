@@ -4,8 +4,8 @@
       <div class="container py-20 mx-auto">
         <div class="text-center ">
           <Title>
-        <template v-slot:small>Are you new here?</template>
-        <template v-slot:big>New Client Registration</template>
+        <template #small>Are you new here?</template>
+        <template #big>New Client Registration</template>
       </Title>
         </div>
         <div class="w-full p-3 mx-auto text-lg leading-7 text-left text-gray-700 md:w-3/4 lg:w-2/3">
@@ -22,8 +22,8 @@
       <div class="container py-20 mx-auto">
         <div class="text-center">
           <Title>
-        <template v-slot:small>Already have an account?</template>
-        <template v-slot:big>Sign In Here</template>
+        <template #small>Already have an account?</template>
+        <template #big>Sign In Here</template>
       </Title>
         </div>
         <div class="mt-10 text-center">

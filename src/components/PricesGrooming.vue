@@ -2,8 +2,8 @@
   <div class="container px-2 py-20 mx-auto section lg:px-20 xl:px-40" id="prices">
     <div id="daycare-pricing">
       <Title class="text-center">
-        <template v-slot:small>Price List</template>
-        <template v-slot:big>Grooming <br><span class="text-base tracking-normal">Open from 7:30am - 2pm</span></template>
+        <template #small>Price List</template>
+        <template #big>Grooming <br><span class="text-base tracking-normal">Open from 7:30am - 2pm</span></template>
       </Title>
 
       <div class="grid grid-cols-1 pt-5 gap-x-10">

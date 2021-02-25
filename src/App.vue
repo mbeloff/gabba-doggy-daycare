@@ -13,16 +13,16 @@
       </transition>
       <Modal name="contact-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
-          <template v-slot:title>Got a Question?</template>
-          <template v-slot:body>
+          <template #title>Got a Question?</template>
+          <template #body>
             <RegisterInterest></RegisterInterest>
           </template>
         </modal-inner>
       </Modal>
       <Modal name="login-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
-          <template v-slot:title>Login</template>
-          <template v-slot:body>
+          <template #title>Login</template>
+          <template #body>
             <Login></Login>
           </template>
         </modal-inner>
@@ -212,7 +212,7 @@
 .app-content{
   margin-top: 99px;
   @media only screen and (min-width: 1024px) {
-     margin-top: 85px
+     margin-top: 96px
   }
 }
 </style>

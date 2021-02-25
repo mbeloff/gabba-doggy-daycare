@@ -2,20 +2,20 @@
   <div class="section tile">
     <div class="container py-32  px-2 mx-auto text-center">
       <Title>
-        <template v-slot:small>Your best friend's new favourite place</template>
-        <template v-slot:big>Gabba Doggy Daycare</template>
+        <template #small>Your best friend's new favourite place</template>
+        <template #big>Gabba Doggy Daycare</template>
       </Title>
       <div class="flex flex-wrap text-left">
         <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're at work.</p>
         <template>
           <div v-for="(card, i) in cards" :key="i" class="flex-grow p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container order-1" :class="{ 'md:order-1 order-last' : card.type}">
-            <div v-if="card.type !== 'image'" class="h-full px-4 py-8 bg-white rounded-lg shadow-sm card text-center" >
+            <div v-if="card.type !== 'image'" class="h-full py-8 bg-white rounded-lg shadow-md card text-center" >
               <span class="fa-stack fa-2x">
                 <i class="text-blue-100 fas fa-circle fa-stack-2x"></i>
                 <span class="fa-stack-1x z-10" :class="card.icon"></span>                
               </span>
-              <p class="my-3 font-bold text-blue-700">{{card.heading}}</p>
-              <p class="text-gray-700 text-left">{{card.desc}}</p>
+              <p class="my-3 font-bold text-blue-700 py-2">{{card.heading}}</p>
+              <p class="text-gray-700 text-left px-4">{{card.desc}}</p>
             </div>
             <div v-else class="h-full img-card bg-white rounded-lg shadow-lg card bg-cover bg-top" :style="{backgroundImage: card.img}">
             </div>

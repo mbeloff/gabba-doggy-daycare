@@ -2,15 +2,15 @@
   <div class="">
       <div class="tile section" id="about">
         <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
-          <div class="col y-5 md:my-20">
+          <div class="col y-5 md:my-10">
             <Title>
-              <template v-slot:big>So Fresh and So Clean</template>
-              <template v-slot:small>Grooming Services</template>
+              <template #big>So Fresh and So Clean</template>
+              <template #small>Grooming Services</template>
             </Title>
             <p class="mb-3">Gabba Doggy Daycare is now offering grooming as a standalone service, or to be combined with your daycare booking. Check our services and prices below.</p>
             <p class="mb-3">Grooming services can be requested online without an account. Just complete the form below.</p>
           </div>
-          <div class="bg-cover rounded-xl col bath-pup">
+          <div class="bg-cover rounded-xl col bath-pup shadow-lg">
           </div>
         </div>
       </div>
@@ -20,8 +20,8 @@
         <div class="container py-20 mx-auto">
           <div class="text-center">
             <Title>
-              <template v-slot:small>Ready for Pampering?</template>
-              <template v-slot:big>Book Here</template>
+              <template #small>Ready for Pampering?</template>
+              <template #big>Book Here</template>
             </Title>
           </div>
           <!-- <div class="form-wrapper mx-auto"> -->
