@@ -41,8 +41,8 @@
         
       </div>
     </transition>
-     <div class="w-full flex justify-between border-t mt-2" :class="{ 'pt-2' : phone }"><a class="font-bold tracking-wide text-xl" :href="`tel:` + phone.replace(/\s+/g, '') "><i class="fad fa-mobile-alt mr-2 wiggle2"></i>{{phone}}</a>
-      <open-modal class="inline-block rounded-full px-2 ml-2 text-lg" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal></div>
+     <div class="w-full flex justify-between border-t mt-2 " :class="{ 'pt-2' : phone }"><a class="font-bold tracking-wide text-xl hover:text-pink-500" :href="`tel:` + phone.replace(/\s+/g, '') "><i class="fad fa-mobile-alt mr-2 wiggle2"></i>{{phone}}</a>
+      <open-modal class="inline-block rounded-full px-2 ml-2 text-lg hover:text-pink-500" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal></div>
   </nav>
 </template>
 
@@ -71,10 +71,15 @@ import NavItem from '@/components/NavItem.vue'
           link: "Grooming",
           order: "3",
         },
+        // {
+        //   label: "Training",
+        //   link: "Training",
+        //   order: "4",
+        // },
         {
           label: "Contact",
           link: "Contact",
-          order: "4"
+          order: "5"
         }
           ],
           adelaide: [
