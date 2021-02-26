@@ -18,7 +18,6 @@
             <div class="px-2 relative"><span class="text-pink-500">{{service.price}}</span>
             </div>
           </div>
-          <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{service.desc}}</div> -->
         </div>
       </div>
     </div>
@@ -37,7 +36,6 @@
             <div class="flex-grow px-2" :class="{ 'opacity-50' : extra.soon == '- available soon'}">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
             <div class="px-2"><span class="text-pink-500">{{extra.price}}</span></div>
           </div>
-          <!-- <div class="z-10 w-10/12 p-2 pt-3 text-sm text-gray-600">{{extra.desc}}</div> -->
         </div>
       </div>
     </div>
@@ -47,11 +45,6 @@
 
 <script>
   export default {
-    // computed: {
-    //   prices() {
-    //     return this.data.prices[this.$store.state.global.region].prices
-    //   }
-    // },
     computed: {
       region() {
         return this.$store.state.global.region
