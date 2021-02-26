@@ -1,8 +1,8 @@
 <template>
   <div class="relative">
     <i class=" fas fa-2x opacity-0 fa-circle"></i>
-    <i class="fal fa-2x z-20 absolute  left-0 top-0 " :class="['fa-' + icon, 'text-' + color1]" :style="{transform: 'rotateZ(' + ranNum() + 'deg)' }"></i>
-    <i class="fas fa-2x absolute  left-1 top-1 z-10 transform scale-105" :class="['fa-' + icon, 'text-' + color2]" :style="{ transform : 'rotateZ(' + ranNum() + 'deg)' }"></i>
+    <i class="fal fa-2x z-20 absolute  left-0 top-0 text-blue-600" :class="'fa-' + icon" :style="{transform: 'rotateZ(' + ranNum() + 'deg)' }"></i>
+    <i class="fas fa-2x absolute left-1 top-1 z-10 transform scale-105 text-yellow-100" :class="'fa-' + icon" :style="{ transform : 'rotateZ(' + ranNum() + 'deg)' }"></i>
   </div>
 </template>
 
@@ -13,14 +13,6 @@
         type: String,
         default: 'fa-circle'
       },
-      color1: {
-        type: String,
-        default: 'blue-600'
-      },
-      color2: {
-        type: String,
-        default: 'yellow-100'
-      }
     },
     methods: {
       ranNum() {
