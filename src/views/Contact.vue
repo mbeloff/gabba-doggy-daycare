@@ -9,18 +9,38 @@
         <div class="flex-grow ml-auto mr-auto bg-no-repeat bg-contain md:ml-auto md:mr-0 phone-pup max-w-full" style="height: 350px; width: 350px">
         </div>
         <div class="mb-auto">
-          <ul class="text font-bold list-none list-inside">
-            <ListItem class="flex flex-col items-center mb-4 text-center md:items-start md:flex-row md:text-left">Address: <br> <span>{{data.name}} <br> {{data.street}}, <br>{{data.suburb}} <br>{{data.postcode}}</span> <br> </ListItem>
-            <ListItem v-if="data.phone" class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Phone: <br> <a class="font-normal link-pink" :href="`tel:` + data.phone.replace(/\s+/g, '')">{{data.phone}}</a></ListItem>
-            <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Email: <br> <span>
-                <Email class="break-all">{{data.email}}</Email>
-              </span></ListItem>
-            <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Message: <br> <span>
-                <open-modal class="link-pink">leave a message</open-modal>
-              </span>
-            </ListItem>
-            <ListItem class="flex flex-col items-center mb-4 text-center md:flex-row md:text-left md:items-start">Follow us on: <br>
-              <div class="flex flex-wrap flex-col">
+          <ul class="list-none list-inside text-center md:text-left">
+            <li class="flex flex-col mb-3">
+              <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
+                <IconStack :icon="'search-location'"></IconStack>
+                <p class="font-bold">Address:</p>
+              </div>
+              <span class="md:pl-11">{{data.name}} <br> {{data.street}}, {{data.suburb}} <br>{{data.postcode}}</span>
+            </li>
+            <li class="flex flex-col mb-3">
+              <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
+                <IconStack :icon="'phone-rotary'"></IconStack>
+                <a class="btn-blue" :href="`tel:` + data.phone.replace(/\s+/g, '')">Call Now</a>
+              </div>
+            </li>
+            <li class="flex flex-col mb-3">
+              <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
+                <IconStack :icon="'paper-plane'"></IconStack>
+                <a :href="`mailto:` + data.email" class="btn-blue">Email Us</a>
+              </div>
+            </li>
+            <li class="flex flex-col mb-3">
+              <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
+                <IconStack :icon="'comment-alt-smile'"></IconStack>
+                <open-modal class="btn-blue">Leave a Message</open-modal>
+              </div>
+            </li>
+            <li class="flex flex-col mb-3">
+              <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
+                <IconStack :icon="'heart'"></IconStack>
+                <p class="font-bold">Follow Us:</p>
+              </div>
+              <div class="flex flex-col mx-auto md:mx-0 gap-2 md:pl-11">
                 <div class="mt-2">
                   <SocialIcon site="facebook">facebook</SocialIcon>
                 </div>
@@ -28,16 +48,16 @@
                   <SocialIcon site="instagram">instagram</SocialIcon>
                 </div>
               </div>
-            </ListItem>
+            </li>
           </ul>
         </div>
 
       </div>
     </div>
 
-        <div class="w-full mx-auto py-1 bg-blue-500">
-          <iframe :src="data.map" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
+    <div class="w-full mx-auto py-1 bg-blue-500">
+      <iframe :src="data.map" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
 
   </div>
 </template>
@@ -46,7 +66,7 @@
   export default {
     computed: {
       data() {
-        return this.$store.state[this.$store.state.global.region].contact         
+        return this.$store.state[this.$store.state.global.region].contact
       }
     },
     metaInfo: {
