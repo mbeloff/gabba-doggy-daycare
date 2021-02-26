@@ -11,10 +11,22 @@
           <p class="mb-4">As we love to see all our guests happy, safe and healthy, we require everyone to be up to date with their vaccinations before they can book in for daycare.</p>
           <p class="mb-4">We ask that dogs are protected against the following:</p>
           <ul class="mb-4 ml-4 font-bold text-left list-none list-inside">
-            <ListItem>Distemper</ListItem>
-            <ListItem>Hepatitus</ListItem>
-            <ListItem>Parvovirus</ListItem>
-            <ListItem>Bordetella and Parainfluenza (Kennel/Canine Cough)</ListItem>
+            <li class="flex gap-2 mb-2">
+              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <p class="leading-tight">Distemper</p>
+            </li>
+            <li class="flex gap-2 mb-2">
+              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <p class="leading-tight">Hepatitus</p>
+            </li>
+            <li class="flex gap-2 mb-2">
+              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <p class="leading-tight">Parvovirus</p>
+            </li>
+            <li class="flex gap-2 mb-2">
+              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <p class="leading-tight">Bordetella and Parainfluenza (Kennel/Canine Cough)</p>
+            </li>
           </ul>
           <p class="mb-4">All these are covered by a <em>C5</em> Vaccination, or a combination of <em>C3</em> and <em>KC</em> vaccination. We recommend speaking with your regular vet if you're unsure whether your dog's vaccinations are up-to-date, as we'll need to know before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
           <div class="py-5 section">
