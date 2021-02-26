@@ -37,7 +37,7 @@ export default new Vuex.Store({
         city: "Adelaide",
         suburb: "Bowden",
         postcode: "5007 SA",
-        phone: ""
+        phone: "0423 487 302"
       },
     }
   },
