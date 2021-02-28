@@ -7,8 +7,8 @@
       </Title>
 
       <div class="grid grid-cols-1 pt-5 gap-x-10">
-        <div v-for="(service, i) in prices[region].daycare" :key="i" class="mb-2 bg-white" :class="[{ 'font-bold' : service.highlight}, 'order-' + service.order]">
-          <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 mt-4' : service.highlight}">
+        <div v-for="(service, i) in prices[region].daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
+          <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
             <div v-if="service.highlight">
               <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
               <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
@@ -58,31 +58,32 @@
               HalfDay: {
                 name: 'Half Day',
                 price: "$40",
-                order: '1'
-              },
-              HalfDayPack: {
-                name: "Half Day 10-pack",
-                // soon: " - valid for 3 months",
-                price: "$300",
-                order: '3'
+                
               },
               FullDay: {
                 name: 'Full Day',
                 price: "$50",
-                order: '2'
+                
               },
+              HalfDayPack: {
+                name: "Half Day 10-pack",
+                soon: " - valid for 3 months",
+                price: "$300",
+                
+              },
+              
               FullDayPack: {
                 name: "Full Day 10-pack",
-                // soon: " - valid for 3 months",
+                soon: " - valid for 3 months",
                 price: "$400",
-                order: '4'
+                
               },
               FullDayWeek: {
                 name: "Daycare Monday to Friday",
                 soon: " - unlimited daycare for one week",
                 price: "$150",
                 highlight: true,
-                order: '5'
+                
               },
             },
             extras: {
@@ -95,7 +96,7 @@
               },
               Excursion: {
                 name: "Group Excursion",
-                desc: "A 2-hour group adventure to the park, river or bay for a walk and some fresh air",
+                desc: "A group adventure to the park, river or bay for a walk and some fresh air",
                 soon: "- available soon",
                 price: "$20",
                 order: '2'
