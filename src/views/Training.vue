@@ -3,10 +3,10 @@
     <div class="tile">
       <div class="container grid grid-cols-1 gap-x-20 px-4 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
         <div class="col my-5 md:mt-10">
-          <Title>
+          <title-block>
             <template #small>Training</template>
             <template #big>Puppy School</template>          
-          </Title>
+          </title-block>
           <p class="mb-3">Give your pup a headstart in a fun and engaging environment. They will get acquainted with new people and animals and use this crucial stage of development to learn valuable skills that will benefit both pet and parent for years to come.</p>
           <p class="mb-3">In our well-rounded Puppy School program, your pet will get supervised play and learning with other dogs and puppies, group-training, as well as focused, one-on-one time with a trainer to develop essential skills.</p>
           <p class="mb-3">The cost of puppy school is $500 ($100 per week, for 5 weeks). This will give your pup one full day each week of combined daycare and puppy school training.</p>

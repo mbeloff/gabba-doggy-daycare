@@ -1,10 +1,10 @@
 <template>
   <div class="container px-2 py-20 mx-auto section" id="prices">
     <div id="daycare-pricing">
-      <Title class="text-center">
+      <title-block class="text-center">
         <template #small>Price List</template>
         <template #big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm <br> (Half Day - 5 hours)</span></template>
-      </Title>
+      </title-block>
 
       <div class="grid grid-cols-1 pt-5 gap-x-10">
         <div v-for="(service, i) in prices[region].daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
@@ -27,9 +27,9 @@
       <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, you will also need to login and click 'request daycare'.</p>
     </div>
     <div id="extras-pricing" v-if="Object.keys(prices[region].extras).length !== 0">
-      <Title class="text-center">
+      <title-block class="text-center">
         <template #big>Extras</template>
-      </Title>
+      </title-block>
       <div class="grid grid-cols-1 pt-5 gap-x-10">
         <div v-for="(extra, i) in prices[region].extras" :key="i" class="mb-2 bg-white">
           <div class="flex bg-gray-100 rounded-lg">
@@ -44,7 +44,9 @@
 </template>
 
 <script>
+import TitleBlock from './base/TitleBlock.vue'
   export default {
+  components: { TitleBlock },
     computed: {
       region() {
         return this.$store.state.global.region

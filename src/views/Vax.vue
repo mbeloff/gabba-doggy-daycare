@@ -2,10 +2,10 @@
   <div class="section">
     <div class="container px-3 py-20 mx-auto">
       <div class="w-full mx-auto">
-        <Title>
+        <title-block>
           <template #small>Vaccinations</template>
           <template #big>What do I need to know?</template>
-        </Title>
+        </title-block>
         <div class="content">
           <p class="mb-4">Vaccinations are important to protect your dog and stop the spread of contagious illnesses and diseases. This is especially important in a doggy daycare and other spaces where many dogs are interacting.</p>
           <p class="mb-4">As we love to see all our guests happy, safe and healthy, we require everyone to be up to date with their vaccinations before they can book in for daycare.</p>
@@ -60,7 +60,7 @@
           
 
           
-          <p >If you have any questions about our vaccination policy, just send a quick email to <Email class="break-all">{{email}}</Email> and we'll get back to you.</p>
+          <p >If you have any questions about our vaccination policy, just send a quick email to <link-email class="break-all">{{email}}</link-email> and we'll get back to you.</p>
         </div>
       </div>
 

@@ -3,10 +3,10 @@
       <div class="tile section" id="about">
         <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
           <div class="col y-5 md:my-10">
-            <Title>
+            <title-block>
               <template #big>So Fresh and So Clean</template>
               <template #small>Grooming Services</template>
-            </Title>
+            </title-block>
             <p class="mb-3">Gabba Doggy Daycare is now offering grooming as a standalone service, or to be combined with your daycare booking. Check our services and prices below.</p>
             <p class="mb-3">Grooming services can be requested online without an account. Just complete the form below.</p>
           </div>
@@ -15,17 +15,17 @@
         </div>
       </div>
       <div v-if="hasGrooming">
-        <PricesGrooming></PricesGrooming>
+        <section-prices-grooming></section-prices-grooming>
       <div class="section tile" id="book">
         <div class="container py-20 mx-auto">
           <div class="text-center">
-            <Title>
+            <title-block>
               <template #small>Ready for Pampering?</template>
               <template #big>Book Here</template>
-            </Title>
+            </title-block>
           </div>
           <!-- <div class="form-wrapper mx-auto"> -->
-          <GroomingForm></GroomingForm>
+          <form-grooming></form-grooming>
           <!-- </div>         -->
         </div>
       </div>
@@ -39,8 +39,8 @@
 </template>
 
 <script>
-  import PricesGrooming from '@/components/PricesGrooming.vue'
-  import GroomingForm from '@/components/GroomingForm.vue'
+  import SectionPricesGrooming from '@/components/SectionPricesGrooming.vue'
+  import FormGrooming from '@/components/FormGrooming.vue'
   export default {
     computed: {
       hasGrooming() {
@@ -56,8 +56,8 @@
       }]
     },
     components: {
-      PricesGrooming,
-      GroomingForm
+      SectionPricesGrooming,
+      FormGrooming
     },
   }
 </script>

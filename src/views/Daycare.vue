@@ -3,10 +3,10 @@
     <div class="tile section" id="about">
       <div class="container grid grid-cols-1 gap-x-20 gap-y-10 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-10">
-          <Title>
+          <title-block>
             <template #small>Daycare</template>
             <template #big>Play, Relax, Socialise</template>
-          </Title>
+          </title-block>
           <p class="mb-4">Gabba Doggy Daycare offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day - not to mention heaps of room to run around, ball pits, toys, ramps and obstacles.
           </p><p class="mb-4"> We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Gabba Doggy Daycare is your pup's home away from home.</p>
           <p>Check out our daycare packages below, and make an account for easy online bookings and payments.</p>
@@ -15,18 +15,18 @@
         </div>
       </div>
     </div>
-    <Prices class="lg:px-20"></Prices>
+    <section-prices class="lg:px-20"></section-prices>
     <div class="section tile"  id="enrol">
       <div class="container py-20 mx-auto">
         <div class="text-center">
-          <Title>
+          <title-block>
             <template #small>Ready to sign up?</template>
             <template #big>Before You Join</template>
-          </Title>
+          </title-block>
         </div>
         <div class="grid grid-cols-1 gap-x-20 px-4 md:grid-cols-3 lg:px-20">
           <div class="text-left md:col-span-2">
-            <sign-up-info></sign-up-info>
+            <section-signup></section-signup>
             <div class=" grid grid-cols-1 gap-5 my-20 divide-pink-500 sm:grid-cols-2 sm:divide-x">
           <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="inline-block btn-blue">Create an Account</a></div>
           <div class="flex items-center text-left col"><open-login class="mx-auto text-center text-pink-500 align-center sm:text-left hover:underline sm:ml-5">I already have an account</open-login></div>
@@ -42,8 +42,8 @@
 </template>
 
 <script>
-  import SignUpInfo from '@/components/SignUpInfo.vue'
-  import Prices from '@/components/Prices.vue'
+  import SectionSignup from '@/components/SectionSignup.vue'
+  import SectionPrices from '@/components/SectionPrices.vue'
   export default {
     metaInfo: {
     title: 'About Day Care',
@@ -57,7 +57,7 @@
     ]
   },
     components: {
-      SignUpInfo, Prices
+      SectionSignup, SectionPrices
     },
   }
 </script>

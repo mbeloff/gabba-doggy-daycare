@@ -4,8 +4,8 @@
     <div class="flex items-center flex-1 self-stretch mr-2 text-blue-600 lg:mr-6 nav-brand">
 
       <!-- <img class="h-6 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon"> -->
-      <router-link class="h-full" :to="{name: 'Home'}"><img class="h-full" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare"></router-link> 
 
+      <router-link class="h-full" :to="{name: 'Home'}"><img class="h-full" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare"></router-link> 
     </div>
     
     <div class="block lg:hidden" >

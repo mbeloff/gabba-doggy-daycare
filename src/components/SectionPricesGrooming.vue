@@ -1,10 +1,10 @@
 <template>
   <div class="container px-2 py-20 mx-auto section lg:px-20 xl:px-40" id="prices">
     <div id="daycare-pricing">
-      <Title class="text-center">
+      <title-block class="text-center">
         <template #small>Price List</template>
         <template #big>Grooming <br><span class="text-base tracking-normal">Open from 7:30am - 2pm</span></template>
-      </Title>
+      </title-block>
 
       <div class="grid grid-cols-1 pt-5 gap-x-10">
         <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">

@@ -1,11 +1,15 @@
 <template>
   <div id="app">
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
+
+<!--// CITY SELECT // -->
+
       <!-- <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
         <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold" @click="regionSelect('brisbane')">Brisbane</button>
         <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold" @click="regionSelect('adelaide')">Adelaide</button>
       </div> -->
-      <Nav/>
+
+      <nav-bar></nav-bar>
     </div>
     <div class="pt-19 app-content" style="min-height: 50vh">
       <transition name="pagefade" mode="out-in">
@@ -15,7 +19,7 @@
         <modal-inner>
           <template #title>Got a Question?</template>
           <template #body>
-            <RegisterInterest></RegisterInterest>
+            <form-inquiry></form-inquiry>
           </template>
         </modal-inner>
       </Modal>
@@ -23,24 +27,24 @@
         <modal-inner>
           <template #title>Login</template>
           <template #body>
-            <Login></Login>
+            <form-login></form-login>
           </template>
         </modal-inner>
       </Modal>
     </div>
 
     <div class="footer-wrapper">
-      <Footer></Footer>
+      <section-footer></section-footer>
     </div>
   </div>
 </template>
 
 <script>
-  import Nav from './components/Nav.vue'
-  import Footer from './components/Footer.vue'
+  import NavBar from './components/NavBar.vue'
+  import SectionFooter from './components/SectionFooter.vue'
   import ModalInner from './components/ModalInner.vue'
-  import RegisterInterest from '@/components/RegisterInterest.vue'
-  import Login from '@/components/Login.vue'
+  import FormInquiry from '@/components/FormInquiry.vue'
+  import FormLogin from '@/components/FormLogin.vue'
   export default {
     data() {
       return {
@@ -119,11 +123,11 @@
     },
     name: 'App',
     components: {
-      Nav,
-      Footer,
+      NavBar,
+      SectionFooter,
       ModalInner,
-      RegisterInterest,
-      Login,
+      FormInquiry,
+      FormLogin,
     },
     metaInfo: {
       title: 'Home',
@@ -255,7 +259,7 @@
   }
   
   .pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to bottom right, rgba(0, 153, 255, 0.63), rgb(212, 232, 255));
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='black' fill-opacity='.08' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to bottom right, rgba(0, 153, 255, 0.63), rgb(212, 232, 255));
     background-size: 5px 5px, cover;
 }
 

@@ -94,14 +94,6 @@ const routes = [
     component: Jobs,
     props: true
   },
-  // {
-  //   path: "/shop",
-  //   name: "Shop",
-  //   beforeEnter() {location.href = "https://www.gabbadoggydaycareshop.com/"}
-
-  // haven't tested -> window.open("https://www.gabbadoggydaycareshop.com/", "_blank")
-
-  // },
   {
     path: "/privacy",
     name: "Privacy",
@@ -132,8 +124,7 @@ const router = new VueRouter({
     //       resolve({ selector: to.hash, behavior: 'smooth', offset: {x: 0, y: 25} })
     //     }, 350)
     //   })
-    //   }
-     
+    //   }     
     // }
     if (savedPosition) {
       return new Promise((resolve) => {

@@ -3,13 +3,13 @@
     <div class="section">
       <div class="container py-20 mx-auto">
         <div class="text-center ">
-          <Title>
-        <template #small>Are you new here?</template>
-        <template #big>New Client Registration</template>
-      </Title>
+          <title-block>
+            <template #small>Are you new here?</template>
+            <template #big>New Client Registration</template>
+          </title-block>
         </div>
         <div class="w-full p-3 mx-auto text-lg leading-7 text-left text-gray-700 md:w-3/4 lg:w-2/3">
-          <sign-up-info></sign-up-info>
+          <section-signup></section-signup>
           
           <div class="mt-10 text-center">
             <a href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" target="_blank" rel="noopener" class="inline-block text-xl btn-blue">Create an Account</a>
@@ -21,10 +21,10 @@
     <div class="tile section">
       <div class="container py-20 mx-auto">
         <div class="text-center">
-          <Title>
+          <title-block>
             <template #small>Already have an account?</template>
             <template #big>Sign In Here</template>
-          </Title>
+          </title-block>
         </div>
         <div class="mt-10 text-center">
           <open-login class="inline-block text-xl btn-blue">Sign In</open-login>
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import SignUpInfo from '@/components/SignUpInfo.vue'
+import SectionSignup from '@/components/SectionSignup.vue'
   export default {
     metaInfo: {
     title: 'Create an Account',
@@ -49,7 +49,7 @@ import SignUpInfo from '@/components/SignUpInfo.vue'
     ]
   },
     components: {
-      SignUpInfo
+      SectionSignup
     },
     
   }

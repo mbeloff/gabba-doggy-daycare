@@ -1,12 +1,12 @@
 <template>
   <div class="section grid content-center sm:content-start">
     <div class="container py-20 mx-auto px-2 text-center">
-      <Title class="text-center">
+      <title-block class="text-center">
         <template #small>Love Working With Dogs?</template>
         <template #big>Job Opportunities</template>
-      </Title>
+      </title-block>
       <p class="jobs-outter"><span class="jobs">Sorry, we have no vacant positions at the moment.</span></p>
-      <p class="text-sm">Still want to spend time with lots of dogs? <Email>Email Us</Email> to enquire about a volunteer position.</p>
+      <p class="text-sm">Still want to spend time with lots of dogs? <link-email>Email Us</link-email> to enquire about a volunteer position.</p>
     </div>    
   </div>
 </template>

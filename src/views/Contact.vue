@@ -1,10 +1,10 @@
 <template>
   <div class="section">
     <div class="container py-20 mx-auto">
-      <Title class="text-center">
+      <title-block class="text-center">
         <template #small>Get in Touch</template>
         <template #big>Contact Us</template>
-      </Title>
+      </title-block>
       <div class="grid grid-cols-1 px-4 md:grid-cols-2">
         <div class="flex-grow ml-auto mr-auto bg-no-repeat bg-contain md:ml-auto md:mr-0 phone-pup max-w-full" style="height: 350px; width: 350px">
         </div>

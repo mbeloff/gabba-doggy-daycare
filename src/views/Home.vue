@@ -1,19 +1,19 @@
 <template>
   <div>
-    <Hero></Hero>
-    <Cards></Cards>
-    <Slider></Slider> 
+    <section-hero></section-hero>
+    <section-cards></section-cards>
+    <section-slider></section-slider> 
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
-       <Title class="text-center"><template #small>{{ data.city }} Dogs Love it Here</template>
+       <title-block class="text-center">
+          <template #small>{{ data.city }} Dogs Love it Here</template>
           <template #big>More than just a day care</template>
-          </Title>
+        </title-block>
       <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-4 mx-auto lg:grid-cols-2 lg:px-10 lg:gap-y-0">
-       
-         <div class="col order-2 lg:order-1">
+        <div class="col order-2 lg:order-1">
           <ul class="text-left list-disc list-outside py-10">   
             <li class="grid w-full mb-5"  v-for="(item, i) in features" :key="i">
               <div class="flex gap-3 items-center">
-                <IconStack :icon="item.icon"></IconStack>           
+                <icon-stack :icon="item.icon"></icon-stack>           
                 <p class="font-bold text-blue-700">{{item.title}}</p>
                 </div>
               <p class="ml-11">{{item.desc}}</p>
@@ -36,14 +36,14 @@
 </template>
 
 <script>
-  import Hero from "@/components/Hero.vue"
-  import Cards from "@/components/Cards.vue"
-  import Slider from "@/components/Slider.vue"
+  import SectionHero from "@/components/SectionHero.vue"
+  import SectionCards from "@/components/SectionCards.vue"
+  import SectionSlider from "@/components/SectionSlider.vue"
   export default {
     components: {
-      Hero,
-      Cards,
-      Slider
+      SectionHero,
+      SectionCards,
+      SectionSlider
     },
     metaInfo: {
     title: 'Home',
