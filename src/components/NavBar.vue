@@ -68,11 +68,11 @@
               link: "Grooming",
               order: "3",
             },
-            // {
-            //   label: "Training",
-            //   link: "Training",
-            //   order: "4",
-            // },
+            {
+              label: "Training",
+              link: "Training",
+              order: "4",
+            },
             {
               label: "Contact",
               link: "Contact",

@@ -4,10 +4,10 @@
 
 <!--// CITY SELECT // -->
 
-      <!-- <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
+      <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
         <button title="GDDC Brisbane" :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
         <button title="GDDC Adelaide" :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
-      </div> -->
+      </div>
 
       <nav-bar></nav-bar>
     </div>
@@ -325,5 +325,9 @@
   .fade-enter,
   .fade-leave-to {
     opacity: 0;
+  }
+
+  .avoid-clicks {
+    pointer-events: none;
   }
 </style>
