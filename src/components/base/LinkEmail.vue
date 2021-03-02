@@ -1,5 +1,5 @@
 <template>
-  <a class="link-pink" :href="`mailto:` + this.email"><slot></slot></a>
+  <a :href="`mailto:` + this.email"><slot></slot></a>
 </template>
 
 <script>

@@ -60,7 +60,7 @@
           
 
           
-          <p >If you have any questions about our vaccination policy, just send a quick email to <link-email class="break-all">{{email}}</link-email> and we'll get back to you.</p>
+          <p >If you have any questions about our vaccination policy, just send a quick email to <link-email class="break-all link-pink">{{email}}</link-email> and we'll get back to you.</p>
         </div>
       </div>
 

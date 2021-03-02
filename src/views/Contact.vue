@@ -12,40 +12,40 @@
           <ul class="list-none list-inside text-center md:text-left">
             <li class="flex flex-col mb-3">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
-                <IconStack :icon="'search-location'"></IconStack>
+                <icon-stack :icon="'search-location'"></icon-stack>
                 <p class="font-bold">Address:</p>
               </div>
               <span class="md:pl-11">{{data.name}} <br> {{data.street}}, {{data.suburb}} <br>{{data.postcode}}</span>
             </li>
             <li class="flex flex-col mb-3">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
-                <IconStack :icon="'phone-rotary'"></IconStack>
-                <a class="btn-blue" :href="`tel:` + data.phone.replace(/\s+/g, '')">Call Now</a>
+                <icon-stack :icon="'phone-rotary'"></icon-stack>
+                <a class="btn-blue" :href="`tel:` + removeSpaces(data.phone)">Call Now</a>
               </div>
             </li>
             <li class="flex flex-col mb-3">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
-                <IconStack :icon="'paper-plane'"></IconStack>
+                <icon-stack :icon="'paper-plane'"></icon-stack>
                 <a :href="`mailto:` + data.email" class="btn-blue">Email Us</a>
               </div>
             </li>
             <li class="flex flex-col mb-3">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
-                <IconStack :icon="'comment-alt-smile'"></IconStack>
+                <icon-stack :icon="'comment-alt-smile'"></icon-stack>
                 <open-modal class="btn-blue">Leave a Message</open-modal>
               </div>
             </li>
             <li class="flex flex-col mb-3">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
-                <IconStack :icon="'heart'"></IconStack>
+                <icon-stack :icon="'heart'"></icon-stack>
                 <p class="font-bold">Follow Us:</p>
               </div>
               <div class="flex flex-col mx-auto md:mx-0 gap-2 md:pl-11">
                 <div class="mt-2">
-                  <SocialIcon site="facebook">facebook</SocialIcon>
+                  <social-icon site="facebook">facebook</social-icon>
                 </div>
                 <div class="mt-2">
-                  <SocialIcon site="instagram">instagram</SocialIcon>
+                  <social-icon site="instagram">instagram</social-icon>
                 </div>
               </div>
             </li>
