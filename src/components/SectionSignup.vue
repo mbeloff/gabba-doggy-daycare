@@ -12,7 +12,7 @@
               <li class="flex gap-4 mb-2">
                 <icon-stack :icon="'smile-plus'"></icon-stack>Friendly with people and other dogs</li>
             </ul>
-            <p class="mb-3">Just <a class="link-pink" :href="`tel:` + phone">give us a call</a> or <open-modal class="link-pink">message us</open-modal> if you have any questions.</p>
+            <p class="mb-3">Just <a class="link-pink" :href="`tel:` + removeSpaces(phone)">give us a call</a> or <open-modal class="link-pink">message us</open-modal> if you have any questions.</p>
     </div>
 </template>
 
@@ -20,7 +20,7 @@
 export default {
   computed: {
     phone() {
-      return this.$store.state[this.$store.state.global.region].contact.phone.replace(/\s+/g, '')
+      return this.$store.state[this.$store.state.global.region].contact.phone
     }
   }
 }

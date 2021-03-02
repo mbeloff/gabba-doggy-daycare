@@ -54,6 +54,13 @@ requireComponent.keys().forEach(fileName => {
   )
 })
 
+Vue.mixin({
+  methods:
+  {
+    removeSpaces: str => str.replace(/\s+/g, '')
+  }
+})
+
 Vue.use(vueGtm, {
   id: "GTM-KS5N5P7",
   defer: false, // defaults to false. Script can be set to `defer` to increase page-load-time at the cost of less accurate results (in case visitor leaves before script is loaded, which is unlikely but possible)
