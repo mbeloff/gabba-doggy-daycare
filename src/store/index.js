@@ -11,6 +11,7 @@ export default new Vuex.Store({
     },
     brisbane: {
       hasGrooming: true,
+      hasTraining: true,
       contact: {
         openTime: "6:30am",
         closeTIme: "6:30pm",
@@ -27,9 +28,10 @@ export default new Vuex.Store({
     },
     adelaide: {
       hasGrooming: false,
+      hasTraining: false,
       contact: {
         email: "adelaide@gabbadoggydaycare.com",
-        openTime: "6:30am",
+        openTime: "7:00am",
         closeTIme: "6:30pm",
         name: "Gabba Doggy Daycare Bowden",
         map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.1497711006255!2d138.57764031523757!3d-34.90269078038304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0c8c9c90eac39%3A0x6d46df845e15728b!2s86%20Gibson%20St%2C%20Bowden%20SA%205007!5e0!3m2!1sen!2sau!4v1613522591272!5m2!1sen!2sau",

@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div class="tile">
+  <div class="h-full">
+    <div v-if="hasTraining">
+      <div class="tile">
       <div class="container grid grid-cols-1 gap-x-20 px-4 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
         <div class="col my-5 md:mt-10">
           <title-block>
@@ -38,9 +39,9 @@
         <div class="col my-5 md:mt-10 md:order-2">
           <title-block>
             <template #small>Problem Behaviours</template>
-            <template #big>Behaviour Consults</template>
+            <template #big>Dog Behaviour Consults</template>
           </title-block>
-          <p class="mb-3">Book a behavioural consult to assess and assist with any disruptive behaviours your dog may exhibit. Using force-free training methods, we will work together with dog and owner to help alleviate behavioural concerns for a more calm and stress-free home.</p>
+          <p class="mb-3">Book a behaviour consult to assess and assist with any disruptive behaviours your dog may exhibit. Using force-free training methods, we will work together with dog and owner to help alleviate behavioural concerns for a more calm and stress-free home. We will also give you the knowledge to better understand and manage your dog's behaviour in the long term.</p>
           <p class="mb-3">Let us know about any concerns you are having with your dogs behaviour.</p>
         </div>
         <div>
@@ -64,7 +65,7 @@
                   Other disruptive behaviours
                 </li>
               </ul>
-              <button class="btn-blue text-sm uppercase mt-4">book behavioural consult</button>
+              <button class="btn-blue text-sm uppercase mt-4">book a behaviour consult</button>
             </div>
           </div>
         </div>
@@ -75,7 +76,7 @@
       <div class="container grid grid-cols-1 gap-x-20 px-4 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
         <div class="col my-5 md:mt-10">
           <title-block>
-            <template #small>Training</template>
+            <template #small>Little Ones</template>
             <template #big>Puppy School</template>
           </title-block>
           <p class="mb-3">Give your pup a headstart in a fun and engaging environment. They will get acquainted with new people and animals and use this crucial stage of development to learn valuable skills that will benefit both pet and parent for years to come.</p>
@@ -116,6 +117,14 @@
 
       </div>
     </div>
+    </div>
+    <div v-else class="bg-blue-500 h-full">
+      <div class="container px-4 py-20 mx-auto lg:px-20 xl:px-40 text-white">
+        <p>sorry, training is not available at this location ({{ this.$route.params.region }}) yet.
+        </p>
+        <p class="text-sm ">If you're looking for a different location, use the menu at the top of the screen</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -132,6 +141,9 @@
     computed: {
       phone() {
         return this.$store.state[this.$store.state.global.region].contact.phone
+      },
+      hasTraining() {
+        return this.$store.state[this.$route.params.region].hasTraining
       }
     },
     data() {

@@ -1,5 +1,6 @@
 <template>
-  <div class="">
+  <div class="h-full">
+    <div v-if="hasGrooming">
       <div class="tile section" id="about">
         <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
           <div class="col y-5 md:my-10">
@@ -14,27 +15,31 @@
           </div>
         </div>
       </div>
-      <div v-if="hasGrooming">
+      <div>
         <section-prices-grooming></section-prices-grooming>
-      <div class="section tile" id="book">
-        <div class="container py-20 mx-auto">
-          <div class="text-center">
-            <title-block>
-              <template #small>Ready for Pampering?</template>
-              <template #big>Book Here</template>
-            </title-block>
+        <div class="section tile" id="book">
+          <div class="container py-20 mx-auto">
+            <div class="text-center">
+              <title-block>
+                <template #small>Ready for Pampering?</template>
+                <template #big>Book Here</template>
+              </title-block>
+            </div>
+            <!-- <div class="form-wrapper mx-auto"> -->
+            <form-grooming></form-grooming>
+            <!-- </div>         -->
           </div>
-          <!-- <div class="form-wrapper mx-auto"> -->
-          <form-grooming></form-grooming>
-          <!-- </div>         -->
         </div>
       </div>
+    </div>
+
+    <div v-else class="bg-blue-500 h-full">
+      <div class="container px-4 py-20 mx-auto lg:px-20 xl:px-40 text-white">
+        <p>sorry, grooming is not available at this location ({{ this.$route.params.region }}) yet.
+        </p>
+        <p class="text-sm ">If you're looking for a different location, use the menu at the top of the screen</p>
       </div>
-      <div v-else class="bg-blue-500">
-        <div  class="container px-4 py-20 mx-auto lg:px-20 xl:px-40 text-white"><p>sorry, grooming is not available at this location ({{ this.$route.params.region }}) yet. 
-          </p>
-          <p class="text-sm ">If you're looking for a different location, use the menu at the top of the screen</p></div>
-      </div>    
+    </div>
   </div>
 </template>
 
