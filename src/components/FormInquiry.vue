@@ -1,7 +1,6 @@
 <template>
-  <div class="p-3">
-      <p class="text-blue-900">Thanks for checking out Gabba Doggy Daycare. If you have any questions, or problems with your account, please let us know.</p>
-      <br />
+  <div class="p-2">
+      <p class="text-blue-900 mb-3">Please let us know if you have a question about any of our services, or problems with your account.</p>
       <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
           <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
@@ -25,7 +24,7 @@
             </label>
             <input v-model="form.email" class="my-input" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
-          <div class="mb-4">
+          <div class="mb-2">
             <label class="my-label" for="phone">
               phone
             </label>
@@ -59,7 +58,7 @@
 <script>
 export default {
     metaInfo: {
-      title: 'Register Your Interest',
+      title: 'Make an Inquiry',
       meta: [{
         name: 'description',
         content: "Got questions? Ask away, we'll get back to you as soon as we can.",

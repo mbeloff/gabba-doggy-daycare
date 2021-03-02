@@ -5,8 +5,8 @@
 <!--// CITY SELECT // -->
 
       <!-- <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
-        <button :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold" @click="regionSelect('brisbane')">Brisbane</button>
-        <button :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold" @click="regionSelect('adelaide')">Adelaide</button>
+        <button title="GDDC Brisbane" :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
+        <button title="GDDC Adelaide" :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
       </div> -->
 
       <nav-bar></nav-bar>
