@@ -19,7 +19,7 @@
       </div>
 
       <div class="flex flex-row-reverse items-center col-span-2">
-        <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-blue" type="submit">
+        <button class="btn-blue" type="submit">
           Login
         </button>
         <a target="_blank" rel="noopener" href="https://

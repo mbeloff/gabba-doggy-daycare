@@ -2,7 +2,7 @@
   <div class="h-full">
     <div v-if="hasGrooming">
       <div class="tile section" id="about">
-        <div class="container grid grid-cols-1 gap-20 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+        <div class="container grid grid-cols-1 gap-20 px-2 py-20 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
           <div class="col y-5 md:my-10">
             <title-block>
               <template #big>So Fresh and So Clean</template>

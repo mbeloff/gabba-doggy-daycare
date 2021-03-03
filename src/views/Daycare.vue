@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="tile section" id="about">
-      <div class="container grid grid-cols-1 gap-x-20 gap-y-10 px-4 py-20 mx-auto md:grid-cols-2 lg:px-20">
+      <div class="container grid grid-cols-1 gap-x-20 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-10">
           <title-block>
             <template #small>Daycare</template>
@@ -24,7 +24,7 @@
             <template #big>Before You Join</template>
           </title-block>
         </div>
-        <div class="grid grid-cols-1 gap-x-20 px-4 md:grid-cols-3 lg:px-20">
+        <div class="grid grid-cols-1 gap-x-20 px-2 md:grid-cols-3 lg:px-20">
           <div class="text-left md:col-span-2">
             <section-signup></section-signup>
             <div class=" grid grid-cols-1 gap-5 my-20 divide-pink-500 sm:grid-cols-2 sm:divide-x">

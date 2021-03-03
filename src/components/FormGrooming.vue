@@ -1,11 +1,11 @@
 <template>
-  <div class="p-3 mx-auto" style="max-width: 600px">
+  <div class="px-2 mx-auto" style="max-width: 600px">
     <p class="text-blue-900" v-if="!hasSubmitted">Please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
     <br />
     <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative mb-4 " :class="{ 'opacity-50' : isLoading, 'shadow-none bg-opacity-0' : hasSubmitted}" style="min-height: 150px">
       <transition name="fade">
         <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
-          <p class="px-4 py-2 mx-2 text-2xl text-center rounded-full shadow-xl place-self-center">Thanks, we'll be in contact to confirm your booking </p>          
+          <p class="px-4 py-2 mx-2 text-2xl text-center text-blue-500 place-self-center">Thanks, we'll be in contact to confirm your booking </p>          
         </div>
       </transition>
       <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
@@ -100,7 +100,7 @@
           </div>
         </transition>
         <div class="flex items-center justify-between">
-          <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:ring" type="submit">
+          <button class="btn-blue" type="submit">
             Submit
           </button>
         </div>

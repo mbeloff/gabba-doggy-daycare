@@ -32,20 +32,4 @@
 </script>
 
 <style lang="scss">
-.expand-enter-active,
-.expand-leave-active {
-  transition-property: opacity, height, transform;
-
-  opacity: 1
-}
-.expand-enter,
-.expand-leave-to {
-  opacity: 0;
-
-}
-
-.dropdown {
-  width: max-content;
-  overflow: hidden;
-}
 </style>

@@ -2,7 +2,7 @@
   <div class="h-full">
     <div v-if="hasTraining">
       <div class="tile">
-        <div class="container grid grid-cols-1 gap-x-20 px-4 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
           <div class="col my-5 md:mt-10">
             <title-block>
               <template #small>Older Puppies and Adults Dogs</template>
@@ -13,23 +13,22 @@
             </p>
           </div>
           <div>
-            <div class="rounded-xl col bg-white shadow-xl p-3 my-5 md:mt-10 pattern">
-              <div class="bg-white h-full w-full py-6 rounded-lg shadow-md px-2 flex flex-col">
-                <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Training may include:</p>
-                <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
-                  <li>
-                    Recall training and basic commands
-                  </li>
-                  <li>
-                    Good manners and polite greetings
-                  </li>
-                  <li>
-                    Loose leash walking and more
-                  </li>
-                </ul>
-                <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('training')">book a training session</button>
-              </div>
-            </div>
+            <pattern-border class="my-5 md:mt-10">
+              <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Training could include:</p>
+              <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
+                <li>
+                  Recall training
+                </li>
+                <li>
+                  Good manners and polite greetings
+                </li>
+                <li>
+                  Loose leash walking and more
+                </li>
+              </ul>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('training')">book a training session</button>
+            </pattern-border>
+
           </div>
         </div>
       </div>
@@ -41,7 +40,7 @@
         </div>
       </transition>
       <div class="bg-white">
-        <div class="container grid grid-cols-1 gap-x-20 px-4 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
           <div class="col my-5 md:mt-10 md:order-2">
             <title-block>
               <template #small>Problem Behaviours</template>
@@ -51,80 +50,70 @@
             <p class="mb-3">Let us know about any concerns you are having with your dogs behaviour.</p>
           </div>
           <div>
-            <div class="rounded-xl col bg-white shadow-xl p-3 my-5 md:mt-10 pattern">
-              <div class="bg-white h-full w-full py-6 rounded-lg shadow-md px-2 flex flex-col">
-                <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Behaviour consults can assist with:</p>
-                <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
-                  <li>
-                    Anxious, reactive or fearful dogs
-                  </li>
-                  <li>
-                    Excessive jumping
-                  </li>
-                  <li>
-                    Excessive barking
-                  </li>
-                  <li>
-                    Aggression towards dogs or people
-                  </li>
-                  <li>
-                    Other disruptive behaviours
-                  </li>
-                </ul>
-                <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('behaviour')">book a behaviour consult</button>
-              </div>
-            </div>
+            <pattern-border class="my-5 md:mt-10">
+              <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Behaviour consults can assist with:</p>
+              <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
+                <li>
+                  Anxious, reactive or fearful dogs
+                </li>
+                <li>
+                  Excessive jumping
+                </li>
+                <li>
+                  Excessive barking
+                </li>
+                <li>
+                  Aggression towards dogs or people
+                </li>
+                <li>
+                  Other disruptive behaviours
+                </li>
+              </ul>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('behaviour')">book a behaviour consult</button>
+            </pattern-border>
           </div>
         </div>
       </div>
       <transition name="pagefade">
         <div class="bg-blue-500" v-if="showForm == 'behaviour'">
           <div class="container lg:px-20 xl:px-40 mx-auto">
-            <form-training :service="'Behaviour Consult'" :msgField="'What behaviours would you like to address?'" @close="showForm = null"></form-training>
+            <form-training :service="'Behaviour Consult'" :msgField="'Which behaviours would you like to address?'" @close="showForm = null"></form-training>
           </div>
         </div>
       </transition>
       <div class="tile">
-        <div class="container grid grid-cols-1 gap-x-20 px-4 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
           <div class="col my-5 md:mt-10">
             <title-block>
               <template #small>Little Ones</template>
               <template #big>Puppy School</template>
             </title-block>
-            <p class="mb-3">Give your pup a headstart in a fun and engaging environment. They will get acquainted with new people and animals and use this crucial stage of development to learn valuable skills that will benefit both pet and parent for years to come.</p>
-            <p class="mb-3">In our well-rounded Puppy School program, your pet will get supervised play and learning with other dogs and puppies, group-training, as well as focused, one-on-one time with a trainer to develop essential skills.</p>
-            <p class="mb-3">The cost of puppy school is $500 ($100 per week, for 5 weeks). This price includes the puppy school session as well as daycare for the rest of the day.</p>
+            <p class="mb-3">Give your pup a headstart in a fun and engaging environment. They will get acquainted with new people and animals and learn valuable skills that will benefit both pet and parent for years to come.</p>
+            <p class="mb-3">Your pet will get supervised play and learning with other dogs and puppies, group-training, as well as focused, one-on-one time with a trainer to develop essential skills.</p>
+            <p class="mb-3">The cost of puppy school is $500. This includes 5 puppy school sessions (one per week) as well as daycare for the rest of each day.</p>
           </div>
           <div>
-            <div class="rounded-xl col bg-white shadow-xl p-3 my-5 md:mt-10 pattern">
-              <div class="bg-white h-full w-full py-6 rounded-lg shadow-md px-2 flex flex-col">
-                <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Puppy school will help your pup with the following skills and behaviours:</p>
-                <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
-                  <li>
-                    Getting habituated with unfamiliar people and animals
-                  </li>
-                  <li>
-                    Handling issues (getting used to touch)
-                  </li>
-                  <li>
-                    Begin to learn basic cues such as sit or stay
-                  </li>
-                  <li>
-                    Getting used to grooming (nail clipping, towel drying, etc)
-                  </li>
-                  <li>
-                    Puzzles and games to stimulate and improve coordination
-                  </li>
-                  <li>
-                    Settling for rest time
-                  </li>
-                  <li>
-                    Learning good manners (e.g. prevent excessive jumping/biting)
-                  </li>
-                </ul>
-                <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('puppy school')">book puppy school</button>
-              </div>
-            </div>
+            <pattern-border class="my-5 md:mt-10">
+              <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Puppy school will help your pup with the following skills and behaviours:</p>
+              <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
+                <li>
+                  Getting habituated with unfamiliar people and animals
+                </li>
+                <li>
+                  Begin to learn basic cues such as sit or stay
+                </li>
+                <li>
+                  Cooperative care (getting used to grooming / vet visits)
+                </li>
+                <li>
+                  Settling for rest time
+                </li>
+                <li>
+                  Learning good manners
+                </li>
+              </ul>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('puppy school')">book puppy school</button>
+            </pattern-border>
           </div>
         </div>
       </div>
