@@ -28,12 +28,11 @@
               </ul>
               <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('training')">book a training session</button>
             </pattern-border>
-
           </div>
         </div>
       </div>
-      <transition name="pagefade">
-        <div class="bg-blue-500" v-if="showForm == 'training'">
+      <transition name="grow2">
+        <div class="bg-blue-500" v-show="showForm == 'training'">
           <div class="container lg:px-20 xl:px-40 mx-auto">
             <form-training :service="'Training Session'" :msgField="'What are your training goals?'" @close="showForm = null"></form-training>
           </div>
@@ -74,8 +73,8 @@
           </div>
         </div>
       </div>
-      <transition name="pagefade">
-        <div class="bg-blue-500" v-if="showForm == 'behaviour'">
+      <transition name="grow2">
+        <div class="bg-blue-500" v-show="showForm == 'behaviour'">
           <div class="container lg:px-20 xl:px-40 mx-auto">
             <form-training :service="'Behaviour Consult'" :msgField="'Which behaviours would you like to address?'" @close="showForm = null"></form-training>
           </div>
@@ -117,8 +116,8 @@
           </div>
         </div>
       </div>
-      <transition name="pagefade">
-        <div class="bg-blue-500" v-if="showForm == 'puppy school'">
+      <transition name="grow2">
+        <div class="bg-blue-500" v-show="showForm == 'puppy school'">
           <div class="container lg:px-20 xl:px-40 mx-auto">
             <form-training :service="'Puppy School'" @close="showForm = null"></form-training>
           </div>
@@ -145,7 +144,7 @@
         } else {
           this.showForm = null
         }
-      }
+      },
     },
     components: {
       FormTraining
@@ -174,6 +173,16 @@
   }
 </script>
 
-<style>
+<style lang="scss">
+  .grow2-enter-active,
+  .grow2-leave-active {
+    transition: max-height 0.5s, opacity 0.5s;
+    max-height: 756px;
+  }
 
+  .grow2-enter,
+  .grow2-leave-to {
+    opacity: 0;
+    max-height: 0px;
+  }
 </style>
