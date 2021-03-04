@@ -4,7 +4,7 @@
     <div class="grid p-10 lg:py-40 sm:px-40 2xl:px-60 order-2 lg:order-1 col-span-2">
       <div class="place-self-center">
         <img class="mb-2" :src="'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/q_auto,f_auto/v1/gddc/' + this.$store.state[getRegion()].trialDays + 'daytrial.png'" alt="">
-        <span class="text-sm tracking-tighter inline-block mb-2">Free trial for desexed dogs over 6 months only</span>
+        <span class="text-sm tracking-tighter inline-block mb-2">This offer valid at GDDC <span class="capitalize">{{getRegion()}}</span> for desexed dogs over 6 months only</span>
        <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full inline-block text-center">Sign me up!</router-link>
       </div>
     </div>

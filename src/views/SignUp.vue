@@ -4,7 +4,7 @@
       <div class="container py-20 mx-auto">
         <div class="text-center ">
           <title-block>
-            <template #small>Are you new here?</template>
+            <template #small> <span class="capitalize">{{ getRegion() }}</span></template>
             <template #big>New Client Registration</template>
           </title-block>
         </div>
