@@ -12,14 +12,16 @@
         <div class="col order-2 lg:order-1">
           <ul class="text-left list-disc list-outside py-10">   
             <li class="grid w-full mb-5"  v-for="(item, i) in features" :key="i">
-              <div class="flex gap-3 items-center">
+              <template v-if="item.limit == getRegion() || item.limit == null">
+                <div class="flex gap-3 items-center">
                 <icon-stack :icon="item.icon"></icon-stack>           
-                <p class="font-bold text-blue-700">{{item.title}}</p>
+                <p class="font-bold text-blue-700">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span>  </p>
                 </div>
               <p class="ml-11">{{item.desc}}</p>
+              </template>
+              
             </li>         
           </ul>
-            
           <div class="mt-10 text-center">
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
           </div>
@@ -87,12 +89,14 @@
         {
           title: "Pet Taxi",
           icon: 'taxi',
-          desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff. Call us to check availability."
+          desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff. Call us to check availability.",
+          limit: 'brisbane'
         },
         {
           title: "Grooming",
           icon: 'shower',
-          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services now available, with discounts for daycare guests."
+          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services now available, with discounts for daycare guests.",
+          limit: 'brisbane'
         },        
       ]
     }
