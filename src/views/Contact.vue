@@ -15,18 +15,18 @@
                 <icon-stack :icon="'search-location'"></icon-stack>
                 <p class="font-bold">Address:</p>
               </div>
-              <span class="md:pl-11">{{data.name}} <br> {{data.street}}, {{data.suburb}} <br>{{data.postcode}}</span>
+              <span class="md:pl-11">{{contact.name}} <br> {{contact.street}}, {{contact.suburb}} <br>{{contact.postcode}}</span>
             </li>
             <li class="flex flex-col mb-3">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
                 <icon-stack :icon="'phone-rotary'"></icon-stack>
-                <a class="btn-blue" :href="`tel:` + removeSpaces(data.phone)">Call Now</a>
+                <a class="btn-blue" :href="`tel:` + removeSpaces(contact.phone)">Call Now</a>
               </div>
             </li>
             <li class="flex flex-col mb-3">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
                 <icon-stack :icon="'paper-plane'"></icon-stack>
-                <a :href="`mailto:` + data.email" class="btn-blue">Email Us</a>
+                <a :href="`mailto:` + contact.email" class="btn-blue">Email Us</a>
               </div>
             </li>
             <li class="flex flex-col mb-3">
@@ -56,7 +56,7 @@
     </div>
 
     <div class="w-full mx-auto py-1 bg-blue-500">
-      <iframe :src="data.map" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe :src="contact.map" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
   </div>
@@ -65,8 +65,8 @@
 <script>
   export default {
     computed: {
-      data() {
-        return this.$store.state[this.$store.state.global.region].contact
+      contact() {
+        return this.$store.state[this.getRegion()].contact
       }
     },
     metaInfo: {

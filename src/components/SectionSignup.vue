@@ -20,7 +20,7 @@
 export default {
   computed: {
     phone() {
-      return this.$store.state[this.$store.state.global.region].contact.phone
+      return this.$store.state[this.$store.state.region].contact.phone
     }
   }
 }

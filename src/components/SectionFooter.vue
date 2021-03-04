@@ -53,14 +53,14 @@
           <div class="text-sm">
 
               <ul class="space-y-2 md:space-y-1 list-none text-sm">
-                <li v-if="data.phone">
-                   <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-2xl font-bold" :href="`tel:` + removeSpaces(data.phone)"><i class="fad fa-mobile-alt mr-2"></i>{{data.phone}}</a>
+                <li v-if="contact.phone">
+                   <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-2xl font-bold" :href="`tel:` + removeSpaces(contact.phone)"><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
                 </li>
              <li>
-               <a class="text-gray-400 focus:outline-white hover:text-yellow-300 break-all" :href="`mailto:` + data.email">{{data.email}}</a>
+               <a class="text-gray-400 focus:outline-white hover:text-yellow-300 break-all" :href="`mailto:` + contact.email">{{contact.email}}</a>
              </li>
               <li>
-                {{data.street}}, {{data.suburb}}, {{data.postcode}}
+                {{contact.street}}, {{contact.suburb}}, {{contact.postcode}}
               </li>
               
               </ul>
@@ -73,7 +73,7 @@
       </div>
     </div>
     <div class="col text-center bg-super-dark">
-      <p class="text-xs tracking-wide">© <router-link :to="{ name: 'New Home', params: {region: this.$store.state.global.region} }">gabbadoggydaycare.com</router-link></p>
+      <p class="text-xs tracking-wide">© <router-link :to="{ name: 'New Home', params: {region: getRegion()} }">gabbadoggydaycare.com</router-link></p>
     </div>
   </div>
 </template>
@@ -81,8 +81,8 @@
 <script>
   export default {
     computed: {
-      data() {
-        return this.$store.state[this.$store.state.global.region].contact         
+      contact() {
+        return this.$store.state[this.$store.state.region].contact         
       }
     },
   }

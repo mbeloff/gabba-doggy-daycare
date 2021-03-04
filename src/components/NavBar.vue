@@ -100,10 +100,10 @@
     },
     computed: {
       regionMenu() {
-        return this.menus[this.$store.state.global.region]
+        return this.menus[this.getRegion()]
       },
       phone() {
-        return this.$store.state[this.$store.state.global.region].contact.phone
+        return this.$store.state[this.getRegion()].contact.phone
       }
     },
     methods: {

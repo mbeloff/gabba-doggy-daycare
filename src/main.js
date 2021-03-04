@@ -57,7 +57,10 @@ requireComponent.keys().forEach(fileName => {
 Vue.mixin({
   methods:
   {
-    removeSpaces: str => str.replace(/\s+/g, '')
+    removeSpaces: str => str.replace(/\s+/g, ''),
+    getRegion() {
+      return this.$store.state.region
+    },
   }
 })
 

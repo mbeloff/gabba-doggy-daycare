@@ -75,7 +75,7 @@
       <li>
         <strong>Website</strong> refers to Gabba Doggy Daycare, accessible
         from
-        <router-link :to="{name: 'New Home', params: {region: this.$store.state.global.region}}" class="link-pink break-all">https://www.gabbadoggydaycare.com</router-link>
+        <router-link :to="{name: 'New Home', params: {region: this.$store.state.region}}" class="link-pink break-all">https://www.gabbadoggydaycare.com</router-link>
       </li>
       <li>
         <strong>You</strong> means the individual accessing or using the
@@ -436,7 +436,7 @@
 export default {
   computed: {
     data() {
-      return this.$store.state[this.$store.state.global.region].contact
+      return this.$store.state[this.$store.state.region].contact
     }
   },
   metaInfo: {

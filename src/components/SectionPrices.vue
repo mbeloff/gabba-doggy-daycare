@@ -2,8 +2,8 @@
   <div class="container px-2 py-20 mx-auto section" id="prices">
     <div id="daycare-pricing">
       <title-block class="text-center">
-        <template #small>Price List</template>
-        <template #big>Day Care <br><span class="text-base tracking-normal">Open from 6:30am - 6:30pm <br> (Half Day - 5 hours)</span></template>
+        <template #small><span class="capitalize">{{ getRegion() }}</span> Price List</template>
+        <template #big>Day Care <br><span class="text-base tracking-normal">Open from {{ contact.openTime }} - {{ contact.closeTime }} <br> (Half Day - 5 hours)</span></template>
       </title-block>
 
       <div class="grid grid-cols-1 pt-5 gap-x-10">
@@ -49,7 +49,10 @@ import TitleBlock from './base/TitleBlock.vue'
   components: { TitleBlock },
     computed: {
       region() {
-        return this.$store.state.global.region
+        return this.$store.state.region
+      },
+      contact() {
+        return this.$store.state[this.$store.state.region].contact
       }
     },
     data() {
@@ -117,31 +120,32 @@ import TitleBlock from './base/TitleBlock.vue'
               HalfDay: {
                 name: 'Half Day',
                 price: "$40",
-                order: '1'
-              },
-              HalfDayPack: {
-                name: "Half Day 10-pack",
-                // soon: " - valid for 3 months",
-                price: "$300",
-                order: '3'
+                
               },
               FullDay: {
                 name: 'Full Day',
                 price: "$50",
-                order: '2'
+                
               },
+              HalfDayPack: {
+                name: "Half Day 10-pack",
+                soon: " - valid for 3 months",
+                price: "$300",
+                
+              },
+              
               FullDayPack: {
                 name: "Full Day 10-pack",
-                // soon: " - valid for 3 months",
+                soon: " - valid for 3 months",
                 price: "$400",
-                order: '4'
+                
               },
               FullDayWeek: {
                 name: "Daycare Monday to Friday",
                 soon: " - unlimited daycare for one week",
                 price: "$150",
                 highlight: true,
-                order: '5'
+                
               },
             },
             extras: {}

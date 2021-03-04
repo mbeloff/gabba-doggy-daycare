@@ -24,11 +24,10 @@
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
           </div>
         </div>
-        <div class="rounded-xl col bg-white shadow-xl p-2 pattern order-1 lg:order-2">
-        <div class="rounded-lg h-full my-auto shadow-md">
-          <iframe :src="data.map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="rounded-lg map" title="Doggy daycare location map"></iframe>
-        </div>
-        </div>
+        <pattern-border class="order-1 lg:order-2">
+          <iframe :src="data.map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="rounded-sm map" title="Doggy daycare location map"></iframe>
+        </pattern-border>
+      
       </div>
     </div> 
     
@@ -64,7 +63,7 @@
   },
   computed: {
       data() {
-        return this.$store.state[this.$store.state.global.region].contact         
+        return this.$store.state[this.$store.state.region].contact         
       }
     },
   data() {

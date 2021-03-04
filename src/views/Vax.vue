@@ -72,7 +72,7 @@
   export default {
     computed: {
       email() {
-        return this.$store.state[this.$store.state.global.region].contact.email
+        return this.$store.state[this.$store.state.region].contact.email
       }
     },
     metaInfo: {

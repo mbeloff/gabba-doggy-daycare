@@ -77,7 +77,7 @@
         })
       },
       isRegion(region) {
-        return region == this.$store.state.global.region
+        return region == this.$store.state.region
         // return region == this.$route.params.region
       }
     },
@@ -89,7 +89,7 @@
         this.$router.push({
           name: this.$route.name,
           params: {
-            region: this.$store.state.global.region
+            region: this.$store.state.region
           }
         })
       } else {
@@ -116,7 +116,7 @@
         this.$router.push({
           name: this.$route.name,
           params: {
-            region: this.$store.state.global.region
+            region: this.$store.state.region
           }
         })
       }

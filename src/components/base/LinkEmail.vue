@@ -10,7 +10,7 @@ export default {
   },
   computed: {
     email: function() {
-      return this.$store.state[this.$store.state.global.region].contact.email
+      return this.$store.state[this.$store.state.region].contact.email
     }
   }
 }

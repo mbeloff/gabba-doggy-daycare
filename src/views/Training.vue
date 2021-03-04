@@ -14,6 +14,7 @@
           </div>
           <div>
             <pattern-border class="my-5 md:mt-10">
+              <div class="px-2 py-6 flex flex-col">
               <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Training could include:</p>
               <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
                 <li>
@@ -27,6 +28,7 @@
                 </li>
               </ul>
               <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('training')">book a training session</button>
+              </div>
             </pattern-border>
           </div>
         </div>
@@ -50,6 +52,7 @@
           </div>
           <div>
             <pattern-border class="my-5 md:mt-10">
+              <div class="px-2 py-6 flex flex-col">
               <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Behaviour consults can assist with:</p>
               <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
                 <li>
@@ -69,6 +72,7 @@
                 </li>
               </ul>
               <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('behaviour')">book a behaviour consult</button>
+              </div>
             </pattern-border>
           </div>
         </div>
@@ -93,7 +97,8 @@
           </div>
           <div>
             <pattern-border class="my-5 md:mt-10">
-              <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Puppy school will help your pup with the following skills and behaviours:</p>
+              <div class="px-2 py-6 flex flex-col">
+                <p class="mb-3 font-bold pl-2"><i class="far fa-graduation-cap mr-2 fa-2x"></i>Puppy school will help your pup with the following skills and behaviours:</p>
               <ul class="list-outside ml-2 list-disc flex flex-col space-y-3 text-sm pl-4">
                 <li>
                   Getting habituated with unfamiliar people and animals
@@ -112,6 +117,8 @@
                 </li>
               </ul>
               <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('puppy school')">book puppy school</button>
+              </div>
+              
             </pattern-border>
           </div>
         </div>
@@ -159,7 +166,7 @@
     },
     computed: {
       phone() {
-        return this.$store.state[this.$store.state.global.region].contact.phone
+        return this.$store.state[this.$store.state.region].contact.phone
       },
       hasTraining() {
         return this.$store.state[this.$route.params.region].hasTraining
