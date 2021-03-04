@@ -1,6 +1,6 @@
 <template>
   <div class="p-2">
-      <p class="text-blue-900 mb-3">Please let us know if you have a question about any of our services, or problems with your account.</p>
+      <p class="text-blue-900 mb-3">Leave a message and we'll get back to you.</p>
       <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-3 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
           <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
