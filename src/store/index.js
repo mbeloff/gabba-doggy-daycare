@@ -9,6 +9,7 @@ export default new Vuex.Store({
       hasGrooming: true,
       hasTraining: true,
       trialDays: '3',
+      newAccountLink: "https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=",
       contact: {
         openTime: "6:30am",
         closeTime: "6:30pm",
@@ -27,6 +28,7 @@ export default new Vuex.Store({
       hasGrooming: false,
       hasTraining: false,
       trialDays: '2',
+      newAccountLink: "https://secure.petexec.net/newOwner.php?x=nY9ncZ+6Dbg=",
       contact: {
         email: "adelaide@gabbadoggydaycare.com",
         openTime: "7:00am",

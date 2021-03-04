@@ -28,7 +28,7 @@
           <div class="text-left md:col-span-2">
             <section-signup></section-signup>
             <div class=" grid grid-cols-1 gap-5 my-20 divide-pink-500 sm:grid-cols-2 sm:divide-x">
-          <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" class="inline-block btn-blue">Create an Account</a></div>
+          <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue">Create an Account</a></div>
           <div class="flex items-center text-left col"><open-login class="mx-auto text-center text-pink-500 align-center sm:text-left hover:underline sm:ml-5">I already have an account</open-login></div>
         </div>
           </div>
@@ -45,6 +45,11 @@
   import SectionSignup from '@/components/SectionSignup.vue'
   import SectionPrices from '@/components/SectionPrices.vue'
   export default {
+    computed: {
+      link() {
+        return this.$store.state[this.getRegion()].newAccountLink
+      }
+    },
     metaInfo: {
     title: 'About Day Care',
     meta: [

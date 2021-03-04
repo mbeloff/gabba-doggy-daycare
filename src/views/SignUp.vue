@@ -12,7 +12,7 @@
           <section-signup></section-signup>
           
           <div class="mt-10 text-center">
-            <a href="https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=" target="_blank" rel="noopener" class="inline-block text-xl btn-blue">Create an Account</a>
+            <a :href="link" target="_blank" rel="noopener" class="inline-block text-xl btn-blue">Create an Account</a>
           </div>
           
         </div>
@@ -37,6 +37,11 @@
 <script>
 import SectionSignup from '@/components/SectionSignup.vue'
   export default {
+    computed: {
+      link() {
+        return this.$store.state[this.getRegion()].newAccountLink
+      }
+    },
     metaInfo: {
     title: 'Create an Account',
     meta: [
