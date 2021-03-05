@@ -27,14 +27,14 @@
                   Loose leash walking and more
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('training')">book a training session</button>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4 " @click="openForm('Training Session')"><i class="fal fa-hand-pointer transform rotate-90"></i> training sessions</button>
               </div>
             </pattern-border>
           </div>
         </div>
       </div>
       <transition name="grow2">
-        <div class="bg-blue-500" v-show="showForm == 'training'">
+        <div class="bg-blue-500" v-show="showForm == 'Training Session'">
           <div class="container lg:px-20 xl:px-40 mx-auto">
             <form-training :service="'Training Session'" :msgField="'What are your training goals?'" @close="showForm = null"></form-training>
           </div>
@@ -71,14 +71,14 @@
                   Other disruptive behaviours
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('behaviour')">book a behaviour consult</button>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Behaviour Consult')"><i class="fal fa-hand-pointer transform rotate-90"></i> behaviour consults</button>
               </div>
             </pattern-border>
           </div>
         </div>
       </div>
       <transition name="grow2">
-        <div class="bg-blue-500" v-show="showForm == 'behaviour'">
+        <div class="bg-blue-500" v-show="showForm == 'Behaviour Consult'">
           <div class="container lg:px-20 xl:px-40 mx-auto">
             <form-training :service="'Behaviour Consult'" :msgField="'Which behaviours would you like to address?'" @close="showForm = null"></form-training>
           </div>
@@ -116,15 +116,14 @@
                   Learning good manners
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('puppy school')">book puppy school</button>
-              </div>
-              
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Puppy School')"><i class="fal fa-hand-pointer transform rotate-90"></i> puppy school</button>
+              </div>              
             </pattern-border>
           </div>
         </div>
       </div>
       <transition name="grow2">
-        <div class="bg-blue-500" v-show="showForm == 'puppy school'">
+        <div class="bg-blue-500" v-show="showForm == 'Puppy School'">
           <div class="container lg:px-20 xl:px-40 mx-auto">
             <form-training :service="'Puppy School'" @close="showForm = null"></form-training>
           </div>
@@ -147,7 +146,7 @@
     methods: {
       openForm(form) {
         if (form !== this.showForm) {
-          this.showForm = form
+          this.showForm = form;
         } else {
           this.showForm = null
         }

@@ -72,6 +72,7 @@ export default {
           phone: "",
           email: "",
           message: "",
+          location: this.$store.state.region
         },
         hasSubmitted: false,
         isLoading: false,
@@ -116,7 +117,7 @@ export default {
               "Content-Type": "application/x-www-form-urlencoded"
             },
             body: this.encode({
-              "form-name": "Register",
+              "form-name": "Inquire",
               ...this.form
             })
           })
