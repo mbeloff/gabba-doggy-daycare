@@ -27,7 +27,7 @@
                   Loose leash walking and more
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4 " @click="openForm('Training Session')"><i class="fal fa-hand-pointer transform rotate-90"></i> training sessions</button>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4 " @click="openForm('Training Session')"><i class="fas fa-hand-pointer transform rotate-90"></i> training sessions</button>
               </div>
             </pattern-border>
           </div>
@@ -71,7 +71,7 @@
                   Other disruptive behaviours
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Behaviour Consult')"><i class="fal fa-hand-pointer transform rotate-90"></i> behaviour consults</button>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Behaviour Consult')"><i class="fas fa-hand-pointer transform rotate-90"></i> behaviour consults</button>
               </div>
             </pattern-border>
           </div>
@@ -116,7 +116,7 @@
                   Learning good manners
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Puppy School')"><i class="fal fa-hand-pointer transform rotate-90"></i> puppy school</button>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Puppy School')"><i class="fas fa-hand-pointer transform rotate-90"></i> puppy school</button>
               </div>              
             </pattern-border>
           </div>
