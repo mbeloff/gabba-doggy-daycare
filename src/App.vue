@@ -214,9 +214,9 @@
 </script>
 <style lang="scss">
 .app-content{
-  margin-top: 99px;
+  margin-top: 131px;
   @media only screen and (min-width: 1024px) {
-     margin-top: 97px
+     margin-top: 129px
   }
 }
 </style>

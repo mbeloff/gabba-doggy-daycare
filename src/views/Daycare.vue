@@ -35,8 +35,7 @@
           </div>
           <div class="bg-cover md:col-span-1 grass-pup rounded-xl">
           </div>
-        </div>
-        
+        </div>        
       </div>
     </div>
   </div>
