@@ -10,7 +10,7 @@
         </div>
         <div class="w-full p-3 mx-auto text-lg leading-7 text-left text-gray-700 md:w-3/4 lg:w-2/3">
           <section-signup></section-signup>
-          
+          <choose-location class="mt-10"></choose-location>
           <div class="mt-10 text-center">
             <a :href="link" target="_blank" rel="noopener" class="inline-block text-xl btn-blue">Create an Account</a>
           </div>
