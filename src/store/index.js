@@ -17,7 +17,7 @@ export default new Vuex.Store({
         map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14157.078780074915!2d153.0441013!3d-27.4919868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cbf7d0ff474ef0e!2sGabba%20Doggy%20Daycare!5e0!3m2!1sen!2sau!4v1608508120256!5m2!1sen!2sau",
         name: "Gabba Doggy Daycare",
         street: "46 Deshon St",
-        suburb: "Woollloongabba",
+        suburb: "Woolloongabba",
         city: 'Brisbane',
         postcode: "4102 QLD",
         phone: "0423 487 302"
