@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-100 rounded-lg shadow-xl" @keydown.esc="hide">
-    <div class="flex justify-between p-3 bg-blue-500 rounded-t-lg">
+    <div class="flex justify-between p-3 bg-blue-600 rounded-t-lg">
       <h1 class="text-2xl font-bold tracking-tight text-blue-100">
         <i class="mr-2 fas fa-paw"></i>
         <slot name="title">
