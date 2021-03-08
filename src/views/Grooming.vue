@@ -9,7 +9,7 @@
               <template #small>Grooming Services</template>
             </title-block>
             <p class="mb-3">Gabba Doggy Daycare is now offering grooming as a standalone service, or to be combined with your daycare booking. Check our services and prices below.</p>
-            <p class="mb-3">Grooming services can be requested online without an account. Just complete the form below.</p>
+            <p class="mb-3">Grooming services can be booked through your account. If you don't have an account, use the form below.</p>
           </div>
           <div class="bg-cover rounded-xl col bath-pup shadow-lg">
           </div>

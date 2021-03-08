@@ -1,11 +1,15 @@
 <template>
   <div class="px-2 mx-auto" style="max-width: 600px">
-    <p class="text-blue-900" v-if="!hasSubmitted">Please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
+    <alert-block>
+      <template #left>New</template>
+      <template #right>You can now request grooming directly from your GDDC account. <open-login class="link-pink">login here</open-login></template>
+    </alert-block>
+    <p class="text-blue-900" v-if="!hasSubmitted">If you don't have an account with us, please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
     <br />
     <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative mb-4 " :class="{ 'opacity-50' : isLoading, 'shadow-none bg-opacity-0' : hasSubmitted}" style="min-height: 150px">
       <transition name="fade">
         <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
-          <p class="px-4 py-2 mx-2 text-2xl text-center text-blue-500 place-self-center">Thanks, we'll be in contact to confirm your booking </p>          
+          <p class="px-4 py-2 mx-2 text-2xl text-center text-blue-500 place-self-center">Thanks, we'll be in contact to confirm your booking </p>
         </div>
       </transition>
       <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
@@ -46,27 +50,23 @@
           <label class="my-label col-start-1 col-span-3" for="name">
             preferred time
           </label>
-           <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format"
-        :parseDate="parseDate"
-        :formatDate="formatDate"
-        :isDateDisabled="isDisabledDate"
-        >
-        </date-pick>
-        <div class="col-start-4 col-span-2">
-          <select class="my-input my-select" type="select" v-model="form.time" placeholder="time">
-          <option disabled value="Time">Time</option>
-          <option value="7:30">7:30am</option>
-          <option value="8:00">8:00am</option>
-          <option value="8:30">8:30am</option>
-          <option value="9:00">9:00am</option>
-          <option value="9:30">9:30am</option>
-          <option value="10:00">10:00am</option>
-          <option value="10:30">10:30am</option>
-          <option value="11:00">11:00am</option>
-          <option value="11:30">11:30am</option>
-          <option value="12:00">12:00pm</option>
-          </select>
-        </div>
+          <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format" :parseDate="parseDate" :formatDate="formatDate" :isDateDisabled="isDisabledDate">
+          </date-pick>
+          <div class="col-start-4 col-span-2">
+            <select class="my-input my-select" type="select" v-model="form.time" placeholder="time">
+              <option disabled value="Time">Time</option>
+              <option value="7:30">7:30am</option>
+              <option value="8:00">8:00am</option>
+              <option value="8:30">8:30am</option>
+              <option value="9:00">9:00am</option>
+              <option value="9:30">9:30am</option>
+              <option value="10:00">10:00am</option>
+              <option value="10:30">10:30am</option>
+              <option value="11:00">11:00am</option>
+              <option value="11:30">11:30am</option>
+              <option value="12:00">12:00pm</option>
+            </select>
+          </div>
         </div>
         <div class="mb-4">
           <label class="my-label">Service</label>
@@ -110,19 +110,21 @@
 </template>
 
 <script>
-import DatePick from 'vue-date-pick';
-import fecha from 'fecha';
-import 'vue-date-pick/dist/vueDatePick.css';
+  import DatePick from 'vue-date-pick';
+  import fecha from 'fecha';
+  import 'vue-date-pick/dist/vueDatePick.css';
   export default {
     metaInfo: {
       title: 'Request A Grooming Service',
       meta: [{
         name: 'description',
-        content: "Opening Soon! Register your interest and we'll keep you posted.",
+        content: "Grooming services available - Special discounts for doggy daycare guests!",
         vmid: 'description'
       }]
     },
-    components: {DatePick},
+    components: {
+      DatePick
+    },
     data() {
       return {
         form: {
@@ -161,15 +163,15 @@ import 'vue-date-pick/dist/vueDatePick.css';
     },
     methods: {
       isDisabledDate(date) {
-          const currentDate = new Date();
-          const startDate = new Date('February 16, 2021 23:15:30');
-          return (date < currentDate) || !(date.getDay() % 6) || (date < startDate);
+        const currentDate = new Date();
+        const startDate = new Date('February 16, 2021 23:15:30');
+        return (date < currentDate) || !(date.getDay() % 6) || (date < startDate);
       },
       parseDate(dateString, format) {
-          return fecha.parse(dateString, format);
+        return fecha.parse(dateString, format);
       },
       formatDate(dateObj, format) {
-          return fecha.format(dateObj, format);
+        return fecha.format(dateObj, format);
       },
       emailIsValid(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
@@ -228,16 +230,17 @@ import 'vue-date-pick/dist/vueDatePick.css';
 </script>
 
 <style lang="postcss">
-/* $vdpColor: #1595df; */
-/* @import 'vue-date-pick/src/vueDatePick.scss'; */
-.vdpComponent {
-  width: 100%;
-}
-.vdpComponent input {
-  @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50  appearance-none rounded
-}
+  /* $vdpColor: #1595df; */
+  /* @import 'vue-date-pick/src/vueDatePick.scss'; */
+  .vdpComponent {
+    width: 100%;
+  }
 
-.vdpComponent input:focus {
-  @apply outline-none ring bg-opacity-75
-}
+  .vdpComponent input {
+    @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50 appearance-none rounded
+  }
+
+  .vdpComponent input:focus {
+    @apply outline-none ring bg-opacity-75
+  }
 </style>
