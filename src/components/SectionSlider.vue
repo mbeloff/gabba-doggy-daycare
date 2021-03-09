@@ -2,7 +2,7 @@
   <div class="bg-gray-900">
     <div class="container mx-auto" style="overflow: hidden; max-width: 100vw">
       <div class="container mx-auto p-0 relative slidey">
-        <swiper ref="mySwiperRef" class="swiper" :options="swiperOption" :class="{ 'opacity-0' : !this.pageLoaded }">
+        <swiper ref="mySwiperRef" class="swiper" :options="swiperOption">
           <swiper-slide class="w-auto" v-for="(slide, i) in this.slideList" :key="i">
             <img :src="slide" alt="">
           </swiper-slide>
@@ -33,16 +33,15 @@
     },
     data() {
       return {
-        pageLoaded: true,
         swiperOption: {
           slidesPerView: 'auto',
           spaceBetween: 0,
           slidesPerGroup: 1,
-          centeredSlides: true,
+          centeredSlides: false,
           autoplay: {
-            delay: 1000,
+            delay: 3000,
           },
-          speed: 3000,
+          speed: 500,
           grabCursor: true,
           loop: true,
         },
@@ -121,7 +120,7 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/10.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/11.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/12.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/13.jpg",   
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/more/13.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/2021%20March/1.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/2021%20March/2.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_250/f_auto,q_auto/v1/gddc/photos/2021%20March/3.jpg",
@@ -146,13 +145,12 @@
           taken[x] = --len in taken ? taken[len] : len;
         }
         return result;
-      }
+      },
     },
   };
 </script>
 
 <style lang="scss" scoped>
-
   .swiper {
     min-height: 250px;
     transition: opacity 1s ease-in-out

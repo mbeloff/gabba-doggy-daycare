@@ -2,7 +2,13 @@
   <div>
     <section-hero></section-hero>
     <section-cards></section-cards>
-    <section-slider></section-slider> 
+    <div class="h-270 bg-gray-900">
+        <section-slider class="transition-opacity duration-1000" :class="{ 'opacity-0' : this.disabled}" :pageLoaded="this.setPageLoaded" :key="this.rand"></section-slider>    
+    </div>    
+    <div class="bg-gray-100 grid">
+      <button title="show more photos" class="text-center justify-self-center btn-blue py-0 m-1" @click="setKey()"><i class="fal fa-redo-alt mr-2"></i>more dogs, please</button>
+    </div>
+    
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
        <title-block class="text-center">
           <template #small>{{ data.city }} Dogs Love it Here</template>
@@ -61,8 +67,17 @@
     ranNum() {
       let x = Math.random() * (30) - 15
       return x
-    }
-  },
+    },
+    setKey() {
+      this.disabled = true
+      this.rand = Math.floor(Math.random() * Math.floor(100))
+      setTimeout( () => {
+        this.disabled = false
+      }, 1000) 
+        
+        
+      }
+  },  
   computed: {
       data() {
         return this.$store.state[this.$store.state.region].contact         
@@ -70,6 +85,8 @@
     },
   data() {
     return {
+      disabled: false,
+      rand: 0,
       features: [
         {
           title: "Easy Online Bookings",
@@ -131,5 +148,7 @@
       background-image: linear-gradient(to bottom, rgb(243, 244, 246),rgb(243, 244, 246), rgba(243, 244, 246, .5))
     }
   }
-  
+  .h-270 {
+    height: 270px;
+  }
 </style>
