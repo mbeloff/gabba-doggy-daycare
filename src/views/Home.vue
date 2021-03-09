@@ -2,8 +2,11 @@
   <div>
     <section-hero></section-hero>
     <section-cards></section-cards>
-    <div class="h-270 bg-gray-900">
-        <section-slider class="transition-opacity duration-1000" :class="{ 'opacity-0' : this.disabled}" :pageLoaded="this.setPageLoaded" :key="this.rand"></section-slider>    
+    <div class="h-270 bg-gray-900 relative">
+        <section-slider class="transition-opacity duration-1000" :class="{ 'opacity-0' : this.disabled}" :pageLoaded="this.setPageLoaded" :key="this.rand"></section-slider>
+        <div v-show="this.disabled" class="absolute top-0 left-0 w-full h-full grid place-items-center">
+          <i class="fal fa-spinner-third fa-spin fa-3x text-white"></i> 
+        </div>        
     </div>    
     <div class="bg-gray-100 grid">
       <button title="show more photos" class="text-center justify-self-center btn-blue py-0 m-1" @click="setKey()"><i class="fal fa-redo-alt mr-2"></i>more dogs, please</button>
@@ -73,9 +76,7 @@
       this.rand = Math.floor(Math.random() * Math.floor(100))
       setTimeout( () => {
         this.disabled = false
-      }, 1000) 
-        
-        
+      }, 750)         
       }
   },  
   computed: {
