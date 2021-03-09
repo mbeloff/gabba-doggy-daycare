@@ -9,7 +9,7 @@
         </div>        
     </div>    
     <div class="bg-gray-100 grid">
-      <button title="show more photos" class="text-center justify-self-center btn-blue py-0 m-1" @click="setKey()"><i class="fal fa-redo-alt mr-2"></i>more dogs, please</button>
+      <button title="show more photos" class="text-center justify-self-center btn-blue py-1 m-1" @click="setKey()"><i class="fal fa-redo-alt mr-2"></i>more dogs, please</button>
     </div>
     
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
