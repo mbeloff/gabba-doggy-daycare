@@ -229,7 +229,7 @@
 
   .pagefade-enter-active,
   .pagefade-leave-active {
-    transition-duration: 0.3s;
+    transition-duration: 0.15s;
     transition-property: opacity;
     transition-timing-function: ease;
     overflow: hidden;
@@ -237,7 +237,7 @@
 
   .pagefade-enter-active,
   .pagefade-leave-active {
-    transition-duration: 0.3s;
+    transition-duration: 0.15s;
     transition-property: opacity;
     transition-timing-function: ease;
   }

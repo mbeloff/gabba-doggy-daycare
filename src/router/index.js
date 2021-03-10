@@ -130,7 +130,7 @@ const router = new VueRouter({
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve( savedPosition)
-        }, 250)
+        }, 150)
       })
     }
     if (to.name == from.name) {
@@ -139,7 +139,7 @@ const router = new VueRouter({
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({ x: 0, y: 0 })
-      }, 250)
+      }, 150)
     })
   }
 });
