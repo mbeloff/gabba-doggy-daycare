@@ -2,7 +2,7 @@
   <div class="">
     <div class="tile section" id="about">
       <div class="container grid grid-cols-1 gap-x-20 lg:gap-x-40 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 lg:px-20">
-        <div class="col y-5 md:my-10">
+        <div class="col y-5">
           <title-block>
             <template #small>Daycare</template>
             <template #big>Play, Relax, Socialise</template>
@@ -24,13 +24,13 @@
             <template #big>Before You Join</template>
           </title-block>
         </div>
-        <div class="grid grid-cols-1 gap-x-20 px-2 md:grid-cols-3 lg:px-20">
+        <div class="grid grid-cols-1 gap-x-10 px-2 md:grid-cols-3 lg:px-20">
           <div class="text-left md:col-span-2">
             <section-signup></section-signup>
             <choose-location class="mt-10"></choose-location>
             <div class=" grid grid-cols-1 gap-5 my-10 divide-pink-500 sm:grid-cols-2 sm:divide-x">
           <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue">Create an Account</a></div>
-          <div class="flex items-center text-left col"><open-login class="mx-auto text-center text-pink-500 align-center sm:text-left hover:underline sm:ml-5">I already have an account</open-login></div>
+          <div class="flex items-center text-left col"><open-login class="mx-auto text-center text-pink-400 align-center sm:text-left hover:underline sm:ml-5">already have an account?</open-login></div>
         </div>
           </div>
           <div class="bg-cover md:col-span-1 grass-pup rounded-xl shadow-xl">
