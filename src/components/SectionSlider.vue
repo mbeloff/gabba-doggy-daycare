@@ -39,7 +39,7 @@
           slidesPerGroup: 1,
           centeredSlides: false,
           autoplay: {
-            delay: 3000,
+            delay: 1500,
           },
           speed: 500,
           grabCursor: true,
