@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="tile section" id="about">
-      <div class="container grid grid-cols-1 gap-x-20 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 lg:px-20">
+      <div class="container grid grid-cols-1 gap-x-20 lg:gap-x-40 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 lg:px-20">
         <div class="col y-5 md:my-10">
           <title-block>
             <template #small>Daycare</template>
@@ -11,7 +11,7 @@
           </p><p class="mb-4"> We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Gabba Doggy Daycare is your pup's home away from home.</p>
           <p>Check out our daycare packages below, and make an account for easy online bookings and payments.</p>
         </div>
-        <div class="bg-cover rounded-xl col toy-pup shadow-lg">
+        <div class="bg-cover rounded-xl col grass-boys shadow-xl">
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@
           <div class="flex items-center text-left col"><open-login class="mx-auto text-center text-pink-500 align-center sm:text-left hover:underline sm:ml-5">I already have an account</open-login></div>
         </div>
           </div>
-          <div class="bg-cover md:col-span-1 grass-pup rounded-xl">
+          <div class="bg-cover md:col-span-1 grass-pup rounded-xl shadow-xl">
           </div>
         </div>        
       </div>
@@ -68,12 +68,12 @@
 </script>
 
 <style lang="scss">
-  .toy-pup {
-    min-height: 400px;
-    background-position: 45% 50%;
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_450,h_600/q_auto,f_auto/v1609809738/gddc/toypup.jpg);
+  .grass-boys {
+    min-height: 500px;
+    background-position: 50% 30%;
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_550,h_575/q_auto,f_auto/v1/gddc/photos/2021_March/6b.jpg);
     @media only screen and (max-width: 767px) {
-      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_600/q_auto,f_auto/v1609809738/gddc/toypup.jpg);
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_700/q_auto,f_auto/v1/gddc/photos/2021_March/6b.jpg);
     }
   }
 
@@ -86,6 +86,7 @@
       background-position: 0% 20%;
     }
     @media only screen and (max-width: 767px) {
+      min-height: 600px;
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_400,h_600/q_auto,f_auto/v1/gddc/photos/712.jpg);
       background-position: 0% 20%;
     }
