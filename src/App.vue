@@ -280,7 +280,7 @@
 
   @layer components {
     .btn-blue {
-      @apply px-5 py-2 bg-blue-500 text-white rounded-md text-lg border-yellow-300 border-b-2
+      @apply px-5 py-2 bg-blue-500 text-white rounded-md text-base border-yellow-300 border-b-2
     }
 
     .btn-blue:hover {
