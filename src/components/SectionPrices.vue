@@ -3,10 +3,10 @@
     <div id="daycare-pricing">
       <title-block class="text-center">
         <template #small><span class="capitalize">{{ getRegion() }}</span> Price List</template>
-        <template #big>Day Care <br><span class="text-base tracking-normal">Open from {{ contact.openTime }} - {{ contact.closeTime }} <br> (Half Day - 5 hours)</span></template>
+        <template #big>Day Care <br><span class="text-base tracking-normal font-normal">Open from {{ contact.openTime }} - {{ contact.closeTime }} <br> (Half Day - 5 hours)</span></template>
       </title-block>
 
-      <div class="grid grid-cols-1 pt-5 gap-x-10">
+      <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
         <div v-for="(service, i) in prices[region].daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
           <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
             <div v-if="service.highlight">
@@ -24,13 +24,12 @@
 
     <div class=" mt-4">
       <p class="mb-2">To make a purchase, just <open-login class="link-pink">log in</open-login> to your account and click 'Purchase a Package'.</p>
-      <p class="mb-8 text-sm">Please note: Buying a package does not book you in for any services - to make a booking, you will also need to login and click 'request daycare'.</p>
     </div>
     <div id="extras-pricing" v-if="Object.keys(prices[region].extras).length !== 0">
       <title-block class="text-center">
         <template #big>Extras</template>
       </title-block>
-      <div class="grid grid-cols-1 pt-5 gap-x-10">
+      <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
         <div v-for="(extra, i) in prices[region].extras" :key="i" class="mb-2 bg-white">
           <div class="flex bg-gray-100 rounded-lg">
             <div class="flex-grow px-2" :class="{ 'opacity-50' : extra.soon == '- available soon'}">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>

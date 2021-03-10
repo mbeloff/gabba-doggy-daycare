@@ -6,7 +6,7 @@
         <template #big>Grooming <br><span class="text-base tracking-normal">Open from 7:30am - 2pm</span></template>
       </title-block>
 
-      <div class="grid grid-cols-1 pt-5 gap-x-10">
+      <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
         <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
           <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
             <div v-if="service.highlight">
