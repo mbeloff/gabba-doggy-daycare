@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-2 py-20 mx-auto section" id="prices">
+  <div class="px-2 py-20 mx-auto max-w-screen-sm" id="prices">
     <div id="daycare-pricing">
       <title-block class="text-center">
         <template #small><span class="capitalize">{{ getRegion() }}</span> Price List</template>

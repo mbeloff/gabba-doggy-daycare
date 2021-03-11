@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gray-900">
-    <div class="container mx-auto" style="overflow: hidden; max-width: 100vw">
-      <div class="container mx-auto p-0 relative slidey">
-        <swiper ref="mySwiperRef" class="swiper" :options="swiperOption">
+    <div class="container mx-auto">
+      <div class="container mx-auto p-0 relative">
+        <swiper class="swiper" :options="swiperOption">
           <swiper-slide class="w-auto" v-for="(slide, i) in this.slideList" :key="i">
             <img :src="slide" alt="">
           </swiper-slide>

@@ -6,7 +6,7 @@
         <template #big>Grooming <br><span class="text-base tracking-normal">Open from 7:30am - 2pm</span></template>
       </title-block>
 
-      <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
+      <div class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-10 text-sm">
         <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
           <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
             <div v-if="service.highlight">
@@ -14,12 +14,12 @@
               <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
             </div>
 
-            <div class="flex-grow px-2">{{service.name}}<span class="text-pink-500">{{ service.soon }}</span></div>
+            <div class="flex-grow px-2">{{service.name}} <br> <span class="text-pink-500">{{ service.soon }}</span></div>
             <div class="px-2 relative"><span class="text-pink-500">{{service.price}}</span>
             </div>
           </div>
-          <div class="z-10 w-10/12 text-sm text-gray-600">{{service.desc}}</div>
         </div>
+        <p class="text-center">All grooming half price if you're booked in for daycare on the same day <i class='fas fa-heart text-xs opacity-50'></i></p>
       </div>
     </div>
   </div>
@@ -31,12 +31,6 @@
       return {
         prices: {
           daycare: {            
-            // BathDaycare: {
-            //   name: "Bath & Towel Dry",
-            //   soon: " - half price with a daycare booking (Not valid during Free Trial)",
-            //   price: "$10",
-            //   highlight: true
-            // },
             Ears: {
               name: 'Ear Clean',
               price: "$10"

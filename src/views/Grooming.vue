@@ -1,8 +1,8 @@
 <template>
   <div class="h-full">
     <div v-if="hasGrooming">
-      <div class="tile section" id="about">
-        <div class="container grid grid-cols-1 gap-20 px-2 py-20 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+      <div class="tile" id="about">
+        <div class="container grid grid-cols-1 gap-20 px-2 py-20 mx-auto md:grid-cols-2 max-w-screen-lg">
           <div class="col y-5 md:my-10">
             <title-block>
               <template #big>So Fresh and So Clean</template>
@@ -17,7 +17,7 @@
       </div>
       <div>
         <section-prices-grooming></section-prices-grooming>
-        <div class="section tile" id="book">
+        <div class="tile" id="book">
           <div class="container py-20 mx-auto">
             <div class="text-center">
               <title-block>
@@ -32,14 +32,7 @@
         </div>
       </div>
     </div>
-
-    <div v-else class="bg-blue-500 h-full">
-      <div class="container px-4 py-20 mx-auto lg:px-20 xl:px-40 text-white">
-        <p>sorry, grooming is not available at this location ({{ this.$route.params.region }}) yet.
-        </p>
-        <p class="text-sm ">If you're looking for a different location, use the menu at the top of the screen</p>
-      </div>
-    </div>
+    <not-available v-else></not-available>
   </div>
 </template>
 

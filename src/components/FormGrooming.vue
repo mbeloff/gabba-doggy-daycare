@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2 mx-auto" style="max-width: 600px">
+  <div class="px-2 mx-auto max-w-screen-sm">
     <alert-block>
       <template #left>New</template>
       <template #right>You can now request grooming directly from your GDDC account. <open-login class="link-pink">login here</open-login></template>
@@ -16,31 +16,31 @@
         <i class="text-blue-500 fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
       </div>
       <div v-show="!hasSubmitted" :class="{ 'opacity-0' : hasSubmitted}">
-        <div class="mb-2">
+        <div>
           <label class="my-label" for="name">
             name
           </label>
           <input v-model="form.name" ref="name" class="my-input" id="name" type="text" placeholder="" required>
         </div>
-        <div class="mb-2">
+        <div>
           <label class="my-label" for="email">
             email
           </label>
           <input v-model="form.email" class="my-input" id="email" type="email" placeholder="" :class="{ 'border-orange-500' : missingContact }">
         </div>
-        <div class="mb-2">
+        <div>
           <label class="my-label" for="phone">
             phone
           </label>
           <input v-model="form.phone" class="my-input" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
         </div>
-        <div class="mb-2">
+        <div>
           <label class="my-label" for="petname">
             pet's name
           </label>
           <input v-model="form.petname" class="my-input" id="petname" type="text" placeholder="">
         </div>
-        <div class="mb-2">
+        <div>
           <label class="my-label" for="name">
             breed
           </label>

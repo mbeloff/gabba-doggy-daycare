@@ -1,11 +1,11 @@
 <template>
-  <div class="section">
-    <div class="container py-20 mx-auto">
+  <div>
+    <div class="container py-20 px-2 mx-auto">
       <title-block class="text-center">
         <template #small>Get in Touch</template>
         <template #big>Contact Us</template>
       </title-block>
-      <div class="grid grid-cols-1 px-2 md:grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="flex-grow ml-auto mr-auto bg-no-repeat bg-contain md:ml-auto md:mr-0 phone-pup max-w-full" style="height: 350px; width: 350px">
         </div>
         <div class="mb-auto">

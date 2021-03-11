@@ -1,17 +1,17 @@
 <template>
   <div class="p-3">
-    <p class="text-blue-900">Login to PetExec here to manage your GDDC account, schedule daycare or buy packages. <span v-if="!isSignUp()">If you don't have an account yet, you can create one <a href="javascript:void(0)" @click="close" class="link-pink" title="new account page">here.</a></span> </p>
+    <p class="text-blue-900 text-sm">Login to PetExec here to manage your GDDC account, schedule daycare or buy packages. <span v-if="!isSignUp()">If you don't have an account yet, you can create one <a href="javascript:void(0)" @click="close" class="link-pink" title="new account page">here.</a></span> </p>
     <br />
     <form action="https://secure.petexec.net/remoteLogin.php" method="POST" class="flex flex-col px-3 pb-3 bg-white bg-right-bottom bg-no-repeat rounded shadow-md" id="petExecLogin">
       <div class="grid grid-cols-1 grid-rows-2 gap-0 sm:grid-cols-2 sm:grid-rows-1 sm:gap-4">
-        <div class="mb-2">
-          <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="username">
+        <div>
+          <label class="my-label" for="username">
             username
           </label>
           <input v-model="form.username" ref="name" class="my-input" name="username" id="username" type="text" placeholder="">
         </div>
-        <div class="mb-2">
-          <label class="block mt-3 mb-2 text-sm font-bold text-blue-500 uppercase" for="password">
+        <div>
+          <label class="my-label" for="password">
             password
           </label>
           <input v-model="form.password" class="my-input" name="password" id="password" type="password" placeholder="">

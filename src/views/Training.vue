@@ -2,7 +2,7 @@
   <div class="h-full">
     <div v-if="hasTraining">
       <div class="tile">
-        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-xl">
           <div class="col my-5 md:mt-10">
             <title-block>
               <template #small>Older Puppies and Adults Dogs</template>
@@ -35,13 +35,13 @@
       </div>
       <transition name="grow2">
         <div class="bg-blue-500" v-show="showForm == 'Training Session'">
-          <div class="container lg:px-20 xl:px-40 mx-auto">
+          <div class="container max-w-screen-md mx-auto">
             <form-training :service="'Training Session'" :msgField="'What are your training goals?'" @close="showForm = null"></form-training>
           </div>
         </div>
       </transition>
       <div class="bg-white">
-        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-xl">
           <div class="col my-5 md:mt-10 md:order-2">
             <title-block>
               <template #small>Problem Behaviours</template>
@@ -79,13 +79,13 @@
       </div>
       <transition name="grow2">
         <div class="bg-blue-500" v-show="showForm == 'Behaviour Consult'">
-          <div class="container lg:px-20 xl:px-40 mx-auto">
+          <div class="container max-w-screen-md mx-auto">
             <form-training :service="'Behaviour Consult'" :msgField="'Which behaviours would you like to address?'" @close="showForm = null"></form-training>
           </div>
         </div>
       </transition>
       <div class="tile">
-        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 lg:px-20 xl:px-40">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-xl">
           <div class="col my-5 md:mt-10">
             <title-block>
               <template #small>Little Ones</template>
@@ -124,19 +124,13 @@
       </div>
       <transition name="grow2">
         <div class="bg-blue-500" v-show="showForm == 'Puppy School'">
-          <div class="container lg:px-20 xl:px-40 mx-auto">
+          <div class="container max-w-screen-md mx-auto">
             <form-training :service="'Puppy School'" @close="showForm = null"></form-training>
           </div>
         </div>
       </transition>
     </div>
-    <div v-else class="bg-blue-500 h-full">
-      <div class="container px-4 py-20 mx-auto lg:px-20 xl:px-40 text-white">
-        <p>sorry, training is not available at this location ({{ this.$route.params.region }}) yet.
-        </p>
-        <p class="text-sm ">If you're looking for a different location, use the menu at the top of the screen</p>
-      </div>
-    </div>
+    <not-available v-else></not-available>
   </div>
 </template>
 

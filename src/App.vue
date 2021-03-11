@@ -312,7 +312,7 @@
     }
 
     .my-label {
-      @apply block mt-2 mb-0 text-sm font-bold text-blue-500 uppercase
+      @apply block mt-1 mb-0 text-xs font-bold text-blue-500 uppercase
     }
   }
 

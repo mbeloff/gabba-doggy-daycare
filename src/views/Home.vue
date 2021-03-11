@@ -9,7 +9,7 @@
         </div>        
     </div>    
     <div class="bg-gray-100 grid">
-      <button id="get-images" title="show more photos" class="text-center justify-self-center btn-blue py-1 m-1" @click="setKey()"><i class="fal fa-redo-alt mr-2"></i>more dogs, please</button>
+      <button id="get-images" title="show more photos" class="text-center justify-self-center btn-blue py-1 m-1" @click="setKey()"><i class="fal fa-redo-alt mr-2"></i>show me more dogs</button>
     </div>
     
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
@@ -17,7 +17,7 @@
           <template #small>{{ data.city }} Dogs Love it Here</template>
           <template #big>More than just a day care</template>
         </title-block>
-      <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-4 mx-auto lg:grid-cols-2 lg:px-10 lg:gap-y-0">
+      <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-4 mx-auto lg:grid-cols-2 max-w-screen-xl lg:gap-y-0">
         <div class="col order-2 lg:order-1">
           <ul class="text-left list-disc list-outside py-10">   
             <li class="grid w-full mb-5"  v-for="(item, i) in features" :key="i">

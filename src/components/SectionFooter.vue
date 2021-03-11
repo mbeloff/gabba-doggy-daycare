@@ -1,6 +1,6 @@
 <template>
   <div class="text-gray-500 bg-gray-900 ">
-    <div class="container px-3 mx-auto py-4">
+    <div class="container max-w-screen-xl px-3 mx-auto py-4">
       <div class="flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
 
         <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
