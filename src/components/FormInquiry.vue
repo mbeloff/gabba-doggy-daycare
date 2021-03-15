@@ -31,7 +31,7 @@
             <input v-model="form.phone" class="my-input" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
           </div>
           <div class="mb-4">
-            <label class="my-label" for="phone">
+            <label class="my-label" for="message">
               message
             </label>
             <textarea v-model="form.message" rows="4" class="my-input" id="phone" type="text" placeholder="Hi, I was wondering about..."></textarea>
