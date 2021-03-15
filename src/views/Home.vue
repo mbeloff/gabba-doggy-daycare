@@ -42,6 +42,8 @@
       </div>
     </div> 
     
+      <section-reviews></section-reviews>
+    
   </div>
 </template>
 
@@ -49,11 +51,13 @@
   import SectionHero from "@/components/SectionHero.vue"
   import SectionCards from "@/components/SectionCards.vue"
   import SectionSlider from "@/components/SectionSlider.vue"
+  import SectionReviews from "@/components/SectionReviews.vue"
   export default {
     components: {
       SectionHero,
       SectionCards,
-      SectionSlider
+      SectionSlider,
+      SectionReviews
     },
     metaInfo: {
     title: 'Home',
