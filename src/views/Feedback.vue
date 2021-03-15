@@ -88,7 +88,7 @@ export default {
               "Content-Type": "application/x-www-form-urlencoded"
             },
             body: this.encode({
-              "form-name": "Feedback",
+              "form-name": "feedback",
               ...this.form
             })
           })
