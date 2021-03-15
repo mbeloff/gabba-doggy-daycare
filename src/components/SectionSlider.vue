@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-900">
     <div class="container mx-auto">
-      <div class="container mx-auto p-0 relative">
+      <div class="container max-w-screen-xl mx-auto p-0 relative">
         <swiper class="swiper" :options="swiperOption">
           <swiper-slide class="w-auto" v-for="(slide, i) in this.slideList" :key="i">
             <img :src="slide" alt="">
