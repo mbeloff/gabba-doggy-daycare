@@ -133,7 +133,7 @@
     computed: {
       slideList: function () {
         let arr = this.slides
-        let n = 10
+        let n = 12
         var result = new Array(n),
           len = arr.length,
           taken = new Array(len);
@@ -152,12 +152,6 @@
 
 <style lang="scss" scoped>
   .swiper {
-    min-height: 250px;
     transition: opacity 1s ease-in-out
-  }
-
-  .swiper-container {
-    min-height: 250px;
-    padding: 10px 0
   }
 </style>
