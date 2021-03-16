@@ -100,7 +100,7 @@ module.exports = {
     },
     plugins: [
       new SitemapPlugin({
-        base: "https://gabbadoggydaycare.com", 
+        base: "https://www.gabbadoggydaycare.com", 
         paths, 
         options: {
         lastmod: true,
