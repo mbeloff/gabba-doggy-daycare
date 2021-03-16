@@ -5,14 +5,34 @@ const SitemapPlugin = require("sitemap-webpack-plugin").default;
 const paths = [
   {
     path: "/",
+    priority: 0.7
+  },
+  {
+    path: "/home/brisbane",
+    priority: 0.8
+  },
+  {
+    path: "/home/adelaide",
     priority: 0.8
   },
   {
     path: "/contact",
+    priority: 0.4
+  },
+  {
+    path: "/contact/brisbane",
+    priority: 0.5
+  },
+  {
+    path: "/contact/adelaide",
     priority: 0.5
   },
   {
     path: "/register",
+    priority: 0.3
+  },
+  {
+    path: "/grooming/brisbane",
     priority: 0.5
   },
   {
@@ -20,11 +40,39 @@ const paths = [
     priority: 0.4
   },
   {
-    path: "/sign-up",
+    path: "/sign-up/brisbane",
     priority: 0.7
   },
   {
+    path: "/sign-up/adelaide",
+    priority: 0.7
+  },
+  {
+    path: "/sign-up",
+    priority: 0.6
+  },
+  {
+    path: "/training/brisbane",
+    priority: 0.6
+  },
+  {
     path: "/daycare",
+    priority: 0.5
+  },
+  {
+    path: "/feedback/brisbane",
+    priority: 0.4
+  },
+  {
+    path: "/feedback/adelaide",
+    priority: 0.4
+  },
+  {
+    path: "/daycare/brisbane",
+    priority: 0.7
+  },
+  {
+    path: "/daycare/adelaide",
     priority: 0.7
   },
   {

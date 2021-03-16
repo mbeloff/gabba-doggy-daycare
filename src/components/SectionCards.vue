@@ -41,7 +41,7 @@
           {
             icon: "fa-custom exercise",
             heading: "Exercise",
-            desc: "Your pets get plenty of exercise with heaps of room to run around, ramps and obstacles, ball pits and more."
+            desc: "Your pets get plenty of exercise with heaps of room to run around, ramps and obstacles, ball pits, grass and more."
           },
         ]
       }

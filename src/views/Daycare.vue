@@ -57,7 +57,7 @@
       title: 'About Day Care',
       meta: [{
         name: 'description',
-        content: "All you need to know about our day care, including prices and how to sign up.",
+        content: "Gabba Doggy Daycare is a fun and exciting place for your dog to play and make new friends while you're at work.",
         vmid: 'description'
       }]
     },

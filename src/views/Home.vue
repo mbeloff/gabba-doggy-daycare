@@ -65,7 +65,7 @@
       {
         name: 'description',
         content:
-          "Your best friends' new favourite place. Don't leave your dogs home alone, bring them to Gabba Doggy Daycare for a great day out.",
+          "Your best friends' new favourite place. A fun place for your dog to play and meet new friends.",
         vmid: 'description'
       }
     ]
