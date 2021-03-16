@@ -15,9 +15,9 @@
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
        <title-block class="text-center">
           <template #small>{{ data.city }} Dogs Love it Here</template>
-          <template #big>More than just a day care</template>
+          <template #big>More than just Daycare</template>
         </title-block>
-      <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-4 mx-auto lg:grid-cols-2 max-w-screen-xl lg:gap-y-0">
+      <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-2 mx-auto md:grid-cols-2 max-w-screen-xl lg:gap-y-0 xl:gap-40">
         <div class="col order-2 lg:order-1">
           <ul class="text-left list-disc list-outside py-10">   
             <li class="grid w-full mb-5"  v-for="(item, i) in features" :key="i">
@@ -36,7 +36,8 @@
           </div>
         </div>
         <pattern-border class="order-1 lg:order-2">
-          <iframe :src="data.map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="rounded-sm map" title="Doggy daycare location map"></iframe>
+          <!-- <iframe :src="data.map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="rounded-sm map" title="Doggy daycare location map"></iframe> -->
+          <div class="rounded-sm viv w-full h-full bg-cover"></div>
         </pattern-border>
       
       </div>
@@ -106,7 +107,7 @@
         {
           title: "Stimulating Environment",
           icon: 'star-shooting',
-          desc: "Spacious play areas with balls, toys, ramps, obstacles, lawn and more."
+          desc: "Spacious play areas with balls, toys, ramps, obstacles, grass and more."
         },
         {
           title: "Pet Taxi",
@@ -155,5 +156,10 @@
   }
   .h-270 {
     height: 270px;
+  }
+  .viv {
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
+    min-height: 400px;
+    background-position: 50% 30%
   }
 </style>
