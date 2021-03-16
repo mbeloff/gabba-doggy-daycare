@@ -3,7 +3,7 @@
     <div class="container py-32 px-2 max-w-screen-xl mx-auto text-center">
       <title-block>
         <template #small>Your best friend's new favourite place</template>
-        <template #big>Gabba Doggy Daycare</template>
+        <template #big><h1>Gabba Doggy Daycare</h1></template>
       </title-block>
       <div class="flex flex-wrap text-left justify-around">
         <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're at work.</p>

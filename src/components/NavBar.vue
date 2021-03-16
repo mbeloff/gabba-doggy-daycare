@@ -6,7 +6,7 @@
 
         <!-- <img class="h-6 mr-2" src="../assets/img/gddc-paw.svg" alt="Gabba Doggy Daycare Paw Icon"> -->
 
-        <router-link class="h-full flex-grow" :to="{name: 'Home'}"><img class="h-full" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare"></router-link>
+        <router-link class="h-full flex-grow" :to="{name: 'Home'}"><img class="nav-logo" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare"></router-link>
       </div>
 
       <div class="block lg:hidden">
@@ -138,6 +138,11 @@
   }
 </script>
 <style>
+  .nav-logo {
+    height: 38px; 
+    width: 258px
+  }
+
   #menu-button>* {
     pointer-events: none
   }

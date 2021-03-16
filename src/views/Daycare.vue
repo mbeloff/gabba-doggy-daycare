@@ -26,10 +26,10 @@
           </title-block>
         </div>
         <div class="grid grid-cols-1 gap-x-10 md:grid-cols-3">
-          <div class="text-left md:col-span-2">
+          <div class="text-left md:col-span-2 flex flex-col justify-between">
             <section-signup></section-signup>
               <choose-location class="mt-10"></choose-location>
-              <div class=" grid grid-cols-1 gap-5 my-10 divide-pink-500 sm:grid-cols-2 sm:divide-x">
+              <div class=" grid grid-cols-1 gap-5 mt-10 mb-10 md:mb-0 divide-pink-500 sm:grid-cols-2 sm:divide-x">
                 <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue">Create an Account</a></div>
                 <div class="flex items-center text-left col">
                   <open-login class="mx-auto text-center text-pink-400 align-center sm:text-left hover:underline sm:ml-5">already have an account?</open-login>

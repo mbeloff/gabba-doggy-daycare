@@ -29,7 +29,7 @@
 
         <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400 mb-1">Info</p>
-          <ul class="gap-1 list-none text-sm grid">
+          <ul class="gap-2 md:gap-1 list-none text-sm grid">
             <li class="">
               <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
             </li>
@@ -52,7 +52,7 @@
         <div class="text-center sm:text-left">
           <div class="text-sm">
 
-              <ul class="space-y-2 md:space-y-1 list-none text-sm">
+              <ul class="space-y-4 md:space-y-1 list-none text-sm">
                 <li v-if="contact.phone">
                    <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-2xl font-bold" :href="`tel:` + removeSpaces(contact.phone)"><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
                 </li>

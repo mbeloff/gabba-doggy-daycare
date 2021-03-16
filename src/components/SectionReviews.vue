@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col py-5">
-    <a class="inline-block mx-auto " :href="this.$store.state[getRegion()].contact.reviewLink">
-      <img class="w-40 mx-auto rounded-xl border" src="../assets/img/reviewUs.svg" alt="">
+    <a class="inline-block mx-auto " title="review us on Google" :href="this.$store.state[getRegion()].contact.reviewLink">
+      <img class="review-us mx-auto rounded-xl border" src="../assets/img/reviewUs.svg" alt="">
     </a>
     <div class="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-2">
       <div class="w-full" v-for="(review, i) in reviews" :key="i">
@@ -60,4 +60,9 @@
     }
   }
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.review-us {
+  width: 160px;
+  height: 160px
+}
+</style>
