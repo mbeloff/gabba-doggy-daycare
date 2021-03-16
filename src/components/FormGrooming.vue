@@ -202,7 +202,7 @@
               "Content-Type": "application/x-www-form-urlencoded"
             },
             body: this.encode({
-              "form-name": "grooming",
+              "form-name": "Grooming",
               ...this.form
             })
           })
