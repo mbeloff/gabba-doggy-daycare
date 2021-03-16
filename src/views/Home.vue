@@ -17,21 +17,21 @@
           <template #small>{{ data.city }} Dogs Love it Here</template>
           <template #big>More than just Daycare</template>
         </title-block>
-      <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-2 mx-auto md:grid-cols-2 max-w-screen-xl lg:gap-y-0 xl:gap-40">
-        <div class="col order-2 lg:order-1">
-          <ul class="text-left list-disc list-outside py-10">   
-            <li class="grid w-full mb-5"  v-for="(item, i) in features" :key="i">
+      <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10 lg:gap-y-0 xl:gap-30">
+        <div class="col order-2 lg:order-1 flex flex-col justify-between">
+          <ul class="text-left list-disc list-outside">   
+            <li class="grid w-full mb-2"  v-for="(item, i) in features" :key="i">
               <template v-if="item.limit == getRegion() || item.limit == null">
                 <div class="flex gap-3 items-center">
                 <icon-stack :icon="item.icon"></icon-stack>           
                 <p class="font-bold text-blue-700">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span>  </p>
                 </div>
-              <p class="ml-11">{{item.desc}}</p>
+              <p class="ml-11 text-sm">{{item.desc}}</p>
               </template>
               
             </li>         
           </ul>
-          <div class="mt-10 text-center">
+          <div class="mt-16 text-center">
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
           </div>
         </div>
@@ -159,7 +159,7 @@
   }
   .viv {
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
-    min-height: 400px;
+    min-height: 500px;
     background-position: 50% 30%
   }
 </style>
