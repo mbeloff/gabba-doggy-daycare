@@ -114,14 +114,6 @@
   import fecha from 'fecha';
   import 'vue-date-pick/dist/vueDatePick.css';
   export default {
-    metaInfo: {
-      title: 'Request A Grooming Service',
-      meta: [{
-        name: 'description',
-        content: "Grooming services available - Special discounts for doggy daycare guests!",
-        vmid: 'description'
-      }]
-    },
     components: {
       DatePick
     },

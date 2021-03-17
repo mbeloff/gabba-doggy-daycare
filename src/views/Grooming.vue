@@ -46,7 +46,7 @@
       }
     },
     metaInfo: {
-      title: 'About Grooming',
+      title: 'Grooming',
       meta: [{
         name: 'description',
         content: "Get your pup looking fresh and clean. Hydrobath and grooming services with special discounts for daycare customers.",

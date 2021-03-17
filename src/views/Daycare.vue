@@ -54,7 +54,7 @@
       }
     },
     metaInfo: {
-      title: 'About Day Care',
+      title: 'Daycare',
       meta: [{
         name: 'description',
         content: "Gabba Doggy Daycare is a fun and exciting place for your dog to play and make new friends while you're at work.",

@@ -152,7 +152,7 @@
       },
       "review": [{
           "@type": "Review",
-          "author": "Melka Ruby",
+          "author": "Meika Ruby",
           "datePublished": "2020-12-15",
           "description": "My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙",
           "name": "Facebook Review",

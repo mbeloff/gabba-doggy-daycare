@@ -1,7 +1,7 @@
 <template>
   <div class="p-2">
       <p class="text-blue-900 mb-3">Leave a message and we'll get back to you.</p>
-      <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-2 pt-6 pb-8 mb-4 bg-white bg-right-bottom bg-no-repeat rounded shadow-md bg-pug" :class="{ 'opacity-50' : isLoading}">
+      <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-2 pt-6 pb-8 mb-4 bg-white rounded shadow-md" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
           <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
             <p class="px-4 py-2 mx-2 text-2xl text-center text-blue-500 place-self-center">Thanks, we'll get back to you as soon as we can.</p>
@@ -55,7 +55,7 @@
 <script>
 export default {
     metaInfo: {
-      title: 'Make an Inquiry',
+      title: 'Message Us',
       meta: [{
         name: 'description',
         content: "Got questions? Ask away, we'll get back to you as soon as we can.",
@@ -95,7 +95,7 @@ export default {
           return
         }
         if (this.form.email) {
-          this.emailIsValid(this.form.email)
+          this.emailIsValid(this.form.email)         
         }
         this.handleSubmit()
       },

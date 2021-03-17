@@ -43,9 +43,7 @@
 </template>
 
 <script>
-import TitleBlock from './base/TitleBlock.vue'
   export default {
-  components: { TitleBlock },
     computed: {
       region() {
         return this.$store.state.region

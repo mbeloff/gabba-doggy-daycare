@@ -150,7 +150,7 @@
       FormTraining
     },
     metaInfo: {
-      title: 'Dog Training',
+      title: 'Training',
       meta: [{
         name: 'description',
         content: "Force-free training for a positive relationship between dog and owner.",

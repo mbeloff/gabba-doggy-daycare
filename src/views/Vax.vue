@@ -76,7 +76,7 @@
       }
     },
     metaInfo: {
-    title: 'Vaccination Policy',
+    title: 'Vaccinations',
     meta: [
       {
         name: 'description',
