@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="tile" id="about">
-      <div class="container grid grid-cols-1 gap-x-20 lg:gap-x-40 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 max-w-screen-xl">
+      <div class="container grid grid-cols-1 gap-x-20 lg:gap-x-40 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 max-w-screen-lg">
         <div class="col y-5">
           <title-block>
             <template #small>Daycare</template>
@@ -36,7 +36,7 @@
                 </div>
               </div>            
           </div>
-          <div class="bg-cover md:col-span-1 grass-pup rounded-xl shadow-xl">
+          <div class="bg-cover md:col-span-1  rounded-xl shadow-xl h-96 min-h-full bg-center" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_600/f_auto,q_auto/v1/gddc/photos/716.jpg)">
           </div>
         </div>
       </div>
@@ -76,23 +76,6 @@
 
     @media only screen and (max-width: 767px) {
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_700/q_auto,f_auto/v1/gddc/photos/2021_March/6b.jpg);
-    }
-  }
-
-  .grass-pup {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_350,h_600/q_auto,f_auto/v1/gddc/photos/712.jpg);
-    min-height: 400px;
-    background-position: 50% 30%;
-
-    @media only screen and (max-width: 1024px) {
-      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_250,h_400/q_auto,f_auto/v1/gddc/photos/712.jpg);
-      background-position: 0% 20%;
-    }
-
-    @media only screen and (max-width: 767px) {
-      min-height: 600px;
-      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_400,h_600/q_auto,f_auto/v1/gddc/photos/712.jpg);
-      background-position: 0% 20%;
     }
   }
 </style>

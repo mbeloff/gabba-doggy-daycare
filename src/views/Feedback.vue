@@ -2,7 +2,7 @@
 <div class="bg-blue-500 h-full">
    <div class="container m-auto max-w-screen-sm p-2 py-20">
       
-      <form name="feedback" id="feedback" data-netlify="true" @submit.prevent="handleSubmit" class="relative px-2 pt-6 pb-6 mb-4 bg-gray-100 bg-right-bottom bg-no-repeat rounded shadow-md" :class="{ 'opacity-50' : isLoading}">
+      <form name="feedback" id="feedback" data-netlify="true" @submit.prevent="handleSubmit" class="relative px-2 pt-6 pb-6 mb-4 bg-gray-100 rounded shadow-md" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
           <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
             <p class="px-4 py-2 mx-2 text-2xl text-center text-blue-500 place-self-center">Thanks, we appreciate your feedback.</p>
@@ -97,11 +97,6 @@ export default {
             this.hasSubmitted = true;
           })
       },
-      close() {
-        this.$router.push({
-        name: 'Privacy'
-        })
-      }
     },
     mounted() {
       setTimeout(() => {

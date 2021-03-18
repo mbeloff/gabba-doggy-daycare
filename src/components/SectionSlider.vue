@@ -121,12 +121,12 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/more/11.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/more/12.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/more/13.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/2021_March/1.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/2021_March/2.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/2021_March/3.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/2021_March/4.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/2021_March/5.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/2021_March/6b.jpg"
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/1.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/2.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/3.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/4.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/5.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/6b.jpg"
         ]
       };
     },
