@@ -14,7 +14,7 @@
     
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
        <title-block class="text-center">
-          <template #small>{{ data.city }} Dogs Love it Here</template>
+          <template #small>Dogs Love it Here</template>
           <template #big>More than just Daycare</template>
         </title-block>
       <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10 lg:gap-y-0 xl:gap-30">
@@ -27,19 +27,14 @@
                 <p class="font-bold text-blue-700">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span>  </p>
                 </div>
               <p class="ml-11 text-sm">{{item.desc}}</p>
-              </template>
-              
+              </template>              
             </li>         
           </ul>
           <div class="mt-16 text-center">
             <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
           </div>
         </div>
-        <pattern-border class="order-1 lg:order-2">
-          <!-- <iframe :src="data.map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="rounded-sm map" title="Doggy daycare location map"></iframe> -->
-          <div class="rounded-sm viv w-full h-full bg-cover"></div>
-        </pattern-border>
-      
+          <div class="order-1 lg:order-2 rounded-sm viv w-full h-full bg-cover shadow-xl rounded-lg"></div>             
       </div>
     </div> 
     

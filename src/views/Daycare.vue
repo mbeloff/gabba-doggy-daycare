@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="tile" id="about">
-      <div class="container grid grid-cols-1 gap-x-20 lg:gap-x-40 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 max-w-screen-lg">
+      <div class="container grid grid-cols-1 gap-x-20  gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 max-w-screen-lg">
         <div class="col y-5">
           <title-block>
             <template #small>Daycare</template>
@@ -18,15 +18,15 @@
     </div>
     <section-prices></section-prices>
     <div class="tile" id="enrol">
-      <div class="container max-w-screen-xl py-20  px-2 mx-auto">
+      <div class="container max-w-screen-lg py-20 px-2 mx-auto">
         <div class="text-center">
           <title-block>
             <template #small>Ready to sign up?</template>
             <template #big>Before You Join</template>
           </title-block>
         </div>
-        <div class="grid grid-cols-1 gap-x-10 md:grid-cols-3">
-          <div class="text-left md:col-span-2 flex flex-col justify-between">
+        <div class="grid grid-cols-1 gap-x-20 md:grid-cols-2">
+          <div class="text-left md:col-span-1 flex flex-col justify-between">
             <section-signup></section-signup>
               <choose-location class="mt-10"></choose-location>
               <div class=" grid grid-cols-1 gap-5 mt-10 mb-10 md:mb-0 divide-pink-500 sm:grid-cols-2 sm:divide-x">

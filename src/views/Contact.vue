@@ -52,14 +52,11 @@
             </li>
           </ul>
         </div>
-
       </div>
     </div>
-
     <div class="w-full mx-auto py-1 bg-blue-500">
       <iframe :src="contact.map" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-
   </div>
 </template>
 

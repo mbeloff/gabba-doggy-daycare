@@ -1,12 +1,12 @@
 <template>
   <div class="tile">
-    <div class="container py-32 px-2 max-w-screen-xl mx-auto text-center">
+    <div class="container py-32 px-2 max-w-screen-lg mx-auto text-center">
       <title-block>
         <template #small>Your best friend's new favourite place</template>
         <template #big><h1>Gabba Doggy Daycare</h1></template>
       </title-block>
       <div class="flex flex-wrap text-left justify-around">
-        <p class="lg:px-40 mb-10 text-lg">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're at work.</p>
+        <p class="px-5 mb-10 md:text-lg">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. Off leash day care with multiple large play areas, a puppy creche and friendly staff to provide all the care and attention your dogs need while you're at work.</p>
         <div v-for="(card, i) in cards" :key="i" class="flex-grow py-2 sm:px-2 md:p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container order-1" :class="{ 'md:order-1 order-last' : card.type}">
           <div v-if="card.type !== 'image'" class="h-full py-8 bg-white rounded-lg shadow-md card text-center">
             <span class="fa-stack fa-2x">
