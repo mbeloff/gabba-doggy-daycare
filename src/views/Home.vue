@@ -3,7 +3,7 @@
     <section-hero></section-hero>
     <section-cards></section-cards>
     <div class="bg-gray-900 relative">
-        <section-slider class="transition-opacity duration-1000" :class="{ 'opacity-0' : this.disabled}" :pageLoaded="this.setPageLoaded" :key="this.rand"></section-slider>
+        <section-slider class="transition-opacity duration-1000" :class="{ 'opacity-0' : this.disabled}" :key="this.rand"></section-slider>
         <div v-show="this.disabled" class="absolute top-0 left-0 w-full h-full grid place-items-center">
           <i class="fal fa-spinner-third fa-spin fa-3x text-white"></i> 
         </div>        
