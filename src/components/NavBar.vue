@@ -56,6 +56,11 @@
               order: "1"
             },
             {
+              label: "Tour",
+              link: "Explore",
+              order: "1"
+            },
+            {
               label: "Daycare",
               link: "Daycare",
               order: "2",

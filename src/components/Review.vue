@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-between">
     <div class="m-2 px-4 py-3 bg-white rounded-lg shadow-lg border-gray-100 border" @click="expanded = !expanded">
       <div class="flex justify-between">
-        <p class="font-bold text-sm text-blue-900">{{reviewData.name}}</p><i :class="reviewData.icon" class="fab text-blue-500"></i>
+        <p class="font-bold text-sm text-blue-900">{{reviewData.name}}</p><span><i :class="reviewData.icon" class="fab text-blue-500"></i></span>  
       </div>
 
       <p ref="reviewBox" class="text-sm relative review-text" :class="{'truncate': !expanded}">{{reviewData.review}}  </p>

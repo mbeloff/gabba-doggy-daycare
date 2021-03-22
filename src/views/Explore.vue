@@ -1,42 +1,56 @@
 <template>
-  <div class="pt-20">
-    <div class="container max-w-screen-lg mx-auto">
+  <div class='h-full'>
+    <div  v-if="this.stuff">
+      <div class="pt-20 container max-w-screen-lg mx-auto">
       <title-block class="text-left px-2">
       <template #small>welcome</template>
-      <template #big>Check out our Place</template>
+      <template #big>Check out our place</template>
     </title-block>
-    <img class="mb-10 md:max-w-screen-md mx-auto" src="https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_600/v1616118682/gddc/areas/map.jpg" alt="">
-    </div>
-    
-    <div :class="{'tile': (i+1) % 2 }" class="py-2 border-b" v-for="(area, i) in areas" :key="i">
+    <img class="mb-10 mx-auto explore-map" src="https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_600/v1616118682/gddc/areas/map.jpg" alt="">
+    </div>    
+    <div :class="{'bg-gradient-to-tr from-gray-100 to-gray-200': (i+1) % 2 }" class="py-5 border-b" v-for="(area, i) in stuff" :key="i">
       <div  class="grid grid-cols-1 md:grid-cols-2 px-2 max-w-screen-lg gap-x-10 gap-y-5 mx-auto">
       <div :class="{'md:order-2' : i % 2}" class="flex flex-col justify-center">
-        <p class="text-lg font-bold">{{area.heading}}</p>
-        <p>{{area.desc}}</p>
+        <div class="grid grid-flow-col auto-cols-max gap-3">
+          <icon-stack class="ml-0" :icon="area.icon"></icon-stack>  <p class="text-lg font-bold text-blue-700">{{area.heading}}</p>
+        </div>        
+        <p class="ml-11">{{area.desc}}</p>
       </div>
       <div class="grid grid-cols-2 gap-2 md:order-1">
         <square-image v-for="(img, i) in area.img" :key="i" :img="img"></square-image>
       </div>
     </div>
     </div>
+    <router-link :to="{name: 'Sign-up'}" ><button class="btn-blue my-20 mx-auto block"><i class="fal fa-thumbs-up"></i> Sign me up</button></router-link>    
+    </div>
+
+      <not-available v-else></not-available>
+
     
   </div>
 </template>
 
 <script>
 export default {
+  computed: {
+    stuff() {
+      return this.areas[this.getRegion()]
+    }
+  },
 data() {
   return {
-    areas: [
+    areas: {
+      brisbane: [
       {
         heading: 'Huge, indoor daycare',
-        desc: "We've created a massive, off-leash dog daycare centre, with multiple spacious play areas and heaps of things to do.",
+        desc: "We've created a massive, off-leash dog daycare centre, with multiple spacious play areas and heaps of things to do. Gabba Doggy Daycare is a dog's home away from home.",
         img: [
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616119001/gddc/areas/big.jpg', 
         'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616119540/gddc/areas/big2.jpg',
         'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616119540/gddc/areas/thing.jpg',
         'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1/gddc/areas/lounge.jpg',
-        ]
+        ],
+        icon: 'home-heart'
       },
       {
         heading: 'Agility course.',
@@ -46,7 +60,8 @@ data() {
            'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility2.jpg',
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility3.jpg',
            'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility4.jpg'
-           ]
+           ],
+           icon: 'stopwatch'
       },
       {
         heading: 'Toys and Balls',
@@ -55,7 +70,8 @@ data() {
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118678/gddc/areas/balls2.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/balls4.jpg',
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/balls.jpg',
-          ]
+          ],
+          icon: 'tennis-ball'
       },
       {
         heading: 'Grass and Sand',
@@ -65,7 +81,8 @@ data() {
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/grass4.jpg',
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118681/gddc/areas/sand2.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/sand.jpg'
-          ]
+          ],
+          icon: 'sunglasses'
       },
       {
         heading: 'Room to Relax',
@@ -75,14 +92,28 @@ data() {
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/chill2.jpg',
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/chill.jpg',
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/chill4.jpg',
-          ]
+          ],
+          icon: 'snooze'
       }
     ]
+    }
+    
   }
 }
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+.explore-map {
+  @media only screen and (max-width: 425px) {
+    max-width: 320px;
+  }
+  
+  @media only screen and (min-width: 425px) {
+    width: 425px
+  }
+  @media only screen and (min-width: 640px) {
+    width: 640px
+  }
+}
 </style>

@@ -10,7 +10,7 @@ const Jobs = () => import("../views/Jobs.vue")
 const Grooming = () => import("../views/Grooming.vue")
 const Training = () => import("../views/Training.vue")
 const Feedback = () => import("../views/Feedback.vue")
-const Place = () => import("../views/Place.vue")
+const Explore = () => import("../views/Explore.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -68,9 +68,9 @@ const routes = [
     props: true
   },
   {
-    path: "/explore/brisbane",
+    path: "/explore/:region?",
     name: "Explore",
-    component: Place,
+    component: Explore,
     props: true
   },
   {
