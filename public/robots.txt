@@ -1,3 +1,7 @@
 User-agent: *
 Disallow: /success
+Disallow: /404
 Disallow: /thanks
+Disallow: /grooming/adelaide
+Disallow: /training/adelaide
+Disallow: /explore/adelaide

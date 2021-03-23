@@ -1,6 +1,6 @@
 <template>
   <div class='h-full'>
-    <div  v-if="this.pageData">
+    <div  v-if="this.regionAreas">
       <div class="pt-20 container max-w-screen-lg mx-auto">
       <title-block class="text-center px-2">
       <template #small>welcome</template>
@@ -8,7 +8,7 @@
     </title-block>
     <img class="mb-10 mx-auto explore-map" src="https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_600/v1616118682/gddc/areas/map.jpg" alt="">
     </div>    
-    <div :class="{'bg-gradient-to-tr from-gray-100 to-gray-200': (i+1) % 2 }" class="py-5 border-b" v-for="(area, i) in pageData" :key="i">
+    <div :class="{'bg-gradient-to-tr from-gray-100 to-gray-200': (i+1) % 2 }" class="py-5 border-b" v-for="(area, i) in regionAreas" :key="i">
       <div  class="grid grid-cols-1 md:grid-cols-2 px-2 max-w-screen-lg gap-x-10 gap-y-5 mx-auto">
       <div :class="{'md:order-2' : i % 2}" class="flex flex-col justify-center">
         <div class="grid grid-flow-col auto-cols-max gap-3">
@@ -33,7 +33,7 @@
 <script>
 export default {
   computed: {
-    pageData() {
+    regionAreas() {
       return this.areas[this.getRegion()]
     }
   },
