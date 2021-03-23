@@ -1,7 +1,7 @@
 <template>
   <div class="tile h-full">
       <div class="container px-4 py-20 mx-auto lg:px-20 xl:px-40">
-        <p v-if="this.name == 'Explore'" class="mb-3 font-bold">Sorry, this page is still under construction
+        <p v-if="this.name == 'Explore'" class="mb-3 font-bold">Sorry, this page isn't ready yet
         </p>
         <p v-else class="mb-3 font-bold">Sorry, <span class="text-blue-500">{{ this.$route.name }}</span> is not available at this location <span class="capitalize">({{ this.region }})</span> yet.
         </p>
