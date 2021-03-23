@@ -90,20 +90,20 @@
               },
             },
             extras: {
-              Pictures: {
-                name: "Photo Updates",
-                desc: "Wondering how much fun your dog is having while they're away? Get photo updates sent to you",
-                soon: "- available soon",
-                price: "$10",
-                order: '1'
-              },
-              Excursion: {
-                name: "Group Excursion",
-                desc: "A group adventure to the park, river or bay for a walk and some fresh air",
-                soon: "- available soon",
-                price: "$20",
-                order: '2'
-              },
+              // Pictures: {
+              //   name: "Photo Updates",
+              //   desc: "Wondering how much fun your dog is having while they're away? Get photo updates sent to you",
+              //   soon: "- available soon",
+              //   price: "$10",
+              //   order: '1'
+              // },
+              // Excursion: {
+              //   name: "Group Excursion",
+              //   desc: "A group adventure to the park, river or bay for a walk and some fresh air",
+              //   soon: "- available soon",
+              //   price: "$20",
+              //   order: '2'
+              // },
               PetTaxi: {
                 name: "Pet Taxi (Local Pickup and Dropoff)",
                 desc: "Local pickup & dropoff in our Pet Taxi (within 5km)",
