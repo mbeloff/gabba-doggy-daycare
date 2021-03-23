@@ -2,7 +2,7 @@
   <div class='h-full'>
     <div  v-if="this.pageData">
       <div class="pt-20 container max-w-screen-lg mx-auto">
-      <title-block class="text-left px-2">
+      <title-block class="text-center px-2">
       <template #small>welcome</template>
       <template #big>Check out our place</template>
     </title-block>
@@ -12,7 +12,7 @@
       <div  class="grid grid-cols-1 md:grid-cols-2 px-2 max-w-screen-lg gap-x-10 gap-y-5 mx-auto">
       <div :class="{'md:order-2' : i % 2}" class="flex flex-col justify-center">
         <div class="grid grid-flow-col auto-cols-max gap-3">
-          <icon-stack class="ml-0" :icon="area.icon"></icon-stack>  <p class="text-lg font-bold text-blue-700">{{area.heading}}</p>
+          <icon-stack class="ml-0" :icon="area.icon"></icon-stack>  <p class="text-lg font-bold text-blue-700 self-center">{{area.heading}}</p>
         </div>        
         <p class="ml-11">{{area.desc}}</p>
       </div>

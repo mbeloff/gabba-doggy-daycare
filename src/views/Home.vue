@@ -22,9 +22,9 @@
           <ul class="text-left list-disc list-outside">   
             <li class="grid w-full mb-2"  v-for="(item, i) in features" :key="i">
               <template v-if="item.limit == getRegion() || item.limit == null">
-                <div class="flex gap-3 items-center">
+                <div class="grid grid-flow-col auto-cols-max gap-3">
                 <icon-stack :icon="item.icon"></icon-stack>           
-                <p class="font-bold text-blue-700">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span>  </p>
+                <p class="font-bold text-blue-700 self-center">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span>  </p>
                 </div>
               <p class="ml-11 text-sm">{{item.desc}}</p>
               </template>              
