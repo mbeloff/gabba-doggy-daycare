@@ -17,8 +17,8 @@
           <template #small>Dogs Love it Here</template>
           <template #big>More than just Daycare</template>
         </title-block>
-      <div class="container grid grid-cols-1 gap-x-10 lg:gap-20 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10 lg:gap-y-0 xl:gap-30">
-        <div class="col order-2 lg:order-1 flex flex-col justify-between">
+      <div class="container grid grid-cols-1 lg:gap-10 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10">
+        <div class="col order-2 md:order-1 flex flex-col justify-between">
           <ul class="text-left list-disc list-outside">   
             <li class="grid w-full mb-2"  v-for="(item, i) in features" :key="i">
               <template v-if="item.limit == getRegion() || item.limit == null">
@@ -30,12 +30,15 @@
               </template>              
             </li>         
           </ul>
-          <div class="mt-16 text-center">
-            <router-link :to="{ name: 'Daycare' }" class="inline-block btn-blue">Pricing & More Info <i class="fal fa-arrow-right"></i></router-link>
+          <div class="mt-16 text-center flex flex-col sm:flex-row sm:flex-wrap  gap-x-2 gap-y-5">
+            <router-link :to="{ name: 'Daycare', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">More about Daycare</router-link>
+            <router-link :to="{ name: 'Explore', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Take a Tour</router-link>
+            <router-link :to="{ name: 'Sign-up', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Create Account</router-link>
           </div>
         </div>
-          <div class="order-1 lg:order-2 rounded-sm viv w-full h-full bg-cover shadow-xl rounded-lg"></div>             
+          <div class="order-1 md:order-2 rounded-sm viv w-full h-full bg-cover shadow-xl rounded-lg"></div>             
       </div>
+      
     </div> 
     
       <section-reviews></section-reviews>

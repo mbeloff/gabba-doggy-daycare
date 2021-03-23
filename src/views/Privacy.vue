@@ -75,7 +75,7 @@
       <li>
         <strong>Website</strong> refers to Gabba Doggy Daycare, accessible
         from
-        <router-link :to="{name: 'New Home', params: {region: this.$store.state.region}}" class="link-pink break-all">https://www.gabbadoggydaycare.com</router-link>
+        <router-link :to="{name: 'New Home', params: {region: getRegion()}}" class="link-pink break-all">https://www.gabbadoggydaycare.com</router-link>
       </li>
       <li>
         <strong>You</strong> means the individual accessing or using the

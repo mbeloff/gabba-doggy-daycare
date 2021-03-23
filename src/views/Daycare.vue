@@ -17,35 +17,14 @@
       </div>
     </div>
     <section-prices></section-prices>
-    <div class="tile" id="enrol">
-      <div class="container max-w-screen-lg py-20 px-2 mx-auto">
-        <div class="text-center">
-          <title-block>
-            <template #small>Ready to sign up?</template>
-            <template #big>Before You Join</template>
-          </title-block>
-        </div>
-        <div class="grid grid-cols-1 gap-x-20 md:grid-cols-2">
-          <div class="text-left md:col-span-1 flex flex-col justify-between">
-            <section-signup></section-signup>
-              <choose-location class="mt-10"></choose-location>
-              <div class=" grid grid-cols-1 gap-5 mt-10 mb-10 md:mb-0 divide-pink-500 sm:grid-cols-2 sm:divide-x">
-                <div class="text-center sm:text-right col"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue">Create an Account</a></div>
-                <div class="flex items-center text-left col">
-                  <open-login class="mx-auto text-center text-pink-400 align-center sm:text-left hover:underline sm:ml-5">already have an account?</open-login>
-                </div>
-              </div>            
-          </div>
-          <div class="bg-cover md:col-span-1  rounded-xl shadow-xl h-96 min-h-full bg-center" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_600/f_auto,q_auto/v1/gddc/photos/716.jpg)">
-          </div>
-        </div>
-      </div>
+    <div class="tile">
+      <section-expect></section-expect>
     </div>
   </div>
 </template>
 
 <script>
-  import SectionSignup from '@/components/SectionSignup.vue'
+import SectionExpect from '@/components/SectionWhatToExpect.vue'
   import SectionPrices from '@/components/SectionPrices.vue'
   export default {
     computed: {
@@ -62,8 +41,8 @@
       }]
     },
     components: {
-      SectionSignup,
-      SectionPrices
+      SectionPrices,
+      SectionExpect
     },
   }
 </script>

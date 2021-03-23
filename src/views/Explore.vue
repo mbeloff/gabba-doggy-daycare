@@ -37,6 +37,14 @@ export default {
       return this.areas[this.getRegion()]
     }
   },
+  metaInfo: {
+      title: 'Explore',
+      meta: [{
+        name: 'description',
+        content: "Find out what makes GDDC such a fun place for your dog to play and make new friends.",
+        vmid: 'description'
+      }]
+    },
 data() {
   return {
     areas: {

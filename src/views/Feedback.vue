@@ -107,11 +107,6 @@ export default {
 </script>
 
 <style lang="scss"> 
-.btn-disabled {
-  pointer-events: none;
-  opacity: .3;
-}
-
 .rating {
   transition: transform .5s ease-out;
   user-select: none;

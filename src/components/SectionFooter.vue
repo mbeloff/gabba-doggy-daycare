@@ -5,28 +5,6 @@
 
         <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
         </div>
-        <!-- <div class="flex-grow text-center sm:text-left">
-          <p class="text-lg text-gray-400">Quick Links</p>
-          <ul class="space-y-2 md:space-y-1 list-none text-sm">
-
-            <li>
-              <router-link :to="{ name: 'Home' }" class="focus:outline-white hover:text-white">Home</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'Daycare' }" class="focus:outline-white hover:text-white">Daycare</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'Sign-up' }" class="focus:outline-white hover:text-white">Create Account</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'Grooming' }" class="focus:outline-white hover:text-white">Grooming</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'Contact' }" class="focus:outline-white hover:text-white">Contact Us</router-link>
-            </li>
-          </ul>
-        </div> -->
-
         <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400 mb-1">Info</p>
           <ul class="gap-2 md:gap-1 list-none text-sm grid">
@@ -43,7 +21,7 @@
               <a href="/docs/GDDC-medical-agreement.pdf" download class="focus:outline-white hover:text-white">Medical Release</a>
             </li>
             <li class="">
-              <router-link :to="{ name: 'Jobs' }" class="focus:outline-white hover:text-white">Jobs / Volunteer</router-link>
+              <router-link :to="{ name: 'Jobs', params: {region: getRegion()} }" class="focus:outline-white hover:text-white">Jobs / Volunteer</router-link>
             </li>
           </ul>
         </div>

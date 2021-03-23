@@ -7,7 +7,7 @@
         </p>
         
         <p class="text-sm mb-3">You can switch locations using the menu at the top of the screen.</p>
-        <router-link class="text-xl link-pink" :to="{name: 'Home'}"><i class="fal fa-home"></i> Take me back home</router-link>
+        <router-link class="text-xl link-pink" :to="{name: 'Home', params: {region: getRegion()}}"><i class="fal fa-home"></i> Take me back home</router-link>
       </div>
     </div>
 </template>
