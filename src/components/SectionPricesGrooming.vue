@@ -23,7 +23,7 @@
           <p class="text-center my-4">All grooming half price if you're booked in for daycare on the same day <i class='fas fa-heart text-xs opacity-50'></i></p>
         </div>
       </div>
-      <div class="min-h-full h-96 bg-cover bg-center rounded-lg shadow-xl md:order-1" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_550/f_auto,q_auto/v1/gddc/photos/more/12.jpg)"></div>
+      <div class=" bg-cover bg-center rounded-lg shadow-xl md:order-1 aspect-w-3 aspect-h-4" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_550/f_auto,q_auto/v1/gddc/photos/more/12.jpg)"></div>
     </div>
   </div>
 </template>

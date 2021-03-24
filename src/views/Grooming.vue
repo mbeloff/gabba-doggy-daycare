@@ -11,7 +11,7 @@
             <p class="mb-3">Gabba Doggy Daycare is now offering grooming as a standalone service, or to be combined with your daycare booking. Check our services and prices below.</p>
             <p class="mb-3">Grooming services can be booked through your account. If you don't have an account, use the form below.</p>
           </div>
-          <div class="bg-cover rounded-xl col bath-pup shadow-lg">
+          <div class="bg-cover rounded-xl col bath-pup shadow-lg aspect-w-3 aspect-h-4">
           </div>
         </div>
       </div>
@@ -62,9 +62,9 @@
 
 <style lang="scss">
   .bath-pup {
-    min-height: 400px;
+    // min-height: 350px;
     background-position: 45% 50%;
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_450,h_600/q_auto,f_auto/v1609809738/gddc/bath-pup.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_600/q_auto,f_auto/v1609809738/gddc/bath-pup.jpg);
 
     @media only screen and (max-width: 767px) {
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_600/q_auto,f_auto/v1609809738/gddc/bath-pup.jpg);
