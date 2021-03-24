@@ -2,7 +2,7 @@
   <div class="h-full">
     <div v-if="hasTraining">
       <div class="tile">
-        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-xl">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-lg">
           <div class="col my-5 md:mt-10">
             <title-block>
               <template #small>Older Puppies and Adults Dogs</template>
@@ -41,7 +41,7 @@
         </div>
       </transition>
       <div class="bg-white">
-        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-xl">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-lg">
           <div class="col my-5 md:mt-10 md:order-2">
             <title-block>
               <template #small>Problem Behaviours</template>
@@ -85,7 +85,7 @@
         </div>
       </transition>
       <div class="tile">
-        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-xl">
+        <div class="container grid grid-cols-1 gap-x-20 px-2 md:py-20 py-10 mx-auto md:grid-cols-2 max-w-screen-lg">
           <div class="col my-5 md:mt-10">
             <title-block>
               <template #small>Little Ones</template>
