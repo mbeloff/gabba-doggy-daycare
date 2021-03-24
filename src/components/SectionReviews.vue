@@ -46,6 +46,12 @@
             icon: 'fa-google'
           },
           {
+            name: 'Elizabeth Bodis',
+            review: 'Great daycare! It’s always daunting leaving your fur baby somewhere, but having the 3 days free really helps you get comfortable and make sure it’s the right fit!! It definitely is, our little man loves coming here and he starts getting so excited when we open the door. Best thing is you get updates throughout the day too 😊',
+            stars: 5,
+            icon: 'fa-google'
+          },
+          {
             name: 'Josephine Potts',
             review: 'My Pippa had her first and great day at Gabba Doggy Daycare on Friday 26 February 2021. The girls looked after her and being PIPPA’s first day, they kept me up to date with how she was enjoying herself. Pippa came home exhausted and will be ready to enjoy her next visit. Thank you to everyone and the Pet Taxi was so helpful in carrying Pippa to and from. 💜🐶💜',
             icon: 'fa-facebook-f'
