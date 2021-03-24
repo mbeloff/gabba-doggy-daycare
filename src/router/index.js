@@ -57,7 +57,12 @@ const routes = [
   },
   {
     path: "/register/:region?",
-    name: "Register",
+    redirect: { name: 'Question'},
+    props: true
+  },
+  {
+    path: "/question/:region?",
+    name: "Question",
     component: Home,
     props: true
   },

@@ -32,7 +32,7 @@
           </ul>
           <div class="mt-16 text-center flex flex-col sm:flex-row sm:flex-wrap  gap-x-2 gap-y-5">
             <router-link :to="{ name: 'Daycare', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">More about Daycare</router-link>
-            <router-link :to="{ name: 'Explore', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Take a Tour</router-link>
+            <router-link v-show="getRegion() == 'brisbane'" :to="{ name: 'Explore', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Take a Tour</router-link>
             <router-link :to="{ name: 'Sign-up', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Create Account</router-link>
           </div>
         </div>
@@ -123,11 +123,11 @@
     }
   },
   mounted() {
-    if (this.$route.name === "Register") {
+    if (this.$route.name === "Question") {
       this.$modal.show("contact-modal");
     }
   }
-  }
+}
 </script>
 
 <style lang="scss">

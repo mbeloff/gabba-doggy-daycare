@@ -20,11 +20,11 @@ const paths = [
     priority: 0.5
   },
   {
-    path: "/register/brisbane",
+    path: "/question/brisbane",
     priority: 0.3
   },
   {
-    path: "/register/adelaide",
+    path: "/question/adelaide",
     priority: 0.3
   },
   {
