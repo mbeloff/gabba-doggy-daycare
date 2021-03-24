@@ -106,7 +106,10 @@
     },
     beforeUpdate() {
       let param = this.$route.params.region
-      if (param == 'adelaide' || param == 'brisbane') {
+      if (param == this.getRegion()) {
+        return
+      }
+      else if (param == 'adelaide' || param == 'brisbane') {
         this.$store.dispatch('setRegion', param)
       } else if (param) {
         this.$router.push({
