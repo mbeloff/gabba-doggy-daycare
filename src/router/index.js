@@ -96,10 +96,10 @@ const routes = [
     props: true
   },
   {
-    path: "/grooming/:region?",
+    path: "/grooming/:region?", //abskdbakjbsdkjbaks ????
     name: "Grooming",
     component: Grooming,
-    props: true
+    props: true,
   },
   {
     path: "/jobs/:region?",

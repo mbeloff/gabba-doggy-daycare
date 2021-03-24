@@ -17,16 +17,16 @@
           <template #small>Dogs Love it Here</template>
           <template #big>More than just Daycare</template>
         </title-block>
-      <div class="container grid grid-cols-1 lg:gap-10 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10">
+      <div class="container grid grid-cols-1 lg:gap-10 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10 gap-x-2">
         <div class="col order-2 md:order-1 flex flex-col justify-between">
           <ul class="text-left list-disc list-outside">   
-            <li class="grid w-full mb-2"  v-for="(item, i) in features" :key="i">
+            <li class="grid w-full mb-2" v-for="(item, i) in features" :key="i">
               <template v-if="item.limit == getRegion() || item.limit == null">
                 <div class="grid grid-flow-col auto-cols-max gap-3">
                 <icon-stack :icon="item.icon"></icon-stack>           
                 <p class="font-bold text-blue-700 self-center">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span>  </p>
                 </div>
-              <p class="ml-11 text-sm">{{item.desc}}</p>
+              <p class="ml-11 text-sm">{{item.desc}} <router-link v-if="item.title == 'Grooming'" class="link-pink" :to="{name: item.title, params: {region: item.limit}}">find out more</router-link></p>
               </template>              
             </li>         
           </ul>
@@ -36,7 +36,7 @@
             <router-link :to="{ name: 'Sign-up', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Create Account</router-link>
           </div>
         </div>
-          <div class="order-1 md:order-2 rounded-sm viv w-full h-full bg-cover shadow-xl rounded-lg"></div>             
+          <div class="order-1 md:order-2 rounded-sm photo1 w-full h-full bg-cover shadow-xl rounded-lg"></div>             
       </div>
       
     </div> 
@@ -155,7 +155,7 @@
   .h-270 {
     height: 270px;
   }
-  .viv {
+  .photo1 {
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
     min-height: 500px;
     background-position: 50% 30%

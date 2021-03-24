@@ -3,7 +3,13 @@
     <div class="flex flex-wrap items-center justify-between w-full px-2 py-2 lg:px-10 mx-auto">
       <div class="bg-white absolute top-0 left-0 w-full h-full depth-fix"></div>
       <div class="flex items-center mr-2 text-blue-600 lg:mr-6 ">
-        <router-link class="h-full flex-grow" :to="{name: 'Home'}"><img class="nav-logo" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare"></router-link>
+        <router-link class="h-full flex-grow" 
+        :to="{
+          name: 'New Home', 
+          params: {region: getRegion()}
+          }">
+          <img class="nav-logo" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
+        </router-link>
       </div>
 
       <div class="block lg:hidden">
