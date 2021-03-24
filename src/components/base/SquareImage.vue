@@ -1,5 +1,5 @@
 <template>
-  <div class="aspect-w-1 aspect-h-1 rounded-md shadow-lg bg-cover bg-center" :style="{backgroundImage: 'url(' + this.img + ')'}" alt=""></div>
+  <div class="aspect-w-1 aspect-h-1  shadow-lg bg-cover bg-center" :style="{backgroundImage: 'url(' + this.img + ')'}" alt=""></div>
 </template>
 
 <script>
