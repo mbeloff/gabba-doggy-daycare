@@ -19,14 +19,14 @@
 
       </div>
       <transition name="slide">
-        <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-0 bg-white shadow-2xl lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto lg:border-none py-3">
-          <div class="flex flex-col lg:flex-row  lg:flex-grow lg:space-y-0 ">
-            <nav-item v-for="(item, i) in regionMenu" v-bind:item="item" :key="i" :style="{ order: item.order }"></nav-item>
+        <div v-show="show" class="absolute left-0 flex-grow block w-full px-4 pb-0 bg-white shadow-2xl lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto lg:border-none py-3" >
+          <div class="flex flex-col lg:flex-row  lg:flex-grow lg:space-y-0">
+            <nav-item @click.native="hide" v-for="(item, i) in regionMenu" v-bind:item="item" :key="i" :style="{ order: item.order }"></nav-item>
           </div>
           <!-- <div class="flex flex-row flex-wrap justify-between my-3 sm:my-0"> -->
             <div class="grid grid-cols-2 gap-4 lg:w-auto lg:mb-0 text-center my-3 lg:my-0">
               <button class="btn-blue px-2" @click="showLogin()">Login</button>
-              <router-link :to="{name: 'Sign-up', params: {region: getRegion()}}" class="btn-blue bg-pink-400 text-white self-center px-2" active-class="btn-disabled">Create Account</router-link>
+              <router-link @click.native="hide" :to="{name: 'Sign-up', params: {region: getRegion()}}" class="btn-blue bg-pink-400 text-white self-center px-2" active-class="btn-disabled">Create Account</router-link>
             </div>
           <!-- </div> -->
         </div>

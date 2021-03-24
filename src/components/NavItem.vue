@@ -12,21 +12,9 @@
     },
     data() {
       return {
-        open: false
       }
     },
     methods: {
-      openSub() {
-        {this.open = true}
-      },
-      mouseLeave() {
-        if(window.innerWidth > 1024)
-        {this.open = false}
-      },
-      clickMenu(route) {
-          this.$router.push({ name: route, params: {region: this.$store.state.region} })
-          return
-      },
     }
   }
 </script>
