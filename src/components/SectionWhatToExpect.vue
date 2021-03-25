@@ -6,7 +6,7 @@
     </title-block>
     <div class="text-sm mb-3">
       <h2 class="font-bold text-xl mb-3 text-purple-600">Before Daycare</h2>
-      <ul class="list-inside list-disc">
+      <ul class="list-outside ml-4 list-disc">
         <li>
           GDDC requires all pawrents to create a PetExec account with us. This will allow you to make bookings and more online. <router-link class="link-pink" :to="{name: 'Sign-up', params: {region: getRegion()}}">Click here to make an account.</router-link>
         </li>
@@ -17,7 +17,7 @@
           We have a Pet Taxi service available for local pickup and drop-off. Please confirm availability and book in advance via <link-email class="link-pink">email.</link-email>
         </li>
         <li>
-          If your pup eats lunch, feel free to bring a lunch pack with their name on it.
+          If your pup usually eats lunch and you would like us to feed them, we charge a $5 fee, which you can pay through your account, or at drop-off. Please provide your dog's usual food, labelled with their name on it.
         </li>
         <li>
           Let us know at drop off if your pup is allergic to any foods as we do give treats during enrichment time.
@@ -52,9 +52,12 @@
     </div>
     <div class="text-sm mb-3">
       <h2 class="font-bold text-xl mb-3">After Daycare</h2>
-      <ul class="list-inside list-none">
+      <ul class="list-inside list-none">        
         <li>
-          <span class="font-bold">Boo boos/scratches -</span> We do our absolute best to monitor all dogs through the day however as dogs are animals, things can happen quickly. If we notice any bite, cut or scratch on your dog we will inform you right away, however, while we do provide the utmost care and attention to our doggy guests, accidents will sometimes happen and not everything can be identified.
+          <span class="font-bold">Boo boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day however as dogs are animals, things can happen quickly. If we notice any bite, cut or scratch on your dog we will inform you right away, however, while we do provide the utmost care and attention to our doggy guests, accidents will sometimes happen and not everything can be identified.
+        </li>
+        <li>
+          <span class="font-bold">Picking Up -</span> Please note that while we close at {{ this.closeTime }}, we ask that you aim to arrive earlier than this if possible, to account for any delays (e.g. traffic) and prevent a rush at closing time. If you are running late, please let us know as early as possible.
         </li>
         <li>
           <span class="font-bold">Thirsty, hungry, tired -</span> As your dog is likely to be much more active at daycare than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest. You may wish to let your dog take it easy and have a big snooze after their day of fun.
@@ -71,7 +74,11 @@
 
 <script>
 export default {
-
+  computed: {
+    closeTime() {
+        return this.$store.state[this.getRegion()].contact.closeTime
+      }
+  } 
 }
 </script>
 

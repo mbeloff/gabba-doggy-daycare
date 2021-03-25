@@ -3,8 +3,8 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
-      region: "brisbane",
-      email: "woof@gabbadoggydaycare.com",
+    region: "brisbane",
+    email: "woof@gabbadoggydaycare.com",
     brisbane: {
       hasGrooming: true,
       hasTraining: true,

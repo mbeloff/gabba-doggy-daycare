@@ -132,12 +132,11 @@
 
 <style lang="scss">
   .tile {
-    background: linear-gradient(to bottom, rgb(243, 244, 246),rgb(243, 244, 246), rgba(243, 244, 246, .5)), url(../assets/img/gddc_tile.svg);
+    background: linear-gradient(to bottom, rgb(246, 246, 246),rgb(246, 246, 246), rgba(235, 236, 240, 0.644)), url(../assets/img/gddc_tile.svg);
     background-size: 300px;
   }
   .photo1 {
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
-    // min-height: 500px;
     background-position: 50% 30%
   }
 </style>

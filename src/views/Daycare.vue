@@ -30,6 +30,9 @@ import SectionExpect from '@/components/SectionWhatToExpect.vue'
     computed: {
       link() {
         return this.$store.state[this.getRegion()].newAccountLink
+      },
+      contact() {
+        return this.$store.state[this.getRegion()].contact
       }
     },
     metaInfo: {

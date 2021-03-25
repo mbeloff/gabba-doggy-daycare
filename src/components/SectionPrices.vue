@@ -97,13 +97,12 @@
               //   price: "$10",
               //   order: '1'
               // },
-              // Excursion: {
-              //   name: "Group Excursion",
-              //   desc: "A group adventure to the park, river or bay for a walk and some fresh air",
-              //   soon: "- available soon",
-              //   price: "$20",
-              //   order: '2'
-              // },
+              Lunch: {
+                name: "Lunch (Owner Provided)",
+                desc: "A group adventure to the park, river or bay for a walk and some fresh air",
+                price: "$5",
+                order: '2'
+              },
               PetTaxi: {
                 name: "Pet Taxi (Local Pickup and Dropoff)",
                 desc: "Local pickup & dropoff in our Pet Taxi (within 5km)",
