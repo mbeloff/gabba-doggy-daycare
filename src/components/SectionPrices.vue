@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="min-h-full h-96 rounded-lg shadow-xl md:order-1 bg-cover bg-center" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_656/f_auto,q_auto/v1/gddc/photos/810.jpg)">
+      <div class="rounded-lg shadow-xl md:order-1 bg-cover bg-center aspect-w-3 aspect-h-4" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_656/f_auto,q_auto/v1/gddc/photos/810.jpg)">
       </div>
     </div>
   </div>

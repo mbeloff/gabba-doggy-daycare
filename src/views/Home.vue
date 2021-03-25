@@ -30,15 +30,15 @@
               </template>              
             </li>         
           </ul>
-          <div class="mt-16 text-center flex flex-col sm:flex-row sm:flex-wrap  gap-x-2 gap-y-5">
+          
+        </div>
+          <div class="order-1 md:order-2 rounded-sm photo1 bg-cover shadow-xl rounded-lg aspect-w-6 aspect-h-7"></div>             
+      </div>
+      <div class="mt-10 max-w-screen-lg mx-auto px-2 text-center flex flex-col sm:flex-row sm:flex-wrap  gap-x-2 gap-y-5">
             <router-link :to="{ name: 'Daycare', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">More about Daycare</router-link>
             <router-link v-show="getRegion() == 'brisbane'" :to="{ name: 'Explore', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Take a Tour</router-link>
             <router-link :to="{ name: 'Sign-up', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Create Account</router-link>
           </div>
-        </div>
-          <div class="order-1 md:order-2 rounded-sm photo1 w-full h-full bg-cover shadow-xl rounded-lg"></div>             
-      </div>
-      
     </div> 
     
       <section-reviews></section-reviews>
@@ -157,7 +157,7 @@
   }
   .photo1 {
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
-    min-height: 500px;
+    // min-height: 500px;
     background-position: 50% 30%
   }
 </style>

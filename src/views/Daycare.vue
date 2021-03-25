@@ -12,7 +12,7 @@
           <p class="mb-4"> We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Gabba Doggy Daycare is your pup's home away from home.</p>
           <p>Check out our daycare packages below, and make an account for easy online bookings and payments.</p>
         </div>
-        <div class="bg-cover rounded-xl col grass-boys shadow-xl">
+        <div class="bg-cover rounded-xl col grass-boys shadow-xl aspect-w-4 aspect-h-5">
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@ import SectionExpect from '@/components/SectionWhatToExpect.vue'
 
 <style lang="scss">
   .grass-boys {
-    min-height: 500px;
+    // min-height: 500px;
     background-position: 50% 30%;
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_550,h_575/q_auto,f_auto/v1/gddc/photos/2021_March/6b.jpg);
 
