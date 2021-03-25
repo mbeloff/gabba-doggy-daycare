@@ -7,7 +7,7 @@
         </div>
         <div class="flex-grow text-center sm:text-left">
           <p class="text-lg text-gray-400 mb-1">Info</p>
-          <ul class="gap-2 md:gap-1 list-none text-sm grid">
+          <ul class="gap-4 md:gap-1 list-none text-sm grid">
             <li class="">
               <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
             </li>
