@@ -131,29 +131,9 @@
 </script>
 
 <style lang="scss">
-  .tile, .tile-alt {
-    position: relative;
-    &:before, &:after {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      content: "";
-      position:absolute;
-    }
-    &:before {
-      z-index: -2;
-      background: url(../assets/img/gddc_tile.svg);
-      background-color: rgb(243, 244, 246);
-      background-size: 300px;
-    }
-    &:after {      
-      z-index: -1;
-      background-image: linear-gradient(to bottom, rgb(243, 244, 246),rgb(243, 244, 246), rgba(243, 244, 246, .5))
-    }
-  }
-  .h-270 {
-    height: 270px;
+  .tile {
+    background: linear-gradient(to bottom, rgb(243, 244, 246),rgb(243, 244, 246), rgba(243, 244, 246, .5)), url(../assets/img/gddc_tile.svg);
+    background-size: 300px;
   }
   .photo1 {
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
