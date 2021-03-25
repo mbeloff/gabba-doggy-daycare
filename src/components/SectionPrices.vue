@@ -23,7 +23,7 @@
         <div class=" mt-4">
           <p class="mb-2">To make a purchase, just <open-login class="link-pink">log in</open-login> to your account and click 'Purchase a Package'.</p>
         </div>
-        <div id="extras-pricing" v-if="Object.keys(prices[region].extras).length !== 0">
+        <div id="extras-pricing" v-if="prices[region].extras">
           <title-block class="text-center">
             <template #big>Extras</template>
           </title-block>
@@ -145,7 +145,14 @@
 
               },
             },
-            extras: {}
+            extras: {
+              Lunch: {
+                name: "Lunch (Owner Provided)",
+                desc: "A group adventure to the park, river or bay for a walk and some fresh air",
+                price: "$5",
+                order: '2'
+              },
+            }
           },
         },
 
