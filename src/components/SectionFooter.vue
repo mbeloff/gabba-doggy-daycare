@@ -3,11 +3,14 @@
     <div class="container max-w-screen-xl px-3 mx-auto py-4">
       <div class="flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
 
-        <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
-        </div>
+        <!-- <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
+        </div> -->
+        
+        
         <div class="flex-grow text-center sm:text-left">
-          <p class="text-lg text-gray-400 mb-1">Info</p>
-          <ul class="gap-4 md:gap-1 list-none text-sm grid">
+          <img class="nav-logo" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
+          <!-- <p class="text-lg text-gray-400 mt-5">Extra Info</p> -->
+          <ul class="gap-4 md:gap-1 list-none text-sm grid grid-cols-2 text-left w-full max-w-lg mt-2">
             <li class="">
               <router-link :to="{ name: 'Vaccinations' }" class="focus:outline-white hover:text-white">Vaccinations</router-link>
             </li>
@@ -23,10 +26,11 @@
             <li class="">
               <router-link :to="{ name: 'Jobs', params: {region: getRegion()} }" class="focus:outline-white hover:text-white">Jobs / Volunteer</router-link>
             </li>
+            <li class="">
+              <router-link :to="{ name: 'Contact', params: {region: getRegion()} }" class="focus:outline-white hover:text-white">Contact Us</router-link>
+            </li>
           </ul>
         </div>
-
-
         <div class="text-center sm:text-left">
           <div class="text-sm">
 
@@ -46,7 +50,7 @@
           <div class="flex flex-row space-x-3 mt-4 justify-center sm:justify-start">
             <SocialIcon site="facebook"></SocialIcon>
             <SocialIcon site="instagram"></SocialIcon>
-          </div>
+          </div>         
         </div>
       </div>
     </div>

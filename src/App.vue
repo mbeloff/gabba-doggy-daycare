@@ -32,10 +32,7 @@
         </modal-inner>
       </Modal>
     </div>
-
-    <div class="footer-wrapper">
-      <section-footer></section-footer>
-    </div>
+    <section-footer></section-footer>
   </div>
 </template>
 
