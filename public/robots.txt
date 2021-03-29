@@ -5,3 +5,6 @@ Disallow: /thanks
 Disallow: /grooming/adelaide
 Disallow: /training/adelaide
 Disallow: /explore/adelaide
+Disallow: /svgs/*
+Disallow: /docs/*.pdf
+Disallow: /jobs

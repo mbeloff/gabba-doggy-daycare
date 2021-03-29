@@ -68,6 +68,14 @@ const paths = [
     priority: 0.7
   },
   {
+    path: "/jobs/brisbane",
+    priority: 0.2
+  },
+  {
+    path: "/jobs/adelaide",
+    priority: 0.2
+  },
+  {
     path: "/privacy",
     priority: 0.2
   },
