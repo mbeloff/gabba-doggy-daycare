@@ -31,7 +31,7 @@
         cards: [{
             icon: "fa-custom play",
             heading: "Play",
-            desc: "Everyone plays differently. We have play areas with dogs matched by size and energy level, including a separate relaxed area for the old-timers :)"
+            desc: "Everyone plays differently. We have play areas with dogs matched by size and energy level, including a separate relaxed areas for puppies and old-timers :)"
           },
           {
             icon: "fa-custom friends",
@@ -41,7 +41,7 @@
           {
             icon: "fa-custom exercise",
             heading: "Exercise",
-            desc: "Your pets get plenty of exercise with heaps of room to run around, ramps and obstacles, ball pits, grass and more."
+            desc: "Your pets get plenty of exercise with heaps of room to run around, ramps and obstacles, ball pits, sand, grass and more."
           },
         ]
       }

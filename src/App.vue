@@ -82,7 +82,6 @@
       let path = this.$route.path
       let param = this.$route.params.region
       if (path !== '/' && !param) {
-        console.log('created, no param')
         this.$router.push({
           name: this.$route.name,
           params: {
@@ -270,7 +269,7 @@
 
   #app {
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: minmax(100vh, 1fr) auto;
     min-height: 100vh;
   }
 
