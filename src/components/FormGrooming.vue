@@ -41,16 +41,16 @@
           <input v-model="form.petname" class="my-input" id="petname" type="text" placeholder="">
         </div>
         <div>
-          <label class="my-label" for="name">
+          <label class="my-label" for="petbreed">
             breed
           </label>
           <input v-model="form.petbreed" class="my-input" id="petbreed" type="text" placeholder="">
         </div>
         <div class="mb-4 grid grid-cols-5 gap-x-2">
-          <label class="my-label col-start-1 col-span-3" for="name">
+          <label class="my-label col-start-1 col-span-3" for="time">
             preferred time
           </label>
-          <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format" :parseDate="parseDate" :formatDate="formatDate" :isDateDisabled="isDisabledDate">
+          <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="time" v-model="form.date" :format="format" :parseDate="parseDate" :formatDate="formatDate" :isDateDisabled="isDisabledDate">
           </date-pick>
           <div class="col-start-4 col-span-2">
             <select class="my-input my-select" type="select" v-model="form.time" placeholder="time">
