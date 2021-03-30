@@ -52,7 +52,6 @@ import SectionExpect from '@/components/SectionWhatToExpect.vue'
 
 <style lang="scss">
   .grass-boys {
-    // min-height: 500px;
     background-position: 50% 30%;
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_550,h_575/q_auto,f_auto/v1/gddc/photos/2021_March/6b.jpg);
 

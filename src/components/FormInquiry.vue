@@ -7,7 +7,6 @@
             <p class="px-4 py-2 mx-2 text-2xl text-center text-blue-500 place-self-center">Thanks, we'll get back to you as soon as we can.</p>
           </div>
         </transition>
-
         <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
           <i class="text-blue-500 fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
         </div>

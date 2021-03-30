@@ -31,25 +31,5 @@
     background-size: 60% auto;
   }
 
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity .5s;
-  }
 
-  .fade-enter,
-  .fade-leave-to {
-    opacity: 0;
-  }
-
-  .grow-enter-active,
-  .grow-leave-active {
-    transition: max-height 0.5s, opacity 0.5s;
-    max-height: 100px;
-  }
-
-  .grow-enter,
-  .grow-leave-to {
-    opacity: 0;
-    max-height: 0px;
-  }
 </style>

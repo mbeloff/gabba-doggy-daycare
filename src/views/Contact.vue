@@ -82,7 +82,6 @@
   .phone-pup {
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_450/q_auto,f_auto/v1609809728/gddc/phone-pup.jpg);
     min-height: 300px;
-    // background-position: 45% 50%;
   }
 
   .ellipses {

@@ -19,11 +19,11 @@
             <textarea ref="message" v-model="form.message" rows="4" class="my-input" id="phone" type="text" placeholder="what's on your mind...?"></textarea>
           </div>
           <div class="flex justify-around items-center mx-auto mb-6 gap-4 text-xl max-w-1/2 py-3">
-            <span @click="rating(1)" :class="{'r-active' : form.rating == 1}" class="rating opacity-50 hover:opacity-100">😡</span>
-            <span @click="rating(2)" :class="{'r-active' : form.rating == 2}" class="rating opacity-50 hover:opacity-100">😞</span>
-            <span @click="rating(3)" :class="{'r-active' : form.rating == 3}" class="rating opacity-50 hover:opacity-100">😐</span>
-            <span @click="rating(4)" :class="{'r-active' : form.rating == 4}" class="rating opacity-50 hover:opacity-100">🙂</span>
-            <span @click="rating(5)" :class="{'r-active' : form.rating == 5}" class="rating opacity-50 hover:opacity-100">😍</span>
+            <span @click="rating(1)" :class="{'rating-active' : form.rating == 1}" class="rating opacity-50 hover:opacity-100">😡</span>
+            <span @click="rating(2)" :class="{'rating-active' : form.rating == 2}" class="rating opacity-50 hover:opacity-100">😞</span>
+            <span @click="rating(3)" :class="{'rating-active' : form.rating == 3}" class="rating opacity-50 hover:opacity-100">😐</span>
+            <span @click="rating(4)" :class="{'rating-active' : form.rating == 4}" class="rating opacity-50 hover:opacity-100">🙂</span>
+            <span @click="rating(5)" :class="{'rating-active' : form.rating == 5}" class="rating opacity-50 hover:opacity-100">😍</span>
           </div>
           <div class="flex items-center justify-between">
             <button  class="btn-blue" :class="{'btn-disabled' : isDisabled}" type="submit">
@@ -111,7 +111,7 @@ export default {
   transition: transform .5s ease-out;
   user-select: none;
 }
-.r-active {
+.rating-active {
   transform: scale(1.2);
   opacity: 100;
   

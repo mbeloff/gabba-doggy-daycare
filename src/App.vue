@@ -5,8 +5,8 @@
 <!--// CITY SELECT // -->
 
       <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
-        <button title="GDDC Brisbane" :class="{'loc-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
-        <button title="GDDC Adelaide" :class="{'loc-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
+        <button title="GDDC Brisbane" :class="{'tab-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
+        <button title="GDDC Adelaide" :class="{'tab-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
       </div>
 
       <nav-bar></nav-bar>
@@ -211,32 +211,22 @@
     }
   }
 </script>
-<style lang="scss">
-.btn-disabled {
-  pointer-events: none;
-  opacity: .3;
-}
-
-.app-content{
-  margin-top: 131px;
-  @media only screen and (min-width: 1024px) {
-     margin-top: 129px
-  }
-}
-</style>
 <style lang="postcss">
-  .loc-active {
+  .app-content{
+    margin-top: 131px;
+    @media only screen and (min-width: 1024px) {
+      margin-top: 129px
+    }
+  }
+  .btn-disabled {
+    pointer-events: none;
+    opacity: .3;
+  }
+
+  .tab-active {
     background: white;
     position: relative;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.223), 0px 30px 30px rgba(0, 0, 0, 0.123)
-  }
-
-  .pagefade-enter-active,
-  .pagefade-leave-active {
-    transition-duration: 0.15s;
-    transition-property: opacity;
-    transition-timing-function: ease;
-    overflow: hidden;
   }
 
   .pagefade-enter-active,
@@ -251,6 +241,45 @@
     opacity: 0;
   }
 
+    .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity .5s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .grow-enter-active,
+  .grow-leave-active {
+    transition: max-height 0.5s, opacity 0.5s;
+    max-height: 100px;
+  }
+
+  .grow-enter,
+  .grow-leave-to {
+    opacity: 0;
+    max-height: 0px;
+  }
+
+  .grow2-enter-active,
+  .grow2-leave-active {
+    transition: max-height 0.5s, opacity 0.5s;
+    max-height: 756px;
+  }
+
+  .grow2-enter,
+  .grow2-leave-to {
+    opacity: 0;
+    max-height: 0px;
+  }
+  
+  .tile {
+    background: linear-gradient(to bottom, rgb(246, 246, 246),rgb(246, 246, 246), rgba(235, 236, 240, 0.644)), url(./assets/img/gddc_tile.svg);
+    background-size: 300px;
+  }
+
   @font-face {
     font-display: swap;
   }
@@ -258,8 +287,7 @@
   body {
     font-family: 'Open Sans', Arial, sans-serif !important;
     color: #474b57;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;    
   }
   
   .pattern {

@@ -1,5 +1,5 @@
 <template>
-  <div class="tile h-full">
+  <div class="tile h-full grid place-items-center">
       <div class="container px-4 py-20 mx-auto lg:px-20 xl:px-40">
         <p v-if="this.name == 'Explore'" class="mb-3 font-bold">Sorry, this page isn't available at our <span class="text-blue-500 capitalize">{{this.region}}</span> location yet.
         </p>
