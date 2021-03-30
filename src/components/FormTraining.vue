@@ -158,11 +158,11 @@
           })
       },
     },
-    mounted() {
-      setTimeout(() => {
-        this.$refs.name.focus();
-      }, 500);
-    }
+    // mounted() {
+    //   setTimeout(() => {
+    //     this.$refs.name.focus();
+    //   }, 500);
+    // }
   }
 </script>
 

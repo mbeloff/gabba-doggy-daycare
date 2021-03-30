@@ -27,7 +27,7 @@
                   Loose leash walking and more
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4 " @click="openForm('Training Session')"><i class="fas fa-hand-pointer transform rotate-90"></i> training sessions</button>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4"  @click="openForm('Training Session')"><i class="fas fa-hand-pointer transform rotate-90"></i> training sessions</button>
               </div>
             </pattern-border>
           </div>
@@ -36,7 +36,7 @@
       <transition name="grow2">
         <div class="bg-blue-500" v-show="showForm == 'Training Session'">
           <div class="container max-w-screen-md mx-auto">
-            <form-training :service="'Training Session'" :msgField="'What are your training goals?'" @close="showForm = null"></form-training>
+            <form-training ref="Training Session" :service="'Training Session'" :msgField="'What are your training goals?'" @close="showForm = null"></form-training>
           </div>
         </div>
       </transition>
@@ -80,7 +80,7 @@
       <transition name="grow2">
         <div class="bg-blue-500" v-show="showForm == 'Behaviour Consult'">
           <div class="container max-w-screen-md mx-auto">
-            <form-training :service="'Behaviour Consult'" :msgField="'Which behaviours would you like to address?'" @close="showForm = null"></form-training>
+            <form-training ref="Behaviour Consult" :service="'Behaviour Consult'" :msgField="'Which behaviours would you like to address?'" @close="showForm = null"></form-training>
           </div>
         </div>
       </transition>
@@ -116,7 +116,7 @@
                   Learning good manners
                 </li>
               </ul>
-              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Puppy School')"><i class="fas fa-hand-pointer transform rotate-90"></i> puppy school</button>
+              <button class="btn-blue rounded-md text-sm uppercase mt-4" @click="openForm('Puppy School')"><i class="fas fa-hand-pointer transform rotate-90"></i>  puppy school</button>
               </div>              
             </pattern-border>
           </div>
@@ -125,7 +125,7 @@
       <transition name="grow2">
         <div class="bg-blue-500" v-show="showForm == 'Puppy School'">
           <div class="container max-w-screen-md mx-auto">
-            <form-training :service="'Puppy School'" @close="showForm = null"></form-training>
+            <form-training ref="Puppy School" :service="'Puppy School'" @close="showForm = null"></form-training>
           </div>
         </div>
       </transition>
@@ -141,6 +141,10 @@
       openForm(form) {
         if (form !== this.showForm) {
           this.showForm = form;
+          
+      setTimeout(() => {
+        this.$refs[form].$refs.name.focus()
+      }, 500);
         } else {
           this.showForm = null
         }
@@ -173,16 +177,5 @@
   }
 </script>
 
-<style lang="scss">
-  .grow2-enter-active,
-  .grow2-leave-active {
-    transition: max-height 0.5s, opacity 0.5s;
-    max-height: 756px;
-  }
-
-  .grow2-enter,
-  .grow2-leave-to {
-    opacity: 0;
-    max-height: 0px;
-  }
+<style scoped lang="scss">
 </style>
