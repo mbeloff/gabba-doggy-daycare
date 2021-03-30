@@ -158,11 +158,6 @@
           })
       },
     },
-    // mounted() {
-    //   setTimeout(() => {
-    //     this.$refs.name.focus();
-    //   }, 500);
-    // }
   }
 </script>
 
