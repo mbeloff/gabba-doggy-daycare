@@ -47,10 +47,10 @@
           <input v-model="form.petbreed" class="my-input" id="petbreed" type="text" placeholder="">
         </div>
         <div class="mb-4 grid grid-cols-5 gap-x-2">
-          <label class="my-label col-start-1 col-span-3" for="time">
+          <label class="my-label col-start-1 col-span-3">
             preferred time
           </label>
-          <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" id="time" v-model="form.date" :format="format" :parseDate="parseDate" :formatDate="formatDate" :isDateDisabled="isDisabledDate">
+          <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format" :parseDate="parseDate" :formatDate="formatDate" :isDateDisabled="isDisabledDate">
           </date-pick>
           <div class="col-start-4 col-span-2">
             <select class="my-input my-select" type="select" v-model="form.time" placeholder="time">
@@ -73,10 +73,10 @@
           <div class="space-y-2 md:space-y-0">
             <div v-for="(service, i) in this.services" :key="i" class="flex items-center border-b">
               <input type="checkbox" class="form-checkbox" v-model="form.service" :id="service[0]" :value="service[0]">
-              <p class="ml-2 flex flex-grow justify-between">
-                <span class="">{{service[0]}}</span>
+              <label :for="service[0]" class="ml-2 flex flex-grow justify-between">
+                <span  class="">{{service[0]}}</span>
                 <span class="">{{service[1]}}</span>
-              </p>
+              </label>
             </div>
           </div>
         </div>
