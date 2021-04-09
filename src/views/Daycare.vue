@@ -10,7 +10,7 @@
           <p class="mb-4">Gabba Doggy Daycare offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day - not to mention heaps of room to run around, ball pits, toys, ramps and obstacles.
           </p>
           <p class="mb-4"> We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Gabba Doggy Daycare is your pup's home away from home.</p>
-          <p>Check out our daycare packages below, and make an account for easy online bookings and payments.</p>
+          <p>Check out our daycare pricing below, and make an account for easy online bookings.</p>
         </div>
         <div class="bg-cover rounded-xl col grass-boys shadow-xl aspect-w-4 aspect-h-5">
         </div>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import SectionExpect from '@/components/SectionWhatToExpect.vue'
+  import SectionExpect from '@/components/SectionWhatToExpect.vue'
   import SectionPrices from '@/components/SectionPrices.vue'
   export default {
     computed: {

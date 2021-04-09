@@ -118,22 +118,15 @@
               },
             },
             extras: {
-              // Pictures: {
-              //   name: "Photo Updates",
-              //   desc: "Wondering how much fun your dog is having while they're away? Get photo updates sent to you",
-              //   soon: "- available soon",
-              //   price: "$10",
-              //   order: '1'
-              // },
               Lunch: {
                 name: "Lunch (Owner Provided)",
-                desc: "A group adventure to the park, river or bay for a walk and some fresh air",
+                // desc: "",
                 price: "$5",
                 order: '2'
               },
               PetTaxi: {
                 name: "Pet Taxi (Local Pickup and Dropoff)",
-                desc: "Local pickup & dropoff in our Pet Taxi (within 5km)",
+                // desc: "Local pickup & dropoff in our Pet Taxi (within 5km)",
                 soon: "- limited availability",
                 price: "$40",
                 order: '3'
@@ -188,7 +181,7 @@
             extras: {
               Lunch: {
                 name: "Lunch (Owner Provided)",
-                desc: "A group adventure to the park, river or bay for a walk and some fresh air",
+                // desc: "",
                 price: "$5",
                 order: '2'
               },
