@@ -24,8 +24,8 @@
         <div class=" mt-4">
           <p class="mb-2 text-sm">The above packages and casual days can be purchased through your PetExec account - <open-login class="link-pink">Login here</open-login>.</p>
         </div>
-        <p class="font-bold text-center mt-5">Weekly Direct Debit</p>
-        <p class="text-sm">If you're a regular guest and don't want to worry about buying packages each week, just give us a <a class="link-pink" :href="`tel:` + removeSpaces(contact.phone)">call</a> or <link-email class='link-pink'>email</link-email> and we can set up a direct debit for you. You can cancel or pause this at any time :)</p>
+        <p class="font-bold text-center mt-5">Automatic Weekly Payments</p>
+        <p class="text-sm">If you're a regular guest and don't want to worry about buying packages each week, just give us a <a class="link-pink" :href="`tel:` + removeSpaces(contact.phone)">call</a> or <link-email class='link-pink'>email</link-email> and we can set up a recurring weekly payment for you. These payments can be paused or cancelled at any time :)</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
@@ -77,25 +77,25 @@
               HalfDay: {
                 name: 'Half Day',
                 price: "$40",
-
               },
               FullDay: {
                 name: 'Full Day',
                 price: "$50",
-
               },
               HalfDayPack: {
                 name: "Half Day 10-pack",
                 soon: " - valid for 3 months",
                 price: "$300",
-
               },
-
               FullDayPack: {
                 name: "Full Day 10-pack",
                 soon: " - valid for 3 months",
                 price: "$400",
-
+              },
+              YearlyPack: {
+                name: "Unlimited Daycare",
+                soon: " - valid for 12 months",
+                price: "$5000",
               },
             },
             directdebit: {
@@ -138,12 +138,10 @@
               HalfDay: {
                 name: 'Half Day',
                 price: "$40",
-
               },
               FullDay: {
                 name: 'Full Day',
                 price: "$50",
-
               },
               HalfDayPack: {
                 name: "Half Day 10-pack",
@@ -151,12 +149,15 @@
                 price: "$300",
 
               },
-
               FullDayPack: {
                 name: "Full Day 10-pack",
                 soon: " - valid for 3 months",
                 price: "$400",
-
+              },
+              YearlyPack: {
+                name: "Unlimited Daycare",
+                soon: " - valid for 12 months",
+                price: "$5000",
               },
             },
             directdebit: {
