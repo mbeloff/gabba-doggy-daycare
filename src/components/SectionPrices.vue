@@ -113,7 +113,7 @@
               },
               FullDayWeek: {
                 name: "Unlimited Daycare",
-                price: "$150 ($30/day)",
+                price: "$150 (~$30/day)",
                 highlight: true,
               },
             },

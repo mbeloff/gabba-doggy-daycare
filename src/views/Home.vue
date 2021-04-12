@@ -9,7 +9,7 @@
         </div>        
     </div>    
     <div class="bg-gray-100 grid">
-      <button id="get-images" title="show more photos" class="text-center justify-self-center link-pink py-1 m-1" @click="setKey()"><i class="fal fa-redo-alt mr-2"></i>show me more dogs</button>
+      <button id="get-images" title="show more photos" class="text-center justify-self-center link-pink py-1 m-1" @click="refreshSlider()"><i class="fal fa-redo-alt mr-2"></i>show me more dogs</button>
     </div>
     
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
@@ -74,7 +74,7 @@
       let x = Math.random() * (30) - 15
       return x
     },
-    setKey() {
+    refreshSlider() {
       this.disabled = true
       this.rand = Math.floor(Math.random() * Math.floor(100))
       setTimeout( () => {

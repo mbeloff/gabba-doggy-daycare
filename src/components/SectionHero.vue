@@ -5,7 +5,10 @@
     <div class="grid order-2 lg:order-1 col-span-1">
       <div class="place-self-center w-64 xl:w-80 m-5 lg:m-20 xl:my-32 2xl:my-40">
         <div v-if=" getRegion() == 'adelaide'" class="border-b-2 border-blue-500 mb-3"><p class="text-center text-blue-500 text-lg font-bold">OPENING SOON</p></div>
-        <img class="mb-2 w-64 xl:w-80" :src="'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/q_auto,f_auto/v2/gddc/' + this.$store.state[getRegion()].trialDays + 'daytrial.png'" alt="">
+        <div class="aspect-w-2 aspect-h-1">
+          <img class="mb-2 w-64 xl:w-80 " :src="'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/q_auto,f_auto/v2/gddc/' + this.$store.state[getRegion()].trialDays + 'daytrial.png'" alt="">
+        </div>
+        
         <span class="text-sm tracking-tighter inline-block mb-2">This offer valid at GDDC <span class="capitalize">{{getRegion()}}</span> for desexed dogs over 6 months only</span>
        <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full inline-block text-center">Sign me up!</router-link>
       </div>
