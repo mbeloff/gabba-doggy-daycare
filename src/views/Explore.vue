@@ -10,7 +10,7 @@
     </div>    
     <div :class="{'bg-gradient-to-tr from-gray-100 to-gray-200': (i+1) % 2 }" class="py-5 border-b" v-for="(area, i) in regionAreas" :key="i">
       <div  class="grid grid-cols-1 md:grid-cols-2 px-2 max-w-screen-lg gap-x-10 gap-y-5 mx-auto">
-      <div :class="{'md:order-2' : i % 2}" class="flex flex-col justify-center">
+      <div class="flex flex-col justify-center">
         <div class="grid grid-flow-col auto-cols-max gap-3">
           <icon-stack class="ml-0" :icon="area.icon"></icon-stack>  <p class="text-lg font-bold text-blue-700 self-center">{{area.heading}}</p>
         </div>        
