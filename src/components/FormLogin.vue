@@ -2,7 +2,7 @@
   <div class="p-3">
     <p class="text-blue-900 text-sm">Login to PetExec here to manage your GDDC account, schedule daycare or buy packages. <span v-if="!isSignUp()">If you don't have an account yet, you can create one <a href="javascript:void(0)" @click="close" class="link-pink" title="new account page">here.</a></span> </p>
     <br />
-    <form action="https://secure.petexec.net/remoteLogin.php" method="POST" class="flex flex-col px-3 pb-3 bg-white bg-right-bottom bg-no-repeat rounded shadow-md" id="petExecLogin">
+    <form action="https://secure.petexec.net/remoteLogin.php" method="POST" class="flex flex-col p-3 pt-2 bg-white bg-right-bottom bg-no-repeat rounded shadow-md" id="petExecLogin">
       <div class="grid grid-cols-1 grid-rows-2 gap-0 sm:grid-cols-2 sm:grid-rows-1 sm:gap-4">
         <div>
           <label class="my-label" for="username">
@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <div class="flex flex-row-reverse items-center col-span-2">
+      <div class="flex flex-row-reverse items-center col-span-2 mt-2">
         <button class="btn-blue" type="submit">
           Login
         </button>

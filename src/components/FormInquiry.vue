@@ -1,7 +1,7 @@
 <template>
   <div class="p-2">
       <p class="text-blue-900 mb-3">Leave a message and we'll get back to you.</p>
-      <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative px-2 pt-6 pb-8 mb-4 bg-white rounded shadow-md" :class="{ 'opacity-50' : isLoading}">
+      <form name="register-interest" id="register-interest" data-netlify="true" @submit.prevent="validateForm" class="relative p-4 px-2 bg-white rounded shadow-md" :class="{ 'opacity-50' : isLoading}">
         <transition name="fade">
           <div v-if="hasSubmitted" class="absolute top-0 left-0 grid w-full h-full">
             <p class="px-4 py-2 mx-2 text-2xl text-center text-blue-500 place-self-center">Thanks, we'll get back to you as soon as we can.</p>
@@ -40,14 +40,14 @@
               <p class="p-3 mb-4 bg-blue-300 bg-opacity-75 rounded-lg"><strong>Whoops!</strong> Please provide a phone number or email address so that we can get back to you.</p>
             </div>
           </transition>
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-end">
             <button class="btn-blue" type="submit">
               Submit
             </button>
           </div>
         </div>
       </form>
-      <p class="text-sm text-gray-500">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>      
+      <p class="text-sm text-gray-500 pt-2">Read our privacy policy <a @click="close()" class="text-pink-300 cursor-pointer">here.</a></p>      
     </div>
 </template>
 
