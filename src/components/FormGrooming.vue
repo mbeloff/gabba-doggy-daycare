@@ -22,7 +22,8 @@
           </label>
           <input v-model="form.name" ref="name" class="my-input" id="name" type="text" placeholder="" required>
         </div>
-        <div>
+        <div class="grid sm:grid-cols-2 sm:gap-2">
+          <div>
           <label class="my-label" for="email">
             email
           </label>
@@ -34,6 +35,8 @@
           </label>
           <input v-model="form.phone" class="my-input" id="phone" type="text" placeholder="" :class="{ 'border-orange-500' : missingContact }">
         </div>
+        </div>
+        <div class="grid sm:grid-cols-2 sm:gap-2">
         <div>
           <label class="my-label" for="petname">
             pet's name
@@ -46,15 +49,17 @@
           </label>
           <input v-model="form.petbreed" class="my-input" id="petbreed" type="text" placeholder="">
         </div>
-        <div class="mb-4 grid grid-cols-5 gap-x-2">
+          </div>
+        
+        <div class="mb-4 grid grid-cols-5 sm:grid-cols-6 gap-x-2">
           <label class="my-label col-start-1 col-span-3">
             preferred time
           </label>
           <date-pick class="col-start-1 col-span-3 text-gray-700 bg-white bg-opacity-50 border rounded shadow appearance-none focus:outline-none focus:ring focus:bg-opacity-75" v-model="form.date" :format="format" :parseDate="parseDate" :formatDate="formatDate" :isDateDisabled="isDisabledDate">
           </date-pick>
-          <div class="col-start-4 col-span-2">
-            <select class="my-input my-select" type="select" v-model="form.time" placeholder="time">
-              <option disabled value="Time">Time</option>
+          <div class="col-start-4 col-span-2 sm:col-span-3">
+            <select class="my-input my-select" type="select" v-model="form.time">
+              <option disabled selected value="">Time</option>
               <option value="7:30">7:30am</option>
               <option value="8:00">8:00am</option>
               <option value="8:30">8:30am</option>
@@ -129,7 +134,7 @@
           notes: "",
           // date: fecha.format(new Date(), 'ddd MMM Do')
           date: "Date",
-          time: "Time",
+          time: "",
           // daycare: false
         },
         format: 'ddd MMM Do',

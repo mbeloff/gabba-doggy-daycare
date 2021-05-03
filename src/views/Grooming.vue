@@ -6,18 +6,18 @@
           <div class="col y-5 md:my-10">
             <title-block>
               <template #big>So Fresh and So Clean</template>
-              <template #small>Grooming Services</template>
-            </title-block>
-            <p class="mb-3">Gabba Doggy Daycare is now offering grooming as a standalone service, or to be combined with your daycare booking. Check our services and prices below.</p>
-            <p class="mb-3">Grooming services can be booked through your account. If you don't have an account, use the form below.</p>
+              <template #small>Hydrobath Service</template>
+            </title-block>            
+            <p class="mb-3">Get a hydrobath with your daycare booking. We have hydrobaths available on location every Wednesday. Bookings may be limited so book ahead of time to confirm your spot.</p>
+            <!-- <p class="mb-3">Grooming services can be booked through your account. If you don't have an account, use the form below.</p> -->
           </div>
           <div class="bg-cover rounded-xl col bath-pup shadow-lg aspect-w-3 aspect-h-4">
           </div>
         </div>
       </div>
       <div>
-        <section-prices-grooming></section-prices-grooming>
-        <div class="tile" id="book">
+        <!-- <section-prices-grooming></section-prices-grooming> -->
+        <!-- <div class="tile" id="book">
           <div class="container py-20 mx-auto">
             <div class="text-center">
               <title-block>
@@ -25,11 +25,11 @@
                 <template #big>Book Here</template>
               </title-block>
             </div>
-            <!-- <div class="form-wrapper mx-auto"> -->
+
             <form-grooming></form-grooming>
-            <!-- </div>         -->
+
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <not-available v-else></not-available>
@@ -37,8 +37,8 @@
 </template>
 
 <script>
-  import SectionPricesGrooming from '@/components/SectionPricesGrooming.vue'
-  import FormGrooming from '@/components/FormGrooming.vue'
+  // import SectionPricesGrooming from '@/components/SectionPricesGrooming.vue'
+  // import FormGrooming from '@/components/FormGrooming.vue'
   export default {
     computed: {
       hasGrooming() {
@@ -54,8 +54,8 @@
       }]
     },
     components: {
-      SectionPricesGrooming,
-      FormGrooming
+      // SectionPricesGrooming,
+      // FormGrooming
     },
   }
 </script>
