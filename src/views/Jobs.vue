@@ -6,7 +6,7 @@
         <template #big>Job Opportunities</template>
       </title-block>
       <p class="jobs-outter"><span class="jobs">Sorry, we have no vacant positions at the moment.</span></p>
-      <p class="text-sm">Still want to spend time with lots of dogs? <link-email class="link-pink">Email Us</link-email> to enquire about a volunteer position.</p>
+      <p class="text-sm">Still want to spend time with lots of dogs? <link-email class="link-pink">Email Us</link-email> to enquire about a volunteer/work experience position.</p>
     </div>    
   </div>
 </template>
