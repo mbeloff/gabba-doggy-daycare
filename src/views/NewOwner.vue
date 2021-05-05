@@ -1,5 +1,6 @@
 <template>
   <div>
+    <a href="https://secure.petexec.net/api/authorize?response_type=code&client_id=1e18704def422bd1a3c1d3fdde12d106&scope=owner_create&state=1&redirect_uri=https://www.gabbadoggydaycare.com" class="btn-blue">authorize</a>
     <div class="login">
       <form id="theForm" name="theForm" return="" false="" @submit.prevent="handleSubmit" class="has-validation-callback max-w-screen-md m-auto">
         <fieldset class='flex flex-col'>
@@ -161,6 +162,7 @@
         base64: {},
         state: "",
         response: {},
+        text: "",
         content: "",
         form: {
           username: 'gddcuser',
@@ -190,7 +192,7 @@
       
       fetch("https://secure.petexec.net/api/authorize?response_type=code&client_id=1e18704def422bd1a3c1d3fdde12d106&scope=owner_create&state=1&redirect_uri=https://www.gabbadoggydaycare.com", {method: "GET"})
       .then(res => console.log(res))
-      
+
 // curl -d '{
 //   "response_type" : "code",
 //   "client_id" : "1e18704def422bd1a3c1d3fdde12d106",
