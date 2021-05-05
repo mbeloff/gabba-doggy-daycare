@@ -188,14 +188,11 @@
       this.state = Math.floor(Math.random() * 1000000000).toString();
       console.log(this.state)
       
-      fetch("https://secure.petexec.net/api/authorize?response_type=token&client_id=1e18704def422bd1a3c1d3fdde12d106&redirect_uri=https://www.gabbadoggydaycare.com&scope=owner_create&state=1", {method: "GET", headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
-  }})
-      .then(res => console.log(res.text()))
+      fetch("https://secure.petexec.net/api/authorize?response_type=code&client_id=1e18704def422bd1a3c1d3fdde12d106&scope=owner_create&state=1&redirect_uri=https://www.gabbadoggydaycare.com", {method: "GET"})
+      .then(res => console.log(res))
       
-// curl -v -d '{
-//   "response_type" : "token",
+// curl -d '{
+//   "response_type" : "code",
 //   "client_id" : "1e18704def422bd1a3c1d3fdde12d106",
 //   "redirect_uri" : "https://www.gabbadoggydaycare.com",
 //   "scope" : "owner_create",
