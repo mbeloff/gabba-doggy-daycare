@@ -45,6 +45,7 @@
   export default {
     data() {
       return {
+        accessToken: ""
       }
     },
     mounted() {
@@ -55,6 +56,11 @@
     watch: {
       "$route.params.path": {
         handler: function () {
+          var hash = window.location.hash;
+          if(window.location.href.indexOf("access_token") > -1) {
+            this.accessToken = hash.split('=')[1].split('&')[0];
+            console.log(this.accessToken)
+          }
           if (this.$route.path == '/login') {
             this.$modal.show('login-modal');
           }
