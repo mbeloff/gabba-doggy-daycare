@@ -80,6 +80,7 @@
       }
     },
     created() {
+      console.log(window.location.href)
       let path = this.$route.path
       let param = this.$route.params.region
       if (path !== '/' && !param) {
@@ -102,7 +103,7 @@
       }
     },
     beforeUpdate() {
-      console.log(window.location.href)
+      
       let param = this.$route.params.region
       if (param == this.getRegion()) {
         return
