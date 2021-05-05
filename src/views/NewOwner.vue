@@ -150,6 +150,7 @@
 
       </form>
     </div>
+    <div v-html="this.content"></div>
   </div>
 </template>
 
@@ -160,6 +161,7 @@
         base64: {},
         state: "",
         response: {},
+        content: "",
         form: {
           username: 'gddcuser',
           password: '11111111',
@@ -186,9 +188,19 @@
       this.state = Math.floor(Math.random() * 1000000000).toString();
       console.log(this.state)
       
-      fetch("https://secure.petexec.net/api/authorize?response_type=token&client_id=1e18704def422bd1a3c1d3fdde12d106&redirect_uri=https://www.gabbadoggydaycare.com&scope=owner_create&state=" + this.state, {method: "GET"})
-      .then(response => console.log(response))
-      // .then(() => )
+      fetch("https://secure.petexec.net/api/authorize?response_type=token&client_id=1e18704def422bd1a3c1d3fdde12d106&redirect_uri=https://www.gabbadoggydaycare.com&scope=owner_create&state=1", {credentials: "include", method: "GET", "content-type": "application/json"})
+      .then(res => console.log(res))
+      
+// curl -v -d '{
+//   "response_type" : "token",
+//   "client_id" : "1e18704def422bd1a3c1d3fdde12d106",
+//   "redirect_uri" : "https://www.gabbadoggydaycare.com",
+//   "scope" : "owner_create",
+//   "state" : "1"
+// }' https://secure.petexec.net/api/authorize
+
+// curl -o https://secure.petexec.net/api/authorize?response_type=token&client_id=1e18704def422bd1a3c1d3fdde12d106&redirect_uri=https://www.gabbadoggydaycare.com&scope=owner_create&state=1
+
     },
     methods: {
       handleSubmit() {
