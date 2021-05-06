@@ -79,10 +79,16 @@
         // return region == this.$route.params.region
       }
     },
-    created() {
-      console.log(window.location.href)
+    created() {      
       let path = this.$route.path
       let param = this.$route.params.region
+      console.log(window.location.href)
+      console.log(window.location.hash)
+      if (window.location.href.indexOf("access_token") > 1) {
+        this.accessToken = window.location.hash.split('=').split('&')[0]
+        this.$store.dispatch('setAuthCode', this.accessToken)
+        console.log(this.$store.state.authCode)
+      }
       if (path !== '/' && !param) {
         this.$router.push({
           name: this.$route.name,

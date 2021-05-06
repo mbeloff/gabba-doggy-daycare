@@ -5,6 +5,7 @@ export default new Vuex.Store({
   state: {
     region: "brisbane",
     email: "woof@gabbadoggydaycare.com",
+    authCode: "",
     brisbane: {
       hasGrooming: true,
       hasTraining: true,
@@ -47,11 +48,17 @@ export default new Vuex.Store({
   mutations: {
     setRegion(state, payload) {
       state.region = payload
+    },
+    setAuthCode(state, payload) {
+      state.authCode = payload
     }
   },
   actions: {
     setRegion(context, payload) {
       context.commit('setRegion', payload)
+    },
+    setAuthCode(context, payload) {
+      context.commit('setAuthCode', payload)
     }
   },
   modules: {}
