@@ -87,7 +87,9 @@
       if (window.location.href.indexOf("access_token") > 1) {
         this.accessToken = window.location.hash.split('=').split('&')[0]
         this.$store.dispatch('setAuthCode', this.accessToken)
-        console.log(this.$store.state.authCode)
+        console.log('state authCode: ' + this.$store.state.authCode)
+        console.log('authCode: ' + this.authCode)
+        return
       }
       if (path !== '/' && !param) {
         this.$router.push({
