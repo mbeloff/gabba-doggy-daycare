@@ -23,8 +23,7 @@ export default new Vuex.Store({
         city: 'Brisbane',
         postcode: "4102 QLD",
         phone: "0423 487 302"
-      },
-      
+      },      
     },
     adelaide: {
       hasGrooming: false,
