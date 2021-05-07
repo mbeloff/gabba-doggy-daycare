@@ -3,7 +3,7 @@
     <a class="inline-block mx-auto" title="review us on Google" :href="this.$store.state[getRegion()].contact.reviewLink">
         <img class="mx-auto rounded-xl border w-36 h-36" src="../assets/img/reviewUs.svg" alt="">
     </a>
-    <div class="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-2">
+    <div class="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 pb-2">
       <div class="w-full" v-for="(review, i) in reviews" :key="i">
         <review :reviewData="review"></review>
       </div>
@@ -52,6 +52,11 @@
             icon: 'fa-google'
           },
           {
+            name: 'David D',
+            stars: 5,
+            icon: 'fa-google'
+          },
+          {
             name: 'Josephine P',
             review: 'My Pippa had her first and great day at Gabba Doggy Daycare on Friday 26 February 2021. The girls looked after her and being PIPPA’s first day, they kept me up to date with how she was enjoying herself. Pippa came home exhausted and will be ready to enjoy her next visit. Thank you to everyone and the Pet Taxi was so helpful in carrying Pippa to and from. 💜🐶💜',
             icon: 'fa-facebook-f'
@@ -59,6 +64,16 @@
           {
             name: 'Meika R',
             review: 'My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙',
+            icon: 'fa-facebook-f'
+          },
+          {
+            name: 'Laura W',
+            review: 'Big shout out to Vivienne and her amazing team at Gabba Doggy Daycare! Miss Dolly has recently joined the crew there and loves it!! The regular instagram stories throughout the day let me see how much fun she is having with her new besties! it is such an amazing sevice to have close by and gives us peave of mind that our princess is being looked after and having fun when we are at work, she always comes home a very happy and very tired pup which we love! Thoroughly recommend giving it a try with your fur babies!',
+            icon: 'fa-facebook-f'
+          },
+          {
+            name: 'Leezett W',
+            review: 'Reynold started 2 weeks ago. I love the pictures we get. Great value for money!! The staff are so lovely and caring to Reynold. He has such fun and we know he is well looked after and love with cuddles.',
             icon: 'fa-facebook-f'
           }
         ]
@@ -68,3 +83,4 @@
 </script>
 <style lang="scss">
 </style>
+

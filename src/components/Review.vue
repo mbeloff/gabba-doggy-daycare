@@ -9,10 +9,11 @@
       <p v-if="reviewData.stars" class="text-xs text-right text-yellow-400 mt-2">
       <i class="fas fa-star" v-for="star in Math.floor(reviewData.stars)" :key="star"></i>
       <i class="fad fa-star-half" v-if="reviewData.stars % 1"></i>
-    </p>
-    </div>
-
-    
+      </p>
+        <p v-if="reviewData.icon == 'fa-facebook-f'" class="text-xs text-right text-blue-400 mt-2">
+        recommended
+      </p>
+    </div>    
   </div>
 </template>
 
