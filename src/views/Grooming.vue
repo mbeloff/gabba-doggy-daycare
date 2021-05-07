@@ -17,7 +17,7 @@
       </div>
       <div>
         <!-- <section-prices-grooming></section-prices-grooming> -->
-        <!-- <div class="tile" id="book">
+        <div class="tile" id="book">
           <div class="container py-20 mx-auto">
             <div class="text-center">
               <title-block>
@@ -29,7 +29,7 @@
             <form-grooming></form-grooming>
 
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
     <not-available v-else></not-available>
@@ -38,7 +38,7 @@
 
 <script>
   // import SectionPricesGrooming from '@/components/SectionPricesGrooming.vue'
-  // import FormGrooming from '@/components/FormGrooming.vue'
+  import FormGrooming from '@/components/FormGrooming.vue'
   export default {
     computed: {
       hasGrooming() {
@@ -55,7 +55,7 @@
     },
     components: {
       // SectionPricesGrooming,
-      // FormGrooming
+      FormGrooming
     },
   }
 </script>

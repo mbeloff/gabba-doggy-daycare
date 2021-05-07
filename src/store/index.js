@@ -8,7 +8,7 @@ export default new Vuex.Store({
     authCode: "",
     brisbane: {
       hasGrooming: true,
-      hasTraining: true,
+      hasTraining: false,
       trialDays: '3',
       newAccountLink: "https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=",
       contact: {

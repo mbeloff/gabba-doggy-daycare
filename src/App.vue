@@ -111,7 +111,6 @@
       }
     },
     beforeUpdate() {
-      
       let param = this.$route.params.region
       if (param == this.getRegion()) {
         return

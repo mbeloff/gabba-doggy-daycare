@@ -1,9 +1,9 @@
 <template>
   <div class="px-2 mx-auto max-w-screen-sm">
-    <alert-block>
+    <!-- <alert-block>
       <template #left>New</template>
       <template #right>You can now request grooming directly from your GDDC account. <open-login class="link-pink">login here</open-login></template>
-    </alert-block>
+    </alert-block> -->
     <p class="text-blue-900" v-if="!hasSubmitted">If you don't have an account with us, please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
     <br />
     <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative mb-4 " :class="{ 'opacity-50' : isLoading, 'shadow-none bg-opacity-0' : hasSubmitted}" style="min-height: 150px">
@@ -149,11 +149,11 @@
         isLoading: false,
         missingContact: false,
         services: [
-          ["Nail Clip", "$10"],
-          ["Ear Clean", "$10"],
-          ["Bath", "$20"],
-          ["Bath, Nails & Ears", "$30"],
-          ["Hygiene Tidy Groom", "$60-$90"]
+          // ["Nail Clip", "$10"],
+          // ["Ear Clean", "$10"],
+          // ["Bath", "$20"],
+          // ["Bath, Nails & Ears", "$30"],
+          ["Complete Groom", "$85"]
         ]
       }
     },
