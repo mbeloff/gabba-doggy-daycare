@@ -6,9 +6,9 @@
           <div class="col y-5 md:my-10">
             <title-block>
               <template #big>So Fresh and So Clean</template>
-              <template #small>Hydrobath Service</template>
+              <template #small>Hydrobath & Grooming Services</template>
             </title-block>            
-            <p class="mb-3">Get a hydrobath with your daycare booking. We have hydrobaths available on location every Wednesday. Bookings may be limited so book ahead of time to confirm your spot.</p>
+            <p class="mb-3">Get a hydrobath or groom with your daycare booking, or as a standalone service. We have grooming available on location every Wednesday. Bookings may be limited so book ahead of time to confirm your spot.</p>
             <!-- <p class="mb-3">Grooming services can be booked through your account. If you don't have an account, use the form below.</p> -->
           </div>
           <div class="bg-cover rounded-xl col bath-pup shadow-lg aspect-w-3 aspect-h-4">
