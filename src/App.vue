@@ -59,8 +59,10 @@
           if (this.$route.path == '/login') {
             this.$modal.show('login-modal');
           }
-          if (this.$route.params.region) {
+          if (this.$route.params.region == 'adelaide' || this.$route.params.region == 'brisbane') {
              this.$store.dispatch('setRegion', this.$route.params.region)
+          } else if (this.$route.params.region) {
+            this.$router.push({name: 'NotFound'})
           }
         },
         deep: true,
@@ -116,27 +118,28 @@
       //   }
       // }
     },
-    // beforeUpdate() {
+    beforeUpdate() {
        
-    //   let param = this.$route.params.region
-    //   if (param == this.getRegion()) {
-    //     return
-    //   }
-    //   else if (param == 'adelaide' || param == 'brisbane') {
-    //     this.$store.dispatch('setRegion', param)
-    //   } else if (param) {
-    //     this.$router.push({
-    //         name: 'NotFound',
-    //       })
-    //   } else if (param == undefined) {
-    //     this.$router.push({
-    //       name: this.$route.name,
-    //       params: {
-    //         region: this.$store.state.region
-    //       }
-    //     })
-    //   }
-    // },    name: 'App',
+      // let param = this.$route.params.region
+      // if (param == this.getRegion()) {
+      //   return
+      // }
+      // else if (param == 'adelaide' || param == 'brisbane') {
+      //   this.$store.dispatch('setRegion', param)
+      // } else if (param) {
+      //   this.$router.push({
+      //       name: 'NotFound',
+      //     })
+      // } else if (param == undefined) {
+      //   this.$router.push({
+      //     name: this.$route.name,
+      //     params: {
+      //       region: this.$store.state.region
+      //     }
+      //   })
+      // }
+    },    
+    name: 'App',
     components: {
       NavBar,
       SectionFooter,
