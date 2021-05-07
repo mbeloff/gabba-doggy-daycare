@@ -60,16 +60,23 @@
           <div class="col-start-4 col-span-2 sm:col-span-3">
             <select class="my-input my-select" type="select" v-model="form.time">
               <option disabled selected value="">Time</option>
-              <option value="7:30">7:30am</option>
-              <option value="8:00">8:00am</option>
-              <option value="8:30">8:30am</option>
-              <option value="9:00">9:00am</option>
-              <option value="9:30">9:30am</option>
-              <option value="10:00">10:00am</option>
-              <option value="10:30">10:30am</option>
-              <option value="11:00">11:00am</option>
-              <option value="11:30">11:30am</option>
-              <option value="12:00">12:00pm</option>
+              <option value="8:30am">8:30am</option>
+              <option value="9:00am">9:00am</option>
+              <option value="9:30am">9:30am</option>
+              <option value="10:00am">10:00am</option>
+              <option value="10:30am">10:30am</option>
+              <option value="11:00am">11:00am</option>
+              <option value="11:30am">11:30am</option>
+              <option value="12:00pm">12:00pm</option>
+              <option value="12:30pm">12:30pm</option>
+              <option value="1:00pm">1:00pm</option>
+              <option value="1:30pm">1:30pm</option>
+              <option value="2:30pm">2:30pm</option>
+              <option value="3:00pm">3:00pm</option>
+              <option value="3:30pm">3:30pm</option>
+              <option value="4:00pm">4:00pm</option>
+              <option value="4:30pm">4:30pm</option>
+              <option value="5:00pm">5:00pm</option>
             </select>
           </div>
         </div>
@@ -162,7 +169,7 @@
       isDisabledDate(date) {
         const currentDate = new Date();
         const startDate = new Date('February 16, 2021 23:15:30');
-        return (date < currentDate) || !(date.getDay() % 6) || (date < startDate);
+        return (date < currentDate) || !(date.getDay() % 6) || (date < startDate) || !(date.getDay() == 3);
       },
       parseDate(dateString, format) {
         return fecha.parse(dateString, format);

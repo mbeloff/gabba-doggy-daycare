@@ -11,7 +11,6 @@ const Grooming = () => import("../views/Grooming.vue")
 const Training = () => import("../views/Training.vue")
 const Feedback = () => import("../views/Feedback.vue")
 const Explore = () => import("../views/Explore.vue")
-const NewOwner = () => import("../views/NewOwner.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -128,11 +127,6 @@ const routes = [
     path:"*",
     redirect: "/404"
   },
-  {
-    path: "/dev/newowner",
-    name: "NewOwner",
-    component: NewOwner
-  }
 ]
 
 const router = new VueRouter({
