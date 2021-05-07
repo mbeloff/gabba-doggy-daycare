@@ -59,10 +59,21 @@
           if (this.$route.path == '/login') {
             this.$modal.show('login-modal');
           }
+          if (this.$route.params.region) {
+             this.$store.dispatch('setRegion', this.$route.params.region)
+          }
         },
         deep: true,
         immediate: true
       },
+      "$store.state.authCode": {
+        handler: function () {
+          if (this.$store.state.authCode) {
+            console.log('redirection to new owner page')
+            this.$router.push({name: 'NewOwner'})
+          }          
+        }
+      }
     },
     methods: {
       regionSelect(region) {
@@ -80,57 +91,52 @@
       }
     },
     created() {      
-      let path = this.$route.path
-      let param = this.$route.params.region
-      console.log(window.location.href)
-      console.log(window.location.hash)
-      if (window.location.href.indexOf("access_token") > 1) {
-        this.accessToken = window.location.hash.split('=').split('&')[0]
-        this.$store.dispatch('setAuthCode', this.accessToken)
-        console.log('state authCode: ' + this.$store.state.authCode)
-        console.log('authCode: ' + this.authCode)
-        return
+      // let path = this.$route.path
+      // let param = this.$route.params.region
+
+      if (this.$route.query.code) {
+        this.$store.dispatch('setAuthCode', this.$route.query.code)
       }
-      if (path !== '/' && !param) {
-        this.$router.push({
-          name: this.$route.name,
-          params: {
-            region: this.$store.state.region
-          }
-        })
-      } else {
-        if (path == '/home/adelaide') {
-          this.$store.dispatch('setRegion', param)
-        } else if (param == 'adelaide' || param == 'brisbane') {
-        this.$store.dispatch('setRegion', param)
-      } else if (param) {
-        this.$router.push({
-            name: 'NotFound',
-          })
-      }
-      }
+      // if (path !== '/' && !param) {
+      //   this.$router.push({
+      //     name: this.$route.name,
+      //     params: {
+      //       region: this.$store.state.region
+      //     }
+      //   })
+      // } else {
+      //   if (path == '/home/adelaide') {
+      //     this.$store.dispatch('setRegion', param)
+      //   } else if (param == 'adelaide' || param == 'brisbane') {
+      //   this.$store.dispatch('setRegion', param)
+      // } else if (param) {
+      //   this.$router.push({
+      //       name: 'NotFound',
+      //     })
+      //   }
+      // }
     },
-    beforeUpdate() {
-      let param = this.$route.params.region
-      if (param == this.getRegion()) {
-        return
-      }
-      else if (param == 'adelaide' || param == 'brisbane') {
-        this.$store.dispatch('setRegion', param)
-      } else if (param) {
-        this.$router.push({
-            name: 'NotFound',
-          })
-      } else if (param == undefined) {
-        this.$router.push({
-          name: this.$route.name,
-          params: {
-            region: this.$store.state.region
-          }
-        })
-      }
-    },
-    name: 'App',
+    // beforeUpdate() {
+       
+    //   let param = this.$route.params.region
+    //   if (param == this.getRegion()) {
+    //     return
+    //   }
+    //   else if (param == 'adelaide' || param == 'brisbane') {
+    //     this.$store.dispatch('setRegion', param)
+    //   } else if (param) {
+    //     this.$router.push({
+    //         name: 'NotFound',
+    //       })
+    //   } else if (param == undefined) {
+    //     this.$router.push({
+    //       name: this.$route.name,
+    //       params: {
+    //         region: this.$store.state.region
+    //       }
+    //     })
+    //   }
+    // },    name: 'App',
     components: {
       NavBar,
       SectionFooter,
