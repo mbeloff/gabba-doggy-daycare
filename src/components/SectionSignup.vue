@@ -7,7 +7,7 @@
         <icon-stack :icon="'viruses'"></icon-stack>Up to date with all of their vaccinations (Distemper, Hepatitis, Parvovirus, Parainfluenza and Bordetella)
       </li>
       <li class="flex gap-4 mb-2">
-        <icon-stack :icon="'debug'"></icon-stack>Have adequate protection against fleas, worms and ticks
+        <icon-stack :icon="'debug'"></icon-stack>Adequately protected against fleas, worms and ticks
       </li>
       <li class="flex gap-4 mb-2">
         <icon-stack :icon="'venus-mars'"></icon-stack>Desexed (if over 6 months)

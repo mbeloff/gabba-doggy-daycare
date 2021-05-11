@@ -9,7 +9,7 @@
        
 
         <div class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm">
-          <p class="font-bold mb-4">Services available throughout the</p>
+          <p class="font-bold mb-4">Services available throughout the week</p>
           <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
               <!-- <div v-if="service.highlight">
