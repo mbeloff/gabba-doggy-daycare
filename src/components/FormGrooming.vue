@@ -4,7 +4,7 @@
       <template #left>New</template>
       <template #right>You can now request grooming directly from your GDDC account. <open-login class="link-pink">login here</open-login></template>
     </alert-block> -->
-    <p class="text-blue-900" v-if="!hasSubmitted">Please complete this form to request a grooming Service. We'll get back to you to confirm.</p>
+    <p class="text-blue-900" v-if="!hasSubmitted">Please complete this form to request a Wednesday service with our groomer. We'll get back to you to confirm. Nail clips, ear cleans and washes are also available for daycare customers throughout the week, for those you can just let us know when making a daycare booking, or at drop-off.</p>
     <br />
     <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative mb-4 " :class="{ 'opacity-50' : isLoading, 'shadow-none bg-opacity-0' : hasSubmitted}" style="min-height: 150px">
       <transition name="fade">
@@ -84,7 +84,7 @@
           <label class="my-label">Service</label>
           <div class="space-y-2 md:space-y-0">
             <div v-for="(service, i) in this.services" :key="i" class="flex items-center border-b">
-              <input type="checkbox" class="form-checkbox" v-model="form.service" :id="service[0]" :value="service[0]">
+              <input type="radio" class="form-checkbox" v-model="form.service" :id="service[0]" :value="service[0]">
               <label :for="service[0]" class="ml-2 flex flex-grow justify-between">
                 <span  class="">{{service[0]}}</span>
                 <span class="">{{service[1]}}</span>
@@ -137,7 +137,7 @@
           email: "",
           petname: "",
           petbreed: "",
-          service: [],
+          service: "",
           notes: "",
           // date: fecha.format(new Date(), 'ddd MMM Do')
           date: "Date",
@@ -148,18 +148,20 @@
         hasSubmitted: false,
         isLoading: false,
         missingContact: false,
+        missingFields: [],
         services: [
-          // ["Nail Clip", "$10"],
-          // ["Ear Clean", "$10"],
-          // ["Bath", "$20"],
-          // ["Bath, Nails & Ears", "$30"],
-          ["Complete Groom", "$85"]
+          ["De-shed - small", "$50"],
+          ["De-shed - medium", "$60"],
+          ["De-shed - large", "$70"],
+          ["Full Groom - small", "$85"],
+          ["Full Groom - medium", "$90"],
+          ["Full Groom - large", "$95"]
         ]
       }
     },
     watch: {
       'form.phone': function () {
-        this.missingContact = false
+        this.missingContact = false               
       },
       'form.email': function () {
         this.missingContact = false
