@@ -8,7 +8,7 @@
               <template #big>So Fresh and So Clean</template>
               <template #small>Hydrobath & Grooming Services</template>
             </title-block>            
-            <p class="mb-3">Get a hydrobath or groom with your daycare booking, or as a standalone service. We have grooming available on location every Wednesday. Bookings may be limited so book ahead of time to confirm your spot.</p>
+            <p class="mb-3">Get a hydrobath or groom with your daycare booking, or as a standalone service. We have basic service available any day of the week and full grooms available on location every Wednesday. Bookings may be limited so book ahead of time to confirm your spot.</p>
             <!-- <p class="mb-3">Grooming services can be booked through your account. If you don't have an account, use the form below.</p> -->
           </div>
           <div class="bg-cover rounded-xl col bath-pup shadow-lg aspect-w-3 aspect-h-4">
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div>
-        <!-- <section-prices-grooming></section-prices-grooming> -->
+        <section-prices-grooming></section-prices-grooming>
         <div class="tile" id="book">
           <div class="container py-20 mx-auto">
             <div class="text-center">
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  // import SectionPricesGrooming from '@/components/SectionPricesGrooming.vue'
+  import SectionPricesGrooming from '@/components/SectionPricesGrooming.vue'
   import FormGrooming from '@/components/FormGrooming.vue'
   export default {
     computed: {
@@ -54,7 +54,7 @@
       }]
     },
     components: {
-      // SectionPricesGrooming,
+      SectionPricesGrooming,
       FormGrooming
     },
   }

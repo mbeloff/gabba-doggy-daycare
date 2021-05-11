@@ -4,7 +4,7 @@
       <template #left>New</template>
       <template #right>You can now request grooming directly from your GDDC account. <open-login class="link-pink">login here</open-login></template>
     </alert-block> -->
-    <p class="text-blue-900" v-if="!hasSubmitted">Please complete this form to request a Wednesday service with our groomer. We'll get back to you to confirm. Nail clips, ear cleans and washes are also available for daycare customers throughout the week, for those you can just let us know when making a daycare booking, or at drop-off.</p>
+    <p class="text-blue-900" v-if="!hasSubmitted">Request a Wednesday grooming service here. Nail clips, ear cleans and washes are also available for daycare customers throughout the week, for those you can just let us know when making a daycare booking.</p>
     <br />
     <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative mb-4 " :class="{ 'opacity-50' : isLoading, 'shadow-none bg-opacity-0' : hasSubmitted}" style="min-height: 150px">
       <transition name="fade">
@@ -108,7 +108,7 @@
         </div> -->
         <transition name="grow">
           <div v-if="this.missingContact">
-            <p class="p-3 mb-4 bg-blue-300 rounded-lg"><strong>Whoops!</strong> Please provide a phone number or email address so that we can get back to you.</p>
+            <p class="p-3 mb-4 bg-white shadow-lg ring-2 ring-yellow-400 rounded-lg text-yellow-600"><strong class="text-yellow-500">Whoops!</strong> Please provide a phone number or email address so that we can get back to you.</p>
           </div>
         </transition>
         <div class="flex items-center justify-between">
