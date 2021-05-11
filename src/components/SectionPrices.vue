@@ -3,8 +3,8 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
       <div class="md:order-2">
         <title-block class="text-center">
-          <template #small><span class="capitalize">{{ getRegion() }}</span> Price List</template>
-          <template #big>Day Care <br></template>
+          <template #small><span class="capitalize">{{ getRegion() }}</span> Daycare</template>
+          <template #big>Price List <br></template>
         </title-block>
         <p class="-mt-4 text-base text-center tracking-normal font-normal">Open from {{ contact.openTime }} - {{ contact.closeTime }} <br> (Half Day - 5 hours)</p>
 
@@ -25,7 +25,7 @@
           <p class="mb-2 text-sm">The above packages and casual days can be purchased through your PetExec account - <open-login class="link-pink">Login here</open-login>.</p>
         </div>
         <p class="font-bold text-center mt-5">Automatic Weekly Payments</p>
-        <p class="text-sm">If you're a regular guest and don't want to worry about buying packages each week, just give us a <a class="link-pink" :href="`tel:` + removeSpaces(contact.phone)">call</a> or <link-email class='link-pink'>email</link-email> and we can set up a recurring weekly payment for you. These payments can be paused or cancelled at any time :)</p>
+        <p class="text-sm">If you're a regular guest and don't want to worry about buying packages each week, just give us a <a class="link-pink" :href="`tel:` + removeSpaces(contact.phone)">call</a> or <link-email class='link-pink'>email</link-email> and we can set up a discounted recurring weekly payment for you. These payments can be paused or cancelled at any time :)</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
@@ -55,6 +55,14 @@
       </div>
       <div class="rounded-lg shadow-xl md:order-1 bg-cover bg-center aspect-w-3 aspect-h-4" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_656/f_auto,q_auto/v1/gddc/photos/810.jpg)">
       </div>
+    </div>
+    <div class="mt-10 px-5">
+      <p class="text-sm">
+        Please note that our unlimited daycare packages are valid for all days that we are open and not necessarily 5 days per week. Any days you opt not use, or days we may be closed, including public holidays, may not be refunded or carried over to following weeks.
+      </p>
+      <p class="mt-2 text-sm">
+        If you would like to cancel, temporarily pause, or adjust your weekly payment to a different package, just let us know before your usual billing day and we'll be happy to accommodate <i class="fal fa-smile"></i>
+      </p>
     </div>
   </div>
 </template>
@@ -175,7 +183,7 @@
               },
               FullDayWeek: {
                 name: "Unlimited Daycare",
-                price: "$150 ($30/day)",
+                price: "$150 (~$30/day)",
                 highlight: true,
               },
             },
