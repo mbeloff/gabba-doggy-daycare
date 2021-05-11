@@ -9,7 +9,7 @@ export default new Vuex.Store({
     brisbane: {
       hasGrooming: true,
       hasTraining: false,
-      trialDays: '3',
+      trialDays: '2',
       newAccountLink: "https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=",
       contact: {
         openTime: "6:30am",
