@@ -18,7 +18,7 @@
             </div>            
               <choose-location class="mt-10"></choose-location>
               <!-- <div class=" grid grid-cols-1 gap-5 mt-10 mb-10 md:mb-0 divide-pink-500 sm:grid-cols-2 sm:divide-x"> -->
-                <div class="text-center my-10 col"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue" :class="{'opacity-50': !agree}" @click.prevent="create()">Create an Account</a></div>
+                <div class="text-center my-10 col" @click="create()"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</a></div>
                 <!-- <div class="flex items-center text-left col">
                   <open-login class="mx-auto text-center text-pink-400 align-center sm:text-left hover:underline sm:ml-5">already have an account?</open-login>
                 </div> 
@@ -63,8 +63,6 @@ import SectionSignup from '@/components/SectionSignup.vue'
       create() {
         if (!this.agree) {
           this.alert = true
-        } else {
-          window.open(this.link, '_blank');
         }
       }
     },
