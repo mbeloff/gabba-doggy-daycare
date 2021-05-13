@@ -1,6 +1,8 @@
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 //   .BundleAnalyzerPlugin;
+const PrerenderSpaPlugin = require("prerender-spa-plugin")
 const SitemapPlugin = require("sitemap-webpack-plugin").default;
+const path = require('path')
 // const routes = require('./src/router/index.js');
 const paths = [
   {
@@ -108,6 +110,25 @@ module.exports = {
         priority: 0.5
       }}),
       // new BundleAnalyzerPlugin()
+      new PrerenderSpaPlugin(
+        path.resolve(__dirname, 'dist'),
+        ['/',
+        '/home', 
+        '/home/brisbane',
+        '/home/adelaide',
+        '/daycare',
+        '/daycare/brisbane',
+        '/daycare/adelaide', 
+        '/grooming',
+        '/grooming/brisbane',
+        '/grooming/adelaide',
+        '/explore/brisbane',
+        '/sign-up',
+        '/contact',
+        '/contact/brisbane',
+        '/contact/adelaide'
+        ]
+      )
     ]
   },
   pages: {
