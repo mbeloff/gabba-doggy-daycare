@@ -4,7 +4,7 @@
       <template #left>New</template>
       <template #right>You can now request grooming directly from your GDDC account. <open-login class="link-pink">login here</open-login></template>
     </alert-block> -->
-    <p class="text-blue-900" v-if="!hasSubmitted">Request a Wednesday grooming service here. Nail clips, ear cleans and washes are also available for daycare customers throughout the week, for those you can let us know when making a daycare booking, or book through your account - <open-login class="link-pink">login here</open-login>.</p>
+    <p class="text-blue-900" v-if="!hasSubmitted">Request a Wednesday grooming service here. Nail clips, ear cleans and washes are also available for daycare customers throughout the week, for those, you can let us know when making a daycare booking, or book through your account - <open-login class="link-pink">login here</open-login>.</p>
     <br />
     <form name="grooming" id="grooming" data-netlify="true" @submit.prevent="validateForm" class="relative mb-4 " :class="{ 'opacity-50' : isLoading, 'shadow-none bg-opacity-0' : hasSubmitted}" style="min-height: 150px">
       <transition name="fade">
