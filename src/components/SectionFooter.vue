@@ -20,9 +20,9 @@
             <li class="">
               <a href="/docs/GDDC-general-agreement.pdf" download class="focus:outline-white hover:text-white">Daycare Contract</a>
             </li>
-            <li class="">
+            <!-- <li class="">
               <a href="/docs/GDDC-medical-agreement.pdf" download class="focus:outline-white hover:text-white">Medical Release</a>
-            </li>
+            </li> -->
             <li class="">
               <router-link :to="{ name: 'Jobs', params: {region: getRegion()} }" class="focus:outline-white hover:text-white">Jobs / Volunteer</router-link>
             </li>
