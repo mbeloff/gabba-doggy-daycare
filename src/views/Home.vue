@@ -187,7 +187,7 @@
         {
           title: "Grooming",
           icon: 'shower',
-          desc: "Have your dog fresh and clean when you pick them up. Hydrobath and grooming services now available, with discounts for daycare guests.",
+          desc: "Professional grooming services on location so you can have you pup coming home fresh and clean.",
           limit: 'brisbane'
         },        
       ]
