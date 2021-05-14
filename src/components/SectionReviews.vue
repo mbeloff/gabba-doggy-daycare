@@ -40,7 +40,7 @@
             icon: 'fa-google'
           },
           {
-            name: 'Kaitlyn Fogarty',
+            name: 'Kaitlyn F',
             review: '',
             stars: 5,
             icon: 'fa-google'
