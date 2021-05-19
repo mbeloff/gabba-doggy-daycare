@@ -14,7 +14,7 @@
             <div class="flex items-center px-2 rounded-md" @click="agree = !agree" :class="{ 'ring-1 ring-yellow-500':alert}">
               <input type="checkbox" name="agree" v-model="agree" class="hidden">
               <div class="grid items-center justify-center min-h-6 min-w-6 rounded-md border border-blue-500 transition-colors" :class="{'bg-blue-500' : agree}"><i class="fas fa-check text-white"></i></div>
-              <label class="ml-4 italic" for="agree">I acknowledge the above and assert that my dog has not bitten, or shown aggression to another animal or person</label>
+              <label class="ml-4 italic" for="agree">I acknowledge the above and assert that my dog is not a fence jumper and has not bitten, or shown aggression to another animal or person</label>
             </div>            
               <choose-location class="mt-10"></choose-location>
               <!-- <div class=" grid grid-cols-1 gap-5 mt-10 mb-10 md:mb-0 divide-pink-500 sm:grid-cols-2 sm:divide-x"> -->
