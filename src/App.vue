@@ -68,14 +68,22 @@
         deep: true,
         immediate: true
       },
-      "$store.state.authCode": {
-        handler: function () {
-          if (this.$store.state.authCode) {
-            console.log('redirection to new owner page')
-            this.$router.push({name: 'NewOwner'})
-          }          
-        }
-      }
+      // "$store.state.authCode": {
+      //   handler: function () {
+      //     if (this.$store.state.authCode) {
+      //       console.log('redirection to new owner page')
+      //       this.$router.push({name: 'NewOwner'})
+      //     }          
+      //   }
+      // },
+      // "$store.state.accessToken": {
+      //   handler: function () {
+      //     if (this.$store.state.accessToken) {
+      //       console.log('redirection to new owner page')
+      //       this.$router.push({name: 'NewOwner'})
+      //     }          
+      //   }
+      // }
     },
     methods: {
       regionSelect(region) {
@@ -99,45 +107,20 @@
       if (this.$route.query.code) {
         this.$store.dispatch('setAuthCode', this.$route.query.code)
       }
-      // if (path !== '/' && !param) {
-      //   this.$router.push({
-      //     name: this.$route.name,
-      //     params: {
-      //       region: this.$store.state.region
-      //     }
-      //   })
-      // } else {
-      //   if (path == '/home/adelaide') {
-      //     this.$store.dispatch('setRegion', param)
-      //   } else if (param == 'adelaide' || param == 'brisbane') {
-      //   this.$store.dispatch('setRegion', param)
-      // } else if (param) {
-      //   this.$router.push({
-      //       name: 'NotFound',
-      //     })
-      //   }
+
+      //STORE PETEXEC TOKEN
+      // if (this.$route.hash.includes('access_token')) {
+      //   let str = this.$route.hash
+      //   let token = str.substring(
+      //     str.indexOf('=') + 1,
+      //     str.indexOf('&')
+      //   )
+      //   console.log('access token found')
+      //   this.$store.dispatch('setToken', token)
       // }
+
     },
     beforeUpdate() {
-       
-      // let param = this.$route.params.region
-      // if (param == this.getRegion()) {
-      //   return
-      // }
-      // else if (param == 'adelaide' || param == 'brisbane') {
-      //   this.$store.dispatch('setRegion', param)
-      // } else if (param) {
-      //   this.$router.push({
-      //       name: 'NotFound',
-      //     })
-      // } else if (param == undefined) {
-      //   this.$router.push({
-      //     name: this.$route.name,
-      //     params: {
-      //       region: this.$store.state.region
-      //     }
-      //   })
-      // }
     },    
     name: 'App',
     components: {
@@ -285,7 +268,7 @@
     }
 
     .my-input {
-      @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50 border border-gray-300 rounded shadow-md appearance-none placeholder-blue-400
+      @apply w-full px-3 py-1 text-lg text-gray-700 bg-white bg-opacity-50 border border-gray-300 rounded appearance-none placeholder-blue-400
     }
 
     .my-input:focus {
