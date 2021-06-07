@@ -2,49 +2,54 @@
   <div class="bg-gray-900">
     <div class="container mx-auto">
       <div class="container max-w-screen-lg  mx-auto p-0 relative">
-        <swiper class="swiper" :options="swiperOption">
+        <!-- <swiper class="swiper" :options="swiperOption">
           <swiper-slide class="w-auto h-64" v-for="(slide, i) in this.slideList" :key="i">
             <img :src="slide" alt="">
           </swiper-slide>
-        </swiper>
+        </swiper> -->
+        <div class="grid grid-cols-3 lg:grid-cols-6 swiper">
+          <div class="bg-green-500" v-for="(slide, i) in slideList" :key="i">
+            <img :src="slide" alt="" class="w-full h-full object-cover">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import {
-    Swiper as SwiperClass,
-    Autoplay
-  } from 'swiper/swiper.esm'
-  import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
-  SwiperClass.use([Autoplay])
-  const {
-    Swiper,
-    SwiperSlide
-  } = getAwesomeSwiper(SwiperClass)
-  import 'swiper/swiper-bundle.css'
+  // import {
+  //   Swiper as SwiperClass,
+  //   Autoplay
+  // } from 'swiper/swiper.esm'
+  // import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
+  // SwiperClass.use([Autoplay])
+  // const {
+  //   Swiper,
+  //   SwiperSlide
+  // } = getAwesomeSwiper(SwiperClass)
+  // import 'swiper/swiper-bundle.css'
   export default {
     name: "Slider",
     title: "Slider",
-    components: {
-      Swiper,
-      SwiperSlide
-    },
+    // components: {
+    //   Swiper,
+    //   SwiperSlide
+    // },
     data() {
       return {
-        swiperOption: {
-          slidesPerView: 'auto',
-          spaceBetween: 0,
-          slidesPerGroup: 1,
-          centeredSlides: false,
-          autoplay: {
-            delay: 1500,
-          },
-          speed: 500,
-          grabCursor: true,
-          loop: true,
-        },
+        // swiperOption: {
+        //   slidesPerView: 'auto',
+        //   spaceBetween: 0,
+        //   slidesPerGroup: 1,
+        //   centeredSlides: false,
+        //   autoplay: {
+        //     delay: 1500,
+        //   },
+        //   speed: 500,
+        //   grabCursor: true,
+        //   loop: true,
+        // },
         slides: [
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/01.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v1/gddc/photos/02.jpg",
@@ -126,7 +131,10 @@
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/3.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/4.jpg",
           "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/5.jpg",
-          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/6b.jpg"
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_March/6b.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_May/3.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_May/4.jpg",
+          "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_256/f_auto,q_auto/v2/gddc/photos/2021_May/1.jpg",
         ]
       };
     },
