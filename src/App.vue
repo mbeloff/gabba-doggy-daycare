@@ -37,9 +37,9 @@
 </template>
 
 <script>
-  import NavBar from './components/NavBar.vue'
-  import SectionFooter from './components/SectionFooter.vue'
-  import ModalInner from './components/ModalInner.vue'
+  import NavBar from '@/components/NavBar.vue'
+  import SectionFooter from '@/components/SectionFooter.vue'
+  import ModalInner from '@/components/ModalInner.vue'
   import FormInquiry from '@/components/FormInquiry.vue'
   import FormLogin from '@/components/FormLogin.vue'
   export default {
@@ -58,9 +58,9 @@
         handler: function () {
           if (this.$route.path == '/login') {
             this.$modal.show('login-modal');
-          }
+          }         
           if (this.$route.params.region == 'adelaide' || this.$route.params.region == 'brisbane') {
-             this.$store.dispatch('setRegion', this.$route.params.region)
+            this.$store.dispatch('setRegion', this.$route.params.region)
           } else if (this.$route.params.region) {
             this.$router.push({name: 'NotFound'})
           }
@@ -104,9 +104,10 @@
       // let path = this.$route.path
       // let param = this.$route.params.region
 
-      if (this.$route.query.code) {
-        this.$store.dispatch('setAuthCode', this.$route.query.code)
-      }
+      //SET PETEXEC AUTHORIZATION CODE
+      // if (this.$route.query.code) {
+      //   this.$store.dispatch('setAuthCode', this.$route.query.code)
+      // }
 
       //STORE PETEXEC TOKEN
       // if (this.$route.hash.includes('access_token')) {
@@ -121,6 +122,24 @@
 
     },
     beforeUpdate() {
+      let param = this.$route.params.region
+      if (param == this.getRegion()) {
+        return
+      }
+      else if (param == 'adelaide' || param == 'brisbane') {
+        this.$store.dispatch('setRegion', param)
+      } else if (param) {
+        this.$router.push({
+            name: 'NotFound',
+          })
+      } else if (param == undefined) {
+        this.$router.push({
+          name: this.$route.name,
+          params: {
+            region: this.$store.state.region
+          }
+        })
+      }
     },    
     name: 'App',
     components: {

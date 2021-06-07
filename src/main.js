@@ -9,11 +9,14 @@ import vueGtm from 'vue-gtm'
 import vueMeta from 'vue-meta'
 import './assets/styles/index.css';
 
-import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueJsonLD from "vue-jsonld";
 
 Vue.use(VueJsonLD);
-Vue.use(VueAwesomeSwiper)
+// import VueCryptojs from 'vue-cryptojs'
+ 
+// Vue.use(VueCryptojs)
+// Vue.use(VueAwesomeSwiper)
 
 Vue.use(vueMeta)
 Vue.use(VModal)

@@ -7,8 +7,12 @@
             <title-block>
               <template #big>So Fresh and So Clean</template>
               <template #small>Hydrobath & Grooming Services</template>
-            </title-block>            
-            <p class="mb-3">Get a hydrobath or groom with your daycare booking, or as a standalone service. We have basic services like washing and nail clipping available any day of the week and full grooms available on location every Wednesday. Bookings may be limited so book ahead of time to secure your spot.</p>
+            </title-block> 
+            <alert-block>
+              <template #left>update</template>
+              <template #right>Due to increasing demand in grooming requests, grooming will now only be available to dogs already booked into daycare for the day</template>
+              </alert-block>           
+            <p class="mb-3">Get a hydrobath or groom with your daycare booking. We have basic services like washing and nail clipping available any day of the week and full grooms available on location every Wednesday. Bookings may be limited so book ahead of time to secure your spot.</p>
             <!-- <p class="mb-3">Grooming services can be booked through your account. If you don't have an account, use the form below.</p> -->
           </div>
           <div class="bg-cover rounded-xl col bath-pup shadow-lg aspect-w-3 aspect-h-4">

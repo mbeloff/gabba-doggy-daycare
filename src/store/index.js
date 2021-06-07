@@ -6,6 +6,7 @@ export default new Vuex.Store({
     region: "brisbane",
     email: "woof@gabbadoggydaycare.com",
     authCode: "",
+    accessToken: "",
     brisbane: {
       hasGrooming: true,
       hasTraining: false,
@@ -50,7 +51,10 @@ export default new Vuex.Store({
     },
     setAuthCode(state, payload) {
       state.authCode = payload
-    }
+    },
+    setToken(state, payload) {
+      state.accessToken = payload
+    },
   },
   actions: {
     setRegion(context, payload) {
@@ -58,6 +62,9 @@ export default new Vuex.Store({
     },
     setAuthCode(context, payload) {
       context.commit('setAuthCode', payload)
+    },
+    setToken(context, payload) {
+      context.commit('setToken', payload)
     }
   },
   modules: {}
