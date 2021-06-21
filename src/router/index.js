@@ -11,7 +11,7 @@ const Grooming = () => import("../views/Grooming.vue")
 const Training = () => import("../views/Training.vue")
 const Feedback = () => import("../views/Feedback.vue")
 const Explore = () => import("../views/Explore.vue")
-// const Welcome = () => import("../views/Welcome.vue")
+const Overnight = () => import("../views/Overnight.vue")
 // const NewOwner = () => import("../views/NewOwner.vue")
 import Home from '../views/Home.vue'
 // import Test from '../views/Test.vue'
@@ -131,6 +131,11 @@ const routes = [
   //   name: "NewOwner",
   //   component: NewOwner,
   // },
+  {
+    path: '/overnight',
+    name: 'Overnight',
+    component: Overnight
+  },
   {
     path: "/privacy",
     name: "Privacy",
