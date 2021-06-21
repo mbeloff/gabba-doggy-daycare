@@ -48,7 +48,14 @@
 
 <script>
 export default {
-
+  metaInfo: {
+      title: 'Overnight Care',
+      meta: [{
+        name: 'description',
+        content: "Get info and pricing about overnight care for daycare guests.",
+        vmid: 'description'
+      }]
+    },
 }
 </script>
 
