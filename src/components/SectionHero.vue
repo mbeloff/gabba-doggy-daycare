@@ -10,7 +10,7 @@
         </div>
         
         <span class="text-sm tracking-tighter inline-block my-2">This offer valid at GDDC <span class="capitalize">{{getRegion()}}</span> for desexed dogs over 6 months only</span>
-       <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full inline-block text-center">Sign me up!</router-link>
+       <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full inline-block text-center">Sign up!</router-link>
       </div>
     </div>
     <div class="order-1 lg:order-2 col hero-pup bg-cover bg-center md:bg-top col-span-1">

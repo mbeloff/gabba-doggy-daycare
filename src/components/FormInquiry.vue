@@ -86,7 +86,6 @@ export default {
     methods: {
       emailIsValid(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-
       },      
       validateForm() {
         if (!this.form.phone && !this.form.email) {
