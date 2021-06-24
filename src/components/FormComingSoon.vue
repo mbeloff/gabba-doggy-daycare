@@ -1,5 +1,5 @@
 <template>
-<div v-if="checkCookie() == 'no' || !checkCookie()">
+<div v-if="checkCookie() == 'no' || checkCookie() == ''">
    <div class="bg-gray-700 text-gray-100  grid place-items-center text-left text-sm p-2">
     <div v-if="!hasSubmitted" class="max-w-md pb-2">
       <p class="py-1 mb-4"><span class="font-bold text-lg text-blue-400">Coming to GDDC!</span> Dedicated facilities and services for high-energy dogs and puppies. Leave your email to register your interest.</p>
@@ -10,8 +10,8 @@
           <button :class="{'btn-disabled' : !emailIsValid(form.email)}" class="btn-blue text-white self-center py-1 px-1 w-24" type="submit"><i class="far fa-check-circle"></i></button>
         </div>
       </form>
+      <p @click="setCookie('hasReg', 'yes', 365); hasSubmitted = true" class="mt-2 link-pink cursor-pointer">not interested</p>
     </div>
-    <div v-else class="text-lg font-bold italic">Thank you <i class="fas fa-paw"></i></div>
   </div>
 </div>
 </template>
@@ -29,7 +29,7 @@
     },
     mounted() {  
        console.log(this.checkCookie())
-      //  if (this.checkCOokie() == '')
+      //  this.setCookie('hasReg', '', 365)
     },
     methods: {
       emailIsValid(email) {
