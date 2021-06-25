@@ -10,19 +10,19 @@
         </div>
         <div class="grid grid-cols-1 gap-x-20 md:grid-cols-2">
           <div class="text-left md:col-span-1 flex flex-col justify-between">
-            <section-signup></section-signup>
-            <div class="flex items-center px-2 rounded-md" @click="agree = !agree" :class="{ 'ring-1 ring-yellow-500':alert}">
-              <input type="checkbox" name="agree" v-model="agree" class="hidden">
+            <section-signup ></section-signup>
+            <section-signup ></section-signup>
+            <div class="flex items-center px-2 rounded-md" @click="agree = !agree" :class="{ 'ring-1 ring-yellow-500':alert}" >
+              <input type="checkbox" name="agree" v-model="agree" class="hidden" >
               <div class="grid items-center justify-center min-h-6 min-w-6 rounded-md border border-blue-500 transition-colors" :class="{'bg-blue-500' : agree}"><i class="fas fa-check text-white"></i></div>
-              <label class="ml-4 italic" for="agree">I acknowledge the above and assert that my dog is not a fence jumper and has not bitten, or shown aggression to another animal or person</label>
+              <label class="ml-4 italic" for="agree" ref="agree">I acknowledge the above and assert that my dog is not a fence jumper and has not bitten, or shown aggression to another animal or person</label>
             </div>            
               <choose-location class="mt-10"></choose-location>
-              <!-- <div class=" grid grid-cols-1 gap-5 mt-10 mb-10 md:mb-0 divide-pink-500 sm:grid-cols-2 sm:divide-x"> -->
+              <transition name="grow">
+                 <p class="text-pink-500 pt-5" v-if="getRegion() == 'adelaide'"><span class="font-bold">Please note:</span> our Adelaide facility is not yet in operation. However, you're very welcome to create an account, and we will send out a notification when we open. <span class="italic">We thank you for your patience.</span></p>
+              </transition>
+             
                 <div class="text-center my-10 col" @click="create()"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</a></div>
-                <!-- <div class="flex items-center text-left col">
-                  <open-login class="mx-auto text-center text-pink-400 align-center sm:text-left hover:underline sm:ml-5">already have an account?</open-login>
-                </div> 
-              </div> -->
           </div>
           <div class="bg-cover md:col-span-1  rounded-xl shadow-xl h-96 min-h-full bg-center" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_600/f_auto,q_auto/v1/gddc/photos/716.jpg)">
           </div>
@@ -63,6 +63,7 @@ import SectionSignup from '@/components/SectionSignup.vue'
       create() {
         if (!this.agree) {
           this.alert = true
+          this.$refs.agree.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
         }
       }
     },
