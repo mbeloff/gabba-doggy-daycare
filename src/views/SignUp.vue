@@ -11,7 +11,6 @@
         <div class="grid grid-cols-1 gap-x-20 md:grid-cols-2">
           <div class="text-left md:col-span-1 flex flex-col justify-between">
             <section-signup ></section-signup>
-            <section-signup ></section-signup>
             <div class="flex items-center px-2 rounded-md" @click="agree = !agree" :class="{ 'ring-1 ring-yellow-500':alert}" >
               <input type="checkbox" name="agree" v-model="agree" class="hidden" >
               <div class="grid items-center justify-center min-h-6 min-w-6 rounded-md border border-blue-500 transition-colors" :class="{'bg-blue-500' : agree}"><i class="fas fa-check text-white"></i></div>
