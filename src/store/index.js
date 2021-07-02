@@ -1,13 +1,15 @@
 import Vue from "vue";
 import Vuex from "vuex";
 Vue.use(Vuex);
+
 export default new Vuex.Store({
   state: {
     region: "brisbane",
     email: "woof@gabbadoggydaycare.com",
-    authCode: "",
     accessToken: "",
+    howFound: {},
     brisbane: {
+      clientId: "1e18704def422bd1a3c1d3fdde12d106",
       hasGrooming: true,
       hasTraining: false,
       trialDays: '2',
@@ -27,6 +29,7 @@ export default new Vuex.Store({
       },      
     },
     adelaide: {
+      clientId: "1fcdf72a8e34dd28821ca68df1eaf5f9",
       hasGrooming: false,
       hasTraining: false,
       trialDays: '2',
@@ -55,6 +58,9 @@ export default new Vuex.Store({
     setToken(state, payload) {
       state.accessToken = payload
     },
+    setHowFound(state, payload) {
+      state.howFound = payload
+    }
   },
   actions: {
     setRegion(context, payload) {
@@ -65,6 +71,9 @@ export default new Vuex.Store({
     },
     setToken(context, payload) {
       context.commit('setToken', payload)
+    },
+    setHowFound(context, payload) {
+      context.commit('setHowFound', payload)
     }
   },
   modules: {}

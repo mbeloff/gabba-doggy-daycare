@@ -12,9 +12,8 @@ const Training = () => import("../views/Training.vue")
 const Feedback = () => import("../views/Feedback.vue")
 const Explore = () => import("../views/Explore.vue")
 const Overnight = () => import("../views/Overnight.vue")
-// const NewOwner = () => import("../views/NewOwner.vue")
+const NewOwner = () => import("../views/NewOwner.vue")
 import Home from '../views/Home.vue'
-// import Test from '../views/Test.vue'
 
 Vue.use(VueRouter);
 
@@ -25,11 +24,6 @@ const routes = [
     component: Home,
     redirect: "/home"
   },
-  // {
-  //   path: '/test',
-  //   name: 'Test',
-  //   component: Test
-  // },
   {
     path: '/adelaide',
     props: true,
@@ -48,11 +42,6 @@ const routes = [
     component: Home,
     props: true,  
   },
-  // {
-  //   path: "/welcome/:region?",
-  //   name: "Welcome",
-  //   component: Welcome,
-  // },
   {
     path: "/login",
     name: "Login",
@@ -126,11 +115,12 @@ const routes = [
     component: Feedback,
     props: true
   },
-  // {
-  //   path: "/newowner",
-  //   name: "NewOwner",
-  //   component: NewOwner,
-  // },
+  {
+    path: "/newowner/:region?",
+    name: "NewOwner",
+    component: NewOwner,
+    props: true,
+  },
   {
     path: '/overnight',
     name: 'Overnight',

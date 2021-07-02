@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      gray: colors.coolGray,
+      gray: colors.blueGray,
       red: colors.red,
       blue: colors.lightBlue,
       yellow: colors.amber,
@@ -32,7 +32,12 @@ module.exports = {
       
     }
   },
-  variants: {},
+  variants: {
+    extend: {
+      textColor: ['hover', 'group-hover', 'focus'],
+      position: ['group-hover', 'group-focus'],
+    }
+  },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
   ],  

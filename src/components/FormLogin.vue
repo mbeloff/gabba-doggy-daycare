@@ -8,13 +8,13 @@
           <label class="my-label" for="username">
             username
           </label>
-          <input v-model="form.username" ref="name" class="my-input" name="username" id="username" type="text" placeholder="">
+          <input v-model="form.username" ref="name" class="my-input" name="username" id="username" type="text">
         </div>
         <div>
           <label class="my-label" for="password">
             password
           </label>
-          <input v-model="form.password" class="my-input" name="password" id="password" type="password" placeholder="">
+          <input v-model="form.password" class="my-input" name="password" id="password" type="password">
         </div>
       </div>
 

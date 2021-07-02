@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
-
-<!--// CITY SELECT // -->
+      <!--// CITY SELECT // -->
 
       <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
         <button title="GDDC Brisbane" :class="{'tab-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
@@ -45,7 +44,6 @@
   export default {
     data() {
       return {
-        accessToken: ""
       }
     },
     mounted() {
@@ -58,32 +56,19 @@
         handler: function () {
           if (this.$route.path == '/login') {
             this.$modal.show('login-modal');
-          }         
+          }
           if (this.$route.params.region == 'adelaide' || this.$route.params.region == 'brisbane') {
             this.$store.dispatch('setRegion', this.$route.params.region)
           } else if (this.$route.params.region) {
-            this.$router.push({name: 'NotFound'})
+            this.$router.push({
+              name: 'NotFound'
+            })
+            
           }
         },
         deep: true,
         immediate: true
       },
-      // "$store.state.authCode": {
-      //   handler: function () {
-      //     if (this.$store.state.authCode) {
-      //       console.log('redirection to new owner page')
-      //       this.$router.push({name: 'NewOwner'})
-      //     }          
-      //   }
-      // },
-      // "$store.state.accessToken": {
-      //   handler: function () {
-      //     if (this.$store.state.accessToken) {
-      //       console.log('redirection to new owner page')
-      //       this.$router.push({name: 'NewOwner'})
-      //     }          
-      //   }
-      // }
     },
     methods: {
       regionSelect(region) {
@@ -100,38 +85,27 @@
         // return region == this.$route.params.region
       }
     },
-    created() {      
-      // let path = this.$route.path
-      // let param = this.$route.params.region
-
-      //SET PETEXEC AUTHORIZATION CODE
-      // if (this.$route.query.code) {
-      //   this.$store.dispatch('setAuthCode', this.$route.query.code)
+    beforeCreate() {
+      
+    },
+    created() {
+      // if (this.$route.name == 'NewOwner') {
+      //   return
       // }
-
-      //STORE PETEXEC TOKEN
-      // if (this.$route.hash.includes('access_token')) {
-      //   let str = this.$route.hash
-      //   let token = str.substring(
-      //     str.indexOf('=') + 1,
-      //     str.indexOf('&')
-      //   )
-      //   console.log('access token found')
-      //   this.$store.dispatch('setToken', token)
-      // }
-
     },
     beforeUpdate() {
+      // if (this.$route.name == 'NewOwner') {
+      //   return
+      // }
       let param = this.$route.params.region
       if (param == this.getRegion()) {
         return
-      }
-      else if (param == 'adelaide' || param == 'brisbane') {
+      } else if (param == 'adelaide' || param == 'brisbane') {
         this.$store.dispatch('setRegion', param)
       } else if (param) {
         this.$router.push({
-            name: 'NotFound',
-          })
+          name: 'NotFound',
+        })
       } else if (param == undefined) {
         this.$router.push({
           name: this.$route.name,
@@ -140,7 +114,7 @@
           }
         })
       }
-    },    
+    },
     name: 'App',
     components: {
       NavBar,
@@ -158,17 +132,19 @@
         vmid: 'description'
       }]
     },
-    
-    
+
+
   }
 </script>
 <style lang="postcss">
-  .app-content{
+  .app-content {
     margin-top: 131px;
+
     @media only screen and (min-width: 1024px) {
       margin-top: 129px
     }
   }
+
   .btn-disabled {
     pointer-events: none;
     opacity: .3;
@@ -192,7 +168,7 @@
     opacity: 0;
   }
 
-    .fade-enter-active,
+  .fade-enter-active,
   .fade-leave-active {
     transition: opacity .5s;
   }
@@ -225,9 +201,9 @@
     opacity: 0;
     max-height: 0px;
   }
-  
+
   .tile {
-    background: linear-gradient(to bottom, rgb(246, 246, 246),rgb(246, 246, 246), rgba(235, 236, 240, 0.644)), url(./assets/img/gddc_tile.svg);
+    background: linear-gradient(to bottom, rgb(246, 246, 246), rgb(246, 246, 246), rgba(235, 236, 240, 0.644)), url(./assets/img/gddc_tile.svg);
     background-size: 300px;
   }
 
@@ -238,9 +214,9 @@
   body {
     font-family: 'Open Sans', Arial, sans-serif !important;
     color: #474b57;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
   }
-  
+
   .pattern {
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='black' fill-opacity='.08' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to bottom right, rgba(0, 153, 255, 0.63), rgb(212, 232, 255));
     background-size: 5px 5px, cover;
