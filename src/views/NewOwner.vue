@@ -19,7 +19,7 @@
 secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0">forgot password?</a></p>
       </div>
       
-      <form action="POST" class="max-w-xl mx-auto grid grid-cols-1">
+      <form action="POST" class="max-w-xl mx-auto grid grid-cols-1" id="createAccount">
         <span class="form-heading">Account</span>
         <div class="form-group">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
