@@ -187,7 +187,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           redirect: 'follow'
         };
 
-        fetch("http://localhost:8888/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
+        fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
             // console.log(result)
@@ -268,7 +268,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         fetch("https://secure.petexec.net/api/owner", requestOptions)
           .then(response => response.json())
           .then(result => {
-            console.log(result)
+            // console.log(result)
             if (!result.success) {
               let errs = result.errors
               this.petexecErrors = errs
