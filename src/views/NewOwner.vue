@@ -3,7 +3,7 @@
     <div v-if="gettingToken" class="fixed h-screen w-screen grid place-items-center bg-white bg-opacity-50">
       <spinner></spinner>
     </div>
-    <div v-if="failedToken" class="h-full py-20 text-center grid place-items-center">
+    <div v-if="tokenFailed" class="h-full py-20 text-center grid place-items-center">
       <div class="grid place-items-center">
         <p>Sorry, something went wrong.</p>
         <p>redirecting... </p>
@@ -193,13 +193,16 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         this.gettingToken = false
         await this.howfound()
       },
-      'response': function() {
+      'tokenFailed': function() {
+        if (this.tokenFailed == true) {
+          window.location.href=this.link 
+        }                               
+      },
+      'response': function () {
         if (this.response.error) {
           this.gettingToken = false
-          this.tokenFailed = true  
-          window.location.href=this.link  
-        }
-            
+          this.tokenFailed = true
+        } 
       }
     },
     created() {
@@ -212,14 +215,16 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           redirect: 'follow'
         };
 
-        fetch("http://localhost:8888/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
+        fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
             console.log(result)
             this.response = JSON.parse(result)
             this.$forceUpdate()
           })
-          .catch(error => console.log('Couldn\'t get token!', error));
+          .catch(error => {console.log('Couldn\'t get token!', error)
+          this.gettingToken = false
+          this.tokenFailed = true});
       },
       howfound() {
           var myHeaders = new Headers();
