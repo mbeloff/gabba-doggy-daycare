@@ -116,7 +116,7 @@ const routes = [
     props: true
   },
   {
-    path: "/newowner/:region?",
+    path: "/dev/newowner/:region?",
     name: "NewOwner",
     component: NewOwner,
     props: true,

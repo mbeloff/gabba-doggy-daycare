@@ -5,8 +5,6 @@ exports.handler = async function (event) {
         var Base64;
         var user;
         var pw;
-
-        console.log(event.queryStringParameters.r)
         
         if(event.queryStringParameters.r == 'brisbane') {
           Base64 = 'Basic ' + process.env.VUE_APP_PE_BASE_BRIS
@@ -23,14 +21,13 @@ exports.handler = async function (event) {
         const myHeaders = new fetch.Headers();
           myHeaders.append("Authorization", Base64);
           myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-          console.log(myHeaders)
 
         const urlencoded = new URLSearchParams();
                 urlencoded.append("grant_type", "password");
                 urlencoded.append("username", user);
                 urlencoded.append("password", pw);
                 urlencoded.append("scope", "owner_create company_read");
-                console.log(urlencoded)
+                // console.log(urlencoded)
 
         var requestOptions = {
           method: 'POST',
@@ -45,8 +42,6 @@ exports.handler = async function (event) {
         const response = await fetch("https://secure.petexec.net/api/token", requestOptions)
           .then(response => response.json())
           .catch(error => console.log('error', error))
-
-        
 
         return {
           statusCode: 200,

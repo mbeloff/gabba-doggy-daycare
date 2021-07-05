@@ -25,7 +25,6 @@
         <a target="_blank" rel="noopener" href="https://
 secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0">forgot password?</a>
       </div>
-
     </form>
   </div>
 </template>
