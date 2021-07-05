@@ -218,7 +218,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
-            console.log(result)
+            // console.log(result)
             this.response = JSON.parse(result)
             this.$forceUpdate()
           })
