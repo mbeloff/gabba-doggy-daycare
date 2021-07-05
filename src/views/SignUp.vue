@@ -21,14 +21,14 @@
                  <p class="text-pink-500 pt-5" v-if="getRegion() == 'adelaide'"><span class="font-bold">Please note:</span> our Adelaide facility is not yet in operation. However, you're very welcome to create an account, and we will send out a notification when we open. <span class="italic">We thank you for your patience.</span></p>
               </transition>
              
-                <div class="text-center my-10 col" @click="create()"><a target="_blank" rel="noopener" :href="link" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</a></div>
+                <div class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</router-link></div>
           </div>
           <div class="bg-cover md:col-span-1  rounded-xl shadow-xl h-96 min-h-full bg-center" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_600/f_auto,q_auto/v1/gddc/photos/716.jpg)">
           </div>
         </div>
       </div>
     </div>
-    <div class="tile section">
+    <!-- <div class="tile section">
       <div class="container py-20 mx-auto">
         <div class="text-center">
           <title-block>
@@ -40,7 +40,7 @@
           <open-login class="inline-block btn-blue">Sign In</open-login>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -59,7 +59,7 @@ import SectionSignup from '@/components/SectionSignup.vue'
       }
     },
     methods: {
-      create() {
+      checkAgree() {
         if (!this.agree) {
           this.alert = true
           this.$refs.agree.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})

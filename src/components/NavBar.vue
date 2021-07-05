@@ -32,7 +32,7 @@
           <!-- <div class="flex flex-row flex-wrap justify-between my-3 sm:my-0"> -->
             <div class="grid grid-cols-2 gap-4 lg:w-auto lg:mb-0 text-center my-3 lg:my-0">
               <button class="btn-blue px-2" @click="showLogin()">Login</button>
-              <router-link @click.native="hide" :to="{name: 'Sign-up', params: {region: getRegion()}}" class="btn-blue bg-pink-400 text-white self-center px-2" active-class="btn-disabled">Create Account</router-link>
+              <router-link @click.native="hide" :to="{name: 'Sign-up', params: {region: getRegion()}}" class="btn-blue bg-pink-400 text-white self-center px-2" active-class="btn-disabled" :class="{ 'btn-disabled' : this.$route.name == 'NewOwner'}">Create Account</router-link>
             </div>
           <!-- </div> -->
         </div>
