@@ -15,16 +15,16 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
 
             <div class="input-group grid col-span-full">
               <label class="new-label" for="newusername">username</label>
-              <input autocomplete="off" ref="username" @input="checkMissing('username')" v-model="form.username" type="text" name="username" id="newusername" class="new-input" :class="{'input-invalid' : formMissing.includes('username') && form.username.length == 0}">
+              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="off_jlabaKdI" ref="username" @input="checkMissing('username')" v-model="form.username" type="text" name="username" id="newusername" class="new-input" :class="{'input-invalid' : formMissing.includes('username') && form.username.length == 0}">
               
             </div>
             <div class="input-group grid">
               <label class="new-label" for="newpassword">password</label>
-              <input autocomplete="off" ref="password" @input="checkMissing('password')" v-model="form.password" :type="pw1 ? 'text' : 'password'" name="password" id="newpassword" class="new-input" @focus="pw1 = true" @blur="pw1 = false" :class="{'input-invalid' : formMissing.includes('password') && form.password.length == 0}">
+              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="new-password_jkdkKAbs" ref="password" @input="checkMissing('password')" v-model="form.password" type="text" name="password" id="newpassword" class="new-input" @focus="pw1 = true" @blur="pw1 = false" :class="{'input-invalid' : formMissing.includes('password') && form.password.length == 0}">
             </div>
             <div class="input-group grid">
               <label class="new-label" for="newpassword2">re-type password</label>
-              <input autocomplete="off" ref="password2" @input="checkMissing('password2')" v-model="form.password2" :type="pw2 ? 'text' : 'password'" name="password2" id="newpassword2" class="new-input" @focus="pw2 = true" @blur="pw2 = false" :class="{'input-invalid' : formMissing.includes('password2') && form.password2.length == 0}">
+              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="new-password_jBDkasj2" ref="password2" @input="checkMissing('password2')" v-model="form.password2" type="text" name="password2" id="newpassword2" class="new-input" @focus="pw2 = true" @blur="pw2 = false" :class="{'input-invalid' : formMissing.includes('password2') && form.password2.length == 0}">
             </div>
           </div>
         </div>
@@ -171,9 +171,8 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
       'region': async function () {
         await this.getToken()
       },
-      // get howfound list once new token is generated
+      // get howfound list when region/token changes
       'response.access_token': async function () {
-        // console.log('token changed')
         await this.howfound()
       }
     },
@@ -190,7 +189,6 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
-            // console.log(result)
             this.response = JSON.parse(result)
             this.$forceUpdate()
           })
@@ -268,25 +266,14 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         fetch("https://secure.petexec.net/api/owner", requestOptions)
           .then(response => response.json())
           .then(result => {
-            // console.log(result)
             if (!result.success) {
               let errs = result.errors
               this.petexecErrors = errs
-              if (errs.includes("Please enter a password (Passwords need to be at least 4 characters)." || "Please ensure both passwords match.")) {
-                this.$refs.password.focus()
-              }
-              if (errs.includes("Please enter a valid email address.")) {
-                this.$refs.email.focus()
-              }
-              if (errs.includes("That username cannot be used. Please enter a different username.")) {
-                this.$refs.username.focus()
-              }
             } else {
               this.newaccountcreated = true 
               this.login()
             }
           })
-        // .catch(error => console.log('error', error));
       }
     }
   }
@@ -321,5 +308,16 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
 
   .hidden-form {
     pointer-events: none
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
   }
 </style>
