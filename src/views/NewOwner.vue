@@ -1,6 +1,17 @@
 <template>
-  <div class="tile">
-    <div class="container mx-auto py-10 p-2">
+  <div class="tile relative h-full">
+    <div v-if="gettingToken" class="fixed h-screen w-screen grid place-items-center bg-white bg-opacity-50">
+      <spinner></spinner>
+    </div>
+    <div v-if="failedToken" class="h-full py-20 text-center grid place-items-center">
+      <div class="grid place-items-center">
+        <p>Sorry, something went wrong.</p>
+        <p>redirecting... </p>
+        <spinner></spinner>
+      </div>
+      
+    </div>
+    <div v-show="!gettingToken && !tokenFailed" class="container h-full mx-auto py-10 p-2">
       <p class="text-center font-bold text-blue-500 text-xl">Create a New Account for GDDC <span class="capitalize">{{this.getRegion()}}</span></p>
       <div class="flex flex-col gap-3 max-w-xl mx-auto py-3 text-sm">        
         <p class="text-left">Please complete the form below to create a new PetExec account with Gabba Doggy Daycare. You will then be able to <open-login class="link-pink">login</open-login> to manage your doggy daycare bookings and purchase packages.</p>
@@ -134,6 +145,8 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
   export default {
     data() {
       return {
+        gettingToken: true,
+        tokenFailed: false,
         pw1: null,
         pw2: null,
         newaccountcreated: false,
@@ -163,17 +176,30 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
       region() {
         return this.getRegion()
       },
+      link() {
+        return this.$store.state[this.getRegion()].newAccountLink
+      }
     },
     props: {
     },
     watch: {
       // get new access token on region change
       'region': async function () {
+        this.gettingToken = true
         await this.getToken()
       },
       // get howfound list when region/token changes
       'response.access_token': async function () {
+        this.gettingToken = false
         await this.howfound()
+      },
+      'response': function() {
+        if (this.response.error) {
+          this.gettingToken = false
+          this.tokenFailed = true  
+          window.location.href=this.link  
+        }
+            
       }
     },
     created() {
@@ -186,13 +212,14 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           redirect: 'follow'
         };
 
-        fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
+        fetch("http://localhost:8888/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
+            console.log(result)
             this.response = JSON.parse(result)
             this.$forceUpdate()
           })
-          .catch(error => console.log('error', error));
+          .catch(error => console.log('Couldn\'t get token!', error));
       },
       howfound() {
           var myHeaders = new Headers();
@@ -208,6 +235,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
             .then(response => response.text())
             .then(result => {
               this.howFound = JSON.parse(result).howfound
+
               })
             .catch(error => console.log('error', error));
       },  
