@@ -116,7 +116,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 px-2" v-if="formMissing.length != 0">
+        <div class="grid grid-cols-1 px-2" v-if="formMissing.length > 0">
           <p class="text-blue-700 text-sm">All fields are required*</p>       
         </div>
         <div class="grid grid-cols-1 p-2 pl-6" v-if="petexecErrors.length > 0">
@@ -159,7 +159,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           emergencycontact: '',
           emergencyphone: '',
           postcode: '',
-          state: '',
+          state: 'QLD',
           city: '',
           address: '',
           email: '',
@@ -214,7 +214,6 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           method: 'GET',
           redirect: 'follow'
         };
-
         fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
