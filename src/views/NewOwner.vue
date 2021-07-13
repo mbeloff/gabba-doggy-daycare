@@ -260,7 +260,11 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         this.$forceUpdate()
         if (this.formMissing.length < 1) {
           this.addOwner()
-        }      
+        } else {
+          window.dataLayer.push({
+            'event': 'new_owner_error',
+          });
+        }    
       },
       checkMissing(item){
         let index = this.formMissing.indexOf(item);
@@ -303,7 +307,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
             if (!result.success) {
               let errs = result.errors
               window.dataLayer.push({
-              'event': 'new_owner_error',
+              'event': 'new_owner_fetch_error',
               });
               this.petexecErrors = errs
             } else {
