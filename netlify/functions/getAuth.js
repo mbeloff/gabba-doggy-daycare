@@ -18,9 +18,9 @@ exports.handler = async function (event) {
           pw = process.env.VUE_APP_PE_P_ADE
         }
 
-        const myHeaders = new fetch.Headers();
-          myHeaders.append("Authorization", Base64);
-          myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+        // const myHeaders = new fetch.Headers();
+        //   myHeaders.append("Authorization", Base64);
+        //   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
         const urlencoded = new URLSearchParams();
                 urlencoded.append("grant_type", "password");
@@ -42,7 +42,7 @@ exports.handler = async function (event) {
         const response = await fetch("https://secure.petexec.net/api/token", requestOptions)
           .then(response => response.json())
           .catch(error => console.log('error', error))
-
+        
         return {
           statusCode: 200,
           headers: {
