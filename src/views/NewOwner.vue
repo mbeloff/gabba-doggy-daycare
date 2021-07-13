@@ -215,6 +215,8 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           redirect: 'follow'
         };
         fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
+        // !set netlify dev port when testing locally as necessary
+        // fetch("http://localhost:55001/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
             // console.log(result)
@@ -300,9 +302,15 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           .then(result => {
             if (!result.success) {
               let errs = result.errors
+              window.dataLayer.push({
+              'event': 'new_owner_error',
+              });
               this.petexecErrors = errs
             } else {
               this.newaccountcreated = true 
+              window.dataLayer.push({
+              'event': 'new_owner',
+              });
               this.login()
             }
           })
