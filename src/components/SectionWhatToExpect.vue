@@ -38,7 +38,7 @@
           <span class="font-bold">Socialisation -</span> Your dog will have a great chance to socialise, mingle and play with other dogs! We separate dogs based on their size and temperament and do our best to ensure dogs are with others that they will have the most extensive opportunity to socialise with.
         </li>
         <li>
-          <span class="font-bold">Confidence -</span> Watch your pups confidence reach new heights! During the day at daycare, your pup will have the chance to play on our agility course, enjoy different sensory experiences such as licking ice, playing in our sand pit, and well as enjoying bubbles, running on grass, and watching films during nap time. We provide an array or different activities for our dog visitors on different days to keep them entertained, and to help build their confidence. Surrounding themselves with other dogs also ensures that they learn certain cues that humans are incapable of teaching dogs.
+          <span class="font-bold">Confidence -</span> Watch your pups confidence reach new heights! During the day at daycare, your pup will have the chance to play on our agility course, enjoy different sensory experiences such as licking ice, playing in our sand pit, as well as enjoying bubbles, running on grass, and watching films during nap time. We provide an array or different activities for our dog visitors on different days to keep them entertained, and to help build their confidence. Surrounding themselves with other dogs also ensures that they learn certain cues that humans are incapable of teaching dogs.
         </li>
         <li>
           <span class="font-bold">Exercise -</span> Daycare gives your dog the best opportunity to expend energy! At GDDC our guests have plenty of space to run around, play, and enjoy being a dog! If you live in an apartment, have a highly energetic pooch, or lack the ability to give your pup adequate exercise then daycare is a terrific option for you and your dog.
@@ -58,24 +58,22 @@
       <h2 class="font-bold text-xl mb-3">After Daycare</h2>
       <ul class="list-inside list-none">
         <li>
-          <span class="font-bold">Boo boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day however as dogs are animals, things can happen quickly. If we notice any bite, cut or scratch on your dog we will inform you right away, however, while we do provide the utmost care and attention to our doggy guests, accidents will sometimes happen and not everything can be identified.
-        </li>
-        
+          <span class="font-bold">Boo boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day however as dogs are animals, things can happen quickly. If we notice any bite, cut or scratch on your dog we will inform you at pickup or straight away if necessary, however, while we do provide the utmost care and attention to our doggy guests, accidents will sometimes happen and not everything can be identified.
+        </li>        
         <li>
           <span class="font-bold">Hungry or Tired -</span> As your dog is likely to be much more active at daycare than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest. You may wish to let your dog take it easy and have a big snooze after their day of fun.
         </li>
         <li>
-          <span class="font-bold">Illness and Injury -</span> - We have extremely strict hygiene standards and do our utmost to ensure all dogs remain healthy and happy,
-          and we will isolate and inform pawrents immediately if any pup shows any sign of illness. If however, your pup returns ill from
-          daycare, please let us know ASAP. If your dog has a serious injury or displays signs of illness during their time at GDDC we may, at our discretion, take them to a
+          <span class="font-bold">Illness and Injury -</span> We have extremely strict hygiene standards and do our utmost to ensure all dogs remain healthy and happy,
+          and we will isolate dogs and inform pawrents immediately if any pup shows any sign of illness. If however, your pup returns ill from
+          daycare, please let us know ASAP. If your dog has a serious injury or shows signs of illness during their time at GDDC we may, at our discretion, take them to a
           vet, however GDDC does not accept responsibility for any vet bills and as per our daycare agreement you will be liable for any costs involved.
         </li>
         <li>
-          <span class="font-bold">Picking Up -</span>  Please note that we close at {{ this.closeTime }}. We kindly ask that you aim to arrive earlier than this if possible, to account for 
-any delays (e.g. traffic) and prevent a rush at closing time. If you are running late, please let us know as early as possible.
+          <span class="font-bold">Picking Up -</span> Please note that we close at {{ this.closeTime }}. We kindly ask that you aim to arrive a bit earlier than this if possible, to account for 
+any delays (e.g. traffic) and prevent a rush at closing time. If you are running late, please let us know straight away.
         </li>
       </ul>
-
     </div>
     <router-link class="btn-blue inline-block my-5" :to="{ name: 'Sign-up', params: {region: getRegion()} }">Sign me up!</router-link>
   </div>
