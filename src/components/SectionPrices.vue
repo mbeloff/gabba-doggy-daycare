@@ -58,7 +58,7 @@
     </div>
     <div class="mt-10 px-5">
       <p class="text-sm">
-        Please note that our unlimited daycare packages are valid for all days that we are open which may not necessarily be 5 day every week. Any days you opt not use, or days we may be closed, including public holidays, may not be refunded or carried over to following weeks. If we are fully booked, customers on recurring billing will be given priority placement. Unlimited daycare packages may become temporarily unavailable to new sign-ups if we are approaching full capacity.
+        Please note that our unlimited daycare packages are valid for all days that we are open which may not necessarily be 5 days every week. Any days you opt not use, or days we may be closed, including public holidays, may not be refunded or carried over to following weeks. If we are fully booked, customers on recurring billing will be given priority placement. Unlimited daycare packages may become temporarily unavailable to new sign-ups if we are approaching full capacity.
       </p>
       <p class="mt-2 text-sm">
         If you would like to cancel, temporarily pause, or adjust your weekly payment to a different package, just let us know before your usual billing day and we'll be happy to accommodate <i class="fal fa-smile"></i>
