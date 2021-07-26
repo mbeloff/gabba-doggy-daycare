@@ -21,8 +21,8 @@
             </div>
           </div>
         </div>
-        <div class=" mt-4">
-          <p class="mb-2 text-sm">The above packages and casual days can be purchased through your PetExec account - <open-login class="link-pink">Login here</open-login>.</p>
+        <div class="text-sm mt-4">
+          <p class=" ">The above packages and casual days can be purchased through your PetExec account - <open-login class="link-pink">Login here</open-login></p>
         </div>
         <p class="font-bold text-center mt-5">Automatic Weekly Payments</p>
         <p class="text-sm">If you're a regular guest and don't want to worry about buying packages each week, just give us a <a class="link-pink" :href="`tel:` + removeSpaces(contact.phone)">call</a> or <link-email class='link-pink'>email</link-email> and we can set up a discounted recurring weekly payment for you. These payments can be paused or cancelled at any time :)</p>
@@ -53,15 +53,20 @@
           </div>
         </div>
       </div>
-      <div class="rounded-lg shadow-xl md:order-1 bg-cover bg-center aspect-w-3 aspect-h-4" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_656/f_auto,q_auto/v1/gddc/photos/810.jpg)">
+      <div class="rounded-lg shadow-xl md:order-1 bg-cover bg-center aspect-w-3 aspect-h-4 my-20" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_656/f_auto,q_auto/v1/gddc/photos/810.jpg)">
       </div>
     </div>
-    <div class="mt-10 px-5">
-      <p class="text-sm">
-        Please note that our unlimited daycare packages are valid for all days that we are open which may not necessarily be 5 days every week. Any days you opt not use, or days we may be closed, including public holidays, may not be refunded or carried over to following weeks. If we are fully booked, customers on recurring billing will be given priority placement. Unlimited daycare packages may become temporarily unavailable to new sign-ups if we are approaching full capacity.
+    <div class="mt-10 px-5 text-sm gap-2 flex flex-col">
+      <p>Package Terms and Conditions: </p>
+      <p>12-month unlimited package is only available to desexed dogs, and may be subject to approval.</p> 
+      <p>
+        Please note that our unlimited daycare packages are valid for all days that we are open, which may not necessarily be 5 days every week. Any days you opt not to use, or days we may be closed, including public holidays, may not be refunded or carried over to following weeks.        
       </p>
-      <p class="mt-2 text-sm">
-        If you would like to cancel, temporarily pause, or adjust your weekly payment to a different package, just let us know before your usual billing day and we'll be happy to accommodate <i class="fal fa-smile"></i>
+      <p>
+        If we are fully booked, guests who have pre-paid will be given priority placement over casual visitors. Unlimited daycare packages may become temporarily unavailable to new sign-ups if we are approaching full capacity.
+      </p> 
+      <p>
+        If you would like to cancel, pause, or adjust your weekly payment to a different package, just let us know before your usual billing day and we'll be happy to accommodate <i class="fal fa-smile"></i>
       </p>
     </div>
   </div>
