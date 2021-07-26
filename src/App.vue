@@ -30,6 +30,14 @@
           </template>
         </modal-inner>
       </Modal>
+      <Modal name="taxi-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+        <modal-inner>
+          <template #title>Pet Taxi<span class="font-normal"> - Brisbane</span></template>
+          <template #body>
+            <section-taxi></section-taxi>
+          </template>
+        </modal-inner>
+      </Modal>
     </div>
     <section-footer></section-footer>
   </div>
@@ -41,6 +49,7 @@
   import ModalInner from '@/components/ModalInner.vue'
   import FormInquiry from '@/components/FormInquiry.vue'
   import FormLogin from '@/components/FormLogin.vue'
+  import SectionTaxi from '@/components/SectionTaxi.vue'
   export default {
     data() {
       return {
@@ -49,6 +58,9 @@
     mounted() {
       if (this.$route.name == 'Login') {
         this.$modal.show('login-modal');
+      }
+      if (this.$route.name == 'Taxi') {
+        this.$modal.show('taxi-modal');
       }
     },
     watch: {
@@ -62,8 +74,7 @@
           } else if (this.$route.params.region) {
             this.$router.push({
               name: 'NotFound'
-            })
-            
+            })            
           }
         },
         deep: true,
@@ -122,6 +133,7 @@
       ModalInner,
       FormInquiry,
       FormLogin,
+      SectionTaxi
     },
     metaInfo: {
       title: 'Home',

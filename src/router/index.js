@@ -127,6 +127,11 @@ const routes = [
     component: Overnight
   },
   {
+    path: '/pet-taxi',
+    name: 'Taxi',
+    component: Home
+  },
+  {
     path: "/privacy",
     name: "Privacy",
     component: Privacy

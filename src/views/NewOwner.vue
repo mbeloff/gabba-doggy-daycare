@@ -216,7 +216,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         };
         fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
         // !set netlify dev port when testing locally as necessary
-        // fetch("http://localhost:55001/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
+        // fetch("http://localhost:8888/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
             // console.log(result)
@@ -225,7 +225,9 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           })
           .catch(error => {console.log('Couldn\'t get token!', error)
           this.gettingToken = false
-          this.tokenFailed = true});
+          this.tokenFailed = true
+          }
+          );
       },
       howfound() {
           var myHeaders = new Headers();

@@ -5,7 +5,7 @@
     
     <section-cards></section-cards>
     <div class="bg-gray-900 relative">
-      <section-slider class="transition-opacity duration-1000" :class="{ 'opacity-0' : this.disabled}" :key="this.rand"></section-slider>
+      <section-slider class="transition-opacity gallery duration-1000" :class="{ 'opacity-0' : this.disabled}" :key="this.rand"></section-slider>
       <div v-show="this.disabled" class="absolute top-0 left-0 w-full h-full grid place-items-center">
         <i class="fal fa-spinner-third fa-spin fa-3x text-white"></i>
       </div>
@@ -28,8 +28,10 @@
                   <icon-stack :icon="item.icon"></icon-stack>
                   <p class="font-bold text-blue-700 self-center">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span> </p>
                 </div>
-                <p class="ml-11 text-sm">{{item.desc}} <router-link v-if="item.title == 'Grooming'" class="link-pink" :to="{name: item.title, params: {region: item.limit}}">find out more</router-link>
-                </p>
+                <p class="ml-11 text-sm">{{item.desc}} 
+                  <router-link v-if="item.title == 'Grooming'" class="link-pink" :to="{name: item.title, params: {region: item.limit}}">find out more</router-link>
+                  <button v-if="item.title == 'Pet Taxi'" class="link-pink" @click="showTaxi">find out more</button>
+                  </p>
               </template>
             </li>
           </ul>
@@ -143,6 +145,9 @@
       }
     },
     methods: {
+      showTaxi() {
+        this.$modal.show('taxi-modal');
+      },
       ranNum() {
         let x = Math.random() * (30) - 15
         return x
@@ -207,4 +212,17 @@
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
     background-position: 50% 30%
   }
+
+  @media (min-width: 640px) {
+    .gallery { min-height: 850px }
+  }
+
+  @media (min-width: 1024px) {
+    .gallery { min-height: 340px }
+  }
+
+  @media (min-width: 1280px) {
+    .gallery { min-height: 340px }
+  }
+  
 </style>
