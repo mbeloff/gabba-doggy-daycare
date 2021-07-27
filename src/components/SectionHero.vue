@@ -31,7 +31,7 @@
 
 .hero-pup {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-  background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_1024/f_auto,q_auto/v1609904265/gddc/301c.jpg);
+  background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_1024/f_auto,q_auto/v1609904265/gddc/301c.jpg);
   @media only screen and (max-width: 1023px) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_840/f_auto,q_auto/v1609904265/gddc/301c.jpg);
