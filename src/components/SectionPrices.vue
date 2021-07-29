@@ -45,7 +45,7 @@
           </title-block>
           <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
             <div v-for="(extra, i) in prices[region].extras" :key="i" class="mb-2 bg-white">
-              <div class="flex bg-gray-100 rounded-lg">
+              <div @click="showTaxi" class="flex bg-gray-100 rounded-lg" :class="{ 'taxi cursor-pointer' : extra.selector == 'taxi' }">
                 <div class="flex-grow px-2" :class="{ 'opacity-50' : extra.soon == '- available soon'}">{{extra.name}} <span class="text-pink-500">{{ extra.soon }}</span></div>
                 <div class="px-2"><span class="text-pink-500">{{extra.price}}</span></div>
               </div>
@@ -81,6 +81,14 @@
       contact() {
         return this.$store.state[this.region].contact
       }
+    },
+    methods: {
+      showTaxi(e) {
+      if (e.target.matches('.taxi, .taxi *')) {
+        this.$modal.show('taxi-modal')
+      }
+    },
+    
     },
     data() {
       return {
@@ -138,10 +146,11 @@
                 order: '2'
               },
               PetTaxi: {
+                selector: 'taxi',
                 name: "Pet Taxi (Local Pickup and Dropoff)",
                 // desc: "Local pickup & dropoff in our Pet Taxi (within 5km)",
-                soon: "- limited availability",
-                price: "$40",
+                soon: "- more info",
+                price: "$20-40",
                 order: '3'
               },
             }
