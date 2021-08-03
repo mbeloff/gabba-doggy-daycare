@@ -17,10 +17,11 @@
               </div>
               <span class="md:pl-11">{{contact.name}} <br> {{contact.street}}, {{contact.suburb}} <br>{{contact.postcode}}</span>
             </li>
-            <li class="flex flex-col mb-3">
+            <li class="flex flex-col mb-3" v-if="getRegion() == 'brisbane'">
               <div class="flex flex-col md:flex-row gap-0 md:gap-3 items-center">
                 <icon-stack :icon="'phone-rotary'"></icon-stack>
-                <a class="btn-blue" :href="`tel:` + removeSpaces(contact.phone)">Call Now</a>
+                <a class="btn-blue" :href="`tel:` + removeSpaces(contact.phone)">Call Us</a>
+                <p class="text-sm my-1">6:30am - 6:30pm</p>
               </div>
             </li>
             <li class="flex flex-col mb-3">

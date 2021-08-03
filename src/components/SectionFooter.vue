@@ -37,6 +37,7 @@
               <ul class="space-y-4 md:space-y-1 list-none text-sm">
                 <li v-if="contact.phone">
                    <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-2xl font-bold" :href="`tel:` + removeSpaces(contact.phone)"><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
+                   <p>call between 6:30am - 6:30pm</p>
                 </li>
              <li>
                <a class="text-gray-400 focus:outline-white hover:text-yellow-300 break-all" :href="`mailto:` + contact.email">{{contact.email}}</a>
