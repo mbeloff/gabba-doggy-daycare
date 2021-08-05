@@ -209,7 +209,7 @@
 
 <style lang="scss">
   .photo1 {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1/gddc/gddc-viv-b.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1628206813/gddc/photos/2021_August/1.jpg);
     background-position: 50% 30%
   }
 
