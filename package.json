@@ -9,6 +9,7 @@
     "production": "vue-cli-service serve --mode production"
   },
   "dependencies": {
+    "@babel/core": "^7.15.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@vue/composition-api": "^1.0.0-beta.19",
     "autoprefixer": "^9",

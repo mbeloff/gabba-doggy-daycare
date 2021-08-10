@@ -5,7 +5,6 @@
     </div>
     <div v-if="tokenFailed" class="h-full py-20 text-center grid place-items-center">
       <div class="grid place-items-center">
-        <p>Sorry, something went wrong.</p>
         <p>redirecting... </p>
         <spinner></spinner>
       </div>
