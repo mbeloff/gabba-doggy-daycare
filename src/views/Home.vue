@@ -16,8 +16,8 @@
 
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
       <title-block class="text-center">
-        <template #small>Dogs Love it Here</template>
-        <template #big>More than just Daycare</template>
+        <template #small>More than just day care</template>
+        <template #big>Dogs Love it Here</template>
       </title-block>
       <div class="container grid grid-cols-1 lg:gap-10 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10 gap-x-2">
         <div class="col order-2 md:order-1 flex flex-col justify-between">
@@ -172,7 +172,7 @@
         features: [{
             title: "Easy Online Bookings",
             icon: 'calendar-day',
-            desc: "Signup online to conveniently manage your own bookings, update your information or purchase daycare packages."
+            desc: "Signup online to conveniently manage your own bookings, update your information or purchase our daycare packages."
           },
           {
             title: "Yound, Old and In Between",
@@ -182,18 +182,18 @@
           {
             title: "Stimulating Environment",
             icon: 'star-shooting',
-            desc: "Spacious play areas with balls, toys, ramps, obstacles, grass and more."
+            desc: "Spacious indoor and outdoor play areas with balls, toys, ramps, obstacles, grass and sand pits."
           },
           {
             title: "Pet Taxi",
             icon: 'taxi',
-            desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff. Call us to check availability.",
+            desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff.",
             limit: 'brisbane'
           },
           {
             title: "Grooming",
             icon: 'shower',
-            desc: "Professional grooming services on location so you can have you pup coming home fresh and clean.",
+            desc: "Professional grooming services on location on Wednesdays, and basic washes available through the week, so you can have you pup coming home fresh and clean.",
             limit: 'brisbane'
           },
         ]

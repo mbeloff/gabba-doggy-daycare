@@ -12,7 +12,7 @@
        <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full inline-block text-center">Sign up!</router-link>
       </div>
     </div>
-    <div class="order-1 lg:order-2 col hero-pup bg-cover bg-center md:bg-top col-span-1">
+    <div class="order-1 lg:order-2 col hero-pup bg-cover bg-center col-span-1">
     </div>
   </div>
 </div>
@@ -28,16 +28,16 @@
 
 .hero-pup {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-  background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_1024/f_auto,q_auto/v1609904265/gddc/301c.jpg);
+  background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_900/q_auto,f_auto/v1629434377/gddc/photos/2021_August/6c.jpg');
   @media only screen and (max-width: 1023px) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_840/f_auto,q_auto/v1609904265/gddc/301c.jpg);
+    background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_800/q_auto,f_auto/v1629434377/gddc/photos/2021_August/6c.jpg');
     height: 350px;  
     max-height: 350px;
   }
   @media only screen and (max-width: 550px) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_640/f_auto,q_auto/v1609904265/gddc/301c.jpg);
+    background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/q_auto,f_auto/v1629434377/gddc/photos/2021_August/6c.jpg');
     height: 250px;  
     max-height: 250px;
   }
