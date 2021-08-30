@@ -21,7 +21,7 @@
           </div>
         </div>
         <p class="font-bold text-center mt-5">Automatic Weekly Payments</p>
-        <p class="text-sm pt-5">Set up recurring billing to get discounted Day Care and now earn <span class="link-pink">paw points</span> which can be redeemed for extras such as dog washes. One automatic payment each Sunday means all you have to worry about is dropping off and picking up your pup - and of course you can pause or adjust your payments if your schedule changes, just let us know before your usual billing day.</p>
+        <p class="text-sm pt-5">Set up recurring billing to get a discount on your Day Care. One automatic payment each Sunday means all you have to worry about is dropping off and picking up your pup - and of course you can pause or adjust your payments if your schedule changes, just let us know before your usual billing day.</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
