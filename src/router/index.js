@@ -10,7 +10,7 @@ const Jobs = () => import("../views/Jobs.vue")
 const Grooming = () => import("../views/Grooming.vue")
 const Training = () => import("../views/Training.vue")
 const Feedback = () => import("../views/Feedback.vue")
-const Explore = () => import("../views/Explore.vue")
+const Explore = () => import("../views/Tour.vue")
 const Overnight = () => import("../views/Overnight.vue")
 const NewOwner = () => import("../views/NewOwner.vue")
 import Home from '../views/Home.vue'

@@ -32,6 +32,9 @@
 
 <script>
 export default {
+  components: {
+    
+    },
   computed: {
     regionAreas() {
       return this.areas[this.getRegion()]
@@ -62,7 +65,7 @@ data() {
       },
       {
         heading: 'Agility course.',
-        desc: 'Build your dogs confidence with steps, ramps, obstacles and more! Everything built to run through, jump over, and play upon with new friends!',
+        desc: 'Build your dogs confidence with steps, ramps, obstacles and more! Everything built to run through, jump over, and climb with new friends!',
         img: [
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility.jpg',
            'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility2.jpg',
