@@ -7,7 +7,8 @@
         <div v-if=" getRegion() == 'adelaide'" class="border-b-2 border-blue-500 mb-3"><p class="text-center text-blue-500 text-lg font-bold">OPENING SOON</p></div>
         <div class="aspect-w-2 aspect-h-1">
           <img class="mb-2 w-64 xl:w-80 " :src="'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/q_auto,f_auto/v2/gddc/' + this.$store.state[getRegion()].trialDays + 'daytrial.png'" alt="">
-        </div>        
+        </div>   
+        <span class="font-bold text-pink-400">for a limited time also includes 1 free wash</span>     
         <span class="text-sm tracking-tighter inline-block my-2">This offer valid at GDDC <span class="capitalize">{{getRegion()}}</span> for desexed dogs over 6 months only</span>
        <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full inline-block text-center">Sign up!</router-link>
       </div>
