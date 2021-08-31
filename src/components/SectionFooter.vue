@@ -8,7 +8,7 @@
         
         
         <div class="flex-grow text-center sm:text-left">
-          <img class="nav-logo" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
+          <img class="ml-auto mr-auto md:ml-0" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
           <!-- <p class="text-lg text-gray-400 mt-5">Extra Info</p> -->
           <ul class="gap-4 md:gap-1 list-none text-sm grid grid-cols-2 text-left w-full max-w-lg mt-2">
             <li class="">
@@ -33,7 +33,6 @@
         </div>
         <div class="text-center sm:text-left">
           <div class="text-sm">
-
               <ul class="space-y-4 md:space-y-1 list-none text-sm">
                 <li v-if="contact.phone">
                    <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-2xl font-bold" :href="`tel:` + removeSpaces(contact.phone)"><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
@@ -49,8 +48,9 @@
               </ul>
           </div>
           <div class="flex flex-row space-x-3 mt-4 justify-center sm:justify-start">
-            <SocialIcon site="facebook"></SocialIcon>
-            <SocialIcon site="instagram"></SocialIcon>
+            <social-icon site="facebook"></social-icon>
+            <social-icon site="instagram"></social-icon>
+            <social-icon site="tiktok"></social-icon>
           </div>         
         </div>
       </div>

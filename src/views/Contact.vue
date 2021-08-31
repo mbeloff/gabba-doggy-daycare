@@ -41,12 +41,15 @@
                 <icon-stack :icon="'heart'"></icon-stack>
                 <p class="font-bold">Follow Us:</p>
               </div>
-              <div class="flex flex-col mx-auto md:mx-0 gap-2 md:pl-11">
+              <div class="flex flex-row mx-auto md:mx-0 gap-2 md:pl-11">
                 <div class="mt-2">
-                  <social-icon site="facebook">facebook</social-icon>
+                  <social-icon site="facebook"></social-icon>
                 </div>
                 <div class="mt-2">
-                  <social-icon site="instagram">instagram</social-icon>
+                  <social-icon site="instagram"></social-icon>
+                </div>
+                <div class="mt-2">
+                  <social-icon site="tiktok"></social-icon>
                 </div>
               </div>
               <p v-if="getRegion() == 'brisbane'" class="my-5 italic">Our preferred vet: <a class="link-pink" target="_blank" href="https://www.highgatehillvet.com.au/">Highgate Hill Vet Surgery</a></p>
