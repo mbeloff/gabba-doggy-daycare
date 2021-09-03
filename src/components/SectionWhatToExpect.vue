@@ -47,7 +47,7 @@
           <span class="font-bold">Feeding Time -</span> If you've opted to bring your dog's lunch for the day ($5 fee incurred), we will give them their own space and supervision while they eat. If they don't eat any of their food, we'll let you know at pickup (and return their food where possible), so that you can modify their feeding at home if needed.
         </li>
         <li>
-          <span class="font-bold">Photos/Videos -</span> We do our best to keep you updated through the day! Our main focus however, is on giving our pups the best possible experience. To keep updated through the day, head to our <a target="_blank" rel="noopener" href="https://www.instagram.com/gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Instagram</a>, where we post all the fun we have throughout the day.
+          <span class="font-bold">Photos/Videos -</span> We do our best to keep you updated through the day! Our main focus however, is on giving your pups the best possible experience at day care. For daily updates, head over to our <a target="_blank" rel="noopener" href="https://www.instagram.com/gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Instagram</a> or <a target="_blank" rel="noopener" href="https://www.tiktok.com/@gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Tiktok</a>.
         </li>
 
 
