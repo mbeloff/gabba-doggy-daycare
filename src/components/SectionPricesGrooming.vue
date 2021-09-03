@@ -25,10 +25,10 @@
            <p class="font-bold mt-4 mb-4">Services available Wednesday only</p>
           <div v-for="(service, i) in prices.wednesday" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
-              <!-- <div v-if="service.highlight">
+              <div v-if="service.highlight">
                 <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
                 <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
-              </div> -->
+              </div>
 
               <div class="flex-grow px-2">{{service.name}} <br> <span class="text-pink-500">{{ service.soon }}</span></div>
               <div class="px-2 relative text-gray-400"  v-for="(price, i) in service.price" :key="i">
@@ -80,34 +80,43 @@
         //   excluded: ['No clipping', 'No major matting'],
         // },
         prices: {
-          daycare: {
-            Ears: {
+          daycare: [
+            {
               name: 'Ear Clean',
               price: "$10"
             },
-            Nails: {
+            {
               name: 'Nail Clip',
               price: "$10"
             },
-            Bath: {
+            {
               name: 'Bath & Towel Dry',
               price: "$20"
             },
-            BathNailsEars: {
+            {
               name: 'Bath, Towel Dry, Nails & Ears',
-              price: "$30"
+              price: "$30",
+              highlight: true
             },
-          },
-          wednesday: {
-           1: { 
+            {
+              name: '+ Blow Dry',
+              price: "$10"
+            },
+            {
+              name: '+ Brush Through',
+              price: "$10"
+            },            
+          ],
+          wednesday: [
+           { 
               name: 'De-shed',
               price: ['$50','$60','$70'],
             },
-            2: {
+            {
               name: 'Full Groom',
               price: ['$85','$90','$95']
             }
-          }
+          ]
         },        
       }
     }
