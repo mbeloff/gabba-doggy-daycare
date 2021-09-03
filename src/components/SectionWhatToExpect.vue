@@ -47,7 +47,7 @@
           <span class="font-bold">Feeding Time -</span> If you've opted to bring your dog's lunch for the day ($5 fee incurred), we will give them their own space and supervision while they eat. If they don't eat any of their food, we'll let you know at pickup (and return their food where possible), so that you can modify their feeding at home if needed.
         </li>
         <li>
-          <span class="font-bold">Photos/Videos -</span> We do our best to keep you updated through the day! Our main focus however, is on giving your pups the best possible experience at day care. For daily updates, head over to our <a target="_blank" rel="noopener" href="https://www.instagram.com/gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Instagram</a> or <a target="_blank" rel="noopener" href="https://www.tiktok.com/@gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Tiktok</a>.
+          <span class="font-bold">Photos/Videos -</span> We do our best to post photos and videos throughout the day! Our main focus however, is on giving your pups the best possible experience at day care. For daily updates, head over to our <a target="_blank" rel="noopener" href="https://www.instagram.com/gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Instagram</a> or <a target="_blank" rel="noopener" href="https://www.tiktok.com/@gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Tiktok</a>.
         </li>
 
 
@@ -58,20 +58,19 @@
       <h2 class="font-bold text-xl mb-3">After Daycare</h2>
       <ul class="list-inside list-none">
         <li>
-          <span class="font-bold">Boo boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day however as dogs are animals, things can happen quickly. If we notice any bite, cut or scratch on your dog we will inform you at pickup or straight away if necessary, however, while we do provide the utmost care and attention to our doggy guests, accidents will sometimes happen and not everything can be identified.
-        </li>        
-        <li>
-          <span class="font-bold">Hungry or Tired -</span> As your dog is likely to be much more active at daycare than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest. You may wish to let your dog take it easy and have a big snooze after their day of fun.
+          <span class="font-bold">Boo-boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day and make sure everyone gets along, but dogs may occasionally nip, bite or scratch each other. We will treat any small injuries and inform you at pickup, or straight away if necessary. However, while we do provide the utmost care and attention to our doggy guests, sometimes small scrapes and scratches can go unnoticed.
         </li>
         <li>
-          <span class="font-bold">Illness and Injury -</span> We have extremely strict hygiene standards and do our utmost to ensure all dogs remain healthy and happy,
-          and we will isolate dogs and inform pawrents immediately if any pup shows any sign of illness. If however, your pup returns ill from
-          daycare, please let us know ASAP. If your dog has a serious injury or shows signs of illness during their time at GDDC we may, at our discretion, take them to a
-          vet, however GDDC does not accept responsibility for any vet bills and as per our daycare agreement you will be liable for any costs involved.
+          <span class="font-bold">Hungry or Tired -</span> As your dog is likely to be much more active at day care than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest. You may wish to let your dog take it easy and have a big snooze after their day of fun.
         </li>
         <li>
-          <span class="font-bold">Picking Up -</span> Please note that we close at {{ this.closeTime }}. We kindly ask that you aim to arrive a bit earlier than this if possible, to account for 
-any delays (e.g. traffic) and prevent a rush at closing time. If you are running late, please let us know straight away.
+          <span class="font-bold">Illness and Injury -</span> We have extremely strict hygiene standards and do our utmost to ensure all dogs remain healthy and happy.
+          We may isolate dogs who show any sign of illness, and we will inform parent immediately. If however, your pup returns ill from day care, please let us know ASAP. If your dog has a serious injury or shows signs of illness during their time at GDDC we may, at our discretion, take them to a
+          vet, however GDDC does not accept responsibility for any vet bills and as per our day care agreement you will be liable for any and all costs involved.
+        </li>
+        <li>
+          <span class="font-bold">Picking Up -</span> Please note that we close at {{ this.closeTime }}. We kindly ask that you aim to arrive a bit earlier than this if possible, to account for
+          any delays (e.g. traffic) and prevent a rush at closing time. If you are running late, please let us know straight away.
         </li>
       </ul>
     </div>
