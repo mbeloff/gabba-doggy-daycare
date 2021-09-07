@@ -91,13 +91,13 @@
             },
             {
               name: 'Bath & Towel Dry',
-              price: "$20"
+              price: "$10"
             },
-            {
-              name: 'Bath, Towel Dry, Nails & Ears',
-              price: "$30",
-              highlight: true
-            },
+            // {
+            //   name: 'Bath, Towel Dry, Nails & Ears',
+            //   price: "$30",
+            //   highlight: true
+            // },
             // {
             //   name: '+ Blow Dry',
             //   price: "$10"
