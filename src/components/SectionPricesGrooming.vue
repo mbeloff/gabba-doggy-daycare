@@ -98,14 +98,14 @@
               price: "$30",
               highlight: true
             },
-            {
-              name: '+ Blow Dry',
-              price: "$10"
-            },
-            {
-              name: '+ Brush Through',
-              price: "$10"
-            },            
+            // {
+            //   name: '+ Blow Dry',
+            //   price: "$10"
+            // },
+            // {
+            //   name: '+ Brush Through',
+            //   price: "$10"
+            // },            
           ],
           wednesday: [
            { 
