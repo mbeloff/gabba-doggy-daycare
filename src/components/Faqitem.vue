@@ -6,8 +6,8 @@
   >
     <dt class="accordion-item-title">
       <div role="button" @click="toggle" class="accordion-item-trigger pr-1">
-        <div class="flex align-items-center">
-          <h4 class="accordion-item-title-text">
+        <div class="flex items-center">
+          <h4 class="accordion-item-title-text font-bold py-1">
             {{ item.title }}
           </h4>
           <span class="fa-stack ml-auto">
@@ -26,7 +26,7 @@
       @before-leave="startTransition"
       @after-leave="endTransition"
     >
-      <dd v-if="item.active" class="accordion-item-details">
+      <dd v-if="item.active" class="accordion-item-details text-sm">
         <div v-html="item.details" class="accordion-item-details-inner"></div>
       </dd>
     </transition>

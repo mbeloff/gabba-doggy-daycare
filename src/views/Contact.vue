@@ -58,6 +58,9 @@
         </div>
       </div>
     </div>
+    <div class="container py-20 md:px-2 mx-auto">
+    <section-faq :faqhead="'Need Help?'"></section-faq>
+    </div>
     <div class="w-full mx-auto py-1 bg-blue-500">
       <iframe :src="contact.map" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
@@ -65,7 +68,11 @@
 </template>
 
 <script>
+import SectionFaq from '@/components/SectionFaq.vue'
   export default {
+    components: {
+      SectionFaq
+    },
     computed: {
       contact() {
         return this.$store.state[this.getRegion()].contact

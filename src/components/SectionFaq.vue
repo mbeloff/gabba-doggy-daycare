@@ -47,10 +47,10 @@ export default {
         {
           id: 1,
           active: true,
-          title: 'How do I make a booking for Daycare?',
+          title: 'How do I make a day care booking?',
           details: `
-            <p class="mb-2">First log into your PetExec account. Click 'request a daycare' and select your date and time. Keep an eye on your email as, once we have checked availability for the day, we will get back to you to confirm your booking.</p>
-            <p>Please ensure you have completely filled all required information in your PetExec account and uploaded a copy of you vaccination certificates before requested a booking.</p>
+            <p class="mb-2">Simply login to your account and click 'schedule daycare' and select your date and time. You can view 'My Calendar' from the dashboard to see all your existing bookings.</p>
+            <p>Please note that you will be unable to schedule a daycare until your dog's vaccination certificate has been uploaded and approved by GDDC. We try to do this as promptly as possible, please let us know if you've uploaded and are still unable to make a booking.</p>
            `
         },
         {
@@ -59,7 +59,7 @@ export default {
           title:
             'How do I use my free trial?',
           details: `
-            <p>As long as your dog is over 6 months, desexed and vaccinated, you will be eligible for the free trial. Just login and request a booking, we will add the trial package to your account when you arrive. After this you can use your remaining trial day any time in the next 7 days.</p>        
+            <p>As long as your dog is over 6 months, desexed and vaccinated, you will be eligible for the free trial. As soon as we've verified your account and vaccinations, a trial package will be added to your account. There's nothing more you have to do, just login and schedule day care.</p>       
           `
         },
         {
@@ -67,10 +67,10 @@ export default {
           active: false,
           title: 'How do I pay for Daycare?',
           details: `
-            <p class="mb-2">In order to make the drop-off process quick and easy in the morning, we ask that everyone pre-pay their daycare session online by logging into your account and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or buy multi-day packages.</p>
-            <p class="mb-2">If you would like to attend daycare regularly, get in touch to set up a recurring weekly payment at a discounted rate.
+            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that everyone pre-pay online by logging in and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or buy multi-day packages. If you've forgotten to pay online, we accept credit card payments in store, or you can login and click 'Make a Payment' to fix up any outstanding balances.</p>
+            <p class="mb-2">If you would like to attend daycare regularly, shoot us an email to set up easy recurring weekly payments for discounted rates on day care.
             </p>
-            <p>A list of our prices and payment option are available on <a class="link-pink" href="https://www.gabbadoggydaycare.com/daycare">our Daycare page</a></p>
+            <p>A list of our prices and payment option are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
           `
         },
         {
@@ -78,7 +78,7 @@ export default {
           active: false,
           title: 'I can\'t find my dogs\' vaccination certificate(s)',
           details: `
-            <p>Vaccination certificates can usually be obtained via email from your vet on request. Once received, upload it to your account, or forward it on to us at <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">woof@gabbadoggydaycare.com</a></p>
+            <p>Vaccination certificates can usually be obtained via email from your vet on request. Once received, upload it to your account, or forward it on to us via email.
           `
         },
         {
@@ -86,9 +86,10 @@ export default {
           active: false,
           title: 'Are there any specials or discounts?',
           details: `
-            <p class="mb-2">Discounted packages are available to be purchased online through your GDDC PetExec account. If you plan on coming every week, we also have recurring weekly payments for 1 or more days per week.</p>
-            <p>Recurring payments are flexible and can be changed, paused or cancelled at any time.</p>
-
+            <p class="mb-2">Absolutely. Apart from our 2 day free trial, we also offer others ways to save money on day care:</p>
+            <p class="mb-2">Save 20% with our 10-day packages, available to be purchased online through your GDDC account.</p>
+            <p class="mb-2">Save up to 40% by setting up a recurring weekly payment. We have billing options for 1 - 5 days per week.</p>
+            <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list and payment options.</p>
           `
         }
       ]
@@ -102,7 +103,6 @@ export default {
 
 <style lang="scss">
 $browser-context: 16;
-$red: #cc4b37;
 
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
@@ -125,20 +125,22 @@ $red: #cc4b37;
 }
 
 .accordion-item-title-text {
-  font-weight: bold;
   max-width: calc(100% - 40px);
 }
 
-.accordion-item-trigger,
-.accordion-item-details-inner {
-  padding: 0.75rem 1rem;
+.accordion-item-trigger {
+  padding: 0.75rem .5rem;
+}
+
+.accordion-item-details-inner
+{
+  padding: 2rem 1rem;
 }
 
 .accordion-item-title {
   position: relative;
 
   h4 {
-    font-size: 1.1rem;
     margin-bottom: 0;
   }
 }
