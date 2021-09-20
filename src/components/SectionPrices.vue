@@ -26,8 +26,8 @@
           <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
               <div v-if="service.highlight">
-                <div class="absolute -left-1.5 top-4 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
-                <div class="absolute -left-1.5 top-4 w-2 h-2 bg-pink-500 rounded-full"></div>
+                <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
+                <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
               </div>
               <div class="flex-grow px-2 items-center flex"><span>{{service.name}}</span><span class="text-pink-500">{{ service.soon }}</span></div>
               <div class="px-2 relative flex flex-col"><span class="line-through font-normal">{{service.original}}</span><span class="text-pink-500">{{service.price}}</span>
@@ -135,8 +135,8 @@
               },
               FullDayWeek: {
                 name: "Unlimited Weekly",
-                original: "$175 ($35/day)",
-                price: "$150 ($30/day)",
+                // original: "$175 ($35/day)",
+                price: "$175 ($35/day)",
                 highlight: true,
               },
             },
