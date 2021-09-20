@@ -6,7 +6,7 @@
       <template #small>welcome</template>
       <template #big>Check out our place</template>
     </title-block>
-    <img class="mb-10 mx-auto explore-map" src="https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_600/v1616118682/gddc/areas/map.jpg" alt="">
+    <!-- <img class="mb-10 mx-auto explore-map" src="https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_600/v1616118682/gddc/areas/map.jpg" alt=""> -->
     </div>    
     <div :class="{'bg-gradient-to-tr from-gray-100 to-gray-200': (i+1) % 2 }" class="py-5 border-b" v-for="(area, i) in regionAreas" :key="i">
       <div  class="grid grid-cols-1 md:grid-cols-2 px-2 max-w-screen-lg gap-x-10 gap-y-5 mx-auto">
@@ -69,7 +69,7 @@ data() {
         img: [
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility.jpg',
            'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility2.jpg',
-          'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility3.jpg',
+          'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,h_300/c_crop,h_300,w_300,x_129/v1632110873/gddc/photos/September_21/18.jpg',
            'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility4.jpg'
         ],
         icon: 'stopwatch'
@@ -91,7 +91,7 @@ data() {
         img: [
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616128729/gddc/areas/grass5.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1628571981/gddc/photos/2021_August/7.jpg',    
-          'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118681/gddc/areas/sand2.jpg', 
+          'https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/c_scale,w_300/c_crop,h_300,w_300/v1629691536/gddc/photos/2021_August_part2/14.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/sand.jpg'
         ],
         icon: 'sunglasses'

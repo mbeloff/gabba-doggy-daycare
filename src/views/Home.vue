@@ -37,7 +37,7 @@
           </ul>
 
         </div>
-        <div class="order-1 md:order-2 rounded-sm photo1 bg-cover shadow-xl rounded-lg aspect-w-6 aspect-h-7"></div>
+        <div class="order-1 md:order-2 rounded-sm photo1 bg-cover shadow-xl rounded-lg aspect-w-6 aspect-h-6"></div>
       </div>
       <div class="mt-10 max-w-screen-lg mx-auto px-2 text-center flex flex-col sm:flex-row sm:flex-wrap  gap-x-2 gap-y-5">
         <router-link :to="{ name: 'Daycare', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">More about Daycare</router-link>
@@ -180,9 +180,9 @@
             desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable, relaxed and safe."
           },
           {
-            title: "Stimulating Environment",
-            icon: 'star-shooting',
-            desc: "Spacious indoor and outdoor play areas with balls, toys, ramps, obstacles, grass and sand pits."
+            title: "Sunshine and Grass",
+            icon: 'sunglasses',
+            desc: "Stimulating environment with spacious indoor areas including ramps, obstacles and ball pits, and daily outdoor playtime on a grassy field."
           },
           {
             title: "Pet Taxi",
@@ -192,8 +192,8 @@
           },
           {
             title: "Grooming",
-            icon: 'shower',
-            desc: "Professional grooming services on location on Wednesdays, and basic washes available through the week, so you can have you pup coming home fresh and clean.",
+            icon: 'bath',
+            desc: "Professional grooming services on location on Wednesdays, and basic washes, nail clips and ear cleans available through the week, so you can have you pup coming home fresh and clean.",
             limit: 'brisbane'
           },
         ]
@@ -209,8 +209,8 @@
 
 <style lang="scss">
   .photo1 {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_600,h_700/q_auto,f_auto/v1628206813/gddc/photos/2021_August/1.jpg);
-    background-position: 50% 30%
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,w_750/v1631854042/gddc/promo/gddc_4_e.jpg);
+    background-position: bottom
   }
 
   @media (min-width: 640px) {
