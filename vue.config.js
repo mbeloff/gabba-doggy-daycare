@@ -44,10 +44,6 @@ const paths = [
     priority: 0.7
   },
   {
-    path: "/training/brisbane",
-    priority: 0.6
-  },
-  {
     path: "/explore/brisbane",
     priority: 0.6
   },

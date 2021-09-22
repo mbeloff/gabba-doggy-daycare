@@ -20,8 +20,8 @@
             </div>
           </div>
         </div>
-        <p class="font-bold text-center mt-5">Automatic Weekly Payments</p>
-        <p class="text-sm pt-5">Ask us about recurring billing to get a discount on your Day Care. One automatic payment each Sunday means all you have to worry about is dropping off and picking up your pup - and of course you can pause or adjust your payments if your schedule changes.</p>
+        <p class="font-bold text-center mt-5">Weekly Packages</p>
+        <p class="text-sm pt-5">Weekly packs are now available via your petexec account. Coming to day care every week? Ask us about setting up automatic payments, so all you have to worry about is dropping off and picking up your pup - and of course you can pause or adjust your payments if your schedule changes.</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
@@ -134,8 +134,8 @@
                 price: "$168 ($42/day)",
               },
               FullDayWeek: {
-                name: "Unlimited Weekly",
-                // original: "$175 ($35/day)",
+                name: "Five Days a Week",
+                // original: "$200 ($40/day)",
                 price: "$175 ($35/day)",
                 highlight: true,
               },
