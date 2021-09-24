@@ -49,8 +49,8 @@ export default {
           active: true,
           title: 'How do I make a day care booking?',
           details: `
-            <p class="mb-2">Simply login to your account and click 'schedule daycare' and select your date and time. You can view 'My Calendar' from the dashboard to see all your existing bookings.</p>
-            <p>Please note that you will be unable to schedule a daycare until your dog's vaccination certificate has been uploaded and approved by GDDC. We try to do this as promptly as possible, please let us know if you've uploaded and are still unable to make a booking.</p>
+            <p class="mb-2">Simply login to your account and click 'schedule daycare' and select your date and time. You can view 'My Calendar' from your account dashboard to see all your existing bookings.</p>
+            <p>Please note that you will be unable to schedule your first day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. We try to do this as promptly as possible, please let us know if you've uploaded and are still unable to make a booking.</p>
            `
         },
         {
@@ -67,7 +67,7 @@ export default {
           active: false,
           title: 'How do I pay for Daycare?',
           details: `
-            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that everyone pre-pay online by logging in and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or buy multi-day packages. If you've forgotten to pay online, we accept credit card payments in store, or you can login and click 'Make a Payment' to fix up any outstanding balances.</p>
+            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that everyone pre-pay online by logging in and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or discounted multi-day packages. If you've forgotten to pay online, we accept credit card payments in-store, or you can login and click 'Make a Payment' to fix up any outstanding balances online.</p>
             <p class="mb-2">If you would like to attend daycare regularly, shoot us an email to set up easy recurring weekly payments for discounted rates on day care.
             </p>
             <p>A list of our prices and payment option are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
@@ -76,19 +76,27 @@ export default {
         {
           id: 4,
           active: false,
-          title: 'I can\'t find my dogs\' vaccination certificate(s)',
+          title: 'I have a new puppy, when can I bring them to day care?',
           details: `
-            <p>Vaccination certificates can usually be obtained via email from your vet on request. Once received, upload it to your account, or forward it on to us via email.
+            <p>We can only accept puppies that are fully vaccinated. Final vaccination typically occurs at 14-16 weeks, but please keep in mind that vaccinations may take 1-2 weeks before becoming fully effective. If in doubt, we recommend speaking to your vet.</p>
           `
         },
         {
           id: 5,
           active: false,
+          title: 'I can\'t find my dogs\' vaccination certificate(s)',
+          details: `
+            <p>Vaccination certificates can usually be obtained via email from your vet on request. Once received, you can upload it to your account, or forward it on to us via <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email.</a></p>
+          `
+        },
+        {
+          id: 6,
+          active: false,
           title: 'Are there any specials or discounts?',
           details: `
-            <p class="mb-2">Absolutely. Apart from our 2 day free trial, we also offer others ways to save money on day care:</p>
+            <p class="mb-2">Absolutely. Apart from our 2 day free trial, we also offer discounted packages to save on day care:</p>
             <p class="mb-2">Save 20% with our 10-day packages, available to be purchased online through your GDDC account.</p>
-            <p class="mb-2">Save up to 40% by setting up a recurring weekly payment. We have billing options for 1 - 5 days per week.</p>
+            <p class="mb-2">Save up to 40% by purchasing a weekly pack. We have options for 1 - 5 days per week. These can be purchase via your account, or as an automatic weekly payment.</p>
             <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list and payment options.</p>
           `
         }
