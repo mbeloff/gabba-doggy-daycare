@@ -104,9 +104,10 @@ export default {
       });
     },
     getPlace() {
+      var id = this.$store.state[this.region].contact.placeId
       var host = process.env.VUE_APP_FN_HOST
       var body = JSON.stringify({
-        placeId: this.$store.state[this.region].contact.placeId
+        placeId: id
       });
       var requestOptions = {
         method: 'POST',
