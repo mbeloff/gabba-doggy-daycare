@@ -76,7 +76,6 @@ export default {
     }
   },
   mounted() {
-    this.locateGeoLocation();
     this.getPlace();
   }, 
   methods: {
@@ -94,14 +93,6 @@ export default {
         this.center = marker;
         this.existingPlace = null;
       }
-    },
-    locateGeoLocation: function() {
-      navigator.geolocation.getCurrentPosition(res => {
-        this.center = {
-          lat: res.coords.latitude,
-          lng: res.coords.longitude
-        };
-      });
     },
     getPlace() {
       var id = this.$store.state[this.region].contact.placeId
@@ -122,7 +113,7 @@ export default {
           this.count++
         })
         .catch(error => {
-          console.log('get place failed ', error)
+          console.log("Couldn't get place", error)
       });
     }
   }
