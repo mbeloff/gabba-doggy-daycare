@@ -9,11 +9,20 @@ import vueGtm from 'vue-gtm'
 import vueMeta from 'vue-meta'
 import './assets/styles/index.css';
 import VueJsonLD from "vue-jsonld";
+import * as VueGoogleMaps from "vue2-google-maps"
 
 Vue.use(VueJsonLD);
 Vue.use(vueMeta)
 Vue.use(VModal)
 
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyAWGpdPULsynWTzpmvIX3DihFRw6l0nstE",
+    libraries: "places",
+    map_ids: "889dff40544104c5",
+    myLocation: false
+  }
+});
 
 Vue.config.productionTip = false
 const requireComponent = require.context(
