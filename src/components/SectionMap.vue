@@ -79,21 +79,6 @@ export default {
     this.getPlace();
   }, 
   methods: {
-    initMarker(loc) {
-      this.existingPlace = loc;
-    },
-    addLocationMarker() {
-      if (this.existingPlace) {
-        const marker = {
-          lat: this.existingPlace.geometry.location.lat(),
-          lng: this.existingPlace.geometry.location.lng()
-        };
-        this.locationMarkers.push({ position: marker });
-        this.locPlaces.push(this.existingPlace);
-        this.center = marker;
-        this.existingPlace = null;
-      }
-    },
     getPlace() {
       var id = this.$store.state[this.region].contact.placeId
       var host = process.env.VUE_APP_FN_HOST
