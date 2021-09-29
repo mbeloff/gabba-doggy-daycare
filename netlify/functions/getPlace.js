@@ -18,7 +18,7 @@ exports.handler = async function (event) {
     redirect: 'follow'
   };
 
-  const res = await fetch("https://maps.googleapis.com/maps/api/place/details/json?place_id=" + placeId + "&key=" + key, requestOptions)
+  const res = await fetch("https://maps.googleapis.com/maps/api/place/details/json?place_id=" + placeId + "&key=" + key +"&fields=adr_address,geometry,rating,opening_hours,name,user_ratings_total,url", requestOptions)
   .then(response => response.text())
   .catch(error => console.log('error', error));
 
