@@ -1,5 +1,6 @@
 <template>
   <div>
+    <section-map></section-map>
     <div class="container py-20 px-2 mx-auto">
       <title-block class="text-center">
         <template #small>Get in Touch</template>
@@ -61,7 +62,7 @@
     <div class="container py-20 md:px-2 mx-auto">
     <section-faq :faqhead="'Need Help?'"></section-faq>
     </div>
-    <section-map></section-map>
+    
   </div>
 </template>
 

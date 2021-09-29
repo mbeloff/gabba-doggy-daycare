@@ -23,7 +23,7 @@
         :key="index"
         v-for="(m, index) in locationMarkers"
         :position="m.position"
-        :icon="{ url: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_75/v2/gddc/icons/gddc_marker.png'}"
+        :icon="{ url: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/v2/gddc/icons/GDDC_map_marker.svg'}"
         @click="center=m.position"
       ></gmap-marker>
     </gmap-map>
