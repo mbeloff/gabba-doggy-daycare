@@ -30,7 +30,7 @@
                 <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
               </div>
               <div class="flex-grow px-2 items-center flex"><span>{{service.name}}</span><span class="text-pink-500">{{ service.soon }}</span></div>
-              <div class="px-2 relative flex flex-col"><span class="line-through font-normal">{{service.original}}</span><span class="text-pink-500">{{service.price}}</span>
+              <div class="px-2 relative flex flex-col"><span class="line-through font-normal text-gray-400">{{service.original}}</span><span class="text-pink-500">{{service.price}}</span>
               </div>
             </div>
           </div>
