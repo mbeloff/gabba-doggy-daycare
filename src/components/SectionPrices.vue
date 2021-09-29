@@ -131,12 +131,11 @@
               },
               FourDays: {
                 name: "Four Days a Week",
-                price: "$168 ($42/day)",
+                price: "$140 ($35/day)",
               },
               FullDayWeek: {
                 name: "Five Days a Week",
-                // original: "$200 ($40/day)",
-                price: "$175 ($35/day)",
+                price: "$150 ($30/day)",
                 highlight: true,
               },
             },
