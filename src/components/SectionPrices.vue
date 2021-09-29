@@ -110,11 +110,6 @@
                 soon: " - valid for 3 months",
                 price: "$400",
               },
-              YearlyPack: {
-                name: "Unlimited Daycare",
-                soon: " - valid for 12 months",
-                price: "$5000",
-              },
             },
             directdebit: {
               OneDay: {
@@ -131,10 +126,12 @@
               },
               FourDays: {
                 name: "Four Days a Week",
+                original: "$168 ($42/day)",
                 price: "$140 ($35/day)",
               },
               FullDayWeek: {
                 name: "Five Days a Week",
+                original: "$200 ($40/day)",
                 price: "$150 ($30/day)",
                 highlight: true,
               },
