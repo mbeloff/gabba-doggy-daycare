@@ -21,13 +21,13 @@
           </div>
         </div>
         <p class="font-bold text-center mt-5">Weekly Packages</p>
-        <p class="text-sm pt-5">Weekly packs are now available via your petexec account. Coming to day care every week? Ask us about setting up automatic payments, so all you have to worry about is dropping off and picking up your pup - and of course you can pause or adjust your payments if your schedule changes.</p>
+        <p class="text-sm pt-5">We've made it more afforadable to come to day care more often. Weekly packs are now available via your petexec account. <br>Coming to day care every week? Ask us about setting up automatic payments, so all you have to worry about is dropping off and picking up your pup - and of course you can pause or adjust your payments if your schedule changes.</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
               <div v-if="service.highlight">
-                <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
-                <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
+                <div class="absolute -left-1.5 top-4 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
+                <div class="absolute -left-1.5 top-4 w-2 h-2 bg-pink-500 rounded-full"></div>
               </div>
               <div class="flex-grow px-2 items-center flex"><span>{{service.name}}</span><span class="text-pink-500">{{ service.soon }}</span></div>
               <div class="px-2 relative flex flex-col"><span class="line-through font-normal text-gray-400">{{service.original}}</span><span class="text-pink-500">{{service.price}}</span>
@@ -53,12 +53,10 @@
     <div class="mt-10 px-5 text-sm gap-2 flex flex-col">
       <p class="font-bold">Package Terms and Conditions: </p>
       <p>
-        12-month unlimited package is only available to desexed dogs over 6 months, and may be subject to approval.</p> 
-      <p>
-        Unlimited daycare packages are valid for all days that we are open, which may not always be 5 days each week. Any days you opt not to use, or days we may be closed, including public holidays, may not be refunded or carried over to following weeks.
+        Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. You may request for your package to be extended via <email-link class="link-pink">email</email-link>. Any days you opt not to use before the package expires may not be refunded or carried over to following weeks.
       </p>
       <p>
-        If you would like to cancel, pause, or adjust your weekly payment to a different package, just let us know before your usual billing day and we'll be happy to accommodate <i class="fal fa-smile"></i> 
+        If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accomodate. Just let us know by the end of the preceding Friday so we can adjust this before your next billing day <i class="fal fa-smile"></i> 
       </p>
       <p>
         If we are fully booked, customers on recurring billing will be given priority placement. 
@@ -167,7 +165,6 @@
                 name: "Half Day 10-pack",
                 soon: " - valid for 3 months",
                 price: "$300",
-
               },
               FullDayPack: {
                 name: "Full Day 10-pack",
