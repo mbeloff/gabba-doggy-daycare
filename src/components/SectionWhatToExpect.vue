@@ -8,7 +8,7 @@
       <h2 class="font-bold text-xl mb-3 text-purple-600">Before Daycare</h2>
       <ul class="list-outside ml-4 list-disc">
         <li>
-          All pawrents are required to create a GDDC PetExec account. This will allow you to make bookings and more online. <router-link class="link-pink" :to="{name: 'Sign-up', params: {region: getRegion()}}">Click here to make an account.</router-link>
+          All parents are required to create a GDDC PetExec account. This will allow you to make bookings and more online. <router-link class="link-pink" :to="{name: 'Sign-up', params: {region: getRegion()}}">Click here to make an account.</router-link>
         </li>
         <li>
           Before you're able to book your first day care date, we require an up-to-date vaccination certificate, we must be able to see the date that your dog is NEXT DUE for their vaccinations. Please upload this to your PetExec account or via <link-email class="link-pink">email</link-email>.
