@@ -294,17 +294,17 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         formdata.append("email", this.form.email);
         formdata.append("howFoundId", this.form.howfound);
         formdata.append("cellPhone", this.form.phone);
-        formdata.append("birthdayEmailoptional", 1);
-        formdata.append("boardingEmailoptional", 1);
-        formdata.append("boardingReminderEmailoptional", 1);
-        formdata.append("daycarePackageEmailoptional", 1);
-        formdata.append("enableEmailoptional", 1);
-        formdata.append("groomingEmailoptional", 1);
-        formdata.append("newOwnerEmailoptional", 1);
-        formdata.append("orderReceiptEmailoptional", 1);
-        formdata.append("scheduledServiceEmailoptional", 1);
-        formdata.append("trainingClassEmailoptional", 1);
-        formdata.append("temptestEmailoptional", 1);
+        formdata.append("birthdayEmail", 1);
+        formdata.append("boardingEmail", 1);
+        formdata.append("boardingReminderEmail", 1);
+        formdata.append("daycarePackageEmail", 1);
+        formdata.append("enableEmail", 1);
+        formdata.append("groomingEmail", 1);
+        formdata.append("newOwnerEmail", 1);
+        formdata.append("orderReceiptEmail", 1);
+        formdata.append("scheduledServiceEmail", 1);
+        formdata.append("trainingClassEmail", 1);
+        formdata.append("temptestEmail", 1);
         formdata.append("vaccinationEmail", 1);
 
         var requestOptions = {
