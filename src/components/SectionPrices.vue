@@ -53,10 +53,10 @@
     <div class="mt-10 px-5 text-sm gap-2 flex flex-col">
       <p class="font-bold">Package Terms and Conditions: </p>
       <p>
-        Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. You may request for your package to be extended via <email-link class="link-pink">email</email-link>. Any days you opt not to use before the package expires may not be refunded or carried over to following weeks.
+        Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. Any days you do not use before the package expires may not be refunded or carried over to following weeks.
       </p>
       <p>
-        If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accomodate. Just let us know by the end of the preceding Friday so we can adjust this before your next billing day <i class="fal fa-smile"></i> 
+        If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accomodate. Just let us know by Friday so we can adjust this before your next billing day <i class="fal fa-smile"></i> 
       </p>
       <p>
         If we are fully booked, customers on recurring billing will be given priority placement. 
@@ -108,6 +108,11 @@
                 soon: " - valid for 3 months",
                 price: "$400",
               },
+              // YearlyPack: {
+              //   name: "Unlimited Daycare",
+              //   soon: " - valid for 12 months",
+              //   price: "$5000",
+              // },
             },
             directdebit: {
               OneDay: {
@@ -155,10 +160,12 @@
             daycare: {
               HalfDay: {
                 name: 'Half Day',
+                soon: " - up to 5 hours",
                 price: "$40",
               },
               FullDay: {
                 name: 'Full Day',
+                soon: " - over 5 hours",
                 price: "$50",
               },
               HalfDayPack: {
@@ -171,28 +178,34 @@
                 soon: " - valid for 3 months",
                 price: "$400",
               },
-              YearlyPack: {
-                name: "Unlimited Daycare",
-                soon: " - valid for 12 months",
-                price: "$5000",
-              },
+              // YearlyPack: {
+              //   name: "Unlimited Daycare",
+              //   soon: " - valid for 12 months",
+              //   price: "$5000",
+              // },
             },
             directdebit: {
-              OneDay: {
+               OneDay: {
                 name: "One Day a Week",
-                price: "$50",
+                price: "$48",
               },
               TwoDays: {
                 name: "Two Days a Week",
-                price: "$96 ($48/day)",
+                price: "$92 ($46/day)",
               },
               ThreeDays: {
                 name: "Three Days a Week",
-                price: "$138 ($46/day)",
+                price: "$132 ($44/day)",
+              },
+              FourDays: {
+                name: "Four Days a Week",
+                original: "$168 ($42/day)",
+                price: "$140 ($35/day)",
               },
               FullDayWeek: {
-                name: "Unlimited Daycare",
-                price: "$150 (~$30/day)",
+                name: "Five Days a Week",
+                original: "$200 ($40/day)",
+                price: "$150 ($30/day)",
                 highlight: true,
               },
             },
