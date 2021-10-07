@@ -1,8 +1,8 @@
 <template>
   <div class="relative">
     <div class="absolute w-52 bg-white z-10 ml-2 mt-2 shadow-xl p-1">
-      <p class="mb-1">{{place.name}}</p>
-      <p v-html="adress" class="text-sm"></p>
+      <p class="mb-1 text-sm">{{place.name}}</p>
+      <p v-html="adress" class="text-xs"></p>
       <p class="text-yellow-500 mt-2 font-bold text-xs flex items-center" v-if="rating">
         <span class="text-sm mr-1">{{rating}}</span> 
         <i class="fas fa-star -mt-px"
@@ -10,7 +10,9 @@
           :key="star"></i>
         <i class="fas fa-star-half -mt-px" v-if="rating % 1"></i>
         <a class="text-blue-500 font-normal" :href="place.url" target="_blank">{{ place.user_ratings_total }} reviews</a>
+        
       </p>
+      <p v-if="place.opening_hours" class="text-xs mt-2">We are: <span class="font-bold text-blue-500">{{ place.opening_hours.open_now ? 'Now Open' : 'Close at the moment' }}</span></p>
     </div>
     <gmap-map
         :zoom="14"    
