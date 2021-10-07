@@ -11,7 +11,6 @@
         <i class="fas fa-star-half -mt-px" v-if="rating % 1"></i>
         <a class="text-blue-500 font-normal" :href="place.url" target="_blank">{{ place.user_ratings_total }} reviews</a>
       </p>
-      <p class="mt-2" v-if="place.opening_hours">we are: <span class="font-bold text-blue-500">{{ place.open_now == true ? 'closed at the moment' : 'open now'}}</span></p>
     </div>
     <gmap-map
         :zoom="14"    
