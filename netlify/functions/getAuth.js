@@ -33,7 +33,7 @@ exports.handler = async function (event) {
           method: 'POST',
           headers: {
             "Authorization":Base64,
-              "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/x-www-form-urlencoded"
           },
           body: urlencoded,
           redirect: 'follow'
@@ -46,7 +46,8 @@ exports.handler = async function (event) {
         return {
           statusCode: 200,
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': process.env.VUE_APP_HOST
           },
           body: JSON.stringify(response)
         }

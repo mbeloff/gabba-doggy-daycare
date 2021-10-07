@@ -116,12 +116,13 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           </div>
         </div>
         <div class="grid grid-cols-1 px-2" v-if="formMissing.length > 0">
-          <p class="text-blue-700 text-sm">All fields are required*</p>       
+          <p class="text-blue-700 text-sm">All fields are required*</p>
         </div>
         <div class="grid grid-cols-1 p-2 pl-6" v-if="petexecErrors.length > 0">
           <ul class="list-disc list-outside">
             <li class="text-blue-900 text-sm" v-for="error in petexecErrors" :key="error">{{error}}</li>
           </ul>
+          
         </div>
         <div class="col-span-full grid grid-cols-2 gap-2 p-2">
           <button class="btn-blue col-start-2" @click.prevent="validateForm">Submit and Login</button>
@@ -192,6 +193,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         this.gettingToken = false
         await this.howfound()
       },
+      // send to default petexec account page if token fetch fails
       'tokenFailed': function() {
         if (this.tokenFailed == true) {
           window.location.href=this.link 
@@ -209,16 +211,14 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
     },
     methods: {
       getToken() {
+        let base = process.env.VUE_APP_FN_HOST
         var requestOptions = {
           method: 'GET',
-          redirect: 'follow'
+          // redirect: 'follow'
         };
-        fetch("https://www.gabbadoggydaycare.com/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
-        // !set netlify dev port when testing locally as necessary
-        // fetch("http://localhost:8888/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
+        fetch( base + "/.netlify/functions/getAuth?r=" + this.getRegion(), requestOptions)
           .then(response => response.text())
           .then(result => {
-            // console.log(result)
             this.response = JSON.parse(result)
             this.$forceUpdate()
           })
