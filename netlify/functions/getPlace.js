@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 const headers = {
-  'Access-Control-Allow-Origin': process.env.VUE_APP_FN_HOST,
+  'Access-Control-Allow-Origin': process.env.VUE_APP_HOST,
 };
 
 exports.handler = async function (event) {
