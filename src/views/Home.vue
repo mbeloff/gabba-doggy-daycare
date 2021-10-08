@@ -40,7 +40,7 @@
         <div class="order-1 md:order-2 rounded-sm photo1 bg-cover shadow-xl rounded-lg aspect-w-6 aspect-h-6"></div>
       </div>
       <div class="mt-10 max-w-screen-lg mx-auto px-2 text-center flex flex-col sm:flex-row sm:flex-wrap  gap-x-2 gap-y-5">
-        <router-link :to="{ name: 'Daycare', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">More about Daycare</router-link>
+        <router-link :to="{ name: 'Daycare', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Daycare Prices</router-link>
         <router-link v-show="getRegion() == 'brisbane'" :to="{ name: 'Explore', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Take a Tour</router-link>
         <router-link :to="{ name: 'Sign-up', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Create Account</router-link>
       </div>
@@ -188,13 +188,11 @@
             title: "Pet Taxi",
             icon: 'taxi',
             desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff.",
-            limit: 'brisbane'
           },
           {
             title: "Grooming",
             icon: 'bath',
             desc: "Professional grooming services on location on Wednesdays, and basic washes, nail clips and ear cleans available through the week, so you can have you pup coming home fresh and clean.",
-            limit: 'brisbane'
           },
         ]
       }

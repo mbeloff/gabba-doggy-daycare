@@ -7,7 +7,7 @@
             <template #small>Daycare</template>
             <template #big>Play, Relax, Socialise</template>
           </title-block>
-          <p class="mb-4">Gabba Doggy Daycare offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day - not to mention heaps of room to run around and play, with access to ball pits, toys, ramps and obstacles.
+          <p class="mb-4">Gabba Doggy Daycare offers special care for your dog while you're not able to - while at daycare, they get all the love, care and socialisation they require throughout the day - not to mention heaps of room to run around and play, with access to sunshine, grass, ball pits, toys, ramps and obstacles.
           </p>
           <p class="mb-4"> We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Gabba Doggy Daycare is your pup's home away from home.</p>
           <p>We have flexible payment options and discounted packages, check out our price list, and make an account for easy online bookings.</p>

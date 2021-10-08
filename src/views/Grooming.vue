@@ -9,7 +9,7 @@
               <template #small>Hydrobath & Grooming Services</template>
             </title-block> 
             <alert-block>
-              <template #left>update</template>
+              <template #left>note</template>
               <template #right>Due to increasing number of grooming requests, grooming will now only be available to dogs already booked into daycare for the day</template>
               </alert-block>           
             <p class="mb-3">Get a hydrobath or groom with your daycare booking. We have basic services like washing and nail clipping available any day of the week and full grooms available on location every Wednesday. Bookings may be limited so get in ahead of time to secure your spot.</p>

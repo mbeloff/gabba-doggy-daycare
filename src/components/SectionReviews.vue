@@ -41,7 +41,6 @@
           },
           {
             name: 'Kaitlyn F',
-            review: '',
             stars: 5,
             icon: 'fa-google'
           },
@@ -58,19 +57,22 @@
           },
           {
             name: 'Josephine P',
-            review: 'My Pippa had her first and great day at Gabba Doggy Daycare on Friday 26 February 2021. The girls looked after her and being PIPPA’s first day, they kept me up to date with how she was enjoying herself. Pippa came home exhausted and will be ready to enjoy her next visit. Thank you to everyone and the Pet Taxi was so helpful in carrying Pippa to and from. 💜🐶💜',
-            icon: 'fa-facebook-f'
+            review: 'Love, love, love!! I am over the moon with the love and play our beautiful fur babies receive from the GDDC Owner, the Manager and the beautiful girls who take such great care with our precious cargo. I still can’t believe I found wonderful GDDC, a great day’s play with always something new to see here at 46 Deshon Street Woolloongabba. 💓💓 When my Pippa joined GDDC, I took advantage of an offer of a free trial and we haven’t looked back since. If you would like to make sure your fur baby is in capable and kind hands, take advantage of the current free trial offer. GDDC also have a Pet Taxi Service, one could not ask for anything more. 🌹🐶',
+            stars: 5,
+            icon: 'fa-google'
+          },
+          {
+            name: 'Keith P',
+            review: 'The team here are lovely and our dog enjoys the visits',
+            stars: 4,
+            icon: 'fa-google'
           },
           {
             name: 'Meika R',
             review: 'My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙',
             icon: 'fa-facebook-f'
           },
-          {
-            name: 'Laura W',
-            review: 'Big shout out to Vivienne and her amazing team at Gabba Doggy Daycare! Miss Dolly has recently joined the crew there and loves it!! The regular instagram stories throughout the day let me see how much fun she is having with her new besties! it is such an amazing sevice to have close by and gives us peave of mind that our princess is being looked after and having fun when we are at work, she always comes home a very happy and very tired pup which we love! Thoroughly recommend giving it a try with your fur babies!',
-            icon: 'fa-facebook-f'
-          },
+          
           {
             name: 'Leezett W',
             review: 'Reynold started 2 weeks ago. I love the pictures we get. Great value for money!! The staff are so lovely and caring to Reynold. He has such fun and we know he is well looked after and love with cuddles.',

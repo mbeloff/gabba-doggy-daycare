@@ -47,16 +47,16 @@
           </div>
         </div>
       </div>
-      <div class="rounded-lg shadow-xl md:order-1 bg-cover bg-center aspect-w-3 aspect-h-4 my-20" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_656/f_auto,q_auto/v1/gddc/photos/810.jpg)">
+      <div class="rounded-lg shadow-xl md:order-1 bg-cover bg-center aspect-w-3 aspect-h-4 my-20" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_crop,w_600,h_800/f_auto,q_auto/v1631854044/gddc/promo/gddc_16.jpg)">
       </div>
     </div>
     <div class="mt-10 px-5 text-sm gap-2 flex flex-col">
       <p class="font-bold">Package Terms and Conditions: </p>
       <p>
-        Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. Any days you do not use before the package expires may not be refunded or carried over to following weeks.
+        Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. Unused days may not be refunded or carried over to following weeks - please contact us as early as possible if you're unable to come to daycare and we may be able to extend your package.
       </p>
       <p>
-        If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accomodate. Just let us know by Friday so we can adjust this before your next billing day <i class="fal fa-smile"></i> 
+        If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accomodate. Just let us know by Friday so we can adjust this before your next billing day (usually Sunday) <i class="fal fa-smile"></i> 
       </p>
       <p>
         If we are fully booked, customers on recurring billing will be given priority placement. 

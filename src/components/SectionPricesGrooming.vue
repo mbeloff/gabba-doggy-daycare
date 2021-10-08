@@ -6,23 +6,20 @@
         </title-block>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-20">
       <div class="">
-       
-
         <div class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm">
-          <p class="font-bold mb-4">Services available throughout the week</p>
+          <p class="font-bold mb-4">All week</p>
           <div v-for="(service, i) in prices.daycare" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
               <!-- <div v-if="service.highlight">
                 <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
                 <div class="absolute -left- 1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"></div>
               </div> -->
-
               <div class="flex-grow px-2">{{service.name}} <br> <span class="text-pink-500">{{ service.soon }}</span></div>
               <div class="px-2 relative"><span class="text-pink-500">{{service.price}}</span>
               </div>
             </div>
           </div>
-           <p class="font-bold mt-4 mb-4">Services available Wednesday only</p>
+           <p class="font-bold mt-4 mb-4">Wednesdays only</p>
           <div v-for="(service, i) in prices.wednesday" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
               <div v-if="service.highlight">
