@@ -18,12 +18,15 @@
             </div>            
               <choose-location class="mt-10"></choose-location>
               <transition name="grow">
-                 <p class="text-pink-500 pt-5" v-if="getRegion() == 'adelaide'"><span class="font-bold">Please note:</span> our Adelaide facility is not yet in operation. However, you're very welcome to create an account, and we will send out a notification when we open. <span class="italic">We thank you for your patience.</span></p>
+                 <p class="text-pink-500 pt-5" v-if="getRegion() == 'adelaide'"><span class="font-bold">Please note:</span> 
+                 <!-- our Adelaide facility is not yet in operation. New account sign-ups are temporarily disabled. <span class="italic">We thank you for your patience.</span></p> -->
+                 our Adelaide facility is not yet in operation. You're welcome to create an account and we'll inform you when we have an opening date. <span class="italic">We thank you for your patience.</span></p>
               </transition>
              
+                <!-- <div v-if="getRegion() == 'brisbane'" class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</router-link></div> -->
                 <div class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</router-link></div>
           </div>
-          <div class="bg-cover md:col-span-1  rounded-xl shadow-xl h-96 min-h-full bg-center" style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_600/f_auto,q_auto/v1/gddc/photos/716.jpg)">
+          <div class="bg-cover md:col-span-1  rounded-xl shadow-xl h-96 min-h-full bg-center register-img">
           </div>
         </div>
       </div>
@@ -56,14 +59,15 @@ import SectionSignup from '@/components/SectionSignup.vue'
     computed: {
       link() {
         return this.$store.state[this.getRegion()].newAccountLink
-      }
+      },      
     },
     methods: {
       checkAgree() {
-        if (!this.agree) {
+          if (!this.agree) {
           this.alert = true
           this.$refs.agree.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
-        }
+          }
+        
       }
     },
     watch: {
@@ -89,6 +93,14 @@ import SectionSignup from '@/components/SectionSignup.vue'
   }
 </script>
 
-<style>
+<style lang="scss">
+.register-img {
+  background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_crop,h_614,w_656/c_scale,w_450/q_auto,f_auto/v1631854044/gddc/promo/gddc_14.jpg);
+}
 
+@media only screen and (min-width: 768px) {
+  .register-img { 
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_crop,h_614,w_656/c_scale,h_750/q_auto,f_auto/v1631854044/gddc/promo/gddc_14.jpg);
+  }
+}
 </style>
