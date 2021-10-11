@@ -4,8 +4,8 @@
       <!--// CITY SELECT // -->
 
       <div class="bg-blue-500 lg:px-10 font-bold text-blue-100 z-10 pt-1 px-1">
-        <button title="GDDC Brisbane" :class="{'tab-active rounded-t-md text-pink-500' : isRegion('brisbane')}" class="transition-bg duration-500 py-1 pt-1.5 px-3 font-bold border-none focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
-        <button title="GDDC Adelaide" :class="{'tab-active rounded-t-md text-pink-500' : isRegion('adelaide')}" class="transition-bg duration-500 py-1 pt-1.5 px-3 font-bold border-none focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
+        <button title="GDDC Brisbane" :class="{'tab-active text-pink-500' : isRegion('brisbane')}" class="tab" @click="regionSelect('brisbane')">Brisbane</button>
+        <button title="GDDC Adelaide" :class="{'tab-active text-pink-500' : isRegion('adelaide')}" class="tab" @click="regionSelect('adelaide')">Adelaide</button>
       </div>
 
       <nav-bar></nav-bar>
@@ -284,6 +284,18 @@
 
     .my-label {
       @apply block mt-1 mb-0 text-xs font-bold text-blue-500 uppercase
+    }
+
+    .tab {
+      @apply transition-all duration-500 ease-out py-1 pt-1.5 px-3 font-bold border-none outline-none rounded-t-md
+    }
+
+    .tab:focus {
+      @apply outline-none
+    }
+
+    .tab:active {
+      @apply outline-none
     }
   }
 
