@@ -3,9 +3,9 @@
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
       <!--// CITY SELECT // -->
 
-      <div class="bg-blue-500 lg:px-10 font-bold text-white z-10">
-        <button title="GDDC Brisbane" :class="{'tab-active text-pink-500' : isRegion('brisbane')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
-        <button title="GDDC Adelaide" :class="{'tab-active text-pink-500' : isRegion('adelaide')}" class="py-1 px-3 font-bold focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
+      <div class="bg-blue-500 lg:px-10 font-bold text-blue-100 z-10 pt-1 px-1">
+        <button title="GDDC Brisbane" :class="{'tab-active rounded-t-md text-pink-500' : isRegion('brisbane')}" class="transition-bg duration-500 py-1 pt-1.5 px-3 font-bold border-none focus:outline-none" @click="regionSelect('brisbane')">Brisbane</button>
+        <button title="GDDC Adelaide" :class="{'tab-active rounded-t-md text-pink-500' : isRegion('adelaide')}" class="transition-bg duration-500 py-1 pt-1.5 px-3 font-bold border-none focus:outline-none" @click="regionSelect('adelaide')">Adelaide</button>
       </div>
 
       <nav-bar></nav-bar>
@@ -165,7 +165,7 @@
   .tab-active {
     background: white;
     position: relative;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.223), 0px 30px 30px rgba(0, 0, 0, 0.123)
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.223), 0px 30px 30px rgba(0, 0, 0, 0.123);
   }
 
   .pagefade-enter-active,
