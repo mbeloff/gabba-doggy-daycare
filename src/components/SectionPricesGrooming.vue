@@ -20,7 +20,7 @@
             </div>
           </div>
            <p class="font-bold mt-4 mb-4">Wednesdays only</p>
-          <div v-for="(service, i) in prices.wednesday" :key="i" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
+          <div v-for="(service, x) in prices.wednesday" :key="x" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
               <div v-if="service.highlight">
                 <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
@@ -35,6 +35,10 @@
                 <span class="text-pink-500">{{price}}</span>
               </div>
             </div>
+            <div class="flex-grow text-right mt-1" v-if="service.extra"><span class="px-2 relative text-gray-400">
+                (De-shed long coat add +$10)
+                </span></div>
+             
           </div>
         </div>
 
@@ -107,11 +111,12 @@
           wednesday: [
            { 
               name: 'De-shed',
+              extra: 1,
               price: ['$50','$60','$70'],
             },
             {
               name: 'Full Groom',
-              price: ['$85','$90','$95']
+              price: ['$95','$100','$105']
             }
           ]
         },        
