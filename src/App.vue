@@ -150,10 +150,14 @@
 </script>
 <style lang="postcss">
   .app-content {
-    margin-top: 131px;
+    margin-top: 137px;
 
-    @media only screen and (min-width: 1024px) {
-      margin-top: 129px
+    
+  }
+
+  @media only screen and (min-width: 1074px) {
+    .app-content {
+      margin-top: 141px
     }
   }
 
