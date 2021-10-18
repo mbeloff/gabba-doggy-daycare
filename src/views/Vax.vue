@@ -7,9 +7,8 @@
           <template #big>What do I need to know?</template>
         </title-block>
         <div class="content">
-          <p class="mb-4">Vaccinations are important to protect your dog and stop the spread of contagious illnesses and diseases. This is especially important in a doggy daycare and other spaces where many dogs are interacting.</p>
-          <p class="mb-4">As we love to see all our guests happy, safe and healthy, we require everyone to be up to date with their vaccinations before they can book in for daycare.</p>
-          <p class="mb-4">We ask that dogs are protected against the following:</p>
+          <p class="mb-4">Vaccinations are important to protect your dog and stop the spread of contagious illnesses and diseases. This is especially important in a doggy daycare and other spaces where many dogs are interacting. As we love to see all our guests happy, safe and healthy, we require everyone to be up to date with their vaccinations before they can book in for daycare.</p>
+          <p class="mb-4">We require all dogs to be protected against the following:</p>
           <ul class="mb-4 ml-4 font-bold text-left list-none list-inside">
             <li class="flex gap-2 mb-2">
               <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
@@ -28,10 +27,11 @@
               <p class="leading-tight">Bordetella and Parainfluenza (Kennel/Canine Cough)</p>
             </li>
           </ul>
-          <p class="mb-4">All these are covered by a <em>C5</em> Vaccination, or a combination of <em>C3</em> and <em>KC</em> vaccination. We recommend speaking with your regular vet if you're unsure whether your dog's vaccinations are up-to-date, as we'll need to know before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
+          <p class="mb-4">All these are usually covered by a <strong>C5 Vaccine, or a combination of C3 and KC vaccine</strong> . We recommend speaking with your vet if you're unsure about your dogs' vaccination status, as we'll need to know before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
           <div class="py-5 section">
             <h2 class="text-2xl font-bold text-blue-900">Typical Puppy Vaccination Schedule*</h2>
           <p class="mb-3 font-bold text-blue-500">*may vary depending on vaccine brands used</p>
+          <p>In order to be fully protected it's important that puppies complete their full course of vaccinations. We are unable to accept puppies that have not had their final puppy vaccination - the timing of this can vary but is usually at about 14-16 weeks old.</p>
           <table class="w-full pl-2 my-5">
             <tbody class="space-y-5 text-sm">
               <tr class="bg-gray-100">
