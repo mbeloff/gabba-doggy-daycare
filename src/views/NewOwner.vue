@@ -10,7 +10,8 @@
       </div>
       
     </div>
-    <div v-show="!gettingToken && !tokenFailed" class="container h-full mx-auto py-10 p-2">
+    <div v-if="this.getRegion() == 'adelaide'" class="container mx-auto text-center text-pink-500 pt-5">Sorry, this location isn't available yet.</div>
+    <div :class="{ 'opacity-30 avoid-clicks' : this.getRegion() == 'adelaide' }" v-show="!gettingToken && !tokenFailed" class="container h-full mx-auto py-10 p-2">
       <p class="text-center font-bold text-blue-500 text-xl">Create a New Account for GDDC <span class="capitalize">{{this.getRegion()}}</span></p>
       <div class="flex flex-col gap-3 max-w-xl mx-auto py-3 text-sm">        
         <p class="text-left">Please complete the form below to create a new PetExec account with Gabba Doggy Daycare. You will then be able to <open-login class="link-pink">login</open-login> to manage your doggy daycare bookings and purchase packages.</p>

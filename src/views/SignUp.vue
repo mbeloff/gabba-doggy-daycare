@@ -19,14 +19,14 @@
               <choose-location class="mt-10"></choose-location>
               <transition name="grow">
                  <p class="text-pink-500 pt-5" v-if="getRegion() == 'adelaide'"><span class="font-bold">Please note:</span> 
-                 <!-- our Adelaide facility is not yet in operation. New account sign-ups are temporarily disabled. <span class="italic">We thank you for your patience.</span></p> -->
-                 our Adelaide facility is not yet in operation. You're welcome to create an account and we'll inform you when we have an opening date. <span class="italic">We thank you for your patience.</span></p>
+                 our Adelaide facility is not yet in operation. New account sign-ups are temporarily disabled. <span class="italic">We thank you for your patience.</span></p>
+                 <!-- our Adelaide facility is not yet in operation. You're welcome to create an account and we'll inform you when we have an opening date. <span class="italic">We thank you for your patience.</span></p> -->
               </transition>
              
-                <!-- <div v-if="getRegion() == 'brisbane'" class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</router-link></div> -->
-                <div class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</router-link></div>
+                <div v-if="getRegion() == 'brisbane'" class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</router-link></div>
+                
           </div>
-          <div class="bg-cover md:col-span-1  rounded-xl shadow-xl h-96 min-h-full bg-center register-img">
+          <div class="bg-cover md:col-span-1 rounded-xl shadow-xl h-96 min-h-full bg-center register-img">
           </div>
         </div>
       </div>
@@ -56,6 +56,7 @@ import SectionSignup from '@/components/SectionSignup.vue'
         alert: false,
       }
     },
+
     computed: {
       link() {
         return this.$store.state[this.getRegion()].newAccountLink
