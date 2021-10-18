@@ -36,9 +36,8 @@
               </div>
             </div>
             <div class="flex-grow text-right mt-1" v-if="service.extra"><span class="px-2 relative text-gray-400">
-                (De-shed long coat add +$10)
-                </span></div>
-             
+               {{service.extra}}
+            </span></div>             
           </div>
         </div>
 
@@ -111,7 +110,7 @@
           wednesday: [
            { 
               name: 'De-shed',
-              extra: 1,
+              extra: '(De-shed long coat add +$10)',
               price: ['$50','$60','$70'],
             },
             {
