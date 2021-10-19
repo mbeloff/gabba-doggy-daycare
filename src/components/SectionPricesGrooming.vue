@@ -20,7 +20,7 @@
             </div>
           </div>
            <p class="font-bold mt-4 mb-4">Wednesdays only</p>
-           <p class="mb-4">Professional grooming is available on location for GDDC customers every Wednesday. For bookings, call Chloe on <a class="link-pink" href="tel:0320938707">0420 938 707</a>.</p>
+           <p class="mb-4">Professional grooming services are available on location for GDDC customers every Wednesday. For bookings, call Chloe on <a class="link-pink" href="tel:0320938707">0420 938 707</a>.</p>
           <div v-for="(service, x) in prices.wednesday" :key="x" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
               <div v-if="service.highlight">
