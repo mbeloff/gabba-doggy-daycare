@@ -30,10 +30,14 @@
 
               <div class="flex-grow px-2">{{service.name}} <br> <span class="text-pink-500">{{ service.soon }}</span></div>
               <div class="px-2 relative text-gray-400"  v-for="(price, i) in service.price" :key="i">
-                <span v-if="i == 0">sm: </span>
-                <span v-if="i == 1">md: </span>
-                <span v-if="i == 2">lg: </span>
-                <span class="text-pink-500">{{price}}</span>
+                <span class="text-pink-500" v-if="service.price.length == 1">{{ price }}</span>
+                <template v-else>
+                  <span v-if="i == 0">sm: </span>
+                  <span v-if="i == 1">md: </span>
+                  <span v-if="i == 2">lg: </span>
+                  <span class="text-pink-500">{{price}}</span>
+                </template>
+                
               </div>
             </div>
             <div class="flex-grow text-right mt-1" v-if="service.extra"><span class="px-2 relative text-gray-400">
