@@ -195,8 +195,9 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         await this.howfound()
       },
       // send to default petexec account page if token fetch fails
+      // !disabled redirecting for adelaide
       'tokenFailed': function() {
-        if (this.tokenFailed == true) {
+        if (this.tokenFailed == true && this.getRegion() == 'brisbane') {
           window.location.href=this.link 
         }                               
       },
