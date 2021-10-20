@@ -117,7 +117,7 @@
             directdebit: {
               OneDay: {
                 name: "One Day a Week",
-                price: "$48",
+                price: "$50",
               },
               TwoDays: {
                 name: "Two Days a Week",
