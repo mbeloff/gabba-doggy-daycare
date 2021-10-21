@@ -1,6 +1,6 @@
 <template>
   <div
-    :id="groupId + '-' + item.id"
+    :id="groupId + '-' + id"
     class="accordion-item"
     :class="{ 'is-active': item.active }"
   >
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  props: ['item', 'multiple', 'groupId'],
+  props: ['item', 'multiple', 'groupId', 'id'],
   methods: {
     toggle(event) {
       if (this.multiple) this.item.active = !this.item.active

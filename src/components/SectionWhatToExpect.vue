@@ -59,14 +59,14 @@
       <h2 class="font-bold text-xl mb-3">After Daycare</h2>
       <ul class="list-inside list-none flex flex-col gap-3">
         <li>
-          <span class="font-bold">Boo-boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day and make sure everyone gets along, but dogs may occasionally nip, bite, or scratch each other during play. We treat any small injuries and will inform you at pickup, or straight away if necessary. However, while we do provide the utmost care and attention to our doggy guests, sometimes small scrapes or scratches can go unnoticed.
-        </li>
-        <li>
-          <span class="font-bold">Hungry or Tired -</span> As your dog is likely to be much more active at daycare than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest during this time. You may wish to let your dog take it easy and have a big snooze after their big daycare adventure.
-        </li>
-        <li>
           <span class="font-bold">Picking Up -</span> Please note that we close at  {{ this.closeTime }}. We kindly ask that you aim to pick up by 6 pm to account for any delays (e.g. traffic) and prevent a rush at closing time. If you are running late, please let us know straight away.
         </li>
+        <li>
+          <span class="font-bold">Boo-boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day and make sure everyone gets along, but dogs can be unpredictable and may occasionally nip, bite, or scratch each other during play. We treat any small injuries on-site where possible and will inform you at pickup, or straight away if necessary. However, while we do provide the utmost care and attention to our doggy guests, sometimes small scrapes or scratches can go unnoticed.
+        </li>
+        <li>
+          <span class="font-bold">Food and Rest -</span> As your dog is likely to be much more active at daycare than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest during this time. You may wish to let your dog take it easy and have a big snooze after their exciting daycare adventure.
+        </li>       
       </ul>
     </div>
     <router-link class="btn-blue inline-block my-5" :to="{ name: 'Sign-up', params: {region: getRegion()} }">Sign me up!</router-link>

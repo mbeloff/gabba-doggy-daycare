@@ -5,11 +5,12 @@
     </h2>
     <dl class="accordion box" role="presentation">
       <Faqitem
-        v-for="item in set1"
+        v-for="(item, i) in set1"
         :multiple="multiple"
         :item="item"
+        :id="i"
         :groupId="groupId"
-        :key="item.id"
+        :key="i"
       >
       </Faqitem>
     </dl>
@@ -45,7 +46,6 @@ export default {
       selectedCategory: this.content,
       set1: [
         {
-          id: 1,
           active: true,
           title: 'How do I make a day care booking?',
           details: `
@@ -54,16 +54,14 @@ export default {
            `
         },
         {
-          id: 2,
           active: false,
           title:
             'How do I use my free trial?',
           details: `
-            <p>As long as your dog is over 6 months, desexed and vaccinated, you will be eligible for the free trial. As soon as we've verified your account and vaccinations, a trial package will be added to your account. There's nothing more you have to do, just login and schedule day care.</p>       
+            <p>As long as your dog is over 6 months, desexed and vaccinated, you will be eligible for the free trial. As soon as we've verified your vaccination certificate, a trial package will be added to your account. There's nothing more you have to do, just login and schedule day care.</p>       
           `
         },
         {
-          id: 3,
           active: false,
           title: 'How do I pay for Daycare?',
           details: `
@@ -74,23 +72,27 @@ export default {
           `
         },
         {
-          id: 4,
           active: false,
           title: 'I have a new puppy, when can I bring them to day care?',
           details: `
-            <p>We can only accept puppies that are fully vaccinated. Final vaccination typically occurs at 14-16 weeks, but please keep in mind that vaccinations may take 1-2 weeks before becoming fully effective. If in doubt, we recommend speaking to your vet.</p>
+            <p>We can only accept puppies that are fully vaccinated - this means they have finished their entire round of inital vaccinations. Final vaccination typically occurs at 14-16 weeks, but please keep in mind that vaccinations may take 1-2 weeks before becoming fully effective. If in doubt about your puppies vaccination schedule, we recommend speaking to your vet.</p>
           `
         },
         {
-          id: 5,
+          active: false,
+          title: 'What happens if my dog is in heat?',
+          details: `
+            <p>Please refrain from bringing your dog to daycare if she is in heat. It's best to keep your dog home during this time, as the arousal of nearby male dogs can increase the risk of aggression. If your dog comes into heat while at daycare, you may be asked to arrange immediate pickup.</p>
+          `
+        },
+        {
           active: false,
           title: 'I can\'t find my dogs\' vaccination certificate(s)',
           details: `
-            <p>Vaccination certificates can usually be obtained via email from your vet on request. Once received, you can upload it to your account, or forward it on to us via <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email.</a></p>
+            <p>Vaccination certificates can usually be quickly obtained via email from your vet. Once received, you can upload it to your account, or simply forward it on to us via <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email.</a></p>
           `
         },
         {
-          id: 6,
           active: false,
           title: 'Are there any specials or discounts?',
           details: `
