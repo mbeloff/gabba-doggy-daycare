@@ -75,7 +75,7 @@ export default {
           active: false,
           title: 'I have a new puppy, when can I bring them to day care?',
           details: `
-            <p>We can only accept puppies that are fully vaccinated - this means they have finished their full round of initial vaccinations. Final vaccinations typically occur at 14-16 weeks, but please keep in mind that vaccinations may take 1-2 weeks before becoming fully effective. If in doubt about your puppies vaccination schedule, we recommend speaking to your vet.</p>
+            <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final vaccination typically occurring at 14-16 weeks, but please keep in mind that vaccinations may take 1-2 weeks before becoming fully effective. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
           `
         },
         {
@@ -89,7 +89,7 @@ export default {
           active: false,
           title: 'I can\'t find my dogs\' vaccination certificate(s)',
           details: `
-            <p>Vaccination certificates can usually be quickly obtained via email from your vet. Once received, you can upload it to your account, or simply forward it on to us via <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email.</a></p>
+            <p>Vaccination certificates can usually be obtained via email from your vet. Once received, you can upload it to your account, or simply forward it on to us via <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email.</a></p>
           `
         },
         {

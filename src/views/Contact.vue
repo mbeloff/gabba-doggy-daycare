@@ -1,13 +1,16 @@
 <template>
   <div>
-    <section-map></section-map>
+    <div class="bg-gray-100" style="height: 400px;">
+      <section-map></section-map>
+    </div>
+    
     <div class="container py-20 px-2 mx-auto">
       <title-block class="text-center">
         <template #small>Get in Touch</template>
         <template #big>Contact Us</template>
       </title-block>
 
-<div class="grid grid-cols-3 gap-5 md:gap-10 border-gray-200">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-10 border-gray-200">
   <div class="flex flex-col items-center gap-3">
     <icon-stack :icon="'phone-rotary'"></icon-stack>
      <a class="btn-blue" :href="`tel:` + removeSpaces(contact.phone)">Call Us</a>
