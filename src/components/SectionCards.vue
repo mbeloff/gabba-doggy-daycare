@@ -8,15 +8,13 @@
       <div class="flex flex-wrap text-left justify-around">
         <p class="px-5 mb-10 md:text-lg text-center">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. GDDC is a massive off-leash day care for dogs of all shapes and sizes. We have indoor and outdoor play areas, and our friendly daycare team provide all the care and attention your dogs need while you're at work.</p>
         <div v-for="(card, i) in cards" :key="i" class="flex-grow py-2 sm:px-2 md:p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container order-1" :class="{ 'md:order-1 order-last' : card.type}">
-          <div v-if="card.type !== 'image'" class="h-full py-8 bg-white rounded-lg shadow-md card text-center">
+          <div class="h-full py-8 bg-white rounded-lg shadow-md card text-center">
             <span class="fa-stack fa-2x">
               <i class="text-blue-100 fas fa-circle fa-stack-2x"></i>
               <span class="fa-stack-1x z-10" :class="card.icon"></span>
             </span>
             <p class="my-3 font-bold text-blue-700 py-2">{{card.heading}}</p>
             <p class="text-gray-700 text-left px-4">{{card.desc}}</p>
-          </div>
-          <div v-else class="h-full img-card bg-white rounded-lg shadow-lg card bg-cover bg-top" :style="{backgroundImage: card.img}">
           </div>
         </div>
       </div>

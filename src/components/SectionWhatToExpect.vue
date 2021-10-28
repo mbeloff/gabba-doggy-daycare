@@ -8,28 +8,19 @@
       <h2 class="font-bold text-xl mb-3 text-purple-600">Before Daycare</h2>
       <ul class="list-inside list-none flex flex-col gap-3">
         <li>
-          <span class="font-bold">Create an Account -</span> All parents are required to create a GDDC PetExec account. This will allow you to make bookings and more online. <router-link class="link-pink" :to="{name: 'Sign-up', params: {region: getRegion()}}">Click here to make an account.</router-link>
+          <span class="font-bold">Book Online -</span> You can schedule daycare quickly and easily. As long as we have availability your booking will be instantly confirmed :)
         </li>
         <li>
-          <span class="font-bold">Vaccination Certificates -</span> Before you're able to book your first daycare date, we require an up-to-date vaccination certificate, we must be able to see the date that your dog is NEXT DUE for their vaccinations. Please upload this to your PetExec account or via  <link-email class="link-pink">email</link-email>.
+          <span class="font-bold">Buy a Package -</span> To make pickup and dropoff quick and easy for everyone, we ask that daycare is pre-paid online. You can packages for individual days, weekly packs (2 - 5 days), or 10-day packs. If you forget to pay beforehand, we can also accept credit card payments in-store.
         </li>
         <li>
-          <span class="font-bold">Paying for Daycare -</span> To make pickup and dropoff quick and easy for everyone, we ask that daycare is pre-paid online. You can purchase discounted packages through your account. If you forget to pay beforehand, we accept credit card payments in-store when you drop-off or pickup.
-        </li>
-        <li v-if="getRegion() == 'brisbane'">
-         <span class="font-bold">Pet Taxi -</span> We have a Pet Taxi service available for local pickup and drop-off. Please book in advance via 'Scheduled Services' in your account.
+          <span class="font-bold">Food -</span> If your pup usually eats lunch and you would like us to feed them, we charge a $5 feeding fee. Please provide your dog's usual food, labelled with their name on it. You can pre-pay for this online.
         </li>
         <li>
-          <span class="font-bold">Food -</span> If your pup usually eats lunch and you would like us to feed them, we charge a $5 feeding fee. Please provide your dog's usual food, labelled with their name on it. You can pre-pay for this via your online account.
+          <span class="font-bold">Medication / Allergies -</span> If your dog requires any medication, please ensure you provide instructions of how and when it should be administered. Also, let us know if your pup has any food allergies as we may give treats during enrichment time - although we keep this minimal.
         </li>
         <li>
-          <span class="font-bold">Medication / Allergies -</span> If your dog requires any medication, please ensure you provide instructions of when how it should be administered. Also, let us know if your pup has any food allergies as we may give treats during enrichment time - although we keep this minimal.
-        </li>
-        <li>
-          <span class="font-bold">Extra Care -</span> If your dog is recovering from an injury, or otherwise might need a bit of extra care and attention, don't hesitate to let us know; our daycare team will be happy to accommodate.
-        </li>
-        <li>
-          <span class="font-bold">Illness -</span> If your dog is showing signs of illness, please refrain from booking them into daycare until they're in good health and have vet clearance to attend.
+          <span class="font-bold">Extra Care -</span> If your dog is recovering from an injury or otherwise might need a bit of extra care and attention, don't hesitate to let us know; our daycare team will be happy to accommodate whenever possible.
         </li>
       </ul>
 
@@ -38,10 +29,10 @@
       <h2 class="font-bold text-xl mb-3">During Daycare</h2>
       <ul class="list-inside list-none flex flex-col gap-3">
         <li>
-          <span class="font-bold">Socialisation -</span> Your dog will have a great chance to socialise, mingle and play with other dogs! We separate dogs based on their size and temperament and do our best to ensure dogs are with others that they will have the most extensive opportunity to socialise with.
+          <span class="font-bold">Socialisation -</span> Your dog will have a great chance to socialise, mingle and play with other dogs! We separate dogs based on their size and temperament and do our best to ensure dogs are with others that they will have the most extensive opportunity to socialise.
         </li>
         <li>
-          <span class="font-bold">Confidence -</span> During the day at daycare, your pup will have the chance to play on our agility course, enjoy different sensory experiences such as licking ice, playing in our sandpits, running on grass. We provide an array of different activities for our dog visitors on different days to keep them entertained, and to help build their confidence. Surrounding themselves with other dogs also ensures that they learn certain cues that humans are incapable of teaching dogs.
+          <span class="font-bold">Confidence -</span> During the day, your pup will have the chance to build their confidence on our agility course, and stay stimulated by enjoying different sensory experiences such as licking ice, playing in our sandpits, running on grass.
         </li>
         <li>
           <span class="font-bold">Exercise -</span> Daycare gives your dog the best opportunity to expend energy! At GDDC our guests have plenty of space to run around, play, and enjoy being a dog! If you live in an apartment, have a highly energetic pooch, or cannot give your pup adequate exercise then daycare is a terrific option for you and your dog.
@@ -50,10 +41,9 @@
           <span class="font-bold">Feeding Time -</span> If you've opted to bring your dog's lunch for the day ($5 fee incurred), we will give them their own space and supervision while they eat. If they don't eat any of their food, we'll let you know at pickup (and return their food where possible), so that you can modify their feeding at home if needed.
         </li>
         <li>
-          <span class="font-bold">Photos/Videos -</span> We do our best to post photos and videos throughout the day! Our main focus, however, is on giving your pups the best possible experience at daycare. For daily updates, head over to our <a target="_blank" rel="noopener" href="https://www.instagram.com/gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Instagram</a> or <a target="_blank" rel="noopener" href="https://www.tiktok.com/@gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Tiktok</a>.
+          <span class="font-bold">Photos/Videos -</span> We do our best to post photos and videos each day! Our main focus, however, is on giving your pups the best possible experience at daycare. For daily updates, please keep an eye on our <a target="_blank" rel="noopener" href="https://www.instagram.com/gabbadoggydaycare/" aria-label="Find us on Instagram" title="Find us on Instagram" class="link-pink">Instagram</a>.
         </li>
       </ul>
-
     </div>
     <div class="text-sm mb-3">
       <h2 class="font-bold text-xl mb-3">After Daycare</h2>
@@ -65,7 +55,7 @@
           <span class="font-bold">Boo-boos/scratches -</span> We do our absolute best to monitor all dogs throughout the day and make sure everyone gets along, but dogs can be unpredictable and may occasionally nip, bite, or scratch each other during play. We treat any small injuries on-site where possible and will inform you at pickup, or straight away if necessary. However, while we do provide the utmost care and attention to our doggy guests, sometimes small scrapes or scratches can go unnoticed.
         </li>
         <li>
-          <span class="font-bold">Food and Rest -</span> As your dog is likely to be much more active at daycare than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest during this time. You may wish to let your dog take it easy and have a big snooze after their exciting daycare adventure.
+          <span class="font-bold">Extra Food and Rest -</span> As your dog is likely to be much more active at daycare than at home, you may find that they need a bit more food than usual. Though we do have nap time during the day, not all dogs will rest during this time. You may wish to let your dog take it easy and have a big snooze after their exciting daycare adventure.
         </li>       
       </ul>
     </div>

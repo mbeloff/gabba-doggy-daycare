@@ -16,7 +16,7 @@
 
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
       <title-block class="text-center">
-        <template #small>More than just day care</template>
+        <template #small>A home away from home</template>
         <template #big>Dogs Love it Here</template>
       </title-block>
       <div class="container grid grid-cols-1 lg:gap-10 px-2 mx-auto md:grid-cols-2 max-w-screen-lg gap-y-10 gap-x-2">
@@ -24,11 +24,11 @@
           <ul class="text-left list-disc list-outside">
             <li class="grid w-full mb-2" v-for="(item, i) in features" :key="i">
               <template v-if="item.limit == getRegion() || item.limit == null">
-                <div class="grid grid-flow-col auto-cols-max gap-3">
+                <div class="flex flex-col items-center gap-3">
                   <icon-stack :icon="item.icon"></icon-stack>
                   <p class="font-bold text-blue-700 self-center">{{item.title}} <span class="text-blue-400 font-normal capitalize" v-if="item.limit">- {{item.limit}} only</span> </p>
                 </div>
-                <p class="ml-11 text-sm">{{item.desc}} 
+                <p class="text-sm text-center">{{item.desc}} 
                   <router-link v-if="item.title == 'Grooming'" class="link-pink" :to="{name: item.title, params: {region: item.limit}}">find out more</router-link>
                   <button v-if="item.title == 'Pet Taxi'" class="link-pink" @click="showTaxi">find out more</button>
                   </p>
@@ -45,9 +45,7 @@
         <router-link :to="{ name: 'Sign-up', params: {region: getRegion()} }" class="flex-grow btn-blue text-sm">Create Account</router-link>
       </div>
     </div>
-
     <section-reviews></section-reviews>
-
   </div>
 </template>
 
@@ -172,7 +170,7 @@
         features: [{
             title: "Easy Online Bookings",
             icon: 'calendar-day',
-            desc: "Signup online to conveniently manage your own bookings, update your information or purchase our daycare packages."
+            desc: "Sign up online to conveniently manage your own bookings, update your information or purchase our daycare packages."
           },
           {
             title: "Yound, Old and In Between",
@@ -187,7 +185,7 @@
           {
             title: "Pet Taxi",
             icon: 'taxi',
-            desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff.",
+            desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff. (Brisbane Only)",
           },
           {
             title: "Grooming",
