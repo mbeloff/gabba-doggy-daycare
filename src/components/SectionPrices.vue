@@ -21,7 +21,7 @@
           </div>
         </div>
         <p class="font-bold text-center mt-5">Weekly Packages</p>
-        <p class="text-sm pt-5">We've made it more afforadable to come to day care more often. Weekly packs are now available via your petexec account. <br>Coming to day care every week? Ask us about setting up automatic payments, so all you have to worry about is dropping off and picking up your pup - and of course you can pause or adjust your payments if your schedule changes.</p>
+        <p class="text-sm pt-5">We've made it more afforadable to come to day care more often. Weekly packs are now available via your petexec account.</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
@@ -59,7 +59,7 @@
         Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. Unused days may not be refunded or carried over to following weeks - please contact us as early as possible if you're unable to come to daycare and we may be able to extend your package.
       </p>
       <p>
-        If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accomodate. Just let us know by Friday so we can adjust this before your next billing day (usually Sunday) <i class="fal fa-smile"></i> 
+        If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accommodate. Just let us know by Friday so we can adjust this before your next billing day (usually Sunday) <i class="fal fa-smile"></i> 
       </p>
       <p>
         If we are fully booked, customers on recurring billing will be given priority placement. 
