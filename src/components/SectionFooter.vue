@@ -34,17 +34,16 @@
         <div class="text-center sm:text-left">
           <div class="text-sm">
               <ul class="space-y-4 md:space-y-1 list-none text-sm">
-                <li v-if="contact.phone">
-                   <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-2xl font-bold" :href="`tel:` + removeSpaces(contact.phone)"><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
+                <li v-if="getRegion() == 'brisbane'">
+                   <a class="focus:outline-white text-gray-400 hover:text-yellow-300 text-lg font-bold" :href="`tel:` + removeSpaces(contact.phone)"><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
                    <p>call between 6:30am - 6:30pm</p>
                 </li>
-             <li>
-               <a class="text-gray-400 focus:outline-white hover:text-yellow-300 break-all" :href="`mailto:` + contact.email">{{contact.email}}</a>
-             </li>
-              <li>
-                {{contact.street}}, {{contact.suburb}}, {{contact.postcode}}
-              </li>
-              
+                <li>
+                  <a class="text-gray-400 focus:outline-white hover:text-yellow-300 break-all" :href="`mailto:` + contact.email">{{contact.email}}</a>
+                </li>
+                <li>
+                  {{contact.street}}, {{contact.suburb}}, {{contact.postcode}}
+                </li>
               </ul>
           </div>
           <div class="flex flex-row space-x-3 mt-4 justify-center sm:justify-start">
