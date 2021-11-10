@@ -10,6 +10,7 @@
 
       <nav-bar></nav-bar>
     </div>
+    
     <div class="pt-19 app-content" style="min-height: 50vh">
       <transition name="pagefade" mode="out-in">
         <router-view />
@@ -121,7 +122,7 @@
         this.$router.push({
           name: this.$route.name,
           params: {
-            region: this.$store.state.region
+    region: this.$store.state.region
           }
         })
       }
@@ -150,14 +151,14 @@
 </script>
 <style lang="postcss">
   .app-content {
-    margin-top: 137px;
+    margin-top: 133px;
 
     
   }
 
   @media only screen and (min-width: 1074px) {
     .app-content {
-      margin-top: 141px
+      margin-top: 135px
     }
   }
 

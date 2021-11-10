@@ -50,7 +50,14 @@ export default {
           title: 'How do I make a day care booking?',
           details: `
             <p class="mb-2">Simply login to your account and click 'schedule daycare' and select your date and time. You can view 'My Calendar' from your account dashboard to see all your existing bookings.</p>
-            <p>Please note that you will be unable to schedule your first day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. We try to do this as promptly as possible, please let us know if you've uploaded and are still unable to make a booking.</p>
+            
+           `
+        },
+        {
+          active: false,
+          title: 'Help. When I log in it says my vaccinations need updating',
+          details: `
+            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. We usually do this as quickly as possible but please be patient if you're uploading outside of office hours, and let us know if you've uploaded and are still unable to make a booking.</p>
            `
         },
         {

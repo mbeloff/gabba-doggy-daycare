@@ -43,7 +43,7 @@
     {{ phone }}
     </a>
     <span class="text-sm font-normal ml-2 mr-auto">6:30am - 6:30pm</span>
-    <open-modal class="inline-block rounded-full px-1 ml-1 text-lg hover:text-pink-500" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal>
+    <!-- <open-modal class="inline-block rounded-full px-1 ml-1 text-lg hover:text-pink-500" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal> -->
     </div>
   </nav>
 </template>

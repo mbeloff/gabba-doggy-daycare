@@ -13,6 +13,7 @@ const Feedback = () => import("../views/Feedback.vue")
 const Explore = () => import("../views/Tour.vue")
 const Overnight = () => import("../views/Overnight.vue")
 const NewOwner = () => import("../views/NewOwner.vue")
+const Pawtraits = () => import("../views/Pawtraits.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -125,6 +126,11 @@ const routes = [
     path: '/overnight',
     name: 'Overnight',
     component: Overnight
+  },
+  {
+    path: '/pawtraits',
+    name: 'Pawtraits',
+    component: Pawtraits
   },
   {
     path: '/pet-taxi',
