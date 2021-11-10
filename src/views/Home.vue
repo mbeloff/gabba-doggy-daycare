@@ -6,13 +6,8 @@
     <section-cards></section-cards>
     <div class="bg-gray-900 relative">
       <section-slider class="transition-opacity gallery duration-1000" :class="{ 'opacity-0' : this.disabled}" :key="this.rand"></section-slider>
-      <div v-show="this.disabled" class="absolute top-0 left-0 w-full h-full grid place-items-center">
-        <i class="fal fa-spinner-third fa-spin fa-3x text-white"></i>
-      </div>
     </div>
-    <div class="bg-gray-100 grid">
-      <button id="get-images" title="show more photos" class="text-center justify-self-center link-pink py-1 m-1" @click="refreshSlider()"><i class="fal fa-redo-alt mr-2"></i>show me more dogs</button>
-    </div>
+    
 
     <div class="section py-32 tile bg-gray-100 bg-opacity-30">
       <title-block class="text-center">

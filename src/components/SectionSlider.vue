@@ -2,12 +2,15 @@
   <div class="bg-gray-900">
     <div class="container mx-auto">
       <div class="container max-w-screen-lg  mx-auto p-0 relative">
-        <div class="grid grid-cols-3 lg:grid-cols-6 swiper">
-          <div class="bg-green-500" v-for="(slide, i) in slideList" :key="i">
+        <div class="grid grid-cols-3 lg:grid-cols-6 swiper" id="swiper">
+          <div class="bg-green-500" v-for="(slide, i) in list" :key="i">
             <img :src="imagePrefix + slide" alt="" class="w-full h-full object-cover">
           </div>
         </div>
       </div>
+    </div>
+    <div class="bg-gray-100 grid">
+      <button id="get-images" title="show more photos" class="text-center justify-self-center link-pink py-1 m-1" @click="slideList()"><i class="fal fa-redo-alt mr-2"></i>show me more dogs</button>
     </div>
   </div>
 </template>
@@ -18,6 +21,7 @@
     title: "Slider",
     data() {
       return {
+        num: 1,
         imagePrefix:"https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_256,w_256/f_auto,q_auto/v1/gddc",
         slides: [
          "/photos/02.jpg",
@@ -40,7 +44,6 @@
          "/photos/401.jpg",
          "/photos/402.jpg",
          "/photos/403.jpg",
-         "/photos/404.jpg",
          "/photos/405.jpg",
          "/photos/502.jpg",
          "/photos/610.jpg",
@@ -50,12 +53,8 @@
          "/photos/702.jpg",
          "/photos/705.jpg",
          "/photos/706.jpg",
-         "/photos/710.jpg",
-         "/photos/712.jpg",
          "/photos/713.jpg",
-         "/photos/715.jpg",
          "/photos/716.jpg",
-         "/photos/718.jpg",
          "/photos/801.jpg",
          "/photos/810.jpg",
          "/photos/811.jpg",
@@ -88,7 +87,6 @@
          "/photos/more/12.jpg",
          "/photos/more/13.jpg",
          "/photos/2021_March/1.jpg",
-         "/photos/2021_March/3.jpg",
          "/photos/2021_March/4.jpg",
          "/photos/2021_March/5.jpg",
          "/photos/2021_March/6b.jpg",
@@ -139,12 +137,17 @@
          "/photos/October_21/20.jpg",       
          "/photos/October_21/21.jpg",       
          "/photos/October_21/22.jpg",              
-        ]
+        ],
+        list: [],
       };
     },
-    computed: {
-      slideList: function () {
-        let arr = this.slides
+    methods: {
+      slideList() {
+        var element = document.getElementById("swiper");
+        element.style.opacity = "0";
+
+
+setTimeout(() => { let arr = this.slides
         let n = 12
         var result = new Array(n),
           len = arr.length,
@@ -156,15 +159,23 @@
           result[n] = arr[x in taken ? taken[x] : x];
           taken[x] = --len in taken ? taken[len] : len;
         }
-        return result;
+        this.list = result},500)
+       
+        
+        
+        setTimeout(() => {element.style.opacity = "100"},1000)
+        
       },
     },
+    mounted() {
+      this.slideList()
+    }
   };
 </script>
 
 <style lang="scss" scoped>
   .swiper {
-    transition: opacity 1s ease-in-out
+    transition: opacity .5s ease-in-out
   }
 
 
