@@ -14,7 +14,7 @@
       </p>
       <p v-if="place.opening_hours" class="text-xs mt-2">We are: <span class="font-bold text-blue-500">{{ place.opening_hours.open_now ? 'Now Open' : 'Close at the moment' }}</span></p>
     </div>
-    <gmap-map
+    <gmap-map v-if="gotPlace"
         :zoom="14"    
         :center="center"
         :options="options"
@@ -41,9 +41,8 @@ export default {
         disableDefaultUI : true    
       },      
       locPlaces: [],
-      existingPlace: null,
       place: {},
-      count: 1,
+      gotPlace: false
     };
   },
   watch: {
@@ -81,6 +80,7 @@ export default {
   }, 
   methods: {
     getPlace() {
+      this.gotPlace = false
       var id = this.$store.state[this.region].contact.placeId
       var host = process.env.VUE_APP_FN_HOST
       var body = JSON.stringify({
@@ -95,8 +95,7 @@ export default {
         .then(result => {
           let res = JSON.parse(result).result
           this.place = res
-          console.log(res)
-          this.count++
+          this.gotPlace = true
         })
         .catch(error => {
           console.log("Couldn't get place", error)
