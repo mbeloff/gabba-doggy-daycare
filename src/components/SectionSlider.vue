@@ -3,7 +3,7 @@
     <div class="container mx-auto">
       <div class="container max-w-screen-lg  mx-auto p-0 relative">
         <div class="grid grid-cols-3 lg:grid-cols-6 swiper" id="swiper">
-          <div class="bg-green-500" v-for="(slide, i) in list" :key="i">
+          <div v-for="(slide, i) in list" :key="i">
             <img :src="imagePrefix + slide" alt="" class="w-full h-full object-cover">
           </div>
         </div>
@@ -61,7 +61,6 @@
          "/photos/813.jpg",
          "/photos/816.jpg",
          "/photos/818.jpg",
-         "/photos/821.jpg",
          "/photos/824.jpg",
          "/photos/827.jpg",
          "/photos/829.jpg",
@@ -165,24 +164,21 @@
       slideList() {
         var element = document.getElementById("swiper");
         element.style.opacity = "0";
-
-
-setTimeout(() => { let arr = this.slides
-        let n = 12
-        var result = new Array(n),
-          len = arr.length,
-          taken = new Array(len);
-        if (n > len)
-          throw new RangeError("getRandom: more elements taken than available");
-        while (n--) {
-          var x = Math.floor(Math.random() * len);
-          result[n] = arr[x in taken ? taken[x] : x];
-          taken[x] = --len in taken ? taken[len] : len;
+        // wait for fade out before getting new slides
+        setTimeout(() => { let arr = this.slides
+          let n = 12
+          var result = new Array(n),
+            len = arr.length,
+            taken = new Array(len);
+          if (n > len)
+            throw new RangeError("getRandom: more elements taken than available");
+          while (n--) {
+            var x = Math.floor(Math.random() * len);
+            result[n] = arr[x in taken ? taken[x] : x];
+            taken[x] = --len in taken ? taken[len] : len;
         }
         this.list = result},500)
-       
-        
-        
+        // wait for new slides before fading in
         setTimeout(() => {element.style.opacity = "100"},1000)
         
       },
