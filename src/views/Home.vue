@@ -76,48 +76,6 @@
           "ratingValue": "5",
           "reviewCount": "6"
         },
-        "review": [{
-            "@type": "Review",
-            "author": "Meika Ruby",
-            "datePublished": "2020-12-15",
-            "description": "My doggy had a great time. I loved the photos they sent and could tell he was entertained all day. The staff were lovely and I could tell Billy was comfortable with them 💙",
-            "name": "Facebook Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "bestRating": "5",
-              "ratingValue": "5",
-              "worstRating": "1"
-            }
-          },
-          {
-            "@type": "Review",
-            "author": "Jennie S",
-            "datePublished": "2020-12-12",
-            "description": `I took advantage of the new business promotion on the 3 free days to see whether the doggy daycare would be a fit for my 2 small dogs.
-          They had to much fun on the days they were there and we will definitely be booking in again.
-          The ladies there were very professional and were very quick to answer any questions that i had.`,
-            "name": "Google Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "bestRating": "5",
-              "ratingValue": "5",
-              "worstRating": "1"
-            }
-          },
-          {
-            "@type": "Review",
-            "author": "Hannah Roberts",
-            "datePublished": "2021-02-11",
-            "description": `Wonderful place! Our lab and golden retriever have been coming weekly and always have the best time. The staff are lovely and it's a fun environment. Couldn't recommend more`,
-            "name": "Google Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "bestRating": "5",
-              "ratingValue": "5",
-              "worstRating": "1"
-            }
-          }
-        ],
         "telephone": "0423 487 302",
         "email": "woof@gabbadoggydaycare.com",
         "url": "https://www.gabbadoggydaycare.com",
@@ -165,22 +123,22 @@
         features: [{
             title: "Easy Online Bookings",
             icon: 'calendar-day',
-            desc: "Sign up online to conveniently manage your own bookings, update your information or purchase our daycare packages."
+            desc: "Sign up online to conveniently manage your bookings, update your information or purchase our discount daycare packages."
           },
           {
-            title: "Yound, Old and In Between",
+            title: "Dogs of all Shapes and Sizes",
             icon: 'paw',
-            desc: "With dedicated areas for both older dogs and puppies, we make sure everyone is comfortable, relaxed and safe."
+            desc: "With dedicated areas for both older dogs and puppies, and play areas separated by size and temperament. There's a place for everyone at GDDC."
           },
           {
             title: "Sunshine and Grass",
             icon: 'sunglasses',
-            desc: "Stimulating environment with spacious indoor areas including ramps, obstacles and ball pits, and daily outdoor playtime on a grassy field."
+            desc: "Stimulating environment with spacious indoor areas, and huge outdoor play areas with grass, pools and sand pits."
           },
           {
             title: "Pet Taxi",
             icon: 'taxi',
-            desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff. (Brisbane Only)",
+            desc: "Save yourself some running around - our pet taxi is available for local pickup and dropoff.",
           },
           {
             title: "Grooming",
