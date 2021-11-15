@@ -7,7 +7,7 @@
         </div> -->
         
         
-        <div class="flex-grow text-center sm:text-left">
+        <div class="flex-grow text-center sm:text-left font-bold">
           <img class="ml-auto mr-auto md:ml-0" src="../assets/img/gddc-text.svg" alt="Gabba Doggy Daycare">
           <!-- <p class="text-lg text-gray-400 mt-5">Extra Info</p> -->
           <ul class="gap-4 md:gap-1 list-none text-sm grid grid-cols-2 text-left w-full max-w-lg mt-2">
@@ -20,9 +20,6 @@
             <li class="">
               <a href="/docs/GDDC-general-agreement.pdf" download class="focus:outline-white hover:text-white">Daycare Contract</a>
             </li>
-            <!-- <li class="">
-              <a href="/docs/GDDC-medical-agreement.pdf" download class="focus:outline-white hover:text-white">Medical Release</a>
-            </li> -->
             <li class="">
               <router-link :to="{ name: 'Jobs', params: {region: getRegion()} }" class="focus:outline-white hover:text-white">Jobs / Volunteer</router-link>
             </li>
