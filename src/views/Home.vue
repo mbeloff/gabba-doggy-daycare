@@ -143,7 +143,7 @@
           {
             title: "Grooming",
             icon: 'bath',
-            desc: "Professional grooming services on location on Wednesdays, and basic washes, nail clips and ear cleans available through the week, so you can have you pup coming home fresh and clean.",
+            desc: "Basic washes, nail clips and ear cleans available through the week, so you can have you pup coming home fresh and clean.",
           },
         ]
       }

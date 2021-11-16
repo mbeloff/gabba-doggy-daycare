@@ -7,7 +7,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-20">
       <div class="">
         <div class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm">
-          <p class="font-bold mb-4">All week</p>
+          <p class="font-bold mb-4">Basic grooming services available to be booked online.</p>
           <div v-for="service in prices.daycare" :key="service.name" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
               <!-- <div v-if="service.highlight">
@@ -19,7 +19,7 @@
               </div>
             </div>
           </div>
-           <p class="font-bold mt-4 mb-4">Wednesdays only</p>
+           <!-- <p class="font-bold mt-4 mb-4">Wednesdays only</p>
            <p class="mb-4">Professional grooming services are available on location for GDDC customers every Wednesday. For bookings or enquiries, call Chloe on <a class="link-pink" href="tel:0320938707">0420 938 707</a>.</p>
           <div v-for="service in prices.wednesday" :key="service.name" class="mb-2 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2' : service.highlight}">
@@ -43,7 +43,7 @@
             <div class="flex-grow text-right mt-1" v-if="service.extra"><span class="px-2 relative text-gray-400">
                {{service.extra}}
             </span></div>             
-          </div>
+          </div> -->
         </div>
 
         
