@@ -21,7 +21,7 @@
       </div>
     </div>
     </div>
-    <router-link :to="{name: 'Sign-up'}" ><button class="btn-blue my-20 mx-auto block"><i class="fal fa-thumbs-up"></i> Sign me up</button></router-link>    
+    <router-link :to="{name: 'Sign-up'}" ><button class="btn-blue my-20 mx-auto block"><i class="fal fa-thumbs-up"></i> Join Us Today!</button></router-link>    
     </div>
 
       <not-available v-else></not-available>
@@ -63,17 +63,17 @@ data() {
         ],
         icon: 'home-heart'
       },
-      {
-        heading: 'Agility course.',
-        desc: 'Build your dogs confidence with steps, ramps, obstacles and more! Everything built to run through, jump over, and climb with new friends!',
-        img: [
-          'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility.jpg',
-           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility2.jpg',
-          'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,h_300/c_crop,h_300,w_300,x_129/v1632110873/gddc/photos/September_21/18.jpg',
-           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility4.jpg'
-        ],
-        icon: 'stopwatch'
-      },
+      // {
+      //   heading: 'Agility course.',
+      //   desc: 'Build your dogs confidence with steps, ramps, obstacles and more! Everything built to run through, jump over, and climb with new friends!',
+      //   img: [
+      //     'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility.jpg',
+      //      'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility2.jpg',
+      //     'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,h_300/c_crop,h_300,w_300,x_129/v1632110873/gddc/photos/September_21/18.jpg',
+      //      'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118677/gddc/areas/agility4.jpg'
+      //   ],
+      //   icon: 'stopwatch'
+      // },
       {
         heading: 'Toys and Balls',
         desc: 'It\'s like doggy heaven here with all the balls and toys a pup can handle. Ball pits, chew toys and friends to play with - there\'s never a dull day at GDDC.',
@@ -87,7 +87,7 @@ data() {
       },
       {
         heading: 'Grass and Sand',
-        desc: 'Dogs love to get some sunshine and exercise in our large grass areas, and sandpits both indoor and outdoor.',
+        desc: 'Dogs love to get some sunshine and exercise in our large grass and sand areas.',
         img: [
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616128729/gddc/areas/grass5.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1628571981/gddc/photos/2021_August/7.jpg',    

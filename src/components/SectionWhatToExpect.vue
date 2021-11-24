@@ -29,10 +29,7 @@
       <h2 class="font-bold text-xl mb-3">During Daycare</h2>
       <ul class="list-inside list-none flex flex-col gap-3">
         <li>
-          <span class="font-bold">Socialisation -</span> Your dog will have a great chance to socialise, mingle and play with other dogs! We separate dogs based on their size and temperament and do our best to ensure dogs are with others that they will have the most extensive opportunity to socialise.
-        </li>
-        <li>
-          <span class="font-bold">Confidence -</span> During the day, your pup will have the chance to build their confidence on our agility course, and stay stimulated by enjoying different sensory experiences such as licking ice, playing in our sandpits, running on grass.
+          <span class="font-bold">Socialisation -</span> Your dog will have a great chance to socialise, mingle and play with new dogs and humans! We separate dogs based on their size and temperament and do our best to ensure dogs are with others that they will have the most extensive opportunity to socialise.
         </li>
         <li>
           <span class="font-bold">Exercise -</span> Daycare gives your dog the best opportunity to expend energy! At GDDC our guests have plenty of space to run around, play, and enjoy being a dog! If you live in an apartment, have a highly energetic pooch, or cannot give your pup adequate exercise then daycare is a terrific option for you and your dog.

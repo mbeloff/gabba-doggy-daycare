@@ -39,7 +39,7 @@
           {
             icon: "fa-custom exercise",
             heading: "Exercise",
-            desc: "Your pets get plenty of exercise during the day, with heaps of room to run around in sand and grass, over ramps and obstacles, ball pits and more."
+            desc: "Your pets get plenty of exercise during the day, with heaps of room to run around in sand and grass, pools, ball pits and more."
           },
         ]
       }
