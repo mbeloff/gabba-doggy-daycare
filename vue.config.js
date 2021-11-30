@@ -4,31 +4,31 @@ const SitemapPlugin = require("sitemap-webpack-plugin").default;
 // const routes = require('./src/router/index.js');
 const paths = [
   {
-    path: "/home/brisbane",
+    path: "/home",
     priority: 0.8
   },
+  // {
+  //   path: "/home/adelaide",
+  //   priority: 0.8
+  // },
   {
-    path: "/home/adelaide",
-    priority: 0.8
-  },
-  {
-    path: "/contact/brisbane",
+    path: "/contact",
     priority: 0.5
   },
+  // {
+  //   path: "/contact/adelaide",
+  //   priority: 0.5
+  // },
   {
-    path: "/contact/adelaide",
-    priority: 0.5
-  },
-  {
-    path: "/question/brisbane",
+    path: "/question",
     priority: 0.3
   },
+  // {
+  //   path: "/question/adelaide",
+  //   priority: 0.3
+  // },
   {
-    path: "/question/adelaide",
-    priority: 0.3
-  },
-  {
-    path: "/grooming/brisbane",
+    path: "/grooming",
     priority: 0.5
   },
   {
@@ -36,41 +36,41 @@ const paths = [
     priority: 0.4
   },
   {
-    path: "/sign-up/brisbane",
+    path: "/sign-up",
     priority: 0.7
   },
+  // {
+  //   path: "/sign-up/adelaide",
+  //   priority: 0.7
+  // },
   {
-    path: "/sign-up/adelaide",
-    priority: 0.7
-  },
-  {
-    path: "/explore/brisbane",
+    path: "/explore",
     priority: 0.6
   },
   {
-    path: "/feedback/brisbane",
+    path: "/feedback",
     priority: 0.4
   },
+  // {
+  //   path: "/feedback/adelaide",
+  //   priority: 0.4
+  // },
   {
-    path: "/feedback/adelaide",
-    priority: 0.4
-  },
-  {
-    path: "/daycare/brisbane",
+    path: "/daycare",
     priority: 0.7
   },
+  // {
+  //   path: "/daycare/adelaide",
+  //   priority: 0.7
+  // },
   {
-    path: "/daycare/adelaide",
-    priority: 0.7
-  },
-  {
-    path: "/jobs/brisbane",
+    path: "/jobs",
     priority: 0.2
   },
-  {
-    path: "/jobs/adelaide",
-    priority: 0.2
-  },
+  // {
+  //   path: "/jobs/adelaide",
+  //   priority: 0.2
+  // },
   {
     path: "/privacy",
     priority: 0.2

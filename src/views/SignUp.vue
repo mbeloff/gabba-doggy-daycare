@@ -16,12 +16,11 @@
               <div class="grid items-center justify-center min-h-6 min-w-6 rounded-md border border-blue-500 transition-colors" :class="{'bg-blue-500' : agree}"><i class="fas fa-check text-white"></i></div>
               <label class="ml-4 italic" for="agree" ref="agree">I acknowledge the above and assert that my dog has not bitten, or shown aggression to another animal or person</label>
             </div>            
-              <choose-location class="mt-10"></choose-location>
-              <transition name="grow">
+              <!-- <choose-location class="mt-10"></choose-location> -->
+              <!-- <transition name="grow">
                  <p class="text-pink-500 pt-5" v-if="getRegion() == 'adelaide'"><span class="font-bold">Please note:</span> 
                  our Adelaide facility is not yet in operation. New account sign-ups are temporarily disabled. <span class="italic">We thank you for your patience.</span></p>
-                 <!-- our Adelaide facility is not yet in operation. You're welcome to create an account and we'll inform you when we have an opening date. <span class="italic">We thank you for your patience.</span></p> -->
-              </transition>
+              </transition> -->
              
                 <div v-if="getRegion() == 'brisbane'" class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :class="{'btn-disabled': !agree}">Create an Account</router-link></div>
                 

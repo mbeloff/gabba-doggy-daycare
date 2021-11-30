@@ -25,20 +25,20 @@ const routes = [
     component: Home,
     redirect: "/home"
   },
-  {
-    path: '/adelaide',
-    props: true,
-    redirect: {
-      path:'/home/adelaide',
-      props: {region: 'adelaide'}}
+  // {
+  //   path: '/adelaide',
+  //   props: true,
+  //   redirect: {
+  //     path:'/home/adelaide',
+  //     props: {region: 'adelaide'}}
 
-  },
+  // },
   {
     path: '/brisbane',
     redirect: '/home/brisbane'
   },
   {
-    path: "/home/:region?",
+    path: "/home",
     name: "New Home",
     component: Home,
     props: true,  
@@ -53,30 +53,30 @@ const routes = [
     redirect: "/login"
   },
   {
-    path: "/contact/:region?",
+    path: "/contact",
     name: "Contact",
     component: Contact,
     props: true
   },
   {
-    path: "/register/:region?",
+    path: "/register",
     redirect: { name: 'Question'},
     props: true
   },
   {
-    path: "/question/:region?",
+    path: "/question",
     name: "Question",
     component: Home,
     props: true
   },
   {
-    path: "/training/:region?",
+    path: "/training",
     name: "Training",
     component: Training,
     props: true
   },
   {
-    path: "/explore/:region?",
+    path: "/explore",
     name: "Explore",
     component: Explore,
     props: true
@@ -87,37 +87,37 @@ const routes = [
     component: Vax
   },
   {
-    path: "/sign-up/:region?",
+    path: "/sign-up",
     name: "Sign-up",
     component: SignUp,
     props: true
   },
   {
-    path: "/daycare/:region?",
+    path: "/daycare",
     name: "Daycare",
     component: Daycare,
     props: true
   },
   {
-    path: "/grooming/:region?",
+    path: "/grooming",
     name: "Grooming",
     component: Grooming,
     props: true,
   },
   {
-    path: "/jobs/:region?",
+    path: "/jobs",
     name: "Jobs",
     component: Jobs,
     props: true
   },
   {
-    path: "/feedback/:region?",
+    path: "/feedback",
     name: "Feedback",
     component: Feedback,
     props: true
   },
   {
-    path: "/newowner/:region?",
+    path: "/newowner",
     name: "NewOwner",
     component: NewOwner,
     props: true,

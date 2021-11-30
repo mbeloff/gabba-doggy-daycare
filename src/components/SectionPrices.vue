@@ -159,68 +159,68 @@
               },
             }
           },
-          adelaide: {
-            daycare: {
-              HalfDay: {
-                name: 'Half Day',
-                soon: " - up to 5 hours",
-                price: "$40",
-              },
-              FullDay: {
-                name: 'Full Day',
-                soon: " - over 5 hours",
-                price: "$50",
-              },
-              HalfDayPack: {
-                name: "Half Day 10-pack",
-                soon: " - valid for 3 months",
-                price: "$300",
-              },
-              FullDayPack: {
-                name: "Full Day 10-pack",
-                soon: " - valid for 3 months",
-                price: "$400",
-              },
-              // YearlyPack: {
-              //   name: "Unlimited Daycare",
-              //   soon: " - valid for 12 months",
-              //   price: "$5000",
-              // },
-            },
-            directdebit: {
-               OneDay: {
-                name: "One Day a Week",
-                price: "$48",
-              },
-              TwoDays: {
-                name: "Two Days a Week",
-                price: "$92 ($46/day)",
-              },
-              ThreeDays: {
-                name: "Three Days a Week",
-                price: "$132 ($44/day)",
-              },
-              FourDays: {
-                name: "Four Days a Week",
-                original: "$168 ($42/day)",
-                price: "$140 ($35/day)",
-              },
-              FullDayWeek: {
-                name: "Five Days a Week",
-                original: "$200 ($40/day)",
-                price: "$150 ($30/day)",
-                highlight: true,
-              },
-            },
-            extras: {
-              Lunch: {
-                name: "Lunch (Owner Provided)",
-                // desc: "",
-                price: "$5",
-                order: '2'
-              },
-            }
-          },
+        //   adelaide: {
+        //     daycare: {
+        //       HalfDay: {
+        //         name: 'Half Day',
+        //         soon: " - up to 5 hours",
+        //         price: "$40",
+        //       },
+        //       FullDay: {
+        //         name: 'Full Day',
+        //         soon: " - over 5 hours",
+        //         price: "$50",
+        //       },
+        //       HalfDayPack: {
+        //         name: "Half Day 10-pack",
+        //         soon: " - valid for 3 months",
+        //         price: "$300",
+        //       },
+        //       FullDayPack: {
+        //         name: "Full Day 10-pack",
+        //         soon: " - valid for 3 months",
+        //         price: "$400",
+        //       },
+        //       // YearlyPack: {
+        //       //   name: "Unlimited Daycare",
+        //       //   soon: " - valid for 12 months",
+        //       //   price: "$5000",
+        //       // },
+        //     },
+        //     directdebit: {
+        //        OneDay: {
+        //         name: "One Day a Week",
+        //         price: "$48",
+        //       },
+        //       TwoDays: {
+        //         name: "Two Days a Week",
+        //         price: "$92 ($46/day)",
+        //       },
+        //       ThreeDays: {
+        //         name: "Three Days a Week",
+        //         price: "$132 ($44/day)",
+        //       },
+        //       FourDays: {
+        //         name: "Four Days a Week",
+        //         original: "$168 ($42/day)",
+        //         price: "$140 ($35/day)",
+        //       },
+        //       FullDayWeek: {
+        //         name: "Five Days a Week",
+        //         original: "$200 ($40/day)",
+        //         price: "$150 ($30/day)",
+        //         highlight: true,
+        //       },
+        //     },
+        //     extras: {
+        //       Lunch: {
+        //         name: "Lunch (Owner Provided)",
+        //         // desc: "",
+        //         price: "$5",
+        //         order: '2'
+        //       },
+        //     }
+        //   },
         },
 
       }

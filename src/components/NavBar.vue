@@ -90,22 +90,22 @@
               order: "5"
             }
           ],
-          adelaide: [{
-              label: "Home",
-              link: "New Home",
-              order: "1"
-            },
-            {
-              label: "Daycare",
-              link: "Daycare",
-              order: "2",
-            },
-            {
-              label: "Contact",
-              link: "Contact",
-              order: "4"
-            }
-          ]
+          // adelaide: [{
+          //     label: "Home",
+          //     link: "New Home",
+          //     order: "1"
+          //   },
+          //   {
+          //     label: "Daycare",
+          //     link: "Daycare",
+          //     order: "2",
+          //   },
+          //   {
+          //     label: "Contact",
+          //     link: "Contact",
+          //     order: "4"
+          //   }
+          // ]
         },
       }
     },

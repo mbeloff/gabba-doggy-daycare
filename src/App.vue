@@ -3,10 +3,10 @@
     <div class="fixed w-full nav-wrapper" style="z-index: 100">
       <!--// CITY SELECT // -->
 
-      <div class="bg-blue-500 lg:px-10 font-bold text-blue-100 z-10 pt-1 px-1">
+      <!-- <div class="bg-blue-500 lg:px-10 font-bold text-blue-100 z-10 pt-1 px-1">
         <button title="GDDC Brisbane" :class="{'tab-active text-pink-500' : isRegion('brisbane')}" class="tab" @click="regionSelect('brisbane')">Brisbane</button>
         <button title="GDDC Adelaide" :class="{'tab-active text-pink-500' : isRegion('adelaide')}" class="tab" @click="regionSelect('adelaide')">Adelaide</button>
-      </div>
+      </div> -->
 
       <nav-bar></nav-bar>
     </div>
@@ -70,7 +70,7 @@
           if (this.$route.path == '/login') {
             this.$modal.show('login-modal');
           }
-          if (this.$route.params.region == 'adelaide' || this.$route.params.region == 'brisbane') {
+          if (this.$route.params.region == 'brisbane') {
             this.$store.dispatch('setRegion', this.$route.params.region)
           } else if (this.$route.params.region) {
             this.$router.push({
@@ -109,23 +109,23 @@
       // if (this.$route.name == 'NewOwner') {
       //   return
       // }
-      let param = this.$route.params.region
-      if (param == this.getRegion()) {
-        return
-      } else if (param == 'adelaide' || param == 'brisbane') {
-        this.$store.dispatch('setRegion', param)
-      } else if (param) {
-        this.$router.push({
-          name: 'NotFound',
-        })
-      } else if (param == undefined) {
-        this.$router.push({
-          name: this.$route.name,
-          params: {
-    region: this.$store.state.region
-          }
-        })
-      }
+    //   let param = this.$route.params.region
+    //   if (param == this.getRegion()) {
+    //     return
+    //   } else if (param == 'adelaide' || param == 'brisbane') {
+    //     this.$store.dispatch('setRegion', param)
+    //   } else if (param) {
+    //     this.$router.push({
+    //       name: 'NotFound',
+    //     })
+    //   } else if (param == undefined) {
+    //     this.$router.push({
+    //       name: this.$route.name,
+    //       params: {
+    // region: this.$store.state.region
+    //       }
+    //     })
+    //   }
     },
     name: 'App',
     components: {
@@ -151,14 +151,14 @@
 </script>
 <style lang="postcss">
   .app-content {
-    margin-top: 133px;
+    margin-top: 95px;
 
     
   }
 
   @media only screen and (min-width: 1074px) {
     .app-content {
-      margin-top: 135px
+      margin-top: 93px
     }
   }
 
