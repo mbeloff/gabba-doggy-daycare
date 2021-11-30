@@ -12,12 +12,12 @@
         <span class="text-sm tracking-tighter inline-block my-2">This offer is valid for desexed dogs over 6 months only</span>
        <router-link :to="{name: 'Sign-up'}" class="btn-blue text-xl w-full inline-block text-center">Sign up!</router-link>
       </div>
-      <div class="bg-yellow-300 p-2 lg:-mx-6 lg:px-6" @click="show = !show">
+      <div class="bg-yellow-300 p-2 lg:-mx-6 lg:px-6 cursor-pointer" @click="show = !show">
       <p class="text-yellow-900 text-center"><span class="text-base"><i class="fal fa-smile-plus"></i></span> refer a friend for 2 more free days*</p>
       <transition name="open">
       <div class="more-info" v-if="show">
         <p class="text-center text-yellow-900 text-xs px-2">
-          Free days added after your friend's first visit. To be eligible for free days, your dog must be over 6 months old and desexed.
+          Let us know when you refer a friend and we'll give you 2 free days after their first visit. To be eligible for free days, your dog must be over 6 months old and desexed.
         </p>
       </div>
     </transition>
