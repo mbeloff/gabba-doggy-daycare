@@ -12,7 +12,7 @@
     </div>
     
     <div class="pt-19 app-content" style="min-height: 50vh">
-      <div class="shadow-lg fixed z-50 bg-white border-blue-500 border-t w-full text-center text-sm py-1">🎅 We will be closed from the 24<sup>th</sup> of December to the 4<sup>th</sup> of January 🎅</div>
+      <div class="shadow-lg fixed z-50 bg-gray-100 border-gray-200 border-t w-full text-center text-sm py-1">🎅 We will be closed from the 24<sup>th</sup> of December to the 4<sup>th</sup> of January 🎅</div>
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
