@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="fixed w-full nav-wrapper" style="z-index: 100">
+    <div class="fixed w-full nav-wrapper z-50">
       <!--// CITY SELECT // -->
 
       <!-- <div class="bg-blue-500 lg:px-10 font-bold text-blue-100 z-10 pt-1 px-1">
@@ -12,6 +12,7 @@
     </div>
     
     <div class="pt-19 app-content" style="min-height: 50vh">
+      <div class="shadow-lg fixed z-50 bg-white border-blue-500 border-t w-full text-center text-sm py-1">🎅 We will be closed from the 24<sup>th</sup> of December to the 4<sup>th</sup> of January 🎅</div>
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
