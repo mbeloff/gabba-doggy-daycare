@@ -31,7 +31,7 @@
           <div class="py-5 section">
             <h2 class="text-2xl font-bold text-blue-900">Typical Puppy Vaccination Schedule*</h2>
           <p class="mb-3 font-bold text-blue-500">*may vary depending on vaccine brands used</p>
-          <p>In order to be fully protected it's important that puppies complete their full course of vaccinations. We are unable to accept puppies that have not had their final puppy vaccination - the timing of this can vary but is usually at about 14-16 weeks old.</p>
+          <p>In order to be fully protected it's important that puppies complete their full course of vaccinations. We are unable to accept puppies until at least 7 days have past since receiving their final puppy vaccination - the timing of this can vary but is usually at about 14-16 weeks old.</p>
           <table class="w-full pl-2 my-5">
             <tbody class="space-y-5 text-sm">
               <tr class="bg-gray-100">

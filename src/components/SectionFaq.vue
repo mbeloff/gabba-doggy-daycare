@@ -82,7 +82,7 @@ export default {
           active: false,
           title: 'I have a new puppy, when can I bring them to day care?',
           details: `
-            <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final vaccination typically occurring at 14-16 weeks, but please keep in mind that vaccinations may take 1-2 weeks before becoming fully effective. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
+            <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final vaccination typically occurring at 14-16 weeks. Please keep in mind that we cannot take puppies until 7 days have passed since their final vaccination. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
           `
         },
         {
