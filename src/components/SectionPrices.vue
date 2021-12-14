@@ -56,7 +56,7 @@
         All packages are available to purchase online or in-store but must be purchased on or before the day of your appointment. If no package has been purchased by this time, the full casual rate will apply. To purchase online, simply <open-login class="link-pink">log in</open-login> to your account and select <em>Purchase a Package</em>.
       </p>
       <p>
-        Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. Unused days may not be refunded or carried over to following weeks - please contact us as early as possible if you're unable to come to daycare and we may be able to extend your package.
+        Weekly packs are valid for 7 days from the date of purchase, 10-day packages are valid for 3 months. Unused days may not be refunded - please contact us if you're unable to use your package and we may extend it for you.
       </p>
       <p>
         If you would like to cancel, pause, or adjust your automatic weekly payments to a different package, we're happy to accommodate. Just let us know by Friday so we can adjust this before your next billing day (usually Sunday) <i class="fal fa-smile"></i> 
@@ -119,10 +119,6 @@
             ],
             directdebit: [
               {
-                name: "One Day a Week",
-                price: "$50",
-              },
-              {
                 name: "Two Days a Week",
                 price: "$92 ($46/day)",
               },
@@ -132,12 +128,12 @@
               },
               {
                 name: "Four Days a Week",
-                original: "$168 ($42/day)",
+                original: "$160 ($40/day)",
                 price: "$140 ($35/day)",
               },
               {
                 name: "Five Days a Week",
-                original: "$200 ($40/day)",
+                original: "$175 ($35/day)",
                 price: "$150 ($30/day)",
                 highlight: true,
               },
@@ -159,70 +155,7 @@
               },
             }
           },
-        //   adelaide: {
-        //     daycare: {
-        //       HalfDay: {
-        //         name: 'Half Day',
-        //         soon: " - up to 5 hours",
-        //         price: "$40",
-        //       },
-        //       FullDay: {
-        //         name: 'Full Day',
-        //         soon: " - over 5 hours",
-        //         price: "$50",
-        //       },
-        //       HalfDayPack: {
-        //         name: "Half Day 10-pack",
-        //         soon: " - valid for 3 months",
-        //         price: "$300",
-        //       },
-        //       FullDayPack: {
-        //         name: "Full Day 10-pack",
-        //         soon: " - valid for 3 months",
-        //         price: "$400",
-        //       },
-        //       // YearlyPack: {
-        //       //   name: "Unlimited Daycare",
-        //       //   soon: " - valid for 12 months",
-        //       //   price: "$5000",
-        //       // },
-        //     },
-        //     directdebit: {
-        //        OneDay: {
-        //         name: "One Day a Week",
-        //         price: "$48",
-        //       },
-        //       TwoDays: {
-        //         name: "Two Days a Week",
-        //         price: "$92 ($46/day)",
-        //       },
-        //       ThreeDays: {
-        //         name: "Three Days a Week",
-        //         price: "$132 ($44/day)",
-        //       },
-        //       FourDays: {
-        //         name: "Four Days a Week",
-        //         original: "$168 ($42/day)",
-        //         price: "$140 ($35/day)",
-        //       },
-        //       FullDayWeek: {
-        //         name: "Five Days a Week",
-        //         original: "$200 ($40/day)",
-        //         price: "$150 ($30/day)",
-        //         highlight: true,
-        //       },
-        //     },
-        //     extras: {
-        //       Lunch: {
-        //         name: "Lunch (Owner Provided)",
-        //         // desc: "",
-        //         price: "$5",
-        //         order: '2'
-        //       },
-        //     }
-        //   },
         },
-
       }
     }
   }
