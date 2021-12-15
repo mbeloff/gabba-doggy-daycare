@@ -16,9 +16,7 @@
   export default {
     components: {
       Review
-    }
-
-    ,
+    },
     data() {
       return {
         reviews: [{
@@ -40,7 +38,8 @@
             icon: 'fa-google'
           },
           {
-            name: 'Kaitlyn F',
+            name: 'Ellen R',
+            review: "My dog Hamish has been coming to daycare since it opened and he’s always had such a great time. With lots of grassy space, play areas and fur friends, he never wants to leave when it’s time to go home! The staff are really lovely and easy to deal with and I always appreciate the updates they post on Instagram throughout the day.",
             stars: 5,
             icon: 'fa-google'
           },
@@ -51,7 +50,8 @@
             icon: 'fa-google'
           },
           {
-            name: 'David D',
+            name: 'Vanessa M',
+            review: "We take our boy Dudley to Gabba Doggie Day Care about once a week and have done so for around 9 months now. He absolutely loves it! He knows when he is going and cries and carries on all the way in the car until he gets there. Then, it's straight up to the gate and he cannot wait to get inside and play. The staff are always friendly and nice to deal with and seem to genuinely love dogs. We particularly like that they have a huge outdoor grassed area now so that the dogs don't spend all day indoors. He comes home utterly exhausted and is asleep in the car before we get out of the driveway some afternoons.",
             stars: 5,
             icon: 'fa-google'
           },
