@@ -158,7 +158,7 @@
 
 <style lang="scss">
   .photo1 {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_700/v1635388818/gddc/photos/10_21/18.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_700/v1639627255/gddc/photos/12_21/29.jpg);
     background-position: bottom
   }
 
