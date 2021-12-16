@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="bg-gray-100 grid">
-      <button id="get-images" title="show more photos" class="text-center justify-self-center link-pink py-1 m-1" @click="slideList()"><i class="fal fa-redo-alt mr-2"></i>show me more dogs</button>
+      <button id="get-images" title="show more photos" class="text-center justify-self-center link-pink py-1 m-1" @click="slideList()"><i class="fal fa-redo-alt mr-2"></i>show me more GDDC superstars</button>
     </div>
   </div>
 </template>
@@ -181,7 +181,10 @@
          "/photos/12_21/22.jpg",              
          "/photos/12_21/23.jpg",              
          "/photos/12_21/24.jpg",              
-         "/photos/12_21/25.jpg",          
+         "/photos/12_21/25.jpg",   
+         "/photos/12_21/26.jpg",   
+         "/photos/12_21/27.jpg",   
+         "/photos/12_21/30.jpg"       
         ],
         list: [],
       };
