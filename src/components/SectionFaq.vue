@@ -57,7 +57,14 @@ export default {
           active: false,
           title: 'Help. When I log in it says my vaccinations need updating',
           details: `
-            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. We usually do this as quickly as possible but please be patient if you're uploading outside of office hours, and let us know if you've uploaded and are still unable to make a booking.</p>
+            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. We try to do this as quickly as possible but please be patient if you're uploading on the weekend, or outside of office hours. Feel free to email or call us if you've uploaded and are still unable to make a booking.</p>
+           `
+        },
+        {
+          active: false,
+          title: 'Is any food provided at daycare?',
+          details: `
+            <p>Due to varying dietary preferences, restrictions and/or allergies, GDDC does not provide any food for our guests. If you'd like your dog to have lunch during the day, please provide their usual food, in a sealed and labelled bag or container. We require a $5 feeding fee for this, which you can pre-pay online via a package, or pay in-store at drop off.</p>
            `
         },
         {
@@ -72,8 +79,8 @@ export default {
           active: false,
           title: 'How do I pay for Daycare?',
           details: `
-            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that everyone pre-pay online by logging in and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or discounted multi-day packages. If you've forgotten to pay online, we accept credit card payments in-store, or you can login and click 'Make a Payment' to fix up any outstanding balances online.</p>
-            <p class="mb-2">If you would like to attend daycare regularly, shoot us an email to set up easy recurring weekly payments for discounted rates on day care.
+            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that all daycare is paid online by logging in and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or discounted multi-day packages. If you've forgotten to pay online, we accept credit card payments in-store, or you can log in and click 'Make a Payment' to fix up any outstanding balances online.</p>
+            <p class="mb-2">If you would like to attend daycare regularly without needing to worry about buying packages, shoot us an email to set up easy recurring weekly payments.
             </p>
             <p>A list of our prices and payment option are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
           `
@@ -82,14 +89,14 @@ export default {
           active: false,
           title: 'I have a new puppy, when can I bring them to day care?',
           details: `
-            <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final vaccination typically occurring at 14-16 weeks. Please keep in mind that we cannot take puppies until 7 days have passed since their final vaccination. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
+            <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final vaccination typically occurring at 14-16 weeks. Please keep in mind that we cannot take puppies until at least 7 days have passed since their final vaccination. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
           `
         },
         {
           active: false,
-          title: 'What happens if my dog is in heat?',
+          title: 'Can my dog come to daycare if she is in heat?',
           details: `
-            <p>Please refrain from bringing your dog to daycare if she is in heat. It's best to keep your dog home during this time, as the arousal of nearby male dogs can increase the risk of aggression. If your dog comes into heat while at daycare, you may be asked to arrange immediate pickup.</p>
+            <p>No. Please refrain from bringing your dog to daycare if she is in heat. If your dog comes into heat while at daycare, you may be asked to arrange immediate pickup.</p>
           `
         },
         {
