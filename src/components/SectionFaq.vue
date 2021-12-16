@@ -42,7 +42,7 @@ export default {
   },
   data() {
     return {
-      groupId: null,
+      groupId: 'main',
       selectedCategory: this.content,
       set1: [
         {
@@ -120,7 +120,7 @@ export default {
     }
   },
   mounted() {
-    this.groupId = this.$el.id
+    // this.groupId = this.$el.id
   },
 }
 </script>
