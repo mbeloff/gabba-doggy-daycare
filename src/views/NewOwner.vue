@@ -23,11 +23,9 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         <span class="form-heading">Account</span>
         <div class="form-group">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-
             <div class="input-group grid col-span-full">
               <label class="new-label" for="newusername">username</label>
-              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" ref="username" @input="checkMissing('username')" v-model="form.username" type="text" name="username" id="newusername" class="new-input" :class="{'input-invalid' : formMissing.includes('username') && form.username.length == 0}">
-              
+              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" ref="username" @input="checkMissing('username')" v-model="form.username" type="text" name="username" id="newusername" class="new-input" :class="{'input-invalid' : formMissing.includes('username') && form.username.length == 0}">              
             </div>
             <div class="input-group grid">
               <label class="new-label" for="newpassword">password</label>
@@ -126,7 +124,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           
         </div>
         <div class="col-span-full grid grid-cols-2 gap-2 p-2">
-          <button class="btn-blue col-start-2" @click.prevent="validateForm">Submit and Login</button>
+          <button :disabled="submitting == true" :class="{'btn-disabled' : submitting}" class="btn-blue col-start-2" @click.prevent="validateForm">Submit and Login</button>
         </div>
 
       </form>
@@ -146,6 +144,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
   export default {
     data() {
       return {
+        submitting: false,
         gettingToken: true,
         tokenFailed: false,
         pw1: null,
@@ -278,6 +277,7 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         }
       },
       addOwner() {
+        this.submitting = true
         var myHeaders = new Headers();
         myHeaders.append("Authorization", "Bearer " + this.response.access_token);
 
@@ -332,6 +332,8 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
               });
               this.login()
             }
+          }).catch(err => {console.log(err)
+            this.submitting = false
           })
       }
     }
