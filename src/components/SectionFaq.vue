@@ -110,10 +110,10 @@ export default {
           active: false,
           title: 'Are there any specials or discounts?',
           details: `
-            <p class="mb-2">Absolutely. Apart from our 2 day free trial, we also offer discounted packages to save on day care:</p>
+            <p class="mb-2">Absolutely. We offer a free trial for new dogs who are over 6 months old and desexed. If you refer a friend, you'll also get a further 2 free days. And of course, we offer discounted packages to save on your regular day care:</p>
             <p class="mb-2">Save 20% with our 10-day packages, available to be purchased online through your GDDC account.</p>
-            <p class="mb-2">Save up to 40% by purchasing a weekly pack. We have options for 1 - 5 days per week. These can be purchase via your account, or as an automatic weekly payment.</p>
-            <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list and payment options.</p>
+            <p class="mb-2">Save up to 30% by purchasing a multi-day weekly pack. We have options for 2 - 5 days per week. These can be purchased via your account, or as an automatic weekly payment.</p>
+            <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list.</p>
           `
         }
       ]
