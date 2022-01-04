@@ -39,13 +39,13 @@
           },
           {
             name: 'Ellen R',
-            review: "My dog Hamish has been coming to daycare since it opened and he’s always had such a great time. With lots of grassy space, play areas and fur friends, he never wants to leave when it’s time to go home! The staff are really lovely and easy to deal with and I always appreciate the updates they post on Instagram throughout the day.",
+            review: 'y dog Hamish has been coming to daycare since it opened and he\'s always had such a great time. With lots of grassy space, play areas and fur friends, he never wants to leave when it\'s time to go home! The staff are really lovely and easy to deal with and I always appreciate the updates they post on Instagram throughout the day.',
             stars: 5,
             icon: 'fa-google'
           },
           {
             name: 'Elizabeth B',
-            review: 'Great daycare! It’s always daunting leaving your fur baby somewhere, but having the 3 days free really helps you get comfortable and make sure it’s the right fit!! It definitely is, our little man loves coming here and he starts getting so excited when we open the door. Best thing is you get updates throughout the day too 😊',
+            review: 'Great daycare! It\'s always daunting leaving your fur baby somewhere, but having the 3 days free really helps you get comfortable and make sure it\'s the right fit!! It definitely is, our little man loves coming here and he starts getting so excited when we open the door. Best thing is you get updates throughout the day too 😊',
             stars: 5,
             icon: 'fa-google'
           },
@@ -57,7 +57,7 @@
           },
           {
             name: 'Josephine P',
-            review: 'Love, love, love!! I am over the moon with the love and play our beautiful fur babies receive from the GDDC Owner, the Manager and the beautiful girls who take such great care with our precious cargo. I still can’t believe I found wonderful GDDC, a great day’s play with always something new to see here at 46 Deshon Street Woolloongabba. 💓💓 When my Pippa joined GDDC, I took advantage of an offer of a free trial and we haven’t looked back since. If you would like to make sure your fur baby is in capable and kind hands, take advantage of the current free trial offer. GDDC also have a Pet Taxi Service, one could not ask for anything more. 🌹🐶',
+            review: 'Love, love, love!! I am over the moon with the love and play our beautiful fur babies receive from the GDDC Owner, the Manager and the beautiful girls who take such great care with our precious cargo. I still can\'t believe I found wonderful GDDC, a great day\'s play with always something new to see here at 46 Deshon Street Woolloongabba. 💓💓 When my Pippa joined GDDC, I took advantage of an offer of a free trial and we haven\'t looked back since. If you would like to make sure your fur baby is in capable and kind hands, take advantage of the current free trial offer. GDDC also have a Pet Taxi Service, one could not ask for anything more. 🌹🐶',
             stars: 5,
             icon: 'fa-google'
           },
