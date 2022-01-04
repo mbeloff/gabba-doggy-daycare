@@ -9,12 +9,13 @@
       </div> -->
 
       <nav-bar></nav-bar>
-      <div class="shadow-lg fixed z-50 bg-gray-100 border-gray-200 border-t w-full text-center text-sm py-1 flex justify-center">
+      <!-- // * sub-nav message bar -->
+      <!-- <div class="shadow-lg fixed z-50 bg-gray-100 border-gray-200 border-t w-full text-center text-sm py-1 flex justify-center">
         <div class="grid items-center">🎅</div>
         <p>
         We will be closed from 24<sup>th</sup> of Dec and re-open on 4<sup>th</sup> of Jan</p>
         <div class="grid items-center">🎅</div>
-        </div>
+      </div> -->
         
     </div>
     
@@ -159,14 +160,15 @@
 </script>
 <style lang="postcss">
   .app-content {
-    margin-top: 125px;
+    /* add 29px for message */
+    margin-top: 96px;
 
     
   }
 
   @media only screen and (min-width: 1074px) {
     .app-content {
-      margin-top: 127px
+      margin-top: 103px
     }
   }
 
