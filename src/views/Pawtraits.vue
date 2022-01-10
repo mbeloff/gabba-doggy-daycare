@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tile">
+    <div class="tile min-h-screen">
       <div class="container grid grid-cols-1 gap-x-20 gap-y-10 px-2 py-20 mx-auto max-w-screen-lg">
         <div class="col y-5">
           <title-block>
@@ -8,7 +8,7 @@
             <template #big>Pet Portraits</template>
           </title-block>
           <p class="mb-4">
-            Coming in 2022 - Framed, original character sketches and <em>paw</em>traits by artist Maaret Webb. <br>
+            Coming soon for for GDDC customers - Take home an original character sketch or <em>paw</em>trait of your best friend by artist Maaret Webb. <br>
             Stay tuned for more details.
           </p>
         </div>

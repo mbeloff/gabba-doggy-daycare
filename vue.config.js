@@ -2,31 +2,22 @@
 //   .BundleAnalyzerPlugin;
 const SitemapPlugin = require("sitemap-webpack-plugin").default;
 // const routes = require('./src/router/index.js');
-const paths = [
-  {
+const paths = [{
     path: "/home",
     priority: 0.8
   },
-  // {
-  //   path: "/home/adelaide",
-  //   priority: 0.8
-  // },
   {
     path: "/contact",
     priority: 0.5
   },
-  // {
-  //   path: "/contact/adelaide",
-  //   priority: 0.5
-  // },
   {
     path: "/question",
     priority: 0.3
   },
-  // {
-  //   path: "/question/adelaide",
-  //   priority: 0.3
-  // },
+  {
+    path: "/faq",
+    priority: 0.4
+  },
   {
     path: "/grooming",
     priority: 0.5
@@ -39,10 +30,6 @@ const paths = [
     path: "/sign-up",
     priority: 0.7
   },
-  // {
-  //   path: "/sign-up/adelaide",
-  //   priority: 0.7
-  // },
   {
     path: "/explore",
     priority: 0.6
@@ -51,26 +38,14 @@ const paths = [
     path: "/feedback",
     priority: 0.4
   },
-  // {
-  //   path: "/feedback/adelaide",
-  //   priority: 0.4
-  // },
   {
     path: "/daycare",
     priority: 0.7
   },
-  // {
-  //   path: "/daycare/adelaide",
-  //   priority: 0.7
-  // },
   {
     path: "/jobs",
     priority: 0.2
   },
-  // {
-  //   path: "/jobs/adelaide",
-  //   priority: 0.2
-  // },
   {
     path: "/privacy",
     priority: 0.2
@@ -80,29 +55,26 @@ const paths = [
 module.exports = {
   configureWebpack: {
     module: {
-      rules: [
-        {
-          test: /\.(pdf)(\?.*)?$/,
-          use: [
-            {
-              loader: 'url-loader',
-              options: {
-                name: 'files/[name].[hash:8].[ext]'
-              }
-            }
-          ]
-        }
-      ]
+      rules: [{
+        test: /\.(pdf)(\?.*)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            name: 'files/[name].[hash:8].[ext]'
+          }
+        }]
+      }]
     },
     plugins: [
       new SitemapPlugin({
-        base: "https://www.gabbadoggydaycare.com", 
-        paths, 
+        base: "https://www.gabbadoggydaycare.com",
+        paths,
         options: {
-        lastmod: true,
-        changefreq: "monthly",
-        priority: 0.5
-      }}),
+          lastmod: true,
+          changefreq: "monthly",
+          priority: 0.5
+        }
+      }),
       // new BundleAnalyzerPlugin()
     ]
   },

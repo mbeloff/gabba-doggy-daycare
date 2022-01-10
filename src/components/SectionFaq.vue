@@ -1,8 +1,5 @@
 <template>
   <div class="mx-auto shadow rounded-lg bg-white border">
-    <h2 class="font-bold text-blue-800 text-2xl ml-3 my-4">
-      {{ faqhead }}
-    </h2>
     <dl class="accordion box" role="presentation">
       <Faqitem
         v-for="(item, i) in set1"
@@ -55,9 +52,16 @@ export default {
         },
         {
           active: false,
+          title: 'Which vaccinations are required by GDDC?',
+          details: `
+            <p>We require that all dogs are vaccinated against Distemper, Hepatitus, Parvovirus, Bordetella and Parainfluenza. For more information about vaccination policy, please check out our <a href="/vaccinations" class="link-pink">vaccination page.</a></p>
+           `
+        },
+        {
+          active: false,
           title: 'Help. When I log in it says my vaccinations need updating',
           details: `
-            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. We try to do this as quickly as possible but please be patient if you're uploading on the weekend, or outside of office hours. Feel free to email or call us if you've uploaded and are still unable to make a booking.</p>
+            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. These need to be checked by us manually - we thank you for your patience if uploading on the weekend, or outside of office hours. Feel free to <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email</a> or <a class="link-pink" href="tel:0423487302">call us</a> if you've uploaded and are still unable to make a booking.</p>
            `
         },
         {
@@ -80,7 +84,7 @@ export default {
           title: 'How do I pay for Daycare?',
           details: `
             <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that all daycare is paid online by logging in and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or discounted multi-day packages. If you've forgotten to pay online, we accept credit card payments in-store, or you can log in and click 'Make a Payment' to fix up any outstanding balances online.</p>
-            <p class="mb-2">If you would like to attend daycare regularly without needing to worry about buying packages, shoot us an email to set up easy recurring weekly payments.
+            <p class="mb-2">If you would like to attend daycare regularly without needing to worry about buying packages, shoot us an <a class="link-pink" href="mailto:woof@gabbadoggydaycare.com">email</a> to set up easy recurring weekly payments.
             </p>
             <p>A list of our prices and payment option are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
           `
@@ -89,7 +93,7 @@ export default {
           active: false,
           title: 'I have a new puppy, when can I bring them to day care?',
           details: `
-            <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final vaccination typically occurring at 14-16 weeks. Please keep in mind that we cannot take puppies until at least 7 days have passed since their final vaccination. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
+            <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final one typically occurring at 14-16 weeks. Please keep in mind that it can take another 7-14 days for vaccinations to become fully effective. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
           `
         },
         {
@@ -112,7 +116,7 @@ export default {
           details: `
             <p class="mb-2">Absolutely. We offer a free trial for new dogs who are over 6 months old and desexed. If you refer a friend, you'll also get a further 2 free days. And of course, we offer discounted packages to save on your regular day care:</p>
             <p class="mb-2">Save 20% with our 10-day packages, available to be purchased online through your GDDC account.</p>
-            <p class="mb-2">Save up to 30% by purchasing a multi-day weekly pack. We have options for 2 - 5 days per week. These can be purchased via your account, or as an automatic weekly payment.</p>
+            <p class="mb-2">Save up to 30% by purchasing a weekly pack. We have options for 2 - 5 days per week. These can be purchased via your account, or as an automatic weekly payment.</p>
             <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list.</p>
           `
         }
@@ -135,11 +139,11 @@ $browser-context: 16;
 .accordion {
   padding: 0;
 
-  div:not(:last-child) {
+  button:not(:last-child) {
     border-bottom: 1px solid rgba(10, 10, 10, 0.1);
   }
 
-  div:last-child .accordion-item-details {
+  button:last-child .accordion-item-details {
     border-radius: 5px;
   }
 
@@ -150,23 +154,6 @@ $browser-context: 16;
 
 .accordion-item-title-text {
   max-width: calc(100% - 40px);
-}
-
-.accordion-item-trigger {
-  padding: 0.75rem .5rem;
-}
-
-.accordion-item-details-inner
-{
-  padding: 2rem 1rem;
-}
-
-.accordion-item-title {
-  position: relative;
-
-  h4 {
-    margin-bottom: 0;
-  }
 }
 
 .accordion-item-trigger {

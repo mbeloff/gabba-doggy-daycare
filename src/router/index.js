@@ -14,6 +14,7 @@ const Explore = () => import("../views/Tour.vue")
 const Overnight = () => import("../views/Overnight.vue")
 const NewOwner = () => import("../views/NewOwner.vue")
 const Pawtraits = () => import("../views/Pawtraits.vue")
+const Faq = () => import("../views/Faq.vue")
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter);
@@ -57,6 +58,11 @@ const routes = [
     name: "Contact",
     component: Contact,
     props: true
+  },
+  {
+    path: "/faq",
+    name: "Faq",
+    component: Faq,
   },
   {
     path: "/register",

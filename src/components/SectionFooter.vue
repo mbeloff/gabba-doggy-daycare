@@ -26,6 +26,9 @@
             <li class="">
               <router-link :to="{ name: 'Contact', params: {region: getRegion()} }" class="focus:outline-white hover:text-white">Contact Us</router-link>
             </li>
+            <li class="">
+              <router-link :to="{ name: 'Faq' }" class="focus:outline-white hover:text-white">Help</router-link>
+            </li>
           </ul>
         </div>
         <div class="text-center sm:text-left">

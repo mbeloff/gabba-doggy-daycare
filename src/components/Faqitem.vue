@@ -5,9 +5,9 @@
     :class="{ 'is-active': item.active }"
   >
     <dt class="accordion-item-title">
-      <div role="button" @click="toggle" class="accordion-item-trigger pr-1">
+      <button tabindex="0" role="button" @click="toggle" class="accordion-item-trigger pr-1">
         <div class="flex items-center">
-          <h4 class="accordion-item-title-text font-bold py-1">
+          <h4 class="accordion-item-title-text font-bold py-2 px-2">
             {{ item.title }}
           </h4>
           <span class="fa-stack ml-auto">
@@ -17,7 +17,7 @@
             ></i>
           </span>
         </div>
-      </div>
+      </button>
     </dt>
     <transition
       name="accordion-item"
@@ -26,8 +26,8 @@
       @before-leave="startTransition"
       @after-leave="endTransition"
     >
-      <dd v-if="item.active" class="accordion-item-details text-sm">
-        <div v-html="item.details" class="accordion-item-details-inner"></div>
+      <dd v-if="item.active" class="accordion-item-details text-sm rounded-b-lg">
+        <div v-html="item.details" class="accordion-item-details-inner p-6"></div>
       </dd>
     </transition>
   </div>
@@ -60,4 +60,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+.accordion-item:first-of-type {
+  button {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+}
+
+</style>
