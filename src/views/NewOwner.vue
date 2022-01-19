@@ -25,15 +25,15 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
             <div class="input-group grid col-span-full">
               <label class="new-label" for="newusername">username</label>
-              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" ref="username" @input="checkMissing('username')" v-model="form.username" type="text" name="username" id="newusername" class="new-input" :class="{'input-invalid' : formMissing.includes('username') && form.username.length == 0}">              
+              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="username" ref="username" @input="checkMissing('username')" v-model="form.username" type="text" name="username" id="newusername" class="new-input" :class="{'input-invalid' : formMissing.includes('username') && form.username.length == 0}">              
             </div>
             <div class="input-group grid">
               <label class="new-label" for="newpassword">password</label>
-              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" ref="password" @input="checkMissing('password')" v-model="form.password" type="text" name="password" id="newpassword" class="new-input" @focus="pw1 = true" @blur="pw1 = false" :class="{'input-invalid' : formMissing.includes('password') && form.password.length == 0}">
+              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="new-password" ref="password" @input="checkMissing('password')" v-model="form.password" type="text" name="password" id="newpassword" class="new-input" @focus="pw1 = true" @blur="pw1 = false" :class="{'input-invalid' : formMissing.includes('password') && form.password.length == 0}">
             </div>
             <div class="input-group grid">
               <label class="new-label" for="newpassword2">re-type password</label>
-              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" ref="password2" @input="checkMissing('password2')" v-model="form.password2" type="text" name="password2" id="newpassword2" class="new-input" @focus="pw2 = true" @blur="pw2 = false" :class="{'input-invalid' : formMissing.includes('password2') && form.password2.length == 0}">
+              <input readonly onfocus="this.removeAttribute('readonly');" autocomplete="new-password" ref="password2" @input="checkMissing('password2')" v-model="form.password2" type="text" name="password2" id="newpassword2" class="new-input" @focus="pw2 = true" @blur="pw2 = false" :class="{'input-invalid' : formMissing.includes('password2') && form.password2.length == 0}">
             </div>
           </div>
         </div>
