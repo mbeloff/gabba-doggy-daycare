@@ -208,7 +208,9 @@
          "/photos/01_22/21.jpg",
          "/photos/01_22/22.jpg",
          "/photos/01_22/23.jpg",
-         "/photos/01_22/24.jpg" 
+         "/photos/01_22/24.jpg",
+         "/photos/01_22/25.jpg",
+         "/photos/01_22/26.jpg",
         ],
         list: [],
       };
