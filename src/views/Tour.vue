@@ -61,7 +61,7 @@ data() {
       },
       {
         heading: 'Toys and Balls',
-        desc: 'It\'s like doggy heaven here with all the balls and toys a pup can handle. Ball pits, chew toys and friends to play with - there\'s never a dull day at GDDC.',
+        desc: 'Chew toys, balls pits, rope, pools to cool off in; GDDC has everything your pup needs to have fun and stay engaged throughout the day.',
         img: [
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118678/gddc/areas/balls2.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1635388813/gddc/photos/10_21/12.jpg',
@@ -85,7 +85,7 @@ data() {
         heading: 'Room to Relax',
         desc: "Dedicated quiet areas for lunchtime naps, as well as comfy lounges, beds and other cozy corners to curl up in.",
         img: [
-          'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1/gddc/areas/chill3.jpg', 
+          'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1/gddc/photos/01_22/14.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1636592913/gddc/photos/11_21/12.jpg',
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/chill.jpg',
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_fit,w_300/v1616118680/gddc/areas/chill4.jpg',

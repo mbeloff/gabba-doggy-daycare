@@ -6,7 +6,7 @@
         <template #big><h1>Gabba Doggy Daycare</h1></template>
       </title-block>
       <div class="flex flex-wrap text-left justify-around">
-        <p class="px-5 mb-10 md:text-lg text-center">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. GDDC is a massive off-leash day care for dogs of all shapes and sizes. We have indoor and outdoor play areas, and our friendly daycare team provide all the care and attention your dogs need while you're at work.</p>
+        <p class="px-5 mb-10 md:text-lg text-center">Treat your dog to a fun day of play and socialising with new friends at Gabba Doggy Daycare. GDDC is a massive off-leash day care centre for dogs of all shapes and sizes. We have indoor and outdoor play areas, and our friendly daycare team provide all the care and attention your dogs need while you're at work.</p>
         <div v-for="(card, i) in cards" :key="i" class="flex-grow py-2 sm:px-2 md:p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container order-1" :class="{ 'md:order-1 order-last' : card.type}">
           <div class="h-full py-8 bg-white rounded-lg shadow-md card text-center">
             <span class="fa-stack fa-2x">
@@ -29,17 +29,17 @@
         cards: [{
             icon: "fa-custom play",
             heading: "Play",
-            desc: "Everyone plays differently. We have play areas with dogs matched by size and energy level, including a separate relaxed areas for puppies and old-timers :)"
+            desc: "Everyone plays differently. We have play areas with dogs matched by size and energy level, from high energy areas to chilled out zones for puppies and old-timers :)"
           },
           {
             icon: "fa-custom friends",
             heading: "Socialise",
-            desc: "Make new human and fur-friends in a safe and supervised environment. We love dogs, and we do our best to make sure everyone gets along at Gabba Doggy Daycare."
+            desc: "Make new human and fur-friends in a safe and supervised environment. We love dogs, and we do our best to make sure everyone gets along and has fun at Gabba Doggy Daycare."
           },
           {
             icon: "fa-custom exercise",
             heading: "Exercise",
-            desc: "Your pets get plenty of exercise during the day, with heaps of room to run around in sand and grass, pools, ball pits and more."
+            desc: "Give your pets a chance to burn that excess energy during the day, with heaps of room to run around in sand and grass, pools, ball pits and more."
           },
         ]
       }

@@ -83,7 +83,7 @@ export default {
           active: false,
           title: 'How do I pay for Daycare?',
           details: `
-            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that all daycare is paid online by logging in and clicking 'Purchase a Package'. Here, you can pay for individual half- or full-days or discounted multi-day packages. If you've forgotten to pay online, we accept credit card payments in-store, or you can log in and click 'Make a Payment' to fix up any outstanding balances online.</p>
+            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that all daycare is paid online by logging in and clicking 'Purchase a Package'. Here, you can pre-pay for individual half- or full-days or discounted multi-day packages. If you've forgotten to pay online, we accept credit card payments in-store, or you can log in and click 'Make a Payment' to fix up any outstanding balances online.</p>
             <p class="mb-2">If you would like to attend daycare regularly without needing to worry about buying packages, shoot us an <a class="link-pink" href="mailto:woof@gabbadoggydaycare.com">email</a> to set up easy recurring weekly payments.
             </p>
             <p>A list of our prices and payment option are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
