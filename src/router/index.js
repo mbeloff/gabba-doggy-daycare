@@ -75,12 +75,12 @@ const routes = [
     component: Home,
     props: true
   },
-  {
-    path: "/training",
-    name: "Training",
-    component: Training,
-    props: true
-  },
+  // {
+  //   path: "/training",
+  //   name: "Training",
+  //   component: Training,
+  //   props: true
+  // },
   {
     path: "/explore",
     name: "Explore",
@@ -128,11 +128,11 @@ const routes = [
     component: NewOwner,
     props: true,
   },
-  {
-    path: '/overnight',
-    name: 'Overnight',
-    component: Overnight
-  },
+  // {
+  //   path: '/overnight',
+  //   name: 'Overnight',
+  //   component: Overnight
+  // },
   {
     path: '/pawtraits',
     name: 'Pawtraits',
@@ -142,7 +142,7 @@ const routes = [
     path: '/pet-taxi',
     name: 'Taxi',
     component: Home
-  },
+  }, 
   {
     path: "/privacy",
     name: "Privacy",
