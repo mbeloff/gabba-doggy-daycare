@@ -39,7 +39,7 @@
       </transition>
     </div>
 
-    <div class="bg-white left-0 w-full items-center flex justify-between border-t px-2 py-2 lg:px-10" :class="{ 'pt-2' : phone }"><a class="font-bold tracking-wide text-md hover:text-pink-500" :href="`tel:` + removeSpaces(phone) "><i class="fad fa-mobile-alt mr-2 wiggle2"></i>
+    <div class="bg-white left-0 w-full items-center flex justify-between border-t px-2 py-2 lg:px-10" :class="{ 'pt-2' : phone }"><a class="font-bold tracking-wide text-md hover:text-pink-500" :href="'tel:'+ phone.replaceAll(' ', '')"><i class="fad fa-mobile-alt mr-2 wiggle2"></i>
     {{ phone }}
     </a>
     <span class="text-sm font-normal ml-2 mr-auto">6:30am - 6:30pm</span>

@@ -13,7 +13,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-10 border-gray-200">
   <div class="flex flex-col items-center gap-3">
     <icon-stack :icon="'phone-rotary'"></icon-stack>
-     <a class="btn-blue" :href="`tel:` + removeSpaces(contact.phone)">Call Us</a>
+     <a class="btn-blue" :href="'tel:' + contact.phone.replaceAll(' ','')">Call Us</a>
     <p class="text-center text-sm">You can give us a buzz between the hours of 6:30am and 6:30pm.</p>
   </div>
   <div class="flex flex-col items-center gap-3">

@@ -8,10 +8,8 @@ const Contact = () => import("../views/Contact.vue")
 const Vax = () => import("../views/Vax.vue")
 const Jobs = () => import("../views/Jobs.vue")
 const Grooming = () => import("../views/Grooming.vue")
-// const Training = () => import("../views/Training.vue")
 const Feedback = () => import("../views/Feedback.vue")
 const Explore = () => import("../views/Tour.vue")
-// const Overnight = () => import("../views/Overnight.vue")
 const NewOwner = () => import("../views/NewOwner.vue")
 const Pawtraits = () => import("../views/Pawtraits.vue")
 const Faq = () => import("../views/Faq.vue")
@@ -26,14 +24,6 @@ const routes = [
     component: Home,
     redirect: "/home"
   },
-  // {
-  //   path: '/adelaide',
-  //   props: true,
-  //   redirect: {
-  //     path:'/home/adelaide',
-  //     props: {region: 'adelaide'}}
-
-  // },
   {
     path: '/brisbane',
     redirect: '/home/brisbane'
@@ -75,12 +65,6 @@ const routes = [
     component: Home,
     props: true
   },
-  // {
-  //   path: "/training",
-  //   name: "Training",
-  //   component: Training,
-  //   props: true
-  // },
   {
     path: "/explore",
     name: "Explore",
@@ -128,11 +112,6 @@ const routes = [
     component: NewOwner,
     props: true,
   },
-  // {
-  //   path: '/overnight',
-  //   name: 'Overnight',
-  //   component: Overnight
-  // },
   {
     path: '/pawtraits',
     name: 'Pawtraits',
