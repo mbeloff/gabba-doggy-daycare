@@ -46,7 +46,6 @@
                   <social-icon site="tiktok"></social-icon>
                 </div>
               </div>
-              <p v-if="getRegion() == 'brisbane'" class="my-5 italic">Our preferred vet: <a class="link-pink" target="_blank" href="https://www.highgatehillvet.com.au/">Highgate Hill Vet Surgery</a></p>
             </li>
           </ul>
 
