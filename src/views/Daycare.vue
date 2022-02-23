@@ -53,7 +53,9 @@
 <style lang="scss">
   .grass-boys {
     background-position: 50% 30%;
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1636592913/gddc/photos/11_21/7.jpg);
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1/gddc/photos/01_22/25.jpg);
+
+    
 
     @media only screen and (max-width: 767px) {
       background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/photos/11_21/7.jpg);

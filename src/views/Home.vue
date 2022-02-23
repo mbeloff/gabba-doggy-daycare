@@ -158,20 +158,11 @@
 
 <style lang="scss">
   .photo1 {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_700/v1639627255/gddc/photos/12_21/29.jpg);
-    background-position: bottom
-  }
+    background-position: 50% 30%;
+    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1/gddc/photos/12_21/27.jpg);
 
-  @media (min-width: 640px) {
-    .gallery { min-height: 850px }
+    @media only screen and (max-width: 767px) {
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/photos/12_21/27.jpg);
+    }
   }
-
-  @media (min-width: 1024px) {
-    .gallery { min-height: 340px }
-  }
-
-  @media (min-width: 1280px) {
-    .gallery { min-height: 340px }
-  }
-  
 </style>

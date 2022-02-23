@@ -1,10 +1,10 @@
 <template>
   <div class='h-full'>
     <div v-if="this.regionAreas">
-      <div class="py-24 mx-auto bg-tour bg-center bg-cover">
+      <div class="py-8 mx-auto">
       <title-block class="text-center px-2">
         <template #small>welcome</template>
-        <template #big> <span class="text-white">Check out our place</span></template>
+        <template #big> <span>Check out our place</span></template>
       </title-block>
     </div>
     <div :class="{'bg-gradient-to-tr from-gray-100 to-gray-200': (i+1) % 2 }" class="py-5 border-b" v-for="(area, i) in regionAreas" :key="i">
@@ -71,13 +71,13 @@ data() {
         icon: 'tennis-ball'
       },
       {
-        heading: 'Grass and Sand',
-        desc: 'Fresh air and sunshine are essential. Dogs love to enjoy some exercise in our large, outdoor grass and sand areas.',
+        heading: 'Grass, Sand and Pools',
+        desc: 'Fresh air and sunshine are essential. Dogs love to enjoy some exercise in our large, outdoor grass and sand areas, and have a splash when they want to cool off.',
         img: [
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/c_scale,w_300/c_crop,h_300,w_300/v1638764722/gddc/photos/12_21/16.jpg', 
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/c_scale,w_300/c_crop,h_300,w_300/v1636592913/gddc/photos/11_21/7.jpg',    
           'https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/c_scale,w_300/c_crop,h_300,w_300/v1638764725/gddc/photos/12_21/24.jpg', 
-          'https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/c_scale,w_300/c_crop,h_300,w_300/v1636592921/gddc/photos/11_21/20.jpg'
+          'https://res.cloudinary.com/dg5ybbkbh/image/upload/f_auto,q_auto/c_scale,w_300/c_crop,h_300,w_300/v1/gddc/promo/gddc_1.jpg'
         ],
         icon: 'sunglasses'
       },
@@ -112,10 +112,10 @@ data() {
     width: 640px
   }
 }
-.bg-tour {
-  background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,w_1024/v1636592911/gddc/photos/11_21/5.jpg);
-  @media only screen and (min-width: 1024px) {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_crop,h_290,ar_5/v1636592911/gddc/photos/11_21/5.jpg);
-  }
-}
+// .bg-tour {
+//   background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,w_1024/v1636592911/gddc/photos/11_21/5.jpg);
+//   @media only screen and (min-width: 1024px) {
+//     background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_crop,h_290,ar_5/v1636592911/gddc/photos/11_21/5.jpg);
+//   }
+// }
 </style>
