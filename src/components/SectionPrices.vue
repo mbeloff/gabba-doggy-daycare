@@ -21,7 +21,7 @@
           </div>
         </div>
         <p class="font-bold text-center mt-5">Weekly Packages</p>
-        <p class="text-sm pt-5">We've made it more affordable to come to day care more often. Weekly packs are available to purchase via your account or in-store.</p>
+        <p class="text-sm pt-5">We've made it more affordable to come to day care more often. Weekly packs are available to purchase via your account or in-store and must be used within 7 days.</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div v-for="(service, i) in prices[region].weekly" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
