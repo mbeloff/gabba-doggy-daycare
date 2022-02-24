@@ -58,7 +58,7 @@
     
 
     @media only screen and (max-width: 767px) {
-      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/photos/11_21/7.jpg);
+      background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/photos/01_22/25.jpg);
     }
   }
 </style>

@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
       <div class="md:order-2">
         <title-block class="text-center">
-          <template #small><span class="capitalize">{{ getRegion() }}</span> Daycare</template>
+          <template #small>Gabba Doggy Daycare</template>
           <template #big>Price List <br></template>
         </title-block>
         <p class="font-bold text-center mt-5">Casual Day Care</p>
@@ -23,7 +23,7 @@
         <p class="font-bold text-center mt-5">Weekly Packages</p>
         <p class="text-sm pt-5">We've made it more affordable to come to day care more often. Weekly packs are available to purchase via your account or in-store.</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
-          <div v-for="(service, i) in prices[region].directdebit" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
+          <div v-for="(service, i) in prices[region].weekly" :key="i" class="mb-1 bg-white" :class="{ 'font-bold' : service.highlight}">
             <div class="flex bg-gray-100 rounded-lg relative ring-pink-200" :class="{ 'ring-2 ' : service.highlight}">
               <div v-if="service.highlight">
                 <div class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"></div>
@@ -35,6 +35,7 @@
             </div>
           </div>
         </div>
+        <p class="text-sm mt-4">* 6-day, 8-day and 10-day weekly packs can be used if you have two dogs. These still expire after 7 days.</p>
         <div id="extras-pricing" v-if="prices[region].extras">
           <p class="font-bold text-center mt-5">Extras</p>
           <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm ">
@@ -117,7 +118,7 @@
               //   price: "$5000",
               // },
             ],
-            directdebit: [
+            weekly: [
               {
                 name: "Two Days a Week",
                 price: "$92 ($46/day)",
@@ -128,14 +129,24 @@
               },
               {
                 name: "Four Days a Week",
-                // original: "$160 ($40/day)",
                 price: "$160 ($40/day)",
               },
               {
                 name: "Five Days a Week",
-                // original: "$175 ($35/day)",
                 price: "$175 ($35/day)",
                 highlight: true,
+              },
+              {
+                name: "Six Days a Week *",
+                price: "$210 ($35/day)",
+              },
+              {
+                name: "Eight Days a Week *",
+                price: "$280 ($35/day)",
+              },
+              {
+                name: "Ten Days a Week *",
+                price: "$350 ($35/day)",
               },
             ],
             extras: {
