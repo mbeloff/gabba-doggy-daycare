@@ -10,11 +10,11 @@
 
       <nav-bar></nav-bar>
       <!-- // * sub-nav message bar -->
-      <!-- <div class="shadow-lg fixed z-50 bg-gray-100 border-gray-200 border-t w-full text-center text-sm py-1 flex justify-center">
-        <div class="grid items-center">🎅</div>
-        <p>asd</p>
-        <div class="grid items-center">🎅</div>
-      </div> -->
+      <div class="shadow-lg fixed z-50 bg-red-300 border-gray-200 border-t w-full text-center text-sm py-1 flex justify-center">
+        <div class="grid items-center"></div>
+        <p>We are Temporarily Closed due to floods. We will re-open as soon as possible.</p>
+        <div class="grid items-center"></div>
+      </div>
         
     </div>
     
