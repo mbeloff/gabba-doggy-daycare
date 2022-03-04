@@ -19,34 +19,33 @@
     </div>
     
     <div class="pt-19 app-content" style="min-height: 50vh">
-      
       <transition name="pagefade" mode="out-in">
         <router-view />
       </transition>
-      <Modal name="contact-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+      <v-modal name="contact-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
           <template #title>Got a Question?</template>
           <template #body>
             <form-inquiry></form-inquiry>
           </template>
         </modal-inner>
-      </Modal>
-      <Modal name="login-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+      </v-modal>
+      <v-modal name="login-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
           <template #title>Login</template>
           <template #body>
             <form-login></form-login>
           </template>
         </modal-inner>
-      </Modal>
-      <Modal name="taxi-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
+      </v-modal>
+      <v-modal name="taxi-modal" height="auto" :classes="['h-auto', 'bg-transparent']" :scrollable="true" :adaptive="true" :clickToClose="false" :focusTrap="true">
         <modal-inner>
           <template #title>Pet Taxi<span class="font-normal"> - Brisbane</span></template>
           <template #body>
             <section-taxi></section-taxi>
           </template>
         </modal-inner>
-      </Modal>
+      </v-modal>
     </div>
     <section-footer></section-footer>
   </div>

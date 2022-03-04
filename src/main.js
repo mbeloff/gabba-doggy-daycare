@@ -13,7 +13,7 @@ import * as VueGoogleMaps from "vue2-google-maps"
 
 Vue.use(VueJsonLD);
 Vue.use(vueMeta)
-Vue.use(VModal)
+Vue.use(VModal, { componentName: 'v-modal' })
 
 Vue.use(VueGoogleMaps, {
   load: {
