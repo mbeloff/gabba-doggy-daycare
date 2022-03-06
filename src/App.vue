@@ -10,11 +10,11 @@
 
       <nav-bar></nav-bar>
       <!-- // * sub-nav message bar -->
-      <div class="shadow-lg fixed z-50 bg-green-300 border-gray-200 border-t w-full text-center text-sm py-1 flex justify-center">
+      <!-- <div class="shadow-lg fixed z-50 bg-green-300 border-gray-200 border-t w-full text-center text-sm py-1 flex justify-center">
         <div class="grid items-center"></div>
         <p class="font-bold mx-1">4/3/22 - GDDC is back! See you all at daycare soon :)</p>
         <div class="grid items-center"></div>
-      </div>
+      </div> -->
         
     </div>
     
