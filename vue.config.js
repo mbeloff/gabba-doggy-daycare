@@ -53,6 +53,13 @@ const paths = [{
 ]
 
 module.exports = {
+  devServer: {
+    overlay: {
+      warnings: true,
+      errors: true
+    }
+  },
+  lintOnSave: true,
   configureWebpack: {
     module: {
       rules: [{

@@ -9,7 +9,7 @@ import vueGtm from 'vue-gtm'
 import vueMeta from 'vue-meta'
 import './assets/styles/index.css';
 import VueJsonLD from "vue-jsonld";
-import * as VueGoogleMaps from "vue2-google-maps"
+import * as VueGoogleMaps from  "vue2-google-maps"
 
 Vue.use(VueJsonLD);
 Vue.use(vueMeta)

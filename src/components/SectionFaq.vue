@@ -1,6 +1,9 @@
 <template>
   <div class="mx-auto shadow rounded-lg bg-white border">
-    <dl class="accordion box" role="presentation">
+    <dl
+      class="accordion box"
+      role="presentation"
+    >
       <Faqitem
         v-for="(item, i) in set1"
         :multiple="multiple"
@@ -18,19 +21,19 @@
 import Faqitem from '@/components/Faqitem.vue'
 export default {
   components: {
-    Faqitem
+    Faqitem,
   },
   props: {
     content: {
-      type: String
+      type: String,
     },
     multiple: {
       type: Boolean,
-      default: false
+      default: false,
     },
     faqhead: {
-      type: String
-    }
+      type: String,
+    },
   },
   methods: {
     changeContent(set) {
@@ -48,36 +51,35 @@ export default {
           details: `
             <p class="mb-2">Simply login to your account and click 'schedule daycare' and select your date and time. You can view 'My Calendar' from your account dashboard to see all your existing bookings.</p>
             
-           `
+           `,
         },
         {
           active: false,
           title: 'Which vaccinations are required by GDDC?',
           details: `
             <p>We require that all dogs are vaccinated against Distemper, Hepatitus, Parvovirus, Bordetella and Parainfluenza. For more information about vaccination policy, please check out our <a href="/vaccinations" class="link-pink">vaccination page.</a></p>
-           `
+           `,
         },
         {
           active: false,
           title: 'Help. When I log in it says my vaccinations need updating',
           details: `
             <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. These need to be checked by us manually - we thank you for your patience if uploading on the weekend, or outside of office hours. Feel free to <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email</a> or <a class="link-pink" href="tel:0423487302">call us</a> if you've uploaded and are still unable to make a booking.</p>
-           `
+           `,
         },
         {
           active: false,
           title: 'Is any food provided at daycare?',
           details: `
             <p>Due to varying dietary preferences, restrictions and/or allergies, GDDC does not provide any food for our guests. If you'd like your dog to have lunch during the day, please provide their usual food, in a sealed and labelled bag or container. We require a $5 feeding fee for this, which you can pre-pay online via a package, or pay in-store at drop off.</p>
-           `
+           `,
         },
         {
           active: false,
-          title:
-            'How do I use my free trial?',
+          title: 'How do I use my free trial?',
           details: `
             <p>As long as your dog is over 6 months, desexed and vaccinated, you will be eligible for the free trial. As soon as we've verified your vaccination certificate, a trial package will be added to your account. There's nothing more you have to do, just login and schedule day care.</p>       
-          `
+          `,
         },
         {
           active: false,
@@ -87,28 +89,28 @@ export default {
             <p class="mb-2">If you would like to attend daycare regularly without needing to worry about buying packages, shoot us an <a class="link-pink" href="mailto:woof@gabbadoggydaycare.com">email</a> to set up easy recurring weekly payments.
             </p>
             <p>A list of our prices and payment option are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
-          `
+          `,
         },
         {
           active: false,
           title: 'I have a new puppy, when can I bring them to day care?',
           details: `
             <p>We can only accept puppies that are fully vaccinated. Puppies generally get 3 lots of vaccinations, with the final one typically occurring at 14-16 weeks. Please keep in mind that it can take another 7-14 days for vaccinations to become fully effective. If in doubt about your puppy's vaccinations, we recommend speaking to your vet.</p>
-          `
+          `,
         },
         {
           active: false,
           title: 'Can my dog come to daycare if she is in heat?',
           details: `
             <p>No. Please refrain from bringing your dog to daycare if she is in heat. If your dog comes into heat while at daycare, you may be asked to arrange immediate pickup.</p>
-          `
+          `,
         },
         {
           active: false,
-          title: 'I can\'t find my dogs\' vaccination certificate(s)',
+          title: "I can't find my dogs' vaccination certificate(s)",
           details: `
             <p>Vaccination certificates can usually be obtained via email from your vet. Once received, you can upload it to your account, or simply forward it on to us via <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email.</a></p>
-          `
+          `,
         },
         {
           active: false,
@@ -118,9 +120,9 @@ export default {
             <p class="mb-2">Save 20% with our 10-day packages, available to be purchased online through your GDDC account.</p>
             <p class="mb-2">Save up to 30% by purchasing a weekly pack. We have options for 2 - 5 days per week. These can be purchased via your account, or as an automatic weekly payment.</p>
             <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list.</p>
-          `
-        }
-      ]
+          `,
+        },
+      ],
     }
   },
   mounted() {
@@ -177,11 +179,11 @@ $browser-context: 16;
 
 .is-active {
   .accordion-item-trigger {
-    background: #0EA5E9;
+    background: #0ea5e9;
     color: white;
   }
   .fa-stack-1x {
-    color: #0EA5E9;
+    color: #0ea5e9;
   }
 }
 
