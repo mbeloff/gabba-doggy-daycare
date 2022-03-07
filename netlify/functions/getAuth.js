@@ -1,33 +1,16 @@
 const fetch = require("node-fetch");
 
 
-exports.handler = async function (event) {
-        var Base64;
-        var user;
-        var pw;
-        
-        if(event.queryStringParameters.r == 'brisbane') {
-          Base64 = 'Basic ' + process.env.VUE_APP_PE_BASE_BRIS
-          user = process.env.VUE_APP_PE_U_BRIS
-          pw = process.env.VUE_APP_PE_P_BRIS
-        }
-
-        if(event.queryStringParameters.r == 'adelaide') {
-          Base64 = 'Basic ' + process.env.VUE_APP_PE_BASE_ADE
-          user = process.env.VUE_APP_PE_U_ADE
-          pw = process.env.VUE_APP_PE_P_ADE
-        }
-
-        // const myHeaders = new fetch.Headers();
-        //   myHeaders.append("Authorization", Base64);
-        //   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+exports.handler = async function () {       
+        let Base64 = 'Basic ' + process.env.VUE_APP_PE_BASE_BRIS
+        let user = process.env.VUE_APP_PE_U_BRIS
+        let pw = process.env.VUE_APP_PE_P_BRIS
 
         const urlencoded = new URLSearchParams();
                 urlencoded.append("grant_type", "password");
                 urlencoded.append("username", user);
                 urlencoded.append("password", pw);
                 urlencoded.append("scope", "owner_create company_read");
-                // console.log(urlencoded)
 
         var requestOptions = {
           method: 'POST',
