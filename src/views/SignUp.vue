@@ -15,13 +15,8 @@
               <div class="grid items-center justify-center min-h-6 min-w-6 rounded-md border border-blue-500 transition-colors" :class="{'bg-blue-500' : agree}"><i class="fas fa-check text-white"></i></div>
               <label tabindex="0" @keypress.space.prevent="agree = !agree" class="ml-4 italic" for="agree" ref="agree"><input type="checkbox" name="agree" v-model="agree" class="hidden" >I acknowledge the above and assert that my dog has not bitten, or shown aggression to another animal or person</label>
             </div>            
-              <!-- <choose-location class="mt-10"></choose-location> -->
-              <!-- <transition name="grow">
-                 <p class="text-pink-500 pt-5" v-if="getRegion() == 'adelaide'"><span class="font-bold">Please note:</span> 
-                 our Adelaide facility is not yet in operation. New account sign-ups are temporarily disabled. <span class="italic">We thank you for your patience.</span></p>
-              </transition> -->
              
-                <div v-if="getRegion() == 'brisbane'" class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :tabindex=" this.agree ? 0 : -1 " :class="{'btn-disabled': !agree}">Create an Account</router-link></div>
+                <div class="text-center my-10 col" @click="checkAgree()"><router-link to="/newowner" class="inline-block btn-blue" :tabindex=" this.agree ? 0 : -1 " :class="{'btn-disabled': !agree}">Create an Account</router-link></div>
                 
           </div>
           <div class="bg-cover md:col-span-1 rounded-xl shadow-xl h-96 min-h-full bg-center register-img">
@@ -29,19 +24,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="tile section">
-      <div class="container py-20 mx-auto">
-        <div class="text-center">
-          <title-block>
-            <template #small>Already have an account?</template>
-            <template #big>Sign In Here</template>
-          </title-block>
-        </div>
-        <div class="mt-10 text-center">
-          <open-login class="inline-block btn-blue">Sign In</open-login>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 

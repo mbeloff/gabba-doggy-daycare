@@ -56,7 +56,7 @@
         <div class="text-center sm:text-left">
           <div class="text-sm">
             <ul class="space-y-4 md:space-y-1 list-none text-sm">
-              <li v-if="getRegion() == 'brisbane'">
+              <li>
                 <a
                   class="focus:outline-white text-gray-400 hover:text-yellow-300 text-lg font-bold"
                   :href="`tel:` + contact.phone.replaceAll(' ', '')"

@@ -188,15 +188,14 @@ secure.petexec.net/lostPassword.php" class="mr-3 text-sm link-pink" tabindex="0"
         this.gettingToken = true
         await this.getToken()
       },
-      // get howfound list when region/token changes
+      // get 'howfound' list when region/token changes
       'response.access_token': async function () {
         this.gettingToken = false
         await this.howfound()
       },
       // send to default petexec account page if token fetch fails
-      // !disabled redirecting for adelaide
       'tokenFailed': function() {
-        if (this.tokenFailed == true && this.getRegion() == 'brisbane') {
+        if (this.tokenFailed == true) {
           window.location.href=this.link 
         }                               
       },

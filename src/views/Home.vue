@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <form-coming-soon v-if="getRegion() == 'brisbane'"></form-coming-soon> -->
     <section-hero></section-hero>
 
     <section-cards></section-cards>
@@ -77,14 +76,12 @@ import SectionHero from '@/components/SectionHero.vue'
 import SectionCards from '@/components/SectionCards.vue'
 import SectionSlider from '@/components/SectionSlider.vue'
 import SectionReviews from '@/components/SectionReviews.vue'
-// import FormComingSoon from "@/components/FormComingSoon.vue"
 export default {
   components: {
     SectionHero,
     SectionCards,
     SectionSlider,
     SectionReviews,
-    // FormComingSoon
   },
   metaInfo: {
     title: 'Home',

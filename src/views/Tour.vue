@@ -1,16 +1,16 @@
 <template>
   <div class='h-full'>
-    <div v-if="this.regionAreas">
+    <div>
       <div class="py-8 mx-auto">
         <title-block class="text-center px-2">
           <template #small>welcome</template>
-          <template #big> <span>Check out our place</span></template>
+          <template #big> <span>Check out Brisbane's best dog daycare</span></template>
         </title-block>
       </div>
       <div
         :class="{'bg-gradient-to-tr from-gray-100 to-gray-200': (i+1) % 2 }"
         class="py-5 border-b"
-        v-for="(area, i) in regionAreas"
+        v-for="(area, i) in areas"
         :key="i"
       >
         <div class="grid grid-cols-1 md:grid-cols-2 px-2 max-w-screen-lg gap-x-10 gap-y-5 mx-auto">
@@ -35,18 +35,12 @@
       </div>
       <router-link :to="{name: 'Sign-up'}"><button class="btn-blue my-20 mx-auto block"><i class="fal fa-thumbs-up"></i> Join Us Today!</button></router-link>
     </div>
-    <not-available v-else></not-available>
   </div>
 </template>
 
 <script>
 export default {
   components: {},
-  computed: {
-    regionAreas() {
-      return this.areas[this.getRegion()]
-    },
-  },
   metaInfo: {
     title: 'Explore',
     meta: [
@@ -60,8 +54,7 @@ export default {
   },
   data() {
     return {
-      areas: {
-        brisbane: [
+      areas: [
           {
             heading: 'Huge indoor & outdoor daycare',
             desc: "We've created a massive, off-leash dog daycare centre, with multiple spacious play areas and heaps of things to do. Gabba Doggy Daycare is your dog's home away from home.",
@@ -107,9 +100,8 @@ export default {
             icon: 'snooze',
           },
         ],
-      },
-    }
-  },
+      }
+  }
 }
 </script>
 
