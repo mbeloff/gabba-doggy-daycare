@@ -83,7 +83,7 @@
       </div>
       <div
         class="rounded-lg shadow-xl md:order-1 bg-cover bg-center aspect-w-3 aspect-h-4 my-20"
-        style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_crop,w_600,h_800/f_auto,q_auto/v1631854044/gddc/promo/gddc_16.jpg)"
+        style="background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_400/f_auto,q_auto/v1631854044/gddc/photos/03_22/4.jpg)"
       >
       </div>
     </div>
