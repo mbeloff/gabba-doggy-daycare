@@ -14,10 +14,10 @@
           <span class="font-bold">Buy a Package -</span> We have discounted packages available. To save time at dropoff, you can buy these online. If you forget to pay beforehand, we can also accept credit card payments in-store.
         </li>
         <li>
-          <span class="font-bold">Food -</span> If your pup usually eats lunch and you would like us to feed them, we charge a $5 feeding fee. Please provide your dog's usual food, labelled with their name on it.
+          <span class="font-bold">Food -</span> If your pup usually eats lunch and you would like us to feed them, we do charge a $5 feeding fee. Please provide your dog's usual food, labelled with their name on it.
         </li>
         <li>
-          <span class="font-bold">Medication / Allergies -</span> If your dog requires any medication, please ensure you provide instructions of how and when it should be administered. Also, let us know if your pup has any food allergies or shouldn't be given any treats.
+          <span class="font-bold">Medication / Allergies -</span> If your dog requires any medication, please ensure you provide instructions of how and when it should be administered. Also, let us know if your pup has any food allergies or is not allowed treats.
         </li>
         <li>
           <span class="font-bold">Extra Care -</span> If your dog is recovering from an injury or otherwise might need a bit of extra care and attention, don't hesitate to let us know; our daycare team will be happy to accommodate wherever possible.

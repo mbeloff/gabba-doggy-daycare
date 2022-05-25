@@ -99,7 +99,7 @@
         If you plan on coming to daycare regularly, ask us about setting up automatic recurring payments so you don't have to worry about purchasing packages each week. If you would like to cancel, pause, or adjust automatic payments at any time, we're happy to accommodate<i class="fal fa-smile"></i>
       </p>
       <p>
-        If we are fully booked, customers on recurring billing will be given priority placement.
+        If we are approaching capacity, customers on recurring billing, or pre-purchased packages will be given priority placement over casual bookings.
       </p>
     </div>
   </div>
@@ -172,15 +172,15 @@ export default {
               highlight: true,
             },
             {
-              name: 'Six Days a Week *',
+              name: 'Six days a Week *',
               price: '$210 ($35/day)',
             },
             {
-              name: 'Eight Days a Week *',
+              name: 'Eight days a Week *',
               price: '$280 ($35/day)',
             },
             {
-              name: 'Ten Days a Week *',
+              name: 'Ten days a Week *',
               price: '$350 ($35/day)',
             },
           ],

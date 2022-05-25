@@ -27,7 +27,7 @@
               <p class="leading-tight">Bordetella and Parainfluenza (Kennel/Canine Cough)</p>
             </li>
           </ul>
-          <p class="mb-4">All these are usually covered by a <strong>C5 Vaccine, or a combination of C3 and KC vaccine</strong> . We recommend speaking with your vet if you're unsure about your dogs' vaccination status, as we'll need to know before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
+          <p class="mb-4">All these are usually covered by a <strong>C5 Vaccine, or a combination of C3/C4 and separate kennel cough vaccine</strong> . We recommend speaking with your vet if you're unsure about your dogs' vaccination status, as we'll need to know their due dates before you can schedule daycare with us (and again as your dog requires his/her yearly booster to stay protected).</p>
           <div class="py-5 section">
             <h2 class="text-2xl font-bold text-blue-900">Typical Puppy Vaccination Schedule*</h2>
           <p class="mb-3 font-bold text-blue-500">*may vary depending on vaccine brands used</p>

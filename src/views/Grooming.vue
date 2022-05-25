@@ -12,7 +12,7 @@
               <template #left>note</template>
               <template #right>All washes and grooming services are only be available to dogs already booked into daycare for the day.</template>
               </alert-block>           
-            <p class="mb-3">Get a wash with your daycare booking. We have basic services like washing and nail clipping available any day of the week. Washes can be requested when you drop off, but we recommend booking online to secure you spot.</p>
+            <p class="mb-3">Get a wash with your daycare booking. We have basic services like washing and nail clipping available any day of the week. Washes can be requested when you drop off, but we recommend booking online to secure a spot.</p>
           </div>
           <div class="bg-cover rounded-xl col bath-pup shadow-lg aspect-w-3 aspect-h-4">
           </div>

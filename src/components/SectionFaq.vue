@@ -57,21 +57,21 @@ export default {
           active: false,
           title: 'Which vaccinations are required by GDDC?',
           details: `
-            <p>We require that all dogs are vaccinated against Distemper, Hepatitus, Parvovirus, Bordetella and Parainfluenza. For more information about vaccination policy, please check out our <a href="/vaccinations" class="link-pink">vaccination page.</a></p>
+            <p>We require that all dogs are vaccinated against Distemper, Hepatitis, Parvovirus, Bordetella and Parainfluenza. For more information about vaccination policy, please check out our <a href="/vaccinations" class="link-pink">vaccination page.</a></p>
            `,
         },
         {
           active: false,
           title: 'Help. When I log in it says my vaccinations need updating',
           details: `
-            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by GDDC. These need to be checked by us manually - we thank you for your patience if uploading on the weekend, or outside of office hours. Feel free to <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email</a> or <a class="link-pink" href="tel:0423487302">call us</a> if you've uploaded and are still unable to make a booking.</p>
+            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by us. These need to be checked by us manually - we thank you for your patience if uploading on the weekend, or outside of office hours. Feel free to <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email</a> or <a class="link-pink" href="tel:0423487302">call us</a> if you've provided your vaccination certificate and we have not yet updated it.</p>
            `,
         },
         {
           active: false,
           title: 'Is any food provided at daycare?',
           details: `
-            <p>Due to varying dietary preferences, restrictions and/or allergies, GDDC does not provide any food for our guests. If you'd like your dog to have lunch during the day, please provide their usual food, in a sealed and labelled bag or container. We require a $5 feeding fee for this, which you can pre-pay online via a package, or pay in-store at drop off.</p>
+            <p>Due to varying dietary preferences, restrictions and/or allergies, GDDC does not provide any meals for our guests. If you'd like your dog to have lunch during the day, please provide their usual food, in a sealed and labelled bag or container. We require a $5 feeding fee to provide your dog with their own space and supervision while they eat. You can pre-pay this fee online via a package, or in-store at drop off.</p>
            `,
         },
         {
@@ -85,10 +85,10 @@ export default {
           active: false,
           title: 'How do I pay for Daycare?',
           details: `
-            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that all daycare is paid online by logging in and clicking 'Purchase a Package'. Here, you can pre-pay for individual half- or full-days or discounted multi-day packages. If you've forgotten to pay online, we accept credit card payments in-store, or you can log in and click 'Make a Payment' to fix up any outstanding balances online.</p>
-            <p class="mb-2">If you would like to attend daycare regularly without needing to worry about buying packages, shoot us an <a class="link-pink" href="mailto:woof@gabbadoggydaycare.com">email</a> to set up easy recurring weekly payments.
+            <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that all daycare is paid online by logging in and clicking 'Purchase a Package'. Here, you can pre-pay for individual half- or full-days or discounted multi-day packages. If you've forgotten, or didn't have time to pay online, we accept credit card payments in-store, or you can log in and click 'Make a Payment' to fix up any outstanding balances online.</p>
+            <p class="mb-2">If you would like to attend daycare regularly without needing to worry about buying packages, please send us an <a class="link-pink" href="mailto:woof@gabbadoggydaycare.com">email</a> to set up automatic recurring weekly payments.
             </p>
-            <p>A list of our prices and payment option are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
+            <p>A list of our packages and prices are available on <a class="link-pink" href="/daycare">our Daycare page</a></p>
           `,
         },
         {
@@ -100,7 +100,7 @@ export default {
         },
         {
           active: false,
-          title: 'Can my dog come to daycare if she is in heat?',
+          title: 'Can my dog come to daycare if she is in heat/oestrus?',
           details: `
             <p>No. Please refrain from bringing your dog to daycare if she is in heat. If your dog comes into heat while at daycare, you may be asked to arrange immediate pickup.</p>
           `,
@@ -116,9 +116,9 @@ export default {
           active: false,
           title: 'Are there any specials or discounts?',
           details: `
-            <p class="mb-2">Absolutely. We offer a free trial for new dogs who are over 6 months old and desexed. If you refer a friend, you'll also get a further 2 free days. And of course, we offer discounted packages to save on your regular day care:</p>
+            <p class="mb-2">Absolutely. We offer a free trial for new dogs who are over 6 months old and desexed. If you refer a friend, you'll also get a further 2 free days. And of course, we offer discounted packages to save on your regular day care visits:</p>
             <p class="mb-2">Save 20% with our 10-day packages, available to be purchased online through your GDDC account.</p>
-            <p class="mb-2">Save up to 30% by purchasing a weekly pack. We have options for 2 - 5 days per week. These can be purchased via your account, or as an automatic weekly payment.</p>
+            <p class="mb-2">Save up to 30% by purchasing a weekly pack. We have options for 2 - 5 sessions per week (or more if you have multiple dogs). These can be purchased via your account, or as an automatic weekly payment.</p>
             <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list.</p>
           `,
         },

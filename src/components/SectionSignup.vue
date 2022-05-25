@@ -16,7 +16,7 @@
         <p>Adequately protected against fleas, worms and ticks</p>
       </li>
       <li class="flex gap-4 mb-2">
-        <icon-stack :icon="'venus-mars'"></icon-stack>Desexed if over 6 months - not required but desexed dogs may have priority booking
+        <icon-stack :icon="'venus-mars'"></icon-stack>Preferably Desexed if over 6 months - this is not required but desexed dogs may have priority booking
       </li>
       <li class="flex gap-4 mb-2">
         <icon-stack :icon="'smile-plus'"></icon-stack>Friendly with people and other dogs
