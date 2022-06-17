@@ -61,7 +61,6 @@
                   class="focus:outline-white text-gray-400 hover:text-yellow-300 text-lg font-bold"
                   :href="`tel:` + contact.phone.replaceAll(' ', '')"
                 ><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
-                <p>call between 6:30am - 6:30pm</p>
               </li>
               <li>
                 <a

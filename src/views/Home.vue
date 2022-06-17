@@ -119,7 +119,7 @@ export default {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: {
           '@type': 'DayOfWeek',
-          name: 'Mo-Fr 06:30-18:30',
+          name: 'Mo-Fr 06:00-18:30',
         },
       },
     },

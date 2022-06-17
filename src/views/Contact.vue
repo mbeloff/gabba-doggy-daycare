@@ -20,7 +20,7 @@
             class="btn-blue"
             :href="'tel:' + contact.phone.replaceAll(' ','')"
           >Call Us</a>
-          <p class="text-center text-sm">You can give us a buzz between the hours of 6:30am and 6:30pm.</p>
+          <p class="text-center text-sm">You can give us a buzz between the hours of {{ $store.state[this.getRegion()].contact.openTime }} and {{ $store.state[this.getRegion()].contact.closeTime }}.</p>
         </div>
         <div class="flex flex-col items-center gap-3">
           <icon-stack :icon="'paper-plane'"></icon-stack>
