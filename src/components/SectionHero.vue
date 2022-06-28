@@ -30,7 +30,7 @@
               v-if="show"
             >
               <p class="text-center text-yellow-900 text-xs px-2">
-                Let us know when you refer a friend and we'll give you 2 free days after their first visit. To be eligible for free days, your dog must be over 6 months old and desexed.
+                Let us know when you refer a friend and we'll give you 2 free days after their first paid visit. To be eligible for free days, your dog must also be over 6 months old and desexed.
               </p>
             </div>
           </transition>

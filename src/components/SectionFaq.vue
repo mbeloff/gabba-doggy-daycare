@@ -49,7 +49,7 @@ export default {
           active: true,
           title: 'How do I make a day care booking?',
           details: `
-            <p class="mb-2">Simply login to your account and click 'schedule daycare' and select your date and time. You can view 'My Calendar' from your account dashboard to see all your existing bookings.</p>
+            <p class="mb-2">Simply log in to your account and click 'schedule daycare' and select your date and time. You can view 'My Calendar' from your account dashboard to see all your existing bookings.</p>
             
            `,
         },
@@ -78,7 +78,7 @@ export default {
           active: false,
           title: 'How do I use my free trial?',
           details: `
-            <p>As long as your dog is over 6 months, desexed and vaccinated, you will be eligible for the free trial. As soon as we've verified your vaccination certificate, a trial package will be added to your account. There's nothing more you have to do, just login and schedule day care.</p>       
+            <p>As long as your dog is fully vaccinated, you will be eligible for the free trial. As soon as we've verified your vaccination certificate, a trial package will be added to your account. There's nothing more you have to do, just log in and schedule day care.</p>       
           `,
         },
         {
@@ -116,17 +116,13 @@ export default {
           active: false,
           title: 'Are there any specials or discounts?',
           details: `
-            <p class="mb-2">Absolutely. We offer a free trial for new dogs who are over 6 months old and desexed. If you refer a friend, you'll also get a further 2 free days. And of course, we offer discounted packages to save on your regular day care visits:</p>
-            <p class="mb-2">Save 20% with our 10-day packages, available to be purchased online through your GDDC account.</p>
-            <p class="mb-2">Save up to 30% by purchasing a weekly pack. We have options for 2 - 5 sessions per week (or more if you have multiple dogs). These can be purchased via your account, or as an automatic weekly payment.</p>
+            <p class="mb-2">Yes. We offer a 2-day free trial for new dogs who are over 6 months old and desexed (1 day for non-desexed or pups under 6 months). If you refer a friend, you'll also get a further 2 free days (1 day for non-desexed or pups under 6 months). And of course, we offer discounted packages to save on your regular day care visits:</p>
+            <p class="mb-2">We have packages for 2 - 5 sessions per week (or more if you have multiple dogs). These can be purchased via your account, in-store, or as an automatic weekly payment. We also have 10-day packages that can be used over 3 months.</p>
             <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list.</p>
           `,
         },
       ],
     }
-  },
-  mounted() {
-    // this.groupId = this.$el.id
   },
 }
 </script>
