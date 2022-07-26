@@ -32,7 +32,7 @@
           </div>
         </div>
         <p class="font-bold text-center mt-5">Weekly Packages</p>
-        <p class="text-sm pt-5">We've made it more affordable to come to day care more often. Weekly packs are available to purchase via your account or in-store and must be used within 7 days.</p>
+        <p class="text-sm pt-5">We've made it more affordable to come to day care more often. Weekly packs must be used within 7 days.</p>
         <div class="grid grid-cols-1 pt-5 gap-x-10 text-sm">
           <div
             v-for="(service, i) in prices[region].weekly"
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-        <p class="text-sm mt-4">* 6-day, 8-day and 10-day weekly packs can be used if you have two dogs. These still expire after 7 days.</p>
+        <p class="text-sm mt-4 italic">* Weekly Packages are available with more than 5-days if you have multiple dogs.</p>
         <div
           id="extras-pricing"
           v-if="prices[region].extras"
@@ -172,16 +172,8 @@ export default {
               highlight: true,
             },
             {
-              name: 'Six days a Week *',
-              price: '$210 ($35/day)',
-            },
-            {
-              name: 'Eight days a Week *',
-              price: '$280 ($35/day)',
-            },
-            {
-              name: 'Ten days a Week *',
-              price: '$350 ($35/day)',
+              name: 'More than 5 Days a Week *',
+              price: '$35/day',
             },
           ],
           extras: {
