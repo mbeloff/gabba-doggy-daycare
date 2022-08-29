@@ -9,11 +9,11 @@
             <p class="mb-2">Local Pickup and Dropoff</p>
             <div>
                 <i class="fas fa-circle text-yellow-400 mr-2"></i
-                ><span class="font-bold">Yellow - Zone One:</span> $15 each way
+                ><span class="font-bold">Yellow - Zone One:</span> $10 each way
             </div>
             <div>
                 <i class="fas fa-circle text-red-400 mr-2"></i
-                ><span class="font-bold">Red - Zone Two:</span> $25 each way
+                ><span class="font-bold">Red - Zone Two:</span> $15 each way
             </div>
             <p class="mt-2">
                 Please note: Our pet taxi service has limited availability, and

@@ -220,7 +220,7 @@ export default {
                             selector: 'taxi',
                             name: 'Pet Taxi (Local Pickup or Dropoff)',
                             soon: '- more info',
-                            price: '$15-25',
+                            price: '$10-15',
                             order: '3'
                         }
                     }
