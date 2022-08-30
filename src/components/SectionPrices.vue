@@ -190,13 +190,19 @@ export default {
                         },
                         {
                             name: 'Half Day 10-pack',
-                            // soon: ' - valid for 3 months',
                             price: '$380'
                         },
                         {
                             name: 'Full Day 10-pack',
-                            // soon: ' - valid for 3 months',
                             price: '$500'
+                        },
+                        {
+                            name: 'Full Day 20-pack',
+                            price: '$850'
+                        },
+                        {
+                            name: 'Full Day 30-pack',
+                            price: '$1200'
                         }
                     ],
                     weekly: [
