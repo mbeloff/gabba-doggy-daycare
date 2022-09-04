@@ -211,8 +211,12 @@ export default {
                             price: '$100 ($50/day)'
                         },
                         {
+                            name: 'Three Days a Week',
+                            price: '$140 (~$46/day)'
+                        },
+                        {
                             name: 'Five Days a Week',
-                            price: '$225 ($45/day)',
+                            price: '$200 ($40/day)',
                             highlight: true
                         },
                     ],
