@@ -28,7 +28,7 @@ export default new Vuex.Store({
                 suburb: 'East Brisbane',
                 city: 'Brisbane',
                 postcode: '4169 QLD',
-                phone: '0423 487 302'
+                phone: '0450 927 302'
             }
         }
     },

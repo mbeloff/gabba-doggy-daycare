@@ -64,7 +64,7 @@ export default {
           active: false,
           title: 'Help. When I log in it says my vaccinations need updating',
           details: `
-            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by us. These need to be checked by us manually - we thank you for your patience if uploading on the weekend, or outside of office hours. Feel free to <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email</a> or <a class="link-pink" href="tel:0423487302">call us</a> if you've provided your vaccination certificate and we have not yet updated it.</p>
+            <p>Please note that you will be unable to schedule a day care appointment until your dog's vaccination certificate has been uploaded and approved by us. These need to be checked by us manually - we thank you for your patience if uploading on the weekend, or outside of office hours. Feel free to <a href="mailto:woof@gabbadoggydaycare.com" class="link-pink">email</a> or <a class="link-pink" href="tel:0450927302">call us</a> if you've provided your vaccination certificate and we have not yet updated it.</p>
            `,
         },
         {

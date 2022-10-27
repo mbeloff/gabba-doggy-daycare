@@ -105,7 +105,7 @@ export default {
         ratingValue: '5',
         reviewCount: '6',
       },
-      telephone: '0423 487 302',
+      telephone: '0450 927 302',
       email: 'woof@gabbadoggydaycare.com',
       url: 'https://www.gabbadoggydaycare.com',
       address: {
