@@ -16,7 +16,7 @@ export default new Vuex.Store({
             newAccountLink:
                 'https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=',
             contact: {
-                openTime: '6:30am',
+                openTime: '6:00am',
                 closeTime: '6:30pm',
                 email: 'woof@gabbadoggydaycare.com',
                 map:
