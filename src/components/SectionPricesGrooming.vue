@@ -143,19 +143,19 @@ export default {
                 professional: [
                     {
                         name: 'Small (up to 10kg)',
-                        price: '$75'
-                    },
-                    {
-                        name: 'Medium (11 - 20kg)',
                         price: '$85'
                     },
                     {
-                        name: 'Large (21 - 30kg)',
+                        name: 'Medium (11 - 20kg)',
                         price: '$95'
                     },
                     {
+                        name: 'Large (21 - 30kg)',
+                        price: '$105'
+                    },
+                    {
                         name: 'Extra Large (31kg +)',
-                        price: '$120'
+                        price: '$145'
                     }
                 ],
                 basic: [
@@ -175,29 +175,29 @@ export default {
                 hygeine: [
                     {
                         name: 'Small (up to 10kg)',
-                        price: '$55'
-                    },
-                    {
-                        name: 'Medium (11 - 20kg)',
                         price: '$65'
                     },
                     {
-                        name: 'Large (21 - 30kg)',
+                        name: 'Medium (11 - 20kg)',
                         price: '$75'
+                    },
+                    {
+                        name: 'Large (21 - 30kg)',
+                        price: '$85'
                     }
                 ],
                 extras: [
                     {
                         name: 'Anal glands',
-                        price: '$10'
+                        price: '$15'
                     },
                     {
                         name: 'Ear plucking',
-                        price: '$10'
+                        price: '$15'
                     },
                     {
                         name: 'Nail filing',
-                        price: '$10'
+                        price: '$15'
                     }
                 ]
             }
