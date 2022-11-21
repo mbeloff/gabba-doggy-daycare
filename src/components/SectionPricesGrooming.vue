@@ -68,11 +68,11 @@
                     class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm"
                 >
                     <p class="font-bold mb-4">
-                        Hygeine tidy (face, feet/paw pads and sanitary) and
+                        Hygiene tidy (face, feet/paw pads and sanitary) and
                         double coated brush outs
                     </p>
                     <div
-                        v-for="service in prices.hygeine"
+                        v-for="service in prices.hygiene"
                         :key="service.name"
                         class="mb-2 bg-white"
                         :class="{ 'font-bold': service.highlight }"
@@ -172,7 +172,7 @@ export default {
                         price: '$50'
                     }
                 ],
-                hygeine: [
+                hygiene: [
                     {
                         name: 'Small (up to 10kg)',
                         price: '$65'
