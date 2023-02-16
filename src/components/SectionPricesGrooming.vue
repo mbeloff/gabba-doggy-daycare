@@ -188,15 +188,23 @@ export default {
                 ],
                 extras: [
                     {
+                        name: 'Bath and Towel Dry',
+                        price: '$10'
+                    },
+                    {
+                        name: 'Nail Clip',
+                        price: '$10'
+                    },
+                    {
+                        name: 'Nail filing',
+                        price: '$15'
+                    },
+                    {
                         name: 'Anal glands',
                         price: '$15'
                     },
                     {
                         name: 'Ear plucking',
-                        price: '$15'
-                    },
-                    {
-                        name: 'Nail filing',
                         price: '$15'
                     }
                 ]
