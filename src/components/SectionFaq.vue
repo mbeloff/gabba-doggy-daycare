@@ -116,7 +116,7 @@ export default {
           active: false,
           title: 'Are there any specials or discounts?',
           details: `
-            <p class="mb-2">Yes. We offer a 2-day free trial for new dogs who are over 6 months old and desexed (1 day for non-desexed or pups under 6 months). If you refer a friend, you'll also get a further 2 free days (1 day for non-desexed or pups under 6 months). And of course, we offer discounted packages to save on your regular day care visits:</p>
+            <p class="mb-2">Yes. We offer a free trial for new dogs. And if you refer a friend, you'll get another free day. And of course, we offer discounted packages to save on your regular day care visits:</p>
             <p class="mb-2">We have packages for 2 - 5 sessions per week (or more if you have multiple dogs). These can be purchased via your account, in-store, or as an automatic weekly payment. We also have 10-day packages that can be used over 3 months.</p>
             <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list.</p>
           `,

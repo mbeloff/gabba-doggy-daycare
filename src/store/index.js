@@ -12,7 +12,7 @@ export default new Vuex.Store({
             clientId: '1e18704def422bd1a3c1d3fdde12d106',
             hasGrooming: true,
             hasTraining: false,
-            trialDays: '2',
+            trialDays: '1',
             newAccountLink:
                 'https://secure.petexec.net/newOwner.php?x=zFuFWakd7Aw=',
             contact: {

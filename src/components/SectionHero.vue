@@ -23,14 +23,14 @@
           class="bg-yellow-300 p-2 lg:-mx-6 lg:px-6 cursor-pointer"
           @click="show = !show"
         >
-          <p class="text-yellow-900 text-center"><span class="text-base"><i class="fal fa-smile-plus"></i></span> refer a friend for 2 more free days*</p>
+          <p class="text-yellow-900 text-center"><span class="text-base"><i class="fal fa-smile-plus"></i></span> refer a friend for more free days*</p>
           <transition name="open">
             <div
               class="more-info"
               v-if="show"
             >
               <p class="text-center text-yellow-900 text-xs px-2">
-                Let us know when you refer a friend and we'll give you 2 free days after their first paid visit. To be eligible for free days, your dog must also be over 6 months old and desexed.
+                Let us know when you refer a friend and we'll give you another free day after their first paid visit. To be eligible for free days, your dog must also be over 6 months old and desexed.
               </p>
             </div>
           </transition>
