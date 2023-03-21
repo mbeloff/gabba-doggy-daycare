@@ -143,19 +143,19 @@ export default {
                 professional: [
                     {
                         name: 'Small (up to 10kg)',
-                        price: '$85'
-                    },
-                    {
-                        name: 'Medium (11 - 20kg)',
                         price: '$95'
                     },
                     {
-                        name: 'Large (21 - 30kg)',
+                        name: 'Medium (11 - 20kg)',
                         price: '$105'
                     },
                     {
+                        name: 'Large (21 - 30kg)',
+                        price: '$115'
+                    },
+                    {
                         name: 'Extra Large (31kg +)',
-                        price: '$145'
+                        price: '$155'
                     }
                 ],
                 basic: [
@@ -175,15 +175,15 @@ export default {
                 hygiene: [
                     {
                         name: 'Small (up to 10kg)',
-                        price: '$65'
-                    },
-                    {
-                        name: 'Medium (11 - 20kg)',
                         price: '$75'
                     },
                     {
-                        name: 'Large (21 - 30kg)',
+                        name: 'Medium (11 - 20kg)',
                         price: '$85'
+                    },
+                    {
+                        name: 'Large (21 - 30kg)',
+                        price: '$95'
                     }
                 ],
                 extras: [
