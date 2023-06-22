@@ -35,74 +35,71 @@
         </div>
         <div class="w-full max-w-screen-lg px-2 mx-auto">
             <div class="mb-20">
-              <hr>
-              <div class="py-10 text-center">
-<h2 class="mb-3 text-2xl font-bold text-blue-500">
-                    Traning Packages
-                </h2>
-                <p>We off the following training packages:</p>
-                <div class="grid w-full max-w-lg grid-cols-2 mx-auto my-5">
-                    <span class="text-right">6pk (6 x 30 minutes)</span
-                    ><span class="text-pink-500">$300</span>
-                    <span class="text-right">10pk (10 x 30 minutes)</span
-                    ><span class="text-pink-500">$495</span>
-                </div>
+                <hr />
+                <div class="py-10 text-center">
+                    <h2 class="mb-3 text-2xl font-bold text-blue-500">
+                        Traning Packages
+                    </h2>
+                    <p>We off the following training packages:</p>
+                    <div class="grid w-full max-w-lg grid-cols-2 mx-auto my-5">
+                        <span class="text-right">6pk (6 x 30 minutes)</span
+                        ><span class="text-pink-500">$300</span>
+                        <span class="text-right">10pk (10 x 30 minutes)</span
+                        ><span class="text-pink-500">$495</span>
+                    </div>
 
-                <p>
-                    We provide multi-lesson packages in order to provide the
-                    most effective training and the best outcomes
-                    your dog.
-                </p>
-              </div>
-              <hr>
-                
+                    <p>
+                        We provide multi-lesson packages in order to provide the
+                        most effective training and the best outcomes your dog.
+                    </p>
+                </div>
+                <hr />
             </div>
-          <div
-            class="container grid max-w-screen-lg grid-cols-1 px-2 mx-auto mb-20 gap-x-20 gap-y-10 md:grid-cols-2"
-        >
-        <div
-                class="my-auto bg-left bg-cover shadow-xl rounded-xl col bg-train aspect-w-5 aspect-h-5 h-1/2"
-            ></div>
-            <div class="col ">
-              <h2 class="mb-3 text-2xl font-bold text-blue-500">
-                    Target Behaviours
-                </h2>
-                <p>
-                    Our in-house training session are able to cover a wide range
-                    of behaviours, addressing common challenges such as barking,
-                    anxiety, loose lead walking and more to ensure your dog's
-                    well-rounded development. We will address issues and
-                    behaviours including, but not limited to:
-                </p>
-                <ul class="my-3 list-disc list-inside">
-                    <li>Barking</li>
-                    <li>Anxiety</li>
-                    <li>Confidence Building</li>
-                    <li>Low Level Aggression</li>
-                    <li>Rough Play</li>
-                    <li>Recall</li>
-                    <li>Crate Training</li>
-                    <li>Rest Regulation</li>
-                    <li>Jumping Up</li>
-                    <li>Loose Lead Walking</li>
-                </ul>
-                <p>
-                    Our trainer will work closely with you and your dog to
-                    address these behaviours and promote positive habits.
-                </p>
+            <div
+                class="container grid max-w-screen-lg grid-cols-1 px-2 mx-auto mb-20 gap-x-20 gap-y-10 md:grid-cols-2"
+            >
+                <div
+                    class="my-auto bg-left bg-cover shadow-xl rounded-xl col bg-train aspect-w-5 aspect-h-5 h-1/2"
+                ></div>
+                <div class="col ">
+                    <h2 class="mb-3 text-2xl font-bold text-blue-500">
+                        Target Behaviours
+                    </h2>
+                    <p>
+                        Our in-house training session are able to cover a wide
+                        range of behaviours, addressing common challenges such
+                        as barking, anxiety, loose lead walking and more to
+                        ensure your dog's well-rounded development. We will
+                        address issues and behaviours including, but not limited
+                        to:
+                    </p>
+                    <ul class="my-3 list-disc list-inside">
+                        <li>Barking</li>
+                        <li>Anxiety</li>
+                        <li>Confidence Building</li>
+                        <li>Low Level Aggression</li>
+                        <li>Rough Play</li>
+                        <li>Recall</li>
+                        <li>Crate Training</li>
+                        <li>Rest Regulation</li>
+                        <li>Jumping Up</li>
+                        <li>Loose Lead Walking</li>
+                    </ul>
+                    <p>
+                        Our trainer will work closely with you and your dog to
+                        address these behaviours and promote positive habits.
+                    </p>
+                </div>
             </div>
-            
-        </div>
             <div class="mb-20 ">
                 <h2 class="mb-3 text-2xl font-bold text-blue-500">
                     Traning Exclusions
                 </h2>
                 <p>
                     While we are able to address a wide range of behaviours,
-                    certain behaviours may require
-                    specialised attention or alternative approaches that are
-                    outside the scope of our in-house training program. These
-                    behaviours include:
+                    certain behaviours may require specialised attention or
+                    alternative approaches that are outside the scope of our
+                    in-house training program. These behaviours include:
                 </p>
                 <ul class="my-3 list-disc list-inside">
                     <li>Moderate to High Level Aggression</li>
@@ -123,9 +120,8 @@
                 </h2>
                 <p>
                     To ensure the best outcomes for your furry friend, we have
-                    some requirements, including minimum lesson
-                    frequency and the possibility of at-home lessons for certain
-                    behaviours:
+                    some requirements, including minimum lesson frequency and
+                    the possibility of at-home lessons for certain behaviours:
                 </p>
                 <ul class="my-3 list-disc list-inside">
                     <li>
@@ -245,19 +241,19 @@ export default {
 <style scoped lang="scss">
 .good-boy {
     background-position: 50% 30%;
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1/gddc/gddc-dog-training.jpg);
+    background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1/gddc/gddc-dog-training.jpg');
 
     @media only screen and (max-width: 767px) {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/gddc-dog-training.jpg);
+        background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/gddc-dog-training.jpg');
     }
 }
 
 .bg-train {
-  background-position: 50% 30%;
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1/gddc/gddc-dog-training-2.jpg);
+    background-position: 50% 30%;
+    background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1/gddc/gddc-dog-training-2.jpg');
 
     @media only screen and (max-width: 767px) {
-    background-image: url(https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/gddc-dog-training-2.jpg);
+        background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/q_auto,f_auto/v1/gddc/gddc-dog-training-2.jpg');
     }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container px-2 py-20 mx-auto section max-w-screen-lg">
+    <div class="container max-w-screen-lg px-2 py-20 mx-auto section">
         <title-block class="text-center">
             <template #small>Grooming</template>
             <template #big>Prices</template>
@@ -7,9 +7,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-20">
             <div class="">
                 <div
-                    class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm"
+                    class="grid max-w-screen-sm grid-cols-1 pt-5 mx-auto text-sm gap-x-5"
                 >
-                    <p class="font-bold mb-4">
+                    <p class="mb-4 font-bold">
                         Professional Grooming (Available Mondays only)
                     </p>
                     <div
@@ -19,7 +19,7 @@
                         :class="{ 'font-bold': service.highlight }"
                     >
                         <div
-                            class="flex bg-gray-100 rounded-lg relative ring-pink-200"
+                            class="relative flex bg-gray-100 rounded-lg ring-pink-200"
                             :class="{ 'ring-2': service.highlight }"
                         >
                             <div class="flex-grow px-2">
@@ -28,7 +28,7 @@
                                     service.soon
                                 }}</span>
                             </div>
-                            <div class="px-2 relative">
+                            <div class="relative px-2">
                                 <span class="text-pink-500">{{
                                     service.price
                                 }}</span>
@@ -37,9 +37,9 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm"
+                    class="grid max-w-screen-sm grid-cols-1 pt-5 mx-auto text-sm gap-x-5"
                 >
-                    <p class="font-bold mb-4">Bath, blow dry and nails</p>
+                    <p class="mb-4 font-bold">Bath, blow dry and nails</p>
                     <div
                         v-for="service in prices.basic"
                         :key="service.name"
@@ -47,7 +47,7 @@
                         :class="{ 'font-bold': service.highlight }"
                     >
                         <div
-                            class="flex bg-gray-100 rounded-lg relative ring-pink-200"
+                            class="relative flex bg-gray-100 rounded-lg ring-pink-200"
                             :class="{ 'ring-2': service.highlight }"
                         >
                             <div class="flex-grow px-2">
@@ -56,7 +56,7 @@
                                     service.soon
                                 }}</span>
                             </div>
-                            <div class="px-2 relative">
+                            <div class="relative px-2">
                                 <span class="text-pink-500">{{
                                     service.price
                                 }}</span>
@@ -65,9 +65,9 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm"
+                    class="grid max-w-screen-sm grid-cols-1 pt-5 mx-auto text-sm gap-x-5"
                 >
-                    <p class="font-bold mb-4">
+                    <p class="mb-4 font-bold">
                         Hygiene tidy (face, feet/paw pads and sanitary) and
                         double coated brush outs
                     </p>
@@ -78,7 +78,7 @@
                         :class="{ 'font-bold': service.highlight }"
                     >
                         <div
-                            class="flex bg-gray-100 rounded-lg relative ring-pink-200"
+                            class="relative flex bg-gray-100 rounded-lg ring-pink-200"
                             :class="{ 'ring-2': service.highlight }"
                         >
                             <div class="flex-grow px-2">
@@ -87,7 +87,7 @@
                                     service.soon
                                 }}</span>
                             </div>
-                            <div class="px-2 relative">
+                            <div class="relative px-2">
                                 <span class="text-pink-500">{{
                                     service.price
                                 }}</span>
@@ -96,9 +96,9 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 max-w-screen-sm mx-auto pt-5 gap-x-5 text-sm"
+                    class="grid max-w-screen-sm grid-cols-1 pt-5 mx-auto text-sm gap-x-5"
                 >
-                    <p class="font-bold mb-4">Extras</p>
+                    <p class="mb-4 font-bold">Extras</p>
                     <div
                         v-for="service in prices.extras"
                         :key="service.name"
@@ -106,7 +106,7 @@
                         :class="{ 'font-bold': service.highlight }"
                     >
                         <div
-                            class="flex bg-gray-100 rounded-lg relative ring-pink-200"
+                            class="relative flex bg-gray-100 rounded-lg ring-pink-200"
                             :class="{ 'ring-2': service.highlight }"
                         >
                             <!-- <div v-if="service.highlight">
@@ -119,7 +119,7 @@
                                     service.soon
                                 }}</span>
                             </div>
-                            <div class="px-2 relative">
+                            <div class="relative px-2">
                                 <span class="text-pink-500">{{
                                     service.price
                                 }}</span>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div
-                class="bg-cover bg-center bg-groom rounded-lg shadow-xl md:order-1 aspect-w-3 aspect-h-4"
+                class="bg-center bg-cover rounded-lg shadow-xl bg-groom md:order-1 aspect-w-3 aspect-h-4"
             ></div>
         </div>
     </div>
@@ -216,6 +216,11 @@ export default {
 
 <style>
 .bg-groom {
-    background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,h_550/f_auto,q_auto/v1/gddc/photos/12_21/31.jpg');
+    background-position: 45% 50%;
+    background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_600/q_auto,f_auto/v1609809738/gddc/bath-pup.jpg');
+
+    @media only screen and (max-width: 767px) {
+        background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400,h_600/q_auto,f_auto/v1609809738/gddc/bath-pup.jpg');
+    }
 }
 </style>
