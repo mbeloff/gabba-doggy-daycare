@@ -4,7 +4,7 @@
       class="tile"
       id="about"
     >
-      <div class="container grid grid-cols-1 gap-x-20 gap-y-10 px-2 py-20 mx-auto md:grid-cols-2 max-w-screen-lg">
+      <div class="container grid max-w-screen-lg grid-cols-1 px-2 py-20 mx-auto gap-x-20 gap-y-10 md:grid-cols-2">
         <div class="col y-5">
           <title-block>
             <template #small>Daycare</template>
@@ -15,7 +15,7 @@
           <p class="mb-4"> We take care to place each of our guests with others of a similar size and/or temperament, and we have a puppy creche so the little ones get the extra care and attention that they need. Gabba Doggy Daycare is your pup's home away from home.</p>
           <p>We have flexible payment options and discounted packages, check out our price list, and make an account for easy online bookings.</p>
         </div>
-        <div class="bg-cover rounded-xl col grass-boys shadow-xl aspect-w-4 aspect-h-5">
+        <div class="bg-cover shadow-xl rounded-xl col grass-boys aspect-w-4 aspect-h-5">
         </div>
       </div>
     </div>

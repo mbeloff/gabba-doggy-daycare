@@ -1,19 +1,19 @@
 <template>
   <div class="text-gray-500 bg-gray-900 ">
-    <div class="container max-w-screen-xl px-3 mx-auto py-4">
+    <div class="container max-w-screen-xl px-3 py-10 mx-auto">
       <div class="flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
 
         <!-- <div class="mx-auto bg-center bg-no-repeat bg-contain sm:bg-left logo sm:hidden lg:block" alt="gabba doggy daycare logo" style="height: 150px; width: 150px">
         </div> -->
 
-        <div class="flex-grow text-center sm:text-left font-bold">
+        <div class="flex-grow font-bold text-center sm:text-left">
           <img
-            class="ml-auto mr-auto md:ml-0"
+            class="mr-auto md:ml-0"
             src="../assets/img/gddc-text.svg"
             alt="Gabba Doggy Daycare"
           >
-          <!-- <p class="text-lg text-gray-400 mt-5">Extra Info</p> -->
-          <ul class="gap-4 md:gap-1 list-none text-sm grid grid-cols-2 text-left w-full max-w-lg mt-2">
+          <!-- <p class="mt-5 text-lg text-gray-400">Extra Info</p> -->
+          <ul class="grid w-full max-w-lg grid-cols-2 gap-4 mt-5 mb-10 text-sm text-center list-none sm:text-left">
             <li class="">
               <router-link
                 :to="{ name: 'Vaccinations' }"
@@ -53,18 +53,18 @@
             </li>
           </ul>
         </div>
-        <div class="text-center sm:text-left">
+        <div class="self-end text-center sm:text-left">
           <div class="text-sm">
-            <ul class="space-y-4 md:space-y-1 list-none text-sm">
+            <ul class="space-y-4 text-sm list-none md:space-y-1">
               <li>
                 <a
-                  class="focus:outline-white text-gray-400 hover:text-yellow-300 text-lg font-bold"
+                  class="text-lg font-bold text-gray-400 focus:outline-white hover:text-yellow-300"
                   :href="`tel:` + contact.phone.replaceAll(' ', '')"
-                ><i class="fad fa-mobile-alt mr-2"></i>{{contact.phone}}</a>
+                ><i class="mr-2 fad fa-mobile-alt"></i>{{contact.phone}}</a>
               </li>
               <li>
                 <a
-                  class="text-gray-400 focus:outline-white hover:text-yellow-300 break-all"
+                  class="text-gray-400 break-all focus:outline-white hover:text-yellow-300"
                   :href="`mailto:` + contact.email"
                 >{{contact.email}}</a>
               </li>
@@ -73,7 +73,7 @@
               </li>
             </ul>
           </div>
-          <div class="flex flex-row space-x-3 mt-4 justify-center sm:justify-start">
+          <div class="flex flex-row justify-center mt-4 space-x-3 sm:justify-start">
             <social-icon site="facebook"></social-icon>
             <social-icon site="instagram"></social-icon>
             <social-icon site="tiktok"></social-icon>
@@ -81,7 +81,7 @@
         </div>
       </div>
     </div>
-    <div class="col text-center bg-super-dark">
+    <div class="py-1 text-center col bg-dark">
       <p class="text-xs tracking-wide">© <router-link :to="{ name: 'New Home', params: {region: getRegion()} }">gabbadoggydaycare.com</router-link>
       </p>
     </div>

@@ -1,16 +1,16 @@
 <template>
     <nav
-        class="relative flex flex-wrap items-center justify-between  mx-auto bg-white shadow-lg "
+        class="relative flex flex-wrap items-center justify-between mx-auto bg-white shadow-lg "
     >
         <div
-            class="flex flex-wrap items-center justify-between w-full px-2 py-2 lg:px-10 mx-auto"
+            class="flex flex-wrap items-center justify-between w-full px-2 py-2 mx-auto lg:px-10"
         >
             <div
-                class="bg-white absolute top-0 left-0 w-full h-full depth-fix"
+                class="absolute top-0 left-0 w-full h-full bg-white depth-fix"
             ></div>
             <div class="flex items-center mr-2 text-blue-600 lg:mr-6 ">
                 <router-link
-                    class="h-full flex-grow"
+                    class="flex-grow h-full"
                     :to="{
                         name: 'New Home',
                         params: { region: getRegion() }
@@ -48,10 +48,10 @@
             <transition name="slide">
                 <div
                     v-show="show"
-                    class="absolute left-0 flex-grow block w-full px-4 pb-0 bg-white shadow-2xl lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto lg:border-none py-3"
+                    class="absolute left-0 flex-grow block w-full px-4 py-3 pb-0 bg-white shadow-2xl lg:flex lg:shadow-none droppy lg:p-0 lg:relative lg:z-auto lg:items-center lg:w-auto lg:border-none"
                 >
                     <div
-                        class="flex flex-col lg:flex-row  lg:flex-grow lg:space-y-0"
+                        class="flex flex-col lg:flex-row lg:flex-grow lg:space-y-0"
                     >
                         <nav-item
                             @click.native="hide"
@@ -63,9 +63,9 @@
                     </div>
                     <!-- <div class="flex flex-row flex-wrap justify-between my-3 sm:my-0"> -->
                     <div
-                        class="grid grid-cols-2 gap-4 lg:w-auto lg:mb-0 text-center my-3 lg:my-0"
+                        class="grid grid-cols-2 gap-4 my-3 text-center lg:w-auto lg:mb-0 lg:my-0"
                     >
-                        <button class="btn-blue px-2" @click="showLogin()">
+                        <button class="px-2 btn-blue" @click="showLogin()">
                             Login
                         </button>
                         <router-link
@@ -74,7 +74,7 @@
                                 name: 'Sign-up',
                                 params: { region: getRegion() }
                             }"
-                            class="btn-blue bg-pink-400 text-white self-center px-2"
+                            class="self-center px-2 text-white bg-pink-400 btn-blue"
                             active-class="btn-disabled"
                             :class="{
                                 'btn-disabled': this.$route.name == 'NewOwner'
@@ -88,20 +88,20 @@
         </div>
 
         <div
-            class="bg-white left-0 w-full items-center flex justify-between border-t px-2 py-2 lg:px-10"
+            class="left-0 flex items-center justify-between w-full px-2 py-2 bg-white border-t lg:px-10"
             :class="{ 'pt-2': phone }"
         >
             <a
                 class="font-bold tracking-wide text-md hover:text-pink-500"
                 :href="'tel:' + phone.replaceAll(' ', '')"
-                ><i class="fad fa-mobile-alt mr-2 wiggle2"></i>
+                ><i class="mr-2 fad fa-mobile-alt wiggle2"></i>
                 {{ phone }}
             </a>
-            <span class="text-sm font-normal ml-2 mr-auto"
+            <span class="ml-2 mr-auto text-sm font-normal"
                 >{{ $store.state[this.getRegion()].contact.openTime }} -
                 {{ $store.state[this.getRegion()].contact.closeTime }}</span
             >
-            <!-- <open-modal class="inline-block rounded-full px-1 ml-1 text-lg hover:text-pink-500" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal> -->
+            <!-- <open-modal class="inline-block px-1 ml-1 text-lg rounded-full hover:text-pink-500" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal> -->
         </div>
     </nav>
 </template>
@@ -137,6 +137,11 @@ export default {
                         label: 'Grooming',
                         link: 'Grooming',
                         order: '3'
+                    },
+                    {
+                        label: 'Training',
+                        link: 'Training',
+                        order: '4'
                     },
                     {
                         label: 'Contact',
