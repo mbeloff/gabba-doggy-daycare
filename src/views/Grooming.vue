@@ -9,10 +9,11 @@
 
                     <div class="flex flex-col gap-3">
                         <p>
-                            GDDC offers grooming service to make sure your furry
-                            pals look and feel amazing after their big day! Our
-                            grooming services are all about keeping your dog
-                            happy and healthy, with a touch of style.
+                            Brisbane's best dog daycare also offers dog grooming
+                            service to make sure your furry pals look and feel
+                            amazing after their big day! Our grooming services
+                            are all about keeping your dog happy and healthy,
+                            with a touch of style.
                         </p>
                         <p>
                             We offer standard grooming services throughout the
