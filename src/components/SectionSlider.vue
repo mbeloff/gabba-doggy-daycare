@@ -1,7 +1,7 @@
 <template>
     <div class="bg-gray-900">
         <div class="container mx-auto">
-            <div class="container relative max-w-screen-lg p-0 mx-auto">
+            <div class="container relative max-w-screen-xl p-0 mx-auto">
                 <div class="grid grid-cols-3 lg:grid-cols-6 swiper" id="swiper">
                     <div v-for="(slide, i) in list" :key="i">
                         <img

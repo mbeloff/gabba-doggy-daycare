@@ -19,7 +19,7 @@
                 v-for="(area, i) in areas"
                 :key="i"
             >
-                <div class="grid px-2 max-w-screen-lg gap-x-10 gap-y-5 mx-auto">
+                <div class="grid px-2 max-w-screen-xl gap-x-10 gap-y-5 mx-auto">
                     <div class="flex flex-col justify-center">
                         <div class="flex auto-cols-max gap-3">
                             <icon-stack
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div
-                class="grid grid-cols-2 md:grid-cols-4 mx-auto max-w-screen-lg rounded-lg overflow-hidden my-10"
+                class="grid grid-cols-2 md:grid-cols-4 mx-auto max-w-screen-xl rounded-lg overflow-hidden my-10"
             >
                 <div
                     v-for="i in 8"
@@ -59,7 +59,7 @@
                 </button></router-link
             >
             <div
-                class="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-screen-lg"
+                class="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-screen-xl"
             >
                 <img
                     src="https://res.cloudinary.com/dg5ybbkbh/image/upload/v1/gddc/tour/layout-2.jpg"

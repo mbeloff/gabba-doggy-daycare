@@ -2,7 +2,7 @@
     <div class="">
         <div class="tile" id="about">
             <div
-                class="container grid max-w-screen-lg grid-cols-1 px-2 py-20 mx-auto gap-x-20 gap-y-10 md:grid-cols-2"
+                class="container grid max-w-screen-xl grid-cols-1 px-2 py-20 mx-auto gap-x-20 gap-y-10 md:grid-cols-2"
             >
                 <div class="col y-5">
                     <title-block>

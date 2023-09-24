@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="tile" id="about">
-            <div class="grid max-w-screen-lg gap-20 px-2 mx-auto">
+            <div class="grid max-w-screen-xl gap-20 px-2 mx-auto">
                 <div class="py-10">
                     <h1 class="mb-5 text-4xl font-bold">
                         GDDC Grooming Services

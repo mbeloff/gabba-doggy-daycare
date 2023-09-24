@@ -4,17 +4,17 @@
             <!-- <div class="grid p-10 lg:py-40 sm:px-40 2xl:px-60 order-2 lg:order-1 col-span-1"> -->
             <div class="grid order-2 lg:order-1 col-span-1">
                 <div
-                    class="place-self-center w-64 xl:w-80 m-5 lg:m-20 xl:my-32 2xl:my-30"
+                    class="place-self-center w-64 xl:w-96 m-5 lg:m-20 xl:my-32 2xl:my-30"
                 >
                     <!-- <div v-if=" getRegion() == 'adelaide'" class="border-b-2 border-blue-500 mb-3"><p class="text-center text-blue-500 text-lg font-bold uppercase">Coming Soon</p></div> -->
 
                     <div class="aspect-w-2 aspect-h-1">
                         <img
-                            class="mb-2 w-64 xl:w-80 "
+                            class="mb-2 w-64 xl:w-96"
                             :src="
                                 'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_600/q_auto,f_auto/v2/gddc/' +
-                                    this.$store.state[getRegion()].trialDays +
-                                    'daytrial.png'
+                                this.$store.state[getRegion()].trialDays +
+                                'daytrial.png'
                             "
                             alt=""
                         />
@@ -58,9 +58,9 @@
 export default {
     data() {
         return {
-            show: false
+            show: false,
         }
-    }
+    },
 }
 </script>
 

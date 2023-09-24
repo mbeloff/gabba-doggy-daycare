@@ -1,9 +1,9 @@
 <template>
-    <div class="py-20 tile " id="training">
+    <div class="py-20 tile" id="training">
         <div
-            class="container grid max-w-screen-lg grid-cols-1 px-2 mx-auto mb-20 gap-x-20 gap-y-10 md:grid-cols-2"
+            class="container grid max-w-screen-xl grid-cols-1 px-2 mx-auto mb-20 gap-x-20 gap-y-10 md:grid-cols-2"
         >
-            <div class="col ">
+            <div class="col">
                 <title-block>
                     <template #small>Training</template>
                     <template #big>In-house Dog Training at GDDC</template>
@@ -61,7 +61,7 @@
                 <div
                     class="my-auto bg-left bg-cover shadow-xl rounded-xl col bg-train aspect-w-5 aspect-h-5 h-1/2"
                 ></div>
-                <div class="col ">
+                <div class="col">
                     <h2 class="mb-3 text-2xl font-bold text-blue-500">
                         Target Behaviours
                     </h2>
@@ -91,7 +91,7 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-20 ">
+            <div class="mb-20">
                 <h2 class="mb-3 text-2xl font-bold text-blue-500">
                     Traning Exclusions
                 </h2>
@@ -137,7 +137,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="mb-20 ">
+            <div class="mb-20">
                 <h2 class="mb-3 text-2xl font-bold text-blue-500">
                     Inclusions
                 </h2>
@@ -169,7 +169,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="mb-20 ">
+            <div class="mb-20">
                 <h2 class="mb-3 text-2xl font-bold text-blue-500">
                     At-Home Lessons
                 </h2>
@@ -226,15 +226,15 @@ export default {
                 name: 'description',
                 content:
                     'Gabba Doggy Daycare offers force-free training for a positive relationship between dog and owner. Get specialised in-house training for your dog today.',
-                vmid: 'description'
-            }
-        ]
+                vmid: 'description',
+            },
+        ],
     },
     computed: {
         phone() {
             return this.$store.state[this.$store.state.region].contact.phone
-        }
-    }
+        },
+    },
 }
 </script>
 
