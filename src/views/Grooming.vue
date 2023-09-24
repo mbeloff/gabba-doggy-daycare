@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="tile" id="about">
-            <div class="grid max-w-screen-lg gap-20 px-2 mx-auto ">
+            <div class="grid max-w-screen-lg gap-20 px-2 mx-auto">
                 <div class="py-10">
                     <h1 class="mb-5 text-4xl font-bold">
                         GDDC Grooming Services
@@ -76,12 +76,12 @@
                 </div>
             </div>
         </div>
-        <div class="grid max-w-screen-lg px-2 py-10 mx-auto text-sm leading-4 ">
+        <div class="grid max-w-screen-lg px-2 py-10 mx-auto text-sm leading-4">
             <h1 class="mb-10 text-5xl font-bold">Grooming Menu</h1>
             <div class="flex flex-col gap-10 sm:flex-row">
                 <div id="sizes" class="order-last sm:order-first">
                     <div
-                        class="grid grid-cols-4 my-4 sm:my-0 sm:w-28 sm:grid-cols-1 "
+                        class="grid grid-cols-4 my-4 sm:my-0 sm:w-28 sm:grid-cols-1"
                     >
                         <div
                             v-for="size in sizes"
@@ -242,153 +242,165 @@
 console.log(sizes)
 const sizes = [
     {
-        img:
-            'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-01.png',
+        img: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-01.png',
         size: 'Small',
-        weight: 'up to 10kg'
+        weight: 'up to 10kg',
     },
     {
-        img:
-            'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-02.png',
+        img: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-02.png',
         size: 'Medium',
-        weight: '11kg - 20kg'
+        weight: '11kg - 20kg',
     },
     {
-        img:
-            'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-03.png',
+        img: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-03.png',
         size: 'Large',
-        weight: '21kg - 30kg'
+        weight: '21kg - 30kg',
     },
     {
-        img:
-            'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-04.png',
+        img: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-04.png',
         size: 'X-Large',
-        weight: '31kg+'
-    }
+        weight: '31kg+',
+    },
 ]
 const standard = [
     {
-        title: 'Freshen Up',
-        text:
-            'A warm bath with a genrle shampoo, condition and soft towel dry to freshen up your best friend before they head home from a fun day at daycare!',
+        title: 'Quick Rinse',
+        text: "Quick rinse in a hot tub and a towel dry after a dirty day's daycare",
         prices: [
             {
                 size: 'S',
-                price: '$10'
+                price: '$10',
             },
             {
                 size: 'M',
-                price: '$10'
+                price: '$10',
             },
             {
                 size: 'L',
-                price: '$15'
+                price: '$10',
             },
             {
                 size: 'XL',
-                price: '$15'
-            }
-        ]
+                price: '$10',
+            },
+        ],
+    },
+    {
+        title: 'Freshen Up',
+        text: 'A warm bath with a genrle shampoo, condition and soft towel dry to freshen up your best friend before they head home from a fun day at daycare!',
+        prices: [
+            {
+                size: 'S',
+                price: '$15',
+            },
+            {
+                size: 'M',
+                price: '$15',
+            },
+            {
+                size: 'L',
+                price: '$20',
+            },
+            {
+                size: 'XL',
+                price: '$20',
+            },
+        ],
     },
     {
         title: 'Freshen Up & Fluff',
-        text:
-            'A gentle shampoo and condition in a warm bath then blow dry to leave your pup feeling clean and looking fluffy after daycare.',
+        text: 'A gentle shampoo and condition in a warm bath then blow dry to leave your pup feeling clean and looking fluffy after daycare.',
         prices: [
             {
                 size: 'S',
-                price: '$25'
+                price: '$25',
             },
             {
                 size: 'M',
-                price: '$30'
+                price: '$30',
             },
             {
                 size: 'L',
-                price: '$35'
+                price: '$35',
             },
             {
                 size: 'XL',
-                price: '$40'
-            }
-        ]
+                price: '$40',
+            },
+        ],
     },
     {
         title: 'Pamper Pack',
-        text:
-            'A gentle shampoo and condition in a warm bath then blow dry. Complete with a nail clip and ear clean to make your pup feel and look good',
+        text: 'A gentle shampoo and condition in a warm bath then blow dry. Complete with a nail clip and ear clean to make your pup feel and look good',
         prices: [
             {
                 size: 'S',
-                price: '$40'
+                price: '$40',
             },
             {
                 size: 'M',
-                price: '$45'
+                price: '$45',
             },
             {
                 size: 'L',
-                price: '$50'
+                price: '$50',
             },
             {
                 size: 'XL',
-                price: '$55'
-            }
-        ]
+                price: '$55',
+            },
+        ],
     },
     {
         title: 'Spa Day',
-        text:
-            'Starting with a warm bath, gentle shampoo & condition, followed by a blow dry and thorough brush out for that soft coat feeling. Your pup will leave feeling fresh and looking tidy after an action packed day of daycare!',
+        text: 'Starting with a warm bath, gentle shampoo & condition, followed by a blow dry and thorough brush out for that soft coat feeling. Your pup will leave feeling fresh and looking tidy after an action packed day of daycare!',
         prices: [
             {
                 size: 'S',
-                price: '$40'
+                price: '$40',
             },
             {
                 size: 'M',
-                price: '$45'
+                price: '$45',
             },
             {
                 size: 'L',
-                price: '$50'
+                price: '$50',
             },
             {
                 size: 'XL',
-                price: '$55'
-            }
-        ]
+                price: '$55',
+            },
+        ],
     },
     {
         title: 'Parlour Treatment',
-        text:
-            'The full treatment. A warm bath, shampoo and condition follow by a blow dry & brush, nail clip & ear clean. Your pup has never felt and looked this good after a day at their favourite daycare!',
+        text: 'The full treatment. A warm bath, shampoo and condition follow by a blow dry & brush, nail clip & ear clean. Your pup has never felt and looked this good after a day at their favourite daycare!',
         prices: [
             {
                 size: 'S',
-                price: '$60'
+                price: '$60',
             },
             {
                 size: 'M',
-                price: '$65'
+                price: '$65',
             },
             {
                 size: 'L',
-                price: '$70'
+                price: '$70',
             },
             {
                 size: 'XL',
-                price: '$75'
-            }
-        ]
-    }
+                price: '$75',
+            },
+        ],
+    },
 ]
 
 const professional = [
     {
         title: 'Full Groom',
-        text:
-            'A delicare full groom of your best friend including breed specific and Asian Fusion cuts.',
+        text: 'A delicare full groom of your best friend including breed specific and Asian Fusion cuts.',
         inclusions: [
             'Warm Bath',
             'Shampoo & Condition',
@@ -399,31 +411,30 @@ const professional = [
             'Paw Pads',
             'Sanitary Areas',
             'Nail Clip & File',
-            'Ear Clean & Pluck'
+            'Ear Clean & Pluck',
         ],
         prices: [
             {
                 size: 'S',
-                price: '$95'
+                price: '$95',
             },
             {
                 size: 'M',
-                price: '$105'
+                price: '$105',
             },
             {
                 size: 'L',
-                price: '$115'
+                price: '$115',
             },
             {
                 size: 'XL',
-                price: '$155'
-            }
-        ]
+                price: '$155',
+            },
+        ],
     },
     {
         title: 'Hygiene Tidy',
-        text:
-            'A neat and tidy hygiene groom to keep your pup looking and feeling fresh in between grooms. This is also for your double coated breeds needing a deshed and tidy up of their gorgeous floof',
+        text: 'A neat and tidy hygiene groom to keep your pup looking and feeling fresh in between grooms. This is also for your double coated breeds needing a deshed and tidy up of their gorgeous floof',
         inclusions: [
             'Warm Bath',
             'Shampoo & Condition',
@@ -432,27 +443,27 @@ const professional = [
             'Paw Pads',
             'Sanitary Areas',
             'Nail Clip & File',
-            'Ear Clean & Pluck'
+            'Ear Clean & Pluck',
         ],
         prices: [
             {
                 size: 'S',
-                price: '$75'
+                price: '$75',
             },
             {
                 size: 'M',
-                price: '$85'
+                price: '$85',
             },
             {
                 size: 'L',
-                price: '$95'
+                price: '$95',
             },
             {
                 size: 'XL',
-                price: '$105'
-            }
-        ]
-    }
+                price: '$105',
+            },
+        ],
+    },
 ]
 
 const training = [
@@ -472,7 +483,7 @@ ect.<br><br>
 
 Please ask our friendly trainer for more
 information on this service`,
-        price: 'All Puppies - $40'
+        price: 'All Puppies - $40',
     },
     {
         title: 'Grooming Desentisiation',
@@ -489,8 +500,8 @@ biting and wriggling.<br><br>
 Please ask our friendly trainer for more
 information on this service.
 `,
-        price: 'All Dogs - $40'
-    }
+        price: 'All Dogs - $40',
+    },
 ]
 console.log(standard, professional, training)
 </script>
