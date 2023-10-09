@@ -295,15 +295,15 @@ const standard = [
             },
             {
                 size: 'M',
-                price: '$15',
+                price: '$20',
             },
             {
                 size: 'L',
-                price: '$20',
+                price: '$25',
             },
             {
                 size: 'XL',
-                price: '$20',
+                price: '$30',
             },
         ],
     },
@@ -486,7 +486,7 @@ information on this service`,
         price: 'All Puppies - $40',
     },
     {
-        title: 'Grooming Desentisiation',
+        title: 'Grooming Desensitisation',
         text: `Our NDTF Qualified dog trainer will work with
 your dog to desensitise them to the grooming
 process and equipment in order to reduce the
