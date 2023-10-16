@@ -26,11 +26,12 @@
                         </p>
 
                         <p>
-                            On Mondays, we bring in professional groomers who
-                            are experts in breed-specific cuts and styles.
-                            Whether it's a poodle's perfect trim or a
-                            schnauzer's signature look, our pros can give your
-                            dog a makeover that'll turn heads.
+                            GDDC also welcomes Floofy & Co., professional
+                            groomers who are experts in breed-specific cuts and
+                            styles and offer premium grooming services. Whether
+                            it's a poodle's perfect trim or a schnauzer's
+                            signature look, our pros can give your dog a
+                            makeover that'll turn heads.
                         </p>
                         <p>
                             While your pup is enjoying their day of fun at
@@ -163,7 +164,7 @@
                     <h2
                         class="mt-10 mb-10 text-2xl font-bold text-gray-900 sm:text-4xl"
                     >
-                        Professional Grooming - Mondays
+                        Professional Grooming
                     </h2>
                     <FloofyGrooming></FloofyGrooming>
                     <!-- <div class="grid gap-x-20">
@@ -209,7 +210,7 @@
                             </li>
                         </ul>
                     </div> -->
-                    <h2
+                    <!-- <h2
                         class="mt-10 mb-10 text-2xl font-bold text-gray-900 sm:text-4xl"
                     >
                         Grooming & Training
@@ -232,7 +233,7 @@
                                 <p v-html="item.text"></p>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -468,43 +469,43 @@ const professional = [
     },
 ]
 
-const training = [
-    {
-        title: 'Puppy Grooming Intro',
-        text: `One-on-one positive and gentle introduction to
-the grooming process and equipment. Our NDTF
-Qualified dog trainer will care for your puppy as
-while using positive reinforcement training to
-increase your pups confidence with handling &
-grooming equipment.<br><br>
+// const training = [
+//     {
+//         title: 'Puppy Grooming Intro',
+//         text: `One-on-one positive and gentle introduction to
+// the grooming process and equipment. Our NDTF
+// Qualified dog trainer will care for your puppy as
+// while using positive reinforcement training to
+// increase your pups confidence with handling &
+// grooming equipment.<br><br>
 
-This service is highly recommended for puppies
-who will be getting groomed throughout their
-life such as Poodle breeds, Maltese, Cavaliers
-ect.<br><br>
+// This service is highly recommended for puppies
+// who will be getting groomed throughout their
+// life such as Poodle breeds, Maltese, Cavaliers
+// ect.<br><br>
 
-Please ask our friendly trainer for more
-information on this service`,
-        price: 'All Puppies - $40',
-    },
-    {
-        title: 'Grooming Desensitisation',
-        text: `Our NDTF Qualified dog trainer will work with
-your dog to desensitise them to the grooming
-process and equipment in order to reduce the
-stress on them during their regular grooms.<br><br>
+// Please ask our friendly trainer for more
+// information on this service`,
+//         price: 'All Puppies - $40',
+//     },
+//     {
+//         title: 'Grooming Desensitisation',
+//         text: `Our NDTF Qualified dog trainer will work with
+// your dog to desensitise them to the grooming
+// process and equipment in order to reduce the
+// stress on them during their regular grooms.<br><br>
 
-Your dogs stress and anxiety around grooming
-and handling can be reduced as well as the
-expression of behaviours such as mouthing,
-biting and wriggling.<br><br>
+// Your dogs stress and anxiety around grooming
+// and handling can be reduced as well as the
+// expression of behaviours such as mouthing,
+// biting and wriggling.<br><br>
 
-Please ask our friendly trainer for more
-information on this service.
-`,
-        price: 'All Dogs - $40',
-    },
-]
+// Please ask our friendly trainer for more
+// information on this service.
+// `,
+//         price: 'All Dogs - $40',
+//     },
+// ]
 </script>
 
 <style lang="scss">
