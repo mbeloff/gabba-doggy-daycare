@@ -167,6 +167,13 @@
                         Professional Grooming
                     </h2>
                     <FloofyGrooming></FloofyGrooming>
+                    <div class="my-10 text-center">
+                        <a
+                            class="inline-block mt-10 btn-blue"
+                            href="https://www.floofyncogrooming.com.au/"
+                            >Book with Floofy & Co</a
+                        >
+                    </div>
                     <!-- <div class="grid gap-x-20">
                         <ul class="grid sm:grid-cols-2 gap-x-20">
                             <li
