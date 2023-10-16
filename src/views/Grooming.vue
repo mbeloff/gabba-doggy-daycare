@@ -165,7 +165,8 @@
                     >
                         Professional Grooming - Mondays
                     </h2>
-                    <div class="grid gap-x-20">
+                    <FloofyGrooming></FloofyGrooming>
+                    <!-- <div class="grid gap-x-20">
                         <ul class="grid sm:grid-cols-2 gap-x-20">
                             <li
                                 v-for="pro in professional"
@@ -207,7 +208,7 @@
                                 </p>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <h2
                         class="mt-10 mb-10 text-2xl font-bold text-gray-900 sm:text-4xl"
                     >
@@ -239,7 +240,8 @@
 </template>
 
 <script setup>
-console.log(sizes)
+/* eslint-disable */
+import FloofyGrooming from '@/components/FloofyGrooming.vue'
 const sizes = [
     {
         img: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,w_400/v1/gddc/groom/Dog_silhouette-01.png',
@@ -503,7 +505,6 @@ information on this service.
         price: 'All Dogs - $40',
     },
 ]
-console.log(standard, professional, training)
 </script>
 
 <style lang="scss">
