@@ -161,6 +161,10 @@
                             </li>
                         </div>
                     </ul>
+                    <p class="mt-2 italic">
+                        * Please note that larger or fluffier dogs may incur a
+                        difficulty surcharge.
+                    </p>
                     <h2
                         class="mt-10 mb-10 text-2xl font-bold text-gray-900 sm:text-4xl"
                     >
@@ -287,11 +291,11 @@ const standard = [
             },
             {
                 size: 'L',
-                price: '$10',
+                price: '$15',
             },
             {
                 size: 'XL',
-                price: '$10',
+                price: '$15',
             },
         ],
     },
