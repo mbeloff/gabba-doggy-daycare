@@ -29,6 +29,8 @@ exports.handler = async function (event) {
         .then((response) => response.text())
         .catch((error) => console.log('error', error))
 
+    console.log(res)
+
     return {
         statusCode: 200,
         headers,
