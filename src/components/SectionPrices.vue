@@ -184,24 +184,24 @@ export default {
                         {
                             name: 'Half Day',
                             soon: ' - up to 5 hours',
-                            price: '$45',
+                            price: '$48',
                         },
                         {
                             name: 'Full Day',
                             soon: ' - over 5 hours',
-                            price: '$60',
+                            price: '$65',
                         },
                         {
                             name: 'Half Day 10-pack',
-                            price: '$380',
+                            price: '$400',
                         },
                         {
                             name: 'Full Day 10-pack',
-                            price: '$500',
+                            price: '$480',
                         },
                         {
                             name: 'Full Day 20-pack',
-                            price: '$850',
+                            price: '$840',
                         },
                         {
                             name: 'Full Day 30-pack',
@@ -211,15 +211,15 @@ export default {
                     weekly: [
                         {
                             name: 'Two Days a Week',
-                            price: '$100 ($50/day)',
+                            price: '$110 ($55/day)',
                         },
-                        {
-                            name: 'Three Days a Week',
-                            price: '$140 (~$46/day)',
-                        },
+                        // {
+                        //     name: 'Three Days a Week',
+                        //     price: '$140 (~$46/day)',
+                        // },
                         {
                             name: 'Five Days a Week',
-                            price: '$200 ($40/day)',
+                            price: '$260 ($52/day)',
                             highlight: true,
                         },
                     ],
