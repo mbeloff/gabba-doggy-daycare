@@ -25,8 +25,8 @@
                 We are:
                 <span class="font-bold text-blue-500">{{
                     place.opening_hours.open_now
-                        ? 'Now Open'
-                        : 'Close at the moment'
+                        ? 'Currently Open'
+                        : 'Closed at the moment'
                 }}</span>
             </p>
         </div>
