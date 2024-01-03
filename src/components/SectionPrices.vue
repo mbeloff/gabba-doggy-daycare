@@ -146,12 +146,12 @@
                 <open-login class="link-pink">log in</open-login> to your
                 account and select <em>Purchase a Package</em>.
             </p>
-            <p>
+            <!-- <p>
                 Weekly packs are valid for 7 days from the date of purchase.
                 Unused days may not be refunded after this period - please
                 contact us if you're unable to use your weekly package and we
                 may extend it for you.
-            </p>
+            </p> -->
             <p>
                 If you plan on bringing your dog to daycare regularly, ask us
                 about setting up automatic recurring payments so you don't have
