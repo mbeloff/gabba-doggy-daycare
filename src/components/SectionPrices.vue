@@ -28,10 +28,17 @@
                                 ></div>
                             </div>
                             <div class="flex-grow px-2">
-                                {{ service.name
-                                }}<span class="text-pink-500">{{
-                                    service.soon
-                                }}</span>
+                                {{ service.name }}
+                                <span
+                                    v-if="service.soon"
+                                    class="text-pink-500"
+                                    >{{ service.soon }}</span
+                                >
+                                <span
+                                    v-if="service.highlight"
+                                    class="text-pink-500"
+                                    >most popular</span
+                                >
                             </div>
                             <div class="relative px-2">
                                 <span class="text-pink-500">{{
@@ -41,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="mt-5 font-bold text-center">Weekly Packages</p>
+                <!-- <p class="mt-5 font-bold text-center">Weekly Packages</p>
                 <p class="pt-5 text-sm">
                     We've made it more affordable to come to day care more
                     often. Weekly packs must be used within 7 days.
@@ -81,7 +88,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div id="extras-pricing" v-if="prices[region].extras">
                     <p class="mt-5 font-bold text-center">Extras</p>
                     <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
@@ -106,9 +113,11 @@
                                     }"
                                 >
                                     {{ extra.name }}
-                                    <span class="text-pink-500">{{
-                                        extra.soon
-                                    }}</span>
+                                    <span
+                                        v-if="extra.soon"
+                                        class="text-pink-500"
+                                        >{{ extra.soon }}</span
+                                    >
                                 </div>
                                 <div class="px-2">
                                     <span class="text-pink-500">{{
@@ -192,37 +201,32 @@ export default {
                             price: '$65',
                         },
                         {
-                            name: 'Half Day 10-pack',
-                            price: '$400',
-                        },
-                        {
-                            name: 'Full Day 10-pack',
-                            price: '$480',
-                        },
-                        {
-                            name: 'Full Day 20-pack',
-                            price: '$840',
-                        },
-                        {
-                            name: 'Full Day 30-pack',
-                            price: '$1200',
-                        },
-                    ],
-                    weekly: [
-                        {
-                            name: 'Two Days a Week',
+                            name: 'Full Day 2-Pack',
                             price: '$110 ($55/day)',
                         },
-                        // {
-                        //     name: 'Three Days a Week',
-                        //     price: '$140 (~$46/day)',
-                        // },
                         {
-                            name: 'Five Days a Week',
+                            name: 'Full Day 5-pack',
                             price: '$260 ($52/day)',
                             highlight: true,
                         },
+                        {
+                            name: 'Half Day 10-pack',
+                            price: '$400 ($40/day))',
+                        },
+                        {
+                            name: 'Full Day 10-pack',
+                            price: '$480 ($48/day)',
+                        },
+                        {
+                            name: 'Full Day 20-pack',
+                            price: '$840 ($42/day)',
+                        },
+                        {
+                            name: 'Full Day 30-pack',
+                            price: '$1200 ($40/day)',
+                        },
                     ],
+                    weekly: [],
                     extras: {
                         Lunch: {
                             name: 'Lunch (Owner Provided)',
