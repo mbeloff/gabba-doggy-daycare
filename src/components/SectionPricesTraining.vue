@@ -143,74 +143,70 @@ export default {
                 professional: [
                     {
                         name: 'Small (up to 10kg)',
-                        price: '$95'
+                        price: '$95',
                     },
                     {
                         name: 'Medium (11 - 20kg)',
-                        price: '$105'
+                        price: '$105',
                     },
                     {
                         name: 'Large (21 - 30kg)',
-                        price: '$115'
+                        price: '$115',
                     },
                     {
                         name: 'Extra Large (31kg +)',
-                        price: '$155'
-                    }
+                        price: '$155',
+                    },
                 ],
                 basic: [
                     {
                         name: 'Small (up to 10kg)',
-                        price: '$30'
+                        price: '$30',
                     },
                     {
                         name: 'Medium (11 - 20kg)',
-                        price: '$40'
+                        price: '$40',
                     },
                     {
                         name: 'Large (21 - 30kg)',
-                        price: '$50'
-                    }
+                        price: '$50',
+                    },
                 ],
                 hygiene: [
                     {
                         name: 'Small (up to 10kg)',
-                        price: '$75'
+                        price: '$75',
                     },
                     {
                         name: 'Medium (11 - 20kg)',
-                        price: '$85'
+                        price: '$85',
                     },
                     {
                         name: 'Large (21 - 30kg)',
-                        price: '$95'
-                    }
+                        price: '$95',
+                    },
                 ],
                 extras: [
                     {
                         name: 'Bath and Towel Dry',
-                        price: '$10'
+                        price: '$10',
                     },
                     {
                         name: 'Nail Clip',
-                        price: '$10'
+                        price: '$10',
                     },
                     {
                         name: 'Nail filing',
-                        price: '$15'
-                    },
-                    {
-                        name: 'Anal glands',
-                        price: '$15'
+                        price: '$15',
                     },
                     {
                         name: 'Ear plucking',
-                        price: '$15'
-                    }
-                ]
-            }
+                        price: '$15',
+                    },
+                ],
+            },
         }
-    }
+    },
 }
 </script>
 

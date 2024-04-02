@@ -215,9 +215,6 @@
                                 >
                                     Extras
                                 </p>
-                                <p class="font-bold text-md">
-                                    Anal Glands - $15
-                                </p>
                             </li>
                         </ul>
                     </div> -->
