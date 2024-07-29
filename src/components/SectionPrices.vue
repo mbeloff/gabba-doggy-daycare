@@ -202,28 +202,28 @@ export default {
                         },
                         {
                             name: 'Full Day 2-Pack',
-                            price: '$110 ($55/day)',
+                            price: '$120 ($60/day)',
                         },
                         {
                             name: 'Full Day 5-pack',
-                            price: '$260 ($52/day)',
+                            price: '$275 ($55/day)',
                             highlight: true,
                         },
                         {
                             name: 'Half Day 10-pack',
-                            price: '$400 ($40/day))',
+                            price: '$420 ($42/day))',
                         },
                         {
                             name: 'Full Day 10-pack',
-                            price: '$480 ($48/day)',
+                            price: '$500 ($50/day)',
                         },
                         {
                             name: 'Full Day 20-pack',
-                            price: '$840 ($42/day)',
+                            price: '$900 ($45/day)',
                         },
                         {
                             name: 'Full Day 30-pack',
-                            price: '$1200 ($40/day)',
+                            price: '$1260 ($42/day)',
                         },
                     ],
                     weekly: [],
