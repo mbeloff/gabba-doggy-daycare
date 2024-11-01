@@ -1,9 +1,6 @@
 <template>
-  <div class="mx-auto shadow rounded-lg bg-white border">
-    <dl
-      class="accordion box"
-      role="presentation"
-    >
+  <div class="mx-auto bg-white border rounded-lg shadow">
+    <dl class="accordion box" role="presentation">
       <Faqitem
         v-for="(item, i) in set1"
         :multiple="multiple"
@@ -76,13 +73,6 @@ export default {
         },
         {
           active: false,
-          title: 'How do I use my free trial?',
-          details: `
-            <p>As long as your dog is fully vaccinated, you will be eligible for the free trial. As soon as we've verified your vaccination certificate, a trial package will be added to your account. There's nothing more you have to do, just log in and schedule day care.</p>       
-          `,
-        },
-        {
-          active: false,
           title: 'How do I pay for Daycare?',
           details: `
             <p class="mb-2">In order to make pickup/dropoff quick and easy, we ask that all daycare is paid online by logging in and clicking 'Purchase a Package'. Here, you can pre-pay for individual half- or full-days or discounted multi-day packages. If you've forgotten, or didn't have time to pay online, we accept credit card payments in-store, or you can log in and click 'Make a Payment' to fix up any outstanding balances online.</p>
@@ -116,7 +106,7 @@ export default {
           active: false,
           title: 'Are there any specials or discounts?',
           details: `
-            <p class="mb-2">Yes. We offer a free trial for new dogs. And if you refer a friend, you'll get another free day. And of course, we offer discounted packages to save on your regular day care visits:</p>
+            <p class="mb-2">Yes. We offer a discounted trial day for new dogs. And of course, we offer discounted packages to save on your regular day care visits:</p>
             <p class="mb-2">We have packages for 2 - 5 sessions per week (or more if you have multiple dogs). These can be purchased via your account, in-store, or as an automatic weekly payment. We also have 10-day packages that can be used over 3 months.</p>
             <p class="mb-2">See <a class="link-pink" href="/daycare">our daycare page</a> for a full price list.</p>
           `,
