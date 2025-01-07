@@ -16,6 +16,7 @@
         "core-js": "^3.6.4",
         "fecha": "^4.2.0",
         "fs": "^0.0.1-security",
+        "lodash": "^4.17.21",
         "node-fetch": "^2.6.1",
         "postcss": "^7",
         "postcss-loader": "^4.1.0",

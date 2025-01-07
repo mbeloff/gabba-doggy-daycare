@@ -59,8 +59,14 @@
           </div>
           <!-- <div class="flex flex-row flex-wrap justify-between my-3 sm:my-0"> -->
           <div
-            class="grid grid-cols-2 gap-4 my-3 text-center lg:w-auto lg:mb-0 lg:my-0"
+            class="grid grid-cols-3 gap-4 my-3 text-center lg:w-auto lg:mb-0 lg:my-0"
           >
+            <button
+              class="px-2 text-gray-400 underline hover:text-gray-600"
+              @click="showLogin()"
+            >
+              old login
+            </button>
             <a
               class="px-2 btn-blue"
               href="https://book.collar.pet/au/brands/gabba-doggy-daycare/book"
