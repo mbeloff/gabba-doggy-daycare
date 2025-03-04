@@ -6,7 +6,35 @@
                     <template #small>Gabba Doggy Daycare</template>
                     <template #big>Price List <br /></template>
                 </title-block>
-                <p class="text-xs text-center">(as of 01/09/22)</p>
+                <p class="mt-5 font-bold text-center">Monday Madness</p>
+                <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
+                    <div
+                        class="mb-1 bg-white font-bold"
+                    >
+                        <div
+                            class="relative flex bg-gray-100 rounded-lg ring-pink-200 ring-2"
+                        >
+                            <div>
+                                <div
+                                    class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full animate-ping-slow"
+                                ></div>
+                                <div
+                                    class="absolute -left-1.5 top-2 w-2 h-2 bg-pink-500 rounded-full"
+                                ></div>
+                            </div>
+                            <div class="flex-grow px-2">
+                                Full Day
+                                <span
+                                    class="text-pink-500"
+                                    >special price</span
+                                >
+                            </div>
+                            <div class="relative px-2">
+                                <span class="text-pink-500">%55/day</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p class="mt-5 font-bold text-center">Casual Day Care</p>
                 <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
                     <div
