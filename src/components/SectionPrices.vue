@@ -7,6 +7,7 @@
                     <template #big>Price List <br /></template>
                 </title-block>
                 <p class="mt-5 font-bold text-center">Monday Madness</p>
+                <p class="text-sm text-center">Special price for full-day of daycare on Mondays only</p>
                 <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
                     <div
                         class="mb-1 bg-white font-bold"
@@ -25,12 +26,12 @@
                             <div class="flex-grow px-2">
                                 Full Day
                                 <span
-                                    class="text-pink-500"
-                                    >special price</span
+                                    class="text-pink-500 font-normal"
+                                    >Mondays only</span
                                 >
                             </div>
                             <div class="relative px-2">
-                                <span class="text-pink-500">%55/day</span>
+                                <span class="text-pink-500">$55/day</span>
                             </div>
                         </div>
                     </div>
