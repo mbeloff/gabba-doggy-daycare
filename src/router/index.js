@@ -13,7 +13,6 @@ const Explore = () => import('../views/Tour.vue')
 const NewOwner = () => import('../views/NewOwner.vue')
 const Pawtraits = () => import('../views/Pawtraits.vue')
 const Faq = () => import('../views/Faq.vue')
-const Training = () => import('../views/Training.vue')
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
@@ -54,11 +53,6 @@ const routes = [
         path: '/faq',
         name: 'Faq',
         component: Faq
-    },
-    {
-        path: '/training',
-        name: 'Training',
-        component: Training
     },
     {
         path: '/register',
