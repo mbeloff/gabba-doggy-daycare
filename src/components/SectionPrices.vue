@@ -118,6 +118,27 @@
                         </div>
                     </div>
                 </div> -->
+                
+                <div v-if="prices[region].packages">
+                    <p class="mt-5 font-bold text-center">Membership Packages</p>
+                    <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
+                        <div
+                            v-for="(pkg, i) in prices[region].packages"
+                            :key="i"
+                            class="mb-1 bg-white"
+                        >
+                            <div class="relative flex bg-gray-100 rounded-lg">
+                                <div class="flex-grow px-2">
+                                    {{ pkg.name }}
+                                    <span v-if="pkg.billed == 'monthly'" class="ml-2 text-gray-400">billed monthly</span>
+                                </div>
+                                <div class="relative px-2">
+                                    <span class="text-pink-500">{{ pkg.price }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="extras-pricing" v-if="prices[region].extras">
                     <p class="mt-5 font-bold text-center">Extras</p>
                     <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
@@ -270,6 +291,58 @@ export default {
                             order: '3',
                         },
                     },
+                    packages: [
+                        {
+                            name: '2 Day per week membership',
+                            price: '$445.00',
+                            type: 'Daycare',
+                            billed: 'monthly'
+                        },
+                        {
+                            name: '3 Day per week membership',
+                            price: '$670.00',
+                            type: 'Daycare',
+                            billed: 'monthly'
+                        },
+                       
+                        {
+                            name: '5 Day per week membership',
+                            price: '$1000.00',
+                            type: 'Daycare',
+                            billed: 'monthly'
+                        },
+                        {
+                            name: 'One year unlimited daycare (Limited time only)',
+                            price: '$8000.00',
+                            type: 'Daycare',
+                            highlight: true,
+                        },
+                        {
+                            name: '3 Day Taxi per week (both ways)',
+                            price: '$312.00',
+                            type: 'Pet Taxi',
+                            billed: 'monthly'
+                        },
+                        {
+                            name: '3 Day Taxi per week (single trip)',
+                            price: '$156.00',
+                            type: 'Pet Taxi',
+                            billed: 'monthly'
+                        },
+                        {
+                            name: '5 Days Taxi per week (both ways)',
+                            price: '$480.00',
+                            type: 'Pet Taxi',
+                            billed: 'monthly'
+                        },
+                        {
+                            name: '5 Days Taxi per week (single trip)',
+                            price: '$240.00',
+                            type: 'Pet Taxi',
+                            billed: 'monthly'
+                        },
+                        
+                    ],
                 },
             },
         }
