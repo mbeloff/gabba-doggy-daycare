@@ -58,16 +58,11 @@
                     <i class="fal fa-thumbs-up"></i> Join Us Today!
                 </button></router-link
             >
-            <div
-                class="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-screen-xl"
-            >
+            <div class="grid grid-cols-1 mx-auto max-w-screen-xl">
                 <img
-                    src="https://res.cloudinary.com/dg5ybbkbh/image/upload/v1/gddc/tour/layout-2.jpg"
-                    alt=""
-                />
-                <img
-                    src="https://res.cloudinary.com/dg5ybbkbh/image/upload/v1/gddc/tour/layout-1.jpg"
-                    alt=""
+                    src="@/assets/img/gddc-map.jpg"
+                    alt="Gabba Doggy Daycare Map"
+                    class="w-full"
                 />
             </div>
         </div>
