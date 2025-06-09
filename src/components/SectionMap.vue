@@ -43,8 +43,8 @@
                 :position="m.position"
                 :icon="{
                     url: 'https://res.cloudinary.com/dg5ybbkbh/image/upload/v2/gddc/icons/GDDC_map_marker.svg',
-                    scaledSize: { width: 32, height: 32 },
-                    size: { width: 32, height: 32 },
+                    scaledSize: { width: 50, height: 50 },
+                    size: { width: 50, height: 50 },
                 }"
                 @click="center = m.position"
             ></gmap-marker>
