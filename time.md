@@ -3,3 +3,5 @@ add back old login system for existing customers (7/1/25) 45min
 update taxi rates (9/1/25) 30min
 add new pricing section (5/5/25) 1hr
 update map and address (9/6/25) 30min
+update price list (5/3/26) 30min
+ALL ABOVE PAID IN FULL $400

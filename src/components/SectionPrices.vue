@@ -7,11 +7,11 @@
                     <template #big>Price List <br /></template>
                 </title-block>
                 <p class="mt-5 font-bold text-center">Monday Madness</p>
-                <p class="text-sm text-center">Special price for full-day of daycare on Mondays only</p>
+                <p class="text-sm text-center">
+                    Special price for full-day of daycare on Mondays only
+                </p>
                 <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
-                    <div
-                        class="mb-1 bg-white font-bold"
-                    >
+                    <div class="mb-1 bg-white font-bold">
                         <div
                             class="relative flex bg-gray-100 rounded-lg ring-pink-200 ring-2"
                         >
@@ -25,8 +25,7 @@
                             </div>
                             <div class="flex-grow px-2">
                                 Full Day
-                                <span
-                                    class="text-pink-500 font-normal"
+                                <span class="text-pink-500 font-normal"
                                     >Mondays only</span
                                 >
                             </div>
@@ -118,9 +117,11 @@
                         </div>
                     </div>
                 </div> -->
-                
+
                 <div v-if="prices[region].packages">
-                    <p class="mt-5 font-bold text-center">Membership Packages</p>
+                    <p class="mt-5 font-bold text-center">
+                        Membership Packages
+                    </p>
                     <div class="grid grid-cols-1 pt-5 text-sm gap-x-10">
                         <div
                             v-for="(pkg, i) in prices[region].packages"
@@ -130,12 +131,24 @@
                             <div class="relative flex bg-gray-100 rounded-lg">
                                 <div class="flex-grow px-2">
                                     {{ pkg.name }}
-                                    <span v-if="pkg.billed == 'monthly'" class="ml-2 text-gray-400">billed monthly</span>
+                                    <span
+                                        v-if="pkg.billed == 'monthly'"
+                                        class="ml-2 text-gray-400"
+                                        >billed monthly</span
+                                    >
                                 </div>
                                 <div class="relative px-2">
-                                    <span class="text-pink-500">{{ pkg.price }}</span>
+                                    <span class="text-pink-500">{{
+                                        pkg.price
+                                    }}</span>
                                 </div>
                             </div>
+                            <p
+                                v-if="pkg.note"
+                                class="text-sm text-gray-500 px-2 mb-1"
+                            >
+                                {{ pkg.note }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -243,37 +256,37 @@ export default {
                         {
                             name: 'Half Day',
                             soon: ' - up to 5 hours',
-                            price: '$48',
+                            price: '$50',
                         },
                         {
                             name: 'Full Day',
                             soon: ' - over 5 hours',
-                            price: '$65',
+                            price: '$70',
                         },
                         {
                             name: 'Full Day 2-Pack',
-                            price: '$120 ($60/day)',
+                            price: '$130 ($65/day)',
                         },
                         {
                             name: 'Full Day 5-pack',
-                            price: '$275 ($55/day)',
+                            price: '$300 ($60/day)',
                             highlight: true,
                         },
                         {
                             name: 'Half Day 10-pack',
-                            price: '$420 ($42/day))',
+                            price: '$450 ($45/day))',
                         },
                         {
                             name: 'Full Day 10-pack',
-                            price: '$500 ($50/day)',
+                            price: '$545 ($54.50/day)',
                         },
                         {
                             name: 'Full Day 20-pack',
-                            price: '$900 ($45/day)',
+                            price: '$950 ($47.50/day)',
                         },
                         {
                             name: 'Full Day 30-pack',
-                            price: '$1260 ($42/day)',
+                            price: '$1305 ($43.50/day)',
                         },
                     ],
                     weekly: [],
@@ -296,20 +309,28 @@ export default {
                             name: '2 Day per week membership',
                             price: '$445.00',
                             type: 'Daycare',
-                            billed: 'monthly'
+                            billed: 'monthly',
                         },
                         {
                             name: '3 Day per week membership',
                             price: '$670.00',
                             type: 'Daycare',
-                            billed: 'monthly'
+                            billed: 'monthly',
                         },
-                       
+                        {
+                            name: '4 Day per week membership',
+                            price: '$830.00',
+                            type: 'Daycare',
+                            billed: 'monthly',
+                            note: 'Includes Freshen up & Fluff. To organise please book with reception. Limit one booking per month',
+                        },
+
                         {
                             name: '5 Day per week membership',
                             price: '$1000.00',
                             type: 'Daycare',
-                            billed: 'monthly'
+                            billed: 'monthly',
+                            note: 'Includes Pamper Pack. To organise please book with reception. Limit one booking per month.',
                         },
                         {
                             name: 'One year unlimited daycare (Limited time only)',
@@ -321,27 +342,26 @@ export default {
                             name: '3 Day Taxi per week (both ways)',
                             price: '$312.00',
                             type: 'Pet Taxi',
-                            billed: 'monthly'
+                            billed: 'monthly',
                         },
                         {
                             name: '3 Day Taxi per week (single trip)',
                             price: '$156.00',
                             type: 'Pet Taxi',
-                            billed: 'monthly'
+                            billed: 'monthly',
                         },
                         {
                             name: '5 Days Taxi per week (both ways)',
                             price: '$480.00',
                             type: 'Pet Taxi',
-                            billed: 'monthly'
+                            billed: 'monthly',
                         },
                         {
                             name: '5 Days Taxi per week (single trip)',
                             price: '$240.00',
                             type: 'Pet Taxi',
-                            billed: 'monthly'
+                            billed: 'monthly',
                         },
-                        
                     ],
                 },
             },
