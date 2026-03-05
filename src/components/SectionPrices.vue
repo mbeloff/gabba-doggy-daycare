@@ -30,7 +30,7 @@
                                 >
                             </div>
                             <div class="relative px-2">
-                                <span class="text-pink-500">$55/day</span>
+                                <span class="text-pink-500">$60/day</span>
                             </div>
                         </div>
                     </div>
