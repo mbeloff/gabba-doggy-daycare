@@ -322,7 +322,7 @@ export default {
                             price: '$830.00',
                             type: 'Daycare',
                             billed: 'monthly',
-                            note: 'Includes Freshen up & Fluff. To organise please book with reception. Limit one booking per month',
+                            note: 'Includes Pamper Pack. To organise please book with reception. Limit one booking per month.',
                         },
 
                         {
