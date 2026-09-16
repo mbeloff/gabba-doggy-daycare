@@ -5,3 +5,4 @@ add new pricing section (5/5/25) 1hr
 update map and address (9/6/25) 30min
 update price list (5/3/26) 30min
 ALL ABOVE PAID IN FULL $400
+T&C updates (16/09/26) - on the house
