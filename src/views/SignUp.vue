@@ -23,10 +23,10 @@
                             :class="{ 'ring-1 ring-yellow-500': alert }"
                         >
                             <div
-                                class="grid items-center justify-center transition-colors border border-blue-500 rounded-md min-h-6 min-w-6"
-                                :class="{ 'bg-blue-500': agree }"
+                                class="grid items-center justify-center flex-shrink-0 w-6 h-6 transition-colors border border-blue-500 rounded-md"
+                                :class="{ 'bg-blue-500 text-white': agree }"
                             >
-                                <app-icon name="check" />
+                                <app-icon v-if="agree" name="check" />
                             </div>
                             <label
                                 tabindex="0"
