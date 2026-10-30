@@ -8,12 +8,10 @@
     <div class="w-full p-2">
       <p class="mb-2">Local Pickup and Dropoff</p>
       <div>
-        <i class="mr-2 text-yellow-400 fas fa-circle"></i
-        ><span class="font-bold">Yellow - Zone One:</span> $15 each way
+        <app-icon name="circle-fill" size="0.65em" class="mr-2 text-yellow-400" /><span class="font-bold">Yellow - Zone One:</span> $15 each way
       </div>
       <div>
-        <i class="mr-2 text-red-400 fas fa-circle"></i
-        ><span class="font-bold">Red - Zone Two:</span> $20 each way
+        <app-icon name="circle-fill" size="0.65em" class="mr-2 text-red-400" /><span class="font-bold">Red - Zone Two:</span> $20 each way
       </div>
       <p class="mt-2">
         Please note: Our pet taxi service has limited availability, and may not

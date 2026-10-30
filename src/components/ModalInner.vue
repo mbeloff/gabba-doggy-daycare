@@ -2,12 +2,28 @@
   <div class="bg-gray-100 rounded-lg shadow-xl" @keydown.esc="hide">
     <div class="flex justify-between p-3 bg-blue-600 rounded-t-lg">
       <h1 class="text-2xl font-bold tracking-tight text-blue-100">
-        <i class="mr-2 fas fa-paw"></i>
+        <app-icon name="paw-print" class="mr-2" />
         <slot name="title">
           Default Title
         </slot>
       </h1>
-      <button class="float-right focus:outline-white" @click="hide()"><i class="mx-3 text-blue-200 fa fa-times fa-2x hover:text-blue-900"></i>
+      <button
+        type="button"
+        class="flex-shrink-0 text-blue-200 hover:text-blue-900 focus:outline-white"
+        aria-label="Close"
+        @click="hide()"
+      >
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
       </button>
     </div>
     <slot name="body"></slot>

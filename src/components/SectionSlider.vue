@@ -20,7 +20,7 @@
                 class="py-1 m-1 text-center justify-self-center link-pink"
                 @click="slideList()"
             >
-                <i class="mr-2 fal fa-redo-alt"></i>show me more GDDC superstars
+                <app-icon name="arrow-clockwise" class="mr-2" />show me more GDDC superstars
             </button>
         </div>
     </div>

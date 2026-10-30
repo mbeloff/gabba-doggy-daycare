@@ -25,14 +25,20 @@
                     <div
                         class="h-full py-8 bg-white rounded-lg shadow-md card text-center"
                     >
-                        <span class="fa-stack fa-2x">
-                            <i
-                                class="text-blue-100 fas fa-circle fa-stack-2x"
-                            ></i>
-                            <span
-                                class="fa-stack-1x z-10"
-                                :class="card.icon"
-                            ></span>
+                        <span
+                            class="relative inline-flex items-center justify-center w-16 h-16"
+                        >
+                            <app-icon
+                                name="circle-fill"
+                                size="4rem"
+                                class="absolute left-0 top-0 text-blue-100"
+                            />
+                            <img
+                                :src="card.src"
+                                alt=""
+                                class="card-art relative z-10"
+                                :class="card.art"
+                            />
                         </span>
                         <p class="my-3 font-bold text-blue-700 py-2">
                             {{ card.heading }}
@@ -53,17 +59,20 @@ export default {
         return {
             cards: [
                 {
-                    icon: 'fa-custom play',
+                    src: require('@/assets/img/icon-play.svg'),
+                    art: 'play',
                     heading: 'Play',
                     desc: 'Everyone plays differently. We have play areas with dogs matched by size and energy level, from high energy areas to chilled out zones for puppies and old-timers :)',
                 },
                 {
-                    icon: 'fa-custom friends',
+                    src: require('@/assets/img/icon-friends.svg'),
+                    art: 'friends',
                     heading: 'Socialise',
                     desc: 'Make new human and fur-friends in a safe and supervised environment. We love dogs, and we do our best to make sure everyone gets along and has fun at Gabba Doggy Daycare.',
                 },
                 {
-                    icon: 'fa-custom exercise',
+                    src: require('@/assets/img/icon-exercise.svg'),
+                    art: 'exercise',
                     heading: 'Exercise',
                     desc: 'Give your pets a chance to burn that excess energy during the day, with heaps of room to run around in sand and grass, pools, ball pits and more.',
                 },
@@ -74,44 +83,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.puppy {
-    background-image: url(../assets/img/puppy.svg);
-    width: 100%;
-    height: 100%;
-}
-
-.friends {
-    background-image: url(../assets/img/icon-friends.svg);
-    width: 90%;
-    height: 90%;
-}
-
-.play {
-    background-image: url(../assets/img/icon-play.svg);
-    width: 105%;
-    height: 105%;
-    bottom: 1.5rem;
-    transform: rotate(3deg);
-}
-
-.exercise {
-    background-image: url(../assets/img/icon-exercise.svg);
-    width: 85%;
-    height: 85%;
-    bottom: 0.25rem;
-}
-
-.fa-custom {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .card {
     min-height: 200px;
 }
 
-.img-card {
-    min-height: 300px;
+.card-art {
+    object-fit: contain;
+}
+
+.play {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-top: -0.35rem;
+    transform: rotate(3deg);
+}
+
+.friends {
+    width: 3.5rem;
+    height: 2.8rem;
+}
+
+.exercise {
+    width: 3.4rem;
+    height: 2.2rem;
+    margin-top: 0.2rem;
 }
 </style>

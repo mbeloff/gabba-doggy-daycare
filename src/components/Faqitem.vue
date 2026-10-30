@@ -10,11 +10,13 @@
           <h4 class="accordion-item-title-text font-bold py-2 px-2">
             {{ item.title }}
           </h4>
-          <span class="fa-stack ml-auto">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i
-              class="accordion-icon fas fa-chevron-right fa-stack-1x fa-inverse "
-            ></i>
+          <span class="relative inline-flex items-center justify-center w-6 h-6 ml-auto flex-shrink-0">
+            <app-icon name="circle-fill" size="1.5rem" class="absolute left-0 top-0" />
+            <app-icon
+              name="caret-right-bold"
+              size="0.85rem"
+              class="accordion-icon relative z-10 text-white"
+            />
           </span>
         </div>
       </button>

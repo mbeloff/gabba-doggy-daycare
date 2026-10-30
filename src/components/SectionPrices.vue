@@ -220,7 +220,7 @@
                 about setting up automatic recurring payments so you don't have
                 to worry about purchasing packages each week. If you would like
                 to cancel, pause, or adjust automatic payments at any time,
-                we're happy to accommodate <i class="fal fa-smile"></i>
+                we're happy to accommodate <app-icon name="smiley" class="text-yellow-500" />
             </p>
             <p>
                 Please note that customers on recurring billing, or
@@ -300,7 +300,7 @@ export default {
                             selector: 'taxi',
                             name: 'Pet Taxi (Local Pickup or Dropoff)',
                             soon: '- more info',
-                            price: '$10-15',
+                            price: '$15-20',
                             order: '3',
                         },
                     },
@@ -337,6 +337,18 @@ export default {
                             price: '$8000.00',
                             type: 'Daycare',
                             highlight: true,
+                        },
+                        {
+                            name: '2 Day Taxi per week (both ways)',
+                            price: '$224.00',
+                            type: 'Pet Taxi',
+                            billed: 'monthly',
+                        },
+                        {
+                            name: '2 Day Taxi per week (single trip)',
+                            price: '$112.00',
+                            type: 'Pet Taxi',
+                            billed: 'monthly',
                         },
                         {
                             name: '3 Day Taxi per week (both ways)',

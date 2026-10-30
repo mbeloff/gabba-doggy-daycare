@@ -78,8 +78,7 @@
                                         `tel:` +
                                         contact.phone.replaceAll(' ', '')
                                     "
-                                    ><i class="mr-2 fad fa-mobile-alt"></i
-                                    >{{ contact.phone }}</a
+                                    ><app-icon name="device-mobile" class="mr-2" />{{ contact.phone }}</a
                                 >
                             </li>
                             <li>
@@ -134,7 +133,7 @@ export default {
 }
 
 .social-icon:hover {
-    .fa-stack-1x {
+    .brand-glyph {
         color: white;
     }
 }

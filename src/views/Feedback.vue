@@ -10,7 +10,7 @@
         </transition>
 
         <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
-          <i class="text-blue-500 fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
+          <app-icon name="spinner" size="4em" class="text-blue-500 place-self-center animate-spin-slow" />
         </div>
         <p class="text-blue-900 mb-3 text-2xl font-bold">Suggestions</p>
         <p class="mb-3">What do you love about GDDC? Is there something we could be doing better? We'd love to know what you think</p>

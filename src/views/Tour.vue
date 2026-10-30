@@ -55,7 +55,7 @@
             </div>
             <router-link :to="{ name: 'Sign-up' }"
                 ><button class="btn-blue my-20 mx-auto block">
-                    <i class="fal fa-thumbs-up"></i> Join Us Today!
+                    <app-icon name="thumbs-up" class="mr-1" /> Join Us Today!
                 </button></router-link
             >
             <div class="grid grid-cols-1 mx-auto max-w-screen-xl">

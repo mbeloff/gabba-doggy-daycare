@@ -27,7 +27,7 @@
           @click="show = !show"
         >
           <p class="text-center text-yellow-900">
-            <span class="text-base"><i class="fal fa-smile-plus"></i></span>
+            <span class="text-base"><app-icon name="smiley" /></span>
             refer a friend for more free days*
           </p>
           <transition name="open">

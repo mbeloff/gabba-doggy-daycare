@@ -8,7 +8,7 @@
 
         <p class="text-sm mb-3">Please select a different page or location from the top menu or...</p>
         
-        <router-link class="text-xl link-pink" :to="{name: 'Home', params: {region: getRegion()}}"><i class="fal fa-home"></i> Take me back home</router-link>
+        <router-link class="text-xl link-pink" :to="{name: 'Home', params: {region: getRegion()}}"><app-icon name="house" class="mr-1" /> Take me back home</router-link>
       </div>
     </div>
 </template>

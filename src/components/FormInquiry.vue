@@ -8,7 +8,7 @@
           </div>
         </transition>
         <div v-if="isLoading" class="absolute top-0 left-0 grid w-full h-full">
-          <i class="text-blue-500 fad fa-spinner place-self-center fa-4x animate-spin-slow"></i>
+          <app-icon name="spinner" size="4em" class="text-blue-500 place-self-center animate-spin-slow" />
         </div>
         <div :class="{ 'opacity-0 avoid-clicks' : hasSubmitted}">
           <div>

@@ -26,7 +26,7 @@
                                 class="grid items-center justify-center transition-colors border border-blue-500 rounded-md min-h-6 min-w-6"
                                 :class="{ 'bg-blue-500': agree }"
                             >
-                                <i class="text-white fas fa-check"></i>
+                                <app-icon name="check" />
                             </div>
                             <label
                                 tabindex="0"

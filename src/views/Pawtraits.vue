@@ -9,7 +9,7 @@
           </title-block>
           <p class="mb-4">
             Take home a framed, original character sketch or <em>paw</em>trait of your best friend by artist Maaret Webb. <br>
-            Stay tuned for pricing and more details - <open-modal class="inline-block rounded-full hover:text-pink-500" title="Leave a message"><i class="far fa-comment-alt-smile"></i><span class="ml-2">Get in touch to express your interest</span></open-modal>
+            Stay tuned for pricing and more details - <open-modal class="inline-block rounded-full hover:text-pink-500" title="Leave a message"><app-icon name="chat-circle" /><span class="ml-2">Get in touch to express your interest</span></open-modal>
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">

@@ -99,14 +99,14 @@
       <a
         class="font-bold tracking-wide text-md hover:text-pink-500"
         :href="'tel:' + phone.replaceAll(' ', '')"
-        ><i class="mr-2 fad fa-mobile-alt wiggle2"></i>
+        ><app-icon name="device-mobile" class="mr-2 wiggle2" />
         {{ phone }}
       </a>
       <span class="ml-2 mr-auto text-sm font-normal"
         >{{ $store.state[this.getRegion()].contact.openTime }} -
         {{ $store.state[this.getRegion()].contact.closeTime }}</span
       >
-      <!-- <open-modal class="inline-block px-1 ml-1 text-lg rounded-full hover:text-pink-500" title="Leave a message"><i class="far fa-comment-alt-smile"></i></open-modal> -->
+      <!-- <open-modal class="inline-block px-1 ml-1 text-lg rounded-full hover:text-pink-500" title="Leave a message"><app-icon name="chat-circle" /></open-modal> -->
     </div>
   </nav>
 </template>

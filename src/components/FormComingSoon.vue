@@ -7,7 +7,7 @@
         <input type="hidden" name="form-name" value="high-energy-and-puppy" />
         <div class="flex w-full gap-2">
           <input type="email" id="email" class="my-input bg-gray-200 h-full placeholder-gray-400 text-sm" placeholder="your email" v-model="form.email">
-          <button :class="{'btn-disabled' : !emailIsValid(form.email)}" class="btn-blue text-white self-center py-1 px-1 w-24" type="submit"><i class="far fa-check-circle"></i></button>
+          <button :class="{'btn-disabled' : !emailIsValid(form.email)}" class="btn-blue text-white self-center py-1 px-1 w-24" type="submit"><app-icon name="check-circle" /></button>
         </div>
       </form>
       <p @click="setCookie('hasReg', 'yes', 365); hasSubmitted = true" class="mt-2 link-pink cursor-pointer">not interested</p>

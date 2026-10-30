@@ -168,7 +168,7 @@ $browser-context: 16;
     background: #0ea5e9;
     color: white;
   }
-  .fa-stack-1x {
+  .accordion-icon {
     color: #0ea5e9;
   }
 }

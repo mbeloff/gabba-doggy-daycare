@@ -8,12 +8,13 @@
                 v-if="rating"
             >
                 <span class="mr-1 text-sm">{{ rating }}</span>
-                <i
-                    class="-mt-px fas fa-star"
+                <app-icon
+                    name="star-fill"
+                    class="-mt-px"
                     v-for="star in Math.floor(rating)"
                     :key="star"
-                ></i>
-                <i class="-mt-px fas fa-star-half" v-if="rating % 1"></i>
+                />
+                <app-icon name="star-half-fill" class="-mt-px" v-if="rating % 1" />
                 <a
                     class="font-normal text-blue-500"
                     :href="place.url"

@@ -11,19 +11,19 @@
           <p class="mb-4">We require all dogs to be protected against the following:</p>
           <ul class="mb-4 ml-4 font-bold text-left list-none list-inside">
             <li class="flex gap-2 mb-2">
-              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <app-icon name="paw-print" class="mt-1 text-sm text-blue-500" />
               <p class="leading-tight">Distemper</p>
             </li>
             <li class="flex gap-2 mb-2">
-              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <app-icon name="paw-print" class="mt-1 text-sm text-blue-500" />
               <p class="leading-tight">Hepatitus</p>
             </li>
             <li class="flex gap-2 mb-2">
-              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <app-icon name="paw-print" class="mt-1 text-sm text-blue-500" />
               <p class="leading-tight">Parvovirus</p>
             </li>
             <li class="flex gap-2 mb-2">
-              <i class="mt-1 text-sm text-blue-500 fas fa-paw"></i>
+              <app-icon name="paw-print" class="mt-1 text-sm text-blue-500" />
               <p class="leading-tight">Bordetella and Parainfluenza (Kennel/Canine Cough)</p>
             </li>
           </ul>
