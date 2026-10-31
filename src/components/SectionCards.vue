@@ -1,29 +1,27 @@
 <template>
-    <div class="tile">
-        <div class="container py-32 px-2 max-w-screen-xl mx-auto text-center">
-            <title-block>
+    <div class="home-band">
+        <div class="container py-20 px-2 mx-auto text-center max-w-screen-xl lg:py-28">
+            <title-block eyebrow>
                 <template #small
                     >Your best friend's new favourite place</template
                 >
                 <template #big><h1>Gabba Doggy Daycare</h1></template>
             </title-block>
-            <div class="flex flex-wrap text-left justify-around">
-                <p class="px-5 mb-10 md:text-lg text-center">
-                    Treat your dog to a fun day of play and socialising with new
-                    friends at Gabba Doggy Daycare. GDDC is a massive off-leash
-                    day care centre for dogs of all shapes and sizes. We have
-                    indoor and outdoor play areas, and our friendly daycare team
-                    provide all the care and attention your dogs need while
-                    you're at work.
-                </p>
+            <p class="max-w-3xl px-5 mx-auto mb-10 text-center leading-relaxed md:text-lg">
+                Treat your dog to a fun day of play and socialising with new
+                friends at Gabba Doggy Daycare. GDDC is a massive off-leash
+                day care centre for dogs of all shapes and sizes. We have
+                indoor and outdoor play areas, and our friendly daycare team
+                provide all the care and attention your dogs need while
+                you're at work.
+            </p>
+            <div class="grid grid-cols-1 gap-4 text-left md:grid-cols-3">
                 <div
                     v-for="(card, i) in cards"
                     :key="i"
-                    class="flex-grow py-2 sm:px-2 md:p-3 w-1/1 sm:flex-grow-0 sm:w-1/2 md:w-1/3 card-container order-1"
-                    :class="{ 'md:order-1 order-last': card.type }"
                 >
                     <div
-                        class="h-full py-8 bg-white rounded-lg shadow-md card text-center"
+                        class="h-full py-8 text-center bg-white card"
                     >
                         <span
                             class="relative inline-flex items-center justify-center w-16 h-16"
@@ -43,7 +41,7 @@
                         <p class="my-3 font-bold text-blue-700 py-2">
                             {{ card.heading }}
                         </p>
-                        <p class="text-gray-700 text-left px-4">
+                        <p class="px-4 leading-relaxed text-left text-gray-700">
                             {{ card.desc }}
                         </p>
                     </div>
@@ -85,6 +83,8 @@ export default {
 <style lang="scss" scoped>
 .card {
     min-height: 200px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 28px rgba(55, 65, 80, 0.07);
 }
 
 .card-art {

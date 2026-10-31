@@ -1,19 +1,19 @@
 <template>
-    <div class="bg-gray-900">
-        <div class="container mx-auto">
+    <div class="bg-white">
+        <div class="container px-3 py-8 mx-auto">
             <div class="container relative max-w-screen-xl p-0 mx-auto">
-                <div class="grid grid-cols-3 lg:grid-cols-6 swiper" id="swiper">
+                <div class="grid grid-cols-3 gap-2 lg:grid-cols-6 swiper" id="swiper">
                     <div v-for="(slide, i) in list" :key="i">
                         <img
                             :src="imagePrefix + slide"
                             alt=""
-                            class="object-cover w-full h-full"
+                            class="object-cover w-full h-full gallery-photo"
                         />
                     </div>
                 </div>
             </div>
         </div>
-        <div class="grid bg-gray-100">
+        <div class="grid pb-8 bg-white">
             <button
                 id="get-images"
                 title="show more photos"
@@ -203,5 +203,9 @@ export default {
 <style lang="scss" scoped>
 .swiper {
     transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-photo {
+    border-radius: 0.75rem;
 }
 </style>

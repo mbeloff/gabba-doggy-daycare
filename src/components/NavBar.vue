@@ -62,7 +62,7 @@
             class="grid grid-cols-3 gap-4 my-3 text-center lg:w-auto lg:mb-0 lg:my-0"
           >
             <button
-              class="px-2 text-gray-400 underline hover:text-gray-600"
+              class="px-2 text-sm text-gray-400 hover:text-gray-600"
               @click="showLogin()"
             >
               old login

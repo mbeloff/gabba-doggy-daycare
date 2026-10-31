@@ -3,7 +3,7 @@
         <section-hero></section-hero>
 
         <section-cards></section-cards>
-        <div class="relative bg-gray-900">
+        <div class="relative">
             <section-slider
                 class="transition-opacity duration-1000 gallery"
                 :class="{ 'opacity-0': this.disabled }"
@@ -11,43 +11,38 @@
             ></section-slider>
         </div>
 
-        <div class="py-32 bg-gray-100 section tile bg-opacity-30">
-            <title-block class="text-center">
+        <div class="py-20 home-band section lg:py-28">
+            <title-block eyebrow class="text-center">
                 <template #small>A home away from home</template>
                 <template #big>Dogs Love it Here</template>
             </title-block>
             <div
-                class="container grid max-w-screen-lg grid-cols-1 px-2 mx-auto lg:gap-10 md:grid-cols-2 gap-y-10 gap-x-2"
+                class="container grid max-w-screen-lg grid-cols-1 px-4 mx-auto lg:gap-12 md:grid-cols-2 gap-y-10"
             >
-                <div
-                    class="flex flex-col justify-between order-2 col md:order-1"
-                >
-                    <ul class="text-left list-disc list-outside">
+                <div class="order-2 md:order-1">
+                    <ul class="space-y-6 text-left">
                         <li
-                            class="grid w-full mb-2"
+                            class="flex items-start gap-4"
                             v-for="(item, i) in features"
                             :key="i"
+                            v-show="
+                                item.limit == getRegion() || item.limit == null
+                            "
                         >
-                            <template
-                                v-if="
-                                    item.limit == getRegion() ||
-                                    item.limit == null
-                                "
-                            >
-                                <div class="flex flex-col items-center gap-3">
-                                    <icon-stack :icon="item.icon"></icon-stack>
-                                    <p
-                                        class="self-center font-bold text-blue-700"
+                            <icon-stack
+                                class="flex-shrink-0 mt-0.5"
+                                :icon="item.icon"
+                            ></icon-stack>
+                            <div>
+                                <p class="font-bold text-blue-700">
+                                    {{ item.title }}
+                                    <span
+                                        class="font-normal text-blue-400 capitalize"
+                                        v-if="item.limit"
+                                        >- {{ item.limit }} only</span
                                     >
-                                        {{ item.title }}
-                                        <span
-                                            class="font-normal text-blue-400 capitalize"
-                                            v-if="item.limit"
-                                            >- {{ item.limit }} only</span
-                                        >
-                                    </p>
-                                </div>
-                                <p class="text-sm text-center">
+                                </p>
+                                <p class="mt-1 text-sm leading-relaxed">
                                     {{ item.desc }}
                                     <router-link
                                         v-if="item.title == 'Grooming'"
@@ -66,31 +61,31 @@
                                         find out more
                                     </button>
                                 </p>
-                            </template>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div
-                    class="order-1 bg-cover rounded-sm rounded-lg shadow-xl md:order-2 photo1 aspect-w-6 aspect-h-6"
+                    class="order-1 bg-cover shadow-lg md:order-2 photo1 aspect-w-6 aspect-h-6"
                 ></div>
             </div>
             <div
-                class="flex flex-col max-w-screen-lg px-2 mx-auto mt-10 text-center sm:flex-row sm:flex-wrap gap-x-2 gap-y-5"
+                class="flex flex-col items-center justify-center max-w-screen-lg px-4 mx-auto mt-12 text-center gap-3 sm:flex-row"
             >
                 <router-link
                     :to="{ name: 'Daycare', params: { region: getRegion() } }"
-                    class="flex-grow text-sm btn-blue"
+                    class="w-full text-sm sm:w-auto btn-outline"
                     >Daycare Prices</router-link
                 >
                 <router-link
                     v-show="getRegion() == 'brisbane'"
                     :to="{ name: 'Explore', params: { region: getRegion() } }"
-                    class="flex-grow text-sm btn-blue"
+                    class="w-full text-sm sm:w-auto btn-outline"
                     >Take a Tour</router-link
                 >
                 <router-link
                     :to="{ name: 'Sign-up', params: { region: getRegion() } }"
-                    class="flex-grow text-sm btn-blue"
+                    class="w-full text-sm sm:w-auto btn-blue"
                     >Create Account</router-link
                 >
             </div>
@@ -215,6 +210,7 @@ export default {
 
 <style lang="scss">
 .photo1 {
+    border-radius: 1.25rem;
     background-position: 50% 30%;
     background-image: url('https://res.cloudinary.com/dg5ybbkbh/image/upload/c_scale,w_500,q_auto,f_auto/v1/gddc/photos/update/0001.jpg');
 

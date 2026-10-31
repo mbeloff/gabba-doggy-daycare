@@ -235,6 +235,10 @@ export default {
   background-size: 300px;
 }
 
+.home-band {
+  background-color: #f7f5f2;
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif !important;
   color: #474b57;
@@ -268,14 +272,28 @@ body {
 
 @layer components {
   .btn-blue {
-    @apply px-5 py-2 bg-blue-500 text-white rounded-md text-base border-yellow-300 border-b-2;
+    @apply px-5 py-2 bg-blue-500 text-white text-base;
+    border-radius: 0.7rem;
   }
 
   .btn-blue:hover {
-    @apply bg-yellow-400;
+    @apply bg-blue-600;
   }
 
   .btn-blue:focus {
+    @apply outline-blue;
+  }
+
+  .btn-outline {
+    @apply px-5 py-2 text-base text-blue-600 bg-white border border-blue-200;
+    border-radius: 0.7rem;
+  }
+
+  .btn-outline:hover {
+    @apply text-blue-700 bg-blue-50 border-blue-300;
+  }
+
+  .btn-outline:focus {
     @apply outline-blue;
   }
 

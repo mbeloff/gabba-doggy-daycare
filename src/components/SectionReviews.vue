@@ -1,23 +1,40 @@
 <template>
-    <div class="flex flex-col py-5">
+    <div class="flex flex-col px-4 py-16 bg-white">
+        <title-block eyebrow class="text-center">
+            <template #small>Google reviews</template>
+            <template #big>What owners say</template>
+        </title-block>
         <a
-            class="inline-block mx-auto"
+            class="flex items-center justify-center gap-3 mx-auto -mt-4 mb-8"
             title="review us on Google"
-            :href="this.$store.state[getRegion()].contact.reviewLink"
+            :href="reviewLink"
         >
             <img
-                class="mx-auto rounded-xl border w-36 h-36"
+                class="w-12 h-12 border rounded-lg"
                 src="../assets/img/reviewUs.svg"
                 alt=""
             />
+            <span class="text-sm text-gray-500">
+                <span class="text-yellow-400">
+                    <app-icon name="star-fill" v-for="star in 5" :key="star" />
+                </span>
+                5.0 on Google
+            </span>
         </a>
         <div
-            class="container max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 pb-2"
+            class="container grid max-w-screen-lg grid-cols-1 gap-2 mx-auto md:grid-cols-3"
         >
-            <div class="w-full" v-for="(review, i) in reviews" :key="i">
+            <div class="w-full" v-for="(review, i) in shownReviews" :key="i">
                 <review :reviewData="review"></review>
             </div>
         </div>
+        <button
+            class="mx-auto mt-6 link-pink"
+            type="button"
+            @click="showAll = !showAll"
+        >
+            {{ showAll ? 'Show fewer reviews' : 'Read more reviews' }}
+        </button>
     </div>
 </template>
 <script>
@@ -29,6 +46,7 @@ export default {
     },
     data() {
         return {
+            showAll: false,
             reviews: [
                 {
                     name: 'Hannah R',
@@ -91,6 +109,14 @@ export default {
                 },
             ],
         }
+    },
+    computed: {
+        shownReviews() {
+            return this.showAll ? this.reviews : this.reviews.slice(0, 3)
+        },
+        reviewLink() {
+            return this.$store.state[this.getRegion()].contact.reviewLink
+        },
     },
 }
 </script>
